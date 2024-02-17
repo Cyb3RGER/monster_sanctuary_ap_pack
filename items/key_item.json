@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Sanctuary Token",
+    "type": "consumable",
+    "codes": "sanctuary_token",
+    "img": "images/items/key_item/sanctuary_token.png",
+    "max_quantity": 5,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Double Jump Boots",
+    "type": "toggle",
+    "codes": "double_jump_boots",
+    "img": "images/items/key_item/double_jump_boots.png"
+  },
+  {
+    "name": "Warm Underwear",
+    "type": "toggle",
+    "codes": "warm_underwear",
+    "img": "images/items/key_item/warm_underwear.png"
+  },
+  {
+    "name": "Runestone Shard",
+    "type": "toggle",
+    "codes": "runestone_shard",
+    "img": "images/items/key_item/runestone_shard.png"
+  },
+  {
+    "name": "Key of Power",
+    "type": "toggle",
+    "codes": "key_of_power",
+    "img": "images/items/key_item/key_of_power.png"
+  },
+  {
+    "name": "Ahrimaaya",
+    "type": "toggle",
+    "codes": "ahrimaaya",
+    "img": "images/items/key_item/ahrimaaya.png"
+  },
+  {
+    "name": "Blob Key",
+    "type": "toggle",
+    "codes": "blob_key",
+    "img": "images/items/key_item/blob_key.png"
+  },
+  {
+    "name": "Mozzie",
+    "type": "toggle",
+    "codes": "mozzie",
+    "img": "images/items/key_item/mozzie.png"
+  },
+  {
+    "name": "Memorial Ring",
+    "type": "toggle",
+    "codes": "memorial_ring",
+    "img": "images/items/key_item/memorial_ring.png"
+  },
+  {
+    "name": "Rare Seashell",
+    "type": "consumable",
+    "codes": "rare_seashell",
+    "img": "images/items/key_item/rare_seashell.png",
+    "max_quantity": 5,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Celestial Feather",
+    "type": "consumable",
+    "codes": "celestial_feather",
+    "img": "images/items/key_item/celestial_feather.png",
+    "max_quantity": 3,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Mountain Path key",
+    "type": "consumable",
+    "codes": "mountain_path_key, area_key",
+    "img": "images/items/key_item/mountain_path_key.png",
+    "disabled_img_mods": "",
+    "max_quantity": 1,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Blue Cave key",
+    "type": "consumable",
+    "codes": "blue_cave_key, area_key",
+    "img": "images/items/key_item/blue_cave_key.png",
+    "disabled_img_mods": "",
+    "max_quantity": 3,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Stronghold Dungeon key",
+    "type": "consumable",
+    "codes": "stronghold_dungeon_key, area_key",
+    "img": "images/items/key_item/stronghold_dungeon_key.png",
+    "disabled_img_mods": "",
+    "max_quantity": 2,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Ancient Woods key",
+    "type": "consumable",
+    "codes": "ancient_woods_key, area_key",
+    "img": "images/items/key_item/ancient_woods_key.png",
+    "disabled_img_mods": "",
+    "max_quantity": 3,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Magma Chamber key",
+    "type": "consumable",
+    "codes": "magma_chamber_key, area_key",
+    "img": "images/items/key_item/magma_chamber_key.png",
+    "disabled_img_mods": "",
+    "max_quantity": 2,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Mystical Workshop key",
+    "type": "consumable",
+    "codes": "mystical_workshop_key, area_key",
+    "img": "images/items/key_item/mystical_workshop_key.png",
+    "disabled_img_mods": "",
+    "max_quantity": 3,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Underworld key",
+    "type": "consumable",
+    "codes": "underworld_key, area_key",
+    "img": "images/items/key_item/underworld_key.png",
+    "disabled_img_mods": "",
+    "max_quantity": 1,
+    "overlay_font_size": 24
+  }
+]

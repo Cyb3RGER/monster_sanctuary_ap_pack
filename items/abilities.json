@@ -1,0 +1,200 @@
+[
+  {
+    "name": "Breakable Walls",
+    "type": "toggle",
+    "codes": "breakable_walls",
+    "img": "images/items/abilities/breakable_walls.png"
+  },
+  {
+    "name": "Impassible Vines",
+    "type": "toggle",
+    "codes": "impassible_vines",
+    "img": "images/items/abilities/impassible_vines.png"
+  },
+  {
+    "name": "Diamond Blocks",
+    "type": "toggle",
+    "codes": "diamond_blocks",
+    "img": "images/items/abilities/diamond_blocks.png"
+  },
+  {
+    "name": "Fire Orbs",
+    "type": "toggle",
+    "codes": "fire_orbs",
+    "img": "images/items/abilities/fire_orbs.png"
+  },
+  {
+    "name": "Water Orbs",
+    "type": "toggle",
+    "codes": "water_orbs",
+    "img": "images/items/abilities/water_orbs.png"
+  },
+  {
+    "name": "Lightning Orbs",
+    "type": "toggle",
+    "codes": "lightning_orbs",
+    "img": "images/items/abilities/lightning_orbs.png"
+  },
+  {
+    "name": "Earth Orbs",
+    "type": "toggle",
+    "codes": "earth_orbs",
+    "img": "images/items/abilities/earth_orbs.png"
+  },
+  {
+    "name": "Ice Orbs",
+    "type": "toggle",
+    "codes": "ice_orbs",
+    "img": "images/items/abilities/ice_orbs.png"
+  },
+  {
+    "name": "Distant Ice Orbs",
+    "type": "toggle",
+    "codes": "distant_ice_orbs",
+    "img": "images/items/abilities/distant_ice_orbs.png"
+  },
+  {
+    "name": "Summon Rock",
+    "type": "toggle",
+    "codes": "summon_rock",
+    "img": "images/items/abilities/summon_rock.png"
+  },
+  {
+    "name": "Summon Mushroom",
+    "type": "toggle",
+    "codes": "summon_mushroom",
+    "img": "images/items/abilities/summon_mushroom.png"
+  },
+  {
+    "name": "Summon Big Rock",
+    "type": "toggle",
+    "codes": "summon_big_rock",
+    "img": "images/items/abilities/summon_big_rock.png"
+  },
+  {
+    "name": "Flying",
+    "type": "toggle",
+    "codes": "flying",
+    "img": "images/items/abilities/flying.png"
+  },
+  {
+    "name": "Improved Flying",
+    "type": "toggle",
+    "codes": "improved_flying",
+    "img": "images/items/abilities/improved_flying.png"
+  },
+  {
+    "name": "Lofty Mount",
+    "type": "toggle",
+    "codes": "lofty_mount",
+    "img": "images/items/abilities/lofty_mount.png"
+  },
+  {
+    "name": "Basic Swimming",
+    "type": "toggle",
+    "codes": "basic_swimming, swimming",
+    "img": "images/items/abilities/basic_swimming.png"
+  },
+  {
+    "name": "Improved Swimming",
+    "type": "toggle",
+    "codes": "improved_swimming",
+    "img": "images/items/abilities/improved_swimming.png"
+  },
+  {
+    "name": "Dual Mobility",
+    "type": "toggle",
+    "codes": "dual_mobility",
+    "img": "images/items/abilities/dual_mobility.png"
+  },
+  {
+    "name": "Narrow Corridors",
+    "type": "toggle",
+    "codes": "narrow_corridors",
+    "img": "images/items/abilities/narrow_corridors.png"
+  },
+  {
+    "name": "Magic Walls",
+    "type": "toggle",
+    "codes": "magic_walls",
+    "img": "images/items/abilities/magic_walls.png"
+  },
+  {
+    "name": "Magic Vines",
+    "type": "toggle",
+    "codes": "magic_vines",
+    "img": "images/items/abilities/magic_vines.png"
+  },
+  {
+    "name": "Fiery Shots",
+    "type": "toggle",
+    "codes": "fiery_shots",
+    "img": "images/items/abilities/fiery_shots.png"
+  },
+  {
+    "name": "Heavy Blocks",
+    "type": "toggle",
+    "codes": "heavy_blocks",
+    "img": "images/items/abilities/heavy_blocks.png"
+  },
+  {
+    "name": "Torches",
+    "type": "toggle",
+    "codes": "torches",
+    "img": "images/items/abilities/torches.png"
+  },
+  {
+    "name": "Dark Rooms",
+    "type": "toggle",
+    "codes": "dark_rooms",
+    "img": "images/items/abilities/dark_rooms.png"
+  },
+  {
+    "name": "Grapple",
+    "type": "toggle",
+    "codes": "grapple",
+    "img": "images/items/abilities/grapple.png"
+  },
+  {
+    "name": "Levitate",
+    "type": "toggle",
+    "codes": "levitate",
+    "img": "images/items/abilities/levitate.png"
+  },
+  {
+    "name": "Secret Vision",
+    "type": "toggle",
+    "codes": "secret_vision",
+    "img": "images/items/abilities/secret_vision.png"
+  },
+  {
+    "name": "Spore Shroud",
+    "type": "toggle",
+    "codes": "spore_shroud",
+    "img": "images/items/abilities/spore_shroud.png"
+  },
+  {
+    "name": "Basic Mount",
+    "type": "toggle",
+    "codes": "basic_mount, mount",
+    "img": "images/items/abilities/basic_mount.png"
+  },
+  {
+    "name": "Sonar Mount",
+    "type": "toggle",
+    "codes": "sonar_mount",
+    "img": "images/items/abilities/sonar_mount.png"
+  },
+  {
+    "name": "Tar Mount",
+    "type": "toggle",
+    "codes": "tar_mount",
+    "img": "images/items/abilities/tar_mount.png"
+  },
+  {
+    "name": "Charging Mount",
+    "type": "toggle",
+    "codes": "charging_mount",
+    "img": "images/items/abilities/charging_mount.png"
+  }
+]

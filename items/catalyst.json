@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Shard of Winter",
+    "type": "toggle",
+    "codes": "shard_of_winter",
+    "img": "images/items/catalyst/shard_of_winter.png"
+  },
+  {
+    "name": "Fire Stone",
+    "type": "toggle",
+    "codes": "fire_stone",
+    "img": "images/items/catalyst/fire_stone.png"
+  },
+  {
+    "name": "Ice Stone",
+    "type": "toggle",
+    "codes": "ice_stone",
+    "img": "images/items/catalyst/ice_stone.png"
+  },
+  {
+    "name": "Giant Seed",
+    "type": "toggle",
+    "codes": "giant_seed",
+    "img": "images/items/catalyst/giant_seed.png"
+  },
+  {
+    "name": "Dark Stone",
+    "type": "toggle",
+    "codes": "dark_stone",
+    "img": "images/items/catalyst/dark_stone.png"
+  },
+  {
+    "name": "Majestic Crown",
+    "type": "toggle",
+    "codes": "majestic_crown",
+    "img": "images/items/catalyst/majestic_crown.png"
+  },
+  {
+    "name": "Demonic Pact",
+    "type": "toggle",
+    "codes": "demonic_pact",
+    "img": "images/items/catalyst/demonic_pact.png"
+  },
+  {
+    "name": "Deep Stone",
+    "type": "toggle",
+    "codes": "deep_stone",
+    "img": "images/items/catalyst/deep_stone.png"
+  },
+  {
+    "name": "Primordial Branch",
+    "type": "toggle",
+    "codes": "primordial_branch",
+    "img": "images/items/catalyst/primordial_branch.png"
+  },
+  {
+    "name": "Druid Soul",
+    "type": "toggle",
+    "codes": "druid_soul",
+    "img": "images/items/catalyst/druid_soul.png"
+  }
+]

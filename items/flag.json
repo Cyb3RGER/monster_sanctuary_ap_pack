@@ -1,0 +1,408 @@
+[
+  {
+    "name": "Blue Caves Switches Unlocked",
+    "type": "toggle",
+    "codes": "blue_caves_switches_unlocked",
+    "img": "images/items/flag/blue_caves_switches_unlocked.png"
+  },
+  {
+    "name": "Blue Caves South Unlocked",
+    "type": "toggle",
+    "codes": "blue_caves_south_unlocked",
+    "img": "images/items/flag/blue_caves_south_unlocked.png"
+  },
+  {
+    "name": "Blue Caves Champion Unlocked",
+    "type": "toggle",
+    "codes": "blue_caves_champion_unlocked",
+    "img": "images/items/flag/blue_caves_champion_unlocked.png"
+  },
+  {
+    "name": "Blue Caves Switches Access",
+    "type": "toggle",
+    "codes": "blue_caves_switches_access",
+    "img": "images/items/flag/blue_caves_switches_access.png"
+  },
+  {
+    "name": "Blue Caves to Mountain Path Shortcut",
+    "type": "toggle",
+    "codes": "blue_caves_to_mountain_path_shortcut",
+    "img": "images/items/flag/blue_caves_to_mountain_path_shortcut.png"
+  },
+  {
+    "name": "Blue Caves Story Complete",
+    "type": "toggle",
+    "codes": "blue_caves_story_complete",
+    "img": "images/items/flag/blue_caves_story_complete.png"
+  },
+  {
+    "name": "Stronghold Dungeon South 3 Shortcut",
+    "type": "toggle",
+    "codes": "stronghold_dungeon_south_3_shortcut",
+    "img": "images/items/flag/stronghold_dungeon_south_3_shortcut.png"
+  },
+  {
+    "name": "Stronghold Dungeon South Unlocked",
+    "type": "toggle",
+    "codes": "stronghold_dungeon_south_unlocked",
+    "img": "images/items/flag/stronghold_dungeon_south_unlocked.png"
+  },
+  {
+    "name": "Stronghold Dungeon East Unlocked",
+    "type": "toggle",
+    "codes": "stronghold_dungeon_east_unlocked",
+    "img": "images/items/flag/stronghold_dungeon_east_unlocked.png"
+  },
+  {
+    "name": "Stronghold Dungeon to Blue Caves Shortcut",
+    "type": "toggle",
+    "codes": "stronghold_dungeon_to_blue_caves_shortcut",
+    "img": "images/items/flag/stronghold_dungeon_to_blue_caves_shortcut.png"
+  },
+  {
+    "name": "Stronghold Dungeon East 1 Shortcut",
+    "type": "toggle",
+    "codes": "stronghold_dungeon_east_1_shortcut",
+    "img": "images/items/flag/stronghold_dungeon_east_1_shortcut.png"
+  },
+  {
+    "name": "Stronghold Dungeon Library Access",
+    "type": "toggle",
+    "codes": "stronghold_dungeon_library_access",
+    "img": "images/items/flag/stronghold_dungeon_library_access.png"
+  },
+  {
+    "name": "Snowy Peaks East 4 Upper Shortcut",
+    "type": "toggle",
+    "codes": "snowy_peaks_east_4_upper_shortcut",
+    "img": "images/items/flag/snowy_peaks_east_4_upper_shortcut.png"
+  },
+  {
+    "name": "Snowy Peaks East Mountain 3 Shortcut",
+    "type": "toggle",
+    "codes": "snowy_peaks_east_mountain_3_shortcut",
+    "img": "images/items/flag/snowy_peaks_east_mountain_3_shortcut.png"
+  },
+  {
+    "name": "Snowy Peaks to Sun Palace Shortcut",
+    "type": "toggle",
+    "codes": "snowy_peaks_to_sun_palace_shortcut",
+    "img": "images/items/flag/snowy_peaks_to_sun_palace_shortcut.png"
+  },
+  {
+    "name": "Sun Palace Raise Center",
+    "type": "consumable",
+    "codes": "sun_palace_raise_center",
+    "img": "images/items/flag/sun_palace_raise_center.png",
+    "max_quantity": 3,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Sun Palace Lower Water",
+    "type": "consumable",
+    "codes": "sun_palace_lower_water",
+    "img": "images/items/flag/sun_palace_lower_water.png",
+    "max_quantity": 2,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Sun Palace East Shortcut",
+    "type": "toggle",
+    "codes": "sun_palace_east_shortcut",
+    "img": "images/items/flag/sun_palace_east_shortcut.png"
+  },
+  {
+    "name": "Sun Palace West Shortcut",
+    "type": "toggle",
+    "codes": "sun_palace_west_shortcut",
+    "img": "images/items/flag/sun_palace_west_shortcut.png"
+  },
+  {
+    "name": "Ancient Woods Center Unlocked",
+    "type": "toggle",
+    "codes": "ancient_woods_center_unlocked",
+    "img": "images/items/flag/ancient_woods_center_unlocked.png"
+  },
+  {
+    "name": "Ancient Woods North Unlocked",
+    "type": "toggle",
+    "codes": "ancient_woods_north_unlocked",
+    "img": "images/items/flag/ancient_woods_north_unlocked.png"
+  },
+  {
+    "name": "Ancient Woods East Shortcut",
+    "type": "toggle",
+    "codes": "ancient_woods_east_shortcut",
+    "img": "images/items/flag/ancient_woods_east_shortcut.png"
+  },
+  {
+    "name": "Ancient Woods to Magma Chamber Shortcut",
+    "type": "consumable",
+    "codes": "ancient_woods_to_magma_chamber_shortcut",
+    "img": "images/items/flag/ancient_woods_to_magma_chamber_shortcut.png",
+    "max_quantity": 2,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Ostanes",
+    "type": "toggle",
+    "codes": "ostanes",
+    "img": "images/items/flag/ostanes.png"
+  },
+  {
+    "name": "Ancient Woods Beach Access",
+    "type": "toggle",
+    "codes": "ancient_woods_beach_access",
+    "img": "images/items/flag/ancient_woods_beach_access.png"
+  },
+  {
+    "name": "Tree of Evolution Access",
+    "type": "toggle",
+    "codes": "tree_of_evolution_access",
+    "img": "images/items/flag/tree_of_evolution_access.png"
+  },
+  {
+    "name": "Goblin King Defeated",
+    "type": "toggle",
+    "codes": "goblin_king_defeated",
+    "img": "images/items/flag/goblin_king_defeated.png"
+  },
+  {
+    "name": "Horizon Beach Center Shortcut",
+    "type": "toggle",
+    "codes": "horizon_beach_center_shortcut",
+    "img": "images/items/flag/horizon_beach_center_shortcut.png"
+  },
+  {
+    "name": "Forgotten World to Horizon Beach Shortcut",
+    "type": "toggle",
+    "codes": "forgotten_world_to_horizon_beach_shortcut",
+    "img": "images/items/flag/forgotten_world_to_horizon_beach_shortcut.png"
+  },
+  {
+    "name": "Horizon Beach To Magma Chamber Shortcut",
+    "type": "toggle",
+    "codes": "horizon_beach_to_magma_chamber_shortcut",
+    "img": "images/items/flag/horizon_beach_to_magma_chamber_shortcut.png"
+  },
+  {
+    "name": "Rescued Leonard",
+    "type": "toggle",
+    "codes": "rescued_leonard",
+    "img": "images/items/flag/rescued_leonard.png"
+  },
+  {
+    "name": "Magma Chamber Lowered Lava",
+    "type": "toggle",
+    "codes": "magma_chamber_lowered_lava",
+    "img": "images/items/flag/magma_chamber_lowered_lava.png"
+  },
+  {
+    "name": "Magma Chamber North Shortcut",
+    "type": "toggle",
+    "codes": "magma_chamber_north_shortcut",
+    "img": "images/items/flag/magma_chamber_north_shortcut.png"
+  },
+  {
+    "name": "Magma Chamber Center Shortcut",
+    "type": "toggle",
+    "codes": "magma_chamber_center_shortcut",
+    "img": "images/items/flag/magma_chamber_center_shortcut.png"
+  },
+  {
+    "name": "Magma Chamber East Shortcut",
+    "type": "toggle",
+    "codes": "magma_chamber_east_shortcut",
+    "img": "images/items/flag/magma_chamber_east_shortcut.png"
+  },
+  {
+    "name": "Magma Chamber South Shortcut",
+    "type": "toggle",
+    "codes": "magma_chamber_south_shortcut",
+    "img": "images/items/flag/magma_chamber_south_shortcut.png"
+  },
+  {
+    "name": "Magma Chamber Alchemist Lab Unlocked",
+    "type": "toggle",
+    "codes": "magma_chamber_alchemist_lab_unlocked",
+    "img": "images/items/flag/magma_chamber_alchemist_lab_unlocked.png"
+  },
+  {
+    "name": "Magma Chamber Mozzie Room Unlocked",
+    "type": "toggle",
+    "codes": "magma_chamber_mozzie_room_unlocked",
+    "img": "images/items/flag/magma_chamber_mozzie_room_unlocked.png"
+  },
+  {
+    "name": "Forgotten World to Magma Chamber Shortcut",
+    "type": "toggle",
+    "codes": "forgotten_world_to_magma_chamber_shortcut",
+    "img": "images/items/flag/forgotten_world_to_magma_chamber_shortcut.png"
+  },
+  {
+    "name": "Underworld East Catacomb 7 Access",
+    "type": "toggle",
+    "codes": "underworld_east_catacomb_7_access",
+    "img": "images/items/flag/underworld_east_catacomb_7_access.png"
+  },
+  {
+    "name": "Underworld East Catacomb 8 Shortcut",
+    "type": "toggle",
+    "codes": "underworld_east_catacomb_8_shortcut",
+    "img": "images/items/flag/underworld_east_catacomb_8_shortcut.png"
+  },
+  {
+    "name": "Underworld East Catacomb 6 Shortcut",
+    "type": "toggle",
+    "codes": "underworld_east_catacomb_6_shortcut",
+    "img": "images/items/flag/underworld_east_catacomb_6_shortcut.png"
+  },
+  {
+    "name": "Underworld East Catacomb Unlocked",
+    "type": "toggle",
+    "codes": "underworld_east_catacomb_unlocked",
+    "img": "images/items/flag/underworld_east_catacomb_unlocked.png"
+  },
+  {
+    "name": "Underworld East Catacomb Pillar Control",
+    "type": "toggle",
+    "codes": "underworld_east_catacomb_pillar_control",
+    "img": "images/items/flag/underworld_east_catacomb_pillar_control.png"
+  },
+  {
+    "name": "Underworld West Catacomb Center Entrance",
+    "type": "toggle",
+    "codes": "underworld_west_catacomb_center_entrance",
+    "img": "images/items/flag/underworld_west_catacomb_center_entrance.png"
+  },
+  {
+    "name": "Underworld West Catacomb Roof Access",
+    "type": "toggle",
+    "codes": "underworld_west_catacomb_roof_access",
+    "img": "images/items/flag/underworld_west_catacomb_roof_access.png"
+  },
+  {
+    "name": "Underworld West Catacomb 4 Access",
+    "type": "toggle",
+    "codes": "underworld_west_catacomb_4_access",
+    "img": "images/items/flag/underworld_west_catacomb_4_access.png"
+  },
+  {
+    "name": "Underworld West Catacomb 4 Shortcut",
+    "type": "toggle",
+    "codes": "underworld_west_catacomb_4_shortcut",
+    "img": "images/items/flag/underworld_west_catacomb_4_shortcut.png"
+  },
+  {
+    "name": "Underworld West Catacomb 7 Shortcut",
+    "type": "toggle",
+    "codes": "underworld_west_catacomb_7_shortcut",
+    "img": "images/items/flag/underworld_west_catacomb_7_shortcut.png"
+  },
+  {
+    "name": "Underworld West Catacomb 9 Interior Access",
+    "type": "toggle",
+    "codes": "underworld_west_catacomb_9_interior_access",
+    "img": "images/items/flag/underworld_west_catacomb_9_interior_access.png"
+  },
+  {
+    "name": "Underworld to Sun Palace Shortcut",
+    "type": "toggle",
+    "codes": "underworld_to_sun_palace_shortcut",
+    "img": "images/items/flag/underworld_to_sun_palace_shortcut.png"
+  },
+  {
+    "name": "Mystical Workshop North Shortcut",
+    "type": "toggle",
+    "codes": "mystical_workshop_north_shortcut",
+    "img": "images/items/flag/mystical_workshop_north_shortcut.png"
+  },
+  {
+    "name": "Mystical Workshop North Unlocked",
+    "type": "toggle",
+    "codes": "mystical_workshop_north_unlocked",
+    "img": "images/items/flag/mystical_workshop_north_unlocked.png"
+  },
+  {
+    "name": "Blob Key Accessible",
+    "type": "toggle",
+    "codes": "blob_key_accessible",
+    "img": "images/items/flag/blob_key_accessible.png"
+  },
+  {
+    "name": "Blob Key Used",
+    "type": "consumable",
+    "codes": "blob_key_used",
+    "img": "images/items/flag/blob_key_used.png",
+    "max_quantity": 3,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Blob Burg Access",
+    "type": "consumable",
+    "codes": "blob_burg_access",
+    "img": "images/items/flag/blob_burg_access.png",
+    "max_quantity": 6,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Ostanes Battle",
+    "type": "toggle",
+    "codes": "ostanes_battle",
+    "img": "images/items/flag/ostanes_battle.png"
+  },
+  {
+    "name": "Forgotten World Jungle Shortcut",
+    "type": "toggle",
+    "codes": "forgotten_world_jungle_shortcut",
+    "img": "images/items/flag/forgotten_world_jungle_shortcut.png"
+  },
+  {
+    "name": "Forgotten World Caves Shortcut",
+    "type": "toggle",
+    "codes": "forgotten_world_caves_shortcut",
+    "img": "images/items/flag/forgotten_world_caves_shortcut.png"
+  },
+  {
+    "name": "Forgotten World Waters Shortcut",
+    "type": "toggle",
+    "codes": "forgotten_world_waters_shortcut",
+    "img": "images/items/flag/forgotten_world_waters_shortcut.png"
+  },
+  {
+    "name": "Forgotten World Dracomer Defeated",
+    "type": "toggle",
+    "codes": "forgotten_world_dracomer_defeated",
+    "img": "images/items/flag/forgotten_world_dracomer_defeated.png"
+  },
+  {
+    "name": "Abandoned Tower Access",
+    "type": "toggle",
+    "codes": "abandoned_tower_access",
+    "img": "images/items/flag/abandoned_tower_access.png"
+  },
+  {
+    "name": "Abandoned Tower South Shortcut",
+    "type": "toggle",
+    "codes": "abandoned_tower_south_shortcut",
+    "img": "images/items/flag/abandoned_tower_south_shortcut.png"
+  },
+  {
+    "name": "Abandoned Tower Center Shortcut",
+    "type": "toggle",
+    "codes": "abandoned_tower_center_shortcut",
+    "img": "images/items/flag/abandoned_tower_center_shortcut.png"
+  },
+  {
+    "name": "Mad Lord Defeated",
+    "type": "toggle",
+    "codes": "mad_lord_defeated",
+    "img": "images/items/flag/mad_lord_defeated.png"
+  },
+  {
+    "name": "Victory",
+    "type": "toggle",
+    "codes": "victory",
+    "img": "images/items/flag/victory.png"
+  }
+]

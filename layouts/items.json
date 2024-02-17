@@ -1,0 +1,106 @@
+{
+    "abilities_grid": {
+        "type": "itemgrid",
+        "item_margin": "3, 3",
+        "item_size": "48, 48",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "fire_orbs",
+                "water_orbs",
+                "lightning_orbs",
+                "earth_orbs",
+                "ice_orbs",
+                "distant_ice_orbs",
+                "fiery_shots",
+                "summon_rock",
+                "summon_mushroom",
+                "summon_big_rock",
+            ],
+            [
+                "breakable_walls",
+                "impassible_vines",
+                "diamond_blocks",
+                "magic_walls",
+                "magic_vines",
+                "heavy_blocks",
+                "levitate",
+                "grapple",
+                "secret_vision",
+            ],
+            [
+                "narrow_corridors",
+                "flying",
+                "improved_flying",
+                "basic_swimming",
+                "improved_swimming",
+                "dual_mobility",
+                "torches",
+                "dark_rooms",
+            ],
+            [
+                "basic_mount",
+                "sonar_mount",
+                "lofty_mount",
+                "tar_mount",
+                "charging_mount"
+            ]
+        ]
+    },
+    "key_items_grid": {
+        "type": "itemgrid",
+        "item_margin": "3, 3",
+        "item_size": "48, 48",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "mountain_path_key",
+                "blue_cave_key",
+                "stronghold_dungeon_key",
+                "ancient_woods_key",
+            ],
+            [
+                "magma_chamber_key",
+                "mystical_workshop_key",
+                "underworld_key",
+                "key_of_power",
+                "blob_key",
+            ],
+            [
+                "double_jump_boots",
+                "warm_underwear",
+                "sanctuary_token",
+                "runestone_shard"
+            ],
+            [
+                "celestial_feather",
+                "rare_seashell",
+                "memorial_ring",
+                "ahrimaaya",
+                "mozzie"
+            ],
+        ]
+    },
+    "items_tracker": {
+        "type": "array",
+        "orientation": "horizontal",
+        "content": [
+            {
+                "type": "group",
+                "header": "Abilities",
+                "content": {
+                    "type": "layout",
+                    "key": "abilities_grid"
+                }
+            },
+            {
+                "type": "group",
+                "header": "Key Items",
+                "content": {
+                    "type": "layout",
+                    "key": "key_items_grid"
+                }
+            }
+        ]
+    }
+}

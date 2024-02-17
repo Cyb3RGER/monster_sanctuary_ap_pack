@@ -1,0 +1,12 @@
+todo.*
+.~lock.*
+*.xcf
+__pycache__/
+.idea/
+
+gen/monster_sanctuary
+gen/data/*
+!gen/data/data.md
+monster_sanctuary.zip
+monster_sanctuary.apworld
+**.webp

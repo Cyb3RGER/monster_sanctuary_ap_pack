@@ -1,0 +1,2 @@
+PyPopTracker @ https://github.com/Cyb3RGER/PyPopTracker/releases/download/v0.0.1/pypoptracker-0.0.1.tar.gz
+Pillow~=10.1.0

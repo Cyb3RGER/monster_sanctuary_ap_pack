@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Champion Defeated",
+    "type": "consumable",
+    "codes": "champion_defeated",
+    "img": "images/items/rank/champion_defeated.png",
+    "max_quantity": 27,
+    "overlay_font_size": 24
+  }
+]

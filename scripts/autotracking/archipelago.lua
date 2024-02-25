@@ -16,8 +16,8 @@ update_access()
 
 function GetDataStorageKeys()
     local keys = {}
-    for k,_ in pairs(DATASTORAGE_MAPPING) do
-        table.insert(keys, "Slot:"..Archipelago.PlayerNumber..":"..k)
+    for k, _ in pairs(DATASTORAGE_MAPPING) do
+        table.insert(keys, "Slot:" .. Archipelago.PlayerNumber .. ":" .. k)
     end
     return keys
 end
@@ -94,7 +94,7 @@ function resetItem(code, type)
 end
 
 -- called when an item gets collected
-function onItem(index, item_id, item_name, player_number)    
+function onItem(index, item_id, item_name, player_number)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onItem: %s, %s, %s, %s, %s", index, item_id, item_name, player_number, CUR_INDEX))
     end
@@ -138,7 +138,7 @@ function onItem(index, item_id, item_name, player_number)
         elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
             print(string.format("onItem: could not find object for code %s", code))
         end
-    end    
+    end
     -- track local items via snes interface
     if is_local then
         if LOCAL_ITEMS[item_name] then
@@ -157,11 +157,11 @@ function onItem(index, item_id, item_name, player_number)
         print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
         print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
     end
-    update_access()    
+    update_access()
 end
 
 -- called when a location gets cleared
-function onLocation(location_id, location_name)    
+function onLocation(location_id, location_name)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onLocation: %s, %s", location_id, location_name))
     end
@@ -186,7 +186,7 @@ function onLocation(location_id, location_name)
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onLocation: could not find object for code %s", v[1]))
     end
-    update_access()    
+    update_access()
 end
 
 function onRetrieved(key, value)
@@ -230,7 +230,6 @@ function updateFromDataStorage(key, value)
         end
     end
 end
-
 
 -- add AP callbacks
 -- un-/comment as needed

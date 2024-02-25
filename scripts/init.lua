@@ -1,4 +1,6 @@
-ENABLE_DEBUG_LOG = true
+DEBUG_MODE = false
+ENABLE_DEBUG_LOG = true or DEBUG_MODE
+DEBUG = true
 
 local variant = Tracker.ActiveVariantUID
 IS_ITEMS_ONLY = variant:find("itemsonly")
@@ -19,7 +21,7 @@ require("scripts/logic/logic")
 Tracker:AddItems("items/abilities.json")
 Tracker:AddItems("items/catalyst.json")
 Tracker:AddItems("items/crafting_material.json")
---Tracker:AddItems("items/egg.json")
+Tracker:AddItems("items/egg.json")
 Tracker:AddItems("items/flag.json")
 Tracker:AddItems("items/key_item.json")
 --Tracker:AddItems("items/monsters.json")
@@ -30,7 +32,11 @@ if not IS_ITEMS_ONLY then
     -- Maps
     Tracker:AddMaps("maps/maps.json")
     -- Locations
-    Tracker:AddLocations("locations/locations.json")
+    if DEBUG_MODE then
+        Tracker:AddLocations("locations/debug.json")
+    else
+        Tracker:AddLocations("locations/locations.json")
+    end
 end
 
 -- Layout
@@ -40,5 +46,7 @@ Tracker:AddLayouts("layouts/broadcast.json")
 
 -- AutoTracking for Poptracker
 if PopVersion and PopVersion >= "0.18.0" then
-    ScriptHost:LoadScript("scripts/autotracking.lua")
+    require("scripts/autotracking")
+    --ToDo: remove this as soon as all items are tracked via AP
+    require("scripts/watches")
 end

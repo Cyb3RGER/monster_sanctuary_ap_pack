@@ -15,7 +15,7 @@
                 "fiery_shots",
                 "summon_rock",
                 "summon_mushroom",
-                "summon_big_rock",
+                "summon_big_rock"
             ],
             [
                 "breakable_walls",
@@ -26,7 +26,7 @@
                 "heavy_blocks",
                 "levitate",
                 "grapple",
-                "secret_vision",
+                "secret_vision"
             ],
             [
                 "narrow_corridors",
@@ -36,7 +36,7 @@
                 "improved_swimming",
                 "dual_mobility",
                 "torches",
-                "dark_rooms",
+                "dark_rooms"
             ],
             [
                 "basic_mount",
@@ -58,27 +58,30 @@
                 "blue_cave_key",
                 "stronghold_dungeon_key",
                 "ancient_woods_key",
+                "magma_chamber_key"
             ],
             [
-                "magma_chamber_key",
                 "mystical_workshop_key",
                 "underworld_key",
                 "key_of_power",
-                "blob_key",
+                "blob_key"
             ],
             [
                 "double_jump_boots",
                 "warm_underwear",
                 "sanctuary_token",
-                "runestone_shard"
+                "runestone_shard",
+                "dodo_egg",
+                "raw_hide"
             ],
             [
                 "celestial_feather",
                 "rare_seashell",
                 "memorial_ring",
                 "ahrimaaya",
-                "mozzie"
-            ],
+                "mozzie",
+                "champion_defeated"
+            ]
         ]
     },
     "items_tracker": {

@@ -42,6 +42,7 @@ abilities = [
 
 
 def gen_items():
+    datastorage_mapping = {}
     flag_counts = count_flags()
     with open('data/items.json', mode='r') as f:
         json_data = json.load(f)
@@ -51,21 +52,23 @@ def gen_items():
         item_type = type_data["type"]
         items = []
         for item_data in type_data["items"]:
-            is_ability = False
+            is_ability = item_type == "Ability"
+            is_egg = item_type == "Egg"
             classification = item_data.get("classification")
-            if classification is None or classification == "filler":
-                item_id = item_id + 1
-                continue
             name = item_data["name"]
-            if item_type == "Flag" and name.startswith("Ability -"):
-                is_ability = True
+            if is_ability:
                 name = name[len("Ability - "):]
             main_code = format_code(name)
+            if classification is None or classification == "filler" or (
+                    is_egg and main_code != 'dodo_egg') or is_ability:
+                item_id = item_id + 1
+                continue
             codes = [main_code]
             groups = item_data.get('groups') or []
-            for code in groups:
-                code = format_code(code)
-                codes.append(code)
+            if not is_egg:
+                for code in groups:
+                    code = format_code(code)
+                    codes.append(code)
             count = item_data.get('count') or 1
             if item_type == "Flag" or item_type == "Rank":
                 count = flag_counts[name] if name in flag_counts else 1
@@ -90,7 +93,7 @@ def gen_items():
                 # abilities.append(item)
             else:
                 items.append(item)
-            item_mapping[item_id] = ([main_code], item.type)
+                item_mapping[item_id] = ([main_code], item.type)
             item_id = item_id + 1
         if len(items) > 0:
             export_items(items, out_path=f'../items/{format_code(item_type)}.json')
@@ -122,10 +125,22 @@ def gen_items():
         main_code = ability.lower().replace(' ', '_')
         img = f'images/items/abilities/{main_code}.png'
         codes = [main_code]
-        if main_code.startswith('basic_'):
-            codes.append(main_code[6:])
+        # if main_code.startswith('basic_'):
+        #     codes.append(main_code[6:])
+        if main_code in ["flying", "improved_flying", "dual_mobility", "lofty_mount"]:
+            codes.append("distant_ledges")
+        if main_code in ["basic_swimming", "improved_swimming", "dual_mobility"]:
+            codes.append("swimming")
+        if "summon" in main_code:
+            codes.append('ground_switches')
+        if "mount" in main_code:
+            codes.append("mount")
+        if main_code in ["tar_mount", "dual_mobility"]:
+            codes.append("tar")
+
         item = PopTrackerToggleItem(ability, img=img, codes=', '.join(codes))
         items.append(item)
+        datastorage_mapping[ability] = [[main_code], "toggle"]
     export_items(items, out_path=f'../items/abilities.json')
     print(f'Exported abilities items!')
     # codes = [[]]
@@ -139,8 +154,23 @@ def gen_items():
     #         codes.append([])
     # print(json.dumps(codes))
     export_item_mapping(item_mapping)
+    export_datastorage_mapping(datastorage_mapping)
     print(f'Exported item mappings!')
 
+def export_datastorage_mapping(datastorage_mapping: dict[str, list[str]]):
+    lines = ['DATASTORAGE_MAPPING = {']
+    for k, v in datastorage_mapping.items():
+        line = f'\t["{k}"] = {{{{'
+        for i in v[0]:
+            line += f'"{i}"'
+            if i != v[0][len(v[0]) - 1]:
+                line += ', '
+        line += f'}}, "{v[1]}"}},'
+        lines.append(line)
+    lines.append('}')
+
+    with open('../scripts/autotracking/datastorage_mapping.lua', mode='w') as f:
+        f.write('\n'.join(lines))
 
 def export_item_mapping(ids_for_items: dict[int, (list[str], str)]):
     lines = ['ITEM_MAPPING = {']

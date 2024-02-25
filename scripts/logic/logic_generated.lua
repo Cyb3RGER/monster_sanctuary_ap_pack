@@ -810,1028 +810,448 @@ function light_crush()
   return has('light_crush')
 end
 
-function breakable_walls()
-  return has('breakable_walls')
+function spectral_wolf()
+  return has('spectral_wolf')
 end
 
-function impassible_vines()
-  return has('impassible_vines')
+function spectral_toad()
+  return has('spectral_toad')
 end
 
-function tackle()
-  return has('tackle')
+function spectral_eagle()
+  return has('spectral_eagle')
 end
 
-function breakable_walls()
-  return has('breakable_walls')
+function spectral_lion()
+  return has('spectral_lion')
 end
 
-function heavy_blocks()
-  return has('heavy_blocks')
+function blob()
+  return has('blob')
 end
 
-function flying()
-  return has('flying')
+function magmapillar()
+  return has('magmapillar')
 end
 
-function distant_ledges()
-  return has('distant_ledges')
+function rocky()
+  return has('rocky')
 end
 
-function breakable_walls()
-  return has('breakable_walls')
+function vaero()
+  return has('vaero')
 end
 
-function impassible_vines()
-  return has('impassible_vines')
+function catzerker()
+  return has('catzerker')
 end
 
-function bubble_burst()
-  return has('bubble_burst')
+function yowie()
+  return has('yowie')
 end
 
-function water_orbs()
-  return has('water_orbs')
+function steam_golem()
+  return has('steam_golem')
 end
 
-function ignite()
-  return has('ignite')
+function monk()
+  return has('monk')
 end
 
-function fire_orbs()
-  return has('fire_orbs')
+function grummy()
+  return has('grummy')
 end
 
-function impassible_vines()
-  return has('impassible_vines')
+function tengu()
+  return has('tengu')
 end
 
-function torches()
-  return has('torches')
+function fungi()
+  return has('fungi')
 end
 
-function summon_rock()
-  return has('summon_rock')
+function frosty()
+  return has('frosty')
 end
 
-function ground_switches()
-  return has('ground_switches')
+function minitaur()
+  return has('minitaur')
 end
 
-function flying()
-  return has('flying')
+function specter()
+  return has('specter')
 end
 
-function distant_ledges()
-  return has('distant_ledges')
+function crackle_knight()
+  return has('crackle_knight')
 end
 
-function slash()
-  return has('slash')
+function g_rulu()
+  return has('g_rulu')
 end
 
-function breakable_walls()
-  return has('breakable_walls')
+function mad_eye()
+  return has('mad_eye')
 end
 
-function impassible_vines()
-  return has('impassible_vines')
+function nightwing()
+  return has('nightwing')
 end
 
-function tackle()
-  return has('tackle')
+function toxiquus()
+  return has('toxiquus')
 end
 
-function breakable_walls()
-  return has('breakable_walls')
+function beetloid()
+  return has('beetloid')
 end
 
-function heavy_blocks()
-  return has('heavy_blocks')
+function druid_oak()
+  return has('druid_oak')
 end
 
-function tackle()
-  return has('tackle')
+function magmamoth()
+  return has('magmamoth')
 end
 
-function breakable_walls()
-  return has('breakable_walls')
+function molebear()
+  return has('molebear')
 end
 
-function heavy_blocks()
-  return has('heavy_blocks')
+function glowfly()
+  return has('glowfly')
 end
 
-function heavy_punch()
-  return has('heavy_punch')
+function goblin_brute()
+  return has('goblin_brute')
 end
 
-function breakable_walls()
-  return has('breakable_walls')
+function goblin_hood()
+  return has('goblin_hood')
 end
 
-function heavy_blocks()
-  return has('heavy_blocks')
+function goblin_warlock()
+  return has('goblin_warlock')
 end
 
-function bubble_burst()
-  return has('bubble_burst')
+function goblin_king()
+  return has('goblin_king')
 end
 
-function water_orbs()
-  return has('water_orbs')
+function raduga()
+  return has('raduga')
 end
 
-function ignite()
-  return has('ignite')
+function ice_blob()
+  return has('ice_blob')
 end
 
-function fire_orbs()
-  return has('fire_orbs')
+function caraglow()
+  return has('caraglow')
 end
 
-function impassible_vines()
-  return has('impassible_vines')
+function aurumtail()
+  return has('aurumtail')
 end
 
-function torches()
-  return has('torches')
+function megataur()
+  return has('megataur')
 end
 
-function summon_mushroom()
-  return has('summon_mushroom')
+function mogwai()
+  return has('mogwai')
 end
 
-function ground_switches()
-  return has('ground_switches')
+function crystal_snail()
+  return has('crystal_snail')
 end
 
-function flying()
-  return has('flying')
+function akhlut()
+  return has('akhlut')
 end
 
-function distant_ledges()
-  return has('distant_ledges')
+function blade_widow()
+  return has('blade_widow')
 end
 
-function slash()
-  return has('slash')
+function ninki()
+  return has('ninki')
 end
 
-function breakable_walls()
-  return has('breakable_walls')
+function ninki_nanka()
+  return has('ninki_nanka')
 end
 
-function impassible_vines()
-  return has('impassible_vines')
+function vasuki()
+  return has('vasuki')
 end
 
-function ignite()
-  return has('ignite')
+function kame()
+  return has('kame')
 end
 
-function fire_orbs()
-  return has('fire_orbs')
+function sycophantom()
+  return has('sycophantom')
 end
 
-function impassible_vines()
-  return has('impassible_vines')
+function imori()
+  return has('imori')
 end
 
-function torches()
-  return has('torches')
+function qilin()
+  return has('qilin')
 end
 
-function lightning_bolt()
-  return has('lightning_bolt')
+function sizzle_knight()
+  return has('sizzle_knight')
 end
 
-function lightning_orbs()
-  return has('lightning_orbs')
+function koi()
+  return has('koi')
 end
 
-function torches()
-  return has('torches')
+function tanuki()
+  return has('tanuki')
 end
 
-function bubble_burst()
-  return has('bubble_burst')
+function kanko()
+  return has('kanko')
 end
 
-function water_orbs()
-  return has('water_orbs')
+function dodo()
+  return has('dodo')
 end
 
-function flying()
-  return has('flying')
+function kongamato()
+  return has('kongamato')
 end
 
-function distant_ledges()
-  return has('distant_ledges')
+function ucan()
+  return has('ucan')
 end
 
-function sonar()
-  return has('sonar')
+function brawlish()
+  return has('brawlish')
 end
 
-function dark_rooms()
-  return has('dark_rooms')
+function thornish()
+  return has('thornish')
 end
 
-function slime_shot()
-  return has('slime_shot')
+function nautilid()
+  return has('nautilid')
 end
 
-function earth_orbs()
-  return has('earth_orbs')
+function silvaero()
+  return has('silvaero')
 end
 
-function lightning_bolt()
-  return has('lightning_bolt')
+function elderjel()
+  return has('elderjel')
 end
 
-function lightning_orbs()
-  return has('lightning_orbs')
+function manticorb()
+  return has('manticorb')
 end
 
-function torches()
-  return has('torches')
+function goblin_miner()
+  return has('goblin_miner')
 end
 
-function summon_rock()
-  return has('summon_rock')
+function salahammer()
+  return has('salahammer')
 end
 
-function ground_switches()
-  return has('ground_switches')
+function lava_blob()
+  return has('lava_blob')
 end
 
-function ignite()
-  return has('ignite')
+function glowdra()
+  return has('glowdra')
 end
 
-function fire_orbs()
-  return has('fire_orbs')
+function draconov()
+  return has('draconov')
 end
 
-function impassible_vines()
-  return has('impassible_vines')
+function dracogran()
+  return has('dracogran')
 end
 
-function torches()
-  return has('torches')
+function asura()
+  return has('asura')
 end
 
-function breakable_walls()
-  return has('breakable_walls')
+function skorch()
+  return has('skorch')
 end
 
-function impassible_vines()
-  return has('impassible_vines')
+function stolby()
+  return has('stolby')
 end
 
-function light()
-  return has('light')
+function ornithopter()
+  return has('ornithopter')
 end
 
-function dark_rooms()
-  return has('dark_rooms')
+function polterofen()
+  return has('polterofen')
 end
 
-function toxic_slam()
-  return has('toxic_slam')
+function oculus()
+  return has('oculus')
 end
 
-function breakable_walls()
-  return has('breakable_walls')
+function mimic()
+  return has('mimic')
 end
 
-function earth_orbs()
-  return has('earth_orbs')
+function goblin_pilot()
+  return has('goblin_pilot')
 end
 
-function fiery_shots()
-  return has('fiery_shots')
+function shockhopper()
+  return has('shockhopper')
 end
 
-function fire_orbs()
-  return has('fire_orbs')
+function targoat()
+  return has('targoat')
 end
 
-function impassible_vines()
-  return has('impassible_vines')
+function dracozul()
+  return has('dracozul')
 end
 
-function torches()
-  return has('torches')
+function troll()
+  return has('troll')
 end
 
-function lightning_bolt()
-  return has('lightning_bolt')
+function brutus()
+  return has('brutus')
 end
 
-function lightning_orbs()
-  return has('lightning_orbs')
+function mega_rock()
+  return has('mega_rock')
 end
 
-function torches()
-  return has('torches')
+function argiope()
+  return has('argiope')
 end
 
-function jewel_blast()
-  return has('jewel_blast')
+function arachlich()
+  return has('arachlich')
 end
 
-function earth_orbs()
-  return has('earth_orbs')
+function moccus()
+  return has('moccus')
 end
 
-function flying()
-  return has('flying')
+function promethean()
+  return has('promethean')
 end
 
-function distant_ledges()
-  return has('distant_ledges')
+function draconoir()
+  return has('draconoir')
 end
 
-function freeze()
-  return has('freeze')
+function spinner()
+  return has('spinner')
 end
 
-function ice_orbs()
-  return has('ice_orbs')
+function plague_egg()
+  return has('plague_egg')
 end
 
-function light()
-  return has('light')
+function sutsune()
+  return has('sutsune')
 end
 
-function dark_rooms()
-  return has('dark_rooms')
+function darnation()
+  return has('darnation')
 end
 
-function mount()
-  return has('mount')
+function thanatos()
+  return has('thanatos')
 end
 
-function slash()
-  return has('slash')
+function rainbow_blob()
+  return has('rainbow_blob')
 end
 
-function breakable_walls()
-  return has('breakable_walls')
+function changeling()
+  return has('changeling')
 end
 
-function impassible_vines()
-  return has('impassible_vines')
+function king_blob()
+  return has('king_blob')
 end
 
-function snowball_toss()
-  return has('snowball_toss')
+function worm()
+  return has('worm')
 end
 
-function ice_orbs()
-  return has('ice_orbs')
+function vodinoy()
+  return has('vodinoy')
 end
 
-function distant_ice_orbs()
-  return has('distant_ice_orbs')
+function aazerach()
+  return has('aazerach')
 end
 
-function jewel_blast()
-  return has('jewel_blast')
+function diavola()
+  return has('diavola')
 end
 
-function earth_orbs()
-  return has('earth_orbs')
+function gryphonix()
+  return has('gryphonix')
 end
 
-function sonar_mount()
-  return has('sonar_mount')
+function vertraag()
+  return has('vertraag')
 end
 
-function dark_rooms()
-  return has('dark_rooms')
+function mad_lord()
+  return has('mad_lord')
 end
 
-function slash()
-  return has('slash')
+function ascendant()
+  return has('ascendant')
 end
 
-function breakable_walls()
-  return has('breakable_walls')
+function fumagus()
+  return has('fumagus')
 end
 
-function impassible_vines()
-  return has('impassible_vines')
+function rampede()
+  return has('rampede')
 end
 
-function slime_shot()
-  return has('slime_shot')
+function rathops()
+  return has('rathops')
 end
 
-function earth_orbs()
-  return has('earth_orbs')
+function krakaturtle()
+  return has('krakaturtle')
 end
 
-function slime_shot()
-  return has('slime_shot')
+function tar_blob()
+  return has('tar_blob')
 end
 
-function earth_orbs()
-  return has('earth_orbs')
+function amberlgna()
+  return has('amberlgna')
 end
 
-function tackle()
-  return has('tackle')
+function dracomer()
+  return has('dracomer')
 end
 
-function breakable_walls()
-  return has('breakable_walls')
+function terradrile()
+  return has('terradrile')
 end
 
-function heavy_blocks()
-  return has('heavy_blocks')
-end
-
-function summon_rock()
-  return has('summon_rock')
-end
-
-function ground_switches()
-  return has('ground_switches')
-end
-
-function ghost_form()
-  return has('ghost_form')
-end
-
-function intangibility()
-  return has('intangibility')
-end
-
-function ignite()
-  return has('ignite')
-end
-
-function fire_orbs()
-  return has('fire_orbs')
-end
-
-function impassible_vines()
-  return has('impassible_vines')
-end
-
-function torches()
-  return has('torches')
-end
-
-function mount()
-  return has('mount')
-end
-
-function lightning_bolt()
-  return has('lightning_bolt')
-end
-
-function lightning_orbs()
-  return has('lightning_orbs')
-end
-
-function torches()
-  return has('torches')
-end
-
-function swimming()
-  return has('swimming')
-end
-
-function summon_mushroom()
-  return has('summon_mushroom')
-end
-
-function ground_switches()
-  return has('ground_switches')
-end
-
-function ghost_form()
-  return has('ghost_form')
-end
-
-function intangibility()
-  return has('intangibility')
-end
-
-function mount()
-  return has('mount')
-end
-
-function improved_flying()
-  return has('improved_flying')
-end
-
-function distant_ledges()
-  return has('distant_ledges')
-end
-
-function slash()
-  return has('slash')
-end
-
-function breakable_walls()
-  return has('breakable_walls')
-end
-
-function impassible_vines()
-  return has('impassible_vines')
-end
-
-function tackle()
-  return has('tackle')
-end
-
-function breakable_walls()
-  return has('breakable_walls')
-end
-
-function heavy_blocks()
-  return has('heavy_blocks')
-end
-
-function improved_swimming()
-  return has('improved_swimming')
-end
-
-function improved_swimming()
-  return has('improved_swimming')
-end
-
-function flying()
-  return has('flying')
-end
-
-function distant_ledges()
-  return has('distant_ledges')
-end
-
-function improved_swimming()
-  return has('improved_swimming')
-end
-
-function light()
-  return has('light')
-end
-
-function dark_rooms()
-  return has('dark_rooms')
-end
-
-function light()
-  return has('light')
-end
-
-function crush()
-  return has('crush')
-end
-
-function dark_rooms()
-  return has('dark_rooms')
-end
-
-function diamond_blocks()
-  return has('diamond_blocks')
-end
-
-function breakable_walls()
-  return has('breakable_walls')
-end
-
-function crush()
-  return has('crush')
-end
-
-function diamond_blocks()
-  return has('diamond_blocks')
-end
-
-function breakable_walls()
-  return has('breakable_walls')
-end
-
-function ignite()
-  return has('ignite')
-end
-
-function fire_orbs()
-  return has('fire_orbs')
-end
-
-function impassible_vines()
-  return has('impassible_vines')
-end
-
-function torches()
-  return has('torches')
-end
-
-function light()
-  return has('light')
-end
-
-function dark_rooms()
-  return has('dark_rooms')
-end
-
-function flying()
-  return has('flying')
-end
-
-function distant_ledges()
-  return has('distant_ledges')
-end
-
-function flying()
-  return has('flying')
-end
-
-function distant_ledges()
-  return has('distant_ledges')
-end
-
-function crush()
-  return has('crush')
-end
-
-function diamond_blocks()
-  return has('diamond_blocks')
-end
-
-function breakable_walls()
-  return has('breakable_walls')
-end
-
-function ignite()
-  return has('ignite')
-end
-
-function fire_orbs()
-  return has('fire_orbs')
-end
-
-function impassible_vines()
-  return has('impassible_vines')
-end
-
-function torches()
-  return has('torches')
-end
-
-function ghost_form()
-  return has('ghost_form')
-end
-
-function intangibility()
-  return has('intangibility')
-end
-
-function improved_flying()
-  return has('improved_flying')
-end
-
-function distant_ledges()
-  return has('distant_ledges')
-end
-
-function fiery_shots()
-  return has('fiery_shots')
-end
-
-function fire_orbs()
-  return has('fire_orbs')
-end
-
-function impassible_vines()
-  return has('impassible_vines')
-end
-
-function torches()
-  return has('torches')
-end
-
-function grapple()
-  return has('grapple')
-end
-
-function fiery_shots()
-  return has('fiery_shots')
-end
-
-function fire_orbs()
-  return has('fire_orbs')
-end
-
-function impassible_vines()
-  return has('impassible_vines')
-end
-
-function torches()
-  return has('torches')
-end
-
-function crush()
-  return has('crush')
-end
-
-function diamond_blocks()
-  return has('diamond_blocks')
-end
-
-function breakable_walls()
-  return has('breakable_walls')
-end
-
-function shock_freeze()
-  return has('shock_freeze')
-end
-
-function ice_orbs()
-  return has('ice_orbs')
-end
-
-function lightning_orbs()
-  return has('lightning_orbs')
-end
-
-function distant_ice_orbs()
-  return has('distant_ice_orbs')
-end
-
-function tackle()
-  return has('tackle')
-end
-
-function breakable_walls()
-  return has('breakable_walls')
-end
-
-function heavy_blocks()
-  return has('heavy_blocks')
-end
-
-function flying()
-  return has('flying')
-end
-
-function distant_ledges()
-  return has('distant_ledges')
-end
-
-function corrosive_jabs()
-  return has('corrosive_jabs')
-end
-
-function water_orbs()
-  return has('water_orbs')
-end
-
-function breakable_walls()
-  return has('breakable_walls')
-end
-
-function summon_big_rock()
-  return has('summon_big_rock')
-end
-
-function ground_switches()
-  return has('ground_switches')
-end
-
-function summon_rock()
-  return has('summon_rock')
-end
-
-function ground_switches()
-  return has('ground_switches')
-end
-
-function grapple()
-  return has('grapple')
-end
-
-function grapple()
-  return has('grapple')
-end
-
-function mount()
-  return has('mount')
-end
-
-function summon_big_rock()
-  return has('summon_big_rock')
-end
-
-function ground_switches()
-  return has('ground_switches')
-end
-
-function flying()
-  return has('flying')
-end
-
-function distant_ledges()
-  return has('distant_ledges')
-end
-
-function toxic_freeze()
-  return has('toxic_freeze')
-end
-
-function earth_orbs()
-  return has('earth_orbs')
-end
-
-function ice_orbs()
-  return has('ice_orbs')
-end
-
-function distant_ice_orbs()
-  return has('distant_ice_orbs')
-end
-
-function ignite()
-  return has('ignite')
-end
-
-function fire_orbs()
-  return has('fire_orbs')
-end
-
-function impassible_vines()
-  return has('impassible_vines')
-end
-
-function torches()
-  return has('torches')
-end
-
-function secret_vision()
-  return has('secret_vision')
-end
-
-function invisible_platforms()
-  return has('invisible_platforms')
-end
-
-function crush()
-  return has('crush')
-end
-
-function diamond_blocks()
-  return has('diamond_blocks')
-end
-
-function breakable_walls()
-  return has('breakable_walls')
-end
-
-function secret_vision()
-  return has('secret_vision')
-end
-
-function invisible_platforms()
-  return has('invisible_platforms')
-end
-
-function blob_form()
-  return has('blob_form')
-end
-
-function narrow_corridors()
-  return has('narrow_corridors')
-end
-
-function morph_ball()
-  return has('morph_ball')
-end
-
-function narrow_corridors()
-  return has('narrow_corridors')
-end
-
-function grapple()
-  return has('grapple')
-end
-
-function levitate()
-  return has('levitate')
-end
-
-function big_boulders()
-  return has('big_boulders')
-end
-
-function secret_vision()
-  return has('secret_vision')
-end
-
-function invisible_platforms()
-  return has('invisible_platforms')
-end
-
-function levitate()
-  return has('levitate')
-end
-
-function big_boulders()
-  return has('big_boulders')
-end
-
-function lofty_mount()
-  return has('lofty_mount')
-end
-
-function distant_ledges()
-  return has('distant_ledges')
-end
-
-function levitate()
-  return has('levitate')
-end
-
-function big_boulders()
-  return has('big_boulders')
-end
-
-function flying()
-  return has('flying')
-end
-
-function distant_ledges()
-  return has('distant_ledges')
-end
-
-function heavy_punch()
-  return has('heavy_punch')
-end
-
-function breakable_walls()
-  return has('breakable_walls')
-end
-
-function heavy_blocks()
-  return has('heavy_blocks')
-end
-
-function summon_mushroom()
-  return has('summon_mushroom')
-end
-
-function ground_switches()
-  return has('ground_switches')
-end
-
-function charging_mount()
-  return has('charging_mount')
-end
-
-function charging_mount()
-  return has('charging_mount')
-end
-
-function dual_mobility()
-  return has('dual_mobility')
-end
-
-function tar_mount()
-  return has('tar_mount')
-end
-
-function spore_shroud()
-  return has('spore_shroud')
-end
-
-function magic_vines()
-  return has('magic_vines')
-end
-
-function improved_swimming()
-  return has('improved_swimming')
-end
-
-function levitate()
-  return has('levitate')
-end
-
-function big_boulders()
-  return has('big_boulders')
-end
-
-function minnesang()
-  return has('minnesang')
-end
-
-function magic_walls()
-  return has('magic_walls')
+function bard()
+  return has('bard')
 end
 
 function ability_claws()
@@ -2025,7 +1445,7 @@ end
 function stronghold_dungeon_blob_key()
   return
   _AND({
-    has_access_to('StrongholdDungeon_EastKeys'), 
+    has_access_to('StrongholdDungeon_EastKeys'),
     blob_key()
   })
 end
@@ -2053,7 +1473,7 @@ end
 function sun_palace_lower_water_1()
   return
   _AND({
-    has_access_to('SunPalace_Center'), 
+    has_access_to('SunPalace_Center'),
     sun_palace_raise_center_1()
   })
 end
@@ -2061,7 +1481,7 @@ end
 function sun_palace_lower_water_2()
   return
   _AND({
-    has_access_to('SunPalace_Center'), 
+    has_access_to('SunPalace_Center'),
     sun_palace_raise_center_2()
   })
 end
@@ -2085,7 +1505,7 @@ end
 function sun_palace_blob_key()
   return
   _AND({
-    has_access_to('SunPalace_EastSewers6'), 
+    has_access_to('SunPalace_EastSewers6'),
     blob_key()
   })
 end
@@ -2105,11 +1525,11 @@ end
 function ancient_woods_beach_access()
   return
   _AND({
-    has_access_to('AncientWoods_East2_West'), 
+    has_access_to('AncientWoods_East2_West'),
     _AND({
-      lightning_orbs(), 
-      water_orbs(), 
-      fire_orbs(), 
+      lightning_orbs(),
+      water_orbs(),
+      fire_orbs(),
       earth_orbs()
     })
   })
@@ -2134,7 +1554,7 @@ end
 function horizon_beach_rescue_leonard()
   return
   _AND({
-    has_access_to('HorizonBeach_Pit'), 
+    has_access_to('HorizonBeach_Pit'),
     improved_flying()
   })
 end
@@ -2142,7 +1562,7 @@ end
 function forgotten_world_to_horizon_beach_shortcut()
   return
   _AND({
-    has_access_to('HorizonBeach_FWExit'), 
+    has_access_to('HorizonBeach_FWExit'),
     summon_big_rock()
   })
 end
@@ -2166,10 +1586,16 @@ end
 function magma_chamber_lower_lava()
   return
   _AND({
-    has_access_to('MagmaChamber_Runestone'), 
-    _AND({
-      stronghold_dungeon_library_access(), 
-      runestone_shard()
+    has_access_to('MagmaChamber_Runestone'),
+    _OR({
+      _AND({
+        plotless(),
+        runestone_shard()
+      }),
+      _AND({
+        stronghold_dungeon_library_access(),
+        runestone_shard()
+      })
     })
   })
 end
@@ -2217,10 +1643,10 @@ end
 function underworld_west_catacomb_4_shortcut()
   return
   _AND({
-    has_access_to('Underworld_WestCatacomb4_Lower'), 
+    has_access_to('Underworld_WestCatacomb4_Lower'),
     _OR({
-      double_jump(), 
-      ground_switches(), 
+      double_jump(),
+      ground_switches(),
       distant_ledges()
     })
   })
@@ -2233,12 +1659,12 @@ end
 function underworld_west_catacomb_9_interior_access()
   return
   _AND({
-    has_access_to('Underworld_WestCatacomb5_West'), 
+    has_access_to('Underworld_WestCatacomb5_West'),
     _AND({
-      underworld_west_catacomb_center_entrance(), 
-      underworld_west_catacomb_4_access(), 
-      underworld_west_catacomb_4_shortcut(), 
-      underworld_west_catacomb_roof_access(), 
+      underworld_west_catacomb_center_entrance(),
+      underworld_west_catacomb_4_access(),
+      underworld_west_catacomb_4_shortcut(),
+      underworld_west_catacomb_roof_access(),
       underworld_west_catacomb_7_shortcut()
     })
   })
@@ -2259,7 +1685,7 @@ end
 function mystical_workshop_blob_key()
   return
   _AND({
-    has_access_to('MysticalWorkshop_East3'), 
+    has_access_to('MysticalWorkshop_East3'),
     blob_key()
   })
 end
@@ -2287,12 +1713,12 @@ end
 function blob_burg_access_5()
   return
   _AND({
-    has_access_to('BlobBurg_West2'), 
+    has_access_to('BlobBurg_West2'),
     _AND({
-      double_jump(), 
+      double_jump(),
       _OR({
-        improved_flying(), 
-        dual_mobility(), 
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     })
@@ -2302,12 +1728,12 @@ end
 function blob_burg_access_4()
   return
   _AND({
-    has_access_to('BlobBurg_South2'), 
+    has_access_to('BlobBurg_South2'),
     _AND({
-      double_jump(), 
+      double_jump(),
       _OR({
-        improved_flying(), 
-        dual_mobility(), 
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     })
@@ -2321,7 +1747,7 @@ end
 function forgotten_world_jungle_shortcut()
   return
   _AND({
-    has_access_to('ForgottenWorld_JungleShortcut'), 
+    has_access_to('ForgottenWorld_JungleShortcut'),
     diamond_blocks()
   })
 end
@@ -2329,9 +1755,9 @@ end
 function forgotten_world_waters_shortcut()
   return
   _AND({
-    has_access_to('ForgottenWorld_DracomerLair'), 
+    has_access_to('ForgottenWorld_DracomerLair'),
     _AND({
-      breakable_walls(), 
+      breakable_walls(),
       swimming()
     })
   })
@@ -2340,7 +1766,7 @@ end
 function forgotten_world_dracomer_defeated()
   return
   _AND({
-    has_access_to('ForgottenWorld_DracomerLair'), 
+    has_access_to('ForgottenWorld_DracomerLair'),
     swimming()
   })
 end

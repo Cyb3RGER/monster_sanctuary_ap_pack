@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Debug Location",
+        "access_rules": [
+            [
+                "$has_access_to|Underworld_WestCatacomb9_ExteriorWest"
+            ]
+        ],
+        "map_locations": [
+            {
+                "map": "overview",
+                "x": 500,
+                "y": 500,
+                "size": 64
+            }
+        ],
+        "sections": [
+            {
+                "name": "",
+                "clear_as_group": false,
+                "item_count": 1
+            }
+        ]
+    }    
+]

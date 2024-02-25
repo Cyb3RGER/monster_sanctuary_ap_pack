@@ -12,6 +12,9 @@ def gen_logic():
 
 def gen_item_helpers():
     flag_counts = count_flags()
+    with open('data/plotless.json', mode='r') as f:
+        plotless_data = json.load(f)
+    plotless_data = [data for data in plotless_data if data["type"] == "flag"]
     with open('data/items.json', mode='r') as f:
         json_data = json.load(f)
     codes = []
@@ -46,11 +49,11 @@ def gen_item_helpers():
     for monster_data in json_data:
         name = monster_data["Name"]
         main_code = format_code(name)
-        if main_code in codes:
+        if main_code not in codes:
             codes.append(main_code)
         for code in monster_data.get('Groups') or []:
             code = format_code(code)
-            if code in codes:
+            if code not in codes:
                 codes.append(code)
     lua_str = ''
     for code in codes:
@@ -61,13 +64,20 @@ def gen_item_helpers():
         region_name = region_data["region"]
         flags = region_data.get('flags') or []
         for flag in flags:
-            lua_str += build_flag_helper(format_code(flag['id']), region_name, flag.get('requirements') or [])
+            flag_id = flag['id']
+            flag_requirements = flag.get('requirements') or []
+            plotless_flag_data = next((x for x in plotless_data if x['id'] == flag_id), None)
+            if plotless_flag_data is not None and len(plotless_flag_data['requirements']) > 0:
+                flag_requirements = ['OR',['AND', ['plotless'] + plotless_flag_data['requirements']] + flag_requirements]
+            lua_str += build_flag_helper(format_code(flag_id), region_name, flag_requirements)
     with open('../scripts/logic/logic_generated.lua', mode='w') as f:
         f.write(lua_str)
     print('logic helpers done!')
 
 
 def build_flag_helper(code, region, req_data):
+    # ToDo: we could make optimize_req_data function
+    #       to pull multiple occurrences of a requirement in all ANDs with an OR out and similar
     func_name = code
     if not req_data:
         req_actual = [f'has_access_to(\'{region}\')']
@@ -156,13 +166,13 @@ def build_access_func_part(req_data, tab_depth, op="AND"):
             lua_str += build_access_func_part(req_data[i + 1], tab_depth + 1, req_data[i])
             skip_next = True
             if i + 1 != len(req_data) - 1:
-                lua_str += ', '
+                lua_str += ','
             lua_str += '\n'
         else:
             lua_str += f'{TAB * (tab_depth + 1)}'
             lua_str += format_req(req_data[i])
             if i != len(req_data) - 1:
-                lua_str += ', '
+                lua_str += ','
             lua_str += '\n'
     lua_str += f'{TAB * tab_depth}}})'
     return lua_str

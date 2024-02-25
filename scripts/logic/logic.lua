@@ -5,7 +5,10 @@ require('logic/regions')
 
 --alias
 double_jump = double_jump_boots
-has_dodo = dodo_egg
+has_dodo = dodo_egg --ToDo: this should really come via DataStorge from the mod I think
+post_game = mad_lord_defeated
+third_bex_encounter = third_beach_bex
+ancient_woods_magma_chamber_shortcut = ancient_woods_magma_chamber_1
 
 --slot_data
 function shifting_avialable()
@@ -37,6 +40,17 @@ function plotless()
         return false
     end
     return SLOT_DATA.options.skip_plot == 1
+end
+
+function is_goal_mad_lord()
+    if SLOT_DATA == nil then
+        return false
+    end
+    return SLOT_DATA.options.goal == 0
+end
+
+function is_goal_not_mad_lord()
+    return not is_goal_mad_lord()
 end
 
 --logic helpers

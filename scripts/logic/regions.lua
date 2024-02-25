@@ -11,8 +11,8 @@ REGIONS = {
     ["MountainPath_North7"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -54,16 +54,16 @@ REGIONS = {
     ["MountainPath_East1"] = function()
       return
       _OR({
-        plotless(), 
+        plotless(),
         keeper_rank_1()
       })
     end,
     ["BlueCave_NorthFork_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end
@@ -80,9 +80,9 @@ REGIONS = {
     ["MountainPath_North7"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end
@@ -132,7 +132,7 @@ REGIONS = {
     ["MountainPath_Center7"] = function()
       return
       _OR({
-        mountain_path_key(), 
+        mountain_path_key(),
         no_locked_doors()
       })
     end
@@ -157,8 +157,8 @@ REGIONS = {
     ["MountainPath_Center6_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -259,11 +259,11 @@ REGIONS = {
     ["MountainPath_SnowyEntrance2"] = function()
       return
       _OR({
-        improved_flying(), 
+        improved_flying(),
         _AND({
-          double_jump(), 
+          double_jump(),
           _OR({
-            distant_ledges(), 
+            distant_ledges(),
             mount()
           })
         })
@@ -277,11 +277,11 @@ REGIONS = {
     ["MountainPath_SnowyEntrance"] = function()
       return
       _OR({
-        improved_flying(), 
+        improved_flying(),
         _AND({
-          double_jump(), 
+          double_jump(),
           _OR({
-            distant_ledges(), 
+            distant_ledges(),
             mount()
           })
         })
@@ -393,9 +393,9 @@ REGIONS = {
     ["StrongholdDungeon_Entrance"] = function()
       return
       _OR({
-        plotless(), 
+        plotless(),
         _AND({
-          keeper_rank_2(), 
+          keeper_rank_2(),
           blue_caves_story_complete()
         })
       })
@@ -445,8 +445,8 @@ REGIONS = {
     ["BlueCave_Switches"] = function()
       return
       _OR({
-        one_blue_cave_key(), 
-        minimal_locked_doors(), 
+        one_blue_cave_key(),
+        minimal_locked_doors(),
         no_locked_doors()
       })
     end
@@ -463,12 +463,12 @@ REGIONS = {
     ["BlueCave_NorthFork_Lower"] = function()
       return
       _OR({
-        blue_cave_switches_access(), 
+        blue_cave_switches_access(),
         _AND({
-          double_jump(), 
+          double_jump(),
           _OR({
-            improved_flying(), 
-            lofty_mount(), 
+            improved_flying(),
+            lofty_mount(),
             dual_mobility()
           })
         })
@@ -485,9 +485,9 @@ REGIONS = {
     ["BlueCave_NorthFork_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end
@@ -509,16 +509,16 @@ REGIONS = {
     ["BlueCave_NorthFork_Lower"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         ground_switches()
       })
     end,
     ["BlueCave_WestWaters1"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -560,10 +560,10 @@ REGIONS = {
     ["BlueCave_South1_Upper"] = function()
       return
       _OR({
-        no_locked_doors(), 
-        three_blue_cave_keys(), 
+        no_locked_doors(),
+        three_blue_cave_keys(),
         _AND({
-          minimal_locked_doors(), 
+          minimal_locked_doors(),
           one_blue_cave_key()
         })
       })
@@ -572,13 +572,13 @@ REGIONS = {
       return
       _AND({
         _OR({
-          two_blue_cave_keys(), 
-          minimal_locked_doors(), 
+          two_blue_cave_keys(),
+          minimal_locked_doors(),
           no_locked_doors()
-        }), 
+        }),
         _OR({
-          double_jump(), 
-          improved_flying(), 
+          double_jump(),
+          improved_flying(),
           dual_mobility()
         })
       })
@@ -610,8 +610,8 @@ REGIONS = {
     ["BlueCave_East2_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
+        double_jump(),
+        ground_switches(),
         distant_ledges()
       })
     end
@@ -641,10 +641,10 @@ REGIONS = {
     ["BlueCave_CentralPart"] = function()
       return
       _OR({
-        no_locked_doors(), 
-        three_blue_cave_keys(), 
+        no_locked_doors(),
+        three_blue_cave_keys(),
         _AND({
-          minimal_locked_doors(), 
+          minimal_locked_doors(),
           one_blue_cave_key()
         })
       })
@@ -657,10 +657,10 @@ REGIONS = {
     ["BlueCave_South1_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
-        lofty_mount(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
+        lofty_mount(),
         summon_big_rock()
       })
     end,
@@ -675,10 +675,10 @@ REGIONS = {
     ["BlueCave_South1_Middle"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
-        lofty_mount(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
+        lofty_mount(),
         summon_big_rock()
       })
     end,
@@ -721,12 +721,12 @@ REGIONS = {
       return
       _OR({
         _AND({
-          plotless(), 
+          plotless(),
           all_sanctuary_tokens()
-        }), 
+        }),
         _AND({
-          all_sanctuary_tokens(), 
-          ostanes(), 
+          all_sanctuary_tokens(),
+          ostanes(),
           stronghold_dungeon_library_access()
         })
       })
@@ -744,7 +744,7 @@ REGIONS = {
     ["BlueCave_ChampionRoom3"] = function()
       return
       _AND({
-        summon_big_rock(), 
+        summon_big_rock(),
         grapple()
       })
     end
@@ -799,8 +799,8 @@ REGIONS = {
     ["BlueCave_WestWaters3"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         swimming()
       })
     end
@@ -809,15 +809,15 @@ REGIONS = {
     ["BlueCave_WestWaters2_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
+        double_jump(),
+        ground_switches(),
         swimming()
       })
     end,
     ["BlueCave_WestWatersHidden"] = function()
       return
       _OR({
-        improved_swimming(), 
+        improved_swimming(),
         dual_mobility()
       })
     end
@@ -826,7 +826,7 @@ REGIONS = {
     ["BlueCave_WestWaters2_Lower"] = function()
       return
       _OR({
-        improved_swimming(), 
+        improved_swimming(),
         dual_mobility()
       })
     end
@@ -846,8 +846,8 @@ REGIONS = {
     ["BlueCave_WestWaters4_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -867,8 +867,8 @@ REGIONS = {
     ["BlueCave_WestWaters4_Middle"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
+        double_jump(),
+        ground_switches(),
         distant_ledges()
       })
     end,
@@ -891,9 +891,9 @@ REGIONS = {
     ["BlueCave_WestWaters6_Lower"] = function()
       return
       _OR({
-        double_jump(), 
-        summon_big_rock(), 
-        distant_ledges(), 
+        double_jump(),
+        summon_big_rock(),
+        distant_ledges(),
         swimming()
       })
     end
@@ -902,8 +902,8 @@ REGIONS = {
     ["BlueCave_WestWaters6_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -934,7 +934,7 @@ REGIONS = {
     ["BlueCave_AquaEntrance_Upper"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         swimming()
       })
     end
@@ -946,8 +946,8 @@ REGIONS = {
     ["BlueCave_WestWaters7_West"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
+        double_jump(),
+        ground_switches(),
         distant_ledges()
       })
     end
@@ -956,7 +956,7 @@ REGIONS = {
     ["BlueCave_WestWaters7_East"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
@@ -1044,10 +1044,10 @@ REGIONS = {
     ["MysticalWorkshop_South1"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         _OR({
-          improved_flying(), 
-          lofty_mount(), 
+          improved_flying(),
+          lofty_mount(),
           dual_mobility()
         })
       })
@@ -1074,8 +1074,8 @@ REGIONS = {
     ["StrongholdDungeon_NorthHidden"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         summon_big_rock()
       })
     end
@@ -1105,8 +1105,8 @@ REGIONS = {
     ["StrongholdDungeon_Central1"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -1118,8 +1118,8 @@ REGIONS = {
     ["StrongholdDungeon_Central3"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -1134,14 +1134,14 @@ REGIONS = {
     ["StrongholdDungeon_Central5_Lower"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
     ["StrongholdDungeon_Central4"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -1151,19 +1151,19 @@ REGIONS = {
       return
       _OR({
         _AND({
-          lightning_orbs(), 
+          lightning_orbs(),
           _OR({
-            double_jump(), 
-            distant_ledges(), 
+            double_jump(),
+            distant_ledges(),
             summon_big_rock()
           })
-        }), 
+        }),
         _AND({
-          double_jump(), 
+          double_jump(),
           _OR({
-            ground_switches(), 
-            improved_flying(), 
-            dual_mobility(), 
+            ground_switches(),
+            improved_flying(),
+            dual_mobility(),
             lofty_mount()
           })
         })
@@ -1191,25 +1191,25 @@ REGIONS = {
     ["StrongholdDungeon_Central4"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end,
     ["StrongholdDungeon_Hidden1"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end,
     ["StrongholdDungeon_CentralHidden"] = function()
       return
       _AND({
-        dark_rooms(), 
+        dark_rooms(),
         double_jump()
       })
     end
@@ -1236,16 +1236,16 @@ REGIONS = {
     ["StrongholdDungeon_Central6"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
     ["StrongholdDungeon_South2"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -1265,20 +1265,20 @@ REGIONS = {
     ["StrongholdDungeon_West3"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
-        lofty_mount(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
+        lofty_mount(),
         summon_big_rock()
       })
     end,
     ["StrongholdDungeon_South4"] = function()
       return
       _OR({
-        no_locked_doors(), 
-        two_dungeon_keys(), 
+        no_locked_doors(),
+        two_dungeon_keys(),
         _AND({
-          one_dungeon_key(), 
+          one_dungeon_key(),
           minimal_locked_doors()
         })
       })
@@ -1289,22 +1289,22 @@ REGIONS = {
       return
       _AND({
         _OR({
-          no_locked_doors(), 
-          two_dungeon_keys(), 
+          no_locked_doors(),
+          two_dungeon_keys(),
           _AND({
-            one_dungeon_key(), 
+            one_dungeon_key(),
             minimal_locked_doors()
           })
-        }), 
+        }),
         double_jump()
       })
     end,
     ["StrongholdDungeon_South5"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
-        ground_switches(), 
+        double_jump(),
+        distant_ledges(),
+        ground_switches(),
         swimming()
       })
     end
@@ -1406,17 +1406,17 @@ REGIONS = {
     ["StrongholdDungeon_Central7"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end,
     ["StrongholdDungeon_East1_NE"] = function()
       return
       _OR({
-        one_dungeon_key(), 
-        minimal_locked_doors(), 
+        one_dungeon_key(),
+        minimal_locked_doors(),
         no_locked_doors()
       })
     end,
@@ -1428,17 +1428,17 @@ REGIONS = {
     ["StrongholdDungeon_East5"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end,
     ["StrongholdDungeon_East1_NW"] = function()
       return
       _OR({
-        one_dungeon_key(), 
-        minimal_locked_doors(), 
+        one_dungeon_key(),
+        minimal_locked_doors(),
         no_locked_doors()
       })
     end,
@@ -1450,9 +1450,9 @@ REGIONS = {
     ["StrongholdDungeon_East1_SE"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end
@@ -1464,16 +1464,16 @@ REGIONS = {
     ["StrongholdDungeon_East2"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end,
     ["StrongholdDungeon_East1_NW"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         lofty_mount()
       })
     end
@@ -1482,8 +1482,8 @@ REGIONS = {
     ["StrongholdDungeon_East1_SE"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -1504,8 +1504,8 @@ REGIONS = {
     ["StrongholdDungeon_East5"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -1522,18 +1522,18 @@ REGIONS = {
     ["StrongholdDungeon_East1_NE"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         summon_big_rock()
       })
     end,
     ["StrongholdDungeon_East3"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         summon_big_rock()
       })
     end
@@ -1542,15 +1542,15 @@ REGIONS = {
     ["StrongholdDungeon_East2"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
     ["StrongholdDungeon_EastHidden"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         dark_rooms()
       })
     end
@@ -1578,7 +1578,7 @@ REGIONS = {
     ["SnowyPeaks_East2_Upper"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -1598,12 +1598,12 @@ REGIONS = {
     ["SnowyPeaks_East2_Upper"] = function()
       return
       _AND({
-        breakable_walls(), 
+        breakable_walls(),
         _OR({
-          double_jump(), 
-          improved_flying(), 
-          dual_mobility(), 
-          lofty_mount(), 
+          double_jump(),
+          improved_flying(),
+          dual_mobility(),
+          lofty_mount(),
           summon_big_rock()
         })
       })
@@ -1619,8 +1619,8 @@ REGIONS = {
     ["SnowyPeaks_East4_Middle"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -1635,10 +1635,10 @@ REGIONS = {
     ["SnowyPeaks_East4_Upper"] = function()
       return
       _AND({
-        snowy_peaks_east4_upper_shortcut(), 
+        snowy_peaks_east4_upper_shortcut(),
         _OR({
-          double_jump(), 
-          improved_flying(), 
+          double_jump(),
+          improved_flying(),
           dual_mobility()
         })
       })
@@ -1670,7 +1670,7 @@ REGIONS = {
     ["SnowyPeaks_West2"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -1679,7 +1679,7 @@ REGIONS = {
     ["SnowyPeaks_West1_Upper"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
@@ -1699,16 +1699,16 @@ REGIONS = {
     ["SnowyPeaks_West1_Lower"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        lofty_mount(), 
+        double_jump(),
+        improved_flying(),
+        lofty_mount(),
         dual_mobility()
       })
     end,
     ["SnowyPeaks_SunPalaceEntrance_Access"] = function()
       return
       _OR({
-        snowy_peaks_sun_palace_entrance_shortcut(), 
+        snowy_peaks_sun_palace_entrance_shortcut(),
         warm_underwear()
       })
     end
@@ -1717,15 +1717,15 @@ REGIONS = {
     ["SnowyPeaks_SunPalaceEntrance"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         warm_underwear()
       })
     end,
     ["SunPalace_West1"] = function()
       return
       _OR({
-        snowy_peaks_sun_palace_entrance_shortcut(), 
+        snowy_peaks_sun_palace_entrance_shortcut(),
         warm_underwear()
       })
     end
@@ -1737,7 +1737,7 @@ REGIONS = {
     ["SnowyPeaks_West3"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -1746,7 +1746,7 @@ REGIONS = {
     ["SnowyPeaks_West2"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
@@ -1767,10 +1767,10 @@ REGIONS = {
     ["SnowyPeaks_West5"] = function()
       return
       _AND({
-        diamond_blocks(), 
+        diamond_blocks(),
         _OR({
-          double_jump(), 
-          improved_flying(), 
+          double_jump(),
+          improved_flying(),
           dual_mobility()
         })
       })
@@ -1786,10 +1786,10 @@ REGIONS = {
     ["SnowyPeaks_Lake_West"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         _OR({
-          improved_flying(), 
-          dual_mobility(), 
+          improved_flying(),
+          dual_mobility(),
           lofty_mount()
         })
       })
@@ -1802,10 +1802,10 @@ REGIONS = {
     ["SnowyPeaks_Lake_East"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         _OR({
-          improved_flying(), 
-          dual_mobility(), 
+          improved_flying(),
+          dual_mobility(),
           lofty_mount()
         })
       })
@@ -1815,9 +1815,9 @@ REGIONS = {
     ["SnowyPeaks_Lake_West"] = function()
       return
       _OR({
-        swimming(), 
+        swimming(),
         _AND({
-          heavy_blocks(), 
+          heavy_blocks(),
           double_jump()
         })
       })
@@ -1825,9 +1825,9 @@ REGIONS = {
     ["SnowyPeaks_Lake_East"] = function()
       return
       _OR({
-        swimming(), 
-        double_jump(), 
-        improved_flying(), 
+        swimming(),
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -1860,9 +1860,9 @@ REGIONS = {
     ["SnowyPeaks_WestMountain2"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end
@@ -1887,9 +1887,9 @@ REGIONS = {
     ["SnowyPeaks_WestMountain4"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end,
@@ -1909,9 +1909,9 @@ REGIONS = {
     ["SnowyPeaks_WestMountain5"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end
@@ -1987,16 +1987,16 @@ REGIONS = {
     ["SnowyPeaks_EastMountain4"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end,
     ["SnowyPeaks_HighChallenge"] = function()
       return
       _AND({
-        distant_ledges(), 
+        distant_ledges(),
         breakable_walls()
       })
     end,
@@ -2008,8 +2008,8 @@ REGIONS = {
     ["SnowyPeaks_EastMountain4"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         ground_switches()
       })
     end,
@@ -2021,7 +2021,7 @@ REGIONS = {
     ["SnowyPeaks_EastMountain2"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         breakable_walls()
       })
     end,
@@ -2049,18 +2049,18 @@ REGIONS = {
     ["SnowyPeaks_EastMountain3_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
     ["SnowyPeaks_EastMountain3_Shortcut"] = function()
       return
       _AND({
-        snowy_peaks_east_mountain_3_shortcut(), 
+        snowy_peaks_east_mountain_3_shortcut(),
         _OR({
-          double_jump(), 
-          improved_flying(), 
+          double_jump(),
+          improved_flying(),
           dual_mobility()
         })
       })
@@ -2073,7 +2073,7 @@ REGIONS = {
     ["SnowyPeaks_EastMountain3_Middle"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
@@ -2125,9 +2125,9 @@ REGIONS = {
     ["SunPalace_EastChampion"] = function()
       return
       _OR({
-        secret_vision(), 
+        secret_vision(),
         _AND({
-          double_jump(), 
+          double_jump(),
           lofty_mount()
         })
       })
@@ -2159,8 +2159,8 @@ REGIONS = {
     ["SunPalace_East6"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -2186,12 +2186,12 @@ REGIONS = {
     ["SunPalace_North1"] = function()
       return
       _AND({
-        sun_palace_raise_center_3(), 
+        sun_palace_raise_center_3(),
         _OR({
-          double_jump(), 
-          improved_flying(), 
-          dual_mobility(), 
-          lofty_mount(), 
+          double_jump(),
+          improved_flying(),
+          dual_mobility(),
+          lofty_mount(),
           summon_big_rock()
         })
       })
@@ -2199,12 +2199,12 @@ REGIONS = {
     ["SunPalace_North3"] = function()
       return
       _AND({
-        sun_palace_raise_center_3(), 
+        sun_palace_raise_center_3(),
         _OR({
-          double_jump(), 
-          improved_flying(), 
-          dual_mobility(), 
-          lofty_mount(), 
+          double_jump(),
+          improved_flying(),
+          dual_mobility(),
+          lofty_mount(),
           summon_big_rock()
         })
       })
@@ -2241,7 +2241,7 @@ REGIONS = {
     ["SunPalace_West5"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
@@ -2261,14 +2261,14 @@ REGIONS = {
     ["SunPalace_Center"] = function()
       return
       _OR({
-        sun_palace_lower_water_1(), 
+        sun_palace_lower_water_1(),
         _AND({
-          _NOT(sun_palace_lower_water_1()), 
+          _NOT(sun_palace_lower_water_1()),
           _OR({
-            swimming(), 
-            double_jump(), 
-            improved_flying(), 
-            dual_mobility(), 
+            swimming(),
+            double_jump(),
+            improved_flying(),
+            dual_mobility(),
             summon_big_rock()
           })
         })
@@ -2277,7 +2277,7 @@ REGIONS = {
     ["SunPalace_South2"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
@@ -2285,14 +2285,14 @@ REGIONS = {
       return
       _OR({
         _AND({
-          swimming(), 
+          swimming(),
           _NOT(sun_palace_lower_water_1())
-        }), 
+        }),
         _AND({
-          sun_palace_lower_water_1(), 
+          sun_palace_lower_water_1(),
           _OR({
-            double_jump(), 
-            improved_flying(), 
+            double_jump(),
+            improved_flying(),
             dual_mobility()
           })
         })
@@ -2304,11 +2304,11 @@ REGIONS = {
       return
       _OR({
         _AND({
-          _NOT(sun_palace_lower_water_1()), 
+          _NOT(sun_palace_lower_water_1()),
           swimming()
-        }), 
+        }),
         _AND({
-          sun_palace_lower_water_1(), 
+          sun_palace_lower_water_1(),
           double_jump()
         })
       })
@@ -2317,10 +2317,10 @@ REGIONS = {
       return
       _OR({
         _AND({
-          _NOT(sun_palace_lower_water_2()), 
+          _NOT(sun_palace_lower_water_2()),
           swimming()
-        }), 
-        sun_palace_lower_water_2(), 
+        }),
+        sun_palace_lower_water_2(),
         double_jump()
       })
     end,
@@ -2328,14 +2328,14 @@ REGIONS = {
       return
       _OR({
         _AND({
-          _NOT(sun_palace_lower_water_2()), 
+          _NOT(sun_palace_lower_water_2()),
           swimming()
-        }), 
+        }),
         _AND({
-          sun_palace_lower_water_2(), 
+          sun_palace_lower_water_2(),
           _OR({
-            double_jump(), 
-            improved_flying(), 
+            double_jump(),
+            improved_flying(),
             dual_mobility()
           })
         })
@@ -2357,8 +2357,8 @@ REGIONS = {
     ["SunPalace_South4"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -2418,8 +2418,8 @@ REGIONS = {
     ["SunPalace_EastSewers2"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -2445,10 +2445,10 @@ REGIONS = {
     ["SunPalace_West4"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
-        lofty_mount(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
+        lofty_mount(),
         summon_big_rock()
       })
     end,
@@ -2458,12 +2458,12 @@ REGIONS = {
     ["SunPalace_WestSewersSecret2"] = function()
       return
       _AND({
-        grapple(), 
+        grapple(),
         _OR({
-          double_jump(), 
-          improved_flying(), 
-          dual_mobility(), 
-          lofty_mount(), 
+          double_jump(),
+          improved_flying(),
+          dual_mobility(),
+          lofty_mount(),
           summon_big_rock()
         })
       })
@@ -2476,7 +2476,7 @@ REGIONS = {
     ["SunPalace_WestSewers2"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         swimming()
       })
     end
@@ -2485,8 +2485,8 @@ REGIONS = {
     ["SunPalace_WestSewers1"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         ground_switches()
       })
     end
@@ -2542,10 +2542,10 @@ REGIONS = {
     ["AncientWoods_West2_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        summon_big_rock(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        summon_big_rock(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end,
@@ -2584,14 +2584,14 @@ REGIONS = {
     ["AncientWoods_WestHidden2"] = function()
       return
       _AND({
-        impassible_vines(), 
+        impassible_vines(),
         breakable_walls()
       })
     end,
     ["AncientWoods_West7"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -2600,9 +2600,9 @@ REGIONS = {
     ["AncientWoods_West6"] = function()
       return
       _OR({
-        impassible_vines(), 
+        impassible_vines(),
         _AND({
-          double_jump(), 
+          double_jump(),
           distant_ledges()
         })
       })
@@ -2610,9 +2610,9 @@ REGIONS = {
     ["AncientWoods_WestDescent_Upper"] = function()
       return
       _OR({
-        impassible_vines(), 
+        impassible_vines(),
         _AND({
-          double_jump(), 
+          double_jump(),
           distant_ledges()
         })
       })
@@ -2622,14 +2622,14 @@ REGIONS = {
     ["AncientWoods_West2_Lower"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
     ["AncientWoods_WestHidden"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -2653,8 +2653,8 @@ REGIONS = {
     ["AncientWoods_WestDescent_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -2669,8 +2669,8 @@ REGIONS = {
     ["AncientWoods_WestDescent_Middle"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -2720,10 +2720,10 @@ REGIONS = {
     ["AncientWoods_Center3"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
-        lofty_mount(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
+        lofty_mount(),
         summon_big_rock()
       })
     end,
@@ -2738,7 +2738,7 @@ REGIONS = {
     ["AncientWoods_Center5"] = function()
       return
       _OR({
-        two_ancient_woods_keys(), 
+        two_ancient_woods_keys(),
         no_locked_doors()
       })
     end
@@ -2769,7 +2769,7 @@ REGIONS = {
     ["AncientWoods_Center2"] = function()
       return
       _OR({
-        two_ancient_woods_keys(), 
+        two_ancient_woods_keys(),
         no_locked_doors()
       })
     end,
@@ -2817,8 +2817,8 @@ REGIONS = {
     ["AncientWoods_North3"] = function()
       return
       _OR({
-        three_ancient_woods_keys(), 
-        minimal_locked_doors(), 
+        three_ancient_woods_keys(),
+        minimal_locked_doors(),
         no_locked_doors()
       })
     end
@@ -2886,10 +2886,10 @@ REGIONS = {
     ["AncientWoods_East4"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         _OR({
-          improved_flying(), 
-          dual_mobility(), 
+          improved_flying(),
+          dual_mobility(),
           lofty_mount()
         })
       })
@@ -2921,7 +2921,7 @@ REGIONS = {
     ["AncientWoods_South1"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
@@ -2942,10 +2942,10 @@ REGIONS = {
     ["AncientWoods_South4"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         _OR({
-          improved_flying(), 
-          dual_mobility(), 
+          improved_flying(),
+          dual_mobility(),
           lofty_mount()
         })
       })
@@ -2982,13 +2982,13 @@ REGIONS = {
       return
       _AND({
         _OR({
-          torches(), 
+          torches(),
           dark_rooms()
-        }), 
-        double_jump(), 
+        }),
+        double_jump(),
         _OR({
-          improved_flying(), 
-          dual_mobility(), 
+          improved_flying(),
+          dual_mobility(),
           lofty_mount()
         })
       })
@@ -3006,14 +3006,14 @@ REGIONS = {
     ["AncientWoods_SouthHidden1_East"] = function()
       return
       _AND({
-        dark_rooms(), 
+        dark_rooms(),
         double_jump()
       })
     end,
     ["AncientWoods_SouthHidden3"] = function()
       return
       _AND({
-        dark_rooms(), 
+        dark_rooms(),
         double_jump()
       })
     end
@@ -3022,14 +3022,14 @@ REGIONS = {
     ["AncientWoods_SouthHidden2"] = function()
       return
       _AND({
-        dark_rooms(), 
+        dark_rooms(),
         double_jump()
       })
     end,
     ["AncientWoods_SouthChampion"] = function()
       return
       _AND({
-        dark_rooms(), 
+        dark_rooms(),
         double_jump()
       })
     end
@@ -3038,14 +3038,14 @@ REGIONS = {
     ["AncientWoods_South4"] = function()
       return
       _AND({
-        dark_rooms(), 
+        dark_rooms(),
         double_jump()
       })
     end,
     ["AncientWoods_SouthChampion"] = function()
       return
       _AND({
-        dark_rooms(), 
+        dark_rooms(),
         double_jump()
       })
     end
@@ -3091,7 +3091,7 @@ REGIONS = {
     ["HorizonBeach_West2"] = function()
       return
       _OR({
-        plotless(), 
+        plotless(),
         goblin_king_defeated()
       })
     end
@@ -3116,8 +3116,8 @@ REGIONS = {
     ["HorizonBeach_West3"] = function()
       return
       _OR({
-        double_jump(), 
-        swimming(), 
+        double_jump(),
+        swimming(),
         distant_ledges()
       })
     end,
@@ -3137,14 +3137,14 @@ REGIONS = {
     ["HorizonBeach_West5"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         swimming()
       })
     end,
     ["HorizonBeach_Center2_Shortcut"] = function()
       return
       _AND({
-        swimming(), 
+        swimming(),
         horizon_beach_center_shortcut()
       })
     end,
@@ -3216,8 +3216,8 @@ REGIONS = {
     ["HorizonBeach_East2_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -3229,16 +3229,16 @@ REGIONS = {
     ["HorizonBeach_East6"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
     ["HorizonBeach_East4"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -3253,8 +3253,8 @@ REGIONS = {
     ["HorizonBeach_East2_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -3285,16 +3285,16 @@ REGIONS = {
     ["HorizonBeach_East2_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
     ["HorizonBeach_East5"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -3318,7 +3318,7 @@ REGIONS = {
     ["HorizonBeach_East2_Lower"] = function()
       return
       _AND({
-        narrow_corridors(), 
+        narrow_corridors(),
         double_jump()
       })
     end,
@@ -3410,7 +3410,7 @@ REGIONS = {
     ["HorizonBeach_TreasureCave1"] = function()
       return
       _OR({
-        plotless(), 
+        plotless(),
         horizon_beach_rescue_leonard()
       })
     end
@@ -3433,8 +3433,8 @@ REGIONS = {
     ["HorizonBeach_TreasureCave4"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
+        double_jump(),
+        ground_switches(),
         distant_ledges()
       })
     end,
@@ -3486,9 +3486,9 @@ REGIONS = {
     ["HorizonBeach_FWEntrance1"] = function()
       return
       _OR({
-        secret_vision(), 
+        secret_vision(),
         _AND({
-          double_jump(), 
+          double_jump(),
           lofty_mount()
         })
       })
@@ -3496,9 +3496,9 @@ REGIONS = {
     ["HorizonBeach_FWEntrance3"] = function()
       return
       _OR({
-        secret_vision(), 
+        secret_vision(),
         _AND({
-          double_jump(), 
+          double_jump(),
           lofty_mount()
         })
       })
@@ -3559,8 +3559,8 @@ REGIONS = {
     ["MagmaChamber_West4_Lower"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         ground_switches()
       })
     end,
@@ -3575,17 +3575,17 @@ REGIONS = {
     ["MagmaChamber_West4_Ledge"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
     ["MagmaChamber_West4_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end
@@ -3626,8 +3626,8 @@ REGIONS = {
     ["MagmaChamber_West6_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         ground_switches()
       })
     end,
@@ -3682,8 +3682,8 @@ REGIONS = {
     ["MagmaChamber_North5_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         ground_switches()
       })
     end,
@@ -3787,7 +3787,7 @@ REGIONS = {
     ["MagmaChamber_Center2_Middle"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -3802,8 +3802,8 @@ REGIONS = {
     ["MagmaChamber_Center2_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
+        double_jump(),
+        ground_switches(),
         distant_ledges()
       })
     end
@@ -3823,7 +3823,7 @@ REGIONS = {
     ["MagmaChamber_Center5"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
@@ -3870,9 +3870,9 @@ REGIONS = {
     ["MagmaChamber_Center6_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end
@@ -3898,8 +3898,8 @@ REGIONS = {
     ["MagmaChamber_North8_West"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         ground_switches()
       })
     end
@@ -3916,21 +3916,21 @@ REGIONS = {
     ["MagmaChamber_Center8"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
     ["MagmaChamber_Center10"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
     ["MagmaChamber_Center9_Middle"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -3942,16 +3942,16 @@ REGIONS = {
     ["MagmaChamber_Center9_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
     ["MagmaChamber_PuppyRoom"] = function()
       return
       _OR({
-        two_magma_chamber_keys(), 
-        minimal_locked_doors(), 
+        two_magma_chamber_keys(),
+        minimal_locked_doors(),
         no_locked_doors()
       })
     end
@@ -3971,9 +3971,9 @@ REGIONS = {
     ["MagmaChamber_Center11"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         _OR({
-          improved_flying(), 
+          improved_flying(),
           dual_mobility()
         })
       })
@@ -3981,8 +3981,8 @@ REGIONS = {
     ["MagmaChamber_Center9_Lower"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         ground_switches()
       })
     end
@@ -4037,8 +4037,8 @@ REGIONS = {
     ["MagmaChamber_Champion2"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
+        double_jump(),
+        ground_switches(),
         distant_ledges()
       })
     end
@@ -4047,24 +4047,24 @@ REGIONS = {
     ["MagmaChamber_South4_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end,
     ["MagmaChamber_South6_East"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         mount()
       })
     end,
     ["MagmaChamber_South7_West"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -4087,7 +4087,7 @@ REGIONS = {
     ["MagmaChamber_South6_West"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
@@ -4099,7 +4099,7 @@ REGIONS = {
     ["MagmaChamber_South6_East"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
@@ -4138,7 +4138,7 @@ REGIONS = {
     ["MagmaChamber_South9_East"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -4150,7 +4150,7 @@ REGIONS = {
     ["MagmaChamber_South9_West"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -4170,7 +4170,7 @@ REGIONS = {
     ["MagmaChamber_AlchemistLab_East"] = function()
       return
       _OR({
-        one_magma_chamber_key(), 
+        one_magma_chamber_key(),
         no_locked_doors()
       })
     end
@@ -4182,7 +4182,7 @@ REGIONS = {
     ["MagmaChamber_AlchemistLab_West"] = function()
       return
       _OR({
-        one_magma_chamber_key(), 
+        one_magma_chamber_key(),
         no_locked_doors()
       })
     end
@@ -4229,8 +4229,8 @@ REGIONS = {
     ["BlueCave_South5"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -4242,7 +4242,7 @@ REGIONS = {
     ["Underworld_Entrance"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
@@ -4311,7 +4311,7 @@ REGIONS = {
     ["Underworld_EastCatacomb4"] = function()
       return
       _OR({
-        underworld_key(), 
+        underworld_key(),
         no_locked_doors()
       })
     end,
@@ -4326,7 +4326,7 @@ REGIONS = {
     ["Underworld_EastCatacomb3"] = function()
       return
       _OR({
-        underworld_key(), 
+        underworld_key(),
         no_locked_doors()
       })
     end
@@ -4376,10 +4376,10 @@ REGIONS = {
     ["Underworld_EastCatacomb9"] = function()
       return
       _AND({
-        heavy_blocks(), 
+        heavy_blocks(),
         _OR({
-          double_jump(), 
-          improved_flying(), 
+          double_jump(),
+          improved_flying(),
           dual_mobility()
         })
       })
@@ -4416,11 +4416,11 @@ REGIONS = {
     ["Underworld_WestCatacomb6"] = function()
       return
       _AND({
-        double_jump(), 
-        grapple(), 
+        double_jump(),
+        grapple(),
         _OR({
-          improved_flying(), 
-          dual_mobility(), 
+          improved_flying(),
+          dual_mobility(),
           lofty_mount()
         })
       })
@@ -4430,9 +4430,9 @@ REGIONS = {
     ["Underworld_Center2"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         summon_big_rock()
       })
     end,
@@ -4442,7 +4442,7 @@ REGIONS = {
     ["Underworld_CenterHidden"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         narrow_corridors()
       })
     end
@@ -4451,7 +4451,7 @@ REGIONS = {
     ["Underworld_Center3"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         narrow_corridors()
       })
     end
@@ -4468,10 +4468,10 @@ REGIONS = {
     ["Underworld_WestCatacomb2"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         _OR({
-          improved_flying(), 
-          dual_mobility(), 
+          improved_flying(),
+          dual_mobility(),
           lofty_mount()
         })
       })
@@ -4488,16 +4488,16 @@ REGIONS = {
     ["Underworld_WestCatacomb5_East"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
+        double_jump(),
+        ground_switches(),
         distant_ledges()
       })
     end,
     ["Underworld_WestCatacomb5_West"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -4507,8 +4507,8 @@ REGIONS = {
     ["Underworld_WestCatacomb10"] = function()
       return
       _AND({
-        double_jump(), 
-        grapple(), 
+        double_jump(),
+        grapple(),
         underworld_west_catacomb_roof_access()
       })
     end
@@ -4520,10 +4520,10 @@ REGIONS = {
     ["Underworld_WestCatacomb1"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         _OR({
-          improved_flying(), 
-          dual_mobility(), 
+          improved_flying(),
+          dual_mobility(),
           lofty_mount()
         })
       })
@@ -4533,8 +4533,8 @@ REGIONS = {
     ["Underworld_WestCatacomb1"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -4544,8 +4544,8 @@ REGIONS = {
     ["Underworld_West1"] = function()
       return
       _AND({
-        summon_big_rock(), 
-        double_jump(), 
+        summon_big_rock(),
+        double_jump(),
         grapple()
       })
     end
@@ -4557,10 +4557,10 @@ REGIONS = {
     ["Underworld_WestCatacomb1"] = function()
       return
       _AND({
-        underworld_west_catacomb_4_access(), 
+        underworld_west_catacomb_4_access(),
         _OR({
-          double_jump(), 
-          ground_switches(), 
+          double_jump(),
+          ground_switches(),
           distant_ledges()
         })
       })
@@ -4611,7 +4611,7 @@ REGIONS = {
     ["Underworld_WestCatacomb9_ExteriorEast"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         grapple()
       })
     end
@@ -4689,8 +4689,8 @@ REGIONS = {
     ["Underworld_West3"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -4734,7 +4734,7 @@ REGIONS = {
     ["MysticalWorkshop_South2"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
@@ -4763,9 +4763,9 @@ REGIONS = {
     ["MysticalWorkshop_South3_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         summon_big_rock()
       })
     end,
@@ -4780,8 +4780,8 @@ REGIONS = {
     ["MysticalWorkshop_South3_Middle"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         ground_switches()
       })
     end
@@ -4813,9 +4813,9 @@ REGIONS = {
     ["MysticalWorkshop_Center1_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         summon_big_rock()
       })
     end,
@@ -4852,7 +4852,7 @@ REGIONS = {
     ["MysticalWorkshop_East1"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -4864,8 +4864,8 @@ REGIONS = {
     ["MysticalWorkshop_Center5_Lower"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
+        double_jump(),
+        ground_switches(),
         distant_ledges()
       })
     end
@@ -4877,7 +4877,7 @@ REGIONS = {
     ["MysticalWorkshop_Center5_Middle"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -4895,10 +4895,10 @@ REGIONS = {
     ["MysticalWorkshop_Center5_Upper"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         _OR({
-          improved_flying(), 
-          dual_mobility(), 
+          improved_flying(),
+          dual_mobility(),
           lofty_mount()
         })
       })
@@ -4916,9 +4916,9 @@ REGIONS = {
     ["MysticalWorkshop_Center2_Lower"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
-        distant_ledges(), 
+        double_jump(),
+        ground_switches(),
+        distant_ledges(),
         mount()
       })
     end,
@@ -4951,16 +4951,16 @@ REGIONS = {
     ["MysticalWorkshop_West2"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
+        double_jump(),
+        ground_switches(),
         distant_ledges()
       })
     end,
     ["MysticalWorkshop_Center8"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
+        double_jump(),
+        ground_switches(),
         distant_ledges()
       })
     end
@@ -4990,24 +4990,24 @@ REGIONS = {
     ["MysticalWorkshop_Center3"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
+        double_jump(),
+        ground_switches(),
         distant_ledges()
       })
     end,
     ["MysticalWorkshop_East2"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
+        double_jump(),
+        ground_switches(),
         distant_ledges()
       })
     end,
     ["MysticalWorkshop_North1"] = function()
       return
       _OR({
-        double_jump(), 
-        ground_switches(), 
+        double_jump(),
+        ground_switches(),
         distant_ledges()
       })
     end
@@ -5038,9 +5038,9 @@ REGIONS = {
     ["MysticalWorkshop_North6"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         summon_big_rock()
       })
     end
@@ -5068,8 +5068,8 @@ REGIONS = {
     ["MysticalWorkshop_North4_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -5100,8 +5100,8 @@ REGIONS = {
     ["MysticalWorkshop_MadEyeRoom"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         ground_switches()
       })
     end
@@ -5113,9 +5113,9 @@ REGIONS = {
     ["MysticalWorkshop_North4_Lower"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         _OR({
-          three_workshop_keys(), 
+          three_workshop_keys(),
           no_locked_doors()
         })
       })
@@ -5164,7 +5164,7 @@ REGIONS = {
     ["BlobBurg_East1"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
@@ -5174,11 +5174,11 @@ REGIONS = {
     ["BlobBurg_EastHidden"] = function()
       return
       _AND({
-        narrow_corridors(), 
+        narrow_corridors(),
         _OR({
-          double_jump(), 
-          improved_flying(), 
-          dual_mobility(), 
+          double_jump(),
+          improved_flying(),
+          dual_mobility(),
           lofty_mount()
         })
       })
@@ -5214,18 +5214,18 @@ REGIONS = {
     ["BlobBurg_East3"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
     ["BlobBurg_Center3"] = function()
       return
       _AND({
-        blob_burg_access_2(), 
+        blob_burg_access_2(),
         _OR({
-          double_jump(), 
-          improved_flying(), 
+          double_jump(),
+          improved_flying(),
           dual_mobility()
         })
       })
@@ -5257,7 +5257,7 @@ REGIONS = {
     ["BlobBurg_Center2"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end,
@@ -5270,10 +5270,10 @@ REGIONS = {
     ["BlobBurg_Center5"] = function()
       return
       _AND({
-        blob_burg_access_5(), 
+        blob_burg_access_5(),
         _OR({
-          double_jump(), 
-          improved_flying(), 
+          double_jump(),
+          improved_flying(),
           dual_mobility()
         })
       })
@@ -5304,14 +5304,14 @@ REGIONS = {
     ["BlobBurg_Center4"] = function()
       return
       _OR({
-        swimming(), 
+        swimming(),
         double_jump()
       })
     end,
     ["BlobBurg_South2"] = function()
       return
       _OR({
-        swimming(), 
+        swimming(),
         double_jump()
       })
     end
@@ -5356,9 +5356,9 @@ REGIONS = {
     ["ForgottenWorld_Jungle1"] = function()
       return
       _OR({
-        swimming(), 
-        double_jump(), 
-        distant_ledges(), 
+        swimming(),
+        double_jump(),
+        distant_ledges(),
         ground_switches()
       })
     end
@@ -5373,7 +5373,7 @@ REGIONS = {
     ["ForgottenWorld_ForgottenWorldIntro"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -5396,11 +5396,11 @@ REGIONS = {
     ["ForgottenWorld_JungleHidden"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         _OR({
-          improved_flying(), 
-          dual_mobility(), 
-          lofty_mount(), 
+          improved_flying(),
+          dual_mobility(),
+          lofty_mount(),
           summon_big_rock()
         })
       })
@@ -5424,8 +5424,8 @@ REGIONS = {
     ["ForgottenWorld_Jungle6"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         ground_switches()
       })
     end,
@@ -5445,9 +5445,9 @@ REGIONS = {
     ["ForgottenWorld_Climb1"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end
@@ -5475,8 +5475,8 @@ REGIONS = {
     ["ForgottenWorld_TarPitsHidden1"] = function()
       return
       _AND({
-        tar(), 
-        double_jump(), 
+        tar(),
+        double_jump(),
         breakable_walls()
       })
     end
@@ -5493,7 +5493,7 @@ REGIONS = {
     ["ForgottenWorld_TarPits2"] = function()
       return
       _AND({
-        tar(), 
+        tar(),
         double_jump()
       })
     end,
@@ -5527,8 +5527,8 @@ REGIONS = {
     ["ForgottenWorld_TarPits5_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         ground_switches()
       })
     end,
@@ -5562,8 +5562,8 @@ REGIONS = {
     ["ForgottenWorld_JungleShortcut"] = function()
       return
       _OR({
-        double_jump(), 
-        summon_big_rock(), 
+        double_jump(),
+        summon_big_rock(),
         distant_ledges()
       })
     end
@@ -5596,16 +5596,16 @@ REGIONS = {
     ["ForgottenWorld_DracomerLair"] = function()
       return
       _AND({
-        swimming(), 
+        swimming(),
         forgotten_world_waters_shortcut()
       })
     end,
     ["ForgottenWorld_Waters1_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end,
@@ -5655,12 +5655,12 @@ REGIONS = {
     ["ForgottenWorld_TarPits5_Lower"] = function()
       return
       _AND({
-        magic_walls(), 
+        magic_walls(),
         _OR({
-          summon_big_rock(), 
-          double_jump(), 
-          improved_flying(), 
-          dual_mobility(), 
+          summon_big_rock(),
+          double_jump(),
+          improved_flying(),
+          dual_mobility(),
           lofty_mount()
         })
       })
@@ -5708,8 +5708,8 @@ REGIONS = {
     ["ForgottenWorld_Caves2_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -5732,16 +5732,16 @@ REGIONS = {
     ["ForgottenWorld_Caves5_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
     ["ForgottenWorld_Caves6"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -5756,7 +5756,7 @@ REGIONS = {
     ["ForgottenWorld_Caves5_Upper"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         magic_vines()
       })
     end
@@ -5765,21 +5765,21 @@ REGIONS = {
     ["ForgottenWorld_Caves2_Lower"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         magic_vines()
       })
     end,
     ["ForgottenWorld_Caves4"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         magic_vines()
       })
     end,
     ["ForgottenWorld_Caves5_Lower"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         magic_vines()
       })
     end
@@ -5829,8 +5829,8 @@ REGIONS = {
     ["ForgottenWorld_Caves11_Lower"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
@@ -5840,7 +5840,7 @@ REGIONS = {
     ["ForgottenWorld_TerradrileLair1"] = function()
       return
       _AND({
-        diamond_blocks(), 
+        diamond_blocks(),
         breakable_walls()
       })
     end
@@ -5860,10 +5860,10 @@ REGIONS = {
     ["ForgottenWorld_Caves11_Upper"] = function()
       return
       _AND({
-        forgotten_world_caves_shortcut(), 
+        forgotten_world_caves_shortcut(),
         _OR({
-          double_jump(), 
-          improved_flying(), 
+          double_jump(),
+          improved_flying(),
           dual_mobility()
         })
       })
@@ -5879,8 +5879,8 @@ REGIONS = {
     ["ForgottenWorld_Caves6"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -5915,15 +5915,15 @@ REGIONS = {
     ["ForgottenWorld_Caves10"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
     ["ForgottenWorld_TerradrileLair2"] = function()
       return
       _AND({
-        breakable_walls(), 
+        breakable_walls(),
         narrow_corridors()
       })
     end
@@ -5937,10 +5937,10 @@ REGIONS = {
     ["ForgottenWorld_MCPath2"] = function()
       return
       _AND({
-        double_jump(), 
+        double_jump(),
         _OR({
-          double_jump(), 
-          improved_flying(), 
+          double_jump(),
+          improved_flying(),
           dual_mobility()
         })
       })
@@ -5964,7 +5964,7 @@ REGIONS = {
     ["MagmaChamber_South9_Shortcut"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -6000,8 +6000,8 @@ REGIONS = {
     ["ForgottenWorld_Climb4"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -6016,8 +6016,8 @@ REGIONS = {
     ["ForgottenWorld_Climb5"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -6061,10 +6061,10 @@ REGIONS = {
     ["AbandonedTower_South4"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
-        lofty_mount(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
+        lofty_mount(),
         summon_big_rock()
       })
     end
@@ -6076,10 +6076,10 @@ REGIONS = {
     ["AbandonedTower_South3_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
-        lofty_mount(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
+        lofty_mount(),
         summon_big_rock()
       })
     end
@@ -6110,10 +6110,10 @@ REGIONS = {
     ["AbandonedTower_South7"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
-        lofty_mount(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
+        lofty_mount(),
         summon_big_rock()
       })
     end
@@ -6155,9 +6155,9 @@ REGIONS = {
     ["AbandonedTower_Center3_Lower"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
         lofty_mount()
       })
     end,
@@ -6182,8 +6182,8 @@ REGIONS = {
     ["AbandonedTower_Center1_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -6198,8 +6198,8 @@ REGIONS = {
     ["AbandonedTower_Center3_Upper"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -6216,7 +6216,7 @@ REGIONS = {
     ["AbandonedTower_Center3_Upper"] = function()
       return
       _OR({
-        double_jump(), 
+        double_jump(),
         distant_ledges()
       })
     end
@@ -6239,8 +6239,8 @@ REGIONS = {
     ["AbandonedTower_Center5"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -6260,10 +6260,10 @@ REGIONS = {
     ["AbandonedTower_Center7"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
-        lofty_mount(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
+        lofty_mount(),
         summon_big_rock()
       })
     end
@@ -6278,8 +6278,8 @@ REGIONS = {
     ["AbandonedTower_Center10"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -6299,18 +6299,18 @@ REGIONS = {
     ["AbandonedTower_Center11"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
-        lofty_mount(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
+        lofty_mount(),
         summon_big_rock()
       })
     end,
     ["AbandonedTower_Center12"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -6365,16 +6365,16 @@ REGIONS = {
     ["AbandonedTower_North3"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end,
     ["AbandonedTower_North4"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
+        double_jump(),
+        improved_flying(),
         dual_mobility()
       })
     end
@@ -6407,20 +6407,20 @@ REGIONS = {
     ["AbandonedTower_North7"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
-        lofty_mount(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
+        lofty_mount(),
         summon_big_rock()
       })
     end,
     ["AbandonedTower_North8"] = function()
       return
       _OR({
-        double_jump(), 
-        improved_flying(), 
-        dual_mobility(), 
-        lofty_mount(), 
+        double_jump(),
+        improved_flying(),
+        dual_mobility(),
+        lofty_mount(),
         summon_big_rock()
       })
     end
@@ -6437,8 +6437,8 @@ REGIONS = {
     ["AbandonedTower_North9"] = function()
       return
       _OR({
-        double_jump(), 
-        distant_ledges(), 
+        double_jump(),
+        distant_ledges(),
         summon_big_rock()
       })
     end,

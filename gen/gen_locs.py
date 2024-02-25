@@ -1,6 +1,7 @@
 import enum
 import json
-from typing import Optional
+from os.path import commonprefix
+from typing import Optional, Tuple, List, Any
 
 from PyPopTracker.packs.locations import PopTrackerLocation, PopTrackerSection, PopTrackerMapLocation, export_locations
 
@@ -159,8 +160,8 @@ map_location_mapping = {
     128: ['SnowyPeaks_WestMountain3_7'],
     129: ['SnowyPeaks_WestMountain3_8'],
     130: ['SnowyPeaks_WestMountain6_5'],
-    131: ['SnowyPeaks_WestMountain7_6'],
-    132: ['SnowyPeaks_WestMountain7_7'],
+    131: ['SnowyPeaks_WestMountain7_7'],
+    132: ['SnowyPeaks_WestMountain7_6'],
     133: ['SnowyPeaks_WestMountainSecret_2'],
     134: ['SnowyPeaks_WestMountain7_8'],
     135: ['SnowyPeaks_EastMountain1_9'],
@@ -185,8 +186,8 @@ map_location_mapping = {
     154: ['SnowyPeaks_East3_9', 'SnowyPeaks_East3_8'],
     155: ['SnowyPeaks_East3_10'],
     156: ['SnowyPeaks_East2_Upper_3'],
-    157: ['SnowyPeaks_East2_Lower_4'],
-    158: ['SnowyPeaks_East2_Upper_7'],
+    157: ['SnowyPeaks_East2_Upper_7'],
+    158: ['SnowyPeaks_East2_Lower_4'],
     159: ['StrongholdDungeon_Central3_15'],
     160: ['StrongholdDungeon_Central3_0'],
     161: ['StrongholdDungeon_Central4_12100029', 'StrongholdDungeon_Central4_12100041'],
@@ -273,11 +274,244 @@ map_location_mapping = {
     242: ['MagmaChamber_Center7_1'],
     243: ['MagmaChamber_AlchemistLab_East_27700082'],
     244: ['MagmaChamber_Center9_Middle_12'],
-    245: ['MagmaChamber_Center10_6']
+    245: ['MagmaChamber_Center10_6'],
+    246: ['AncientWoods_West3_0'],
+    247: ['AncientWoods_TreeOfEvolution_7'],
+    248: ['AncientWoods_TreeOfEvolution_9900049'],
+    249: ['AncientWoods_WestDescent2_4', 'AncientWoods_WestDescent2_105'],
+    250: ['MagmaChamber_South3_West_3'],
+    251: ['MagmaChamber_North8_East_27900026'],
+    252: ['BlueCave_ChampionRoom_Champion'],
+    253: ['SunPalace_EastSewers6_7'],
+    254: ['SunPalace_EastSewers6_5'],
+    255: ['StrongholdDungeon_CentralHidden_3'],
+    256: ['AncientWoods_Center5_4'],
+    257: ['AncientWoods_Center6_8500062'],
+    258: ['AncientWoods_North5_0'],
+    259: ['AncientWoods_Center6_3'],
+    260: ['AncientWoods_Center7_6'],
+    261: ['AncientWoods_DarkRoom_3'],
+    262: ['AncientWoods_South3_3', 'AncientWoods_South3_7'],
+    263: ['AncientWoods_TorchesRoom_3', 'AncientWoods_TorchesRoom_7'],
+    264: ['AncientWoods_East1_Shortcut_6'],
+    265: ['AncientWoods_East3_Champion'],
+    266: ['HorizonBeach_West1_0'],
+    267: ['HorizonBeach_West3_0'],
+    268: ['HorizonBeach_West3_3'],
+    269: ['HorizonBeach_West4_3'],
+    270: ['HorizonBeach_Center1_21900081'],
+    271: ['HorizonBeach_Center1_3'],
+    272: ['HorizonBeach_Labyrinth_28'],
+    273: ['HorizonBeach_Labyrinth_27'],
+    274: ['HorizonBeach_Center3_1'],
+    275: ['HorizonBeach_Center3_5'],
+    276: ['HorizonBeach_Center4_4'],
+    277: ['HorizonBeach_Center4_9'],
+    278: ['HorizonBeach_Center6_0'],
+    279: ['HorizonBeach_East3_4'],
+    280: ['HorizonBeach_East2_Lower_54', 'HorizonBeach_East2_Middle_57'],
+    281: ['HorizonBeach_East2_Lower_55'],
+    282: ['HorizonBeach_EastHidden_1'],
+    283: ['HorizonBeach_EastChampion_1'],
+    284: ['HorizonBeach_EastChampion_3', 'HorizonBeach_EastChampion_Champion'],
+    285: ['HorizonBeach_East1_0'],
+    286: ['HorizonBeach_Fisher_24300040'],
+    287: ['HorizonBeach_Fisher_2'],
+    288: ['HorizonBeach_East2_Middle_58'],
+    289: ['HorizonBeach_East2_Upper_53'],
+    290: ['HorizonBeach_East6_0'],
+    291: ['HorizonBeach_East6_2'],
+    292: ['HorizonBeach_East5_24500009'],
+    293: ['HorizonBeach_East5_3'],
+    294: ['HorizonBeach_East5_4'],
+    295: ['HorizonBeach_Center5_3'],
+    296: ['HorizonBeach_Center5_6'],
+    297: ['HorizonBeach_Center2_5'],
+    298: ['HorizonBeach_Center2_3'],
+    299: ['HorizonBeach_South6_6'],
+    300: ['HorizonBeach_South6_10'],
+    301: ['HorizonBeach_South4_2'],
+    302: ['HorizonBeach_TreasureCave2_2'],
+    303: ['HorizonBeach_TreasureCave3_2'],
+    304: ['HorizonBeach_TreasureCave5_3'],
+    305: ['HorizonBeach_Champion_24200118'],
+    306: ['HorizonBeach_Champion_7', 'HorizonBeach_Champion_24200124', 'HorizonBeach_Champion_Champion'],
+    307: ['HorizonBeach_FWEntrance1_2'],
+    308: ['ForgottenWorld_Jungle1_3'],
+    309: ['ForgottenWorld_Jungle1_1'],
+    310: ['ForgottenWorld_Caves1_1'],
+    311: ['ForgottenWorld_Caves2_Lower_8'],
+    312: ['ForgottenWorld_WandererRoom_45100110'],
+    313: ['ForgottenWorld_MCPath1_0'],
+    314: ['ForgottenWorld_MCPath2_12'],
+    315: ['ForgottenWorld_MCPath3_3'],
+    316: ['MagmaChamber_South9_East_8'],
+    317: ['MagmaChamber_South8_0', 'MagmaChamber_South8_1'],
+    318: ['ForgottenWorld_Caves5_Upper_4'],
+    319: ['ForgottenWorld_Caves5_Upper_5'],
+    320: ['ForgottenWorld_Caves5_Lower_12'],
+    321: ['ForgottenWorld_Caves9_2'],
+    322: ['ForgottenWorld_TerradrileLair1_2'],
+    323: ['ForgottenWorld_TerradrileLair2_8'],
+    324: ['ForgottenWorld_TerradrileLair2_3'],
+    325: ['ForgottenWorld_TerradrileLair2_Champion'],
+    326: ['ForgottenWorld_CavesStudy_50400001'],
+    327: ['ForgottenWorld_Caves4_0'],
+    328: ['ForgottenWorld_Caves6_5'],
+    329: ['ForgottenWorld_Caves6_8'],
+    330: ['ForgottenWorld_Caves12_0'],
+    331: ['ForgottenWorld_DarkRoom_14'],
+    332: ['ForgottenWorld_WorldTree_1', 'ForgottenWorld_WorldTree_46100009'],
+    333: ['ForgottenWorld_TarPits5_Lower_1'],
+    334: ['ForgottenWorld_TarPits9_0'],
+    335: ['ForgottenWorld_TarPits4_52800001'],
+    336: ['ForgottenWorld_TarPits4_1'],
+    337: ['ForgottenWorld_TarPits3_1'],
+    338: ['ForgottenWorld_TarPits3_0'],
+    339: ['ForgottenWorld_TarPits1_1'],
+    340: ['ForgottenWorld_Jungle5_Hidden_0'],
+    341: ['ForgottenWorld_Jungle3_1'],
+    342: ['ForgottenWorld_JungleHidden_23'],
+    343: ['ForgottenWorld_Jungle6_3', 'ForgottenWorld_Jungle6_0'],
+    344: ['ForgottenWorld_Jungle6_34'],
+    345: ['ForgottenWorld_ClimbPuzzle_2'],
+    346: ['ForgottenWorld_ClimbPuzzle_3'],
+    347: ['ForgottenWorld_Climb1_46600001'],
+    348: ['ForgottenWorld_Climb2_4'],
+    349: ['ForgottenWorld_Climb2_3'],
+    350: ['ForgottenWorld_Climb2_5'],
+    351: ['ForgottenWorld_Climb3_3'],
+    352: ['ForgottenWorld_Climb4_14'],
+    353: ['ForgottenWorld_Climb4_9', 'ForgottenWorld_Climb4_10'],
+    354: ['ForgottenWorld_Climb4_23', 'ForgottenWorld_Climb4_11'],
+    355: ['ForgottenWorld_Climb4_13'],
+    356: ['ForgottenWorld_ClimbSide_3'],
+    357: ['ForgottenWorld_ClimbSide_1'],
+    358: ['ForgottenWorld_Climb5_3'],
+    359: ['ForgottenWorld_TarPits8_0'],
+    360: ['StrongholdDungeon_JailHidden_2'],
+    361: ['StrongholdDungeon_Library_14200159'],
+    362: ['StrongholdDungeon_Library2_1', 'StrongholdDungeon_Library2_2'],
+    363: ['StrongholdDungeon_WestHidden_3'],
+    364: ['SnowyPeaks_Cryomancer_17900062', 'SnowyPeaks_Cryomancer_17900077', 'SnowyPeaks_Cryomancer_17900065',
+          'SnowyPeaks_Cryomancer_17900066'],
+    365: ['AncientWoods_East4_0', 'AncientWoods_East4_2'],
+    366: ['AncientWoods_East4_4'],
+    367: ['AncientWoods_South4_1'],
+    368: ['BlueCave_South5_29300061', 'BlueCave_South5_29300065'],
+    369: ['Underworld_East3_3'],
+    370: ['Underworld_East3_4'],
+    371: ['Underworld_East4_3'],
+    372: ['Underworld_East5_2'],
+    373: ['Underworld_EastCatacomb10_4'],
+    374: ['Underworld_EastCatacomb10_5'],
+    375: ['Underworld_EastCatacomb6_East_4'],
+    376: ['Underworld_EastCatacomb5_9'],
+    377: ['Underworld_EastCatacomb3_13'],
+    378: ['Underworld_EastCatacomb4_3'],
+    379: ['Underworld_EastCatacomb6_West_1'],
+    380: ['Underworld_EastCatacomb9_1', 'Underworld_EastCatacomb9_4'],
+    381: ['Underworld_Center1_29000021'],
+    382: ['Underworld_Center2_7'],
+    383: ['Underworld_WestCatacomb9_ExteriorEast_7'],
+    384: ['Underworld_WestCatacomb1_8'],
+    385: ['Underworld_WestCatacomb3_9'],
+    386: ['Underworld_WestCatacomb4_Lower_8'],
+    387: ['Underworld_WestCatacomb4_Lower_11'],
+    388: ['Underworld_CenterHidden_0', 'Underworld_CenterHidden_1'],
+    389: ['Underworld_Center3_2'],
+    390: ['Underworld_WestCatacomb7_Shortcut_5'],
+    391: ['Underworld_WestCatacomb9_ExteriorWest_11'],
+    392: ['Underworld_WestCatacomb9_Roof_12'],
+    393: ['Underworld_WestCatacomb9_Interior_Champion', 'Underworld_WestCatacomb9_Interior_32100074'],
+    394: ['Underworld_West1_3'],
+    395: ['Underworld_West6_1'],
+    396: ['Underworld_West4_Champion'],
+    397: ['Underworld_WestCatacomb10_0', 'Underworld_WestCatacomb10_3'],
+    398: ['BlobBurg_East2_2'],
+    399: ['BlobBurg_EastHidden_2'],
+    400: ['BlobBurg_East3_1'],
+    401: ['BlobBurg_Center1_8'],
+    402: ['BlobBurg_Center2_0'],
+    403: ['BlobBurg_Center2_41300001'],
+    404: ['BlobBurg_East4_1'],
+    405: ['BlobBurg_East5_41200001'],
+    406: ['BlobBurg_Center3_41200001'],
+    407: ['BlobBurg_Center4_4'],
+    408: ['BlobBurg_South2_42000001'],
+    409: ['BlobBurg_South2_0'],
+    410: ['BlobBurg_South2_1'],
+    411: ['BlobBurg_West1_1'],
+    412: ['BlobBurg_West1_10'],
+    413: ['BlobBurg_West1_3'],
+    414: ['BlobBurg_West2_41700001'],
+    415: ['BlobBurg_Champion_Champion', 'BlobBurg_Champion_42600001'],
+    416: ['BlobBurg_Worms_3'],
+    417: ['BlobBurg_Worms_4'],
+    418: ['AncientWoods_North3_Champion'],
+    419: ['AncientWoods_East4_0', 'AncientWoods_East4_2'],
+    420: ['AncientWoods_South1_6'],
+    421: ['MagmaChamber_Center11_15'],
+    422: ['MagmaChamber_Center11_17'],
+    423: ['MagmaChamber_South4_Lower_7'],
+    424: ['MagmaChamber_Champion2_7'],
+    425: ['MagmaChamber_Champion2_Champion', 'MagmaChamber_Champion2_0'],
+    426: ['MagmaChamber_LegendaryKeeperRoom_43900165', 'MagmaChamber_LegendaryKeeperRoom_43900176',
+          'MagmaChamber_LegendaryKeeperRoom_43900178', 'MagmaChamber_LegendaryKeeperRoom_43900179',
+          'MagmaChamber_LegendaryKeeperRoom_43900180', 'MagmaChamber_LegendaryKeeperRoom_43900181'],
+    427: ['MagmaChamber_South7_East_4'],
+    428: ['MagmaChamber_South5_21'],
+    429: ['MagmaChamber_Champion_Champion'],
+    430: ['MagmaChamber_Champion_28600001'],
+    431: ['MagmaChamber_South5_20'],
+    432: ['MagmaChamber_South5_22'],
+    433: ['MagmaChamber_TarPit_0'],
+    434: ['ForgottenWorld_FallHidden_0', 'ForgottenWorld_FallHidden_2', 'ForgottenWorld_FallHidden_3'],
+    435: ['MysticalWorkshop_Center1_Upper_33200006'],
+    436: ['AbandonedTower_South2_1'],
+    437: ['AbandonedTower_South3_Upper_1'],
+    438: ['AbandonedTower_South5_3'],
+    439: ['AbandonedTower_South7_3', 'AbandonedTower_South7_7'],
+    440: ['AbandonedTower_SouthHidden2_0', 'AbandonedTower_SouthHidden2_3'],
+    441: ['AbandonedTower_SouthHidden1_1'],
+    442: ['AbandonedTower_South6_3'],
+    443: ['AbandonedTower_Center2_3'],
+    444: ['AbandonedTower_Center3_Upper_1'],
+    445: ['AbandonedTower_Center3_Lower_11'],
+    446: ['AbandonedTower_Center3_Lower_10'],
+    447: ['AbandonedTower_South8_7'],
+    448: ['AbandonedTower_South8_3'],
+    449: ['AbandonedTower_Center5_4'],
+    450: ['AbandonedTower_Center6_5'],
+    451: ['AbandonedTower_Center10_5'],
+    452: ['AbandonedTower_Center8_38300133'],
+    453: ['AbandonedTower_Center9_8'],
+    454: ['AbandonedTower_Center11_1', 'AbandonedTower_Center11_5'],
+    455: ['AbandonedTower_Center12_7'],
+    456: ['AbandonedTower_North1_38800022'],
+    457: ['AbandonedTower_North4_5'],
+    458: ['AbandonedTower_North3_5'],
+    459: ['AbandonedTower_North5_8'],
+    460: ['AbandonedTower_NorthHidden_1', 'AbandonedTower_NorthHidden_2'],
+    461: ['AbandonedTower_North7_8'],
+    462: ['AbandonedTower_North9_39700006'],
+    463: ['AbandonedTower_Final_Champion'],
+    464: ['KeeperStronghold_CenterStairwell_2300075'],
+    465: ['SunPalace_North3_Champion'],
+    466: ['AncientWoods_North3_10', 'AncientWoods_North3_11'],
+    467: ['HorizonBeach_Pit_Secret_2'],
+    468: ['MagmaChamber_PuppyRoom_44200172'],
+    469: ['MysticalWorkshop_Vertraag_Champion'],
+    470: ['ForgottenWorld_Waters1_Upper_5'],
+    471: ['ForgottenWorld_Waters1_Lower_7'],
+    472: ['ForgottenWorld_Waters5_4'],
+    473: ['ForgottenWorld_Waters5_3'],
+    474: ['ForgottenWorld_Waters2_4'],
+    475: ['ForgottenWorld_Waters2_5'],
+    476: ['ForgottenWorld_WatersHidden_11'],
+    477: ['ForgottenWorld_DracomerLair_2'],
+    478: ['ForgottenWorld_DracomerLair_Champion'],
 }
-
-for k, v in map_location_mapping.items():
-    map_location_mapping[k] = [loc_names[v2] for v2 in v]
 
 map_locations = {
     0: [(MAIN_MAP_NAME, 895, 702)],
@@ -377,7 +611,7 @@ map_locations = {
     94: [(MAIN_MAP_NAME, 1400, 774)],
     95: [(MAIN_MAP_NAME, 1426, 872)],
     96: [(MAIN_MAP_NAME, 1448, 728)],
-    97: [(MAIN_MAP_NAME, 1592, 728)],
+    97: [(MAIN_MAP_NAME, 1592 - TILE_SIZE * 2, 728)],
     98: [(MAIN_MAP_NAME, 1496 + TILE_SIZE, 752)],
     99: [(MAIN_MAP_NAME, 1496, 752)],
     100: [(MAIN_MAP_NAME, 1616, 752)],
@@ -508,25 +742,266 @@ map_locations = {
     225: [(MAIN_MAP_NAME, 1448, 416)],
     226: [(MAIN_MAP_NAME, 1448 - TILE_SIZE * 2, 416)],
     227: [(MAIN_MAP_NAME, 1448 + TILE_SIZE, 416)],
-    228: [(MAIN_MAP_NAME, 1710, 800)],
-    229: [(MAIN_MAP_NAME, 1710, 800+TILE_SIZE)],
+    228: [(MAIN_MAP_NAME, 1710, 800 + TILE_SIZE)],
+    229: [(MAIN_MAP_NAME, 1710, 800)],
     230: [(MAIN_MAP_NAME, 1016, 678)],
     231: [(MAIN_MAP_NAME, 1184, 654)],
     232: [(MAIN_MAP_NAME, 2046, 894)],
     233: [(MAIN_MAP_NAME, 1856, 1016)],
     234: [(MAIN_MAP_NAME, 1856 + TILE_SIZE, 1016 - TILE_SIZE)],
     235: [(MAIN_MAP_NAME, 1832, 968)],
-    236: [(MAIN_MAP_NAME, 1832+TILE_SIZE*3, 968)],
-    237: [(MAIN_MAP_NAME, 1832+TILE_SIZE*4, 968)],
+    236: [(MAIN_MAP_NAME, 1832 + TILE_SIZE * 3, 968)],
+    237: [(MAIN_MAP_NAME, 1832 + TILE_SIZE * 4, 968)],
     238: [(MAIN_MAP_NAME, 1904, 1040)],
-    239: [(MAIN_MAP_NAME, 1904-TILE_SIZE*3, 1040)],
+    239: [(MAIN_MAP_NAME, 1904 - TILE_SIZE * 3, 1040)],
     240: [(MAIN_MAP_NAME, 2000, 1040)],
-    241: [(MAIN_MAP_NAME, 2000-TILE_SIZE, 1040-TILE_SIZE*2)],
-    242: [(MAIN_MAP_NAME, 2000-TILE_SIZE*2, 1040-TILE_SIZE*3)],
+    241: [(MAIN_MAP_NAME, 2000 - TILE_SIZE, 1040 - TILE_SIZE * 2)],
+    242: [(MAIN_MAP_NAME, 2000 - TILE_SIZE * 2, 1040 - TILE_SIZE * 3)],
     243: [(MAIN_MAP_NAME, 2024, 968)],
-    244: [(MAIN_MAP_NAME, 2096, 968-TILE_SIZE)],
-    245: [(MAIN_MAP_NAME, 2120, 968+TILE_SIZE)],
+    244: [(MAIN_MAP_NAME, 2096, 968 - TILE_SIZE)],
+    245: [(MAIN_MAP_NAME, 2120, 968 + TILE_SIZE)],
+    246: [(MAIN_MAP_NAME, 1592, 728)],
+    247: [(MAIN_MAP_NAME, 1592 + TILE_SIZE * 2, 728)],
+    248: [(MAIN_MAP_NAME, 1592 + TILE_SIZE, 728)],
+    249: [(MAIN_MAP_NAME, 1616, 942)],
+    250: [(MAIN_MAP_NAME, 2072, 1016)],
+    251: [(MAIN_MAP_NAME, 1976, 920)],
+    252: [(MAIN_MAP_NAME, 1014, 822)],
+    253: [(MAIN_MAP_NAME, 608, 1018)],
+    254: [(MAIN_MAP_NAME, 608 + TILE_SIZE, 1018)],
+    255: [(MAIN_MAP_NAME, 1472, 872 + TILE_SIZE)],
+    256: [(MAIN_MAP_NAME, 1856, 750)],
+    257: [(MAIN_MAP_NAME, 1856 + TILE_SIZE * 2, 750)],
+    258: [(MAIN_MAP_NAME, 1856, 750 - TILE_SIZE)],
+    259: [(MAIN_MAP_NAME, 1856 + TILE_SIZE * 3, 750)],
+    260: [(MAIN_MAP_NAME, 2000, 774)],
+    261: [(MAIN_MAP_NAME, 2024, 774 + TILE_SIZE * 2)],
+    262: [(MAIN_MAP_NAME, 1904, 846)],
+    263: [(MAIN_MAP_NAME, 1904 - TILE_SIZE, 846 - TILE_SIZE)],
+    264: [(MAIN_MAP_NAME, 2024, 724)],
+    265: [(MAIN_MAP_NAME, 2144, 724)],
+    266: [(MAIN_MAP_NAME, 2264, 748)],
+    267: [(MAIN_MAP_NAME, 2336, 700)],
+    268: [(MAIN_MAP_NAME, 2360, 700)],
+    269: [(MAIN_MAP_NAME, 2384, 748)],
+    270: [(MAIN_MAP_NAME, 2480, 748)],
+    271: [(MAIN_MAP_NAME, 2480, 772)],
+    272: [(MAIN_MAP_NAME, 2600, 844)],
+    273: [(MAIN_MAP_NAME, 2552, 844)],
+    274: [(MAIN_MAP_NAME, 2624, 772)],
+    275: [(MAIN_MAP_NAME, 2648, 796)],
+    276: [(MAIN_MAP_NAME, 2696, 796)],
+    277: [(MAIN_MAP_NAME, 2720, 796)],
+    278: [(MAIN_MAP_NAME, 2768, 748)],
+    279: [(MAIN_MAP_NAME, 2816, 772)],
+    280: [(MAIN_MAP_NAME, 2864, 724)],
+    281: [(MAIN_MAP_NAME, 2912, 772)],
+    282: [(MAIN_MAP_NAME, 2936, 820)],
+    283: [(MAIN_MAP_NAME, 2912, 820)],
+    284: [(MAIN_MAP_NAME, 2888, 820)],
+    285: [(MAIN_MAP_NAME, 2840, 724)],
+    286: [(MAIN_MAP_NAME, 2984, 748)],
+    287: [(MAIN_MAP_NAME, 3008, 748)],
+    288: [(MAIN_MAP_NAME, 2912, 724)],
+    289: [(MAIN_MAP_NAME, 2912, 700)],
+    290: [(MAIN_MAP_NAME, 2864, 652)],
+    291: [(MAIN_MAP_NAME, 2840, 652)],
+    292: [(MAIN_MAP_NAME, 2960, 628)],
+    293: [(MAIN_MAP_NAME, 2984, 628)],
+    294: [(MAIN_MAP_NAME, 3008, 628)],
+    295: [(MAIN_MAP_NAME, 2792, 796)],
+    296: [(MAIN_MAP_NAME, 2792, 820)],
+    297: [(MAIN_MAP_NAME, 2600, 724)],
+    298: [(MAIN_MAP_NAME, 2552, 724)],
+    299: [(MAIN_MAP_NAME, 2528, 892)],
+    300: [(MAIN_MAP_NAME, 2504, 892)],
+    301: [(MAIN_MAP_NAME, 2360, 820)],
+    302: [(MAIN_MAP_NAME, 2312, 844)],
+    303: [(MAIN_MAP_NAME, 2288, 844)],
+    304: [(MAIN_MAP_NAME, 2288, 892)],
+    305: [(MAIN_MAP_NAME, 2240, 892)],
+    306: [(MAIN_MAP_NAME, 2216, 892)],
+    307: [(MAIN_MAP_NAME, 2336, 892)],
+    308: [(MAIN_MAP_NAME, 2552, 1108)],
+    309: [(MAIN_MAP_NAME, 2552, 1132)],
+    310: [(MAIN_MAP_NAME, 2504, 1132)],
+    311: [(MAIN_MAP_NAME, 2480, 1204)],
+    312: [(MAIN_MAP_NAME, 2408, 1156)],
+    313: [(MAIN_MAP_NAME, 2432, 1156)],
+    314: [(MAIN_MAP_NAME, 2384, 1084)],
+    315: [(MAIN_MAP_NAME, 2360, 1060)],
+    316: [(MAIN_MAP_NAME, 2336, 1036)],
+    317: [(MAIN_MAP_NAME, 2264, 1036)],
+    318: [(MAIN_MAP_NAME, 2504, 1204)],
+    319: [(MAIN_MAP_NAME, 2504, 1228)],
+    320: [(MAIN_MAP_NAME, 2504, 1252)],
+    321: [(MAIN_MAP_NAME, 2456, 1276)],
+    322: [(MAIN_MAP_NAME, 2360, 1348)],
+    323: [(MAIN_MAP_NAME, 2408, 1372)],
+    324: [(MAIN_MAP_NAME, 2432, 1372)],
+    325: [(MAIN_MAP_NAME, 2456, 1372)],
+    326: [(MAIN_MAP_NAME, 2360, 1276)],
+    327: [(MAIN_MAP_NAME, 2528, 1204)],
+    328: [(MAIN_MAP_NAME, 2576, 1204)],
+    329: [(MAIN_MAP_NAME, 2552, 1228)],
+    330: [(MAIN_MAP_NAME, 2600, 1276)],
+    331: [(MAIN_MAP_NAME, 2552, 1276)],
+    332: [(MAIN_MAP_NAME, 2624, 1204)],
+    333: [(MAIN_MAP_NAME, 2792, 1228)],
+    334: [(MAIN_MAP_NAME, 2864, 1252)],
+    335: [(MAIN_MAP_NAME, 2840, 1204)],
+    336: [(MAIN_MAP_NAME, 2888, 1204)],
+    337: [(MAIN_MAP_NAME, 2912, 1204)],
+    338: [(MAIN_MAP_NAME, 2912, 1180)],
+    339: [(MAIN_MAP_NAME, 2840, 1156)],
+    340: [(MAIN_MAP_NAME, 2792, 1132)],
+    341: [(MAIN_MAP_NAME, 2672, 1108)],
+    342: [(MAIN_MAP_NAME, 2576, 1108)],
+    343: [(MAIN_MAP_NAME, 2864, 1060)],
+    344: [(MAIN_MAP_NAME, 2840, 1036)],
+    345: [(MAIN_MAP_NAME, 2912, 1012)],
+    346: [(MAIN_MAP_NAME, 2912, 988)],
+    347: [(MAIN_MAP_NAME, 2888, 988)],
+    348: [(MAIN_MAP_NAME, 2864, 988)],
+    349: [(MAIN_MAP_NAME, 2864, 940)],
+    350: [(MAIN_MAP_NAME, 2864, 916)],
+    351: [(MAIN_MAP_NAME, 2816, 916)],
+    352: [(MAIN_MAP_NAME, 2792, 916)],
+    353: [(MAIN_MAP_NAME, 2792, 868)],
+    354: [(MAIN_MAP_NAME, 2744, 916)],
+    355: [(MAIN_MAP_NAME, 2744, 892)],
+    356: [(MAIN_MAP_NAME, 2696, 892)],
+    357: [(MAIN_MAP_NAME, 2624, 892)],
+    358: [(MAIN_MAP_NAME, 2720, 868)],
+    359: [(MAIN_MAP_NAME, 2768, 1156)],
+    360: [(MAIN_MAP_NAME, 1280, 772)],
+    361: [(MAIN_MAP_NAME, 1376, 964)],
+    362: [(MAIN_MAP_NAME, 1400, 964)],
+    363: [(MAIN_MAP_NAME, 1256, 868)],
+    364: [(MAIN_MAP_NAME, 152, 652)],
+    365: [(MAIN_MAP_NAME, 2120, 676)],
+    366: [(MAIN_MAP_NAME, 2120, 652)],
+    367: [(MAIN_MAP_NAME, 1904, 798)],
+    368: [(MAIN_MAP_NAME, 1208, 964)],
+    369: [(MAIN_MAP_NAME, 1112, 1012)],
+    370: [(MAIN_MAP_NAME, 1088, 1012)],
+    371: [(MAIN_MAP_NAME, 1064, 1060)],
+    372: [(MAIN_MAP_NAME, 1016, 1060)],
+    373: [(MAIN_MAP_NAME, 1016, 1084)],
+    374: [(MAIN_MAP_NAME, 1040, 1084)],
+    375: [(MAIN_MAP_NAME, 944, 1108)],
+    376: [(MAIN_MAP_NAME, 920, 1084)],
+    377: [(MAIN_MAP_NAME, 920, 1036)],
+    378: [(MAIN_MAP_NAME, 944, 1012)],
+    379: [(MAIN_MAP_NAME, 920, 1108)],
+    380: [(MAIN_MAP_NAME, 944, 940)],
+    381: [(MAIN_MAP_NAME, 896, 1060)],
+    382: [(MAIN_MAP_NAME, 848, 1036)],
+    383: [(MAIN_MAP_NAME, 776, 1012)],
+    384: [(MAIN_MAP_NAME, 728, 1060)],
+    385: [(MAIN_MAP_NAME, 704, 1084)],
+    386: [(MAIN_MAP_NAME, 728, 1108)],
+    387: [(MAIN_MAP_NAME, 776, 1108)],
+    388: [(MAIN_MAP_NAME, 896, 1084)],
+    389: [(MAIN_MAP_NAME, 872, 1108)],
+    390: [(MAIN_MAP_NAME, 704, 1060)],
+    391: [(MAIN_MAP_NAME, 728, 1012)],
+    392: [(MAIN_MAP_NAME, 728, 988)],
+    393: [(MAIN_MAP_NAME, 752, 1012)],
+    394: [(MAIN_MAP_NAME, 656, 1036)],
+    395: [(MAIN_MAP_NAME, 512, 1084)],
+    396: [(MAIN_MAP_NAME, 536, 1060)],
+    397: [(MAIN_MAP_NAME, 800, 1060)],
+    398: [(MAIN_MAP_NAME, 1616, 1016)],
+    399: [(MAIN_MAP_NAME, 1592, 1016)],
+    400: [(MAIN_MAP_NAME, 1592, 1064)],
+    401: [(MAIN_MAP_NAME, 1544, 1040)],
+    402: [(MAIN_MAP_NAME, 1520, 1112)],
+    403: [(MAIN_MAP_NAME, 1472, 1112)],
+    404: [(MAIN_MAP_NAME, 1568, 1112)],
+    405: [(MAIN_MAP_NAME, 1640, 1136)],
+    406: [(MAIN_MAP_NAME, 1496, 1040)],
+    407: [(MAIN_MAP_NAME, 1424, 1136)],
+    408: [(MAIN_MAP_NAME, 1520, 1136)],
+    409: [(MAIN_MAP_NAME, 1520, 1160)],
+    410: [(MAIN_MAP_NAME, 1544, 1160)],
+    411: [(MAIN_MAP_NAME, 1400, 1160)],
+    412: [(MAIN_MAP_NAME, 1376, 1160)],
+    413: [(MAIN_MAP_NAME, 1352, 1160)],
+    414: [(MAIN_MAP_NAME, 1328, 1064)],
+    415: [(MAIN_MAP_NAME, 1376, 1088)],
+    416: [(MAIN_MAP_NAME, 1424, 1040)],
+    417: [(MAIN_MAP_NAME, 1472, 1016)],
+    418: [(MAIN_MAP_NAME, 2000, 700)],
+    419: [(MAIN_MAP_NAME, 2024, 700)],
+    420: [(MAIN_MAP_NAME, 1976, 800)],
+    421: [(MAIN_MAP_NAME, 2192, 968)],
+    422: [(MAIN_MAP_NAME, 2192, 944)],
+    423: [(MAIN_MAP_NAME, 2168, 1016)],
+    424: [(MAIN_MAP_NAME, 2216, 992)],
+    425: [(MAIN_MAP_NAME, 2264, 992)],
+    426: [(MAIN_MAP_NAME, 2288, 968)],
+    427: [(MAIN_MAP_NAME, 2240, 1036)],
+    428: [(MAIN_MAP_NAME, 2096, 1060)],
+    429: [(MAIN_MAP_NAME, 2072, 1060)],
+    430: [(MAIN_MAP_NAME, 2048, 1060)],
+    431: [(MAIN_MAP_NAME, 2096, 1012)],
+    432: [(MAIN_MAP_NAME, 2096, 988)],
+    433: [(MAIN_MAP_NAME, 2144, 1060)],
+    434: [(MAIN_MAP_NAME, 2432, 1012)],
+    435: [(MAIN_MAP_NAME, 1472, 630)],
+    436: [(MAIN_MAP_NAME, 1304, 580)],
+    437: [(MAIN_MAP_NAME, 1352, 556)],
+    438: [(MAIN_MAP_NAME, 1352, 508)],
+    439: [(MAIN_MAP_NAME, 1328, 508)],
+    440: [(MAIN_MAP_NAME, 1352, 484)],
+    441: [(MAIN_MAP_NAME, 1304, 508)],
+    442: [(MAIN_MAP_NAME, 1304, 460)],
+    443: [(MAIN_MAP_NAME, 1304, 388)],
+    444: [(MAIN_MAP_NAME, 1352, 340)],
+    445: [(MAIN_MAP_NAME, 1352, 388)],
+    446: [(MAIN_MAP_NAME, 1352, 412)],
+    447: [(MAIN_MAP_NAME, 1328, 436)],
+    448: [(MAIN_MAP_NAME, 1352, 460)],
+    449: [(MAIN_MAP_NAME, 1424, 316)],
+    450: [(MAIN_MAP_NAME, 1328, 316)],
+    451: [(MAIN_MAP_NAME, 1352, 268)],
+    452: [(MAIN_MAP_NAME, 1352, 292)],
+    453: [(MAIN_MAP_NAME, 1400, 292)],
+    454: [(MAIN_MAP_NAME, 1376, 244)],
+    455: [(MAIN_MAP_NAME, 1328, 220)],
+    456: [(MAIN_MAP_NAME, 1376, 196)],
+    457: [(MAIN_MAP_NAME, 1352, 148)],
+    458: [(MAIN_MAP_NAME, 1376, 172)],
+    459: [(MAIN_MAP_NAME, 1400, 196)],
+    460: [(MAIN_MAP_NAME, 1376, 100)],
+    461: [(MAIN_MAP_NAME, 1400, 100)],
+    462: [(MAIN_MAP_NAME, 1376, 52)],
+    463: [(MAIN_MAP_NAME, 1376, 28)],
+    464: [(MAIN_MAP_NAME, 1184, 702)],
+    465: [(MAIN_MAP_NAME, 416, 846)],
+    466: [(MAIN_MAP_NAME, 2024, 700)],
+    467: [(MAIN_MAP_NAME, 2288, 820)],
+    468: [(MAIN_MAP_NAME, 2120, 940)],
+    469: [(MAIN_MAP_NAME, 1424, 416)],
+    470: [(MAIN_MAP_NAME, 2720, 1228)],
+    471: [(MAIN_MAP_NAME, 2720, 1276)],
+    472: [(MAIN_MAP_NAME, 2768, 1252)],
+    473: [(MAIN_MAP_NAME, 2768, 1228)],
+    474: [(MAIN_MAP_NAME, 2696, 1300)],
+    475: [(MAIN_MAP_NAME, 2696, 1324)],
+    476: [(MAIN_MAP_NAME, 2672, 1300)],
+    477: [(MAIN_MAP_NAME, 2672, 1252)],
+    478: [(MAIN_MAP_NAME, 2696, 1252)],
 }
+
+
+def fix_mapping_table():
+    for k, v in map_location_mapping.items():
+        map_location_mapping[k] = [loc_names[v2] for v2 in v]
+
+
+fix_mapping_table()
 
 
 def get_access(req_data: Optional[list], op: Optional[str] = "AND"):
@@ -582,16 +1057,48 @@ def combine_access(current, to_add, op):
     return new
 
 
-def are_different_regions(loc_names, cur_region):
-    for name in loc_names:
-        if cur_region not in name:
-            return True
-    return False
+__regions_by_locs = {}
+
+
+def setup_regions_by_locs():
+    if len(__regions_by_locs) > 0:
+        return
+    with open('data/world.json', mode='r') as f:
+        json_data = json.load(f)
+    for current_region_data in json_data:
+        region = current_region_data['region']
+        for chest_data in current_region_data.get("chests") or []:
+            # Hack because we store comments as strings
+            if isinstance(chest_data, str):
+                continue
+            __regions_by_locs[loc_names[f"{region}_{chest_data['id']}"]] = region
+
+        for gift_data in current_region_data.get("gifts") or []:
+            # Hack because we store comments as strings
+            if isinstance(gift_data, str):
+                continue
+            __regions_by_locs[loc_names[f"{region}_{gift_data['id']}"]] = region
+
+        for champion_data in current_region_data.get("champion") or []:
+            # Hack because we store comments as strings
+            if isinstance(champion_data, str):
+                continue
+            __regions_by_locs[loc_names[f'{region}_Champion']] = region
+
+        for flag_data in current_region_data.get("flags") or []:
+            # Hack because we store comments as strings
+            if isinstance(flag_data, str):
+                continue
+            # __regions_by_locs[loc_names[f"Flag {region}_{flag_data['id']}"]] = region
 
 
 def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, data, location_id,
-               ids_for_sections, loc_names, count=1, clear_as_group=False):
+               ids_for_sections, loc_names, postgame_data, count=1, clear_as_group=False):
+    unopened_img = None
+    opened_img = None
     if check_type_name == "Rank":
+        unopened_img = 'images/items/rank/champion_defeated.png'
+        opened_img = 'images/items/rank/champion_defeated_grey.png'
         loc_name = loc_names[f'{region}_Champion']
     elif check_type_name == "Flag":
         loc_name = f"{check_type_name} {region}_{data['id']}"
@@ -602,20 +1109,24 @@ def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, dat
             loc_name = loc_names[f"{region}_{data['id']}"]
     # print('create_loc', region, loc_name, location_id)
     map_locs = None
-    mapping_value = None
+    mapping_values = None
     multi_sec = False
     for k, v in map_location_mapping.items():
         if loc_name in v:
             map_locs = map_locations[k]
-            mapping_value = v
+            mapping_values = v
             multi_sec = len(v) > 1
             break
     if map_locs is not None:
         map_locs = list(map(lambda x: PopTrackerMapLocation(*x), map_locs))
-    access_rules = combine_access([[f"$has_access_to|{region}"]], get_access(data.get('requirements')), "AND")
+    access_rules : list[list[str]] = combine_access([[f"$has_access_to|{region}"]], get_access(data.get('requirements')), "AND")
+    visibilty_rules = None
+    if f"{region}_{data['id']}" in postgame_data:
+        visibilty_rules = [['$is_goal_not_mad_lord']]
     if multi_sec:
         parent_count = 1
-        parent_region = region
+        # parent_region, regions = get_common_region_name(mapping_values)
+        parent_region = format_region_name(mapping_values)
         # if f'{region}_{data["id"]}' in subsections:
         #     parent_region = subsections[f'{region}_{data["id"]}']
         #     parent_region = parent_region[:parent_region.rfind("_")]
@@ -625,7 +1136,7 @@ def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, dat
             loc = next((x for x in locs if x.name == parent_region), None)
             if loc is not None:
                 first_sec = loc.sections[0]
-                if first_sec.name not in mapping_value:
+                if first_sec.name not in mapping_values:
                     parent_count += 1
                     parent_region = f'{temp_parent_name} #{parent_count}'
                 else:
@@ -633,9 +1144,12 @@ def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, dat
             else:
                 break
         if loc is None:
+            # ToDo: format parent region name
             loc = PopTrackerLocation(parent_region, map_locations=map_locs)
             locs.append(loc)
-        sec = PopTrackerSection(loc_name, item_count=count, clear_as_group=clear_as_group, access_rules=access_rules)
+        sec = PopTrackerSection(loc_name, item_count=count, clear_as_group=clear_as_group, access_rules=access_rules,
+                                visibility_rules=visibilty_rules, chest_unopened_img=unopened_img,
+                                chest_opened_img=opened_img)
         loc.sections.append(sec)
         loc_by_name[loc_name] = sec
         ids = []
@@ -646,7 +1160,9 @@ def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, dat
             ids_for_sections[f'@{parent_region}/{loc_name}'] = ids
     else:
         loc = PopTrackerLocation(loc_name, map_locations=map_locs, access_rules=access_rules)
-        loc.sections.append(PopTrackerSection("", item_count=count, clear_as_group=clear_as_group))
+        loc.sections.append(
+            PopTrackerSection("", item_count=count, clear_as_group=clear_as_group, chest_unopened_img=unopened_img,
+                              chest_opened_img=opened_img))
         loc_by_name[loc_name] = loc
         ids = []
         if location_id is not None:
@@ -660,6 +1176,14 @@ def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, dat
     return loc, location_id
 
 
+def format_region_name(mappings: list[str]):
+    name = commonprefix([(v if len(v.split(' - ')) <= 2 else ' - '.join(v.split(' - ')[:-1])) for v in mappings]).strip(
+        ' - ').strip()
+    if name == 'Magma Chamber - Forgotten World Exit':
+        name = 'Magma Chamber - Forgotten World Exit - Hidden'
+    return name
+
+
 def find_loc_with_same_map_loc(locs: list[PopTrackerLocation], map_locs: list[PopTrackerMapLocation]):
     for loc in locs:
         for map_loc in map_locs:
@@ -668,43 +1192,48 @@ def find_loc_with_same_map_loc(locs: list[PopTrackerLocation], map_locs: list[Po
     return None
 
 
-def get_chest_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, loc_names):
-    loc, location_id = create_loc(locs, region, 'Chest', data, location_id, ids_for_sections, loc_names)
+def get_chest_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, loc_names,
+                  postgame_data):
+    loc, location_id = create_loc(locs, region, 'Chest', data, location_id, ids_for_sections, loc_names, postgame_data)
     return loc, location_id
 
 
-def get_gift_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, loc_names):
-    loc, location_id = create_loc(locs, region, 'Gift', data, location_id, ids_for_sections, loc_names)
+def get_gift_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, loc_names,
+                 postgame_data):
+    loc, location_id = create_loc(locs, region, 'Gift', data, location_id, ids_for_sections, loc_names, postgame_data)
     return loc, location_id
 
 
-def get_encounter_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, loc_names):
-    loc, location_id = create_loc(locs, region, 'Encounter', data, location_id, ids_for_sections, loc_names, count=3,
-                                  clear_as_group=True)
+def get_encounter_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, loc_names,
+                       postgame_data):
+    loc, location_id = create_loc(locs, region, 'Encounter', data, location_id, ids_for_sections, loc_names,
+                                  postgame_data, count=3, clear_as_group=True)
     return loc, location_id
 
 
-def get_champ_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, subsections):
-    loc, location_id = create_loc(locs, region, 'Rank', data, location_id, ids_for_sections, subsections)
-    # loc, location_id = create_loc(locs, region, 'Champion', data, location_id, ids_for_sections, count=3,
+def get_champ_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, subsections,
+                   postgame_data):
+    loc, location_id = create_loc(locs, region, 'Rank', data, location_id, ids_for_sections, subsections, postgame_data)
+    # loc, location_id = create_loc(locs, region, 'Champion', data, location_id, ids_for_sections, postgame_data, count=3,
     #                               clear_as_group=True)
-    location_id += 3
+    # location_id += 3
     return loc, location_id
 
 
-def get_flag_loc(locs: list[PopTrackerLocation], region: str, data, subsections):
-    loc, _ = create_loc(locs, region, 'Flag', data, None, None, subsections)
+def get_flag_loc(locs: list[PopTrackerLocation], region: str, data, subsections, postgame_data):
+    loc, _ = create_loc(locs, region, 'Flag', data, None, None, subsections, postgame_data)
     return loc, None
-
 
 
 locs_by_id = {}
 
 
 def gen_locations():
+    with open('data/postgame.json', mode='r') as f:
+        postgame_data = json.load(f)
     with open('data/world.json', mode='r') as f:
         json_data = json.load(f)
-    locs = []
+    locs: list[PopTrackerLocation] = []
     ids_for_sections = {}
 
     location_id = 970500
@@ -723,34 +1252,34 @@ def gen_locations():
             if isinstance(chest_data, str):
                 continue
             location, location_id = get_chest_loc(locs, region_name, chest_data, location_id, ids_for_sections,
-                                                  loc_names)
+                                                  loc_names, postgame_data)
 
         for gift_data in current_region_data.get("gifts") or []:
             # Hack because we store comments as strings
             if isinstance(gift_data, str):
                 continue
             location, location_id = get_gift_loc(locs, region_name, gift_data, location_id, ids_for_sections,
-                                                 loc_names)
+                                                 loc_names, postgame_data)
 
         for encounter_data in current_region_data.get("encounters") or []:
             # Hack because we store comments as strings
             if isinstance(encounter_data, str):
                 continue
             # location, location_id = get_encounter_locs(locs, region_name, encounter_data, location_id, ids_for_sections,
-            #                                            loc_names)
+            #                                            loc_names, postgame_data)
 
         for champion_data in current_region_data.get("champion") or []:
             # Hack because we store comments as strings
             if isinstance(champion_data, str):
                 continue
             location, location_id = get_champ_locs(locs, region_name, champion_data, location_id, ids_for_sections,
-                                                   loc_names)
+                                                   loc_names, postgame_data)
 
         for flag_data in current_region_data.get("flags") or []:
             # Hack because we store comments as strings
             if isinstance(flag_data, str):
                 continue
-            location, _ = get_flag_loc(locs, region_name, flag_data, loc_names)
+            location, _ = get_flag_loc(locs, region_name, flag_data, loc_names, postgame_data)
 
         # locs.append(region)
     with open('data/plotless.json', mode='r') as f:
@@ -758,13 +1287,13 @@ def gen_locations():
     for plotless_data in json_data:
         loc_type = plotless_data['type']
         if loc_type == 'connection':
-            continue # handled by logic
+            continue  # handled by logic
         region_name = plotless_data['region']
         if loc_type == 'location':
             loc_type = 'Gift'  # ToDo: determine by id range
             loc_id = plotless_data['object_id']
         else:
-            continue # ToDo?
+            continue  # ToDo?
         loc_name = loc_names[f'{region_name}_{loc_id}']
         loc = loc_by_name[loc_name]
         loc.access_rules = combine_access(loc.access_rules,
@@ -772,7 +1301,10 @@ def gen_locations():
                                               [[f'$has_access_to|{region_name}', '$plotless']],
                                               get_access(plotless_data['requirements']), 'AND')
                                           , 'OR')
-
+    # Fix sections sorting
+    # ToDo: could probably be optimized...
+    for loc in locs:
+        loc.sections.sort(key=compare_section_order)
     export_locations(locs, out_path='../locations/locations.json')
     print('Exported locations!')
     export_loction_mapping(ids_for_sections)
@@ -785,6 +1317,13 @@ def gen_locations():
         if v not in mapped_locs:
             missing_locs[k] = v
     print(len(missing_locs), missing_locs)
+
+
+def compare_section_order(x: PopTrackerSection):
+    for k, v in map_location_mapping.items():
+        if x.name in v:
+            return v.index(x.name)
+    return 0
 
 
 def export_loction_mapping(ids_for_items: dict[str, list[int]]):

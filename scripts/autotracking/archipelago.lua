@@ -5,6 +5,7 @@
 -- this is useful since remote items will not reset but local items might
 require("scripts/autotracking/item_mapping")
 require("scripts/autotracking/location_mapping")
+require("scripts/autotracking/datastorage_mapping")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
@@ -13,10 +14,22 @@ GLOBAL_ITEMS = {}
 REGIONS_ACCESS_CACHE = {}
 update_access()
 
+function GetDataStorageKeys()
+    local keys = {}
+    for k,_ in pairs(DATASTORAGE_MAPPING) do
+        table.insert(keys, "Slot:"..Archipelago.PlayerNumber..":"..k)
+    end
+    return keys
+end
+
 function onClear(slot_data)
+    Tracker.BulkUpdate = true
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
     end
+    local keys = GetDataStorageKeys()
+    Archipelago:Get(keys)
+    Archipelago:SetNotify(keys)
     REGIONS_ACCESS_CACHE = {}
     SLOT_DATA = slot_data
     CUR_INDEX = -1
@@ -42,34 +55,46 @@ function onClear(slot_data)
     for _, v in pairs(ITEM_MAPPING) do
         if v[1] and v[2] then
             for _, code in ipairs(v[1]) do
-                if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                    print(string.format("onClear: clearing item %s of type %s", code, v[2]))
-                end
-                local obj = Tracker:FindObjectForCode(code)
-                if obj then
-                    if v[2] == "toggle" then
-                        obj.Active = false
-                    elseif v[2] == "progressive" then
-                        obj.CurrentStage = 0
-                        obj.Active = false
-                    elseif v[2] == "consumable" then
-                        obj.AcquiredCount = 0
-                    elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                        print(string.format("onClear: unknown item type %s for code %s", v[2], code))
-                    end
-                elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                    print(string.format("onClear: could not find object for code %s", code))
-                end
+                resetItem(code, v[2])
+            end
+        end
+    end
+    for _, v in pairs(DATASTORAGE_MAPPING) do
+        if v[1] and v[2] then
+            for _, code in ipairs(v[1]) do
+                resetItem(code, v[2])
             end
         end
     end
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
     update_access()
+    Tracker.BulkUpdate = false
+end
+
+function resetItem(code, type)
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("onClear: clearing item %s of type %s", code, v[2]))
+    end
+    local obj = Tracker:FindObjectForCode(code)
+    if obj then
+        if type == "toggle" then
+            obj.Active = false
+        elseif type == "progressive" then
+            obj.CurrentStage = 0
+            obj.Active = false
+        elseif type == "consumable" then
+            obj.AcquiredCount = 0
+        elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("onClear: unknown item type %s for code %s", v[2], code))
+        end
+    elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("onClear: could not find object for code %s", code))
+    end
 end
 
 -- called when an item gets collected
-function onItem(index, item_id, item_name, player_number)
+function onItem(index, item_id, item_name, player_number)    
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onItem: %s, %s, %s, %s, %s", index, item_id, item_name, player_number, CUR_INDEX))
     end
@@ -132,11 +157,11 @@ function onItem(index, item_id, item_name, player_number)
         print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
         print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
     end
-    update_access()
+    update_access()    
 end
 
 -- called when a location gets cleared
-function onLocation(location_id, location_name)
+function onLocation(location_id, location_name)    
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onLocation: %s, %s", location_id, location_name))
     end
@@ -161,7 +186,49 @@ function onLocation(location_id, location_name)
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onLocation: could not find object for code %s", v[1]))
     end
-    update_access()
+    update_access()    
+end
+
+function onRetrieved(key, value)
+    updateFromDataStorage(key, value)
+end
+
+function onSetReply(key, value, old_value)
+    if old_value ~= value then
+        updateFromDataStorage(key, value)
+    end
+end
+
+function updateFromDataStorage(key, value)
+    local mapping = DATASTORAGE_MAPPING[key]
+    if not mapping then
+        return
+    end
+    if not mapping[1] then
+        return
+    end
+    local type = mapping[2]
+    for _, code in mapping[1] do
+        local obj = Tracker:FindObjectForCode(code)
+        if not obj then
+            return
+        end
+        if v[1]:sub(1, 1) == "@" then
+            obj.AvailableChestCount = obj.ChestCount - value
+        else
+            if type == "toggle" then
+                obj.Active = value
+            elseif type == "progressive" then
+                if obj.Active then
+                    obj.CurrentStage = value
+                else
+                    obj.Active = value
+                end
+            elseif type == "consumable" then
+                obj.AcquiredCount = value
+            end
+        end
+    end
 end
 
 
@@ -170,6 +237,8 @@ end
 Archipelago:AddClearHandler("clear handler", onClear)
 if AUTOTRACKER_ENABLE_ITEM_TRACKING then
     Archipelago:AddItemHandler("item handler", onItem)
+    Archipelago:AddRetrievedHandler("item handler", onRetrieved)
+    Archipelago:AddSetReplyHandler("item handler", onSetReply)
 end
 if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
     Archipelago:AddLocationHandler("location handler", onLocation)

@@ -782,7 +782,7 @@
     ]
   },
   {
-    "name": "MountainPath_North6",
+    "name": "Mountain Path - Northwest Cliffs",
     "map_locations": [
       {
         "map": "overview",
@@ -867,7 +867,7 @@
     ]
   },
   {
-    "name": "MountainPath_Center2",
+    "name": "Mountain Path - East Corridor",
     "map_locations": [
       {
         "map": "overview",
@@ -877,7 +877,7 @@
     ],
     "sections": [
       {
-        "name": "Mountain Path - East Corridor 2",
+        "name": "Mountain Path - East Corridor 3",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -887,7 +887,7 @@
         ]
       },
       {
-        "name": "Mountain Path - East Corridor 3",
+        "name": "Mountain Path - East Corridor 2",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -899,7 +899,7 @@
     ]
   },
   {
-    "name": "MountainPath_Center3",
+    "name": "Mountain Path - Crystal Room",
     "map_locations": [
       {
         "map": "overview",
@@ -965,7 +965,7 @@
     ]
   },
   {
-    "name": "MountainPath_Center4",
+    "name": "Mountain Path - East of Crystal Room",
     "map_locations": [
       {
         "map": "overview",
@@ -1044,7 +1044,7 @@
     ]
   },
   {
-    "name": "MountainPath_Center6_Lower",
+    "name": "Mountain Path",
     "map_locations": [
       {
         "map": "overview",
@@ -1161,6 +1161,8 @@
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -1299,7 +1301,7 @@
     ]
   },
   {
-    "name": "MountainPath_West6",
+    "name": "Mountain Path #2",
     "map_locations": [
       {
         "map": "overview",
@@ -1352,6 +1354,8 @@
       {
         "name": "Mountain Path - Steam Golem",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1,
         "access_rules": [
           [
@@ -1481,6 +1485,13 @@
         "$post_game"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1184,
+        "y": 702
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -1490,7 +1501,7 @@
     ]
   },
   {
-    "name": "KeeperStronghold_Smith",
+    "name": "Keeper Stronghold - Smith",
     "map_locations": [
       {
         "map": "overview",
@@ -1552,7 +1563,7 @@
     ]
   },
   {
-    "name": "KeeperStronghold_Storage",
+    "name": "Keeper Stronghold - Storage",
     "map_locations": [
       {
         "map": "overview",
@@ -1584,7 +1595,7 @@
     ]
   },
   {
-    "name": "KeeperStronghold_ParentsRoom",
+    "name": "Keeper Stronghold - Parents",
     "map_locations": [
       {
         "map": "overview",
@@ -1594,7 +1605,7 @@
     ],
     "sections": [
       {
-        "name": "Keeper Stronghold - Parents - Gift from Father",
+        "name": "Keeper Stronghold - Parents - Gift from Mother",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -1604,7 +1615,7 @@
         ]
       },
       {
-        "name": "Keeper Stronghold - Parents - Gift from Mother",
+        "name": "Keeper Stronghold - Parents - Gift from Father",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -1655,6 +1666,11 @@
             "$has_access_to|KeeperStronghold_ParentsRoom",
             "$keeper_rank_9"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$is_goal_not_mad_lord"
+          ]
         ]
       },
       {
@@ -1665,6 +1681,11 @@
           [
             "$has_access_to|KeeperStronghold_ParentsRoom",
             "$keeper_rank_9"
+          ]
+        ],
+        "visibility_rules": [
+          [
+            "$is_goal_not_mad_lord"
           ]
         ]
       }
@@ -1708,7 +1729,7 @@
     ]
   },
   {
-    "name": "BlueCave_Platforms",
+    "name": "Blue Cave - Platforms",
     "map_locations": [
       {
         "map": "overview",
@@ -1717,16 +1738,6 @@
       }
     ],
     "sections": [
-      {
-        "name": "Blue Cave - Platforms - Special Chest",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|BlueCave_Platforms"
-          ]
-        ]
-      },
       {
         "name": "Blue Cave - Platforms - Ledge Chest",
         "clear_as_group": false,
@@ -1743,6 +1754,16 @@
           [
             "$has_access_to|BlueCave_Platforms",
             "$distant_ledges"
+          ]
+        ]
+      },
+      {
+        "name": "Blue Cave - Platforms - Special Chest",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|BlueCave_Platforms"
           ]
         ]
       }
@@ -1772,7 +1793,7 @@
     ]
   },
   {
-    "name": "BlueCave_NorthFork_Lower",
+    "name": "Blue Cave - North Fork",
     "map_locations": [
       {
         "map": "overview",
@@ -1788,6 +1809,16 @@
         "access_rules": [
           [
             "$has_access_to|BlueCave_NorthFork_Lower"
+          ]
+        ]
+      },
+      {
+        "name": "Blue Cave - North Fork - West Ledge Chest",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|BlueCave_NorthFork_Upper"
           ]
         ]
       }
@@ -1844,28 +1875,6 @@
         "name": "",
         "clear_as_group": false,
         "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "BlueCave_NorthFork_Upper",
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 1012,
-        "y": 748
-      }
-    ],
-    "sections": [
-      {
-        "name": "Blue Cave - North Fork - West Ledge Chest",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|BlueCave_NorthFork_Upper"
-          ]
-        ]
       }
     ]
   },
@@ -1980,7 +1989,7 @@
     ]
   },
   {
-    "name": "BlueCave_CentralPart",
+    "name": "Blue Cave - Crystal Room",
     "map_locations": [
       {
         "map": "overview",
@@ -1990,7 +1999,7 @@
     ],
     "sections": [
       {
-        "name": "Blue Cave - Crystal Room - Upper Ledge Chest 1",
+        "name": "Blue Cave - Crystal Room - Upper Ledge Chest 2",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -2009,7 +2018,7 @@
         ]
       },
       {
-        "name": "Blue Cave - Crystal Room - Upper Ledge Chest 2",
+        "name": "Blue Cave - Crystal Room - Upper Ledge Chest 1",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -2065,10 +2074,19 @@
         "$has_access_to|BlueCave_ChampionRoom"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1014,
+        "y": 822
+      }
+    ],
     "sections": [
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -2089,7 +2107,7 @@
     ]
   },
   {
-    "name": "BlueCave_East3",
+    "name": "Blue Cave - East",
     "map_locations": [
       {
         "map": "overview",
@@ -2121,7 +2139,7 @@
     ]
   },
   {
-    "name": "BlueCave_East4",
+    "name": "Blue Cave - East #2",
     "map_locations": [
       {
         "map": "overview",
@@ -2290,48 +2308,50 @@
     ]
   },
   {
-    "name": "Blue Cave - Underworld Entrance 1",
-    "access_rules": [
-      [
-        "$has_access_to|BlueCave_South5",
-        "$all_sanctuary_tokens",
-        "$ostanes",
-        "$stronghold_dungeon_library_access"
-      ],
-      [
-        "$has_access_to|BlueCave_South5",
-        "$plotless",
-        "$all_sanctuary_tokens"
-      ]
-    ],
-    "sections": [
+    "name": "Blue Cave - Underworld Entrance",
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 1208,
+        "y": 964
       }
-    ]
-  },
-  {
-    "name": "Blue Cave - Underworld Entrance 2",
-    "access_rules": [
-      [
-        "$has_access_to|BlueCave_South5",
-        "$all_sanctuary_tokens",
-        "$ostanes",
-        "$stronghold_dungeon_library_access"
-      ],
-      [
-        "$has_access_to|BlueCave_South5",
-        "$plotless",
-        "$all_sanctuary_tokens"
-      ]
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Blue Cave - Underworld Entrance 1",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|BlueCave_South5",
+            "$all_sanctuary_tokens",
+            "$ostanes",
+            "$stronghold_dungeon_library_access"
+          ],
+          [
+            "$has_access_to|BlueCave_South5",
+            "$plotless",
+            "$all_sanctuary_tokens"
+          ]
+        ]
+      },
+      {
+        "name": "Blue Cave - Underworld Entrance 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|BlueCave_South5",
+            "$all_sanctuary_tokens",
+            "$ostanes",
+            "$stronghold_dungeon_library_access"
+          ],
+          [
+            "$has_access_to|BlueCave_South5",
+            "$plotless",
+            "$all_sanctuary_tokens"
+          ]
+        ]
       }
     ]
   },
@@ -2376,6 +2396,8 @@
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -2403,7 +2425,7 @@
     ]
   },
   {
-    "name": "BlueCave_Chains2",
+    "name": "Blue Cave - Chains",
     "map_locations": [
       {
         "map": "overview",
@@ -2490,7 +2512,7 @@
     ]
   },
   {
-    "name": "BlueCave_WestWatersHidden",
+    "name": "Blue Cave - West Waters Hidden",
     "map_locations": [
       {
         "map": "overview",
@@ -2545,7 +2567,7 @@
     ]
   },
   {
-    "name": "BlueCave_WestWatersHidden2",
+    "name": "Blue Cave - Levitate Room",
     "map_locations": [
       {
         "map": "overview",
@@ -2630,7 +2652,7 @@
     ]
   },
   {
-    "name": "BlueCave_WestWaters7_East",
+    "name": "Blue Cave - Specter Hallway",
     "map_locations": [
       {
         "map": "overview",
@@ -2639,6 +2661,17 @@
       }
     ],
     "sections": [
+      {
+        "name": "Blue Cave - Specter Hallway - Earth Orb Chest",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|BlueCave_WestWaters7_West",
+            "$earth_orbs"
+          ]
+        ]
+      },
       {
         "name": "Blue Cave - Specter Hallway - Lightning Orb Chest",
         "clear_as_group": false,
@@ -2690,30 +2723,7 @@
     ]
   },
   {
-    "name": "BlueCave_WestWaters7_West",
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 750,
-        "y": 798
-      }
-    ],
-    "sections": [
-      {
-        "name": "Blue Cave - Specter Hallway - Earth Orb Chest",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|BlueCave_WestWaters7_West",
-            "$earth_orbs"
-          ]
-        ]
-      }
-    ]
-  },
-  {
-    "name": "BlueCave_ChampionRoom2",
+    "name": "Blue Cave - Specter",
     "map_locations": [
       {
         "map": "overview",
@@ -2735,6 +2745,8 @@
       {
         "name": "Blue Cave - Specter",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1,
         "access_rules": [
           [
@@ -2810,6 +2822,13 @@
       [
         "$has_access_to|StrongholdDungeon_JailHidden"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1280,
+        "y": 772
+      }
     ],
     "sections": [
       {
@@ -3040,7 +3059,7 @@
     ]
   },
   {
-    "name": "StrongholdDungeon_Central4",
+    "name": "Stronghold Dungeon - Trevisan",
     "map_locations": [
       {
         "map": "overview",
@@ -3058,6 +3077,11 @@
             "$has_access_to|StrongholdDungeon_Central4",
             "$post_game"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$is_goal_not_mad_lord"
+          ]
         ]
       },
       {
@@ -3068,6 +3092,11 @@
           [
             "$has_access_to|StrongholdDungeon_Central4",
             "$post_game"
+          ]
+        ],
+        "visibility_rules": [
+          [
+            "$is_goal_not_mad_lord"
           ]
         ]
       }
@@ -3107,6 +3136,13 @@
         "$has_access_to|StrongholdDungeon_CentralHidden"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1472,
+        "y": 896
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -3116,7 +3152,7 @@
     ]
   },
   {
-    "name": "StrongholdDungeon_Hidden1",
+    "name": "Stronghold Dungeon - Big Rock Room",
     "map_locations": [
       {
         "map": "overview",
@@ -3199,6 +3235,8 @@
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -3252,6 +3290,8 @@
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -3317,7 +3357,7 @@
     ]
   },
   {
-    "name": "StrongholdDungeon_Library2",
+    "name": "Stronghold Dungeon - Library Hidden Area",
     "map_locations": [
       {
         "map": "overview",
@@ -3349,7 +3389,7 @@
     ]
   },
   {
-    "name": "StrongholdDungeon_West1",
+    "name": "Stronghold Dungeon - West Corridor",
     "map_locations": [
       {
         "map": "overview",
@@ -3452,6 +3492,13 @@
         "$has_access_to|StrongholdDungeon_WestHidden",
         "$breakable_walls"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1256,
+        "y": 868
+      }
     ],
     "sections": [
       {
@@ -3643,7 +3690,7 @@
     ]
   },
   {
-    "name": "StrongholdDungeon_EastKeys",
+    "name": "Stronghold Dungeon - Slime Statue Room",
     "map_locations": [
       {
         "map": "overview",
@@ -3724,8 +3771,8 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 486,
-        "y": 726
+        "x": 462,
+        "y": 750
       }
     ],
     "sections": [
@@ -3772,8 +3819,8 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 462,
-        "y": 750
+        "x": 486,
+        "y": 726
       }
     ],
     "sections": [
@@ -3785,7 +3832,7 @@
     ]
   },
   {
-    "name": "SnowyPeaks_East3",
+    "name": "Snowy Peaks - East Cave",
     "map_locations": [
       {
         "map": "overview",
@@ -3795,7 +3842,7 @@
     ],
     "sections": [
       {
-        "name": "Snowy Peaks - East Cave - Lower Lever Chest",
+        "name": "Snowy Peaks - East Cave - Middle Chest",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -3805,7 +3852,7 @@
         ]
       },
       {
-        "name": "Snowy Peaks - East Cave - Middle Chest",
+        "name": "Snowy Peaks - East Cave - Lower Lever Chest",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -4186,7 +4233,7 @@
     ]
   },
   {
-    "name": "SnowyPeaks_Lake_West",
+    "name": "Snowy Peaks - Lake",
     "map_locations": [
       {
         "map": "overview",
@@ -4196,7 +4243,7 @@
     ],
     "sections": [
       {
-        "name": "Snowy Peaks - Lake - West Chest 1",
+        "name": "Snowy Peaks - Lake - West Chest 2",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -4206,7 +4253,7 @@
         ]
       },
       {
-        "name": "Snowy Peaks - Lake - West Chest 2",
+        "name": "Snowy Peaks - Lake - West Chest 1",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -4251,7 +4298,7 @@
     ]
   },
   {
-    "name": "SnowyPeaks_ChampionRoom",
+    "name": "Snowy Peaks",
     "map_locations": [
       {
         "map": "overview",
@@ -4261,17 +4308,14 @@
     ],
     "sections": [
       {
-        "name": "Snowy Peaks - Akhlut Room Chest",
+        "name": "Snowy Peaks - Akhlut",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|SnowyPeaks_ChampionRoom",
-            "$double_jump"
-          ],
-          [
-            "$has_access_to|SnowyPeaks_ChampionRoom",
-            "$distant_ledges"
+            "$has_access_to|SnowyPeaks_ChampionRoom"
           ]
         ]
       },
@@ -4291,12 +4335,17 @@
         ]
       },
       {
-        "name": "Snowy Peaks - Akhlut",
+        "name": "Snowy Peaks - Akhlut Room Chest",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|SnowyPeaks_ChampionRoom"
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$distant_ledges"
           ]
         ]
       }
@@ -4365,73 +4414,67 @@
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
   },
   {
-    "name": "Snowy Peaks - Cryomancer - Egg Reward 1",
-    "access_rules": [
-      [
-        "$has_access_to|SnowyPeaks_Cryomancer",
-        "$has_dodo"
-      ]
-    ],
-    "sections": [
+    "name": "Snowy Peaks - Cryomancer",
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 152,
+        "y": 652
       }
-    ]
-  },
-  {
-    "name": "Snowy Peaks - Cryomancer - Light Egg Reward",
-    "access_rules": [
-      [
-        "$has_access_to|SnowyPeaks_Cryomancer",
-        "$has_dodo",
-        "$shifting_avialable"
-      ]
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Snowy Peaks - Cryomancer - Egg Reward 1",
         "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Snowy Peaks - Cryomancer - Dark Egg Reward",
-    "access_rules": [
-      [
-        "$has_access_to|SnowyPeaks_Cryomancer",
-        "$has_dodo",
-        "$shifting_avialable"
-      ]
-    ],
-    "sections": [
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|SnowyPeaks_Cryomancer",
+            "$has_dodo"
+          ]
+        ]
+      },
       {
-        "name": "",
+        "name": "Snowy Peaks - Cryomancer - Egg Reward 2",
         "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Snowy Peaks - Cryomancer - Egg Reward 2",
-    "access_rules": [
-      [
-        "$has_access_to|SnowyPeaks_Cryomancer",
-        "$has_dodo"
-      ]
-    ],
-    "sections": [
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|SnowyPeaks_Cryomancer",
+            "$has_dodo"
+          ]
+        ]
+      },
       {
-        "name": "",
+        "name": "Snowy Peaks - Cryomancer - Light Egg Reward",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|SnowyPeaks_Cryomancer",
+            "$has_dodo",
+            "$shifting_avialable"
+          ]
+        ]
+      },
+      {
+        "name": "Snowy Peaks - Cryomancer - Dark Egg Reward",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|SnowyPeaks_Cryomancer",
+            "$has_dodo",
+            "$shifting_avialable"
+          ]
+        ]
       }
     ]
   },
@@ -4536,7 +4579,7 @@
       {
         "map": "overview",
         "x": 152,
-        "y": 534
+        "y": 510
       }
     ],
     "sections": [
@@ -4558,7 +4601,7 @@
       {
         "map": "overview",
         "x": 152,
-        "y": 510
+        "y": 534
       }
     ],
     "sections": [
@@ -4972,7 +5015,7 @@
     ]
   },
   {
-    "name": "SnowyPeaks_EastDark",
+    "name": "Snowy Peaks - East Mountain",
     "map_locations": [
       {
         "map": "overview",
@@ -5008,7 +5051,7 @@
     ]
   },
   {
-    "name": "SunPalace_East1_Center",
+    "name": "Sun Palace - Blue Cave Entrance",
     "map_locations": [
       {
         "map": "overview",
@@ -5067,6 +5110,8 @@
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -5191,6 +5236,8 @@
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -5538,7 +5585,7 @@
     ]
   },
   {
-    "name": "SunPalace_South1_Upper",
+    "name": "Sun Palace - Central Sewer",
     "map_locations": [
       {
         "map": "overview",
@@ -5583,19 +5630,7 @@
             "$summon_big_rock"
           ]
         ]
-      }
-    ]
-  },
-  {
-    "name": "SunPalace_South1_Lower",
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 488,
-        "y": 968
-      }
-    ],
-    "sections": [
+      },
       {
         "name": "Sun Palace - Central Sewer - Middle East Chest",
         "clear_as_group": false,
@@ -5661,7 +5696,7 @@
     ]
   },
   {
-    "name": "SunPalace_South1_Lower #2",
+    "name": "Sun Palace - Central Sewer #2",
     "map_locations": [
       {
         "map": "overview",
@@ -5730,7 +5765,7 @@
     ]
   },
   {
-    "name": "SunPalace_South3",
+    "name": "Sun Palace - South",
     "map_locations": [
       {
         "map": "overview",
@@ -5837,6 +5872,13 @@
         "$heavy_blocks"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 632,
+        "y": 1018
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -5851,6 +5893,13 @@
       [
         "$has_access_to|SunPalace_EastSewers6"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 608,
+        "y": 1018
+      }
     ],
     "sections": [
       {
@@ -5900,7 +5949,7 @@
     ]
   },
   {
-    "name": "SunPalace_WestSewers4",
+    "name": "Sun Palace - West Sewers",
     "map_locations": [
       {
         "map": "overview",
@@ -5910,7 +5959,7 @@
     ],
     "sections": [
       {
-        "name": "Sun Palace - West Sewers - Maze Chest 1",
+        "name": "Sun Palace - West Sewers - Maze Chest 2",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -5921,7 +5970,7 @@
         ]
       },
       {
-        "name": "Sun Palace - West Sewers - Maze Chest 2",
+        "name": "Sun Palace - West Sewers - Maze Chest 1",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -5934,7 +5983,7 @@
     ]
   },
   {
-    "name": "SunPalace_WestSewersSecret",
+    "name": "Sun Palace - West Sewers West Hidden Area",
     "map_locations": [
       {
         "map": "overview",
@@ -5990,7 +6039,7 @@
     ]
   },
   {
-    "name": "SunPalace_North2",
+    "name": "Sun Palace - Caretaker",
     "map_locations": [
       {
         "map": "overview",
@@ -5999,6 +6048,16 @@
       }
     ],
     "sections": [
+      {
+        "name": "Sun Palace - Caretaker 3",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|SunPalace_North2"
+          ]
+        ]
+      },
       {
         "name": "Sun Palace - Caretaker 1",
         "clear_as_group": false,
@@ -6018,16 +6077,6 @@
             "$has_access_to|SunPalace_North2"
           ]
         ]
-      },
-      {
-        "name": "Sun Palace - Caretaker 3",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|SunPalace_North2"
-          ]
-        ]
       }
     ]
   },
@@ -6039,10 +6088,19 @@
         "$fire_orbs"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 416,
+        "y": 846
+      }
+    ],
     "sections": [
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -6057,7 +6115,7 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1592,
+        "x": 1544,
         "y": 728
       }
     ],
@@ -6075,6 +6133,13 @@
       [
         "$has_access_to|AncientWoods_West3"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1592,
+        "y": 728
+      }
     ],
     "sections": [
       {
@@ -6284,50 +6349,52 @@
     ]
   },
   {
-    "name": "Ancient Woods - West Deep Caves - Spike Fall Chest 1",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_WestDescent2",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|AncientWoods_WestDescent2",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|AncientWoods_WestDescent2",
-        "$dual_mobility"
-      ]
-    ],
-    "sections": [
+    "name": "Ancient Woods - West Deep Caves",
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 1616,
+        "y": 942
       }
-    ]
-  },
-  {
-    "name": "Ancient Woods - West Deep Caves - Spike Fall Chest 2",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_WestDescent2",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|AncientWoods_WestDescent2",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|AncientWoods_WestDescent2",
-        "$dual_mobility"
-      ]
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Ancient Woods - West Deep Caves - Spike Fall Chest 1",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AncientWoods_WestDescent2",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|AncientWoods_WestDescent2",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|AncientWoods_WestDescent2",
+            "$dual_mobility"
+          ]
+        ]
+      },
+      {
+        "name": "Ancient Woods - West Deep Caves - Spike Fall Chest 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AncientWoods_WestDescent2",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|AncientWoods_WestDescent2",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|AncientWoods_WestDescent2",
+            "$dual_mobility"
+          ]
+        ]
       }
     ]
   },
@@ -6474,6 +6541,13 @@
         "$has_access_to|AncientWoods_Center5"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1856,
+        "y": 750
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -6490,6 +6564,13 @@
         "$double_jump"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1928,
+        "y": 750
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -6504,6 +6585,13 @@
       [
         "$has_access_to|AncientWoods_Center6"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1904,
+        "y": 750
+      }
     ],
     "sections": [
       {
@@ -6521,20 +6609,12 @@
         "$lightning_orbs"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2000,
+        "y": 774
       }
-    ]
-  },
-  {
-    "name": "Ancient Woods - North - Goblin King Chest 1",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_North3"
-      ]
     ],
     "sections": [
       {
@@ -6545,17 +6625,34 @@
     ]
   },
   {
-    "name": "Ancient Woods - North - Goblin King Chest 2",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_North3"
-      ]
+    "name": "Ancient Woods - North",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2024,
+        "y": 700
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Ancient Woods - North - Goblin King Chest 1",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AncientWoods_North3"
+          ]
+        ]
+      },
+      {
+        "name": "Ancient Woods - North - Goblin King Chest 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AncientWoods_North3"
+          ]
+        ]
       }
     ]
   },
@@ -6566,10 +6663,19 @@
         "$has_access_to|AncientWoods_North3"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2000,
+        "y": 700
+      }
+    ],
     "sections": [
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -6611,6 +6717,13 @@
         "$has_access_to|AncientWoods_North5"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1856,
+        "y": 726
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -6630,6 +6743,13 @@
         "$has_access_to|AncientWoods_East1_Shortcut",
         "$distant_ledges"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2024,
+        "y": 724
+      }
     ],
     "sections": [
       {
@@ -6680,41 +6800,52 @@
         "$has_access_to|AncientWoods_East3"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2144,
+        "y": 724
       }
-    ]
-  },
-  {
-    "name": "Ancient Woods - Upper East - Chest 1",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_East4"
-      ]
     ],
     "sections": [
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
   },
   {
-    "name": "Ancient Woods - Upper East - Chest 2",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_East4"
-      ]
+    "name": "Ancient Woods - Upper East",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2120,
+        "y": 676
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Ancient Woods - Upper East - Chest 1",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AncientWoods_East4"
+          ]
+        ]
+      },
+      {
+        "name": "Ancient Woods - Upper East - Chest 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AncientWoods_East4"
+          ]
+        ]
       }
     ]
   },
@@ -6725,6 +6856,13 @@
         "$has_access_to|AncientWoods_East4",
         "$grapple"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2120,
+        "y": 652
+      }
     ],
     "sections": [
       {
@@ -6741,6 +6879,13 @@
         "$has_access_to|AncientWoods_South1",
         "$breakable_walls"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1976,
+        "y": 800
+      }
     ],
     "sections": [
       {
@@ -6766,32 +6911,34 @@
     ]
   },
   {
-    "name": "Ancient Woods - South Glowfly Room 1",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_South3"
-      ]
-    ],
-    "sections": [
+    "name": "Ancient Woods - South Glowfly Room",
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 1904,
+        "y": 846
       }
-    ]
-  },
-  {
-    "name": "Ancient Woods - South Glowfly Room 2",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_South3"
-      ]
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Ancient Woods - South Glowfly Room 1",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AncientWoods_South3"
+          ]
+        ]
+      },
+      {
+        "name": "Ancient Woods - South Glowfly Room 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AncientWoods_South3"
+          ]
+        ]
       }
     ]
   },
@@ -6801,6 +6948,13 @@
       [
         "$has_access_to|AncientWoods_South4"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1904,
+        "y": 798
+      }
     ],
     "sections": [
       {
@@ -6819,21 +6973,12 @@
         "$double_jump"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2024,
+        "y": 822
       }
-    ]
-  },
-  {
-    "name": "Ancient Woods - Torches Room 1",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_TorchesRoom",
-        "$torches"
-      ]
     ],
     "sections": [
       {
@@ -6844,18 +6989,36 @@
     ]
   },
   {
-    "name": "Ancient Woods - Torches Room 2",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_TorchesRoom",
-        "$torches"
-      ]
+    "name": "Ancient Woods - Torches Room",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1880,
+        "y": 822
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Ancient Woods - Torches Room 1",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AncientWoods_TorchesRoom",
+            "$torches"
+          ]
+        ]
+      },
+      {
+        "name": "Ancient Woods - Torches Room 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AncientWoods_TorchesRoom",
+            "$torches"
+          ]
+        ]
       }
     ]
   },
@@ -6987,6 +7150,8 @@
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -6997,6 +7162,13 @@
       [
         "$has_access_to|AncientWoods_TreeOfEvolution"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1640,
+        "y": 728
+      }
     ],
     "sections": [
       {
@@ -7012,6 +7184,13 @@
       [
         "$has_access_to|AncientWoods_TreeOfEvolution"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1616,
+        "y": 728
+      }
     ],
     "sections": [
       {
@@ -7047,7 +7226,7 @@
       {
         "map": "overview",
         "x": 1710,
-        "y": 800
+        "y": 824
       }
     ],
     "sections": [
@@ -7059,12 +7238,12 @@
     ]
   },
   {
-    "name": "AncientWoods_DoorPuzzle",
+    "name": "Ancient Woods - Door Puzzle",
     "map_locations": [
       {
         "map": "overview",
         "x": 1710,
-        "y": 824
+        "y": 800
       }
     ],
     "sections": [
@@ -7102,6 +7281,13 @@
         "$swimming"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2264,
+        "y": 748
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7128,6 +7314,13 @@
         "$double_jump",
         "$lofty_mount"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2336,
+        "y": 700
+      }
     ],
     "sections": [
       {
@@ -7156,6 +7349,13 @@
         "$lofty_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2360,
+        "y": 700
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7170,6 +7370,13 @@
       [
         "$has_access_to|HorizonBeach_West4"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2384,
+        "y": 748
+      }
     ],
     "sections": [
       {
@@ -7191,6 +7398,13 @@
         "$dual_mobility"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2480,
+        "y": 772
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7206,6 +7420,13 @@
         "$has_access_to|HorizonBeach_Center1",
         "$memorial_ring"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2480,
+        "y": 748
+      }
     ],
     "sections": [
       {
@@ -7235,6 +7456,13 @@
         "$lofty_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2552,
+        "y": 724
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7262,6 +7490,13 @@
         "$has_access_to|HorizonBeach_Center2",
         "$lofty_mount"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2600,
+        "y": 724
+      }
     ],
     "sections": [
       {
@@ -7295,6 +7530,13 @@
         "$breakable_walls"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2624,
+        "y": 772
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7311,6 +7553,13 @@
         "$swimming"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2648,
+        "y": 796
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7324,8 +7573,15 @@
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_Center4",
-        "$improved swimming"
+        "$improved_swimming"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2696,
+        "y": 796
+      }
     ],
     "sections": [
       {
@@ -7340,8 +7596,15 @@
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_Center4",
-        "$improved swimming"
+        "$improved_swimming"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2720,
+        "y": 796
+      }
     ],
     "sections": [
       {
@@ -7358,6 +7621,13 @@
         "$has_access_to|HorizonBeach_Center5",
         "$swimming"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2792,
+        "y": 796
+      }
     ],
     "sections": [
       {
@@ -7383,6 +7653,13 @@
         "$swimming"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2792,
+        "y": 820
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7398,6 +7675,13 @@
         "$has_access_to|HorizonBeach_Center6",
         "$swimming"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2768,
+        "y": 748
+      }
     ],
     "sections": [
       {
@@ -7427,6 +7711,13 @@
         "$lofty_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2840,
+        "y": 724
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7447,6 +7738,13 @@
         "$distant_ledges"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2912,
+        "y": 700
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7456,18 +7754,42 @@
     ]
   },
   {
-    "name": "Horizon Beach - East - Middle Ledge Chest 1",
-    "access_rules": [
-      [
-        "$has_access_to|HorizonBeach_East2_Middle",
-        "$breakable_walls"
-      ]
+    "name": "Horizon Beach - East",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2864,
+        "y": 724
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Horizon Beach - East - Current Jump Chest",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|HorizonBeach_East2_Lower",
+            "$double_jump",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|HorizonBeach_East2_Lower",
+            "$double_jump",
+            "$dual_mobility"
+          ]
+        ]
+      },
+      {
+        "name": "Horizon Beach - East - Middle Ledge Chest 1",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|HorizonBeach_East2_Middle",
+            "$breakable_walls"
+          ]
+        ]
       }
     ]
   },
@@ -7483,27 +7805,12 @@
         "$distant_ledges"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2912,
+        "y": 724
       }
-    ]
-  },
-  {
-    "name": "Horizon Beach - East - Current Jump Chest",
-    "access_rules": [
-      [
-        "$has_access_to|HorizonBeach_East2_Lower",
-        "$double_jump",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|HorizonBeach_East2_Lower",
-        "$double_jump",
-        "$dual_mobility"
-      ]
     ],
     "sections": [
       {
@@ -7519,6 +7826,13 @@
       [
         "$has_access_to|HorizonBeach_East2_Lower"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2912,
+        "y": 772
+      }
     ],
     "sections": [
       {
@@ -7536,6 +7850,13 @@
         "$swimming"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2816,
+        "y": 772
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7550,6 +7871,13 @@
       [
         "$has_access_to|HorizonBeach_East5"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2984,
+        "y": 628
+      }
     ],
     "sections": [
       {
@@ -7566,6 +7894,13 @@
         "$has_access_to|HorizonBeach_East5"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 3008,
+        "y": 628
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7581,6 +7916,13 @@
         "$has_access_to|HorizonBeach_East5",
         "$second_bex_encounter"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2960,
+        "y": 628
+      }
     ],
     "sections": [
       {
@@ -7621,6 +7963,13 @@
         "$dual_mobility"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2864,
+        "y": 652
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7635,6 +7984,13 @@
       [
         "$has_access_to|HorizonBeach_East6"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2840,
+        "y": 652
+      }
     ],
     "sections": [
       {
@@ -7664,6 +8020,13 @@
         "$ground_switches"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 3008,
+        "y": 748
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7679,6 +8042,13 @@
         "$has_access_to|HorizonBeach_Fisher",
         "$all_rare_seashells"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2984,
+        "y": 748
+      }
     ],
     "sections": [
       {
@@ -7697,6 +8067,13 @@
         "$double_jump"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2936,
+        "y": 820
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7712,21 +8089,12 @@
         "$has_access_to|HorizonBeach_EastChampion"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2912,
+        "y": 820
       }
-    ]
-  },
-  {
-    "name": "Horizon Beach - Vodinoy Room 2",
-    "access_rules": [
-      [
-        "$has_access_to|HorizonBeach_EastChampion",
-        "$narrow_corridors"
-      ]
     ],
     "sections": [
       {
@@ -7738,17 +8106,37 @@
   },
   {
     "name": "Horizon Beach - Vodinoy",
-    "access_rules": [
-      [
-        "$has_access_to|HorizonBeach_EastChampion",
-        "$narrow_corridors"
-      ]
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2888,
+        "y": 820
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Horizon Beach - Vodinoy Room 2",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|HorizonBeach_EastChampion",
+            "$narrow_corridors"
+          ]
+        ]
+      },
+      {
+        "name": "Horizon Beach - Vodinoy",
+        "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|HorizonBeach_EastChampion",
+            "$narrow_corridors"
+          ]
+        ]
       }
     ]
   },
@@ -7759,6 +8147,13 @@
         "$has_access_to|HorizonBeach_Labyrinth",
         "$swimming"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2552,
+        "y": 844
+      }
     ],
     "sections": [
       {
@@ -7776,6 +8171,13 @@
         "$improved_swimming"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2600,
+        "y": 844
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7790,6 +8192,13 @@
       [
         "$has_access_to|HorizonBeach_South4"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2360,
+        "y": 820
+      }
     ],
     "sections": [
       {
@@ -7807,6 +8216,13 @@
         "$swimming"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2528,
+        "y": 892
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7822,6 +8238,13 @@
         "$has_access_to|HorizonBeach_South6",
         "$swimming"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2504,
+        "y": 892
+      }
     ],
     "sections": [
       {
@@ -7854,6 +8277,13 @@
         "$has_access_to|HorizonBeach_Pit_Secret"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2288,
+        "y": 820
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7881,6 +8311,13 @@
         "$distant_ledges"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2312,
+        "y": 844
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -7895,6 +8332,13 @@
       [
         "$has_access_to|HorizonBeach_TreasureCave3"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2288,
+        "y": 844
+      }
     ],
     "sections": [
       {
@@ -7916,50 +8360,12 @@
         "$swimming"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2288,
+        "y": 892
       }
-    ]
-  },
-  {
-    "name": "Horizon Beach - Elderjel Room - Chest",
-    "access_rules": [
-      [
-        "$has_access_to|HorizonBeach_Champion"
-      ]
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Horizon Beach - Elderjel Room - Special Chest 1",
-    "access_rules": [
-      [
-        "$has_access_to|HorizonBeach_Champion"
-      ]
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Horizon Beach - Elderjel Room - Special Chest 2",
-    "access_rules": [
-      [
-        "$has_access_to|HorizonBeach_Champion"
-      ]
     ],
     "sections": [
       {
@@ -7971,10 +8377,61 @@
   },
   {
     "name": "Horizon Beach - Elderjel",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2216,
+        "y": 892
+      }
+    ],
+    "sections": [
+      {
+        "name": "Horizon Beach - Elderjel Room - Chest",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|HorizonBeach_Champion"
+          ]
+        ]
+      },
+      {
+        "name": "Horizon Beach - Elderjel Room - Special Chest 1",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|HorizonBeach_Champion"
+          ]
+        ]
+      },
+      {
+        "name": "Horizon Beach - Elderjel",
+        "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|HorizonBeach_Champion"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Horizon Beach - Elderjel Room - Special Chest 2",
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_Champion"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2240,
+        "y": 892
+      }
     ],
     "sections": [
       {
@@ -7991,6 +8448,13 @@
         "$has_access_to|HorizonBeach_FWEntrance1",
         "$swimming"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2336,
+        "y": 892
+      }
     ],
     "sections": [
       {
@@ -8171,7 +8635,7 @@
     ]
   },
   {
-    "name": "MagmaChamber_North2",
+    "name": "Magma Chamber - North",
     "map_locations": [
       {
         "map": "overview",
@@ -8316,6 +8780,13 @@
         "$has_access_to|MagmaChamber_North8_East",
         "$third_bex_encounter"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1976,
+        "y": 920
+      }
     ],
     "sections": [
       {
@@ -8701,6 +9172,13 @@
         "$has_access_to|MagmaChamber_Center11"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2192,
+        "y": 968
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -8717,6 +9195,13 @@
         "$ground_switches",
         "$double_jump"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2192,
+        "y": 944
+      }
     ],
     "sections": [
       {
@@ -8762,6 +9247,13 @@
         "$has_access_to|MagmaChamber_South3_West"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2072,
+        "y": 1016
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -8805,6 +9297,13 @@
         "$lofty_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2168,
+        "y": 1016
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -8820,6 +9319,13 @@
         "$has_access_to|MagmaChamber_South5"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2096,
+        "y": 1012
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -8834,6 +9340,13 @@
       [
         "$has_access_to|MagmaChamber_South5"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2096,
+        "y": 1060
+      }
     ],
     "sections": [
       {
@@ -8857,6 +9370,13 @@
         "$distant_ledges"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2096,
+        "y": 988
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -8872,20 +9392,12 @@
         "$has_access_to|MagmaChamber_South7_East"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2240,
+        "y": 1036
       }
-    ]
-  },
-  {
-    "name": "Magma Chamber - Forgotten World Exit - Hidden Chest 1",
-    "access_rules": [
-      [
-        "$has_access_to|MagmaChamber_South8"
-      ]
     ],
     "sections": [
       {
@@ -8896,17 +9408,34 @@
     ]
   },
   {
-    "name": "Magma Chamber - Forgotten World Exit - Hidden Chest 2",
-    "access_rules": [
-      [
-        "$has_access_to|MagmaChamber_South8"
-      ]
+    "name": "Magma Chamber - Forgotten World Exit - Hidden",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2264,
+        "y": 1036
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Magma Chamber - Forgotten World Exit - Hidden Chest 1",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|MagmaChamber_South8"
+          ]
+        ]
+      },
+      {
+        "name": "Magma Chamber - Forgotten World Exit - Hidden Chest 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|MagmaChamber_South8"
+          ]
+        ]
       }
     ]
   },
@@ -8916,6 +9445,13 @@
       [
         "$has_access_to|MagmaChamber_South9_East"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2336,
+        "y": 1036
+      }
     ],
     "sections": [
       {
@@ -8969,6 +9505,13 @@
         "$has_access_to|MagmaChamber_PuppyRoom"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2120,
+        "y": 940
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -8978,7 +9521,7 @@
     ]
   },
   {
-    "name": "MagmaChamber_CenterMagmaRoom",
+    "name": "Magma Chamber - Center",
     "map_locations": [
       {
         "map": "overview",
@@ -9021,6 +9564,13 @@
         "$tar"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2144,
+        "y": 1060
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -9035,6 +9585,13 @@
       [
         "$has_access_to|MagmaChamber_Champion"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2048,
+        "y": 1060
+      }
     ],
     "sections": [
       {
@@ -9051,27 +9608,56 @@
         "$has_access_to|MagmaChamber_Champion"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2072,
+        "y": 1060
       }
-    ]
-  },
-  {
-    "name": "Magma Chamber - Gryphonix Room 1",
-    "access_rules": [
-      [
-        "$has_access_to|MagmaChamber_Champion2",
-        "$levitate"
-      ]
     ],
     "sections": [
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Magma Chamber - Gryphonix",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2264,
+        "y": 992
+      }
+    ],
+    "sections": [
+      {
+        "name": "Magma Chamber - Gryphonix",
+        "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|MagmaChamber_Champion2",
+            "$levitate"
+          ]
+        ]
+      },
+      {
+        "name": "Magma Chamber - Gryphonix Room 1",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|MagmaChamber_Champion2",
+            "$levitate"
+          ]
+        ]
       }
     ]
   },
@@ -9082,21 +9668,12 @@
         "$has_access_to|MagmaChamber_Champion2"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2216,
+        "y": 992
       }
-    ]
-  },
-  {
-    "name": "Magma Chamber - Gryphonix",
-    "access_rules": [
-      [
-        "$has_access_to|MagmaChamber_Champion2",
-        "$levitate"
-      ]
     ],
     "sections": [
       {
@@ -9108,160 +9685,142 @@
   },
   {
     "name": "Magma Chamber - Legendary Keeper Room",
-    "access_rules": [
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$dual_mobility"
-      ]
-    ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2288,
+        "y": 968
       }
-    ]
-  },
-  {
-    "name": "Magma Chamber - Legendary Keeper Room - Mozzie Reward 1",
-    "access_rules": [
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$dual_mobility"
-      ]
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Magma Chamber - Legendary Keeper Room",
         "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Magma Chamber - Legendary Keeper Room - Mozzie Reward 2",
-    "access_rules": [
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$dual_mobility"
-      ]
-    ],
-    "sections": [
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$dual_mobility"
+          ]
+        ]
+      },
       {
-        "name": "",
+        "name": "Magma Chamber - Legendary Keeper Room - Mozzie Reward 1",
         "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Magma Chamber - Legendary Keeper Room - Mozzie Reward 3",
-    "access_rules": [
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$dual_mobility"
-      ]
-    ],
-    "sections": [
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$dual_mobility"
+          ]
+        ]
+      },
       {
-        "name": "",
+        "name": "Magma Chamber - Legendary Keeper Room - Mozzie Reward 2",
         "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Magma Chamber - Legendary Keeper Room - Mozzie Reward 4",
-    "access_rules": [
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$dual_mobility"
-      ]
-    ],
-    "sections": [
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$dual_mobility"
+          ]
+        ]
+      },
       {
-        "name": "",
+        "name": "Magma Chamber - Legendary Keeper Room - Mozzie Reward 3",
         "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Magma Chamber - Legendary Keeper Room - Mozzie Reward 5",
-    "access_rules": [
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$mozzie",
-        "$dual_mobility"
-      ]
-    ],
-    "sections": [
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$dual_mobility"
+          ]
+        ]
+      },
       {
-        "name": "",
+        "name": "Magma Chamber - Legendary Keeper Room - Mozzie Reward 4",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$dual_mobility"
+          ]
+        ]
+      },
+      {
+        "name": "Magma Chamber - Legendary Keeper Room - Mozzie Reward 5",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$dual_mobility"
+          ]
+        ]
       }
     ]
   },
@@ -9283,6 +9842,13 @@
         "$double_jump",
         "$lofty_mount"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1112,
+        "y": 1012
+      }
     ],
     "sections": [
       {
@@ -9311,6 +9877,13 @@
         "$lofty_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1088,
+        "y": 1012
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -9326,6 +9899,13 @@
         "$has_access_to|Underworld_East4",
         "$heavy_blocks"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1064,
+        "y": 1060
+      }
     ],
     "sections": [
       {
@@ -9359,6 +9939,13 @@
         "$summon_big_rock"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1016,
+        "y": 1060
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -9375,6 +9962,13 @@
         "$underworld_east_catacomb_pillar_control"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 920,
+        "y": 1036
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -9389,6 +9983,13 @@
       [
         "$has_access_to|Underworld_EastCatacomb4"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 944,
+        "y": 1012
+      }
     ],
     "sections": [
       {
@@ -9421,6 +10022,13 @@
         "$underworld_east_catacomb_pillar_control"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 920,
+        "y": 1084
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -9436,6 +10044,13 @@
         "$has_access_to|Underworld_EastCatacomb6_East"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 944,
+        "y": 1108
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -9450,6 +10065,13 @@
       [
         "$has_access_to|Underworld_EastCatacomb6_West"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 920,
+        "y": 1108
+      }
     ],
     "sections": [
       {
@@ -9505,56 +10127,58 @@
     ]
   },
   {
-    "name": "Underworld - East Catacomb - Peak Chest 1",
-    "access_rules": [
-      [
-        "$has_access_to|Underworld_EastCatacomb9",
-        "$summon_big_rock",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|Underworld_EastCatacomb9",
-        "$summon_big_rock",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|Underworld_EastCatacomb9",
-        "$summon_big_rock",
-        "$dual_mobility"
-      ]
-    ],
-    "sections": [
+    "name": "Underworld - East Catacomb",
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 944,
+        "y": 940
       }
-    ]
-  },
-  {
-    "name": "Underworld - East Catacomb - Peak Chest 2",
-    "access_rules": [
-      [
-        "$has_access_to|Underworld_EastCatacomb9",
-        "$summon_big_rock",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|Underworld_EastCatacomb9",
-        "$summon_big_rock",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|Underworld_EastCatacomb9",
-        "$summon_big_rock",
-        "$dual_mobility"
-      ]
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Underworld - East Catacomb - Peak Chest 1",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|Underworld_EastCatacomb9",
+            "$summon_big_rock",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|Underworld_EastCatacomb9",
+            "$summon_big_rock",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|Underworld_EastCatacomb9",
+            "$summon_big_rock",
+            "$dual_mobility"
+          ]
+        ]
+      },
+      {
+        "name": "Underworld - East Catacomb - Peak Chest 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|Underworld_EastCatacomb9",
+            "$summon_big_rock",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|Underworld_EastCatacomb9",
+            "$summon_big_rock",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|Underworld_EastCatacomb9",
+            "$summon_big_rock",
+            "$dual_mobility"
+          ]
+        ]
       }
     ]
   },
@@ -9567,6 +10191,13 @@
         "$grapple",
         "$heavy_blocks"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1016,
+        "y": 1084
+      }
     ],
     "sections": [
       {
@@ -9585,6 +10216,13 @@
         "$grapple"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1040,
+        "y": 1084
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -9599,6 +10237,13 @@
       [
         "$has_access_to|Underworld_Center1"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 896,
+        "y": 1060
+      }
     ],
     "sections": [
       {
@@ -9630,6 +10275,13 @@
         "$lofty_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 848,
+        "y": 1036
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -9646,20 +10298,12 @@
         "$breakable_walls"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 872,
+        "y": 1108
       }
-    ]
-  },
-  {
-    "name": "Underworld - Morph Ball Room 1",
-    "access_rules": [
-      [
-        "$has_access_to|Underworld_CenterHidden"
-      ]
     ],
     "sections": [
       {
@@ -9670,17 +10314,34 @@
     ]
   },
   {
-    "name": "Underworld - Morph Ball Room 2",
-    "access_rules": [
-      [
-        "$has_access_to|Underworld_CenterHidden"
-      ]
+    "name": "Underworld - Morph Ball Room",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 896,
+        "y": 1084
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Underworld - Morph Ball Room 1",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|Underworld_CenterHidden"
+          ]
+        ]
+      },
+      {
+        "name": "Underworld - Morph Ball Room 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|Underworld_CenterHidden"
+          ]
+        ]
       }
     ]
   },
@@ -9690,6 +10351,13 @@
       [
         "$has_access_to|Underworld_WestCatacomb1"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 728,
+        "y": 1060
+      }
     ],
     "sections": [
       {
@@ -9705,6 +10373,13 @@
       [
         "$has_access_to|Underworld_WestCatacomb3"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 704,
+        "y": 1084
+      }
     ],
     "sections": [
       {
@@ -9737,6 +10412,13 @@
         "$underworld_west_catacomb_4_access"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 728,
+        "y": 1108
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -9751,6 +10433,13 @@
       [
         "$has_access_to|Underworld_WestCatacomb4_Lower"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 776,
+        "y": 1108
+      }
     ],
     "sections": [
       {
@@ -9841,6 +10530,13 @@
         "$has_access_to|Underworld_WestCatacomb7_Shortcut"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 704,
+        "y": 1060
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -9855,6 +10551,13 @@
       [
         "$has_access_to|Underworld_WestCatacomb9_ExteriorWest"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 728,
+        "y": 1012
+      }
     ],
     "sections": [
       {
@@ -9886,6 +10589,13 @@
         "$has_access_to|Underworld_WestCatacomb9_ExteriorEast"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 776,
+        "y": 1012
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -9901,20 +10611,12 @@
         "$has_access_to|Underworld_WestCatacomb9_Roof"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 728,
+        "y": 988
       }
-    ]
-  },
-  {
-    "name": "Underworld - Draconoir Room",
-    "access_rules": [
-      [
-        "$has_access_to|Underworld_WestCatacomb9_Interior"
-      ]
     ],
     "sections": [
       {
@@ -9926,46 +10628,67 @@
   },
   {
     "name": "Underworld - Draconoir",
-    "access_rules": [
-      [
-        "$has_access_to|Underworld_WestCatacomb9_Interior"
-      ]
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 752,
+        "y": 1012
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Underworld - Draconoir",
         "clear_as_group": false,
-        "item_count": 1
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|Underworld_WestCatacomb9_Interior"
+          ]
+        ]
+      },
+      {
+        "name": "Underworld - Draconoir Room",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|Underworld_WestCatacomb9_Interior"
+          ]
+        ]
       }
     ]
   },
   {
-    "name": "Underworld - West Catacomb - Treasure Room 1",
-    "access_rules": [
-      [
-        "$has_access_to|Underworld_WestCatacomb10"
-      ]
-    ],
-    "sections": [
+    "name": "Underworld - West Catacomb",
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 800,
+        "y": 1060
       }
-    ]
-  },
-  {
-    "name": "Underworld - West Catacomb - Treasure Room 2",
-    "access_rules": [
-      [
-        "$has_access_to|Underworld_WestCatacomb10"
-      ]
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Underworld - West Catacomb - Treasure Room 1",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|Underworld_WestCatacomb10"
+          ]
+        ]
+      },
+      {
+        "name": "Underworld - West Catacomb - Treasure Room 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|Underworld_WestCatacomb10"
+          ]
+        ]
       }
     ]
   },
@@ -9980,6 +10703,13 @@
         "$has_access_to|Underworld_West1",
         "$distant_ledges"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 656,
+        "y": 1036
+      }
     ],
     "sections": [
       {
@@ -10011,10 +10741,19 @@
         "$has_access_to|Underworld_West4"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 536,
+        "y": 1060
+      }
+    ],
     "sections": [
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -10027,6 +10766,13 @@
         "$breakable_walls"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 512,
+        "y": 1084
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -10036,7 +10782,7 @@
     ]
   },
   {
-    "name": "MysticalWorkshop_South4",
+    "name": "Mystical Workshop - Pipe Puzzle Room",
     "map_locations": [
       {
         "map": "overview",
@@ -10045,19 +10791,6 @@
       }
     ],
     "sections": [
-      {
-        "name": "Mystical Workshop - Pipe Puzzle Room 1",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MysticalWorkshop_South4",
-            "$ground_switches",
-            "$heavy_blocks",
-            "$double_jump"
-          ]
-        ]
-      },
       {
         "name": "Mystical Workshop - Pipe Puzzle Room 2",
         "clear_as_group": false,
@@ -10070,11 +10803,24 @@
             "$double_jump"
           ]
         ]
+      },
+      {
+        "name": "Mystical Workshop - Pipe Puzzle Room 1",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|MysticalWorkshop_South4",
+            "$ground_switches",
+            "$heavy_blocks",
+            "$double_jump"
+          ]
+        ]
       }
     ]
   },
   {
-    "name": "MysticalWorkshop_South5",
+    "name": "Mystical Workshop - South",
     "map_locations": [
       {
         "map": "overview",
@@ -10135,6 +10881,13 @@
         "$has_access_to|MysticalWorkshop_Center1_Upper",
         "$fourth_bex_encounter"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1472,
+        "y": 630
+      }
     ],
     "sections": [
       {
@@ -10425,7 +11178,7 @@
     ]
   },
   {
-    "name": "MysticalWorkshop_West2",
+    "name": "Mystical Workshop - Timed Lever Puzzle",
     "map_locations": [
       {
         "map": "overview",
@@ -10770,6 +11523,8 @@
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -10820,7 +11575,7 @@
     ]
   },
   {
-    "name": "MysticalWorkshop_Hidden",
+    "name": "Mystical Workshop - Hidden Clock Room",
     "map_locations": [
       {
         "map": "overview",
@@ -10870,10 +11625,19 @@
         "$has_access_to|MysticalWorkshop_Vertraag"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1424,
+        "y": 416
+      }
+    ],
     "sections": [
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -10913,6 +11677,13 @@
         "$lofty_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1616,
+        "y": 1016
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -10927,6 +11698,13 @@
       [
         "$has_access_to|BlobBurg_East3"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1592,
+        "y": 1064
+      }
     ],
     "sections": [
       {
@@ -10943,6 +11721,13 @@
         "$has_access_to|BlobBurg_East4"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1568,
+        "y": 1112
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -10957,6 +11742,13 @@
       [
         "$has_access_to|BlobBurg_East5"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1640,
+        "y": 1136
+      }
     ],
     "sections": [
       {
@@ -10988,6 +11780,13 @@
         "$has_access_to|BlobBurg_EastHidden"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1592,
+        "y": 1016
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11012,6 +11811,13 @@
         "$dual_mobility"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1544,
+        "y": 1040
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11027,6 +11833,13 @@
         "$has_access_to|BlobBurg_Center2"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1520,
+        "y": 1112
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11041,6 +11854,13 @@
       [
         "$has_access_to|BlobBurg_Center2"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1472,
+        "y": 1112
+      }
     ],
     "sections": [
       {
@@ -11071,6 +11891,13 @@
       [
         "$has_access_to|BlobBurg_Center3"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1496,
+        "y": 1040
+      }
     ],
     "sections": [
       {
@@ -11103,6 +11930,13 @@
         "$distant_ledges"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1424,
+        "y": 1136
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11118,6 +11952,13 @@
         "$has_access_to|BlobBurg_West1",
         "$narrow_corridors"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1400,
+        "y": 1160
+      }
     ],
     "sections": [
       {
@@ -11135,6 +11976,13 @@
         "$improved_swimming"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1352,
+        "y": 1160
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11150,6 +11998,13 @@
         "$has_access_to|BlobBurg_West1",
         "$improved_swimming"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1376,
+        "y": 1160
+      }
     ],
     "sections": [
       {
@@ -11177,6 +12032,13 @@
         "$double_jump",
         "$lofty_mount"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1328,
+        "y": 1064
+      }
     ],
     "sections": [
       {
@@ -11221,6 +12083,13 @@
         "$levitate"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1520,
+        "y": 1160
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11236,6 +12105,13 @@
         "$has_access_to|BlobBurg_South2",
         "$swimming"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1544,
+        "y": 1160
+      }
     ],
     "sections": [
       {
@@ -11263,6 +12139,13 @@
         "$double_jump",
         "$lofty_mount"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1520,
+        "y": 1136
+      }
     ],
     "sections": [
       {
@@ -11300,32 +12183,36 @@
     ]
   },
   {
-    "name": "Blob Burg - King Blob Room",
-    "access_rules": [
-      [
-        "$has_access_to|BlobBurg_Champion"
-      ]
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
     "name": "Blob Burg - King Blob",
-    "access_rules": [
-      [
-        "$has_access_to|BlobBurg_Champion"
-      ]
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1376,
+        "y": 1088
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Blob Burg - King Blob",
         "clear_as_group": false,
-        "item_count": 1
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|BlobBurg_Champion"
+          ]
+        ]
+      },
+      {
+        "name": "Blob Burg - King Blob Room",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|BlobBurg_Champion"
+          ]
+        ]
       }
     ]
   },
@@ -11351,6 +12238,13 @@
         "$has_access_to|BlobBurg_Worms"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1424,
+        "y": 1040
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11368,20 +12262,12 @@
         "$double_jump"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 1472,
+        "y": 1016
       }
-    ]
-  },
-  {
-    "name": "Forgotten World - Descent Hidden Room 1",
-    "access_rules": [
-      [
-        "$has_access_to|ForgottenWorld_FallHidden"
-      ]
     ],
     "sections": [
       {
@@ -11392,32 +12278,44 @@
     ]
   },
   {
-    "name": "Forgotten World - Descent Hidden Room 2",
-    "access_rules": [
-      [
-        "$has_access_to|ForgottenWorld_FallHidden"
-      ]
-    ],
-    "sections": [
+    "name": "Forgotten World - Descent Hidden Room",
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2432,
+        "y": 1012
       }
-    ]
-  },
-  {
-    "name": "Forgotten World - Descent Hidden Room 3",
-    "access_rules": [
-      [
-        "$has_access_to|ForgottenWorld_FallHidden"
-      ]
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Forgotten World - Descent Hidden Room 1",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|ForgottenWorld_FallHidden"
+          ]
+        ]
+      },
+      {
+        "name": "Forgotten World - Descent Hidden Room 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|ForgottenWorld_FallHidden"
+          ]
+        ]
+      },
+      {
+        "name": "Forgotten World - Descent Hidden Room 3",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|ForgottenWorld_FallHidden"
+          ]
+        ]
       }
     ]
   },
@@ -11432,6 +12330,13 @@
         "$has_access_to|ForgottenWorld_Jungle1",
         "$distant_ledges"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2552,
+        "y": 1132
+      }
     ],
     "sections": [
       {
@@ -11459,6 +12364,13 @@
         "$double_jump",
         "$lofty_mount"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2552,
+        "y": 1108
+      }
     ],
     "sections": [
       {
@@ -11492,6 +12404,13 @@
         "$summon_big_rock"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2672,
+        "y": 1108
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11512,23 +12431,12 @@
         "$magic_walls"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2792,
+        "y": 1132
       }
-    ]
-  },
-  {
-    "name": "Forgotten World - East Jungle - Magic Vines Chest",
-    "access_rules": [
-      [
-        "$has_access_to|ForgottenWorld_Jungle6",
-        "$magic_vines",
-        "$double_jump",
-        "$breakable_walls"
-      ]
     ],
     "sections": [
       {
@@ -11539,30 +12447,50 @@
     ]
   },
   {
-    "name": "Forgotten World - East Jungle - High Ledge Chest",
-    "access_rules": [
-      [
-        "$has_access_to|ForgottenWorld_Jungle6",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Jungle6",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Jungle6",
-        "$dual_mobility"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Jungle6",
-        "$lofty_mount"
-      ]
+    "name": "Forgotten World - East Jungle",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2864,
+        "y": 1060
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Forgotten World - East Jungle - High Ledge Chest",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|ForgottenWorld_Jungle6",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Jungle6",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Jungle6",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Jungle6",
+            "$lofty_mount"
+          ]
+        ]
+      },
+      {
+        "name": "Forgotten World - East Jungle - Magic Vines Chest",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|ForgottenWorld_Jungle6",
+            "$magic_vines",
+            "$double_jump",
+            "$breakable_walls"
+          ]
+        ]
       }
     ]
   },
@@ -11575,6 +12503,13 @@
         "$double_jump",
         "$magic_vines"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2840,
+        "y": 1036
+      }
     ],
     "sections": [
       {
@@ -11591,6 +12526,13 @@
         "$has_access_to|ForgottenWorld_JungleHidden",
         "$charging_mount"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2576,
+        "y": 1108
+      }
     ],
     "sections": [
       {
@@ -11625,6 +12567,13 @@
         "$tar"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2840,
+        "y": 1156
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11644,6 +12593,13 @@
         "$has_access_to|ForgottenWorld_TarPits3",
         "$double_jump"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2912,
+        "y": 1180
+      }
     ],
     "sections": [
       {
@@ -11665,6 +12621,13 @@
         "$double_jump"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2912,
+        "y": 1204
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11681,6 +12644,13 @@
         "$breakable_walls"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2888,
+        "y": 1204
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11696,6 +12666,13 @@
         "$has_access_to|ForgottenWorld_TarPits4"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2840,
+        "y": 1204
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11710,6 +12687,13 @@
       [
         "$has_access_to|ForgottenWorld_TarPits5_Lower"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2792,
+        "y": 1228
+      }
     ],
     "sections": [
       {
@@ -11727,6 +12711,13 @@
         "$double_jump",
         "$tar"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2768,
+        "y": 1156
+      }
     ],
     "sections": [
       {
@@ -11755,6 +12746,13 @@
         "$dual_mobility"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2864,
+        "y": 1252
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11770,6 +12768,13 @@
         "$has_access_to|ForgottenWorld_Waters1_Upper",
         "$charging_mount"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2720,
+        "y": 1228
+      }
     ],
     "sections": [
       {
@@ -11787,6 +12792,13 @@
         "$swimming"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2720,
+        "y": 1276
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11803,6 +12815,13 @@
         "$improved_swimming"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2696,
+        "y": 1300
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11817,6 +12836,13 @@
       [
         "$has_access_to|ForgottenWorld_Waters2"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2696,
+        "y": 1324
+      }
     ],
     "sections": [
       {
@@ -11855,6 +12881,13 @@
         "$lofty_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2768,
+        "y": 1228
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11872,6 +12905,13 @@
         "$dual_mobility"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2768,
+        "y": 1252
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11886,6 +12926,13 @@
       [
         "$has_access_to|ForgottenWorld_WatersHidden"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2672,
+        "y": 1300
+      }
     ],
     "sections": [
       {
@@ -11903,6 +12950,13 @@
         "$swimming"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2672,
+        "y": 1252
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11919,10 +12973,19 @@
         "$swimming"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2696,
+        "y": 1252
+      }
+    ],
     "sections": [
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -11976,6 +13039,13 @@
         "$ground_switches"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2504,
+        "y": 1132
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -11991,6 +13061,13 @@
         "$has_access_to|ForgottenWorld_Caves2_Lower",
         "$magic_walls"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2480,
+        "y": 1204
+      }
     ],
     "sections": [
       {
@@ -12008,6 +13085,13 @@
         "$double_jump",
         "$grapple"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2528,
+        "y": 1204
+      }
     ],
     "sections": [
       {
@@ -12045,6 +13129,13 @@
         "$lofty_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2504,
+        "y": 1252
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12061,6 +13152,13 @@
         "$magic_vines"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2504,
+        "y": 1204
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12076,6 +13174,13 @@
         "$has_access_to|ForgottenWorld_Caves5_Upper",
         "$magic_vines"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2504,
+        "y": 1228
+      }
     ],
     "sections": [
       {
@@ -12099,6 +13204,13 @@
         "$distant_ledges"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2576,
+        "y": 1204
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12115,6 +13227,13 @@
         "$magic_vines"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2552,
+        "y": 1228
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12130,6 +13249,13 @@
         "$has_access_to|ForgottenWorld_Caves9",
         "$magic_vines"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2456,
+        "y": 1276
+      }
     ],
     "sections": [
       {
@@ -12162,6 +13288,13 @@
         "$dual_mobility"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2600,
+        "y": 1276
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12178,6 +13311,13 @@
         "$sonar_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2552,
+        "y": 1276
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12192,6 +13332,13 @@
       [
         "$has_access_to|ForgottenWorld_CavesStudy"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2360,
+        "y": 1276
+      }
     ],
     "sections": [
       {
@@ -12209,6 +13356,13 @@
         "$all_celestial_feathers"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2408,
+        "y": 1156
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12219,32 +13373,34 @@
   },
   {
     "name": "Forgotten World - Crystal Room",
-    "access_rules": [
-      [
-        "$has_access_to|ForgottenWorld_WorldTree"
-      ]
-    ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2624,
+        "y": 1204
       }
-    ]
-  },
-  {
-    "name": "Forgotten World - Crystal Room - Defeat Dracomer Reward",
-    "access_rules": [
-      [
-        "$has_access_to|ForgottenWorld_WorldTree",
-        "$forgotten_world_dracomer_defeated"
-      ]
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Forgotten World - Crystal Room",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|ForgottenWorld_WorldTree"
+          ]
+        ]
+      },
+      {
+        "name": "Forgotten World - Crystal Room - Defeat Dracomer Reward",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|ForgottenWorld_WorldTree",
+            "$forgotten_world_dracomer_defeated"
+          ]
+        ]
       }
     ]
   },
@@ -12255,6 +13411,13 @@
         "$has_access_to|ForgottenWorld_TerradrileLair1",
         "$breakable_walls"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2360,
+        "y": 1348
+      }
     ],
     "sections": [
       {
@@ -12272,6 +13435,13 @@
         "$charging_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2432,
+        "y": 1372
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12288,6 +13458,13 @@
         "$breakable_walls"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2408,
+        "y": 1372
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12303,10 +13480,19 @@
         "$has_access_to|ForgottenWorld_TerradrileLair2"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2456,
+        "y": 1372
+      }
+    ],
     "sections": [
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]
@@ -12333,6 +13519,13 @@
         "$lofty_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2432,
+        "y": 1156
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12348,6 +13541,13 @@
         "$has_access_to|ForgottenWorld_MCPath2",
         "$diamond_blocks"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2384,
+        "y": 1084
+      }
     ],
     "sections": [
       {
@@ -12371,6 +13571,13 @@
         "$distant_ledges"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2360,
+        "y": 1060
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12385,6 +13592,13 @@
       [
         "$has_access_to|ForgottenWorld_Climb1"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2888,
+        "y": 988
+      }
     ],
     "sections": [
       {
@@ -12402,6 +13616,13 @@
         "$fiery_shots",
         "$distant_ledges"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2912,
+        "y": 1012
+      }
     ],
     "sections": [
       {
@@ -12457,6 +13678,13 @@
         "$lofty_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2912,
+        "y": 988
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12484,6 +13712,13 @@
         "$has_access_to|ForgottenWorld_Climb2",
         "$lofty_mount"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2864,
+        "y": 940
+      }
     ],
     "sections": [
       {
@@ -12517,6 +13752,13 @@
         "$summon_big_rock"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2864,
+        "y": 988
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12545,6 +13787,13 @@
         "$lofty_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2864,
+        "y": 916
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12561,32 +13810,12 @@
         "$magic_walls"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2816,
+        "y": 916
       }
-    ]
-  },
-  {
-    "name": "Forgotten World - North Center Climb - Diamond Blocks 1",
-    "access_rules": [
-      [
-        "$has_access_to|ForgottenWorld_Climb4",
-        "$charging_mount",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Climb4",
-        "$charging_mount",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Climb4",
-        "$charging_mount",
-        "$dual_mobility"
-      ]
     ],
     "sections": [
       {
@@ -12597,45 +13826,100 @@
     ]
   },
   {
-    "name": "Forgotten World - North Center Climb - Diamond Blocks 2",
-    "access_rules": [
-      [
-        "$has_access_to|ForgottenWorld_Climb4",
-        "$charging_mount",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Climb4",
-        "$charging_mount",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Climb4",
-        "$charging_mount",
-        "$dual_mobility"
-      ]
+    "name": "Forgotten World - North Center Climb",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2792,
+        "y": 868
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Forgotten World - North Center Climb - Diamond Blocks 1",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$charging_mount",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$charging_mount",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$charging_mount",
+            "$dual_mobility"
+          ]
+        ]
+      },
+      {
+        "name": "Forgotten World - North Center Climb - Diamond Blocks 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$charging_mount",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$charging_mount",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$charging_mount",
+            "$dual_mobility"
+          ]
+        ]
       }
     ]
   },
   {
-    "name": "Forgotten World - North Center Climb - SW Chest 1",
-    "access_rules": [
-      [
-        "$has_access_to|ForgottenWorld_Climb4",
-        "$double_jump"
-      ]
+    "name": "Forgotten World - North Center Climb #2",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2744,
+        "y": 916
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Forgotten World - North Center Climb - SW Chest 2",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$dual_mobility"
+          ]
+        ]
+      },
+      {
+        "name": "Forgotten World - North Center Climb - SW Chest 1",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$double_jump"
+          ]
+        ]
       }
     ]
   },
@@ -12654,6 +13938,13 @@
         "$has_access_to|ForgottenWorld_Climb4",
         "$dual_mobility"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2744,
+        "y": 892
+      }
     ],
     "sections": [
       {
@@ -12679,29 +13970,12 @@
         "$ground_switches"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 2792,
+        "y": 916
       }
-    ]
-  },
-  {
-    "name": "Forgotten World - North Center Climb - SW Chest 2",
-    "access_rules": [
-      [
-        "$has_access_to|ForgottenWorld_Climb4",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Climb4",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Climb4",
-        "$dual_mobility"
-      ]
     ],
     "sections": [
       {
@@ -12717,6 +13991,13 @@
       [
         "$has_access_to|ForgottenWorld_Climb5"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2720,
+        "y": 868
+      }
     ],
     "sections": [
       {
@@ -12734,6 +14015,13 @@
         "$double_jump",
         "$lofty_mount"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2624,
+        "y": 892
+      }
     ],
     "sections": [
       {
@@ -12759,6 +14047,13 @@
         "$dual_mobility"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2696,
+        "y": 892
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12774,6 +14069,13 @@
         "$has_access_to|AbandonedTower_South2",
         "$water_orbs"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1304,
+        "y": 580
+      }
     ],
     "sections": [
       {
@@ -12791,6 +14093,13 @@
         "$grapple"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1352,
+        "y": 556
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -12806,6 +14115,13 @@
         "$has_access_to|AbandonedTower_South5",
         "$summon_big_rock"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1352,
+        "y": 508
+      }
     ],
     "sections": [
       {
@@ -12824,21 +14140,12 @@
         "$ground_switches"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 1304,
+        "y": 460
       }
-    ]
-  },
-  {
-    "name": "Abandoned Tower - South Fire Orb Chest",
-    "access_rules": [
-      [
-        "$has_access_to|AbandonedTower_South7",
-        "$fire_orbs"
-      ]
     ],
     "sections": [
       {
@@ -12849,18 +14156,36 @@
     ]
   },
   {
-    "name": "Abandoned Tower - South Breakable Walls Chest",
-    "access_rules": [
-      [
-        "$has_access_to|AbandonedTower_South7",
-        "$breakable_walls"
-      ]
+    "name": "Abandoned Tower - South",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1328,
+        "y": 508
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Abandoned Tower - South Fire Orb Chest",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AbandonedTower_South7",
+            "$fire_orbs"
+          ]
+        ]
+      },
+      {
+        "name": "Abandoned Tower - South Breakable Walls Chest",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AbandonedTower_South7",
+            "$breakable_walls"
+          ]
+        ]
       }
     ]
   },
@@ -12877,6 +14202,13 @@
         "$double_jump",
         "$dual_mobility"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1352,
+        "y": 460
+      }
     ],
     "sections": [
       {
@@ -12901,6 +14233,13 @@
         "$has_access_to|AbandonedTower_South8",
         "$distant_ledges"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1328,
+        "y": 436
+      }
     ],
     "sections": [
       {
@@ -12932,20 +14271,12 @@
         "$has_access_to|AbandonedTower_SouthHidden1"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 1304,
+        "y": 508
       }
-    ]
-  },
-  {
-    "name": "Abandoned Tower - South Morph Ball Room 1",
-    "access_rules": [
-      [
-        "$has_access_to|AbandonedTower_SouthHidden2"
-      ]
     ],
     "sections": [
       {
@@ -12956,17 +14287,34 @@
     ]
   },
   {
-    "name": "Abandoned Tower - South Morph Ball Room 2",
-    "access_rules": [
-      [
-        "$has_access_to|AbandonedTower_SouthHidden2"
-      ]
+    "name": "Abandoned Tower - South Morph Ball Room",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1352,
+        "y": 484
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Abandoned Tower - South Morph Ball Room 1",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AbandonedTower_SouthHidden2"
+          ]
+        ]
+      },
+      {
+        "name": "Abandoned Tower - South Morph Ball Room 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AbandonedTower_SouthHidden2"
+          ]
+        ]
       }
     ]
   },
@@ -12977,6 +14325,13 @@
         "$has_access_to|AbandonedTower_Center2",
         "$lightning_orbs"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1304,
+        "y": 388
+      }
     ],
     "sections": [
       {
@@ -13005,6 +14360,13 @@
         "$distant_ledges"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1352,
+        "y": 412
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -13032,6 +14394,13 @@
         "$distant_ledges"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1352,
+        "y": 388
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -13047,6 +14416,13 @@
         "$has_access_to|AbandonedTower_Center3_Upper",
         "$diamond_blocks"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1352,
+        "y": 340
+      }
     ],
     "sections": [
       {
@@ -13065,6 +14441,13 @@
         "$lofty_mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1424,
+        "y": 316
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -13082,6 +14465,13 @@
         "$mount"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1328,
+        "y": 316
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -13096,6 +14486,13 @@
       [
         "$has_access_to|AbandonedTower_Center8"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1352,
+        "y": 292
+      }
     ],
     "sections": [
       {
@@ -13129,6 +14526,13 @@
         "$summon_big_rock"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1400,
+        "y": 292
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -13144,6 +14548,13 @@
         "$has_access_to|AbandonedTower_Center10",
         "$improved_swimming"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1352,
+        "y": 268
+      }
     ],
     "sections": [
       {
@@ -13169,38 +14580,40 @@
     ]
   },
   {
-    "name": "Abandoned Tower - Center Dark Room - Lower Chest",
-    "access_rules": [
-      [
-        "$has_access_to|AbandonedTower_Center11",
-        "$torches"
-      ]
-    ],
-    "sections": [
+    "name": "Abandoned Tower - Center Dark Room",
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 1376,
+        "y": 244
       }
-    ]
-  },
-  {
-    "name": "Abandoned Tower - Center Dark Room - Upper Chest",
-    "access_rules": [
-      [
-        "$has_access_to|AbandonedTower_Center11",
-        "$dark_rooms"
-      ],
-      [
-        "$has_access_to|AbandonedTower_Center11",
-        "$torches"
-      ]
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Abandoned Tower - Center Dark Room - Lower Chest",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AbandonedTower_Center11",
+            "$torches"
+          ]
+        ]
+      },
+      {
+        "name": "Abandoned Tower - Center Dark Room - Upper Chest",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AbandonedTower_Center11",
+            "$dark_rooms"
+          ],
+          [
+            "$has_access_to|AbandonedTower_Center11",
+            "$torches"
+          ]
+        ]
       }
     ]
   },
@@ -13210,6 +14623,13 @@
       [
         "$has_access_to|AbandonedTower_Center12"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1328,
+        "y": 220
+      }
     ],
     "sections": [
       {
@@ -13225,6 +14645,13 @@
       [
         "$has_access_to|AbandonedTower_North1"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1376,
+        "y": 196
+      }
     ],
     "sections": [
       {
@@ -13242,6 +14669,13 @@
         "$earth_orbs"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1376,
+        "y": 172
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -13258,6 +14692,13 @@
         "$ice_orbs"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1352,
+        "y": 148
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -13273,6 +14714,13 @@
         "$has_access_to|AbandonedTower_North5",
         "$double_jump"
       ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1400,
+        "y": 196
+      }
     ],
     "sections": [
       {
@@ -13291,6 +14739,13 @@
         "$double_jump"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1400,
+        "y": 100
+      }
+    ],
     "sections": [
       {
         "name": "",
@@ -13306,20 +14761,12 @@
         "$has_access_to|AbandonedTower_North9"
       ]
     ],
-    "sections": [
+    "map_locations": [
       {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
+        "map": "overview",
+        "x": 1376,
+        "y": 52
       }
-    ]
-  },
-  {
-    "name": "Abandoned Tower - North Hidden Room 1",
-    "access_rules": [
-      [
-        "$has_access_to|AbandonedTower_NorthHidden"
-      ]
     ],
     "sections": [
       {
@@ -13330,17 +14777,34 @@
     ]
   },
   {
-    "name": "Abandoned Tower - North Hidden Room 2",
-    "access_rules": [
-      [
-        "$has_access_to|AbandonedTower_NorthHidden"
-      ]
+    "name": "Abandoned Tower - North Hidden Room",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1376,
+        "y": 100
+      }
     ],
     "sections": [
       {
-        "name": "",
+        "name": "Abandoned Tower - North Hidden Room 1",
         "clear_as_group": false,
-        "item_count": 1
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AbandonedTower_NorthHidden"
+          ]
+        ]
+      },
+      {
+        "name": "Abandoned Tower - North Hidden Room 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AbandonedTower_NorthHidden"
+          ]
+        ]
       }
     ]
   },
@@ -13351,10 +14815,19 @@
         "$has_access_to|AbandonedTower_Final"
       ]
     ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 1376,
+        "y": 28
+      }
+    ],
     "sections": [
       {
         "name": "",
         "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
         "item_count": 1
       }
     ]

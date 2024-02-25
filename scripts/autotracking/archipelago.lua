@@ -27,9 +27,6 @@ function onClear(slot_data)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
     end
-    local keys = GetDataStorageKeys()
-    Archipelago:Get(keys)
-    Archipelago:SetNotify(keys)
     REGIONS_ACCESS_CACHE = {}
     SLOT_DATA = slot_data
     CUR_INDEX = -1
@@ -68,13 +65,16 @@ function onClear(slot_data)
     end
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
+    local keys = GetDataStorageKeys()
+    Archipelago:Get(keys)
+    Archipelago:SetNotify(keys)
     update_access()
     Tracker.BulkUpdate = false
 end
 
 function resetItem(code, type)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("onClear: clearing item %s of type %s", code, v[2]))
+        print(string.format("onClear: clearing item %s of type %s", code, type))
     end
     local obj = Tracker:FindObjectForCode(code)
     if obj then
@@ -200,7 +200,17 @@ function onSetReply(key, value, old_value)
 end
 
 function updateFromDataStorage(key, value)
-    local mapping = DATASTORAGE_MAPPING[key]
+    if value == nil then
+        return
+    end
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("updateFromDataStorage: %s, %s, %s", key, value, type(value)))
+    end
+    local split_key = split(key, ':')
+    if #split_key ~= 3 then
+        return
+    end
+    local mapping = DATASTORAGE_MAPPING[split_key[3]]
     if not mapping then
         return
     end
@@ -208,12 +218,12 @@ function updateFromDataStorage(key, value)
         return
     end
     local type = mapping[2]
-    for _, code in mapping[1] do
+    for _, code in ipairs(mapping[1]) do
         local obj = Tracker:FindObjectForCode(code)
-        if not obj then
+        if obj == nil then
             return
         end
-        if v[1]:sub(1, 1) == "@" then
+        if code:sub(1, 1) == "@" then
             obj.AvailableChestCount = obj.ChestCount - value
         else
             if type == "toggle" then

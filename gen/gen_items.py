@@ -4,7 +4,7 @@ from PyPopTracker.packs.items import PopTrackerToggleItem, export_items, PopTrac
 from utils import format_code, count_flags
 
 # ToDo: hardcoded for now
-abilities = [
+abilities_compact = [
     'Breakable Walls',
     'Impassible Vines',
     'Diamond Blocks',
@@ -14,6 +14,7 @@ abilities = [
     'Earth Orbs',
     'Ice Orbs',
     'Distant Ice Orbs',
+    'Distant Fire Orbs',
     'Summon Rock',
     'Summon Mushroom',
     'Summon Big Rock',
@@ -26,19 +27,62 @@ abilities = [
     'Narrow Corridors',
     'Magic Walls',
     'Magic Vines',
-    'Fiery Shots',
     'Heavy Blocks',
     'Torches',
     'Dark Rooms',
     'Grapple',
     'Levitate',
     'Secret Vision',
-    'Spore Shroud',
     'Basic Mount',
     'Sonar Mount',
     'Tar Mount',
     'Charging Mount'
 ]
+
+# ToDo
+ability_mapping = {
+    'Blob Form': ['Narrow Corridors'],
+    'Bubble Burst': ['Water Orbs'],
+    'Charging Mount': ['Basic Mount', 'Charging Mount', 'Breakable Walls', 'Diamond Blocks'],
+    'Claws': ['Breakable Walls', 'Impassible Vines'],
+    'Corrosive Jabs': ['Breakable Walls', 'Water Orbs'],
+    'Crush': ['Breakable Walls', 'Diamond Blocks'],
+    'Dual Mobility': ['Dual Mobility', 'Flying', 'Improved Flying', 'Basic Swimming', 'Improved Swimming', 'Tar Mount'],
+    'Fiery Shots': ['Fire Orbs', 'Distant Fire Orbs'],
+    'Flying': ['Flying'],
+    'Freeze': ['Ice Orbs'],
+    # 'Ghost Form': [],
+    'Grapple': ['Grapple'],
+    'Heavy Punch': ['Breakable Walls'],
+    'Ignite': ['Impassible Vines', 'Torches', 'Fire Orbs'],
+    'Improved Flying': ['Flying', 'Improved Flying'],
+    'Improved Swimming': ['Basic Swimming', 'Improved Swimming'],
+    'Jewel Blast': ['Earth Orbs'],
+    'Levitate': ['Levitate'],
+    'Light': ['Dark Rooms'],
+    'Light Crush': ['Breakable Walls', 'Diamond Blocks', 'Dark Rooms'],
+    'Lightning Bolt': ['Torches', 'Lightning Orbs'],
+    'Lofty Mount': ['Lofty Mount'],
+    'Minnesang': ['Magic Walls'],
+    'Morph Ball': ['Narrow Corridors'],
+    'Mount': ['Basic Mount'],
+    'Secret Vision': ['Secret Vision'],
+    'Shock Freeze': ['Ice Orbs', 'Lightning Orbs'],
+    'Slash': ['Breakable Walls', 'Impassible Vines'],
+    'Slime Shot': ['Earth Orbs'],
+    'Snowball Toss': ['Ice Orbs', 'Distant Ice Orbs'],
+    'Sonar': ['Dark Rooms'],
+    'Sonar Mount': ['Basic Mount', 'Dark Rooms', 'Sonar Mount'],
+    'Spore Shroud': ['Magic Vines'],
+    'Summon Big Rock': ['Summon Big Rock'],
+    'Summon Mushroom': ['Summon Mushroom'],
+    'Summon Rock': ['Summon Rock'],
+    'Swimming': ['Basic Swimming'],
+    'Tackle': ['Breakable Walls', 'Heavy Blocks'],
+    'Tar Mount': ['Basic Mount', 'Tar Mount'],
+    'Toxic Freeze': ['Ice Orbs', 'Earth Orbs'],  # ToDo: distant orbs as well?
+    'Toxic Slam': ['Breakable Walls', 'Earth Orbs']
+}
 
 
 def gen_items():
@@ -121,7 +165,7 @@ def gen_items():
     # export_items(items, out_path=f'../items/monsters.json')
     # print(f'Exported monsters items!')
     items = []
-    for ability in abilities:
+    for ability in abilities_compact:
         main_code = ability.lower().replace(' ', '_')
         img = f'images/items/abilities/{main_code}.png'
         codes = [main_code]
@@ -137,25 +181,21 @@ def gen_items():
             codes.append("mount")
         if main_code in ["tar_mount", "dual_mobility"]:
             codes.append("tar")
+        if main_code.startswith('distant_'):
+            codes.append(main_code[len('distant_'):])
+        if main_code == 'distant_fire_orbs':
+            codes.append('fiery_shots')
 
         item = PopTrackerToggleItem(ability, img=img, codes=', '.join(codes))
         items.append(item)
-        datastorage_mapping[ability] = [[main_code], "toggle"]
     export_items(items, out_path=f'../items/abilities.json')
     print(f'Exported abilities items!')
-    # codes = [[]]
-    # i = 0
-    # j = 0
-    # for item in items:
-    #     codes[i].append(item.codes.split(",")[0])
-    #     j += 1
-    #     if j % 9 == 0:
-    #         i += 1
-    #         codes.append([])
-    # print(json.dumps(codes))
     export_item_mapping(item_mapping)
+    for k, v in ability_mapping.items():
+        datastorage_mapping[k] = [[format_code(v2) for v2 in v], 'toggle']
     export_datastorage_mapping(datastorage_mapping)
     print(f'Exported item mappings!')
+
 
 def export_datastorage_mapping(datastorage_mapping: dict[str, list[str]]):
     lines = ['DATASTORAGE_MAPPING = {']
@@ -171,6 +211,7 @@ def export_datastorage_mapping(datastorage_mapping: dict[str, list[str]]):
 
     with open('../scripts/autotracking/datastorage_mapping.lua', mode='w') as f:
         f.write('\n'.join(lines))
+
 
 def export_item_mapping(ids_for_items: dict[int, (list[str], str)]):
     lines = ['ITEM_MAPPING = {']

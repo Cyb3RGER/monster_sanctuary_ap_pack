@@ -50,8 +50,14 @@
   {
     "name": "Distant Ice Orbs",
     "type": "toggle",
-    "codes": "distant_ice_orbs",
+    "codes": "distant_ice_orbs, ice_orbs",
     "img": "images/items/abilities/distant_ice_orbs.png"
+  },
+  {
+    "name": "Distant Fire Orbs",
+    "type": "toggle",
+    "codes": "distant_fire_orbs, fire_orbs, fiery_shots",
+    "img": "images/items/abilities/distant_fire_orbs.png"
   },
   {
     "name": "Summon Rock",
@@ -126,12 +132,6 @@
     "img": "images/items/abilities/magic_vines.png"
   },
   {
-    "name": "Fiery Shots",
-    "type": "toggle",
-    "codes": "fiery_shots",
-    "img": "images/items/abilities/fiery_shots.png"
-  },
-  {
     "name": "Heavy Blocks",
     "type": "toggle",
     "codes": "heavy_blocks",
@@ -166,12 +166,6 @@
     "type": "toggle",
     "codes": "secret_vision",
     "img": "images/items/abilities/secret_vision.png"
-  },
-  {
-    "name": "Spore Shroud",
-    "type": "toggle",
-    "codes": "spore_shroud",
-    "img": "images/items/abilities/spore_shroud.png"
   },
   {
     "name": "Basic Mount",

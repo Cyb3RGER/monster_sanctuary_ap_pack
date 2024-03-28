@@ -181,6 +181,8 @@ def gen_items():
             codes.append("mount")
         if main_code in ["tar_mount", "dual_mobility"]:
             codes.append("tar")
+        if main_code in ["charging_mount"]:
+            codes.append("breakable_walls")
         if main_code.startswith('distant_'):
             codes.append(main_code[len('distant_'):])
         if main_code == 'distant_fire_orbs':

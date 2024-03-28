@@ -3,7 +3,7 @@
         "name": "Debug Location",
         "access_rules": [
             [
-                "$has_access_to|Underworld_WestCatacomb9_ExteriorWest"
+                "$has_access_to|StrongholdDungeon_NorthHidden"
             ]
         ],
         "map_locations": [

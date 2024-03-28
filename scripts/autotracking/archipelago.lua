@@ -12,7 +12,7 @@ SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 REGIONS_ACCESS_CACHE = {}
-update_access()
+--update_access()
 
 function GetDataStorageKeys()
     local keys = {}
@@ -68,7 +68,7 @@ function onClear(slot_data)
     local keys = GetDataStorageKeys()
     Archipelago:Get(keys)
     Archipelago:SetNotify(keys)
-    update_access()
+    --update_access()
     Tracker.BulkUpdate = false
 end
 
@@ -157,7 +157,7 @@ function onItem(index, item_id, item_name, player_number)
         print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
         print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
     end
-    update_access()
+    --update_access()
 end
 
 -- called when a location gets cleared
@@ -186,7 +186,7 @@ function onLocation(location_id, location_name)
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onLocation: could not find object for code %s", v[1]))
     end
-    update_access()
+    --update_access()
 end
 
 function onRetrieved(key, value)
@@ -239,6 +239,7 @@ function updateFromDataStorage(key, value)
             end
         end
     end
+    --update_access()
 end
 
 -- add AP callbacks

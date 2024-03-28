@@ -1371,6 +1371,14 @@ function ancient_woods_magma_chamber_1()
   return has_access_to('AncientWoods_South1_Lower')
 end
 
+function ancient_woods_brutus_access()
+  return
+  _AND({
+    has_access_to('AncientWoods_South4'),
+    breakable_walls()
+  })
+end
+
 function tree_of_evolution_access()
   return has_access_to('AncientWoods_TreeOfEvolution')
 end
@@ -1446,6 +1454,14 @@ end
 
 function magma_chamber_south_shortcut()
   return has_access_to('MagmaChamber_South3_East')
+end
+
+function magma_chamber_forgotten_world_access()
+  return
+  _AND({
+    has_access_to('MagmaChamber_South7_East'),
+    breakable_walls()
+  })
 end
 
 function forgotten_world_to_magma_chamber_shortcut()
@@ -1605,6 +1621,14 @@ end
 
 function forgotten_world_caves_shortcut()
   return has_access_to('ForgottenWorld_Caves11_Lower')
+end
+
+function forgotten_world_wanderer_freed()
+  return
+  _AND({
+    has_access_to('ForgottenWorld_WandererRoom'),
+    all_celestial_feathers()
+  })
 end
 
 function abandoned_tower_south_shortcut()

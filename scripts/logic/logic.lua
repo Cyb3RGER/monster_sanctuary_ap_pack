@@ -35,6 +35,12 @@ function minimal_locked_doors()
     end
     return SLOT_DATA.options.remove_locked_doors == 1
 end
+function normal_plot()
+    if SLOT_DATA == nil then
+        return false
+    end
+    return SLOT_DATA.options.skip_plot == 0
+end
 function plotless()
     if SLOT_DATA == nil then
         return false

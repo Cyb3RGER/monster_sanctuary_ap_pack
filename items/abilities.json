@@ -188,7 +188,7 @@
   {
     "name": "Charging Mount",
     "type": "toggle",
-    "codes": "charging_mount, mount",
+    "codes": "charging_mount, mount, breakable_walls",
     "img": "images/items/abilities/charging_mount.png"
   }
 ]

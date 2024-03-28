@@ -644,7 +644,7 @@
       {
         "map": "overview",
         "x": 606,
-        "y": 702
+        "y": 726
       }
     ],
     "sections": [
@@ -666,7 +666,7 @@
       {
         "map": "overview",
         "x": 606,
-        "y": 726
+        "y": 702
       }
     ],
     "sections": [
@@ -1948,7 +1948,8 @@
     "access_rules": [
       [
         "$has_access_to|BlueCave_WestWaters5",
-        "$dark_rooms"
+        "$dark_rooms",
+        "$double_jump"
       ]
     ],
     "map_locations": [
@@ -2381,6 +2382,14 @@
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_Central1",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central1",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central1",
         "$double_jump",
         "$distant_ledges"
       ]
@@ -2647,14 +2656,6 @@
       [
         "$has_access_to|StrongholdDungeon_South1",
         "$double_jump"
-      ],
-      [
-        "$has_access_to|StrongholdDungeon_South1",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|StrongholdDungeon_South1",
-        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -3187,9 +3188,7 @@
     "name": "Snowy Peaks - East - Ledge Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_East2_Upper",
-        "$double_jump",
-        "$distant_ledges"
+        "$has_access_to|SnowyPeaks_East2_Upper"
       ]
     ],
     "map_locations": [
@@ -3504,6 +3503,14 @@
   {
     "name": "Snowy Peaks - West Hills",
     "access_rules": [
+      [
+        "$has_access_to|SnowyPeaks_West2",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_West2",
+        "$dual_mobility"
+      ],
       [
         "$has_access_to|SnowyPeaks_West2",
         "$double_jump",
@@ -4600,7 +4607,8 @@
     "access_rules": [
       [
         "$has_access_to|SunPalace_East4",
-        "$water_orbs"
+        "$water_orbs",
+        "$double_jump"
       ]
     ],
     "map_locations": [
@@ -5218,7 +5226,15 @@
     "access_rules": [
       [
         "$has_access_to|SunPalace_EastSewers2",
+        "$sun_palace_lower_water_2"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers2",
         "$double_jump"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers2",
+        "$swimming"
       ]
     ],
     "map_locations": [
@@ -5769,6 +5785,10 @@
           ],
           [
             "$has_access_to|AncientWoods_WestDescent2",
+            "$flying"
+          ],
+          [
+            "$has_access_to|AncientWoods_WestDescent2",
             "$improved_flying"
           ],
           [
@@ -5785,6 +5805,10 @@
           [
             "$has_access_to|AncientWoods_WestDescent2",
             "$double_jump"
+          ],
+          [
+            "$has_access_to|AncientWoods_WestDescent2",
+            "$flying"
           ],
           [
             "$has_access_to|AncientWoods_WestDescent2",
@@ -5877,24 +5901,7 @@
     "name": "Ancient Woods - West Pit - East Chest",
     "access_rules": [
       [
-        "$has_access_to|AncientWoods_Center1",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|AncientWoods_Center1",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|AncientWoods_Center1",
-        "$dual_mobility"
-      ],
-      [
-        "$has_access_to|AncientWoods_Center1",
-        "$lofty_mount"
-      ],
-      [
-        "$has_access_to|AncientWoods_Center1",
-        "$summon_big_rock"
+        "$has_access_to|AncientWoods_Center1"
       ]
     ],
     "map_locations": [
@@ -6355,6 +6362,22 @@
         "x": 1904,
         "y": 798
       }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Flag AncientWoods_South4_ancient_woods_brutus_access",
+    "access_rules": [
+      [
+        "$has_access_to|AncientWoods_South4",
+        "$breakable_walls"
+      ]
     ],
     "sections": [
       {
@@ -6850,10 +6873,6 @@
       [
         "$has_access_to|HorizonBeach_Center2",
         "$dual_mobility"
-      ],
-      [
-        "$has_access_to|HorizonBeach_Center2",
-        "$lofty_mount"
       ]
     ],
     "map_locations": [
@@ -6885,10 +6904,6 @@
       [
         "$has_access_to|HorizonBeach_Center2",
         "$dual_mobility"
-      ],
-      [
-        "$has_access_to|HorizonBeach_Center2",
-        "$lofty_mount"
       ]
     ],
     "map_locations": [
@@ -6973,7 +6988,7 @@
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_Center4",
-        "$improved swimming"
+        "$improved_swimming"
       ]
     ],
     "map_locations": [
@@ -6996,7 +7011,7 @@
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_Center4",
-        "$improved swimming"
+        "$improved_swimming"
       ]
     ],
     "map_locations": [
@@ -7026,7 +7041,7 @@
       {
         "map": "overview",
         "x": 2792,
-        "y": 796
+        "y": 820
       }
     ],
     "sections": [
@@ -7057,7 +7072,7 @@
       {
         "map": "overview",
         "x": 2792,
-        "y": 820
+        "y": 796
       }
     ],
     "sections": [
@@ -7291,7 +7306,19 @@
     "name": "Horizon Beach - East - East Peak 2",
     "access_rules": [
       [
-        "$has_access_to|HorizonBeach_East5"
+        "$has_access_to|HorizonBeach_East5",
+        "$double_jump",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East5",
+        "$double_jump",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East5",
+        "$double_jump",
+        "$lofty_mount"
       ]
     ],
     "map_locations": [
@@ -7786,7 +7813,7 @@
     ],
     "sections": [
       {
-        "name": "Horizon Beach - Elderjel Room - Chest",
+        "name": "Horizon Beach - Elderjel Room - Normal Chest",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -7796,7 +7823,7 @@
         ]
       },
       {
-        "name": "Horizon Beach - Elderjel Room - Special Chest 1",
+        "name": "Horizon Beach - Elderjel Room - Special Chest",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -7820,7 +7847,7 @@
     ]
   },
   {
-    "name": "Horizon Beach - Elderjel Room - Special Chest 2",
+    "name": "Horizon Beach - Elderjel Room - Julia Reward",
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_Champion"
@@ -8154,8 +8181,7 @@
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_North7",
-        "$dark_rooms",
-        "$double_jump"
+        "$dark_rooms"
       ]
     ],
     "map_locations": [
@@ -8798,6 +8824,22 @@
         "x": 2240,
         "y": 1036
       }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Flag MagmaChamber_South7_East_magma_chamber_forgotten_world_access",
+    "access_rules": [
+      [
+        "$has_access_to|MagmaChamber_South7_East",
+        "$breakable_walls"
+      ]
     ],
     "sections": [
       {
@@ -9632,7 +9674,7 @@
     ]
   },
   {
-    "name": "Underworld - Eric Battle",
+    "name": "Underworld - Leonard Battle",
     "access_rules": [
       [
         "$has_access_to|Underworld_Center1"
@@ -11857,7 +11899,7 @@
     ],
     "sections": [
       {
-        "name": "Forgotten World - East Jungle - High Ledge Chest",
+        "name": "Forgotten World - East Jungle - Invisible Platform Chest",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -11895,7 +11937,7 @@
     ]
   },
   {
-    "name": "Forgotten World - East Jungle - Invisible Platform Chest",
+    "name": "Forgotten World - East Jungle - High Ledge Chest",
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_Jungle6",
@@ -12753,7 +12795,7 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_WandererRoom",
-        "$all_celestial_feathers"
+        "$forgotten_world_wanderer_freed"
       ]
     ],
     "map_locations": [
@@ -12762,6 +12804,22 @@
         "x": 2408,
         "y": 1156
       }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Flag ForgottenWorld_WandererRoom_forgotten_world_wanderer_freed",
+    "access_rules": [
+      [
+        "$has_access_to|ForgottenWorld_WandererRoom",
+        "$all_celestial_feathers"
+      ]
     ],
     "sections": [
       {
@@ -12798,6 +12856,7 @@
         "access_rules": [
           [
             "$has_access_to|ForgottenWorld_WorldTree",
+            "$forgotten_world_wanderer_freed",
             "$forgotten_world_dracomer_defeated"
           ]
         ]

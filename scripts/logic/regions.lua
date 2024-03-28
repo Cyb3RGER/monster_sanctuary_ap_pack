@@ -394,9 +394,12 @@ REGIONS = {
       return
       _OR({
         plotless(),
-        _AND({
-          keeper_rank_2(),
-          blue_caves_story_complete()
+        _OR({
+          plotless(),
+          _AND({
+            keeper_rank_2(),
+            blue_caves_story_complete()
+          })
         })
       })
     end
@@ -419,7 +422,11 @@ REGIONS = {
       return true
     end,
     ["KeeperStronghold_DuelCircle"] = function()
-      return keeper_rank_2()
+      return
+      _OR({
+        plotless(),
+        keeper_rank_2()
+      })
     end
   },
   ["KeeperStronghold_DuelCircle"] = {
@@ -1234,20 +1241,10 @@ REGIONS = {
   },
   ["StrongholdDungeon_South1"] = {
     ["StrongholdDungeon_Central6"] = function()
-      return
-      _OR({
-        double_jump(),
-        improved_flying(),
-        dual_mobility()
-      })
+      return double_jump()
     end,
     ["StrongholdDungeon_South2"] = function()
-      return
-      _OR({
-        double_jump(),
-        improved_flying(),
-        dual_mobility()
-      })
+      return double_jump()
     end
   },
   ["StrongholdDungeon_South2"] = {
@@ -2124,10 +2121,10 @@ REGIONS = {
     end,
     ["SunPalace_EastChampion"] = function()
       return
-      _OR({
-        secret_vision(),
-        _AND({
-          double_jump(),
+      _AND({
+        double_jump(),
+        _OR({
+          secret_vision(),
           lofty_mount()
         })
       })
@@ -2146,10 +2143,18 @@ REGIONS = {
   },
   ["SunPalace_East4"] = {
     ["SunPalace_East3"] = function()
-      return true
+      return
+      _OR({
+        double_jump(),
+        distant_ledges()
+      })
     end,
     ["SunPalace_Center"] = function()
-      return true
+      return
+      _OR({
+        double_jump(),
+        distant_ledges()
+      })
     end
   },
   ["SunPalace_East5"] = {
@@ -2647,6 +2652,9 @@ REGIONS = {
   ["AncientWoods_WestDescent_Upper"] = {
     ["AncientWoods_West7"] = function()
       return true
+    end,
+    ["AncientWoods_WestDescent_Middle"] = function()
+      return true
     end
   },
   ["AncientWoods_WestDescent_Middle"] = {
@@ -2661,7 +2669,7 @@ REGIONS = {
     ["AncientWoods_WestDescent_Lower"] = function()
       return true
     end,
-    ["AncientWoods_SouthHidden1"] = function()
+    ["AncientWoods_SouthHidden1_West"] = function()
       return breakable_walls()
     end
   },
@@ -2718,14 +2726,7 @@ REGIONS = {
       return true
     end,
     ["AncientWoods_Center3"] = function()
-      return
-      _OR({
-        double_jump(),
-        improved_flying(),
-        dual_mobility(),
-        lofty_mount(),
-        summon_big_rock()
-      })
+      return true
     end,
     ["AncientWoods_Center4"] = function()
       return true
@@ -2960,8 +2961,8 @@ REGIONS = {
     ["AncientWoods_South3"] = function()
       return true
     end,
-    ["AncientWoods_SouthHidden2"] = function()
-      return true
+    ["AncientWoods_SouthHidden4"] = function()
+      return ancient_woods_brutus_access()
     end
   },
   ["AncientWoods_DarkRoom"] = {
@@ -2976,7 +2977,7 @@ REGIONS = {
   },
   ["AncientWoods_SouthHidden1_West"] = {
     ["AncientWoods_WestDescent_Middle"] = function()
-      return true
+      return breakable_walls()
     end,
     ["AncientWoods_SouthHidden1_East"] = function()
       return
@@ -3039,7 +3040,8 @@ REGIONS = {
       return
       _AND({
         dark_rooms(),
-        double_jump()
+        double_jump(),
+        ancient_woods_brutus_access()
       })
     end,
     ["AncientWoods_SouthChampion"] = function()
@@ -3323,12 +3325,16 @@ REGIONS = {
       })
     end,
     ["HorizonBeach_EastChampion"] = function()
-      return narrow_corridors()
+      return
+      _AND({
+        narrow_corridors(),
+        double_jump()
+      })
     end
   },
   ["HorizonBeach_EastChampion"] = {
     ["HorizonBeach_EastHidden"] = function()
-      return true
+      return narrow_corridors()
     end
   },
   ["HorizonBeach_Labyrinth"] = {
@@ -4112,7 +4118,7 @@ REGIONS = {
       return mount()
     end,
     ["MagmaChamber_South8"] = function()
-      return breakable_walls()
+      return magma_chamber_forgotten_world_access()
     end
   },
   ["MagmaChamber_South7_West"] = {
@@ -4125,7 +4131,7 @@ REGIONS = {
   },
   ["MagmaChamber_South8"] = {
     ["MagmaChamber_South7_East"] = function()
-      return breakable_walls()
+      return magma_chamber_forgotten_world_access()
     end,
     ["MagmaChamber_South9_West"] = function()
       return true

@@ -1,14 +1,14 @@
 # Monster Sanctuary AP pack for PopTracker
 
-This a tracker pack for Monster Sanctuary in Archipelago.
+This is a [PopTracker](https://github.com/black-sliver/PopTracker) pack for Monster Sanctuary in Archipelago.
 
 ## Installation
 
-Just download the lastest build or source and put in your packs folder (unpacked).
+Download and extract [PopTracker](https://github.com/black-sliver/PopTracker/releases) and download the lastest release or source of this pack and put in your ``packs`` folder inside your PopTracker folder. (If you downloaded the source you will have to extract the folder inside the zip.)
 
 ## Autotracking
 
-This pack utilized PopTrackers AP autotracking function. For Autotracking hit the grey ``AP`` Text at the top of the PopTracker window when the pack is loaded. You will be prompted for your server host and port, your slot name and optional password. Once entered the ``AP`` text will turn green when it is connected to the AP server. For more info please see [PopTrackers docs](https://github.com/black-sliver/PopTracker?tab=readme-ov-file#archipelago-multiworld).
+This pack utilizes PopTrackers AP autotracking function. For Autotracking hit the grey ``AP`` text at the top of the PopTracker window when the pack is loaded. You will be prompted for your server host and port, your slot name and optional password. Once entered the ``AP`` text will turn green when it is connected to the AP server. For more info please see [PopTrackers docs](https://github.com/black-sliver/PopTracker?tab=readme-ov-file#archipelago-multiworld).
 
 ## Found a bug?
 

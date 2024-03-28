@@ -2,8 +2,8 @@
     "versions": [
         {
             "package_version": "1.0.0",
-            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/1.0.0/monster_sanctuary_ap_pack-v1_0_0.zip",
-            "sha256": "",
+            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.0.0/monster_sanctuary_ap_pack-v1_0_0.zip",
+            "sha256": "4c1b236fff5e23ac70255114a7319c69c39f7a497adc4fc8b46cf9e1a85afce6",
             "changelog": [
                 "Initial Release"
             ]

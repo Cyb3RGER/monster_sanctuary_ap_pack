@@ -1,8 +1,92 @@
 [
     {
         "name": "overview",
-        "location_size": 20,
-        "location_border_thickness": 2,
+        "location_size": 30,
+        "location_border_thickness": 3,
         "img": "images/maps/map.png"
+    },
+    {
+        "name": "abandoned_tower",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/abandoned_tower.png"
+    },
+    {
+        "name": "ancient_woods",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/ancient_woods.png"
+    },
+    {
+        "name": "blob_burg",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/blob_burg.png"
+    },
+    {
+        "name": "blue_caves",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/blue_caves.png"
+    },
+    {
+        "name": "forgotten_world",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/forgotten_world.png"
+    },
+    {
+        "name": "horizon_beach",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/horizon_beach.png"
+    },
+    {
+        "name": "keepers_stronghold",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/keepers_stronghold.png"
+    },
+    {
+        "name": "magma_chamber",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/magma_chamber.png"
+    },
+    {
+        "name": "mountain_path",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/mountain_path.png"
+    },
+    {
+        "name": "mystical_workshop",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/mystical_workshop.png"
+    },
+    {
+        "name": "snowy_peaks",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/snowy_peaks.png"
+    },
+    {
+        "name": "stronghold_dungeon",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/stronghold_dungeon.png"
+    },
+    {
+        "name": "sun_palace",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/sun_palace.png"
+    },
+    {
+        "name": "the_underworld",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/the_underworld.png"
     }
 ]

@@ -34,7 +34,133 @@
                         "overview"
                     ]
                 }
-            }
+            },
+            {
+                "title": "Mountain Path",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "mountain_path"
+                    ]
+                }
+            },
+            {
+                "title": "Keeper's Stronghold",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "keepers_stronghold"
+                    ]
+                }
+            },
+            {
+                "title": "Blue Caves",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "blue_caves"
+                    ]
+                }
+            },
+            {
+                "title": "Stronghold Dungeon",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "stronghold_dungeon"
+                    ]
+                }
+            },
+            {
+                "title": "Ancient Woods",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "ancient_woods"
+                    ]
+                }
+            },
+            {
+                "title": "Horizon Beach",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "horizon_beach"
+                    ]
+                }
+            },
+            {
+                "title": "Snowy Peaks",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "snowy_peaks"
+                    ]
+                }
+            },
+            {
+                "title": "Sun Palace",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "sun_palace"
+                    ]
+                }
+            },
+            {
+                "title": "Magma Chamber",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "magma_chamber"
+                    ]
+                }
+            },
+            {
+                "title": "Mystical Workshop",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "mystical_workshop"
+                    ]
+                }
+            },
+            {
+                "title": "The Underworld",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "the_underworld"
+                    ]
+                }
+            },
+            {
+                "title": "Abandoned Tower",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "abandoned_tower"
+                    ]
+                }
+            },            
+            {
+                "title": "Blob Burg",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "blob_burg"
+                    ]
+                }
+            },
+            {
+                "title": "Forgotten World",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "forgotten_world"
+                    ]
+                }
+            },
         ]
     }
 }

@@ -7,6 +7,14 @@
             "changelog": [
                 "Initial Release"
             ]
+        },
+        {
+            "package_version": "1.0.1",
+            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.0.1/monster_sanctuary_ap_pack-v1_0_1.zip",
+            "sha256": "ee87386b52bf88d36ee63c07f903527a25dd26782374c6100cc29a95239e50d1",
+            "changelog": [
+                "Added region maps and autoswitching maps"                
+            ]
         }
     ]
 }

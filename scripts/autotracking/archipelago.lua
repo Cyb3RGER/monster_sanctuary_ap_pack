@@ -6,6 +6,7 @@
 require("scripts/autotracking/item_mapping")
 require("scripts/autotracking/location_mapping")
 require("scripts/autotracking/datastorage_mapping")
+require("scripts/autotracking/autoswitch_mapping")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
@@ -16,9 +17,10 @@ REGIONS_ACCESS_CACHE = {}
 
 function GetDataStorageKeys()
     local keys = {}
-    for k, _ in pairs(DATASTORAGE_MAPPING) do
+    for k, _ in pairs(DATASTORAGE_ABILITY_MAPPING) do
         table.insert(keys, "Slot:" .. Archipelago.PlayerNumber .. ":" .. k)
     end
+    table.insert(keys, "Slot:" .. Archipelago.PlayerNumber .. ":" .. "CurrentArea")
     return keys
 end
 
@@ -56,7 +58,7 @@ function onClear(slot_data)
             end
         end
     end
-    for _, v in pairs(DATASTORAGE_MAPPING) do
+    for _, v in pairs(DATASTORAGE_ABILITY_MAPPING) do
         if v[1] and v[2] then
             for _, code in ipairs(v[1]) do
                 resetItem(code, v[2])
@@ -190,16 +192,41 @@ function onLocation(location_id, location_name)
 end
 
 function onRetrieved(key, value)
-    updateFromDataStorage(key, value)
+    if string.find(key, "CurrentArea") then
+        updateMapTabFromDataStorage(key, value)
+    else
+        updateItemsFromDataStorage(key, value)
+    end
 end
 
 function onSetReply(key, value, old_value)
     if old_value ~= value then
-        updateFromDataStorage(key, value)
+        if string.find(key, "CurrentArea") then
+            updateMapTabFromDataStorage(key, value)
+        else
+            updateItemsFromDataStorage(key, value)
+        end
     end
 end
 
-function updateFromDataStorage(key, value)
+function updateMapTabFromDataStorage(key, value)
+    if value == nil then
+        return
+    end
+    local split_key = split(key, ':')
+    if #split_key ~= 3 then
+        return
+    end
+    if split_key[3] ~= "CurrentArea" then
+        return
+    end
+    local tab = MAP_SWITCHING_MAPPING[value]
+    if tab then
+        Tracker:UiHint("ActivateTab", tab)
+    end
+end
+
+function updateItemsFromDataStorage(key, value)
     if value == nil then
         return
     end
@@ -210,7 +237,7 @@ function updateFromDataStorage(key, value)
     if #split_key ~= 3 then
         return
     end
-    local mapping = DATASTORAGE_MAPPING[split_key[3]]
+    local mapping = DATASTORAGE_ABILITY_MAPPING[split_key[3]]
     if not mapping then
         return
     end

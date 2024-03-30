@@ -5,7 +5,7 @@ from utils import format_code
 
 
 def main():
-    for entry in os.scandir('../images/items/monsters'):
+    for entry in os.scandir('../images/maps'):
         if entry.is_file() and entry.name.endswith('.webp'):
             im = Image.open(entry.path)
             path, ext = os.path.splitext(entry.path)

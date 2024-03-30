@@ -14,8 +14,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 919,
-        "y": 678
+        "x": 1350,
+        "y": 990
+      },
+      {
+        "map": "mountain_path",
+        "x": 626,
+        "y": 50
       }
     ],
     "sections": [
@@ -36,8 +41,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 895,
-        "y": 678
+        "x": 1314,
+        "y": 990
+      },
+      {
+        "map": "mountain_path",
+        "x": 590,
+        "y": 50
       }
     ],
     "sections": [
@@ -59,8 +69,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 919,
-        "y": 702
+        "x": 1350,
+        "y": 1026
+      },
+      {
+        "map": "mountain_path",
+        "x": 626,
+        "y": 86
       }
     ],
     "sections": [
@@ -81,8 +96,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 895,
-        "y": 702
+        "x": 1314,
+        "y": 1026
+      },
+      {
+        "map": "mountain_path",
+        "x": 590,
+        "y": 86
       }
     ],
     "sections": [
@@ -103,8 +123,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 990,
-        "y": 750
+        "x": 1458,
+        "y": 1098
+      },
+      {
+        "map": "mountain_path",
+        "x": 734,
+        "y": 158
       }
     ],
     "sections": [
@@ -125,8 +150,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 990,
-        "y": 726
+        "x": 1458,
+        "y": 1062
+      },
+      {
+        "map": "mountain_path",
+        "x": 734,
+        "y": 122
       }
     ],
     "sections": [
@@ -147,8 +177,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 990,
-        "y": 678
+        "x": 1458,
+        "y": 990
+      },
+      {
+        "map": "mountain_path",
+        "x": 734,
+        "y": 50
       }
     ],
     "sections": [
@@ -169,8 +204,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1016,
-        "y": 678
+        "x": 1494,
+        "y": 990
+      },
+      {
+        "map": "mountain_path",
+        "x": 770,
+        "y": 50
       }
     ],
     "sections": [
@@ -186,8 +226,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 728,
-        "y": 702
+        "x": 1062,
+        "y": 1026
+      },
+      {
+        "map": "mountain_path",
+        "x": 338,
+        "y": 86
       }
     ],
     "sections": [
@@ -223,8 +268,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 752,
-        "y": 702
+        "x": 1098,
+        "y": 1026
+      },
+      {
+        "map": "mountain_path",
+        "x": 374,
+        "y": 86
       }
     ],
     "sections": [
@@ -254,8 +304,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 918,
-        "y": 727
+        "x": 1350,
+        "y": 1062
+      },
+      {
+        "map": "mountain_path",
+        "x": 626,
+        "y": 122
       }
     ],
     "sections": [
@@ -271,8 +326,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 843,
-        "y": 727
+        "x": 1242,
+        "y": 1062
+      },
+      {
+        "map": "mountain_path",
+        "x": 518,
+        "y": 122
       }
     ],
     "sections": [
@@ -303,8 +363,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 773,
-        "y": 775
+        "x": 1134,
+        "y": 1134
+      },
+      {
+        "map": "mountain_path",
+        "x": 410,
+        "y": 194
       }
     ],
     "sections": [
@@ -352,8 +417,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 773,
-        "y": 751
+        "x": 1134,
+        "y": 1098
+      },
+      {
+        "map": "mountain_path",
+        "x": 410,
+        "y": 158
       }
     ],
     "sections": [
@@ -369,8 +439,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 849,
-        "y": 775
+        "x": 1242,
+        "y": 1134
+      },
+      {
+        "map": "mountain_path",
+        "x": 518,
+        "y": 194
       }
     ],
     "sections": [
@@ -408,8 +483,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 728,
-        "y": 726
+        "x": 1062,
+        "y": 1062
+      },
+      {
+        "map": "mountain_path",
+        "x": 338,
+        "y": 122
       }
     ],
     "sections": [
@@ -431,8 +511,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 752,
-        "y": 750
+        "x": 1098,
+        "y": 1098
+      },
+      {
+        "map": "mountain_path",
+        "x": 374,
+        "y": 158
       }
     ],
     "sections": [
@@ -448,8 +533,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 704,
-        "y": 822
+        "x": 1026,
+        "y": 1206
+      },
+      {
+        "map": "mountain_path",
+        "x": 302,
+        "y": 266
       }
     ],
     "sections": [
@@ -487,8 +577,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 704,
-        "y": 798
+        "x": 1026,
+        "y": 1170
+      },
+      {
+        "map": "mountain_path",
+        "x": 302,
+        "y": 230
       }
     ],
     "sections": [
@@ -509,8 +604,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 704,
-        "y": 774
+        "x": 1026,
+        "y": 1134
+      },
+      {
+        "map": "mountain_path",
+        "x": 302,
+        "y": 194
       }
     ],
     "sections": [
@@ -531,8 +631,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 728,
-        "y": 775
+        "x": 1062,
+        "y": 1134
+      },
+      {
+        "map": "mountain_path",
+        "x": 338,
+        "y": 194
       }
     ],
     "sections": [
@@ -553,8 +658,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 752,
-        "y": 775
+        "x": 1098,
+        "y": 1134
+      },
+      {
+        "map": "mountain_path",
+        "x": 374,
+        "y": 194
       }
     ],
     "sections": [
@@ -577,8 +687,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 680,
-        "y": 748
+        "x": 990,
+        "y": 1098
+      },
+      {
+        "map": "mountain_path",
+        "x": 266,
+        "y": 158
       }
     ],
     "sections": [
@@ -599,8 +714,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 632,
-        "y": 800
+        "x": 918,
+        "y": 1170
+      },
+      {
+        "map": "mountain_path",
+        "x": 194,
+        "y": 230
       }
     ],
     "sections": [
@@ -621,8 +741,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 632,
-        "y": 702
+        "x": 918,
+        "y": 1026
+      },
+      {
+        "map": "mountain_path",
+        "x": 194,
+        "y": 86
       }
     ],
     "sections": [
@@ -643,8 +768,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 606,
-        "y": 726
+        "x": 882,
+        "y": 1062
+      },
+      {
+        "map": "mountain_path",
+        "x": 158,
+        "y": 122
       }
     ],
     "sections": [
@@ -665,8 +795,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 606,
-        "y": 702
+        "x": 882,
+        "y": 1026
+      },
+      {
+        "map": "mountain_path",
+        "x": 158,
+        "y": 86
       }
     ],
     "sections": [
@@ -688,8 +823,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 582,
-        "y": 702
+        "x": 846,
+        "y": 1026
+      },
+      {
+        "map": "mountain_path",
+        "x": 122,
+        "y": 86
       }
     ],
     "sections": [
@@ -705,8 +845,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 532,
-        "y": 726
+        "x": 774,
+        "y": 1062
+      },
+      {
+        "map": "mountain_path",
+        "x": 50,
+        "y": 122
       }
     ],
     "sections": [
@@ -775,8 +920,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 606,
-        "y": 800
+        "x": 882,
+        "y": 1170
+      },
+      {
+        "map": "mountain_path",
+        "x": 158,
+        "y": 230
       }
     ],
     "sections": [
@@ -799,8 +949,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 583,
-        "y": 775
+        "x": 846,
+        "y": 1134
+      },
+      {
+        "map": "mountain_path",
+        "x": 122,
+        "y": 194
       }
     ],
     "sections": [
@@ -821,8 +976,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 560,
-        "y": 750
+        "x": 810,
+        "y": 1098
+      },
+      {
+        "map": "mountain_path",
+        "x": 86,
+        "y": 158
       }
     ],
     "sections": [
@@ -843,8 +1003,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1112,
-        "y": 678
+        "x": 1638,
+        "y": 990
+      },
+      {
+        "map": "keepers_stronghold",
+        "x": 122,
+        "y": 158
       }
     ],
     "sections": [
@@ -865,8 +1030,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1062,
-        "y": 702
+        "x": 1566,
+        "y": 1026
+      },
+      {
+        "map": "keepers_stronghold",
+        "x": 50,
+        "y": 194
       }
     ],
     "sections": [
@@ -888,8 +1058,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1184,
-        "y": 702
+        "x": 1746,
+        "y": 1026
+      },
+      {
+        "map": "keepers_stronghold",
+        "x": 230,
+        "y": 194
       }
     ],
     "sections": [
@@ -905,8 +1080,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1160,
-        "y": 702
+        "x": 1710,
+        "y": 1026
+      },
+      {
+        "map": "keepers_stronghold",
+        "x": 194,
+        "y": 194
       }
     ],
     "sections": [
@@ -967,8 +1147,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1234,
-        "y": 748
+        "x": 1818,
+        "y": 1098
+      },
+      {
+        "map": "keepers_stronghold",
+        "x": 302,
+        "y": 266
       }
     ],
     "sections": [
@@ -999,8 +1184,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1280,
-        "y": 702
+        "x": 1890,
+        "y": 1026
+      },
+      {
+        "map": "keepers_stronghold",
+        "x": 374,
+        "y": 194
       }
     ],
     "sections": [
@@ -1101,8 +1291,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1184,
-        "y": 654
+        "x": 1746,
+        "y": 954
+      },
+      {
+        "map": "keepers_stronghold",
+        "x": 230,
+        "y": 122
       }
     ],
     "sections": [
@@ -1133,8 +1328,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1062,
-        "y": 798
+        "x": 1566,
+        "y": 1170
+      },
+      {
+        "map": "blue_caves",
+        "x": 554,
+        "y": 122
       }
     ],
     "sections": [
@@ -1180,8 +1380,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1086,
-        "y": 798
+        "x": 1602,
+        "y": 1170
+      },
+      {
+        "map": "blue_caves",
+        "x": 590,
+        "y": 122
       }
     ],
     "sections": [
@@ -1197,8 +1402,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1012,
-        "y": 748
+        "x": 1494,
+        "y": 1098
+      },
+      {
+        "map": "blue_caves",
+        "x": 482,
+        "y": 50
       }
     ],
     "sections": [
@@ -1243,8 +1453,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1036,
-        "y": 748
+        "x": 1530,
+        "y": 1098
+      },
+      {
+        "map": "blue_caves",
+        "x": 518,
+        "y": 50
       }
     ],
     "sections": [
@@ -1266,8 +1481,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1036,
-        "y": 796
+        "x": 1530,
+        "y": 1170
+      },
+      {
+        "map": "blue_caves",
+        "x": 518,
+        "y": 122
       }
     ],
     "sections": [
@@ -1288,8 +1508,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1012,
-        "y": 772
+        "x": 1494,
+        "y": 1134
+      },
+      {
+        "map": "blue_caves",
+        "x": 482,
+        "y": 86
       }
     ],
     "sections": [
@@ -1310,8 +1535,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1012,
-        "y": 869
+        "x": 1494,
+        "y": 1278
+      },
+      {
+        "map": "blue_caves",
+        "x": 482,
+        "y": 230
       }
     ],
     "sections": [
@@ -1332,8 +1562,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1036,
-        "y": 869
+        "x": 1530,
+        "y": 1278
+      },
+      {
+        "map": "blue_caves",
+        "x": 518,
+        "y": 230
       }
     ],
     "sections": [
@@ -1354,8 +1589,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 942,
-        "y": 869
+        "x": 1386,
+        "y": 1278
+      },
+      {
+        "map": "blue_caves",
+        "x": 374,
+        "y": 230
       }
     ],
     "sections": [
@@ -1376,8 +1616,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 918,
-        "y": 869
+        "x": 1350,
+        "y": 1278
+      },
+      {
+        "map": "blue_caves",
+        "x": 338,
+        "y": 230
       }
     ],
     "sections": [
@@ -1393,8 +1638,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1110,
-        "y": 822
+        "x": 1638,
+        "y": 1206
+      },
+      {
+        "map": "blue_caves",
+        "x": 626,
+        "y": 158
       }
     ],
     "sections": [
@@ -1455,8 +1705,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1086,
-        "y": 846
+        "x": 1602,
+        "y": 1242
+      },
+      {
+        "map": "blue_caves",
+        "x": 590,
+        "y": 194
       }
     ],
     "sections": [
@@ -1477,8 +1732,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1014,
-        "y": 822
+        "x": 1494,
+        "y": 1206
+      },
+      {
+        "map": "blue_caves",
+        "x": 482,
+        "y": 158
       }
     ],
     "sections": [
@@ -1511,8 +1771,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1228,
-        "y": 846
+        "x": 1818,
+        "y": 1242
+      },
+      {
+        "map": "blue_caves",
+        "x": 806,
+        "y": 194
       }
     ],
     "sections": [
@@ -1543,8 +1808,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1156,
-        "y": 822
+        "x": 1710,
+        "y": 1206
+      },
+      {
+        "map": "blue_caves",
+        "x": 698,
+        "y": 158
       }
     ],
     "sections": [
@@ -1580,8 +1850,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1136,
-        "y": 920
+        "x": 1674,
+        "y": 1350
+      },
+      {
+        "map": "blue_caves",
+        "x": 662,
+        "y": 302
       }
     ],
     "sections": [
@@ -1611,8 +1886,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1208,
-        "y": 920
+        "x": 1782,
+        "y": 1350
+      },
+      {
+        "map": "blue_caves",
+        "x": 770,
+        "y": 302
       }
     ],
     "sections": [
@@ -1642,8 +1922,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1113,
-        "y": 895
+        "x": 1638,
+        "y": 1314
+      },
+      {
+        "map": "blue_caves",
+        "x": 626,
+        "y": 266
       }
     ],
     "sections": [
@@ -1673,8 +1958,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1089,
-        "y": 895
+        "x": 1602,
+        "y": 1314
+      },
+      {
+        "map": "blue_caves",
+        "x": 590,
+        "y": 266
       }
     ],
     "sections": [
@@ -1695,8 +1985,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1160,
-        "y": 968
+        "x": 1710,
+        "y": 1422
+      },
+      {
+        "map": "blue_caves",
+        "x": 698,
+        "y": 374
       }
     ],
     "sections": [
@@ -1712,8 +2007,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1208,
-        "y": 964
+        "x": 1782,
+        "y": 1422
+      },
+      {
+        "map": "blue_caves",
+        "x": 770,
+        "y": 374
       }
     ],
     "sections": [
@@ -1766,8 +2066,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1136,
-        "y": 944
+        "x": 1674,
+        "y": 1386
+      },
+      {
+        "map": "blue_caves",
+        "x": 662,
+        "y": 338
       }
     ],
     "sections": [
@@ -1788,8 +2093,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1208,
-        "y": 895
+        "x": 1782,
+        "y": 1314
+      },
+      {
+        "map": "blue_caves",
+        "x": 770,
+        "y": 266
       }
     ],
     "sections": [
@@ -1812,8 +2122,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 918,
-        "y": 824
+        "x": 1350,
+        "y": 1206
+      },
+      {
+        "map": "blue_caves",
+        "x": 338,
+        "y": 158
       }
     ],
     "sections": [
@@ -1829,8 +2144,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 988,
-        "y": 772
+        "x": 1458,
+        "y": 1134
+      },
+      {
+        "map": "blue_caves",
+        "x": 446,
+        "y": 86
       }
     ],
     "sections": [
@@ -1876,8 +2196,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 870,
-        "y": 846
+        "x": 1278,
+        "y": 1242
+      },
+      {
+        "map": "blue_caves",
+        "x": 266,
+        "y": 194
       }
     ],
     "sections": [
@@ -1899,8 +2224,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 894,
-        "y": 846
+        "x": 1314,
+        "y": 1242
+      },
+      {
+        "map": "blue_caves",
+        "x": 302,
+        "y": 194
       }
     ],
     "sections": [
@@ -1916,8 +2246,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 870,
-        "y": 870
+        "x": 1278,
+        "y": 1278
+      },
+      {
+        "map": "blue_caves",
+        "x": 266,
+        "y": 230
       }
     ],
     "sections": [
@@ -1955,8 +2290,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 848,
-        "y": 846
+        "x": 1242,
+        "y": 1242
+      },
+      {
+        "map": "blue_caves",
+        "x": 230,
+        "y": 194
       }
     ],
     "sections": [
@@ -1972,8 +2312,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 800,
-        "y": 870
+        "x": 1170,
+        "y": 1278
+      },
+      {
+        "map": "blue_caves",
+        "x": 158,
+        "y": 230
       }
     ],
     "sections": [
@@ -2012,8 +2357,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 728,
-        "y": 894
+        "x": 1062,
+        "y": 1314
+      },
+      {
+        "map": "blue_caves",
+        "x": 50,
+        "y": 266
       }
     ],
     "sections": [
@@ -2040,8 +2390,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 752,
-        "y": 894
+        "x": 1098,
+        "y": 1314
+      },
+      {
+        "map": "blue_caves",
+        "x": 86,
+        "y": 266
       }
     ],
     "sections": [
@@ -2057,8 +2412,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 750,
-        "y": 798
+        "x": 1098,
+        "y": 1170
+      },
+      {
+        "map": "blue_caves",
+        "x": 86,
+        "y": 122
       }
     ],
     "sections": [
@@ -2096,8 +2456,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 774,
-        "y": 798
+        "x": 1134,
+        "y": 1170
+      },
+      {
+        "map": "blue_caves",
+        "x": 122,
+        "y": 122
       }
     ],
     "sections": [
@@ -2128,8 +2493,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 726,
-        "y": 798
+        "x": 1062,
+        "y": 1170
+      },
+      {
+        "map": "blue_caves",
+        "x": 50,
+        "y": 122
       }
     ],
     "sections": [
@@ -2182,8 +2552,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1254,
-        "y": 752
+        "x": 1854,
+        "y": 1098
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 122,
+        "y": 122
       }
     ],
     "sections": [
@@ -2205,8 +2580,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1254,
-        "y": 776
+        "x": 1854,
+        "y": 1134
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 122,
+        "y": 158
       }
     ],
     "sections": [
@@ -2227,8 +2607,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1280,
-        "y": 772
+        "x": 1890,
+        "y": 1134
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 158,
+        "y": 158
       }
     ],
     "sections": [
@@ -2249,8 +2634,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1352,
-        "y": 752
+        "x": 1998,
+        "y": 1098
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 266,
+        "y": 122
       }
     ],
     "sections": [
@@ -2283,8 +2673,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1424,
-        "y": 702
+        "x": 2106,
+        "y": 1026
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 374,
+        "y": 50
       }
     ],
     "sections": [
@@ -2314,8 +2709,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1448,
-        "y": 728
+        "x": 2142,
+        "y": 1062
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 410,
+        "y": 86
       }
     ],
     "sections": [
@@ -2343,8 +2743,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1328,
-        "y": 774
+        "x": 1962,
+        "y": 1134
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 230,
+        "y": 158
       }
     ],
     "sections": [
@@ -2365,8 +2770,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1304,
-        "y": 774
+        "x": 1926,
+        "y": 1134
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 194,
+        "y": 158
       }
     ],
     "sections": [
@@ -2397,8 +2807,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1400,
-        "y": 774
+        "x": 2070,
+        "y": 1134
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 338,
+        "y": 158
       }
     ],
     "sections": [
@@ -2424,8 +2839,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1448,
-        "y": 822
+        "x": 2142,
+        "y": 1206
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 410,
+        "y": 230
       }
     ],
     "sections": [
@@ -2455,8 +2875,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1448,
-        "y": 798
+        "x": 2142,
+        "y": 1170
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 410,
+        "y": 194
       }
     ],
     "sections": [
@@ -2472,8 +2897,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1472,
-        "y": 872
+        "x": 2178,
+        "y": 1278
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 446,
+        "y": 302
       }
     ],
     "sections": [
@@ -2526,8 +2956,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1496,
-        "y": 872
+        "x": 2214,
+        "y": 1278
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 482,
+        "y": 302
       }
     ],
     "sections": [
@@ -2548,8 +2983,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1472,
-        "y": 896
+        "x": 2178,
+        "y": 1314
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 446,
+        "y": 338
       }
     ],
     "sections": [
@@ -2565,8 +3005,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1426,
-        "y": 872
+        "x": 2106,
+        "y": 1278
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 374,
+        "y": 302
       }
     ],
     "sections": [
@@ -2613,8 +3058,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1400,
-        "y": 872
+        "x": 2070,
+        "y": 1278
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 338,
+        "y": 302
       }
     ],
     "sections": [
@@ -2636,8 +3086,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1376,
-        "y": 872
+        "x": 2034,
+        "y": 1278
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 302,
+        "y": 302
       }
     ],
     "sections": [
@@ -2661,8 +3116,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1372,
-        "y": 944
+        "x": 2034,
+        "y": 1386
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 302,
+        "y": 410
       }
     ],
     "sections": [
@@ -2683,8 +3143,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1328,
-        "y": 920
+        "x": 1962,
+        "y": 1350
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 230,
+        "y": 374
       }
     ],
     "sections": [
@@ -2708,8 +3173,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1280,
-        "y": 920
+        "x": 1890,
+        "y": 1350
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 158,
+        "y": 374
       }
     ],
     "sections": [
@@ -2730,8 +3200,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1376,
-        "y": 968
+        "x": 2034,
+        "y": 1422
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 302,
+        "y": 446
       }
     ],
     "sections": [
@@ -2762,8 +3237,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1400,
-        "y": 968
+        "x": 2070,
+        "y": 1422
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 338,
+        "y": 446
       }
     ],
     "sections": [
@@ -2794,8 +3274,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1280,
-        "y": 798
+        "x": 1890,
+        "y": 1170
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 158,
+        "y": 194
       }
     ],
     "sections": [
@@ -2844,8 +3329,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1280,
-        "y": 846
+        "x": 1890,
+        "y": 1242
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 158,
+        "y": 266
       }
     ],
     "sections": [
@@ -2897,8 +3387,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1256,
-        "y": 868
+        "x": 1854,
+        "y": 1278
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 122,
+        "y": 302
       }
     ],
     "sections": [
@@ -2919,8 +3414,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1228,
-        "y": 822
+        "x": 1818,
+        "y": 1206
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 86,
+        "y": 230
       }
     ],
     "sections": [
@@ -2954,8 +3454,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1496,
-        "y": 918
+        "x": 2214,
+        "y": 1350
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 482,
+        "y": 374
       }
     ],
     "sections": [
@@ -2985,8 +3490,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1472,
-        "y": 942
+        "x": 2178,
+        "y": 1386
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 446,
+        "y": 410
       }
     ],
     "sections": [
@@ -3019,8 +3529,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1496,
-        "y": 942
+        "x": 2214,
+        "y": 1386
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 482,
+        "y": 410
       }
     ],
     "sections": [
@@ -3043,8 +3558,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1568,
-        "y": 942
+        "x": 2322,
+        "y": 1386
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 590,
+        "y": 410
       }
     ],
     "sections": [
@@ -3078,8 +3598,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1542,
-        "y": 920
+        "x": 2286,
+        "y": 1350
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 554,
+        "y": 374
       }
     ],
     "sections": [
@@ -3095,8 +3620,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1520,
-        "y": 990
+        "x": 2250,
+        "y": 1458
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 518,
+        "y": 482
       }
     ],
     "sections": [
@@ -3149,8 +3679,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1496,
-        "y": 966
+        "x": 2214,
+        "y": 1422
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 482,
+        "y": 446
       }
     ],
     "sections": [
@@ -3172,8 +3707,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 462,
-        "y": 750
+        "x": 666,
+        "y": 1098
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 698,
+        "y": 446
       }
     ],
     "sections": [
@@ -3194,8 +3734,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 462,
-        "y": 726
+        "x": 666,
+        "y": 1062
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 698,
+        "y": 410
       }
     ],
     "sections": [
@@ -3218,8 +3763,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 486,
-        "y": 726
+        "x": 702,
+        "y": 1062
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 734,
+        "y": 410
       }
     ],
     "sections": [
@@ -3235,8 +3785,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 392,
-        "y": 750
+        "x": 558,
+        "y": 1098
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 590,
+        "y": 446
       }
     ],
     "sections": [
@@ -3289,8 +3844,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 440,
-        "y": 726
+        "x": 630,
+        "y": 1062
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 662,
+        "y": 410
       }
     ],
     "sections": [
@@ -3333,8 +3893,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 344,
-        "y": 726
+        "x": 486,
+        "y": 1062
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 518,
+        "y": 410
       }
     ],
     "sections": [
@@ -3364,8 +3929,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 368,
-        "y": 702
+        "x": 522,
+        "y": 1026
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 554,
+        "y": 374
       }
     ],
     "sections": [
@@ -3410,8 +3980,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 272,
-        "y": 702
+        "x": 378,
+        "y": 1026
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 410,
+        "y": 374
       }
     ],
     "sections": [
@@ -3434,8 +4009,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 176,
-        "y": 728
+        "x": 234,
+        "y": 1062
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 266,
+        "y": 410
       }
     ],
     "sections": [
@@ -3473,8 +4053,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 274,
-        "y": 752
+        "x": 378,
+        "y": 1098
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 410,
+        "y": 446
       }
     ],
     "sections": [
@@ -3520,8 +4105,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 202,
-        "y": 678
+        "x": 270,
+        "y": 990
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 302,
+        "y": 338
       }
     ],
     "sections": [
@@ -3549,8 +4139,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 128,
-        "y": 702
+        "x": 162,
+        "y": 1026
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 194,
+        "y": 374
       }
     ],
     "sections": [
@@ -3572,8 +4167,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 152,
-        "y": 702
+        "x": 198,
+        "y": 1026
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 230,
+        "y": 374
       }
     ],
     "sections": [
@@ -3603,8 +4203,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 128,
-        "y": 678
+        "x": 162,
+        "y": 990
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 194,
+        "y": 338
       }
     ],
     "sections": [
@@ -3627,8 +4232,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 106,
-        "y": 654
+        "x": 126,
+        "y": 954
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 158,
+        "y": 302
       }
     ],
     "sections": [
@@ -3644,8 +4254,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 32,
-        "y": 702
+        "x": 18,
+        "y": 1026
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 50,
+        "y": 374
       }
     ],
     "sections": [
@@ -3692,8 +4307,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 32,
-        "y": 726
+        "x": 18,
+        "y": 1062
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 50,
+        "y": 410
       }
     ],
     "sections": [
@@ -3709,8 +4329,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 128,
-        "y": 728
+        "x": 162,
+        "y": 1062
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 194,
+        "y": 410
       }
     ],
     "sections": [
@@ -3768,8 +4393,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 80,
-        "y": 678
+        "x": 90,
+        "y": 990
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 122,
+        "y": 338
       }
     ],
     "sections": [
@@ -3791,8 +4421,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 80,
-        "y": 654
+        "x": 90,
+        "y": 954
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 122,
+        "y": 302
       }
     ],
     "sections": [
@@ -3813,8 +4448,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 106,
-        "y": 630
+        "x": 126,
+        "y": 918
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 158,
+        "y": 266
       }
     ],
     "sections": [
@@ -3832,8 +4472,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 152,
-        "y": 652
+        "x": 198,
+        "y": 954
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 230,
+        "y": 302
       }
     ],
     "sections": [
@@ -3895,8 +4540,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 102,
-        "y": 606
+        "x": 126,
+        "y": 882
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 158,
+        "y": 230
       }
     ],
     "sections": [
@@ -3918,8 +4568,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 152,
-        "y": 606
+        "x": 198,
+        "y": 882
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 230,
+        "y": 230
       }
     ],
     "sections": [
@@ -3941,8 +4596,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 152,
-        "y": 582
+        "x": 198,
+        "y": 846
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 230,
+        "y": 194
       }
     ],
     "sections": [
@@ -3963,8 +4623,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 176,
-        "y": 606
+        "x": 234,
+        "y": 882
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 266,
+        "y": 230
       }
     ],
     "sections": [
@@ -3985,8 +4650,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 152,
-        "y": 510
+        "x": 198,
+        "y": 738
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 230,
+        "y": 86
       }
     ],
     "sections": [
@@ -4007,8 +4677,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 152,
-        "y": 534
+        "x": 198,
+        "y": 774
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 230,
+        "y": 122
       }
     ],
     "sections": [
@@ -4029,8 +4704,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 128,
-        "y": 486
+        "x": 162,
+        "y": 702
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 194,
+        "y": 50
       }
     ],
     "sections": [
@@ -4051,8 +4731,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 176,
-        "y": 510
+        "x": 234,
+        "y": 738
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 266,
+        "y": 86
       }
     ],
     "sections": [
@@ -4073,8 +4758,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 366,
-        "y": 532
+        "x": 522,
+        "y": 774
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 554,
+        "y": 122
       }
     ],
     "sections": [
@@ -4095,8 +4785,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 390,
-        "y": 532
+        "x": 558,
+        "y": 774
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 590,
+        "y": 122
       }
     ],
     "sections": [
@@ -4118,8 +4813,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 414,
-        "y": 532
+        "x": 594,
+        "y": 774
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 626,
+        "y": 122
       }
     ],
     "sections": [
@@ -4141,8 +4841,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 440,
-        "y": 560
+        "x": 630,
+        "y": 810
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 662,
+        "y": 158
       }
     ],
     "sections": [
@@ -4163,8 +4868,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 392,
-        "y": 582
+        "x": 558,
+        "y": 846
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 590,
+        "y": 194
       }
     ],
     "sections": [
@@ -4185,8 +4895,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 392,
-        "y": 630
+        "x": 558,
+        "y": 918
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 590,
+        "y": 266
       }
     ],
     "sections": [
@@ -4207,8 +4922,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 392,
-        "y": 654
+        "x": 558,
+        "y": 954
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 590,
+        "y": 302
       }
     ],
     "sections": [
@@ -4229,8 +4949,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 392,
-        "y": 606
+        "x": 558,
+        "y": 882
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 590,
+        "y": 230
       }
     ],
     "sections": [
@@ -4251,8 +4976,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 440,
-        "y": 584
+        "x": 630,
+        "y": 846
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 662,
+        "y": 194
       }
     ],
     "sections": [
@@ -4273,8 +5003,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 440,
-        "y": 608
+        "x": 630,
+        "y": 882
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 662,
+        "y": 230
       }
     ],
     "sections": [
@@ -4295,8 +5030,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 416,
-        "y": 606
+        "x": 594,
+        "y": 882
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 626,
+        "y": 230
       }
     ],
     "sections": [
@@ -4317,8 +5057,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 416,
-        "y": 630
+        "x": 594,
+        "y": 918
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 626,
+        "y": 266
       }
     ],
     "sections": [
@@ -4355,8 +5100,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 465,
-        "y": 630
+        "x": 666,
+        "y": 918
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 698,
+        "y": 266
       }
     ],
     "sections": [
@@ -4386,8 +5136,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 465,
-        "y": 654
+        "x": 666,
+        "y": 954
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 698,
+        "y": 302
       }
     ],
     "sections": [
@@ -4409,8 +5164,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 441,
-        "y": 678
+        "x": 630,
+        "y": 990
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 662,
+        "y": 338
       }
     ],
     "sections": [
@@ -4426,8 +5186,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 392,
-        "y": 678
+        "x": 558,
+        "y": 990
+      },
+      {
+        "map": "snowy_peaks",
+        "x": 590,
+        "y": 338
       }
     ],
     "sections": [
@@ -4462,8 +5227,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 704,
-        "y": 870
+        "x": 1026,
+        "y": 1278
+      },
+      {
+        "map": "sun_palace",
+        "x": 662,
+        "y": 158
       }
     ],
     "sections": [
@@ -4509,8 +5279,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 608,
-        "y": 846
+        "x": 882,
+        "y": 1242
+      },
+      {
+        "map": "sun_palace",
+        "x": 518,
+        "y": 122
       }
     ],
     "sections": [
@@ -4533,8 +5308,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 656,
-        "y": 896
+        "x": 954,
+        "y": 1314
+      },
+      {
+        "map": "sun_palace",
+        "x": 590,
+        "y": 194
       }
     ],
     "sections": [
@@ -4565,8 +5345,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 608,
-        "y": 918
+        "x": 882,
+        "y": 1350
+      },
+      {
+        "map": "sun_palace",
+        "x": 518,
+        "y": 230
       }
     ],
     "sections": [
@@ -4590,8 +5375,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 584,
-        "y": 918
+        "x": 846,
+        "y": 1350
+      },
+      {
+        "map": "sun_palace",
+        "x": 482,
+        "y": 230
       }
     ],
     "sections": [
@@ -4614,8 +5404,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 514,
-        "y": 918
+        "x": 738,
+        "y": 1350
+      },
+      {
+        "map": "sun_palace",
+        "x": 374,
+        "y": 230
       }
     ],
     "sections": [
@@ -4636,8 +5431,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 632,
-        "y": 918
+        "x": 918,
+        "y": 1350
+      },
+      {
+        "map": "sun_palace",
+        "x": 554,
+        "y": 230
       }
     ],
     "sections": [
@@ -4702,8 +5502,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 464,
-        "y": 872
+        "x": 666,
+        "y": 1278
+      },
+      {
+        "map": "sun_palace",
+        "x": 302,
+        "y": 158
       }
     ],
     "sections": [
@@ -4758,8 +5563,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 368,
-        "y": 846
+        "x": 522,
+        "y": 1242
+      },
+      {
+        "map": "sun_palace",
+        "x": 158,
+        "y": 122
       }
     ],
     "sections": [
@@ -4785,8 +5595,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 296,
-        "y": 822
+        "x": 414,
+        "y": 1206
+      },
+      {
+        "map": "sun_palace",
+        "x": 50,
+        "y": 86
       }
     ],
     "sections": [
@@ -4807,8 +5622,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 296,
-        "y": 846
+        "x": 414,
+        "y": 1242
+      },
+      {
+        "map": "sun_palace",
+        "x": 50,
+        "y": 122
       }
     ],
     "sections": [
@@ -4830,8 +5650,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 392,
-        "y": 918
+        "x": 558,
+        "y": 1350
+      },
+      {
+        "map": "sun_palace",
+        "x": 194,
+        "y": 230
       }
     ],
     "sections": [
@@ -4853,8 +5678,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 416,
-        "y": 894
+        "x": 594,
+        "y": 1314
+      },
+      {
+        "map": "sun_palace",
+        "x": 230,
+        "y": 194
       }
     ],
     "sections": [
@@ -4906,8 +5736,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 296,
-        "y": 942
+        "x": 414,
+        "y": 1386
+      },
+      {
+        "map": "sun_palace",
+        "x": 50,
+        "y": 266
       }
     ],
     "sections": [
@@ -4928,8 +5763,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 344,
-        "y": 918
+        "x": 486,
+        "y": 1350
+      },
+      {
+        "map": "sun_palace",
+        "x": 122,
+        "y": 230
       }
     ],
     "sections": [
@@ -4950,8 +5790,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 320,
-        "y": 942
+        "x": 450,
+        "y": 1386
+      },
+      {
+        "map": "sun_palace",
+        "x": 86,
+        "y": 266
       }
     ],
     "sections": [
@@ -4997,8 +5842,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 488,
-        "y": 968
+        "x": 702,
+        "y": 1422
+      },
+      {
+        "map": "sun_palace",
+        "x": 338,
+        "y": 302
       }
     ],
     "sections": [
@@ -5091,8 +5941,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 464,
-        "y": 992
+        "x": 666,
+        "y": 1458
+      },
+      {
+        "map": "sun_palace",
+        "x": 302,
+        "y": 338
       }
     ],
     "sections": [
@@ -5108,8 +5963,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 488,
-        "y": 1016
+        "x": 702,
+        "y": 1494
+      },
+      {
+        "map": "sun_palace",
+        "x": 338,
+        "y": 374
       }
     ],
     "sections": [
@@ -5177,8 +6037,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 536,
-        "y": 968
+        "x": 774,
+        "y": 1422
+      },
+      {
+        "map": "sun_palace",
+        "x": 410,
+        "y": 302
       }
     ],
     "sections": [
@@ -5240,8 +6105,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 560,
-        "y": 1018
+        "x": 810,
+        "y": 1494
+      },
+      {
+        "map": "sun_palace",
+        "x": 446,
+        "y": 374
       }
     ],
     "sections": [
@@ -5267,8 +6137,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 656,
-        "y": 966
+        "x": 954,
+        "y": 1422
+      },
+      {
+        "map": "sun_palace",
+        "x": 590,
+        "y": 302
       }
     ],
     "sections": [
@@ -5291,8 +6166,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 632,
-        "y": 1018
+        "x": 918,
+        "y": 1494
+      },
+      {
+        "map": "sun_palace",
+        "x": 554,
+        "y": 374
       }
     ],
     "sections": [
@@ -5313,8 +6193,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 608,
-        "y": 1018
+        "x": 882,
+        "y": 1494
+      },
+      {
+        "map": "sun_palace",
+        "x": 518,
+        "y": 374
       }
     ],
     "sections": [
@@ -5352,8 +6237,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 414,
-        "y": 1018
+        "x": 594,
+        "y": 1494
+      },
+      {
+        "map": "sun_palace",
+        "x": 230,
+        "y": 374
       }
     ],
     "sections": [
@@ -5369,8 +6259,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 342,
-        "y": 1018
+        "x": 486,
+        "y": 1494
+      },
+      {
+        "map": "sun_palace",
+        "x": 122,
+        "y": 374
       }
     ],
     "sections": [
@@ -5403,8 +6298,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 392,
-        "y": 966
+        "x": 558,
+        "y": 1422
+      },
+      {
+        "map": "sun_palace",
+        "x": 194,
+        "y": 302
       }
     ],
     "sections": [
@@ -5442,8 +6342,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 342,
-        "y": 966
+        "x": 486,
+        "y": 1422
+      },
+      {
+        "map": "sun_palace",
+        "x": 122,
+        "y": 302
       }
     ],
     "sections": [
@@ -5459,8 +6364,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 464,
-        "y": 798
+        "x": 666,
+        "y": 1170
+      },
+      {
+        "map": "sun_palace",
+        "x": 302,
+        "y": 50
       }
     ],
     "sections": [
@@ -5507,8 +6417,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 416,
-        "y": 846
+        "x": 594,
+        "y": 1242
+      },
+      {
+        "map": "sun_palace",
+        "x": 230,
+        "y": 122
       }
     ],
     "sections": [
@@ -5531,8 +6446,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1544,
-        "y": 728
+        "x": 2286,
+        "y": 1062
+      },
+      {
+        "map": "ancient_woods",
+        "x": 122,
+        "y": 158
       }
     ],
     "sections": [
@@ -5553,8 +6473,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1592,
-        "y": 728
+        "x": 2358,
+        "y": 1062
+      },
+      {
+        "map": "ancient_woods",
+        "x": 194,
+        "y": 158
       }
     ],
     "sections": [
@@ -5575,8 +6500,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1616,
-        "y": 752
+        "x": 2394,
+        "y": 1098
+      },
+      {
+        "map": "ancient_woods",
+        "x": 230,
+        "y": 194
       }
     ],
     "sections": [
@@ -5598,8 +6528,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1664,
-        "y": 752
+        "x": 2466,
+        "y": 1098
+      },
+      {
+        "map": "ancient_woods",
+        "x": 302,
+        "y": 194
       }
     ],
     "sections": [
@@ -5621,8 +6556,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1662,
-        "y": 824
+        "x": 2466,
+        "y": 1206
+      },
+      {
+        "map": "ancient_woods",
+        "x": 302,
+        "y": 302
       }
     ],
     "sections": [
@@ -5645,8 +6585,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1638,
-        "y": 800
+        "x": 2430,
+        "y": 1170
+      },
+      {
+        "map": "ancient_woods",
+        "x": 266,
+        "y": 266
       }
     ],
     "sections": [
@@ -5672,8 +6617,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1520,
-        "y": 752
+        "x": 2250,
+        "y": 1098
+      },
+      {
+        "map": "ancient_woods",
+        "x": 86,
+        "y": 194
       }
     ],
     "sections": [
@@ -5707,8 +6657,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1496,
-        "y": 752
+        "x": 2214,
+        "y": 1098
+      },
+      {
+        "map": "ancient_woods",
+        "x": 50,
+        "y": 194
       }
     ],
     "sections": [
@@ -5729,8 +6684,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1686,
-        "y": 824
+        "x": 2502,
+        "y": 1206
+      },
+      {
+        "map": "ancient_woods",
+        "x": 338,
+        "y": 302
       }
     ],
     "sections": [
@@ -5752,8 +6712,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1590,
-        "y": 800
+        "x": 2358,
+        "y": 1170
+      },
+      {
+        "map": "ancient_woods",
+        "x": 194,
+        "y": 266
       }
     ],
     "sections": [
@@ -5769,8 +6734,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1616,
-        "y": 942
+        "x": 2394,
+        "y": 1386
+      },
+      {
+        "map": "ancient_woods",
+        "x": 230,
+        "y": 482
       }
     ],
     "sections": [
@@ -5841,8 +6811,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1568,
-        "y": 872
+        "x": 2322,
+        "y": 1278
+      },
+      {
+        "map": "ancient_woods",
+        "x": 158,
+        "y": 374
       }
     ],
     "sections": [
@@ -5885,8 +6860,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1592,
-        "y": 896
+        "x": 2358,
+        "y": 1314
+      },
+      {
+        "map": "ancient_woods",
+        "x": 194,
+        "y": 410
       }
     ],
     "sections": [
@@ -5907,8 +6887,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1738,
-        "y": 752
+        "x": 2574,
+        "y": 1098
+      },
+      {
+        "map": "ancient_woods",
+        "x": 410,
+        "y": 194
       }
     ],
     "sections": [
@@ -5929,8 +6914,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1762,
-        "y": 728
+        "x": 2610,
+        "y": 1062
+      },
+      {
+        "map": "ancient_woods",
+        "x": 446,
+        "y": 158
       }
     ],
     "sections": [
@@ -5951,8 +6941,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1856,
-        "y": 750
+        "x": 2754,
+        "y": 1098
+      },
+      {
+        "map": "ancient_woods",
+        "x": 590,
+        "y": 194
       }
     ],
     "sections": [
@@ -5974,8 +6969,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1928,
-        "y": 750
+        "x": 2862,
+        "y": 1098
+      },
+      {
+        "map": "ancient_woods",
+        "x": 698,
+        "y": 194
       }
     ],
     "sections": [
@@ -5996,8 +6996,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1904,
-        "y": 750
+        "x": 2826,
+        "y": 1098
+      },
+      {
+        "map": "ancient_woods",
+        "x": 662,
+        "y": 194
       }
     ],
     "sections": [
@@ -6019,8 +7024,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2000,
-        "y": 774
+        "x": 2970,
+        "y": 1134
+      },
+      {
+        "map": "ancient_woods",
+        "x": 806,
+        "y": 230
       }
     ],
     "sections": [
@@ -6036,8 +7046,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2024,
-        "y": 700
+        "x": 3006,
+        "y": 1026
+      },
+      {
+        "map": "ancient_woods",
+        "x": 842,
+        "y": 122
       }
     ],
     "sections": [
@@ -6073,8 +7088,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2000,
-        "y": 700
+        "x": 2970,
+        "y": 1026
+      },
+      {
+        "map": "ancient_woods",
+        "x": 806,
+        "y": 122
       }
     ],
     "sections": [
@@ -6127,8 +7147,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1856,
-        "y": 726
+        "x": 2754,
+        "y": 1062
+      },
+      {
+        "map": "ancient_woods",
+        "x": 590,
+        "y": 158
       }
     ],
     "sections": [
@@ -6154,8 +7179,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2024,
-        "y": 724
+        "x": 3006,
+        "y": 1062
+      },
+      {
+        "map": "ancient_woods",
+        "x": 842,
+        "y": 158
       }
     ],
     "sections": [
@@ -6210,8 +7240,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2144,
-        "y": 724
+        "x": 3186,
+        "y": 1062
+      },
+      {
+        "map": "ancient_woods",
+        "x": 1022,
+        "y": 158
       }
     ],
     "sections": [
@@ -6229,8 +7264,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2120,
-        "y": 676
+        "x": 3150,
+        "y": 990
+      },
+      {
+        "map": "ancient_woods",
+        "x": 986,
+        "y": 86
       }
     ],
     "sections": [
@@ -6267,8 +7307,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2120,
-        "y": 652
+        "x": 3150,
+        "y": 954
+      },
+      {
+        "map": "ancient_woods",
+        "x": 986,
+        "y": 50
       }
     ],
     "sections": [
@@ -6290,8 +7335,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1976,
-        "y": 800
+        "x": 2934,
+        "y": 1170
+      },
+      {
+        "map": "ancient_woods",
+        "x": 770,
+        "y": 266
       }
     ],
     "sections": [
@@ -6322,8 +7372,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1904,
-        "y": 846
+        "x": 2826,
+        "y": 1242
+      },
+      {
+        "map": "ancient_woods",
+        "x": 662,
+        "y": 338
       }
     ],
     "sections": [
@@ -6359,8 +7414,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1904,
-        "y": 798
+        "x": 2826,
+        "y": 1170
+      },
+      {
+        "map": "ancient_woods",
+        "x": 662,
+        "y": 266
       }
     ],
     "sections": [
@@ -6399,8 +7459,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2024,
-        "y": 822
+        "x": 3006,
+        "y": 1206
+      },
+      {
+        "map": "ancient_woods",
+        "x": 842,
+        "y": 302
       }
     ],
     "sections": [
@@ -6416,8 +7481,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1880,
-        "y": 822
+        "x": 2790,
+        "y": 1206
+      },
+      {
+        "map": "ancient_woods",
+        "x": 626,
+        "y": 302
       }
     ],
     "sections": [
@@ -6492,8 +7562,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1618,
-        "y": 846
+        "x": 2394,
+        "y": 1242
+      },
+      {
+        "map": "ancient_woods",
+        "x": 230,
+        "y": 338
       }
     ],
     "sections": [
@@ -6519,8 +7594,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1666,
-        "y": 846
+        "x": 2466,
+        "y": 1242
+      },
+      {
+        "map": "ancient_woods",
+        "x": 302,
+        "y": 338
       }
     ],
     "sections": [
@@ -6543,8 +7623,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1760,
-        "y": 800
+        "x": 2610,
+        "y": 1170
+      },
+      {
+        "map": "ancient_woods",
+        "x": 446,
+        "y": 266
       }
     ],
     "sections": [
@@ -6565,8 +7650,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1808,
-        "y": 800
+        "x": 2682,
+        "y": 1170
+      },
+      {
+        "map": "ancient_woods",
+        "x": 518,
+        "y": 266
       }
     ],
     "sections": [
@@ -6589,8 +7679,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1640,
-        "y": 728
+        "x": 2430,
+        "y": 1062
+      },
+      {
+        "map": "ancient_woods",
+        "x": 266,
+        "y": 158
       }
     ],
     "sections": [
@@ -6611,8 +7706,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1616,
-        "y": 728
+        "x": 2394,
+        "y": 1062
+      },
+      {
+        "map": "ancient_woods",
+        "x": 230,
+        "y": 158
       }
     ],
     "sections": [
@@ -6648,8 +7748,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1710,
-        "y": 824
+        "x": 2538,
+        "y": 1206
+      },
+      {
+        "map": "ancient_woods",
+        "x": 374,
+        "y": 302
       }
     ],
     "sections": [
@@ -6665,8 +7770,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1710,
-        "y": 800
+        "x": 2538,
+        "y": 1170
+      },
+      {
+        "map": "ancient_woods",
+        "x": 374,
+        "y": 266
       }
     ],
     "sections": [
@@ -6707,8 +7817,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2264,
-        "y": 748
+        "x": 3366,
+        "y": 1098
+      },
+      {
+        "map": "horizon_beach",
+        "x": 194,
+        "y": 230
       }
     ],
     "sections": [
@@ -6741,8 +7856,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2336,
-        "y": 700
+        "x": 3474,
+        "y": 1026
+      },
+      {
+        "map": "horizon_beach",
+        "x": 302,
+        "y": 158
       }
     ],
     "sections": [
@@ -6775,8 +7895,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2360,
-        "y": 700
+        "x": 3510,
+        "y": 1026
+      },
+      {
+        "map": "horizon_beach",
+        "x": 338,
+        "y": 158
       }
     ],
     "sections": [
@@ -6797,8 +7922,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2384,
-        "y": 748
+        "x": 3546,
+        "y": 1098
+      },
+      {
+        "map": "horizon_beach",
+        "x": 374,
+        "y": 230
       }
     ],
     "sections": [
@@ -6824,8 +7954,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2480,
-        "y": 772
+        "x": 3690,
+        "y": 1134
+      },
+      {
+        "map": "horizon_beach",
+        "x": 518,
+        "y": 266
       }
     ],
     "sections": [
@@ -6847,8 +7982,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2480,
-        "y": 748
+        "x": 3690,
+        "y": 1098
+      },
+      {
+        "map": "horizon_beach",
+        "x": 518,
+        "y": 230
       }
     ],
     "sections": [
@@ -6878,8 +8018,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2552,
-        "y": 724
+        "x": 3798,
+        "y": 1062
+      },
+      {
+        "map": "horizon_beach",
+        "x": 626,
+        "y": 194
       }
     ],
     "sections": [
@@ -6909,8 +8054,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2600,
-        "y": 724
+        "x": 3870,
+        "y": 1062
+      },
+      {
+        "map": "horizon_beach",
+        "x": 698,
+        "y": 194
       }
     ],
     "sections": [
@@ -6948,8 +8098,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2624,
-        "y": 772
+        "x": 3906,
+        "y": 1134
+      },
+      {
+        "map": "horizon_beach",
+        "x": 734,
+        "y": 266
       }
     ],
     "sections": [
@@ -6971,8 +8126,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2648,
-        "y": 796
+        "x": 3942,
+        "y": 1170
+      },
+      {
+        "map": "horizon_beach",
+        "x": 770,
+        "y": 302
       }
     ],
     "sections": [
@@ -6994,8 +8154,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2696,
-        "y": 796
+        "x": 4014,
+        "y": 1170
+      },
+      {
+        "map": "horizon_beach",
+        "x": 842,
+        "y": 302
       }
     ],
     "sections": [
@@ -7017,8 +8182,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2720,
-        "y": 796
+        "x": 4050,
+        "y": 1170
+      },
+      {
+        "map": "horizon_beach",
+        "x": 878,
+        "y": 302
       }
     ],
     "sections": [
@@ -7040,8 +8210,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2792,
-        "y": 820
+        "x": 4158,
+        "y": 1206
+      },
+      {
+        "map": "horizon_beach",
+        "x": 986,
+        "y": 338
       }
     ],
     "sections": [
@@ -7071,8 +8246,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2792,
-        "y": 796
+        "x": 4158,
+        "y": 1170
+      },
+      {
+        "map": "horizon_beach",
+        "x": 986,
+        "y": 302
       }
     ],
     "sections": [
@@ -7094,8 +8274,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2768,
-        "y": 748
+        "x": 4122,
+        "y": 1098
+      },
+      {
+        "map": "horizon_beach",
+        "x": 950,
+        "y": 230
       }
     ],
     "sections": [
@@ -7129,8 +8314,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2840,
-        "y": 724
+        "x": 4230,
+        "y": 1062
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1058,
+        "y": 194
       }
     ],
     "sections": [
@@ -7156,8 +8346,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2912,
-        "y": 700
+        "x": 4338,
+        "y": 1026
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1166,
+        "y": 158
       }
     ],
     "sections": [
@@ -7173,8 +8368,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2864,
-        "y": 724
+        "x": 4266,
+        "y": 1062
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1094,
+        "y": 194
       }
     ],
     "sections": [
@@ -7223,8 +8423,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2912,
-        "y": 724
+        "x": 4338,
+        "y": 1062
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1166,
+        "y": 194
       }
     ],
     "sections": [
@@ -7245,8 +8450,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2912,
-        "y": 772
+        "x": 4338,
+        "y": 1134
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1166,
+        "y": 266
       }
     ],
     "sections": [
@@ -7268,8 +8478,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2816,
-        "y": 772
+        "x": 4194,
+        "y": 1134
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1022,
+        "y": 266
       }
     ],
     "sections": [
@@ -7290,8 +8505,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2984,
-        "y": 628
+        "x": 4446,
+        "y": 918
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1274,
+        "y": 50
       }
     ],
     "sections": [
@@ -7324,8 +8544,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 3008,
-        "y": 628
+        "x": 4482,
+        "y": 918
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1310,
+        "y": 50
       }
     ],
     "sections": [
@@ -7347,8 +8572,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2960,
-        "y": 628
+        "x": 4410,
+        "y": 918
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1238,
+        "y": 50
       }
     ],
     "sections": [
@@ -7393,8 +8623,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2864,
-        "y": 652
+        "x": 4266,
+        "y": 954
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1094,
+        "y": 86
       }
     ],
     "sections": [
@@ -7415,8 +8650,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2840,
-        "y": 652
+        "x": 4230,
+        "y": 954
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1058,
+        "y": 86
       }
     ],
     "sections": [
@@ -7450,8 +8690,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 3008,
-        "y": 748
+        "x": 4482,
+        "y": 1098
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1310,
+        "y": 230
       }
     ],
     "sections": [
@@ -7473,8 +8718,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2984,
-        "y": 748
+        "x": 4446,
+        "y": 1098
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1274,
+        "y": 230
       }
     ],
     "sections": [
@@ -7497,8 +8747,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2936,
-        "y": 820
+        "x": 4374,
+        "y": 1206
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1202,
+        "y": 338
       }
     ],
     "sections": [
@@ -7519,8 +8774,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2912,
-        "y": 820
+        "x": 4338,
+        "y": 1206
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1166,
+        "y": 338
       }
     ],
     "sections": [
@@ -7536,8 +8796,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2888,
-        "y": 820
+        "x": 4302,
+        "y": 1206
+      },
+      {
+        "map": "horizon_beach",
+        "x": 1130,
+        "y": 338
       }
     ],
     "sections": [
@@ -7578,8 +8843,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2552,
-        "y": 844
+        "x": 3798,
+        "y": 1242
+      },
+      {
+        "map": "horizon_beach",
+        "x": 626,
+        "y": 374
       }
     ],
     "sections": [
@@ -7601,8 +8871,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2600,
-        "y": 844
+        "x": 3870,
+        "y": 1242
+      },
+      {
+        "map": "horizon_beach",
+        "x": 698,
+        "y": 374
       }
     ],
     "sections": [
@@ -7623,8 +8898,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2360,
-        "y": 820
+        "x": 3510,
+        "y": 1206
+      },
+      {
+        "map": "horizon_beach",
+        "x": 338,
+        "y": 338
       }
     ],
     "sections": [
@@ -7646,8 +8926,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2528,
-        "y": 892
+        "x": 3762,
+        "y": 1314
+      },
+      {
+        "map": "horizon_beach",
+        "x": 590,
+        "y": 446
       }
     ],
     "sections": [
@@ -7669,8 +8954,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2504,
-        "y": 892
+        "x": 3726,
+        "y": 1314
+      },
+      {
+        "map": "horizon_beach",
+        "x": 554,
+        "y": 446
       }
     ],
     "sections": [
@@ -7707,8 +8997,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2288,
-        "y": 820
+        "x": 3402,
+        "y": 1206
+      },
+      {
+        "map": "horizon_beach",
+        "x": 230,
+        "y": 338
       }
     ],
     "sections": [
@@ -7741,8 +9036,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2312,
-        "y": 844
+        "x": 3438,
+        "y": 1242
+      },
+      {
+        "map": "horizon_beach",
+        "x": 266,
+        "y": 374
       }
     ],
     "sections": [
@@ -7763,8 +9063,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2288,
-        "y": 844
+        "x": 3402,
+        "y": 1242
+      },
+      {
+        "map": "horizon_beach",
+        "x": 230,
+        "y": 374
       }
     ],
     "sections": [
@@ -7790,8 +9095,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2288,
-        "y": 892
+        "x": 3402,
+        "y": 1314
+      },
+      {
+        "map": "horizon_beach",
+        "x": 230,
+        "y": 446
       }
     ],
     "sections": [
@@ -7807,8 +9117,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2216,
-        "y": 892
+        "x": 3294,
+        "y": 1314
+      },
+      {
+        "map": "horizon_beach",
+        "x": 122,
+        "y": 446
       }
     ],
     "sections": [
@@ -7856,8 +9171,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2240,
-        "y": 892
+        "x": 3330,
+        "y": 1314
+      },
+      {
+        "map": "horizon_beach",
+        "x": 158,
+        "y": 446
       }
     ],
     "sections": [
@@ -7879,8 +9199,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2336,
-        "y": 892
+        "x": 3474,
+        "y": 1314
+      },
+      {
+        "map": "horizon_beach",
+        "x": 302,
+        "y": 446
       }
     ],
     "sections": [
@@ -7917,8 +9242,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1690,
-        "y": 968
+        "x": 2502,
+        "y": 1422
+      },
+      {
+        "map": "magma_chamber",
+        "x": 122,
+        "y": 230
       }
     ],
     "sections": [
@@ -7939,8 +9269,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1738,
-        "y": 968
+        "x": 2574,
+        "y": 1422
+      },
+      {
+        "map": "magma_chamber",
+        "x": 194,
+        "y": 230
       }
     ],
     "sections": [
@@ -7966,8 +9301,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1810,
-        "y": 942
+        "x": 2682,
+        "y": 1386
+      },
+      {
+        "map": "magma_chamber",
+        "x": 302,
+        "y": 194
       }
     ],
     "sections": [
@@ -7990,8 +9330,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1810,
-        "y": 918
+        "x": 2682,
+        "y": 1350
+      },
+      {
+        "map": "magma_chamber",
+        "x": 302,
+        "y": 158
       }
     ],
     "sections": [
@@ -8012,8 +9357,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1712,
-        "y": 1040
+        "x": 2538,
+        "y": 1530
+      },
+      {
+        "map": "magma_chamber",
+        "x": 158,
+        "y": 338
       }
     ],
     "sections": [
@@ -8049,8 +9399,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1924,
-        "y": 894
+        "x": 2862,
+        "y": 1314
+      },
+      {
+        "map": "magma_chamber",
+        "x": 482,
+        "y": 122
       }
     ],
     "sections": [
@@ -8066,8 +9421,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1880,
-        "y": 872
+        "x": 2790,
+        "y": 1278
+      },
+      {
+        "map": "magma_chamber",
+        "x": 410,
+        "y": 86
       }
     ],
     "sections": [
@@ -8127,8 +9487,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1976,
-        "y": 872
+        "x": 2934,
+        "y": 1278
+      },
+      {
+        "map": "magma_chamber",
+        "x": 554,
+        "y": 86
       }
     ],
     "sections": [
@@ -8149,8 +9514,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2000,
-        "y": 846
+        "x": 2970,
+        "y": 1242
+      },
+      {
+        "map": "magma_chamber",
+        "x": 590,
+        "y": 50
       }
     ],
     "sections": [
@@ -8187,8 +9557,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2046,
-        "y": 894
+        "x": 3042,
+        "y": 1314
+      },
+      {
+        "map": "magma_chamber",
+        "x": 662,
+        "y": 122
       }
     ],
     "sections": [
@@ -8210,8 +9585,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1976,
-        "y": 920
+        "x": 2934,
+        "y": 1350
+      },
+      {
+        "map": "magma_chamber",
+        "x": 554,
+        "y": 158
       }
     ],
     "sections": [
@@ -8280,8 +9660,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2120,
-        "y": 894
+        "x": 3150,
+        "y": 1314
+      },
+      {
+        "map": "magma_chamber",
+        "x": 770,
+        "y": 122
       }
     ],
     "sections": [
@@ -8302,8 +9687,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2144,
-        "y": 870
+        "x": 3186,
+        "y": 1278
+      },
+      {
+        "map": "magma_chamber",
+        "x": 806,
+        "y": 86
       }
     ],
     "sections": [
@@ -8350,8 +9740,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1880,
-        "y": 992
+        "x": 2790,
+        "y": 1458
+      },
+      {
+        "map": "magma_chamber",
+        "x": 410,
+        "y": 266
       }
     ],
     "sections": [
@@ -8372,8 +9767,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1856,
-        "y": 1016
+        "x": 2754,
+        "y": 1494
+      },
+      {
+        "map": "magma_chamber",
+        "x": 374,
+        "y": 302
       }
     ],
     "sections": [
@@ -8394,8 +9794,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1832,
-        "y": 968
+        "x": 2718,
+        "y": 1422
+      },
+      {
+        "map": "magma_chamber",
+        "x": 338,
+        "y": 230
       }
     ],
     "sections": [
@@ -8416,8 +9821,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1904,
-        "y": 968
+        "x": 2826,
+        "y": 1422
+      },
+      {
+        "map": "magma_chamber",
+        "x": 446,
+        "y": 230
       }
     ],
     "sections": [
@@ -8438,8 +9848,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1928,
-        "y": 968
+        "x": 2862,
+        "y": 1422
+      },
+      {
+        "map": "magma_chamber",
+        "x": 482,
+        "y": 230
       }
     ],
     "sections": [
@@ -8475,8 +9890,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1904,
-        "y": 1040
+        "x": 2826,
+        "y": 1530
+      },
+      {
+        "map": "magma_chamber",
+        "x": 446,
+        "y": 338
       }
     ],
     "sections": [
@@ -8497,8 +9917,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1976,
-        "y": 992
+        "x": 2934,
+        "y": 1458
+      },
+      {
+        "map": "magma_chamber",
+        "x": 554,
+        "y": 266
       }
     ],
     "sections": [
@@ -8520,8 +9945,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1952,
-        "y": 968
+        "x": 2898,
+        "y": 1422
+      },
+      {
+        "map": "magma_chamber",
+        "x": 518,
+        "y": 230
       }
     ],
     "sections": [
@@ -8542,8 +9972,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2096,
-        "y": 944
+        "x": 3114,
+        "y": 1386
+      },
+      {
+        "map": "magma_chamber",
+        "x": 734,
+        "y": 194
       }
     ],
     "sections": [
@@ -8579,8 +10014,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2120,
-        "y": 992
+        "x": 3150,
+        "y": 1458
+      },
+      {
+        "map": "magma_chamber",
+        "x": 770,
+        "y": 266
       }
     ],
     "sections": [
@@ -8601,8 +10041,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2192,
-        "y": 968
+        "x": 3258,
+        "y": 1422
+      },
+      {
+        "map": "magma_chamber",
+        "x": 878,
+        "y": 230
       }
     ],
     "sections": [
@@ -8625,8 +10070,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2192,
-        "y": 944
+        "x": 3258,
+        "y": 1386
+      },
+      {
+        "map": "magma_chamber",
+        "x": 878,
+        "y": 194
       }
     ],
     "sections": [
@@ -8654,8 +10104,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2000,
-        "y": 1040
+        "x": 2970,
+        "y": 1530
+      },
+      {
+        "map": "magma_chamber",
+        "x": 590,
+        "y": 338
       }
     ],
     "sections": [
@@ -8676,8 +10131,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2072,
-        "y": 1016
+        "x": 3078,
+        "y": 1494
+      },
+      {
+        "map": "magma_chamber",
+        "x": 698,
+        "y": 302
       }
     ],
     "sections": [
@@ -8726,8 +10186,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2168,
-        "y": 1016
+        "x": 3222,
+        "y": 1494
+      },
+      {
+        "map": "magma_chamber",
+        "x": 842,
+        "y": 302
       }
     ],
     "sections": [
@@ -8748,8 +10213,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2096,
-        "y": 1012
+        "x": 3114,
+        "y": 1494
+      },
+      {
+        "map": "magma_chamber",
+        "x": 734,
+        "y": 302
       }
     ],
     "sections": [
@@ -8770,8 +10240,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2096,
-        "y": 1060
+        "x": 3114,
+        "y": 1566
+      },
+      {
+        "map": "magma_chamber",
+        "x": 734,
+        "y": 374
       }
     ],
     "sections": [
@@ -8799,8 +10274,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2096,
-        "y": 988
+        "x": 3114,
+        "y": 1458
+      },
+      {
+        "map": "magma_chamber",
+        "x": 734,
+        "y": 266
       }
     ],
     "sections": [
@@ -8821,8 +10301,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2240,
-        "y": 1036
+        "x": 3330,
+        "y": 1530
+      },
+      {
+        "map": "magma_chamber",
+        "x": 950,
+        "y": 338
       }
     ],
     "sections": [
@@ -8854,8 +10339,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2264,
-        "y": 1036
+        "x": 3366,
+        "y": 1530
+      },
+      {
+        "map": "magma_chamber",
+        "x": 986,
+        "y": 338
       }
     ],
     "sections": [
@@ -8891,8 +10381,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2336,
-        "y": 1036
+        "x": 3474,
+        "y": 1530
+      },
+      {
+        "map": "magma_chamber",
+        "x": 1094,
+        "y": 338
       }
     ],
     "sections": [
@@ -8928,8 +10423,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2024,
-        "y": 968
+        "x": 3006,
+        "y": 1422
+      },
+      {
+        "map": "magma_chamber",
+        "x": 626,
+        "y": 230
       }
     ],
     "sections": [
@@ -8950,8 +10450,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2120,
-        "y": 940
+        "x": 3150,
+        "y": 1386
+      },
+      {
+        "map": "magma_chamber",
+        "x": 770,
+        "y": 194
       }
     ],
     "sections": [
@@ -8967,8 +10472,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1832,
-        "y": 1040
+        "x": 2718,
+        "y": 1530
+      },
+      {
+        "map": "magma_chamber",
+        "x": 338,
+        "y": 338
       }
     ],
     "sections": [
@@ -9009,8 +10519,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2144,
-        "y": 1060
+        "x": 3186,
+        "y": 1566
+      },
+      {
+        "map": "magma_chamber",
+        "x": 806,
+        "y": 374
       }
     ],
     "sections": [
@@ -9031,8 +10546,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2048,
-        "y": 1060
+        "x": 3042,
+        "y": 1566
+      },
+      {
+        "map": "magma_chamber",
+        "x": 662,
+        "y": 374
       }
     ],
     "sections": [
@@ -9053,8 +10573,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2072,
-        "y": 1060
+        "x": 3078,
+        "y": 1566
+      },
+      {
+        "map": "magma_chamber",
+        "x": 698,
+        "y": 374
       }
     ],
     "sections": [
@@ -9072,8 +10597,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2264,
-        "y": 992
+        "x": 3366,
+        "y": 1458
+      },
+      {
+        "map": "magma_chamber",
+        "x": 986,
+        "y": 266
       }
     ],
     "sections": [
@@ -9113,8 +10643,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2216,
-        "y": 992
+        "x": 3294,
+        "y": 1458
+      },
+      {
+        "map": "magma_chamber",
+        "x": 914,
+        "y": 266
       }
     ],
     "sections": [
@@ -9130,8 +10665,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2288,
-        "y": 968
+        "x": 3402,
+        "y": 1422
+      },
+      {
+        "map": "magma_chamber",
+        "x": 1022,
+        "y": 230
       }
     ],
     "sections": [
@@ -9288,8 +10828,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1112,
-        "y": 1012
+        "x": 1638,
+        "y": 1494
+      },
+      {
+        "map": "the_underworld",
+        "x": 950,
+        "y": 158
       }
     ],
     "sections": [
@@ -9322,8 +10867,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1088,
-        "y": 1012
+        "x": 1602,
+        "y": 1494
+      },
+      {
+        "map": "the_underworld",
+        "x": 914,
+        "y": 158
       }
     ],
     "sections": [
@@ -9345,8 +10895,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1064,
-        "y": 1060
+        "x": 1566,
+        "y": 1566
+      },
+      {
+        "map": "the_underworld",
+        "x": 878,
+        "y": 230
       }
     ],
     "sections": [
@@ -9384,8 +10939,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1016,
-        "y": 1060
+        "x": 1494,
+        "y": 1566
+      },
+      {
+        "map": "the_underworld",
+        "x": 806,
+        "y": 230
       }
     ],
     "sections": [
@@ -9407,8 +10967,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 920,
-        "y": 1036
+        "x": 1350,
+        "y": 1530
+      },
+      {
+        "map": "the_underworld",
+        "x": 662,
+        "y": 194
       }
     ],
     "sections": [
@@ -9429,8 +10994,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 944,
-        "y": 1012
+        "x": 1386,
+        "y": 1494
+      },
+      {
+        "map": "the_underworld",
+        "x": 698,
+        "y": 158
       }
     ],
     "sections": [
@@ -9467,8 +11037,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 920,
-        "y": 1084
+        "x": 1350,
+        "y": 1602
+      },
+      {
+        "map": "the_underworld",
+        "x": 662,
+        "y": 266
       }
     ],
     "sections": [
@@ -9489,8 +11064,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 944,
-        "y": 1108
+        "x": 1386,
+        "y": 1638
+      },
+      {
+        "map": "the_underworld",
+        "x": 698,
+        "y": 302
       }
     ],
     "sections": [
@@ -9511,8 +11091,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 920,
-        "y": 1108
+        "x": 1350,
+        "y": 1638
+      },
+      {
+        "map": "the_underworld",
+        "x": 662,
+        "y": 302
       }
     ],
     "sections": [
@@ -9573,8 +11158,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 944,
-        "y": 940
+        "x": 1386,
+        "y": 1386
+      },
+      {
+        "map": "the_underworld",
+        "x": 698,
+        "y": 50
       }
     ],
     "sections": [
@@ -9637,8 +11227,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1016,
-        "y": 1084
+        "x": 1494,
+        "y": 1602
+      },
+      {
+        "map": "the_underworld",
+        "x": 806,
+        "y": 266
       }
     ],
     "sections": [
@@ -9661,8 +11256,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1040,
-        "y": 1084
+        "x": 1530,
+        "y": 1602
+      },
+      {
+        "map": "the_underworld",
+        "x": 842,
+        "y": 266
       }
     ],
     "sections": [
@@ -9683,8 +11283,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 896,
-        "y": 1060
+        "x": 1314,
+        "y": 1566
+      },
+      {
+        "map": "the_underworld",
+        "x": 626,
+        "y": 230
       }
     ],
     "sections": [
@@ -9720,8 +11325,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 848,
-        "y": 1036
+        "x": 1242,
+        "y": 1530
+      },
+      {
+        "map": "the_underworld",
+        "x": 554,
+        "y": 194
       }
     ],
     "sections": [
@@ -9743,8 +11353,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 872,
-        "y": 1108
+        "x": 1278,
+        "y": 1638
+      },
+      {
+        "map": "the_underworld",
+        "x": 590,
+        "y": 302
       }
     ],
     "sections": [
@@ -9760,8 +11375,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 896,
-        "y": 1084
+        "x": 1314,
+        "y": 1602
+      },
+      {
+        "map": "the_underworld",
+        "x": 626,
+        "y": 266
       }
     ],
     "sections": [
@@ -9797,8 +11417,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 728,
-        "y": 1060
+        "x": 1062,
+        "y": 1566
+      },
+      {
+        "map": "the_underworld",
+        "x": 374,
+        "y": 230
       }
     ],
     "sections": [
@@ -9819,8 +11444,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 704,
-        "y": 1084
+        "x": 1026,
+        "y": 1602
+      },
+      {
+        "map": "the_underworld",
+        "x": 338,
+        "y": 266
       }
     ],
     "sections": [
@@ -9857,8 +11487,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 728,
-        "y": 1108
+        "x": 1062,
+        "y": 1638
+      },
+      {
+        "map": "the_underworld",
+        "x": 374,
+        "y": 302
       }
     ],
     "sections": [
@@ -9879,8 +11514,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 776,
-        "y": 1108
+        "x": 1134,
+        "y": 1638
+      },
+      {
+        "map": "the_underworld",
+        "x": 446,
+        "y": 302
       }
     ],
     "sections": [
@@ -9975,8 +11615,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 704,
-        "y": 1060
+        "x": 1026,
+        "y": 1566
+      },
+      {
+        "map": "the_underworld",
+        "x": 338,
+        "y": 230
       }
     ],
     "sections": [
@@ -9997,8 +11642,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 728,
-        "y": 1012
+        "x": 1062,
+        "y": 1494
+      },
+      {
+        "map": "the_underworld",
+        "x": 374,
+        "y": 158
       }
     ],
     "sections": [
@@ -10034,8 +11684,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 776,
-        "y": 1012
+        "x": 1134,
+        "y": 1494
+      },
+      {
+        "map": "the_underworld",
+        "x": 446,
+        "y": 158
       }
     ],
     "sections": [
@@ -10056,8 +11711,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 728,
-        "y": 988
+        "x": 1062,
+        "y": 1458
+      },
+      {
+        "map": "the_underworld",
+        "x": 374,
+        "y": 122
       }
     ],
     "sections": [
@@ -10073,8 +11733,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 752,
-        "y": 1012
+        "x": 1098,
+        "y": 1494
+      },
+      {
+        "map": "the_underworld",
+        "x": 410,
+        "y": 158
       }
     ],
     "sections": [
@@ -10107,8 +11772,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 800,
-        "y": 1060
+        "x": 1170,
+        "y": 1566
+      },
+      {
+        "map": "the_underworld",
+        "x": 482,
+        "y": 230
       }
     ],
     "sections": [
@@ -10149,8 +11819,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 656,
-        "y": 1036
+        "x": 954,
+        "y": 1530
+      },
+      {
+        "map": "the_underworld",
+        "x": 266,
+        "y": 194
       }
     ],
     "sections": [
@@ -10186,8 +11861,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 536,
-        "y": 1060
+        "x": 774,
+        "y": 1566
+      },
+      {
+        "map": "the_underworld",
+        "x": 86,
+        "y": 230
       }
     ],
     "sections": [
@@ -10211,8 +11891,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 512,
-        "y": 1084
+        "x": 738,
+        "y": 1602
+      },
+      {
+        "map": "the_underworld",
+        "x": 50,
+        "y": 266
       }
     ],
     "sections": [
@@ -10228,8 +11913,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1352,
-        "y": 702
+        "x": 1998,
+        "y": 1026
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 86,
+        "y": 518
       }
     ],
     "sections": [
@@ -10266,8 +11956,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1400,
-        "y": 702
+        "x": 2070,
+        "y": 1026
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 158,
+        "y": 518
       }
     ],
     "sections": [
@@ -10304,8 +11999,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1472,
-        "y": 702
+        "x": 2178,
+        "y": 1026
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 266,
+        "y": 518
       }
     ],
     "sections": [
@@ -10327,8 +12027,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1472,
-        "y": 630
+        "x": 2178,
+        "y": 918
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 266,
+        "y": 410
       }
     ],
     "sections": [
@@ -10361,8 +12066,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1448,
-        "y": 510
+        "x": 2142,
+        "y": 738
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 230,
+        "y": 230
       }
     ],
     "sections": [
@@ -10388,8 +12098,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1472,
-        "y": 510
+        "x": 2178,
+        "y": 738
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 266,
+        "y": 230
       }
     ],
     "sections": [
@@ -10419,8 +12134,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1496,
-        "y": 606
+        "x": 2214,
+        "y": 882
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 302,
+        "y": 374
       }
     ],
     "sections": [
@@ -10441,8 +12161,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1448,
-        "y": 606
+        "x": 2142,
+        "y": 882
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 230,
+        "y": 374
       }
     ],
     "sections": [
@@ -10465,8 +12190,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1472,
-        "y": 582
+        "x": 2178,
+        "y": 846
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 266,
+        "y": 338
       }
     ],
     "sections": [
@@ -10492,8 +12222,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1448,
-        "y": 558
+        "x": 2142,
+        "y": 810
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 230,
+        "y": 302
       }
     ],
     "sections": [
@@ -10516,8 +12251,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1496,
-        "y": 678
+        "x": 2214,
+        "y": 990
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 302,
+        "y": 482
       }
     ],
     "sections": [
@@ -10539,8 +12279,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1496,
-        "y": 534
+        "x": 2214,
+        "y": 774
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 302,
+        "y": 266
       }
     ],
     "sections": [
@@ -10561,8 +12306,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1496,
-        "y": 558
+        "x": 2214,
+        "y": 810
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 302,
+        "y": 302
       }
     ],
     "sections": [
@@ -10583,8 +12333,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1424,
-        "y": 534
+        "x": 2106,
+        "y": 774
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 194,
+        "y": 266
       }
     ],
     "sections": [
@@ -10607,8 +12362,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1496,
-        "y": 582
+        "x": 2214,
+        "y": 846
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 302,
+        "y": 338
       }
     ],
     "sections": [
@@ -10624,8 +12384,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1424,
-        "y": 606
+        "x": 2106,
+        "y": 882
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 194,
+        "y": 374
       }
     ],
     "sections": [
@@ -10663,8 +12428,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1424,
-        "y": 630
+        "x": 2106,
+        "y": 918
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 194,
+        "y": 410
       }
     ],
     "sections": [
@@ -10694,8 +12464,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1496,
-        "y": 486
+        "x": 2214,
+        "y": 702
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 302,
+        "y": 194
       }
     ],
     "sections": [
@@ -10725,8 +12500,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1520,
-        "y": 534
+        "x": 2250,
+        "y": 774
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 338,
+        "y": 266
       }
     ],
     "sections": [
@@ -10747,8 +12527,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1544,
-        "y": 486
+        "x": 2286,
+        "y": 702
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 374,
+        "y": 194
       }
     ],
     "sections": [
@@ -10798,8 +12583,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1472,
-        "y": 462
+        "x": 2178,
+        "y": 666
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 266,
+        "y": 158
       }
     ],
     "sections": [
@@ -10833,8 +12623,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1448,
-        "y": 486
+        "x": 2142,
+        "y": 702
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 230,
+        "y": 194
       }
     ],
     "sections": [
@@ -10864,8 +12659,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1496,
-        "y": 462
+        "x": 2214,
+        "y": 666
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 302,
+        "y": 158
       }
     ],
     "sections": [
@@ -10898,8 +12698,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1396,
-        "y": 512
+        "x": 2070,
+        "y": 738
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 158,
+        "y": 230
       }
     ],
     "sections": [
@@ -10935,8 +12740,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1448,
-        "y": 416
+        "x": 2142,
+        "y": 594
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 230,
+        "y": 86
       }
     ],
     "sections": [
@@ -10957,8 +12767,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1472,
-        "y": 416
+        "x": 2178,
+        "y": 594
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 266,
+        "y": 86
       }
     ],
     "sections": [
@@ -10981,8 +12796,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1472,
-        "y": 438
+        "x": 2178,
+        "y": 630
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 266,
+        "y": 122
       }
     ],
     "sections": [
@@ -11004,8 +12824,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1396,
-        "y": 440
+        "x": 2070,
+        "y": 630
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 158,
+        "y": 122
       }
     ],
     "sections": [
@@ -11021,8 +12846,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1400,
-        "y": 416
+        "x": 2070,
+        "y": 594
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 158,
+        "y": 86
       }
     ],
     "sections": [
@@ -11070,8 +12900,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1424,
-        "y": 416
+        "x": 2106,
+        "y": 594
+      },
+      {
+        "map": "mystical_workshop",
+        "x": 194,
+        "y": 86
       }
     ],
     "sections": [
@@ -11122,8 +12957,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1616,
-        "y": 1016
+        "x": 2394,
+        "y": 1494
+      },
+      {
+        "map": "blob_burg",
+        "x": 482,
+        "y": 50
       }
     ],
     "sections": [
@@ -11144,8 +12984,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1592,
-        "y": 1064
+        "x": 2358,
+        "y": 1566
+      },
+      {
+        "map": "blob_burg",
+        "x": 446,
+        "y": 122
       }
     ],
     "sections": [
@@ -11166,8 +13011,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1568,
-        "y": 1112
+        "x": 2322,
+        "y": 1638
+      },
+      {
+        "map": "blob_burg",
+        "x": 410,
+        "y": 194
       }
     ],
     "sections": [
@@ -11188,8 +13038,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1640,
-        "y": 1136
+        "x": 2394,
+        "y": 1674
+      },
+      {
+        "map": "blob_burg",
+        "x": 482,
+        "y": 230
       }
     ],
     "sections": [
@@ -11225,8 +13080,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1592,
-        "y": 1016
+        "x": 2358,
+        "y": 1494
+      },
+      {
+        "map": "blob_burg",
+        "x": 446,
+        "y": 50
       }
     ],
     "sections": [
@@ -11256,8 +13116,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1544,
-        "y": 1040
+        "x": 2286,
+        "y": 1530
+      },
+      {
+        "map": "blob_burg",
+        "x": 374,
+        "y": 86
       }
     ],
     "sections": [
@@ -11278,8 +13143,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1520,
-        "y": 1112
+        "x": 2250,
+        "y": 1638
+      },
+      {
+        "map": "blob_burg",
+        "x": 338,
+        "y": 194
       }
     ],
     "sections": [
@@ -11300,8 +13170,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1472,
-        "y": 1112
+        "x": 2178,
+        "y": 1638
+      },
+      {
+        "map": "blob_burg",
+        "x": 266,
+        "y": 194
       }
     ],
     "sections": [
@@ -11337,8 +13212,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1496,
-        "y": 1040
+        "x": 2214,
+        "y": 1530
+      },
+      {
+        "map": "blob_burg",
+        "x": 302,
+        "y": 86
       }
     ],
     "sections": [
@@ -11375,8 +13255,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1424,
-        "y": 1136
+        "x": 2106,
+        "y": 1674
+      },
+      {
+        "map": "blob_burg",
+        "x": 194,
+        "y": 230
       }
     ],
     "sections": [
@@ -11398,8 +13283,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1400,
-        "y": 1160
+        "x": 2070,
+        "y": 1710
+      },
+      {
+        "map": "blob_burg",
+        "x": 158,
+        "y": 266
       }
     ],
     "sections": [
@@ -11421,8 +13311,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1352,
-        "y": 1160
+        "x": 1998,
+        "y": 1710
+      },
+      {
+        "map": "blob_burg",
+        "x": 86,
+        "y": 266
       }
     ],
     "sections": [
@@ -11444,8 +13339,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1376,
-        "y": 1160
+        "x": 2034,
+        "y": 1710
+      },
+      {
+        "map": "blob_burg",
+        "x": 122,
+        "y": 266
       }
     ],
     "sections": [
@@ -11478,8 +13378,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1328,
-        "y": 1064
+        "x": 1962,
+        "y": 1566
+      },
+      {
+        "map": "blob_burg",
+        "x": 50,
+        "y": 122
       }
     ],
     "sections": [
@@ -11528,8 +13433,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1520,
-        "y": 1160
+        "x": 2250,
+        "y": 1710
+      },
+      {
+        "map": "blob_burg",
+        "x": 338,
+        "y": 266
       }
     ],
     "sections": [
@@ -11551,8 +13461,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1544,
-        "y": 1160
+        "x": 2286,
+        "y": 1710
+      },
+      {
+        "map": "blob_burg",
+        "x": 374,
+        "y": 266
       }
     ],
     "sections": [
@@ -11585,8 +13500,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1520,
-        "y": 1136
+        "x": 2250,
+        "y": 1674
+      },
+      {
+        "map": "blob_burg",
+        "x": 338,
+        "y": 230
       }
     ],
     "sections": [
@@ -11629,8 +13549,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1376,
-        "y": 1088
+        "x": 2034,
+        "y": 1602
+      },
+      {
+        "map": "blob_burg",
+        "x": 122,
+        "y": 158
       }
     ],
     "sections": [
@@ -11683,8 +13608,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1424,
-        "y": 1040
+        "x": 2106,
+        "y": 1530
+      },
+      {
+        "map": "blob_burg",
+        "x": 194,
+        "y": 86
       }
     ],
     "sections": [
@@ -11707,8 +13637,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1472,
-        "y": 1016
+        "x": 2178,
+        "y": 1494
+      },
+      {
+        "map": "blob_burg",
+        "x": 266,
+        "y": 50
       }
     ],
     "sections": [
@@ -11724,8 +13659,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2432,
-        "y": 1012
+        "x": 3618,
+        "y": 1494
+      },
+      {
+        "map": "forgotten_world",
+        "x": 158,
+        "y": 338
       }
     ],
     "sections": [
@@ -11776,8 +13716,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2552,
-        "y": 1132
+        "x": 3798,
+        "y": 1674
+      },
+      {
+        "map": "forgotten_world",
+        "x": 338,
+        "y": 518
       }
     ],
     "sections": [
@@ -11810,8 +13755,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2552,
-        "y": 1108
+        "x": 3798,
+        "y": 1638
+      },
+      {
+        "map": "forgotten_world",
+        "x": 338,
+        "y": 482
       }
     ],
     "sections": [
@@ -11849,8 +13799,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2672,
-        "y": 1108
+        "x": 3978,
+        "y": 1638
+      },
+      {
+        "map": "forgotten_world",
+        "x": 518,
+        "y": 482
       }
     ],
     "sections": [
@@ -11876,8 +13831,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2792,
-        "y": 1132
+        "x": 4158,
+        "y": 1674
+      },
+      {
+        "map": "forgotten_world",
+        "x": 698,
+        "y": 518
       }
     ],
     "sections": [
@@ -11893,8 +13853,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2864,
-        "y": 1060
+        "x": 4266,
+        "y": 1566
+      },
+      {
+        "map": "forgotten_world",
+        "x": 806,
+        "y": 410
       }
     ],
     "sections": [
@@ -11949,8 +13914,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2840,
-        "y": 1036
+        "x": 4230,
+        "y": 1530
+      },
+      {
+        "map": "forgotten_world",
+        "x": 770,
+        "y": 374
       }
     ],
     "sections": [
@@ -11972,8 +13942,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2576,
-        "y": 1108
+        "x": 3834,
+        "y": 1638
+      },
+      {
+        "map": "forgotten_world",
+        "x": 374,
+        "y": 482
       }
     ],
     "sections": [
@@ -12012,8 +13987,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2840,
-        "y": 1156
+        "x": 4230,
+        "y": 1710
+      },
+      {
+        "map": "forgotten_world",
+        "x": 770,
+        "y": 554
       }
     ],
     "sections": [
@@ -12039,8 +14019,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2912,
-        "y": 1180
+        "x": 4338,
+        "y": 1746
+      },
+      {
+        "map": "forgotten_world",
+        "x": 878,
+        "y": 590
       }
     ],
     "sections": [
@@ -12066,8 +14051,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2912,
-        "y": 1204
+        "x": 4338,
+        "y": 1782
+      },
+      {
+        "map": "forgotten_world",
+        "x": 878,
+        "y": 626
       }
     ],
     "sections": [
@@ -12089,8 +14079,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2888,
-        "y": 1204
+        "x": 4302,
+        "y": 1782
+      },
+      {
+        "map": "forgotten_world",
+        "x": 842,
+        "y": 626
       }
     ],
     "sections": [
@@ -12111,8 +14106,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2840,
-        "y": 1204
+        "x": 4230,
+        "y": 1782
+      },
+      {
+        "map": "forgotten_world",
+        "x": 770,
+        "y": 626
       }
     ],
     "sections": [
@@ -12133,8 +14133,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2792,
-        "y": 1228
+        "x": 4158,
+        "y": 1818
+      },
+      {
+        "map": "forgotten_world",
+        "x": 698,
+        "y": 662
       }
     ],
     "sections": [
@@ -12157,8 +14162,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2768,
-        "y": 1156
+        "x": 4122,
+        "y": 1710
+      },
+      {
+        "map": "forgotten_world",
+        "x": 662,
+        "y": 554
       }
     ],
     "sections": [
@@ -12191,8 +14201,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2864,
-        "y": 1252
+        "x": 4266,
+        "y": 1854
+      },
+      {
+        "map": "forgotten_world",
+        "x": 806,
+        "y": 698
       }
     ],
     "sections": [
@@ -12214,8 +14229,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2720,
-        "y": 1228
+        "x": 4050,
+        "y": 1818
+      },
+      {
+        "map": "forgotten_world",
+        "x": 590,
+        "y": 662
       }
     ],
     "sections": [
@@ -12237,8 +14257,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2720,
-        "y": 1276
+        "x": 4050,
+        "y": 1890
+      },
+      {
+        "map": "forgotten_world",
+        "x": 590,
+        "y": 734
       }
     ],
     "sections": [
@@ -12260,8 +14285,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2696,
-        "y": 1300
+        "x": 4014,
+        "y": 1926
+      },
+      {
+        "map": "forgotten_world",
+        "x": 554,
+        "y": 770
       }
     ],
     "sections": [
@@ -12282,8 +14312,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2696,
-        "y": 1324
+        "x": 4014,
+        "y": 1962
+      },
+      {
+        "map": "forgotten_world",
+        "x": 554,
+        "y": 806
       }
     ],
     "sections": [
@@ -12326,8 +14361,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2768,
-        "y": 1228
+        "x": 4122,
+        "y": 1818
+      },
+      {
+        "map": "forgotten_world",
+        "x": 662,
+        "y": 662
       }
     ],
     "sections": [
@@ -12350,8 +14390,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2768,
-        "y": 1252
+        "x": 4122,
+        "y": 1854
+      },
+      {
+        "map": "forgotten_world",
+        "x": 662,
+        "y": 698
       }
     ],
     "sections": [
@@ -12372,8 +14417,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2672,
-        "y": 1300
+        "x": 3978,
+        "y": 1926
+      },
+      {
+        "map": "forgotten_world",
+        "x": 518,
+        "y": 770
       }
     ],
     "sections": [
@@ -12395,8 +14445,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2672,
-        "y": 1252
+        "x": 3978,
+        "y": 1854
+      },
+      {
+        "map": "forgotten_world",
+        "x": 518,
+        "y": 698
       }
     ],
     "sections": [
@@ -12418,8 +14473,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2696,
-        "y": 1252
+        "x": 4014,
+        "y": 1854
+      },
+      {
+        "map": "forgotten_world",
+        "x": 554,
+        "y": 698
       }
     ],
     "sections": [
@@ -12484,8 +14544,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2504,
-        "y": 1132
+        "x": 3726,
+        "y": 1674
+      },
+      {
+        "map": "forgotten_world",
+        "x": 266,
+        "y": 518
       }
     ],
     "sections": [
@@ -12507,8 +14572,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2480,
-        "y": 1204
+        "x": 3690,
+        "y": 1782
+      },
+      {
+        "map": "forgotten_world",
+        "x": 230,
+        "y": 626
       }
     ],
     "sections": [
@@ -12531,8 +14601,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2528,
-        "y": 1204
+        "x": 3762,
+        "y": 1782
+      },
+      {
+        "map": "forgotten_world",
+        "x": 302,
+        "y": 626
       }
     ],
     "sections": [
@@ -12574,8 +14649,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2504,
-        "y": 1252
+        "x": 3726,
+        "y": 1854
+      },
+      {
+        "map": "forgotten_world",
+        "x": 266,
+        "y": 698
       }
     ],
     "sections": [
@@ -12597,8 +14677,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2504,
-        "y": 1204
+        "x": 3726,
+        "y": 1782
+      },
+      {
+        "map": "forgotten_world",
+        "x": 266,
+        "y": 626
       }
     ],
     "sections": [
@@ -12620,8 +14705,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2504,
-        "y": 1228
+        "x": 3726,
+        "y": 1818
+      },
+      {
+        "map": "forgotten_world",
+        "x": 266,
+        "y": 662
       }
     ],
     "sections": [
@@ -12649,8 +14739,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2576,
-        "y": 1204
+        "x": 3834,
+        "y": 1782
+      },
+      {
+        "map": "forgotten_world",
+        "x": 374,
+        "y": 626
       }
     ],
     "sections": [
@@ -12672,8 +14767,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2552,
-        "y": 1228
+        "x": 3798,
+        "y": 1818
+      },
+      {
+        "map": "forgotten_world",
+        "x": 338,
+        "y": 662
       }
     ],
     "sections": [
@@ -12695,8 +14795,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2456,
-        "y": 1276
+        "x": 3654,
+        "y": 1890
+      },
+      {
+        "map": "forgotten_world",
+        "x": 194,
+        "y": 734
       }
     ],
     "sections": [
@@ -12733,8 +14838,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2600,
-        "y": 1276
+        "x": 3870,
+        "y": 1890
+      },
+      {
+        "map": "forgotten_world",
+        "x": 410,
+        "y": 734
       }
     ],
     "sections": [
@@ -12756,8 +14866,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2552,
-        "y": 1276
+        "x": 3798,
+        "y": 1890
+      },
+      {
+        "map": "forgotten_world",
+        "x": 338,
+        "y": 734
       }
     ],
     "sections": [
@@ -12778,8 +14893,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2360,
-        "y": 1276
+        "x": 3510,
+        "y": 1890
+      },
+      {
+        "map": "forgotten_world",
+        "x": 50,
+        "y": 734
       }
     ],
     "sections": [
@@ -12801,8 +14921,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2408,
-        "y": 1156
+        "x": 3582,
+        "y": 1710
+      },
+      {
+        "map": "forgotten_world",
+        "x": 122,
+        "y": 554
       }
     ],
     "sections": [
@@ -12834,8 +14959,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2624,
-        "y": 1204
+        "x": 3906,
+        "y": 1782
+      },
+      {
+        "map": "forgotten_world",
+        "x": 446,
+        "y": 626
       }
     ],
     "sections": [
@@ -12874,8 +15004,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2360,
-        "y": 1348
+        "x": 3510,
+        "y": 1998
+      },
+      {
+        "map": "forgotten_world",
+        "x": 50,
+        "y": 842
       }
     ],
     "sections": [
@@ -12897,8 +15032,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2432,
-        "y": 1372
+        "x": 3618,
+        "y": 2034
+      },
+      {
+        "map": "forgotten_world",
+        "x": 158,
+        "y": 878
       }
     ],
     "sections": [
@@ -12920,8 +15060,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2408,
-        "y": 1372
+        "x": 3582,
+        "y": 2034
+      },
+      {
+        "map": "forgotten_world",
+        "x": 122,
+        "y": 878
       }
     ],
     "sections": [
@@ -12942,8 +15087,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2456,
-        "y": 1372
+        "x": 3654,
+        "y": 2034
+      },
+      {
+        "map": "forgotten_world",
+        "x": 194,
+        "y": 878
       }
     ],
     "sections": [
@@ -12981,8 +15131,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2432,
-        "y": 1156
+        "x": 3618,
+        "y": 1710
+      },
+      {
+        "map": "forgotten_world",
+        "x": 158,
+        "y": 554
       }
     ],
     "sections": [
@@ -13004,8 +15159,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2384,
-        "y": 1084
+        "x": 3546,
+        "y": 1602
+      },
+      {
+        "map": "forgotten_world",
+        "x": 86,
+        "y": 446
       }
     ],
     "sections": [
@@ -13033,8 +15193,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2360,
-        "y": 1060
+        "x": 3510,
+        "y": 1566
+      },
+      {
+        "map": "forgotten_world",
+        "x": 50,
+        "y": 410
       }
     ],
     "sections": [
@@ -13055,8 +15220,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2888,
-        "y": 988
+        "x": 4302,
+        "y": 1458
+      },
+      {
+        "map": "forgotten_world",
+        "x": 842,
+        "y": 302
       }
     ],
     "sections": [
@@ -13079,8 +15249,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2912,
-        "y": 1012
+        "x": 4338,
+        "y": 1494
+      },
+      {
+        "map": "forgotten_world",
+        "x": 878,
+        "y": 338
       }
     ],
     "sections": [
@@ -13140,8 +15315,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2912,
-        "y": 988
+        "x": 4338,
+        "y": 1458
+      },
+      {
+        "map": "forgotten_world",
+        "x": 878,
+        "y": 302
       }
     ],
     "sections": [
@@ -13175,8 +15355,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2864,
-        "y": 940
+        "x": 4266,
+        "y": 1386
+      },
+      {
+        "map": "forgotten_world",
+        "x": 806,
+        "y": 230
       }
     ],
     "sections": [
@@ -13214,8 +15399,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2864,
-        "y": 988
+        "x": 4266,
+        "y": 1458
+      },
+      {
+        "map": "forgotten_world",
+        "x": 806,
+        "y": 302
       }
     ],
     "sections": [
@@ -13249,8 +15439,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2864,
-        "y": 916
+        "x": 4266,
+        "y": 1350
+      },
+      {
+        "map": "forgotten_world",
+        "x": 806,
+        "y": 194
       }
     ],
     "sections": [
@@ -13272,8 +15467,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2816,
-        "y": 916
+        "x": 4194,
+        "y": 1350
+      },
+      {
+        "map": "forgotten_world",
+        "x": 734,
+        "y": 194
       }
     ],
     "sections": [
@@ -13289,8 +15489,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2792,
-        "y": 868
+        "x": 4158,
+        "y": 1278
+      },
+      {
+        "map": "forgotten_world",
+        "x": 698,
+        "y": 122
       }
     ],
     "sections": [
@@ -13345,8 +15550,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2744,
-        "y": 916
+        "x": 4086,
+        "y": 1350
+      },
+      {
+        "map": "forgotten_world",
+        "x": 626,
+        "y": 194
       }
     ],
     "sections": [
@@ -13401,8 +15611,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2744,
-        "y": 892
+        "x": 4086,
+        "y": 1314
+      },
+      {
+        "map": "forgotten_world",
+        "x": 626,
+        "y": 158
       }
     ],
     "sections": [
@@ -13432,8 +15647,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2792,
-        "y": 916
+        "x": 4158,
+        "y": 1350
+      },
+      {
+        "map": "forgotten_world",
+        "x": 698,
+        "y": 194
       }
     ],
     "sections": [
@@ -13454,8 +15674,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2720,
-        "y": 868
+        "x": 4050,
+        "y": 1278
+      },
+      {
+        "map": "forgotten_world",
+        "x": 590,
+        "y": 122
       }
     ],
     "sections": [
@@ -13478,8 +15703,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2624,
-        "y": 892
+        "x": 3906,
+        "y": 1314
+      },
+      {
+        "map": "forgotten_world",
+        "x": 446,
+        "y": 158
       }
     ],
     "sections": [
@@ -13509,8 +15739,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 2696,
-        "y": 892
+        "x": 4014,
+        "y": 1314
+      },
+      {
+        "map": "forgotten_world",
+        "x": 554,
+        "y": 158
       }
     ],
     "sections": [
@@ -13532,8 +15767,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1304,
-        "y": 580
+        "x": 1926,
+        "y": 846
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 50,
+        "y": 878
       }
     ],
     "sections": [
@@ -13555,8 +15795,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1352,
-        "y": 556
+        "x": 1998,
+        "y": 810
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 122,
+        "y": 842
       }
     ],
     "sections": [
@@ -13578,8 +15823,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1352,
-        "y": 508
+        "x": 1998,
+        "y": 738
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 122,
+        "y": 770
       }
     ],
     "sections": [
@@ -13602,8 +15852,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1304,
-        "y": 460
+        "x": 1926,
+        "y": 666
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 50,
+        "y": 698
       }
     ],
     "sections": [
@@ -13619,8 +15874,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1328,
-        "y": 508
+        "x": 1962,
+        "y": 738
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 86,
+        "y": 770
       }
     ],
     "sections": [
@@ -13665,8 +15925,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1352,
-        "y": 460
+        "x": 1998,
+        "y": 666
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 122,
+        "y": 698
       }
     ],
     "sections": [
@@ -13696,8 +15961,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1328,
-        "y": 436
+        "x": 1962,
+        "y": 630
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 86,
+        "y": 662
       }
     ],
     "sections": [
@@ -13733,8 +16003,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1304,
-        "y": 508
+        "x": 1926,
+        "y": 738
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 50,
+        "y": 770
       }
     ],
     "sections": [
@@ -13750,8 +16025,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1352,
-        "y": 484
+        "x": 1998,
+        "y": 702
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 122,
+        "y": 734
       }
     ],
     "sections": [
@@ -13788,8 +16068,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1304,
-        "y": 388
+        "x": 1926,
+        "y": 558
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 50,
+        "y": 590
       }
     ],
     "sections": [
@@ -13822,8 +16107,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1352,
-        "y": 412
+        "x": 1998,
+        "y": 594
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 122,
+        "y": 626
       }
     ],
     "sections": [
@@ -13856,8 +16146,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1352,
-        "y": 388
+        "x": 1998,
+        "y": 558
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 122,
+        "y": 590
       }
     ],
     "sections": [
@@ -13879,8 +16174,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1352,
-        "y": 340
+        "x": 1998,
+        "y": 486
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 122,
+        "y": 518
       }
     ],
     "sections": [
@@ -13903,8 +16203,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1424,
-        "y": 316
+        "x": 2106,
+        "y": 450
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 230,
+        "y": 482
       }
     ],
     "sections": [
@@ -13927,8 +16232,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1328,
-        "y": 316
+        "x": 1962,
+        "y": 450
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 86,
+        "y": 482
       }
     ],
     "sections": [
@@ -13949,8 +16259,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1352,
-        "y": 292
+        "x": 1998,
+        "y": 414
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 122,
+        "y": 446
       }
     ],
     "sections": [
@@ -13988,8 +16303,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1400,
-        "y": 292
+        "x": 2070,
+        "y": 414
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 194,
+        "y": 446
       }
     ],
     "sections": [
@@ -14011,8 +16331,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1352,
-        "y": 268
+        "x": 1998,
+        "y": 378
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 122,
+        "y": 410
       }
     ],
     "sections": [
@@ -14043,8 +16368,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1376,
-        "y": 244
+        "x": 2034,
+        "y": 342
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 158,
+        "y": 374
       }
     ],
     "sections": [
@@ -14086,8 +16416,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1328,
-        "y": 220
+        "x": 1962,
+        "y": 306
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 86,
+        "y": 338
       }
     ],
     "sections": [
@@ -14108,8 +16443,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1376,
-        "y": 196
+        "x": 2034,
+        "y": 270
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 158,
+        "y": 302
       }
     ],
     "sections": [
@@ -14131,8 +16471,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1376,
-        "y": 172
+        "x": 2034,
+        "y": 234
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 158,
+        "y": 266
       }
     ],
     "sections": [
@@ -14154,8 +16499,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1352,
-        "y": 148
+        "x": 1998,
+        "y": 198
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 122,
+        "y": 230
       }
     ],
     "sections": [
@@ -14177,8 +16527,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1400,
-        "y": 196
+        "x": 2070,
+        "y": 270
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 194,
+        "y": 302
       }
     ],
     "sections": [
@@ -14201,8 +16556,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1400,
-        "y": 100
+        "x": 2070,
+        "y": 126
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 194,
+        "y": 158
       }
     ],
     "sections": [
@@ -14223,8 +16583,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1376,
-        "y": 52
+        "x": 2034,
+        "y": 54
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 158,
+        "y": 86
       }
     ],
     "sections": [
@@ -14240,8 +16605,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1376,
-        "y": 100
+        "x": 2034,
+        "y": 126
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 158,
+        "y": 158
       }
     ],
     "sections": [
@@ -14277,8 +16647,13 @@
     "map_locations": [
       {
         "map": "overview",
-        "x": 1376,
-        "y": 28
+        "x": 2034,
+        "y": 18
+      },
+      {
+        "map": "abandoned_tower",
+        "x": 158,
+        "y": 50
       }
     ],
     "sections": [

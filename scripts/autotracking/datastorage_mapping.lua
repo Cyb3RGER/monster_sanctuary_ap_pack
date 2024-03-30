@@ -1,4 +1,4 @@
-DATASTORAGE_MAPPING = {
+DATASTORAGE_ABILITY_MAPPING = {
 	["Blob Form"] = {{"narrow_corridors"}, "toggle"},
 	["Bubble Burst"] = {{"water_orbs"}, "toggle"},
 	["Charging Mount"] = {{"basic_mount", "charging_mount", "breakable_walls", "diamond_blocks"}, "toggle"},

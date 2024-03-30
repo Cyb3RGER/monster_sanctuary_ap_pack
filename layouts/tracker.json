@@ -45,7 +45,7 @@
                 }
             },
             {
-                "title": "Keeper's Stronghold",
+                "title": "Keepers' Stronghold",
                 "content": {
                     "type": "map",
                     "maps": [
@@ -160,7 +160,7 @@
                         "forgotten_world"
                     ]
                 }
-            },
+            }
         ]
     }
 }

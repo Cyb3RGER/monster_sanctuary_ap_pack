@@ -1,20 +1,20 @@
 {
     "versions": [
         {
-            "package_version": "1.0.0",
-            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.0.0/monster_sanctuary_ap_pack-v1_0_0.zip",
-            "sha256": "a71b1e55a2bda503787af01eff60313b2511690e7e310c225564e8cc30d935e7",
-            "changelog": [
-                "Initial Release"
-            ]
-        },
-        {
             "package_version": "1.0.1",
             "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.0.1/monster_sanctuary_ap_pack-v1_0_1.zip",
             "sha256": "9fa849493b8013628d68fb471754d710aba152d6f11f1c40ffbeb954a07cac86",
             "changelog": [
                 "Added region maps and autoswitching maps"                
             ]
-        }
+        },
+        {
+            "package_version": "1.0.0",
+            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.0.0/monster_sanctuary_ap_pack-v1_0_0.zip",
+            "sha256": "a71b1e55a2bda503787af01eff60313b2511690e7e310c225564e8cc30d935e7",
+            "changelog": [
+                "Initial Release"
+            ]
+        }        
     ]
 }

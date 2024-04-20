@@ -24,7 +24,9 @@ Tracker:AddItems("items/crafting_material.json")
 Tracker:AddItems("items/egg.json")
 Tracker:AddItems("items/flag.json")
 Tracker:AddItems("items/key_item.json")
---Tracker:AddItems("items/monsters.json")
+Tracker:AddItems("items/monsters.json")
+Tracker:AddItems("items/explore_ability.json")
+Tracker:AddItems("items/eggsanity.json")
 Tracker:AddItems("items/rank.json")
 
 
@@ -40,6 +42,7 @@ if not IS_ITEMS_ONLY then
 end
 
 -- Layout
+Tracker:AddLayouts("layouts/generated/eggsanity.json")
 Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
@@ -47,6 +50,5 @@ Tracker:AddLayouts("layouts/broadcast.json")
 -- AutoTracking for Poptracker
 if PopVersion and PopVersion >= "0.18.0" then
     require("scripts/autotracking")
-    --ToDo: remove this as soon as all items are tracked via AP
     require("scripts/watches")
 end

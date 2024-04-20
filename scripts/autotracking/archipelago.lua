@@ -7,6 +7,8 @@ require("scripts/autotracking/item_mapping")
 require("scripts/autotracking/location_mapping")
 require("scripts/autotracking/datastorage_mapping")
 require("scripts/autotracking/autoswitch_mapping")
+require('logic/abilities_compact')
+require('logic/monsters_to_abilities')
 
 CUR_INDEX = -1
 SLOT_DATA = nil
@@ -17,7 +19,7 @@ REGIONS_ACCESS_CACHE = {}
 
 function GetDataStorageKeys()
     local keys = {}
-    for k, _ in pairs(DATASTORAGE_ABILITY_MAPPING) do
+    for k, _ in pairs(DATASTORAGE_ITEM_MAPPING) do
         table.insert(keys, "Slot:" .. Archipelago.PlayerNumber .. ":" .. k)
     end
     table.insert(keys, "Slot:" .. Archipelago.PlayerNumber .. ":" .. "CurrentArea")
@@ -58,7 +60,7 @@ function onClear(slot_data)
             end
         end
     end
-    for _, v in pairs(DATASTORAGE_ABILITY_MAPPING) do
+    for _, v in pairs(DATASTORAGE_ITEM_MAPPING) do
         if v[1] and v[2] then
             for _, code in ipairs(v[1]) do
                 resetItem(code, v[2])
@@ -71,6 +73,16 @@ function onClear(slot_data)
     Archipelago:Get(keys)
     Archipelago:SetNotify(keys)
     --update_access()
+    local obj = Tracker:FindObjectForCode('mozzie')
+    if obj then
+        if SLOT_DATA.options.goal == 3 then
+            obj.MaxCount = SLOT_DATA.options.mozzie_pieces
+        else
+            obj.MaxCount = 1
+        end
+    end
+    update_access()
+    --reset_abilities()
     Tracker.BulkUpdate = false
 end
 
@@ -192,6 +204,7 @@ function onLocation(location_id, location_name)
 end
 
 function onRetrieved(key, value)
+    --print('onRetrieved', key, value)
     if string.find(key, "CurrentArea") then
         updateMapTabFromDataStorage(key, value)
     else
@@ -200,6 +213,7 @@ function onRetrieved(key, value)
 end
 
 function onSetReply(key, value, old_value)
+    --print('onSetReply', key, value, old_value)
     if old_value ~= value then
         if string.find(key, "CurrentArea") then
             updateMapTabFromDataStorage(key, value)
@@ -237,7 +251,7 @@ function updateItemsFromDataStorage(key, value)
     if #split_key ~= 3 then
         return
     end
-    local mapping = DATASTORAGE_ABILITY_MAPPING[split_key[3]]
+    local mapping = DATASTORAGE_ITEM_MAPPING[split_key[3]]
     if not mapping then
         return
     end

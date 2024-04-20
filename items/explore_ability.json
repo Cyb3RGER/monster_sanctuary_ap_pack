@@ -1,0 +1,968 @@
+[
+  {
+    "name": "Ability - Blob Form",
+    "type": "toggle",
+    "codes": "ability-blob_form",
+    "img": "images/items/abilities/ability-blob_form.png"
+  },
+  {
+    "name": "Ability - Bubble Burst",
+    "type": "toggle",
+    "codes": "ability-bubble_burst",
+    "img": "images/items/abilities/ability-bubble_burst.png"
+  },
+  {
+    "name": "Ability - Charging Mount",
+    "type": "toggle",
+    "codes": "ability-charging_mount",
+    "img": "images/items/abilities/ability-charging_mount.png"
+  },
+  {
+    "name": "Ability - Claws",
+    "type": "toggle",
+    "codes": "ability-claws",
+    "img": "images/items/abilities/ability-claws.png"
+  },
+  {
+    "name": "Ability - Corrosive Jabs",
+    "type": "toggle",
+    "codes": "ability-corrosive_jabs",
+    "img": "images/items/abilities/ability-corrosive_jabs.png"
+  },
+  {
+    "name": "Ability - Crush",
+    "type": "toggle",
+    "codes": "ability-crush",
+    "img": "images/items/abilities/ability-crush.png"
+  },
+  {
+    "name": "Ability - Dual Mobility",
+    "type": "toggle",
+    "codes": "ability-dual_mobility",
+    "img": "images/items/abilities/ability-dual_mobility.png"
+  },
+  {
+    "name": "Ability - Fiery Shots",
+    "type": "toggle",
+    "codes": "ability-fiery_shots",
+    "img": "images/items/abilities/ability-fiery_shots.png"
+  },
+  {
+    "name": "Ability - Flying",
+    "type": "toggle",
+    "codes": "ability-flying",
+    "img": "images/items/abilities/ability-flying.png"
+  },
+  {
+    "name": "Ability - Freeze",
+    "type": "toggle",
+    "codes": "ability-freeze",
+    "img": "images/items/abilities/ability-freeze.png"
+  },
+  {
+    "name": "Ability - Ghost Form",
+    "type": "toggle",
+    "codes": "ability-ghost_form",
+    "img": "images/items/abilities/ability-ghost_form.png"
+  },
+  {
+    "name": "Ability - Grapple",
+    "type": "toggle",
+    "codes": "ability-grapple",
+    "img": "images/items/abilities/ability-grapple.png"
+  },
+  {
+    "name": "Ability - Heavy Punch",
+    "type": "toggle",
+    "codes": "ability-heavy_punch",
+    "img": "images/items/abilities/ability-heavy_punch.png"
+  },
+  {
+    "name": "Ability - Ignite",
+    "type": "toggle",
+    "codes": "ability-ignite",
+    "img": "images/items/abilities/ability-ignite.png"
+  },
+  {
+    "name": "Ability - Improved Flying",
+    "type": "toggle",
+    "codes": "ability-improved_flying",
+    "img": "images/items/abilities/ability-improved_flying.png"
+  },
+  {
+    "name": "Ability - Improved Swimming",
+    "type": "toggle",
+    "codes": "ability-improved_swimming",
+    "img": "images/items/abilities/ability-improved_swimming.png"
+  },
+  {
+    "name": "Ability - Jewel Blast",
+    "type": "toggle",
+    "codes": "ability-jewel_blast",
+    "img": "images/items/abilities/ability-jewel_blast.png"
+  },
+  {
+    "name": "Ability - Levitate",
+    "type": "toggle",
+    "codes": "ability-levitate",
+    "img": "images/items/abilities/ability-levitate.png"
+  },
+  {
+    "name": "Ability - Light",
+    "type": "toggle",
+    "codes": "ability-light",
+    "img": "images/items/abilities/ability-light.png"
+  },
+  {
+    "name": "Ability - Light Crush",
+    "type": "toggle",
+    "codes": "ability-light_crush",
+    "img": "images/items/abilities/ability-light_crush.png"
+  },
+  {
+    "name": "Ability - Lightning Bolt",
+    "type": "toggle",
+    "codes": "ability-lightning_bolt",
+    "img": "images/items/abilities/ability-lightning_bolt.png"
+  },
+  {
+    "name": "Ability - Lofty Mount",
+    "type": "toggle",
+    "codes": "ability-lofty_mount",
+    "img": "images/items/abilities/ability-lofty_mount.png"
+  },
+  {
+    "name": "Ability - Minnesang",
+    "type": "toggle",
+    "codes": "ability-minnesang",
+    "img": "images/items/abilities/ability-minnesang.png"
+  },
+  {
+    "name": "Ability - Morph Ball",
+    "type": "toggle",
+    "codes": "ability-morph_ball",
+    "img": "images/items/abilities/ability-morph_ball.png"
+  },
+  {
+    "name": "Ability - Mount",
+    "type": "toggle",
+    "codes": "ability-mount",
+    "img": "images/items/abilities/ability-mount.png"
+  },
+  {
+    "name": "Ability - Secret Vision",
+    "type": "toggle",
+    "codes": "ability-secret_vision",
+    "img": "images/items/abilities/ability-secret_vision.png"
+  },
+  {
+    "name": "Ability - Shock Freeze",
+    "type": "toggle",
+    "codes": "ability-shock_freeze",
+    "img": "images/items/abilities/ability-shock_freeze.png"
+  },
+  {
+    "name": "Ability - Slash",
+    "type": "toggle",
+    "codes": "ability-slash",
+    "img": "images/items/abilities/ability-slash.png"
+  },
+  {
+    "name": "Ability - Slime Shot",
+    "type": "toggle",
+    "codes": "ability-slime_shot",
+    "img": "images/items/abilities/ability-slime_shot.png"
+  },
+  {
+    "name": "Ability - Snowball Toss",
+    "type": "toggle",
+    "codes": "ability-snowball_toss",
+    "img": "images/items/abilities/ability-snowball_toss.png"
+  },
+  {
+    "name": "Ability - Sonar",
+    "type": "toggle",
+    "codes": "ability-sonar",
+    "img": "images/items/abilities/ability-sonar.png"
+  },
+  {
+    "name": "Ability - Sonar Mount",
+    "type": "toggle",
+    "codes": "ability-sonar_mount",
+    "img": "images/items/abilities/ability-sonar_mount.png"
+  },
+  {
+    "name": "Ability - Spore Shroud",
+    "type": "toggle",
+    "codes": "ability-spore_shroud",
+    "img": "images/items/abilities/ability-spore_shroud.png"
+  },
+  {
+    "name": "Ability - Summon Big Rock",
+    "type": "toggle",
+    "codes": "ability-summon_big_rock",
+    "img": "images/items/abilities/ability-summon_big_rock.png"
+  },
+  {
+    "name": "Ability - Summon Mushroom",
+    "type": "toggle",
+    "codes": "ability-summon_mushroom",
+    "img": "images/items/abilities/ability-summon_mushroom.png"
+  },
+  {
+    "name": "Ability - Summon Rock",
+    "type": "toggle",
+    "codes": "ability-summon_rock",
+    "img": "images/items/abilities/ability-summon_rock.png"
+  },
+  {
+    "name": "Ability - Swimming",
+    "type": "toggle",
+    "codes": "ability-swimming",
+    "img": "images/items/abilities/ability-swimming.png"
+  },
+  {
+    "name": "Ability - Tackle",
+    "type": "toggle",
+    "codes": "ability-tackle",
+    "img": "images/items/abilities/ability-tackle.png"
+  },
+  {
+    "name": "Ability - Tar Mount",
+    "type": "toggle",
+    "codes": "ability-tar_mount",
+    "img": "images/items/abilities/ability-tar_mount.png"
+  },
+  {
+    "name": "Ability - Toxic Freeze",
+    "type": "toggle",
+    "codes": "ability-toxic_freeze",
+    "img": "images/items/abilities/ability-toxic_freeze.png"
+  },
+  {
+    "name": "Ability - Toxic Slam",
+    "type": "toggle",
+    "codes": "ability-toxic_slam",
+    "img": "images/items/abilities/ability-toxic_slam.png"
+  },
+  {
+    "name": "Spectral Flame",
+    "type": "toggle",
+    "codes": "spectral_flame",
+    "img": "images/items/abilities/spectral_flame.png"
+  },
+  {
+    "name": "Slime Snack",
+    "type": "toggle",
+    "codes": "slime_snack",
+    "img": "images/items/abilities/slime_snack.png"
+  },
+  {
+    "name": "Insect Pheromones",
+    "type": "toggle",
+    "codes": "insect_pheromones",
+    "img": "images/items/abilities/insect_pheromones.png"
+  },
+  {
+    "name": "Monster Treat",
+    "type": "toggle",
+    "codes": "monster_treat",
+    "img": "images/items/abilities/monster_treat.png"
+  },
+  {
+    "name": "Repair Kit",
+    "type": "toggle",
+    "codes": "repair_kit",
+    "img": "images/items/abilities/repair_kit.png"
+  },
+  {
+    "name": "Ancient Encyclopedia",
+    "type": "toggle",
+    "codes": "ancient_encyclopedia",
+    "img": "images/items/abilities/ancient_encyclopedia.png"
+  },
+  {
+    "name": "Training Dummy",
+    "type": "toggle",
+    "codes": "training_dummy",
+    "img": "images/items/abilities/training_dummy.png"
+  },
+  {
+    "name": "Spellbook",
+    "type": "toggle",
+    "codes": "spellbook",
+    "img": "images/items/abilities/spellbook.png"
+  },
+  {
+    "name": "Goblin Charm",
+    "type": "toggle",
+    "codes": "goblin_charm",
+    "img": "images/items/abilities/goblin_charm.png"
+  },
+  {
+    "name": "Fishing Lure",
+    "type": "toggle",
+    "codes": "fishing_lure",
+    "img": "images/items/abilities/fishing_lure.png"
+  },
+  {
+    "name": "Dragon Orb",
+    "type": "toggle",
+    "codes": "dragon_orb",
+    "img": "images/items/abilities/dragon_orb.png"
+  },
+  {
+    "name": "Power Suit",
+    "type": "toggle",
+    "codes": "power_suit",
+    "img": "images/items/abilities/power_suit.png"
+  },
+  {
+    "name": "Spirit Charm",
+    "type": "toggle",
+    "codes": "spirit_charm",
+    "img": "images/items/abilities/spirit_charm.png"
+  },
+  {
+    "name": "Green Thumb",
+    "type": "toggle",
+    "codes": "green_thumb",
+    "img": "images/items/abilities/green_thumb.png"
+  },
+  {
+    "name": "Bird Seed",
+    "type": "toggle",
+    "codes": "bird_seed",
+    "img": "images/items/abilities/bird_seed.png"
+  },
+  {
+    "name": "Spectral Flame (Wolf)",
+    "type": "toggle",
+    "codes": "spectral_flame_wolf",
+    "img": "images/items/abilities/spectral_flame_wolf.png"
+  },
+  {
+    "name": "Spectral Flame (Toad)",
+    "type": "toggle",
+    "codes": "spectral_flame_toad",
+    "img": "images/items/abilities/spectral_flame_toad.png"
+  },
+  {
+    "name": "Spectral Flame (Eagle)",
+    "type": "toggle",
+    "codes": "spectral_flame_eagle",
+    "img": "images/items/abilities/spectral_flame_eagle.png"
+  },
+  {
+    "name": "Spectral Flame (Lion)",
+    "type": "toggle",
+    "codes": "spectral_flame_lion",
+    "img": "images/items/abilities/spectral_flame_lion.png"
+  },
+  {
+    "name": "Slime Snack",
+    "type": "toggle",
+    "codes": "slime_snack",
+    "img": "images/items/abilities/slime_snack.png"
+  },
+  {
+    "name": "Magmamoth Pheromones",
+    "type": "toggle",
+    "codes": "magmamoth_pheromones",
+    "img": "images/items/abilities/magmamoth_pheromones.png"
+  },
+  {
+    "name": "Pet Rock",
+    "type": "toggle",
+    "codes": "pet_rock",
+    "img": "images/items/abilities/pet_rock.png"
+  },
+  {
+    "name": "Vaero Harness",
+    "type": "toggle",
+    "codes": "vaero_harness",
+    "img": "images/items/abilities/vaero_harness.png"
+  },
+  {
+    "name": "Catzerker's Blade",
+    "type": "toggle",
+    "codes": "catzerkers_blade",
+    "img": "images/items/abilities/catzerkers_blade.png"
+  },
+  {
+    "name": "Yowie Treat",
+    "type": "toggle",
+    "codes": "yowie_treat",
+    "img": "images/items/abilities/yowie_treat.png"
+  },
+  {
+    "name": "Pneumatic Piston",
+    "type": "toggle",
+    "codes": "pneumatic_piston",
+    "img": "images/items/abilities/pneumatic_piston.png"
+  },
+  {
+    "name": "Small Reliquary",
+    "type": "toggle",
+    "codes": "small_reliquary",
+    "img": "images/items/abilities/small_reliquary.png"
+  },
+  {
+    "name": "Alien Shard",
+    "type": "toggle",
+    "codes": "alien_shard",
+    "img": "images/items/abilities/alien_shard.png"
+  },
+  {
+    "name": "Tengu Mask",
+    "type": "toggle",
+    "codes": "tengu_mask",
+    "img": "images/items/abilities/tengu_mask.png"
+  },
+  {
+    "name": "Odd Mushroom",
+    "type": "toggle",
+    "codes": "odd_mushroom",
+    "img": "images/items/abilities/odd_mushroom.png"
+  },
+  {
+    "name": "Frigid Wisp",
+    "type": "toggle",
+    "codes": "frigid_wisp",
+    "img": "images/items/abilities/frigid_wisp.png"
+  },
+  {
+    "name": "Double-Headed Axe",
+    "type": "toggle",
+    "codes": "double-headed_axe",
+    "img": "images/items/abilities/double-headed_axe.png"
+  },
+  {
+    "name": "Black Flame",
+    "type": "toggle",
+    "codes": "black_flame",
+    "img": "images/items/abilities/black_flame.png"
+  },
+  {
+    "name": "Knightly Shield",
+    "type": "toggle",
+    "codes": "knightly_shield",
+    "img": "images/items/abilities/knightly_shield.png"
+  },
+  {
+    "name": "Aqueous Humor",
+    "type": "toggle",
+    "codes": "aqueous_humor",
+    "img": "images/items/abilities/aqueous_humor.png"
+  },
+  {
+    "name": "Sonar Detector",
+    "type": "toggle",
+    "codes": "sonar_detector",
+    "img": "images/items/abilities/sonar_detector.png"
+  },
+  {
+    "name": "Toxic Sludge",
+    "type": "toggle",
+    "codes": "toxic_sludge",
+    "img": "images/items/abilities/toxic_sludge.png"
+  },
+  {
+    "name": "Lightning Rod",
+    "type": "toggle",
+    "codes": "lightning_rod",
+    "img": "images/items/abilities/lightning_rod.png"
+  },
+  {
+    "name": "Oaken Mask",
+    "type": "toggle",
+    "codes": "oaken_mask",
+    "img": "images/items/abilities/oaken_mask.png"
+  },
+  {
+    "name": "Digging Claws",
+    "type": "toggle",
+    "codes": "digging_claws",
+    "img": "images/items/abilities/digging_claws.png"
+  },
+  {
+    "name": "Glowfly Lantern",
+    "type": "toggle",
+    "codes": "glowfly_lantern",
+    "img": "images/items/abilities/glowfly_lantern.png"
+  },
+  {
+    "name": "Goblin Club",
+    "type": "toggle",
+    "codes": "goblin_club",
+    "img": "images/items/abilities/goblin_club.png"
+  },
+  {
+    "name": "Goblin Bow",
+    "type": "toggle",
+    "codes": "goblin_bow",
+    "img": "images/items/abilities/goblin_bow.png"
+  },
+  {
+    "name": "Goblin Staff",
+    "type": "toggle",
+    "codes": "goblin_staff",
+    "img": "images/items/abilities/goblin_staff.png"
+  },
+  {
+    "name": "Goblin Crown",
+    "type": "toggle",
+    "codes": "goblin_crown",
+    "img": "images/items/abilities/goblin_crown.png"
+  },
+  {
+    "name": "Prismatic Shard",
+    "type": "toggle",
+    "codes": "prismatic_shard",
+    "img": "images/items/abilities/prismatic_shard.png"
+  },
+  {
+    "name": "Insulated Gloves",
+    "type": "toggle",
+    "codes": "insulated_gloves",
+    "img": "images/items/abilities/insulated_gloves.png"
+  },
+  {
+    "name": "Caraglow Collar",
+    "type": "toggle",
+    "codes": "caraglow_collar",
+    "img": "images/items/abilities/caraglow_collar.png"
+  },
+  {
+    "name": "Aurumtail Saddle",
+    "type": "toggle",
+    "codes": "aurumtail_saddle",
+    "img": "images/items/abilities/aurumtail_saddle.png"
+  },
+  {
+    "name": "Giant Snowball",
+    "type": "toggle",
+    "codes": "giant_snowball",
+    "img": "images/items/abilities/giant_snowball.png"
+  },
+  {
+    "name": "Mogwai Rulebook",
+    "type": "toggle",
+    "codes": "mogwai_rulebook",
+    "img": "images/items/abilities/mogwai_rulebook.png"
+  },
+  {
+    "name": "Sign Language",
+    "type": "toggle",
+    "codes": "sign_language",
+    "img": "images/items/abilities/sign_language.png"
+  },
+  {
+    "name": "Akhlut Saddle",
+    "type": "toggle",
+    "codes": "akhlut_saddle",
+    "img": "images/items/abilities/akhlut_saddle.png"
+  },
+  {
+    "name": "Blade Widow Pheromones",
+    "type": "toggle",
+    "codes": "blade_widow_pheromones",
+    "img": "images/items/abilities/blade_widow_pheromones.png"
+  },
+  {
+    "name": "River Clay",
+    "type": "toggle",
+    "codes": "river_clay",
+    "img": "images/items/abilities/river_clay.png"
+  },
+  {
+    "name": "Snake Stick",
+    "type": "toggle",
+    "codes": "snake_stick",
+    "img": "images/items/abilities/snake_stick.png"
+  },
+  {
+    "name": "Kame Chi",
+    "type": "toggle",
+    "codes": "kame_chi",
+    "img": "images/items/abilities/kame_chi.png"
+  },
+  {
+    "name": "Quick Wits",
+    "type": "toggle",
+    "codes": "quick_wits",
+    "img": "images/items/abilities/quick_wits.png"
+  },
+  {
+    "name": "Flaming Spear",
+    "type": "toggle",
+    "codes": "flaming_spear",
+    "img": "images/items/abilities/flaming_spear.png"
+  },
+  {
+    "name": "Qilin Saddle",
+    "type": "toggle",
+    "codes": "qilin_saddle",
+    "img": "images/items/abilities/qilin_saddle.png"
+  },
+  {
+    "name": "Koi Lure",
+    "type": "toggle",
+    "codes": "koi_lure",
+    "img": "images/items/abilities/koi_lure.png"
+  },
+  {
+    "name": "Magic Bell",
+    "type": "toggle",
+    "codes": "magic_bell",
+    "img": "images/items/abilities/magic_bell.png"
+  },
+  {
+    "name": "Smoke Pipe",
+    "type": "toggle",
+    "codes": "smoke_pipe",
+    "img": "images/items/abilities/smoke_pipe.png"
+  },
+  {
+    "name": "Dodo Saddle",
+    "type": "toggle",
+    "codes": "dodo_saddle",
+    "img": "images/items/abilities/dodo_saddle.png"
+  },
+  {
+    "name": "Kongamato Harness",
+    "type": "toggle",
+    "codes": "kongamato_harness",
+    "img": "images/items/abilities/kongamato_harness.png"
+  },
+  {
+    "name": "Ucan Lure",
+    "type": "toggle",
+    "codes": "ucan_lure",
+    "img": "images/items/abilities/ucan_lure.png"
+  },
+  {
+    "name": "Brawlish Lure",
+    "type": "toggle",
+    "codes": "brawlish_lure",
+    "img": "images/items/abilities/brawlish_lure.png"
+  },
+  {
+    "name": "Thornish Lure",
+    "type": "toggle",
+    "codes": "thornish_lure",
+    "img": "images/items/abilities/thornish_lure.png"
+  },
+  {
+    "name": "Nautilid Lure",
+    "type": "toggle",
+    "codes": "nautilid_lure",
+    "img": "images/items/abilities/nautilid_lure.png"
+  },
+  {
+    "name": "Silvaero Harness",
+    "type": "toggle",
+    "codes": "silvaero_harness",
+    "img": "images/items/abilities/silvaero_harness.png"
+  },
+  {
+    "name": "Elderjel Lure",
+    "type": "toggle",
+    "codes": "elderjel_lure",
+    "img": "images/items/abilities/elderjel_lure.png"
+  },
+  {
+    "name": "Mana Crystal",
+    "type": "toggle",
+    "codes": "mana_crystal",
+    "img": "images/items/abilities/mana_crystal.png"
+  },
+  {
+    "name": "Mining Helmet",
+    "type": "toggle",
+    "codes": "mining_helmet",
+    "img": "images/items/abilities/mining_helmet.png"
+  },
+  {
+    "name": "Sledgehammer",
+    "type": "toggle",
+    "codes": "sledgehammer",
+    "img": "images/items/abilities/sledgehammer.png"
+  },
+  {
+    "name": "Heat-Proof Gloves",
+    "type": "toggle",
+    "codes": "heat-proof_gloves",
+    "img": "images/items/abilities/heat-proof_gloves.png"
+  },
+  {
+    "name": "Draconov Harness",
+    "type": "toggle",
+    "codes": "draconov_harness",
+    "img": "images/items/abilities/draconov_harness.png"
+  },
+  {
+    "name": "Dracogran Harness",
+    "type": "toggle",
+    "codes": "dracogran_harness",
+    "img": "images/items/abilities/dracogran_harness.png"
+  },
+  {
+    "name": "Asura's Girdle",
+    "type": "toggle",
+    "codes": "asuras_girdle",
+    "img": "images/items/abilities/asuras_girdle.png"
+  },
+  {
+    "name": "Candle Wax",
+    "type": "toggle",
+    "codes": "candle_wax",
+    "img": "images/items/abilities/candle_wax.png"
+  },
+  {
+    "name": "Stolby's Spellbook",
+    "type": "toggle",
+    "codes": "stolbys_spellbook",
+    "img": "images/items/abilities/stolbys_spellbook.png"
+  },
+  {
+    "name": "Ornithopter Harness",
+    "type": "toggle",
+    "codes": "ornithopter_harness",
+    "img": "images/items/abilities/ornithopter_harness.png"
+  },
+  {
+    "name": "Lump of Coal",
+    "type": "toggle",
+    "codes": "lump_of_coal",
+    "img": "images/items/abilities/lump_of_coal.png"
+  },
+  {
+    "name": "Mechanical Lens",
+    "type": "toggle",
+    "codes": "mechanical_lens",
+    "img": "images/items/abilities/mechanical_lens.png"
+  },
+  {
+    "name": "Lockpicks",
+    "type": "toggle",
+    "codes": "lockpicks",
+    "img": "images/items/abilities/lockpicks.png"
+  },
+  {
+    "name": "Pilot's License",
+    "type": "toggle",
+    "codes": "pilots_license",
+    "img": "images/items/abilities/pilots_license.png"
+  },
+  {
+    "name": "Shiny Pebble",
+    "type": "toggle",
+    "codes": "shiny_pebble",
+    "img": "images/items/abilities/shiny_pebble.png"
+  },
+  {
+    "name": "Targoat Horn",
+    "type": "toggle",
+    "codes": "targoat_horn",
+    "img": "images/items/abilities/targoat_horn.png"
+  },
+  {
+    "name": "Dracozul Harness",
+    "type": "toggle",
+    "codes": "dracozul_harness",
+    "img": "images/items/abilities/dracozul_harness.png"
+  },
+  {
+    "name": "Troll Toll",
+    "type": "toggle",
+    "codes": "troll_toll",
+    "img": "images/items/abilities/troll_toll.png"
+  },
+  {
+    "name": "Brutus Treat",
+    "type": "toggle",
+    "codes": "brutus_treat",
+    "img": "images/items/abilities/brutus_treat.png"
+  },
+  {
+    "name": "Pet Boulder",
+    "type": "toggle",
+    "codes": "pet_boulder",
+    "img": "images/items/abilities/pet_boulder.png"
+  },
+  {
+    "name": "Argiope Pheromones",
+    "type": "toggle",
+    "codes": "argiope_pheromones",
+    "img": "images/items/abilities/argiope_pheromones.png"
+  },
+  {
+    "name": "Phylactery",
+    "type": "toggle",
+    "codes": "phylactery",
+    "img": "images/items/abilities/phylactery.png"
+  },
+  {
+    "name": "Moccus Saddle",
+    "type": "toggle",
+    "codes": "moccus_saddle",
+    "img": "images/items/abilities/moccus_saddle.png"
+  },
+  {
+    "name": "Promethean Battery",
+    "type": "toggle",
+    "codes": "promethean_battery",
+    "img": "images/items/abilities/promethean_battery.png"
+  },
+  {
+    "name": "Draconoir Harness",
+    "type": "toggle",
+    "codes": "draconoir_harness",
+    "img": "images/items/abilities/draconoir_harness.png"
+  },
+  {
+    "name": "Spare Outfit",
+    "type": "toggle",
+    "codes": "spare_outfit",
+    "img": "images/items/abilities/spare_outfit.png"
+  },
+  {
+    "name": "Plague Mask",
+    "type": "toggle",
+    "codes": "plague_mask",
+    "img": "images/items/abilities/plague_mask.png"
+  },
+  {
+    "name": "Sutsune's True Name",
+    "type": "toggle",
+    "codes": "sutsunes_true_name",
+    "img": "images/items/abilities/sutsunes_true_name.png"
+  },
+  {
+    "name": "Darnation Pheromones",
+    "type": "toggle",
+    "codes": "darnation_pheromones",
+    "img": "images/items/abilities/darnation_pheromones.png"
+  },
+  {
+    "name": "Thanatos' Scythe",
+    "type": "toggle",
+    "codes": "thanatos_scythe",
+    "img": "images/items/abilities/thanatos_scythe.png"
+  },
+  {
+    "name": "Rainbow Slime Snack",
+    "type": "toggle",
+    "codes": "rainbow_slime_snack",
+    "img": "images/items/abilities/rainbow_slime_snack.png"
+  },
+  {
+    "name": "Power Suit",
+    "type": "toggle",
+    "codes": "power_suit",
+    "img": "images/items/abilities/power_suit.png"
+  },
+  {
+    "name": "Blob Crown",
+    "type": "toggle",
+    "codes": "blob_crown",
+    "img": "images/items/abilities/blob_crown.png"
+  },
+  {
+    "name": "Grapnel Launcher",
+    "type": "toggle",
+    "codes": "grapnel_launcher",
+    "img": "images/items/abilities/grapnel_launcher.png"
+  },
+  {
+    "name": "Vodinoy's Trident",
+    "type": "toggle",
+    "codes": "vodinoys_trident",
+    "img": "images/items/abilities/vodinoys_trident.png"
+  },
+  {
+    "name": "Big Plant Pot",
+    "type": "toggle",
+    "codes": "big_plant_pot",
+    "img": "images/items/abilities/big_plant_pot.png"
+  },
+  {
+    "name": "Gryphonix Saddle",
+    "type": "toggle",
+    "codes": "gryphonix_saddle",
+    "img": "images/items/abilities/gryphonix_saddle.png"
+  },
+  {
+    "name": "Divine Hourglass",
+    "type": "toggle",
+    "codes": "divine_hourglass",
+    "img": "images/items/abilities/divine_hourglass.png"
+  },
+  {
+    "name": "Mad Lord Contract",
+    "type": "toggle",
+    "codes": "mad_lord_contract",
+    "img": "images/items/abilities/mad_lord_contract.png"
+  },
+  {
+    "name": "Nimbus Cloud",
+    "type": "toggle",
+    "codes": "nimbus_cloud",
+    "img": "images/items/abilities/nimbus_cloud.png"
+  },
+  {
+    "name": "Strange Spores",
+    "type": "toggle",
+    "codes": "strange_spores",
+    "img": "images/items/abilities/strange_spores.png"
+  },
+  {
+    "name": "Rampede Saddle",
+    "type": "toggle",
+    "codes": "rampede_saddle",
+    "img": "images/items/abilities/rampede_saddle.png"
+  },
+  {
+    "name": "Rathops Saddle",
+    "type": "toggle",
+    "codes": "rathops_saddle",
+    "img": "images/items/abilities/rathops_saddle.png"
+  },
+  {
+    "name": "Krakaturtle Harness",
+    "type": "toggle",
+    "codes": "krakaturtle_harness",
+    "img": "images/items/abilities/krakaturtle_harness.png"
+  },
+  {
+    "name": "Tar Blob Saddle",
+    "type": "toggle",
+    "codes": "tar_blob_saddle",
+    "img": "images/items/abilities/tar_blob_saddle.png"
+  },
+  {
+    "name": "Amberlgna Pheromones",
+    "type": "toggle",
+    "codes": "amberlgna_pheromones",
+    "img": "images/items/abilities/amberlgna_pheromones.png"
+  },
+  {
+    "name": "Dracomer Harness",
+    "type": "toggle",
+    "codes": "dracomer_harness",
+    "img": "images/items/abilities/dracomer_harness.png"
+  },
+  {
+    "name": "Terradrile's Lodestone",
+    "type": "toggle",
+    "codes": "terradriles_lodestone",
+    "img": "images/items/abilities/terradriles_lodestone.png"
+  },
+  {
+    "name": "Bard's Lute",
+    "type": "toggle",
+    "codes": "bards_lute",
+    "img": "images/items/abilities/bards_lute.png"
+  }
+]

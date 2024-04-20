@@ -1,0 +1,668 @@
+[
+  {
+    "name": "Eggsanity - Spectral Wolf",
+    "type": "toggle",
+    "codes": "eggsanity_spectral_wolf",
+    "img": "images/items/monsters/spectral_wolf.png"
+  },
+  {
+    "name": "Eggsanity - Spectral Toad",
+    "type": "toggle",
+    "codes": "eggsanity_spectral_toad",
+    "img": "images/items/monsters/spectral_toad.png"
+  },
+  {
+    "name": "Eggsanity - Spectral Eagle",
+    "type": "toggle",
+    "codes": "eggsanity_spectral_eagle",
+    "img": "images/items/monsters/spectral_eagle.png"
+  },
+  {
+    "name": "Eggsanity - Spectral Lion",
+    "type": "toggle",
+    "codes": "eggsanity_spectral_lion",
+    "img": "images/items/monsters/spectral_lion.png"
+  },
+  {
+    "name": "Eggsanity - Blob",
+    "type": "toggle",
+    "codes": "eggsanity_blob",
+    "img": "images/items/monsters/blob.png"
+  },
+  {
+    "name": "Eggsanity - Magmapillar",
+    "type": "toggle",
+    "codes": "eggsanity_magmapillar",
+    "img": "images/items/monsters/magmapillar.png"
+  },
+  {
+    "name": "Eggsanity - Rocky",
+    "type": "toggle",
+    "codes": "eggsanity_rocky",
+    "img": "images/items/monsters/rocky.png"
+  },
+  {
+    "name": "Eggsanity - Vaero",
+    "type": "toggle",
+    "codes": "eggsanity_vaero",
+    "img": "images/items/monsters/vaero.png"
+  },
+  {
+    "name": "Eggsanity - Catzerker",
+    "type": "toggle",
+    "codes": "eggsanity_catzerker",
+    "img": "images/items/monsters/catzerker.png"
+  },
+  {
+    "name": "Eggsanity - Yowie",
+    "type": "toggle",
+    "codes": "eggsanity_yowie",
+    "img": "images/items/monsters/yowie.png"
+  },
+  {
+    "name": "Eggsanity - Steam Golem",
+    "type": "toggle",
+    "codes": "eggsanity_steam_golem",
+    "img": "images/items/monsters/steam_golem.png"
+  },
+  {
+    "name": "Eggsanity - Monk",
+    "type": "toggle",
+    "codes": "eggsanity_monk",
+    "img": "images/items/monsters/monk.png"
+  },
+  {
+    "name": "Eggsanity - Grummy",
+    "type": "toggle",
+    "codes": "eggsanity_grummy",
+    "img": "images/items/monsters/grummy.png"
+  },
+  {
+    "name": "Eggsanity - Tengu",
+    "type": "toggle",
+    "codes": "eggsanity_tengu",
+    "img": "images/items/monsters/tengu.png"
+  },
+  {
+    "name": "Eggsanity - Fungi",
+    "type": "toggle",
+    "codes": "eggsanity_fungi",
+    "img": "images/items/monsters/fungi.png"
+  },
+  {
+    "name": "Eggsanity - Frosty",
+    "type": "toggle",
+    "codes": "eggsanity_frosty",
+    "img": "images/items/monsters/frosty.png"
+  },
+  {
+    "name": "Eggsanity - Minitaur",
+    "type": "toggle",
+    "codes": "eggsanity_minitaur",
+    "img": "images/items/monsters/minitaur.png"
+  },
+  {
+    "name": "Eggsanity - Specter",
+    "type": "toggle",
+    "codes": "eggsanity_specter",
+    "img": "images/items/monsters/specter.png"
+  },
+  {
+    "name": "Eggsanity - Crackle Knight",
+    "type": "toggle",
+    "codes": "eggsanity_crackle_knight",
+    "img": "images/items/monsters/crackle_knight.png"
+  },
+  {
+    "name": "Eggsanity - G'rulu",
+    "type": "toggle",
+    "codes": "eggsanity_grulu",
+    "img": "images/items/monsters/grulu.png"
+  },
+  {
+    "name": "Eggsanity - Mad Eye",
+    "type": "toggle",
+    "codes": "eggsanity_mad_eye",
+    "img": "images/items/monsters/mad_eye.png"
+  },
+  {
+    "name": "Eggsanity - Nightwing",
+    "type": "toggle",
+    "codes": "eggsanity_nightwing",
+    "img": "images/items/monsters/nightwing.png"
+  },
+  {
+    "name": "Eggsanity - Toxiquus",
+    "type": "toggle",
+    "codes": "eggsanity_toxiquus",
+    "img": "images/items/monsters/toxiquus.png"
+  },
+  {
+    "name": "Eggsanity - Beetloid",
+    "type": "toggle",
+    "codes": "eggsanity_beetloid",
+    "img": "images/items/monsters/beetloid.png"
+  },
+  {
+    "name": "Eggsanity - Druid Oak",
+    "type": "toggle",
+    "codes": "eggsanity_druid_oak",
+    "img": "images/items/monsters/druid_oak.png"
+  },
+  {
+    "name": "Eggsanity - Magmamoth",
+    "type": "toggle",
+    "codes": "eggsanity_magmamoth",
+    "img": "images/items/monsters/magmamoth.png"
+  },
+  {
+    "name": "Eggsanity - Molebear",
+    "type": "toggle",
+    "codes": "eggsanity_molebear",
+    "img": "images/items/monsters/molebear.png"
+  },
+  {
+    "name": "Eggsanity - Glowfly",
+    "type": "toggle",
+    "codes": "eggsanity_glowfly",
+    "img": "images/items/monsters/glowfly.png"
+  },
+  {
+    "name": "Eggsanity - Goblin Brute",
+    "type": "toggle",
+    "codes": "eggsanity_goblin_brute",
+    "img": "images/items/monsters/goblin_brute.png"
+  },
+  {
+    "name": "Eggsanity - Goblin Hood",
+    "type": "toggle",
+    "codes": "eggsanity_goblin_hood",
+    "img": "images/items/monsters/goblin_hood.png"
+  },
+  {
+    "name": "Eggsanity - Goblin Warlock",
+    "type": "toggle",
+    "codes": "eggsanity_goblin_warlock",
+    "img": "images/items/monsters/goblin_warlock.png"
+  },
+  {
+    "name": "Eggsanity - Goblin King",
+    "type": "toggle",
+    "codes": "eggsanity_goblin_king",
+    "img": "images/items/monsters/goblin_king.png"
+  },
+  {
+    "name": "Eggsanity - Raduga",
+    "type": "toggle",
+    "codes": "eggsanity_raduga",
+    "img": "images/items/monsters/raduga.png"
+  },
+  {
+    "name": "Eggsanity - Ice Blob",
+    "type": "toggle",
+    "codes": "eggsanity_ice_blob",
+    "img": "images/items/monsters/ice_blob.png"
+  },
+  {
+    "name": "Eggsanity - Caraglow",
+    "type": "toggle",
+    "codes": "eggsanity_caraglow",
+    "img": "images/items/monsters/caraglow.png"
+  },
+  {
+    "name": "Eggsanity - Aurumtail",
+    "type": "toggle",
+    "codes": "eggsanity_aurumtail",
+    "img": "images/items/monsters/aurumtail.png"
+  },
+  {
+    "name": "Eggsanity - Megataur",
+    "type": "toggle",
+    "codes": "eggsanity_megataur",
+    "img": "images/items/monsters/megataur.png"
+  },
+  {
+    "name": "Eggsanity - Mogwai",
+    "type": "toggle",
+    "codes": "eggsanity_mogwai",
+    "img": "images/items/monsters/mogwai.png"
+  },
+  {
+    "name": "Eggsanity - Crystal Snail",
+    "type": "toggle",
+    "codes": "eggsanity_crystal_snail",
+    "img": "images/items/monsters/crystal_snail.png"
+  },
+  {
+    "name": "Eggsanity - Akhlut",
+    "type": "toggle",
+    "codes": "eggsanity_akhlut",
+    "img": "images/items/monsters/akhlut.png"
+  },
+  {
+    "name": "Eggsanity - Blade Widow",
+    "type": "toggle",
+    "codes": "eggsanity_blade_widow",
+    "img": "images/items/monsters/blade_widow.png"
+  },
+  {
+    "name": "Eggsanity - Ninki",
+    "type": "toggle",
+    "codes": "eggsanity_ninki",
+    "img": "images/items/monsters/ninki.png"
+  },
+  {
+    "name": "Eggsanity - Ninki Nanka",
+    "type": "toggle",
+    "codes": "eggsanity_ninki_nanka",
+    "img": "images/items/monsters/ninki_nanka.png"
+  },
+  {
+    "name": "Eggsanity - Vasuki",
+    "type": "toggle",
+    "codes": "eggsanity_vasuki",
+    "img": "images/items/monsters/vasuki.png"
+  },
+  {
+    "name": "Eggsanity - Kame",
+    "type": "toggle",
+    "codes": "eggsanity_kame",
+    "img": "images/items/monsters/kame.png"
+  },
+  {
+    "name": "Eggsanity - Sycophantom",
+    "type": "toggle",
+    "codes": "eggsanity_sycophantom",
+    "img": "images/items/monsters/sycophantom.png"
+  },
+  {
+    "name": "Eggsanity - Imori",
+    "type": "toggle",
+    "codes": "eggsanity_imori",
+    "img": "images/items/monsters/imori.png"
+  },
+  {
+    "name": "Eggsanity - Qilin",
+    "type": "toggle",
+    "codes": "eggsanity_qilin",
+    "img": "images/items/monsters/qilin.png"
+  },
+  {
+    "name": "Eggsanity - Sizzle Knight",
+    "type": "toggle",
+    "codes": "eggsanity_sizzle_knight",
+    "img": "images/items/monsters/sizzle_knight.png"
+  },
+  {
+    "name": "Eggsanity - Koi",
+    "type": "toggle",
+    "codes": "eggsanity_koi",
+    "img": "images/items/monsters/koi.png"
+  },
+  {
+    "name": "Eggsanity - Tanuki",
+    "type": "toggle",
+    "codes": "eggsanity_tanuki",
+    "img": "images/items/monsters/tanuki.png"
+  },
+  {
+    "name": "Eggsanity - Kanko",
+    "type": "toggle",
+    "codes": "eggsanity_kanko",
+    "img": "images/items/monsters/kanko.png"
+  },
+  {
+    "name": "Eggsanity - Dodo",
+    "type": "toggle",
+    "codes": "eggsanity_dodo",
+    "img": "images/items/monsters/dodo.png"
+  },
+  {
+    "name": "Eggsanity - Kongamato",
+    "type": "toggle",
+    "codes": "eggsanity_kongamato",
+    "img": "images/items/monsters/kongamato.png"
+  },
+  {
+    "name": "Eggsanity - Ucan",
+    "type": "toggle",
+    "codes": "eggsanity_ucan",
+    "img": "images/items/monsters/ucan.png"
+  },
+  {
+    "name": "Eggsanity - Brawlish",
+    "type": "toggle",
+    "codes": "eggsanity_brawlish",
+    "img": "images/items/monsters/brawlish.png"
+  },
+  {
+    "name": "Eggsanity - Thornish",
+    "type": "toggle",
+    "codes": "eggsanity_thornish",
+    "img": "images/items/monsters/thornish.png"
+  },
+  {
+    "name": "Eggsanity - Nautilid",
+    "type": "toggle",
+    "codes": "eggsanity_nautilid",
+    "img": "images/items/monsters/nautilid.png"
+  },
+  {
+    "name": "Eggsanity - Silvaero",
+    "type": "toggle",
+    "codes": "eggsanity_silvaero",
+    "img": "images/items/monsters/silvaero.png"
+  },
+  {
+    "name": "Eggsanity - Elderjel",
+    "type": "toggle",
+    "codes": "eggsanity_elderjel",
+    "img": "images/items/monsters/elderjel.png"
+  },
+  {
+    "name": "Eggsanity - Manticorb",
+    "type": "toggle",
+    "codes": "eggsanity_manticorb",
+    "img": "images/items/monsters/manticorb.png"
+  },
+  {
+    "name": "Eggsanity - Goblin Miner",
+    "type": "toggle",
+    "codes": "eggsanity_goblin_miner",
+    "img": "images/items/monsters/goblin_miner.png"
+  },
+  {
+    "name": "Eggsanity - Salahammer",
+    "type": "toggle",
+    "codes": "eggsanity_salahammer",
+    "img": "images/items/monsters/salahammer.png"
+  },
+  {
+    "name": "Eggsanity - Lava Blob",
+    "type": "toggle",
+    "codes": "eggsanity_lava_blob",
+    "img": "images/items/monsters/lava_blob.png"
+  },
+  {
+    "name": "Eggsanity - Glowdra",
+    "type": "toggle",
+    "codes": "eggsanity_glowdra",
+    "img": "images/items/monsters/glowdra.png"
+  },
+  {
+    "name": "Eggsanity - Draconov",
+    "type": "toggle",
+    "codes": "eggsanity_draconov",
+    "img": "images/items/monsters/draconov.png"
+  },
+  {
+    "name": "Eggsanity - Dracogran",
+    "type": "toggle",
+    "codes": "eggsanity_dracogran",
+    "img": "images/items/monsters/dracogran.png"
+  },
+  {
+    "name": "Eggsanity - Asura",
+    "type": "toggle",
+    "codes": "eggsanity_asura",
+    "img": "images/items/monsters/asura.png"
+  },
+  {
+    "name": "Eggsanity - Skorch",
+    "type": "toggle",
+    "codes": "eggsanity_skorch",
+    "img": "images/items/monsters/skorch.png"
+  },
+  {
+    "name": "Eggsanity - Stolby",
+    "type": "toggle",
+    "codes": "eggsanity_stolby",
+    "img": "images/items/monsters/stolby.png"
+  },
+  {
+    "name": "Eggsanity - Ornithopter",
+    "type": "toggle",
+    "codes": "eggsanity_ornithopter",
+    "img": "images/items/monsters/ornithopter.png"
+  },
+  {
+    "name": "Eggsanity - Polterofen",
+    "type": "toggle",
+    "codes": "eggsanity_polterofen",
+    "img": "images/items/monsters/polterofen.png"
+  },
+  {
+    "name": "Eggsanity - Oculus",
+    "type": "toggle",
+    "codes": "eggsanity_oculus",
+    "img": "images/items/monsters/oculus.png"
+  },
+  {
+    "name": "Eggsanity - Mimic",
+    "type": "toggle",
+    "codes": "eggsanity_mimic",
+    "img": "images/items/monsters/mimic.png"
+  },
+  {
+    "name": "Eggsanity - Goblin Pilot",
+    "type": "toggle",
+    "codes": "eggsanity_goblin_pilot",
+    "img": "images/items/monsters/goblin_pilot.png"
+  },
+  {
+    "name": "Eggsanity - Shockhopper",
+    "type": "toggle",
+    "codes": "eggsanity_shockhopper",
+    "img": "images/items/monsters/shockhopper.png"
+  },
+  {
+    "name": "Eggsanity - Targoat",
+    "type": "toggle",
+    "codes": "eggsanity_targoat",
+    "img": "images/items/monsters/targoat.png"
+  },
+  {
+    "name": "Eggsanity - Dracozul",
+    "type": "toggle",
+    "codes": "eggsanity_dracozul",
+    "img": "images/items/monsters/dracozul.png"
+  },
+  {
+    "name": "Eggsanity - Troll",
+    "type": "toggle",
+    "codes": "eggsanity_troll",
+    "img": "images/items/monsters/troll.png"
+  },
+  {
+    "name": "Eggsanity - Brutus",
+    "type": "toggle",
+    "codes": "eggsanity_brutus",
+    "img": "images/items/monsters/brutus.png"
+  },
+  {
+    "name": "Eggsanity - Mega Rock",
+    "type": "toggle",
+    "codes": "eggsanity_mega_rock",
+    "img": "images/items/monsters/mega_rock.png"
+  },
+  {
+    "name": "Eggsanity - Argiope",
+    "type": "toggle",
+    "codes": "eggsanity_argiope",
+    "img": "images/items/monsters/argiope.png"
+  },
+  {
+    "name": "Eggsanity - Arachlich",
+    "type": "toggle",
+    "codes": "eggsanity_arachlich",
+    "img": "images/items/monsters/arachlich.png"
+  },
+  {
+    "name": "Eggsanity - Moccus",
+    "type": "toggle",
+    "codes": "eggsanity_moccus",
+    "img": "images/items/monsters/moccus.png"
+  },
+  {
+    "name": "Eggsanity - Promethean",
+    "type": "toggle",
+    "codes": "eggsanity_promethean",
+    "img": "images/items/monsters/promethean.png"
+  },
+  {
+    "name": "Eggsanity - Draconoir",
+    "type": "toggle",
+    "codes": "eggsanity_draconoir",
+    "img": "images/items/monsters/draconoir.png"
+  },
+  {
+    "name": "Eggsanity - Spinner",
+    "type": "toggle",
+    "codes": "eggsanity_spinner",
+    "img": "images/items/monsters/spinner.png"
+  },
+  {
+    "name": "Eggsanity - Plague Egg",
+    "type": "toggle",
+    "codes": "eggsanity_plague_egg",
+    "img": "images/items/monsters/plague_egg.png"
+  },
+  {
+    "name": "Eggsanity - Sutsune",
+    "type": "toggle",
+    "codes": "eggsanity_sutsune",
+    "img": "images/items/monsters/sutsune.png"
+  },
+  {
+    "name": "Eggsanity - Darnation",
+    "type": "toggle",
+    "codes": "eggsanity_darnation",
+    "img": "images/items/monsters/darnation.png"
+  },
+  {
+    "name": "Eggsanity - Thanatos",
+    "type": "toggle",
+    "codes": "eggsanity_thanatos",
+    "img": "images/items/monsters/thanatos.png"
+  },
+  {
+    "name": "Eggsanity - Rainbow Blob",
+    "type": "toggle",
+    "codes": "eggsanity_rainbow_blob",
+    "img": "images/items/monsters/rainbow_blob.png"
+  },
+  {
+    "name": "Eggsanity - Changeling",
+    "type": "toggle",
+    "codes": "eggsanity_changeling",
+    "img": "images/items/monsters/changeling.png"
+  },
+  {
+    "name": "Eggsanity - King Blob",
+    "type": "toggle",
+    "codes": "eggsanity_king_blob",
+    "img": "images/items/monsters/king_blob.png"
+  },
+  {
+    "name": "Eggsanity - Worm",
+    "type": "toggle",
+    "codes": "eggsanity_worm",
+    "img": "images/items/monsters/worm.png"
+  },
+  {
+    "name": "Eggsanity - Vodinoy",
+    "type": "toggle",
+    "codes": "eggsanity_vodinoy",
+    "img": "images/items/monsters/vodinoy.png"
+  },
+  {
+    "name": "Eggsanity - Aazerach",
+    "type": "toggle",
+    "codes": "eggsanity_aazerach",
+    "img": "images/items/monsters/aazerach.png"
+  },
+  {
+    "name": "Eggsanity - Diavola",
+    "type": "toggle",
+    "codes": "eggsanity_diavola",
+    "img": "images/items/monsters/diavola.png"
+  },
+  {
+    "name": "Eggsanity - Gryphonix",
+    "type": "toggle",
+    "codes": "eggsanity_gryphonix",
+    "img": "images/items/monsters/gryphonix.png"
+  },
+  {
+    "name": "Eggsanity - Vertraag",
+    "type": "toggle",
+    "codes": "eggsanity_vertraag",
+    "img": "images/items/monsters/vertraag.png"
+  },
+  {
+    "name": "Eggsanity - Mad Lord",
+    "type": "toggle",
+    "codes": "eggsanity_mad_lord",
+    "img": "images/items/monsters/mad_lord.png"
+  },
+  {
+    "name": "Eggsanity - Ascendant",
+    "type": "toggle",
+    "codes": "eggsanity_ascendant",
+    "img": "images/items/monsters/ascendant.png"
+  },
+  {
+    "name": "Eggsanity - Fumagus",
+    "type": "toggle",
+    "codes": "eggsanity_fumagus",
+    "img": "images/items/monsters/fumagus.png"
+  },
+  {
+    "name": "Eggsanity - Rampede",
+    "type": "toggle",
+    "codes": "eggsanity_rampede",
+    "img": "images/items/monsters/rampede.png"
+  },
+  {
+    "name": "Eggsanity - Rathops",
+    "type": "toggle",
+    "codes": "eggsanity_rathops",
+    "img": "images/items/monsters/rathops.png"
+  },
+  {
+    "name": "Eggsanity - Krakaturtle",
+    "type": "toggle",
+    "codes": "eggsanity_krakaturtle",
+    "img": "images/items/monsters/krakaturtle.png"
+  },
+  {
+    "name": "Eggsanity - Tar Blob",
+    "type": "toggle",
+    "codes": "eggsanity_tar_blob",
+    "img": "images/items/monsters/tar_blob.png"
+  },
+  {
+    "name": "Eggsanity - Amberlgna",
+    "type": "toggle",
+    "codes": "eggsanity_amberlgna",
+    "img": "images/items/monsters/amberlgna.png"
+  },
+  {
+    "name": "Eggsanity - Dracomer",
+    "type": "toggle",
+    "codes": "eggsanity_dracomer",
+    "img": "images/items/monsters/dracomer.png"
+  },
+  {
+    "name": "Eggsanity - Terradrile",
+    "type": "toggle",
+    "codes": "eggsanity_terradrile",
+    "img": "images/items/monsters/terradrile.png"
+  },
+  {
+    "name": "Eggsanity - Bard",
+    "type": "toggle",
+    "codes": "eggsanity_bard",
+    "img": "images/items/monsters/bard.png"
+  }
+]

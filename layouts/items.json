@@ -6,45 +6,59 @@
         "h_alignment": "left",
         "rows": [
             [
-                "fire_orbs",
-                "water_orbs",
-                "lightning_orbs",
-                "earth_orbs",
-                "ice_orbs",
-                "distant_ice_orbs",
-                "distant_fire_orbs",
-                "summon_rock",
-                "summon_mushroom",
-                "summon_big_rock"
+                "fire_orbs_locked",
+                "water_orbs_locked",
+                "lightning_orbs_locked",
+                "earth_orbs_locked",
+                "ice_orbs_locked",
+                "distant_ice_orbs_locked",
+                "fiery_shots_locked",
+                "summon_rock_locked",
+                "summon_mushroom_locked",
+                "summon_big_rock_locked"
             ],
             [
-                "breakable_walls",
-                "impassible_vines",
-                "diamond_blocks",
-                "magic_walls",
-                "magic_vines",
-                "heavy_blocks",
-                "levitate",
-                "grapple",
-                "secret_vision"
+                "breakable_walls_locked",
+                "impassible_vines_locked",
+                "diamond_blocks_locked",
+                "magic_walls_locked",
+                "magic_vines_locked",
+                "heavy_blocks_locked",
+                "levitate_locked",
+                "grapple_locked",
+                "secret_vision_locked"
             ],
             [
-                "narrow_corridors",
-                "flying",
-                "improved_flying",
-                "basic_swimming",
-                "improved_swimming",
-                "dual_mobility",
-                "torches",
-                "dark_rooms"
+                "narrow_corridors_locked",
+                "flying_locked",
+                "improved_flying_locked",
+                "basic_swimming_locked",
+                "improved_swimming_locked",
+                "dual_mobility_locked",
+                "torches_locked",
+                "dark_rooms_locked"
             ],
             [
-                "basic_mount",
-                "sonar_mount",
-                "lofty_mount",
-                "tar_mount",
-                "charging_mount"
+                "basic_mount_locked",
+                "sonar_mount_locked",
+                "lofty_mount_locked",
+                "tar_mount_locked",
+                "charging_mount_locked"
             ]
+        ]
+    },
+    "eggsanity_layout": {
+        "type": "dock",        
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "content": [
+            {
+                "dock": "top",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "type": "layout",
+                "key": "eggsanity_grid"
+            }
         ]
     },
     "key_items_grid": {
@@ -71,7 +85,7 @@
                 "warm_underwear",
                 "sanctuary_token",
                 "runestone_shard",
-                "dodo_egg",
+                "dodo",
                 "raw_hide"
             ],
             [

@@ -1,7 +1,8 @@
 import json
-from PyPopTracker.packs.items import PopTrackerToggleItem, export_items, PopTrackerConsumableItem
+from PyPopTracker.packs.items import PopTrackerToggleItem, export_items, PopTrackerConsumableItem, \
+    PopTrackerToggleBadgedItem
 
-from utils import format_code, count_flags
+from utils import format_code, count_flags, TAB
 
 # ToDo: hardcoded for now
 abilities_compact = [
@@ -14,7 +15,7 @@ abilities_compact = [
     'Earth Orbs',
     'Ice Orbs',
     'Distant Ice Orbs',
-    'Distant Fire Orbs',
+    'Fiery Shots',
     'Summon Rock',
     'Summon Mushroom',
     'Summon Big Rock',
@@ -48,7 +49,7 @@ ability_mapping = {
     'Corrosive Jabs': ['Breakable Walls', 'Water Orbs'],
     'Crush': ['Breakable Walls', 'Diamond Blocks'],
     'Dual Mobility': ['Dual Mobility', 'Flying', 'Improved Flying', 'Basic Swimming', 'Improved Swimming', 'Tar Mount'],
-    'Fiery Shots': ['Fire Orbs', 'Distant Fire Orbs'],
+    'Fiery Shots': ['Fire Orbs', 'Fiery Shots'],
     'Flying': ['Flying'],
     'Freeze': ['Ice Orbs'],
     # 'Ghost Form': [],
@@ -67,7 +68,7 @@ ability_mapping = {
     'Morph Ball': ['Narrow Corridors'],
     'Mount': ['Basic Mount'],
     'Secret Vision': ['Secret Vision'],
-    'Shock Freeze': ['Ice Orbs', 'Lightning Orbs'],
+    'Shock Freeze': ['Ice Orbs', 'Lightning Orbs', 'Distant Ice Orbs'],
     'Slash': ['Breakable Walls', 'Impassible Vines'],
     'Slime Shot': ['Earth Orbs'],
     'Snowball Toss': ['Ice Orbs', 'Distant Ice Orbs'],
@@ -86,7 +87,9 @@ ability_mapping = {
 
 
 def gen_items():
-    datastorage_mapping = {}
+    datastorage_ability_mapping: dict[str, tuple[list[str], str]] = {}
+    datastorage_monster_mapping: dict[str, tuple[list[str], str]] = {}
+    monster_ability_item_data = {}
     flag_counts = count_flags()
     with open('data/items.json', mode='r') as f:
         json_data = json.load(f)
@@ -95,16 +98,19 @@ def gen_items():
     for type_data in json_data:
         item_type = type_data["type"]
         items = []
+        type_classification = type_data.get("classification")
         for item_data in type_data["items"]:
-            is_ability = item_type == "Ability"
+            is_ability = item_type == "Explore Ability"
             is_egg = item_type == "Egg"
-            classification = item_data.get("classification")
+            is_costume = item_type == "Costume"
+            classification = item_data.get("classification") or type_classification
             name = item_data["name"]
-            if is_ability:
-                name = name[len("Ability - "):]
+            # if is_ability:
+            #     if "Ability - " in name:
+            #         name = name[len("Ability - "):]
+            #     name += " Unlock"
             main_code = format_code(name)
-            if classification is None or classification == "filler" or (
-                    is_egg and main_code != 'dodo_egg') or is_ability:
+            if classification is None or classification == "filler" or classification == "trap" or is_costume or is_egg:
                 item_id = item_id + 1
                 continue
             codes = [main_code]
@@ -116,6 +122,8 @@ def gen_items():
             count = item_data.get('count') or 1
             if item_type == "Flag" or item_type == "Rank":
                 count = flag_counts[name] if name in flag_counts else 1
+            if main_code == "mozzie":
+                count = 15
             if is_ability:
                 img = f'images/items/abilities/{main_code}.png'
             else:
@@ -132,38 +140,37 @@ def gen_items():
                 item = PopTrackerConsumableItem(name, codes=', '.join(codes), img=img,
                                                 overlay_font_size=overlay_font_size,
                                                 disabled_img_mods=disabled_img_mods, max_quantity=count)
-            if is_ability:
-                pass
-                # abilities.append(item)
-            else:
-                items.append(item)
-                item_mapping[item_id] = ([main_code], item.type)
+            items.append(item)
+            item_mapping[item_id] = ([main_code], item.type)
             item_id = item_id + 1
         if len(items) > 0:
             export_items(items, out_path=f'../items/{format_code(item_type)}.json')
             print(f'Exported {item_type.lower()} items!')
-    # with open('data/monsters.json', mode='r') as f:
-    #     json_data = json.load(f)
-    # items = []
-    # for monster_data in json_data:
-    #     name = monster_data["Name"]
-    #     main_code = format_code(name)
-    #     codes = [main_code]
-    #     for code in monster_data.get('Groups') or []:
-    #         code = format_code(code)
-    #         codes.append(code)
-    #         if item_id in item_mapping:
-    #             item_mapping[item_id][0].append(code)
-    #         else:
-    #             item_mapping[item_id] = ([code], "toggle")
-    #     img = f'images/items/monsters/{main_code}.png'
-    #     item = PopTrackerToggleItem(name, img=img, codes=', '.join(codes))
-    #     items.append(item)
-    #     item_mapping[item_id] = (codes, item.type)
-    #     item_id = item_id + 1
-    # monsters = items.copy()
-    # export_items(items, out_path=f'../items/monsters.json')
-    # print(f'Exported monsters items!')
+    with open('data/monsters.json', mode='r') as f:
+        json_data = json.load(f)
+    items = []
+    for monster_data in json_data:
+        name = monster_data["Name"]
+        main_code = format_code(name)
+        codes = [main_code]
+        # for code in monster_data.get('Groups') or []:
+        #     code = format_code(code)
+        #     codes.append(code)
+        #     if item_id in item_mapping:
+        #         item_mapping[item_id][0].append(code)
+        #     else:
+        #         item_mapping[item_id] = ([code], "toggle")
+        img = f'images/items/monsters/{main_code}.png'
+        item = PopTrackerToggleItem(name, img=img, codes=', '.join(codes))
+        items.append(item)
+        datastorage_monster_mapping[name] = (codes, item.type)
+        monster_ability_item_data[main_code] = {
+            'SpeciesItem': format_code(monster_data["SpeciesItem"]),
+            'AbilityItem': format_code(monster_data["AbilityItem"]),
+            'TypeItem': format_code(monster_data["TypeItem"]),
+        }
+    export_items(items, out_path=f'../items/monsters.json')
+    print(f'Exported monsters items!')
     items = []
     for ability in abilities_compact:
         main_code = ability.lower().replace(' ', '_')
@@ -190,19 +197,61 @@ def gen_items():
 
         item = PopTrackerToggleItem(ability, img=img, codes=', '.join(codes))
         items.append(item)
+        codes = [code + '_locked' for code in codes]
+        img = f'images/items/abilities/locked.png'
+        item = PopTrackerToggleBadgedItem(ability + ' (Locked)', base_item=main_code, img=img,
+                                          initial_active_state=True, codes=', '.join(codes))
+        items.append(item)
     export_items(items, out_path=f'../items/abilities.json')
     print(f'Exported abilities items!')
     export_item_mapping(item_mapping)
-    for k, v in ability_mapping.items():
-        datastorage_mapping[k] = [[format_code(v2) for v2 in v], 'toggle']
-    export_datastorage_mapping(datastorage_mapping)
     print(f'Exported item mappings!')
+    # for k, v in ability_mapping.items():
+    #     datastorage_ability_mapping[k] = ([format_code(v2) for v2 in v], 'toggle')
+    # export_datastorage_item_mappings(datastorage_ability_mapping | datastorage_monster_mapping)
+    export_datastorage_item_mappings(datastorage_monster_mapping)
+    print(f'Exported datastorage mappings!')
+    export_monster_ability_item_data(monster_ability_item_data)
+    print(f'Exported monster ability item data!')
+
+def export_monster_ability_item_data(monster_ability_item_data):
+    lines = ['MONSTER_ABILITY_ITEM_DATA = {']
+    for i, (k, v) in enumerate(monster_ability_item_data.items()):
+        line = f'{TAB}["{k}"] = {{ '
+        for j, (k2, v2) in enumerate(v.items()):
+            line += f'{k2} = "{v2}"'
+            if j != len(v)-1:
+                line += ', '
+        line += f' }}'
+        if i != len(monster_ability_item_data) - 1:
+            line += ','
+        lines.append(line)
+    lines.append('}')
+
+    with open('../scripts/logic/monster_ability_item_data.lua', mode='w') as f:
+        f.write('\n'.join(lines))
 
 
-def export_datastorage_mapping(datastorage_mapping: dict[str, list[str]]):
-    lines = ['DATASTORAGE_MAPPING = {']
+def export_datastorage_item_mappings(datastorage_mapping: dict[str, tuple[list[str], str]]):
+    lines = ['DATASTORAGE_ITEM_MAPPING = {']
     for k, v in datastorage_mapping.items():
-        line = f'\t["{k}"] = {{{{'
+        line = f'{TAB}["{k}"] = {{{{'
+        for i in v[0]:
+            line += f'"{i}"'
+            if i != v[0][len(v[0]) - 1]:
+                line += ', '
+        line += f'}}, "{v[1]}"}},'
+        lines.append(line)
+    lines.append('}')
+
+    with open('../scripts/autotracking/datastorage_mapping.lua', mode='w') as f:
+        f.write('\n'.join(lines))
+
+
+def export_datastorage_ability_mapping(datastorage_ability_mapping: dict[str, list[str]]):
+    lines = ['DATASTORAGE_ABILITY_MAPPING  = {']
+    for k, v in datastorage_ability_mapping.items():
+        line = f'{TAB}["{k}"] = {{{{'
         for i in v[0]:
             line += f'"{i}"'
             if i != v[0][len(v[0]) - 1]:
@@ -218,7 +267,7 @@ def export_datastorage_mapping(datastorage_mapping: dict[str, list[str]]):
 def export_item_mapping(ids_for_items: dict[int, (list[str], str)]):
     lines = ['ITEM_MAPPING = {']
     for k, v in ids_for_items.items():
-        line = f'\t[{k}] = {{{{'
+        line = f'{TAB}[{k}] = {{{{'
         for i in v[0]:
             line += f'"{i}"'
             if i != v[0][len(v[0]) - 1]:

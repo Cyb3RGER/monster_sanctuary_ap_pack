@@ -160,6 +160,15 @@
                         "forgotten_world"
                     ]
                 }
+            },
+            {
+                "title": "Eggsanity",
+                "content": {
+                    "h_alignment": "center",
+                    "v_alignment": "center",
+                    "type": "layout",
+                    "key": "eggsanity_layout"
+                }
             }
         ]
     }

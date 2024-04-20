@@ -6,10 +6,26 @@
     "img": "images/items/abilities/breakable_walls.png"
   },
   {
+    "name": "Breakable Walls (Locked)",
+    "type": "toggle_badged",
+    "codes": "breakable_walls_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "breakable_walls",
+    "initial_active_state": true
+  },
+  {
     "name": "Impassible Vines",
     "type": "toggle",
     "codes": "impassible_vines",
     "img": "images/items/abilities/impassible_vines.png"
+  },
+  {
+    "name": "Impassible Vines (Locked)",
+    "type": "toggle_badged",
+    "codes": "impassible_vines_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "impassible_vines",
+    "initial_active_state": true
   },
   {
     "name": "Diamond Blocks",
@@ -18,10 +34,26 @@
     "img": "images/items/abilities/diamond_blocks.png"
   },
   {
+    "name": "Diamond Blocks (Locked)",
+    "type": "toggle_badged",
+    "codes": "diamond_blocks_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "diamond_blocks",
+    "initial_active_state": true
+  },
+  {
     "name": "Fire Orbs",
     "type": "toggle",
     "codes": "fire_orbs",
     "img": "images/items/abilities/fire_orbs.png"
+  },
+  {
+    "name": "Fire Orbs (Locked)",
+    "type": "toggle_badged",
+    "codes": "fire_orbs_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "fire_orbs",
+    "initial_active_state": true
   },
   {
     "name": "Water Orbs",
@@ -30,10 +62,26 @@
     "img": "images/items/abilities/water_orbs.png"
   },
   {
+    "name": "Water Orbs (Locked)",
+    "type": "toggle_badged",
+    "codes": "water_orbs_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "water_orbs",
+    "initial_active_state": true
+  },
+  {
     "name": "Lightning Orbs",
     "type": "toggle",
     "codes": "lightning_orbs",
     "img": "images/items/abilities/lightning_orbs.png"
+  },
+  {
+    "name": "Lightning Orbs (Locked)",
+    "type": "toggle_badged",
+    "codes": "lightning_orbs_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "lightning_orbs",
+    "initial_active_state": true
   },
   {
     "name": "Earth Orbs",
@@ -42,10 +90,26 @@
     "img": "images/items/abilities/earth_orbs.png"
   },
   {
+    "name": "Earth Orbs (Locked)",
+    "type": "toggle_badged",
+    "codes": "earth_orbs_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "earth_orbs",
+    "initial_active_state": true
+  },
+  {
     "name": "Ice Orbs",
     "type": "toggle",
     "codes": "ice_orbs",
     "img": "images/items/abilities/ice_orbs.png"
+  },
+  {
+    "name": "Ice Orbs (Locked)",
+    "type": "toggle_badged",
+    "codes": "ice_orbs_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "ice_orbs",
+    "initial_active_state": true
   },
   {
     "name": "Distant Ice Orbs",
@@ -54,10 +118,26 @@
     "img": "images/items/abilities/distant_ice_orbs.png"
   },
   {
-    "name": "Distant Fire Orbs",
+    "name": "Distant Ice Orbs (Locked)",
+    "type": "toggle_badged",
+    "codes": "distant_ice_orbs_locked, ice_orbs_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "distant_ice_orbs",
+    "initial_active_state": true
+  },
+  {
+    "name": "Fiery Shots",
     "type": "toggle",
-    "codes": "distant_fire_orbs, fire_orbs, fiery_shots",
-    "img": "images/items/abilities/distant_fire_orbs.png"
+    "codes": "fiery_shots",
+    "img": "images/items/abilities/fiery_shots.png"
+  },
+  {
+    "name": "Fiery Shots (Locked)",
+    "type": "toggle_badged",
+    "codes": "fiery_shots_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "fiery_shots",
+    "initial_active_state": true
   },
   {
     "name": "Summon Rock",
@@ -66,10 +146,26 @@
     "img": "images/items/abilities/summon_rock.png"
   },
   {
+    "name": "Summon Rock (Locked)",
+    "type": "toggle_badged",
+    "codes": "summon_rock_locked, ground_switches_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "summon_rock",
+    "initial_active_state": true
+  },
+  {
     "name": "Summon Mushroom",
     "type": "toggle",
     "codes": "summon_mushroom, ground_switches",
     "img": "images/items/abilities/summon_mushroom.png"
+  },
+  {
+    "name": "Summon Mushroom (Locked)",
+    "type": "toggle_badged",
+    "codes": "summon_mushroom_locked, ground_switches_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "summon_mushroom",
+    "initial_active_state": true
   },
   {
     "name": "Summon Big Rock",
@@ -78,10 +174,26 @@
     "img": "images/items/abilities/summon_big_rock.png"
   },
   {
+    "name": "Summon Big Rock (Locked)",
+    "type": "toggle_badged",
+    "codes": "summon_big_rock_locked, ground_switches_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "summon_big_rock",
+    "initial_active_state": true
+  },
+  {
     "name": "Flying",
     "type": "toggle",
     "codes": "flying, distant_ledges",
     "img": "images/items/abilities/flying.png"
+  },
+  {
+    "name": "Flying (Locked)",
+    "type": "toggle_badged",
+    "codes": "flying_locked, distant_ledges_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "flying",
+    "initial_active_state": true
   },
   {
     "name": "Improved Flying",
@@ -90,10 +202,26 @@
     "img": "images/items/abilities/improved_flying.png"
   },
   {
+    "name": "Improved Flying (Locked)",
+    "type": "toggle_badged",
+    "codes": "improved_flying_locked, distant_ledges_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "improved_flying",
+    "initial_active_state": true
+  },
+  {
     "name": "Lofty Mount",
     "type": "toggle",
     "codes": "lofty_mount, distant_ledges, mount",
     "img": "images/items/abilities/lofty_mount.png"
+  },
+  {
+    "name": "Lofty Mount (Locked)",
+    "type": "toggle_badged",
+    "codes": "lofty_mount_locked, distant_ledges_locked, mount_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "lofty_mount",
+    "initial_active_state": true
   },
   {
     "name": "Basic Swimming",
@@ -102,10 +230,26 @@
     "img": "images/items/abilities/basic_swimming.png"
   },
   {
+    "name": "Basic Swimming (Locked)",
+    "type": "toggle_badged",
+    "codes": "basic_swimming_locked, swimming_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "basic_swimming",
+    "initial_active_state": true
+  },
+  {
     "name": "Improved Swimming",
     "type": "toggle",
     "codes": "improved_swimming, swimming",
     "img": "images/items/abilities/improved_swimming.png"
+  },
+  {
+    "name": "Improved Swimming (Locked)",
+    "type": "toggle_badged",
+    "codes": "improved_swimming_locked, swimming_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "improved_swimming",
+    "initial_active_state": true
   },
   {
     "name": "Dual Mobility",
@@ -114,10 +258,26 @@
     "img": "images/items/abilities/dual_mobility.png"
   },
   {
+    "name": "Dual Mobility (Locked)",
+    "type": "toggle_badged",
+    "codes": "dual_mobility_locked, distant_ledges_locked, swimming_locked, tar_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "dual_mobility",
+    "initial_active_state": true
+  },
+  {
     "name": "Narrow Corridors",
     "type": "toggle",
     "codes": "narrow_corridors",
     "img": "images/items/abilities/narrow_corridors.png"
+  },
+  {
+    "name": "Narrow Corridors (Locked)",
+    "type": "toggle_badged",
+    "codes": "narrow_corridors_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "narrow_corridors",
+    "initial_active_state": true
   },
   {
     "name": "Magic Walls",
@@ -126,10 +286,26 @@
     "img": "images/items/abilities/magic_walls.png"
   },
   {
+    "name": "Magic Walls (Locked)",
+    "type": "toggle_badged",
+    "codes": "magic_walls_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "magic_walls",
+    "initial_active_state": true
+  },
+  {
     "name": "Magic Vines",
     "type": "toggle",
     "codes": "magic_vines",
     "img": "images/items/abilities/magic_vines.png"
+  },
+  {
+    "name": "Magic Vines (Locked)",
+    "type": "toggle_badged",
+    "codes": "magic_vines_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "magic_vines",
+    "initial_active_state": true
   },
   {
     "name": "Heavy Blocks",
@@ -138,10 +314,26 @@
     "img": "images/items/abilities/heavy_blocks.png"
   },
   {
+    "name": "Heavy Blocks (Locked)",
+    "type": "toggle_badged",
+    "codes": "heavy_blocks_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "heavy_blocks",
+    "initial_active_state": true
+  },
+  {
     "name": "Torches",
     "type": "toggle",
     "codes": "torches",
     "img": "images/items/abilities/torches.png"
+  },
+  {
+    "name": "Torches (Locked)",
+    "type": "toggle_badged",
+    "codes": "torches_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "torches",
+    "initial_active_state": true
   },
   {
     "name": "Dark Rooms",
@@ -150,10 +342,26 @@
     "img": "images/items/abilities/dark_rooms.png"
   },
   {
+    "name": "Dark Rooms (Locked)",
+    "type": "toggle_badged",
+    "codes": "dark_rooms_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "dark_rooms",
+    "initial_active_state": true
+  },
+  {
     "name": "Grapple",
     "type": "toggle",
     "codes": "grapple",
     "img": "images/items/abilities/grapple.png"
+  },
+  {
+    "name": "Grapple (Locked)",
+    "type": "toggle_badged",
+    "codes": "grapple_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "grapple",
+    "initial_active_state": true
   },
   {
     "name": "Levitate",
@@ -162,10 +370,26 @@
     "img": "images/items/abilities/levitate.png"
   },
   {
+    "name": "Levitate (Locked)",
+    "type": "toggle_badged",
+    "codes": "levitate_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "levitate",
+    "initial_active_state": true
+  },
+  {
     "name": "Secret Vision",
     "type": "toggle",
     "codes": "secret_vision",
     "img": "images/items/abilities/secret_vision.png"
+  },
+  {
+    "name": "Secret Vision (Locked)",
+    "type": "toggle_badged",
+    "codes": "secret_vision_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "secret_vision",
+    "initial_active_state": true
   },
   {
     "name": "Basic Mount",
@@ -174,10 +398,26 @@
     "img": "images/items/abilities/basic_mount.png"
   },
   {
+    "name": "Basic Mount (Locked)",
+    "type": "toggle_badged",
+    "codes": "basic_mount_locked, mount_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "basic_mount",
+    "initial_active_state": true
+  },
+  {
     "name": "Sonar Mount",
     "type": "toggle",
     "codes": "sonar_mount, mount",
     "img": "images/items/abilities/sonar_mount.png"
+  },
+  {
+    "name": "Sonar Mount (Locked)",
+    "type": "toggle_badged",
+    "codes": "sonar_mount_locked, mount_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "sonar_mount",
+    "initial_active_state": true
   },
   {
     "name": "Tar Mount",
@@ -186,9 +426,25 @@
     "img": "images/items/abilities/tar_mount.png"
   },
   {
+    "name": "Tar Mount (Locked)",
+    "type": "toggle_badged",
+    "codes": "tar_mount_locked, mount_locked, tar_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "tar_mount",
+    "initial_active_state": true
+  },
+  {
     "name": "Charging Mount",
     "type": "toggle",
     "codes": "charging_mount, mount, breakable_walls",
     "img": "images/items/abilities/charging_mount.png"
+  },
+  {
+    "name": "Charging Mount (Locked)",
+    "type": "toggle_badged",
+    "codes": "charging_mount_locked, mount_locked, breakable_walls_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "charging_mount",
+    "initial_active_state": true
   }
 ]

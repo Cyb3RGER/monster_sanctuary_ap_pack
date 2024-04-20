@@ -4,7 +4,10 @@ import re
 from os.path import commonprefix
 from typing import Optional, Tuple, List, Any
 
+from PyPopTracker.packs.items import PopTrackerItem, PopTrackerToggleItem, export_items
 from PyPopTracker.packs.locations import PopTrackerLocation, PopTrackerSection, PopTrackerMapLocation, export_locations
+
+from utils import combine_access, TAB
 
 
 class CheckType(enum.IntEnum):
@@ -23,6 +26,106 @@ loc_by_name: dict[str, PopTrackerLocation | PopTrackerSection] = {}
 with open('data/location_names.json', mode='r') as f:
     loc_names = json.load(f)
 
+eternitys_end_locations = {
+    "wolf": [
+        "Eternity's End - Spectral Wolf Egg",
+        "Eternity's End - Infinity Flame (Eagle)",
+        "Eternity's End - Infinity Flame (Toad)",
+        "Eternity's End - Infinity Flame (Lion)"
+    ],
+    "eagle": [
+        "Eternity's End - Spectral Eagle Egg",
+        "Eternity's End - Infinity Flame (Wolf)",
+        "Eternity's End - Infinity Flame (Toad)",
+        "Eternity's End - Infinity Flame (Lion)"
+    ],
+    "toad": [
+        "Eternity's End - Spectral Toad Egg",
+        "Eternity's End - Infinity Flame (Wolf)",
+        "Eternity's End - Infinity Flame (Eagle)",
+        "Eternity's End - Infinity Flame (Lion)"
+    ],
+    "lion": [
+        "Eternity's End - Spectral Lion Egg",
+        "Eternity's End - Infinity Flame (Wolf)",
+        "Eternity's End - Infinity Flame (Eagle)",
+        "Eternity's End - Infinity Flame (Toad)"
+    ]
+}
+
+shopsanity_keeper_master_locations = [
+    "Consumable Merchant - Mega Potion",
+    "Consumable Merchant - Phoenix Serum",
+    "Food Merchant - Cookie Mushroom"
+]
+keeper_master_locations = [
+    "Keeper Stronghold - Parents - Keeper Master Gift 1",
+    "Keeper Stronghold - Parents - Keeper Master Gift 2",
+    "Monster Army - 100000 Strength (1)",
+    "Monster Army - 100000 Strength (2)",
+    "Monster Army - 100000 Strength (3)"
+]
+postgame_locations = [
+    "Keeper Stronghold - Post Game - Alchemist Costume Gift",
+    "Stronghold Dungeon - Trevisan 1",
+    "Stronghold Dungeon - Trevisan 2",
+]
+velvet_melody_locations = [
+    "Magma Chamber - Legendary Keeper Room",
+    "Magma Chamber - Legendary Keeper Room - Mozzie Reward 1",
+    "Magma Chamber - Legendary Keeper Room - Mozzie Reward 2",
+    "Magma Chamber - Legendary Keeper Room - Mozzie Reward 3",
+    "Magma Chamber - Legendary Keeper Room - Mozzie Reward 4",
+    "Magma Chamber - Legendary Keeper Room - Mozzie Reward 5",
+]
+
+monster_army_rewards = {
+    0: 1,
+    1: 3,
+    2: 1,
+    3: 1,
+    4: 4,
+    5: 1,
+    6: 1,
+    7: 1,
+    8: 1,
+    9: 1,
+    10: 1,
+    11: 3,
+    12: 1,
+    13: 3,
+    14: 1,
+    15: 1,
+    16: 1,
+    17: 1,
+    18: 1,
+    19: 1,
+    20: 4,
+    21: 2,
+    22: 1,
+    23: 4,
+    24: 1,
+    25: 1,
+    26: 4,
+    27: 2,
+    28: 1,
+    29: 1,
+    30: 3,
+    31: 3,
+    32: 3,
+}
+
+shop_locs = {
+    "Treasure Hunter": 4,
+    "Equipment Merchant": 28,
+    "Consumable Merchant": 15,
+    "Food Merchant": 17,
+    "Traveling Merchant": 6,
+    "Rhazes": 13,
+    "Goblin Trader": 3,
+    "Golem Merchant": 8,
+}
+
 map_location_mapping = {
     0: ['MountainPath_North3_6'],
     1: ['MountainPath_North3_5'],
@@ -33,7 +136,8 @@ map_location_mapping = {
     6: ['MountainPath_North5_6'],
     7: ['MountainPath_Center1_5'],
     8: ['MountainPath_Center2_4', 'MountainPath_Center2_3'],
-    9: ['MountainPath_Center3_6', 'MountainPath_Center3_8', 'MountainPath_Center3_9'],
+    9: ['MountainPath_Center3_6', 'MountainPath_Center3_8', 'MountainPath_Center3_9',
+        *[f'MountainPath_Center3_TreasureHunter_{i + 1}' for i in range(shop_locs["Treasure Hunter"])]],
     10: ['MountainPath_Center3_7'],
     11: ['MountainPath_Center4_0', 'MountainPath_Center4_4'],
     12: ['MountainPath_Center5_6'],
@@ -274,11 +378,13 @@ map_location_mapping = {
     240: ['MagmaChamber_South2_1'],
     241: ['MagmaChamber_Center6_Lower_12'],
     242: ['MagmaChamber_Center7_1'],
-    243: ['MagmaChamber_AlchemistLab_East_27700082'],
+    243: ['MagmaChamber_AlchemistLab_East_27700082',
+          *[f'MagmaChamber_AlchemistLab_East_Rhazes_{i + 1}' for i in range(shop_locs["Rhazes"])]],
     244: ['MagmaChamber_Center9_Middle_12'],
     245: ['MagmaChamber_Center10_6'],
     246: ['AncientWoods_West3_0'],
-    247: ['AncientWoods_TreeOfEvolution_7'],
+    247: ['AncientWoods_TreeOfEvolution_7',
+          *[f'AncientWoods_TreeOfEvolution_TravelingMerchant_{i + 1}' for i in range(shop_locs["Traveling Merchant"])]],
     248: ['AncientWoods_TreeOfEvolution_9900049'],
     249: ['AncientWoods_WestDescent2_4', 'AncientWoods_WestDescent2_105'],
     250: ['MagmaChamber_South3_West_3'],
@@ -498,7 +604,7 @@ map_location_mapping = {
     461: ['AbandonedTower_North7_8'],
     462: ['AbandonedTower_North9_39700006'],
     463: ['AbandonedTower_Final_Champion'],
-    464: ['KeeperStronghold_CenterStairwell_2300075'],
+    464: ['KeeperStronghold_CenterStairwell_2300075', *[f"KeeperStronghold_MonsterArmy_{i}_0" for i in range(33)]],
     465: ['SunPalace_North3_Champion'],
     466: ['AncientWoods_North3_10', 'AncientWoods_North3_11'],
     467: ['HorizonBeach_Pit_Secret_2'],
@@ -513,6 +619,16 @@ map_location_mapping = {
     476: ['ForgottenWorld_WatersHidden_11'],
     477: ['ForgottenWorld_DracomerLair_2'],
     478: ['ForgottenWorld_DracomerLair_Champion'],
+    479: [*[f'KeeperStronghold_Shops_EquipmentMerchant_{i + 1}' for i in range(shop_locs["Equipment Merchant"])],
+          *[f'KeeperStronghold_Shops_ConsumableMerchant_{i + 1}' for i in range(shop_locs["Equipment Merchant"])]],
+    480: [f'KeeperStronghold_Shops_FoodMerchant_{i + 1}' for i in range(shop_locs["Food Merchant"])],
+    481: [f'MagmaChamber_GoblinTrader_GoblinTrader_{i + 1}' for i in range(shop_locs["Goblin Trader"])],
+    482: [f'MysticalWorkshop_GolemMerchant_GolemMerchant_{i + 1}' for i in range(shop_locs["Golem Merchant"])],
+    483: ["KeeperStronghold_EndOfTime_20", "KeeperStronghold_EndOfTime_21", 'KeeperStronghold_EndOfTime_42700002',
+          'KeeperStronghold_EndOfTime_42700027', 'KeeperStronghold_EndOfTime_42700013',
+          'KeeperStronghold_EndOfTime_42700020', 'KeeperStronghold_EndOfTime_42700036',
+          'KeeperStronghold_EndOfTime_42700032', 'KeeperStronghold_EndOfTime_42700030',
+          'KeeperStronghold_EndOfTime_42700034'],
 }
 
 map_tile_locations = {
@@ -994,7 +1110,12 @@ map_tile_locations = {
     475: [(MAIN_MAP_NAME, 111, 54)],
     476: [(MAIN_MAP_NAME, 110, 53)],
     477: [(MAIN_MAP_NAME, 110, 51)],
-    478: [(MAIN_MAP_NAME, 111, 51)]
+    478: [(MAIN_MAP_NAME, 111, 51)],
+    479: [(MAIN_MAP_NAME, 46, 29)],
+    480: [(MAIN_MAP_NAME, 47, 29)],
+    481: [(MAIN_MAP_NAME, 91, 35)],
+    482: [(MAIN_MAP_NAME, 60, 27)],
+    483: [(MAIN_MAP_NAME, 49, 24)],
 }
 
 sub_map_offsets = {
@@ -1017,7 +1138,7 @@ sub_map_offsets = {
 
 def fix_mapping_table():
     for k, v in map_location_mapping.items():
-        map_location_mapping[k] = [loc_names[v2] for v2 in v]
+        map_location_mapping[k] = [loc_names[v2] if v2 in loc_names else v2 for v2 in v]
 
 
 fix_mapping_table()
@@ -1029,7 +1150,6 @@ def get_access(req_data: Optional[list], op: Optional[str] = "AND"):
         return []
     if isinstance(req_data, str):
         return [[f'${req_data}']]
-    # ToDo
     result: list[list[str]] = []
     skip_next = False
     for i in range(0, len(req_data)):
@@ -1054,26 +1174,6 @@ def format_req(req):
     if req.startswith('NOT '):
         return f'$_NOT_CALL|{req[4:]}'
     return f'${req}'
-
-
-def combine_access(current, to_add, op):
-    # print('combine_access', current, to_add, op)
-    new = current.copy()
-    if op == "AND":
-        if len(current) == 0:
-            return to_add
-        i = 0
-        for v2 in current:
-            for v in to_add:
-                if i >= len(new):
-                    new.append([])
-                new[i] = v2 + v
-                i += 1
-    if op == "OR":
-        for v in to_add:
-            new.append(v)
-    # print('combine_access', 'result', new)
-    return new
 
 
 __regions_by_locs = {}
@@ -1110,6 +1210,12 @@ def setup_regions_by_locs():
                 continue
             # __regions_by_locs[loc_names[f"Flag {region}_{flag_data['id']}"]] = region
 
+        for shop_data in current_region_data.get("shops") or []:
+            # Hack because we store comments as strings
+            if isinstance(shop_data, str):
+                continue
+            __regions_by_locs[loc_names[f'{region}_Champion']] = region
+
 
 def adjust_pos(pos):
     offset_x = 0
@@ -1122,12 +1228,14 @@ def adjust_pos(pos):
 
 submap_override_values = {
     "KeeperStronghold": 'keepers_stronghold',
-    "BlueCave":  'blue_caves',
+    "BlueCave": 'blue_caves',
     "Underworld": 'the_underworld'
 }
+
+
 def convert_region_to_sub_map(region):
     tmp = region.split("_")[0]
-    if tmp in submap_override_values :
+    if tmp in submap_override_values:
         return submap_override_values[tmp]
     return '_'.join(re.findall('[A-Z][^A-Z]*', tmp)).lower()
 
@@ -1139,44 +1247,95 @@ def get_sub_map_locs(region, map_locs_mappings):
     if sub_map is None:
         return
     for v in map_locs_mappings:
-        new_mappings.append((sub_map, v[1]-sub_map_offset[0], v[2]-sub_map_offset[1]))
+        new_mappings.append((sub_map, v[1] - sub_map_offset[0], v[2] - sub_map_offset[1]))
     return new_mappings
 
 
-def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, data, location_id,
-               ids_for_sections, loc_names, postgame_data, count=1, clear_as_group=False):
-    unopened_img = None
-    opened_img = None
+def resolve_loc_name(check_type_name: str, region: str, data: Any, extra_data: Any):
     if check_type_name == "Rank":
-        unopened_img = 'images/items/rank/champion_defeated.png'
-        opened_img = 'images/items/rank/champion_defeated_grey.png'
         loc_name = loc_names[f'{region}_Champion']
     elif check_type_name == "Flag":
         loc_name = f"{check_type_name} {region}_{data['id']}"
+    elif check_type_name == "Shop":
+        loc_name = loc_names[f"{region}_{extra_data['shop_name'].replace(' ', '')}_{data['id']}"]
+    elif check_type_name == "Eggsanity":
+        loc_name = loc_names[f"eggsanity_{data['id']}"]
+    elif check_type_name == "Army":
+        loc_name = loc_names[f"KeeperStronghold_MonsterArmy_{data['id']}_0"]
     else:
         if region == 'Menu':
             loc_name = f'{check_type_name} {data["id"]}'
         else:
             loc_name = loc_names[f"{region}_{data['id']}"]
+    return loc_name
+
+
+def get_visibility_rules(loc_name, check_type_name):
+    visibility_rules = [[]]
+    if loc_name in postgame_locations:
+        visibility_rules = combine_access(visibility_rules, [['$is_not_goal|0']], "AND")
+    if loc_name in keeper_master_locations:
+        visibility_rules = combine_access(visibility_rules, [['$is_not_goal|0'], ['$is_not_goal|1']], "AND")
+    if loc_name in velvet_melody_locations:
+        visibility_rules = combine_access(visibility_rules, [['$is_not_goal|3']], "AND")
+    if loc_name in ["Blue Cave - Underworld Entrance 1", "Blue Cave - Underworld Entrance 2"]:
+        visibility_rules = combine_access(visibility_rules, [['$check_option|open_underworld|0']], "AND")
+    if check_type_name == 'Army':
+        visibility_rules = combine_access(visibility_rules, [['$check_option|monster_army|1']], "AND")
+    if check_type_name == 'Shop':
+        visibility_rules = combine_access(visibility_rules, [['$is_shopsanity']], "AND")
+    if loc_name in shopsanity_keeper_master_locations:
+        visibility_rules = combine_access(visibility_rules, [
+            ['$is_shopsanity', '$check_option|shops_ignore_rank|1'],
+            ['$is_shopsanity', '$is_not_goal|0'],
+            ['$is_shopsanity', '$is_not_goal|1'],
+        ], "AND")
+    if loc_name in ["Snowy Peaks - Cryomancer - Light Egg Reward", "Snowy Peaks - Cryomancer - Dark Egg Reward"]:
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|monster_shift_rule|0']], "AND")
+    if loc_name in eternitys_end_locations['wolf']:
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|0']], "AND")
+    if loc_name in eternitys_end_locations['eagle']:
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|1']], "AND")
+    if loc_name in eternitys_end_locations['toad']:
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|2']], "AND")
+    if loc_name in eternitys_end_locations['lion']:
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|3']], "AND")
+    return visibility_rules if visibility_rules != [[]] else None
+
+
+# ToDo: this function could use some cleanup
+def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, data, location_id, ids_for_sections,
+               postgame_data, count=1, clear_as_group=False, **kwargs):
+    unopened_img = None
+    opened_img = None
+    if check_type_name == "Rank":
+        unopened_img = 'images/items/rank/champion_defeated.png'
+        opened_img = 'images/items/rank/champion_defeated_grey.png'
+    loc_name = resolve_loc_name(check_type_name, region, data, kwargs)
     # print('create_loc', region, loc_name, location_id)
     map_locs = None
     map_locs_mappings = None
     mapping_values = None
     multi_sec = False
+    # is_shop_loc = loc_name in shop_locs
+    # if is_shop_loc:
+    #     count = shop_locs[loc_name]
     for k, v in map_location_mapping.items():
         if loc_name in v:
-            map_locs_mappings = map_tile_locations[k]
+            map_locs_mappings = map_tile_locations[k].copy()
             map_locs_mappings += get_sub_map_locs(region, map_locs_mappings)
             mapping_values = v
             multi_sec = len(v) > 1
             break
     if map_locs_mappings is not None:
         map_locs = list(map(lambda x: PopTrackerMapLocation(*adjust_pos(x)), map_locs_mappings))
-    access_rules: list[list[str]] = combine_access([[f"$has_access_to|{region}"]], get_access(data.get('requirements')),
-                                                   "AND")
-    visibilty_rules = None
-    if f"{region}_{data['id']}" in postgame_data:
-        visibilty_rules = [['$is_goal_not_mad_lord']]
+    access_rules: list[list[str]]
+    access_rules = get_access(data.get('requirements'))
+    if check_type_name == "Shop":
+        access_rules = combine_access(access_rules, [["$shops_ignore_rank"]], "OR")
+    access_rules = combine_access([[f"$has_access_to|{region}"]], access_rules, "AND")
+    visibility_rules = get_visibility_rules(loc_name, check_type_name)
+
     if multi_sec:
         parent_count = 1
         # parent_region, regions = get_common_region_name(mapping_values)
@@ -1184,6 +1343,9 @@ def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, dat
         # if f'{region}_{data["id"]}' in subsections:
         #     parent_region = subsections[f'{region}_{data["id"]}']
         #     parent_region = parent_region[:parent_region.rfind("_")]
+        if parent_region == '':
+            parent_region = region.replace('_', '')
+            parent_region = re.sub(r'(\w)([A-Z])', r'\g<1> \g<2>', parent_region)
         temp_parent_name = parent_region
         parent_region = f'{temp_parent_name}'
         while True:
@@ -1192,6 +1354,7 @@ def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, dat
                 first_sec = loc.sections[0]
                 if first_sec.name not in mapping_values:
                     parent_count += 1
+                    assert temp_parent_name != ''
                     parent_region = f'{temp_parent_name} #{parent_count}'
                 else:
                     break
@@ -1201,8 +1364,10 @@ def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, dat
             # ToDo: format parent region name
             loc = PopTrackerLocation(parent_region, map_locations=map_locs)
             locs.append(loc)
+        if check_type_name == "Army":
+            loc_name = loc_name.split(' (')[0]
         sec = PopTrackerSection(loc_name, item_count=count, clear_as_group=clear_as_group, access_rules=access_rules,
-                                visibility_rules=visibilty_rules, chest_unopened_img=unopened_img,
+                                visibility_rules=visibility_rules, chest_unopened_img=unopened_img,
                                 chest_opened_img=opened_img)
         loc.sections.append(sec)
         loc_by_name[loc_name] = sec
@@ -1212,7 +1377,10 @@ def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, dat
                 ids.append(location_id)
                 location_id += 1
             ids_for_sections[f'@{parent_region}/{loc_name}'] = ids
+            # print(f'@{parent_region}/{loc_name}: ({len(ids)}) {ids}')
     else:
+        if check_type_name == "Army":
+            loc_name = loc_name.split(' (')[0]
         loc = PopTrackerLocation(loc_name, map_locations=map_locs, access_rules=access_rules)
         loc.sections.append(
             PopTrackerSection("", item_count=count, clear_as_group=clear_as_group, chest_unopened_img=unopened_img,
@@ -1231,7 +1399,8 @@ def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, dat
 
 
 def format_region_name(mappings: list[str]):
-    name = commonprefix([(v if len(v.split(' - ')) <= 2 else ' - '.join(v.split(' - ')[:-1])) for v in mappings]).strip(
+    tmp = [v for v in mappings if '-' in v]
+    name = commonprefix([(v if len(v.split(' - ')) <= 2 else ' - '.join(v.split(' - ')[:-1])) for v in tmp]).strip(
         ' - ').strip()
     if name == 'Magma Chamber - Forgotten World Exit':
         name = 'Magma Chamber - Forgotten World Exit - Hidden'
@@ -1246,40 +1415,95 @@ def find_loc_with_same_map_loc(locs: list[PopTrackerLocation], map_locs: list[Po
     return None
 
 
-def get_chest_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, loc_names,
-                  postgame_data):
-    loc, location_id = create_loc(locs, region, 'Chest', data, location_id, ids_for_sections, loc_names, postgame_data)
+def get_chest_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, postgame_data):
+    loc, location_id = create_loc(locs, region, 'Chest', data, location_id, ids_for_sections, postgame_data)
     return loc, location_id
 
 
-def get_gift_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, loc_names,
-                 postgame_data):
-    loc, location_id = create_loc(locs, region, 'Gift', data, location_id, ids_for_sections, loc_names, postgame_data)
+def get_gift_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, postgame_data):
+    loc, location_id = create_loc(locs, region, 'Gift', data, location_id, ids_for_sections, postgame_data)
     return loc, location_id
 
 
-def get_encounter_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, loc_names,
-                       postgame_data):
-    loc, location_id = create_loc(locs, region, 'Encounter', data, location_id, ids_for_sections, loc_names,
-                                  postgame_data, count=3, clear_as_group=True)
+def get_eggsanity_item(items: list[PopTrackerItem], region: str, data, location_id, ids_for_sections, postgame_data):
+    code = f"eggsanity_{data['id']}"
+    img = f"images/items/monsters/{data['id']}.png"
+    name = loc_names[code]
+    codes = [code]
+    item = PopTrackerToggleItem(name, codes=', '.join(codes), img=img)
+    if code not in ids_for_sections:
+        ids_for_sections[code] = []
+    ids_for_sections[code].append(location_id)
+    items.append(item)
+    location_id += 1
+    return item, location_id
+
+
+def get_army_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, postgame_data):
+    reward_index = 0
+    for _ in data.get("items"):
+        reward_index += 1
+    loc, location_id = create_loc(locs, region, 'Army', data, location_id, ids_for_sections, postgame_data,
+                                  count=reward_index)
     return loc, location_id
 
 
-def get_champ_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, subsections,
-                   postgame_data):
-    loc, location_id = create_loc(locs, region, 'Rank', data, location_id, ids_for_sections, subsections, postgame_data)
-    # loc, location_id = create_loc(locs, region, 'Champion', data, location_id, ids_for_sections, postgame_data, count=3,
-    #                               clear_as_group=True)
-    # location_id += 3
+def get_encounter_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, postgame_data):
+    loc, location_id = create_loc(locs, region, 'Encounter', data, location_id, ids_for_sections, postgame_data,
+                                  count=3, clear_as_group=True)
     return loc, location_id
 
 
-def get_flag_loc(locs: list[PopTrackerLocation], region: str, data, subsections, postgame_data):
-    loc, _ = create_loc(locs, region, 'Flag', data, None, None, subsections, postgame_data)
+def get_champ_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, postgame_data):
+    loc, location_id = create_loc(locs, region, 'Rank', data, location_id, ids_for_sections, postgame_data)
+    return loc, location_id
+
+
+def get_shop_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, postgame_data):
+    shop_name = data["name"]
+    inventory = data["inventory"]
+    # ToDo: group by requirements?
+    for item in inventory:
+        # Hack because we store comments as strings
+        if isinstance(item, str):
+            continue
+        loc, location_id = create_loc(locs, region, 'Shop', item, location_id, ids_for_sections, postgame_data,
+                                      shop_name=shop_name)
+    return loc, location_id
+
+
+def get_flag_loc(locs: list[PopTrackerLocation], region: str, data, postgame_data):
+    loc, _ = create_loc(locs, region, 'Flag', data, None, None, postgame_data)
     return loc, None
 
 
 locs_by_id = {}
+
+
+def export_item_grid(items, out_path):
+    layout = {
+        "eggsanity_grid": {
+            "type": "itemgrid",
+            "item_margin": "3, 3",
+            "item_size": "58, 58",
+            "h_alignment": "center",
+            "v_alignment": "center",
+            "rows": []
+        }
+    }
+    items_per_row = 14
+    rows = []
+    row = []
+    for i, item in enumerate(items):
+        row.append(item.codes.split(', ')[0])
+        if (i + 1) % items_per_row == 0:
+            rows.append(row)
+            row = []
+    if len(row) > 0:
+        rows.append(row)
+    layout['eggsanity_grid']['rows'] = rows
+    with open(out_path, mode='w') as f:
+        json.dump(layout, f, indent=4)
 
 
 def gen_locations():
@@ -1288,6 +1512,7 @@ def gen_locations():
     with open('data/world.json', mode='r') as f:
         json_data = json.load(f)
     locs: list[PopTrackerLocation] = []
+    items: list[PopTrackerItem] = []  # some locs are better to show as toggles
     ids_for_sections = {}
 
     location_id = 970500
@@ -1306,14 +1531,29 @@ def gen_locations():
             if isinstance(chest_data, str):
                 continue
             location, location_id = get_chest_loc(locs, region_name, chest_data, location_id, ids_for_sections,
-                                                  loc_names, postgame_data)
+                                                  postgame_data)
 
         for gift_data in current_region_data.get("gifts") or []:
             # Hack because we store comments as strings
             if isinstance(gift_data, str):
                 continue
             location, location_id = get_gift_loc(locs, region_name, gift_data, location_id, ids_for_sections,
-                                                 loc_names, postgame_data)
+                                                 postgame_data)
+
+        for eggsanity_data in current_region_data.get("eggsanity") or []:
+            # Hack because we store comments as strings
+            if isinstance(eggsanity_data, str):
+                continue
+            item, location_id = get_eggsanity_item(items, region_name, eggsanity_data, location_id, ids_for_sections,
+                                                   postgame_data)
+            # location_id += 1
+
+        for army_data in current_region_data.get("army") or []:
+            # Hack because we store comments as strings
+            if isinstance(army_data, str):
+                continue
+            location, location_id = get_army_loc(locs, region_name, army_data, location_id, ids_for_sections,
+                                                 postgame_data)
 
         for encounter_data in current_region_data.get("encounters") or []:
             # Hack because we store comments as strings
@@ -1327,13 +1567,20 @@ def gen_locations():
             if isinstance(champion_data, str):
                 continue
             location, location_id = get_champ_locs(locs, region_name, champion_data, location_id, ids_for_sections,
-                                                   loc_names, postgame_data)
+                                                   postgame_data)
 
         for flag_data in current_region_data.get("flags") or []:
             # Hack because we store comments as strings
             if isinstance(flag_data, str):
                 continue
-            location, _ = get_flag_loc(locs, region_name, flag_data, loc_names, postgame_data)
+            location, _ = get_flag_loc(locs, region_name, flag_data, postgame_data)
+
+        for shop_data in current_region_data.get("shops") or []:
+            # Hack because we store comments as strings
+            if isinstance(shop_data, str):
+                continue
+            location, location_id = get_shop_locs(locs, region_name, shop_data, location_id, ids_for_sections,
+                                                  postgame_data)
 
         # locs.append(region)
     with open('data/plotless.json', mode='r') as f:
@@ -1361,6 +1608,10 @@ def gen_locations():
         loc.sections.sort(key=compare_section_order)
     export_locations(locs, out_path='../locations/locations.json')
     print('Exported locations!')
+    export_items(items, out_path='../items/eggsanity.json')
+    print('Exported eggsanity location items!')
+    export_item_grid(items, out_path='../layouts/generated/eggsanity.json')
+    print('Exported eggsanity item grid layout!')
     export_loction_mapping(ids_for_sections)
     print('Exported location mapping!')
     mapped_locs = []
@@ -1377,6 +1628,9 @@ def compare_section_order(x: PopTrackerSection):
     for k, v in map_location_mapping.items():
         if x.name in v:
             return v.index(x.name)
+        # Hack for Monster Army locations
+        if x.name + ' (1)' in v:
+            return v.index(x.name + ' (1)')
     return 0
 
 
@@ -1384,7 +1638,7 @@ def export_loction_mapping(ids_for_items: dict[str, list[int]]):
     lines = ['LOCATION_MAPPING = {']
     for k, v in ids_for_items.items():
         for i in v:
-            lines.append(f'\t[{i}] = {{"{k}"}},')
+            lines.append(f'{TAB}[{i}] = {{"{k}"}},')
     lines.append('}')
 
     with open('../scripts/autotracking/location_mapping.lua', mode='w') as f:

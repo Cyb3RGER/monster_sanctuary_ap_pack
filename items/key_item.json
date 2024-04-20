@@ -45,9 +45,11 @@
   },
   {
     "name": "Mozzie",
-    "type": "toggle",
+    "type": "consumable",
     "codes": "mozzie",
-    "img": "images/items/key_item/mozzie.png"
+    "img": "images/items/key_item/mozzie.png",
+    "max_quantity": 15,
+    "overlay_font_size": 24
   },
   {
     "name": "Memorial Ring",

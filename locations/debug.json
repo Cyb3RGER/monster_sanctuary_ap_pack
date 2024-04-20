@@ -3,7 +3,20 @@
         "name": "Debug Location",
         "access_rules": [
             [
-                "$has_access_to|StrongholdDungeon_NorthHidden"
+                "$has_access_to|BlobBurg_East2",
+                "$double_jump"
+            ],
+            [
+                "$has_access_to|BlobBurg_East2",
+                "$improved_flying"
+            ],
+            [
+                "$has_access_to|BlobBurg_East2",
+                "$dual_mobility"
+            ],
+            [
+                "$has_access_to|BlobBurg_East2",
+                "$lofty_mount"
             ]
         ],
         "map_locations": [
@@ -21,5 +34,5 @@
                 "item_count": 1
             }
         ]
-    }    
+    }
 ]

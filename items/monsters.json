@@ -2,559 +2,559 @@
   {
     "name": "Spectral Wolf",
     "type": "toggle",
-    "codes": "spectral_wolf, breakable_walls, impassible_vines",
+    "codes": "spectral_wolf",
     "img": "images/items/monsters/spectral_wolf.png"
   },
   {
     "name": "Spectral Toad",
     "type": "toggle",
-    "codes": "spectral_toad, tackle, breakable_walls, heavy_blocks",
+    "codes": "spectral_toad",
     "img": "images/items/monsters/spectral_toad.png"
   },
   {
     "name": "Spectral Eagle",
     "type": "toggle",
-    "codes": "spectral_eagle, flying, distant_ledges",
+    "codes": "spectral_eagle",
     "img": "images/items/monsters/spectral_eagle.png"
   },
   {
     "name": "Spectral Lion",
     "type": "toggle",
-    "codes": "spectral_lion, breakable_walls, impassible_vines",
+    "codes": "spectral_lion",
     "img": "images/items/monsters/spectral_lion.png"
   },
   {
     "name": "Blob",
     "type": "toggle",
-    "codes": "blob, bubble_burst, water_orbs",
+    "codes": "blob",
     "img": "images/items/monsters/blob.png"
   },
   {
     "name": "Magmapillar",
     "type": "toggle",
-    "codes": "magmapillar, ignite, fire_orbs, impassible_vines, torches",
+    "codes": "magmapillar",
     "img": "images/items/monsters/magmapillar.png"
   },
   {
     "name": "Rocky",
     "type": "toggle",
-    "codes": "rocky, summon_rock, ground_switches",
+    "codes": "rocky",
     "img": "images/items/monsters/rocky.png"
   },
   {
     "name": "Vaero",
     "type": "toggle",
-    "codes": "vaero, flying, distant_ledges",
+    "codes": "vaero",
     "img": "images/items/monsters/vaero.png"
   },
   {
     "name": "Catzerker",
     "type": "toggle",
-    "codes": "catzerker, slash, breakable_walls, impassible_vines",
+    "codes": "catzerker",
     "img": "images/items/monsters/catzerker.png"
   },
   {
     "name": "Yowie",
     "type": "toggle",
-    "codes": "yowie, tackle, breakable_walls, heavy_blocks",
+    "codes": "yowie",
     "img": "images/items/monsters/yowie.png"
   },
   {
     "name": "Steam Golem",
     "type": "toggle",
-    "codes": "steam_golem, tackle, breakable_walls, heavy_blocks",
+    "codes": "steam_golem",
     "img": "images/items/monsters/steam_golem.png"
   },
   {
     "name": "Monk",
     "type": "toggle",
-    "codes": "monk, heavy_punch, breakable_walls, heavy_blocks",
+    "codes": "monk",
     "img": "images/items/monsters/monk.png"
   },
   {
     "name": "Grummy",
     "type": "toggle",
-    "codes": "grummy, bubble_burst, water_orbs",
+    "codes": "grummy",
     "img": "images/items/monsters/grummy.png"
   },
   {
     "name": "Tengu",
     "type": "toggle",
-    "codes": "tengu, ignite, fire_orbs, impassible_vines, torches",
+    "codes": "tengu",
     "img": "images/items/monsters/tengu.png"
   },
   {
     "name": "Fungi",
     "type": "toggle",
-    "codes": "fungi, summon_mushroom, ground_switches",
+    "codes": "fungi",
     "img": "images/items/monsters/fungi.png"
   },
   {
     "name": "Frosty",
     "type": "toggle",
-    "codes": "frosty, flying, distant_ledges",
+    "codes": "frosty",
     "img": "images/items/monsters/frosty.png"
   },
   {
     "name": "Minitaur",
     "type": "toggle",
-    "codes": "minitaur, slash, breakable_walls, impassible_vines",
+    "codes": "minitaur",
     "img": "images/items/monsters/minitaur.png"
   },
   {
     "name": "Specter",
     "type": "toggle",
-    "codes": "specter, ignite, fire_orbs, impassible_vines, torches",
+    "codes": "specter",
     "img": "images/items/monsters/specter.png"
   },
   {
     "name": "Crackle Knight",
     "type": "toggle",
-    "codes": "crackle_knight, lightning_bolt, lightning_orbs, torches",
+    "codes": "crackle_knight",
     "img": "images/items/monsters/crackle_knight.png"
   },
   {
     "name": "G'rulu",
     "type": "toggle",
-    "codes": "g_rulu, bubble_burst, water_orbs",
-    "img": "images/items/monsters/g_rulu.png"
+    "codes": "grulu",
+    "img": "images/items/monsters/grulu.png"
   },
   {
     "name": "Mad Eye",
     "type": "toggle",
-    "codes": "mad_eye, flying, distant_ledges",
+    "codes": "mad_eye",
     "img": "images/items/monsters/mad_eye.png"
   },
   {
     "name": "Nightwing",
     "type": "toggle",
-    "codes": "nightwing, sonar, dark_rooms",
+    "codes": "nightwing",
     "img": "images/items/monsters/nightwing.png"
   },
   {
     "name": "Toxiquus",
     "type": "toggle",
-    "codes": "toxiquus, slime_shot, earth_orbs",
+    "codes": "toxiquus",
     "img": "images/items/monsters/toxiquus.png"
   },
   {
     "name": "Beetloid",
     "type": "toggle",
-    "codes": "beetloid, lightning_bolt, lightning_orbs, torches",
+    "codes": "beetloid",
     "img": "images/items/monsters/beetloid.png"
   },
   {
     "name": "Druid Oak",
     "type": "toggle",
-    "codes": "druid_oak, summon_rock, ground_switches",
+    "codes": "druid_oak",
     "img": "images/items/monsters/druid_oak.png"
   },
   {
     "name": "Magmamoth",
     "type": "toggle",
-    "codes": "magmamoth, ignite, fire_orbs, impassible_vines, torches",
+    "codes": "magmamoth",
     "img": "images/items/monsters/magmamoth.png"
   },
   {
     "name": "Molebear",
     "type": "toggle",
-    "codes": "molebear, breakable_walls, impassible_vines",
+    "codes": "molebear",
     "img": "images/items/monsters/molebear.png"
   },
   {
     "name": "Glowfly",
     "type": "toggle",
-    "codes": "glowfly, light, dark_rooms",
+    "codes": "glowfly",
     "img": "images/items/monsters/glowfly.png"
   },
   {
     "name": "Goblin Brute",
     "type": "toggle",
-    "codes": "goblin_brute, toxic_slam, breakable_walls, earth_orbs",
+    "codes": "goblin_brute",
     "img": "images/items/monsters/goblin_brute.png"
   },
   {
     "name": "Goblin Hood",
     "type": "toggle",
-    "codes": "goblin_hood, fiery_shots, fire_orbs, impassible_vines, torches",
+    "codes": "goblin_hood",
     "img": "images/items/monsters/goblin_hood.png"
   },
   {
     "name": "Goblin Warlock",
     "type": "toggle",
-    "codes": "goblin_warlock, lightning_bolt, lightning_orbs, torches",
+    "codes": "goblin_warlock",
     "img": "images/items/monsters/goblin_warlock.png"
   },
   {
     "name": "Goblin King",
     "type": "toggle",
-    "codes": "goblin_king, jewel_blast, earth_orbs",
+    "codes": "goblin_king",
     "img": "images/items/monsters/goblin_king.png"
   },
   {
     "name": "Raduga",
     "type": "toggle",
-    "codes": "raduga, flying, distant_ledges",
+    "codes": "raduga",
     "img": "images/items/monsters/raduga.png"
   },
   {
     "name": "Ice Blob",
     "type": "toggle",
-    "codes": "ice_blob, freeze, ice_orbs",
+    "codes": "ice_blob",
     "img": "images/items/monsters/ice_blob.png"
   },
   {
     "name": "Caraglow",
     "type": "toggle",
-    "codes": "caraglow, light, dark_rooms",
+    "codes": "caraglow",
     "img": "images/items/monsters/caraglow.png"
   },
   {
     "name": "Aurumtail",
     "type": "toggle",
-    "codes": "aurumtail, mount",
+    "codes": "aurumtail",
     "img": "images/items/monsters/aurumtail.png"
   },
   {
     "name": "Megataur",
     "type": "toggle",
-    "codes": "megataur, slash, breakable_walls, impassible_vines",
+    "codes": "megataur",
     "img": "images/items/monsters/megataur.png"
   },
   {
     "name": "Mogwai",
     "type": "toggle",
-    "codes": "mogwai, snowball_toss, ice_orbs, distant_ice_orbs",
+    "codes": "mogwai",
     "img": "images/items/monsters/mogwai.png"
   },
   {
     "name": "Crystal Snail",
     "type": "toggle",
-    "codes": "crystal_snail, jewel_blast, earth_orbs",
+    "codes": "crystal_snail",
     "img": "images/items/monsters/crystal_snail.png"
   },
   {
     "name": "Akhlut",
     "type": "toggle",
-    "codes": "akhlut, sonar_mount, dark_rooms",
+    "codes": "akhlut",
     "img": "images/items/monsters/akhlut.png"
   },
   {
     "name": "Blade Widow",
     "type": "toggle",
-    "codes": "blade_widow, slash, breakable_walls, impassible_vines",
+    "codes": "blade_widow",
     "img": "images/items/monsters/blade_widow.png"
   },
   {
     "name": "Ninki",
     "type": "toggle",
-    "codes": "ninki, slime_shot, earth_orbs",
+    "codes": "ninki",
     "img": "images/items/monsters/ninki.png"
   },
   {
     "name": "Ninki Nanka",
     "type": "toggle",
-    "codes": "ninki_nanka, slime_shot, earth_orbs",
+    "codes": "ninki_nanka",
     "img": "images/items/monsters/ninki_nanka.png"
   },
   {
     "name": "Vasuki",
     "type": "toggle",
-    "codes": "vasuki, tackle, breakable_walls, heavy_blocks",
+    "codes": "vasuki",
     "img": "images/items/monsters/vasuki.png"
   },
   {
     "name": "Kame",
     "type": "toggle",
-    "codes": "kame, summon_rock, ground_switches",
+    "codes": "kame",
     "img": "images/items/monsters/kame.png"
   },
   {
     "name": "Sycophantom",
     "type": "toggle",
-    "codes": "sycophantom, ghost_form, intangibility",
+    "codes": "sycophantom",
     "img": "images/items/monsters/sycophantom.png"
   },
   {
     "name": "Imori",
     "type": "toggle",
-    "codes": "imori, ignite, fire_orbs, impassible_vines, torches",
+    "codes": "imori",
     "img": "images/items/monsters/imori.png"
   },
   {
     "name": "Qilin",
     "type": "toggle",
-    "codes": "qilin, mount",
+    "codes": "qilin",
     "img": "images/items/monsters/qilin.png"
   },
   {
     "name": "Sizzle Knight",
     "type": "toggle",
-    "codes": "sizzle_knight, lightning_bolt, lightning_orbs, torches",
+    "codes": "sizzle_knight",
     "img": "images/items/monsters/sizzle_knight.png"
   },
   {
     "name": "Koi",
     "type": "toggle",
-    "codes": "koi, swimming",
+    "codes": "koi",
     "img": "images/items/monsters/koi.png"
   },
   {
     "name": "Tanuki",
     "type": "toggle",
-    "codes": "tanuki, summon_mushroom, ground_switches",
+    "codes": "tanuki",
     "img": "images/items/monsters/tanuki.png"
   },
   {
     "name": "Kanko",
     "type": "toggle",
-    "codes": "kanko, ghost_form, intangibility",
+    "codes": "kanko",
     "img": "images/items/monsters/kanko.png"
   },
   {
     "name": "Dodo",
     "type": "toggle",
-    "codes": "dodo, mount",
+    "codes": "dodo",
     "img": "images/items/monsters/dodo.png"
   },
   {
     "name": "Kongamato",
     "type": "toggle",
-    "codes": "kongamato, improved_flying, distant_ledges",
+    "codes": "kongamato",
     "img": "images/items/monsters/kongamato.png"
   },
   {
     "name": "Ucan",
     "type": "toggle",
-    "codes": "ucan, slash, breakable_walls, impassible_vines",
+    "codes": "ucan",
     "img": "images/items/monsters/ucan.png"
   },
   {
     "name": "Brawlish",
     "type": "toggle",
-    "codes": "brawlish, tackle, breakable_walls, heavy_blocks",
+    "codes": "brawlish",
     "img": "images/items/monsters/brawlish.png"
   },
   {
     "name": "Thornish",
     "type": "toggle",
-    "codes": "thornish, improved_swimming",
+    "codes": "thornish",
     "img": "images/items/monsters/thornish.png"
   },
   {
     "name": "Nautilid",
     "type": "toggle",
-    "codes": "nautilid, improved_swimming",
+    "codes": "nautilid",
     "img": "images/items/monsters/nautilid.png"
   },
   {
     "name": "Silvaero",
     "type": "toggle",
-    "codes": "silvaero, flying, distant_ledges",
+    "codes": "silvaero",
     "img": "images/items/monsters/silvaero.png"
   },
   {
     "name": "Elderjel",
     "type": "toggle",
-    "codes": "elderjel, improved_swimming",
+    "codes": "elderjel",
     "img": "images/items/monsters/elderjel.png"
   },
   {
     "name": "Manticorb",
     "type": "toggle",
-    "codes": "manticorb, light, dark_rooms",
+    "codes": "manticorb",
     "img": "images/items/monsters/manticorb.png"
   },
   {
     "name": "Goblin Miner",
     "type": "toggle",
-    "codes": "goblin_miner, light, crush, dark_rooms, diamond_blocks, breakable_walls",
+    "codes": "goblin_miner",
     "img": "images/items/monsters/goblin_miner.png"
   },
   {
     "name": "Salahammer",
     "type": "toggle",
-    "codes": "salahammer, crush, diamond_blocks, breakable_walls",
+    "codes": "salahammer",
     "img": "images/items/monsters/salahammer.png"
   },
   {
     "name": "Lava Blob",
     "type": "toggle",
-    "codes": "lava_blob, ignite, fire_orbs, impassible_vines, torches",
+    "codes": "lava_blob",
     "img": "images/items/monsters/lava_blob.png"
   },
   {
     "name": "Glowdra",
     "type": "toggle",
-    "codes": "glowdra, light, dark_rooms",
+    "codes": "glowdra",
     "img": "images/items/monsters/glowdra.png"
   },
   {
     "name": "Draconov",
     "type": "toggle",
-    "codes": "draconov, flying, distant_ledges",
+    "codes": "draconov",
     "img": "images/items/monsters/draconov.png"
   },
   {
     "name": "Dracogran",
     "type": "toggle",
-    "codes": "dracogran, flying, distant_ledges",
+    "codes": "dracogran",
     "img": "images/items/monsters/dracogran.png"
   },
   {
     "name": "Asura",
     "type": "toggle",
-    "codes": "asura, crush, diamond_blocks, breakable_walls",
+    "codes": "asura",
     "img": "images/items/monsters/asura.png"
   },
   {
     "name": "Skorch",
     "type": "toggle",
-    "codes": "skorch, ignite, fire_orbs, impassible_vines, torches",
+    "codes": "skorch",
     "img": "images/items/monsters/skorch.png"
   },
   {
     "name": "Stolby",
     "type": "toggle",
-    "codes": "stolby, ghost_form, intangibility",
+    "codes": "stolby",
     "img": "images/items/monsters/stolby.png"
   },
   {
     "name": "Ornithopter",
     "type": "toggle",
-    "codes": "ornithopter, improved_flying, distant_ledges",
+    "codes": "ornithopter",
     "img": "images/items/monsters/ornithopter.png"
   },
   {
     "name": "Polterofen",
     "type": "toggle",
-    "codes": "polterofen, fiery_shots, fire_orbs, impassible_vines, torches",
+    "codes": "polterofen",
     "img": "images/items/monsters/polterofen.png"
   },
   {
     "name": "Oculus",
     "type": "toggle",
-    "codes": "oculus, grapple",
+    "codes": "oculus",
     "img": "images/items/monsters/oculus.png"
   },
   {
     "name": "Mimic",
     "type": "toggle",
-    "codes": "mimic, fiery_shots, fire_orbs, impassible_vines, torches",
+    "codes": "mimic",
     "img": "images/items/monsters/mimic.png"
   },
   {
     "name": "Goblin Pilot",
     "type": "toggle",
-    "codes": "goblin_pilot, crush, diamond_blocks, breakable_walls",
+    "codes": "goblin_pilot",
     "img": "images/items/monsters/goblin_pilot.png"
   },
   {
     "name": "Shockhopper",
     "type": "toggle",
-    "codes": "shockhopper, shock_freeze, ice_orbs, lightning_orbs, distant_ice_orbs",
+    "codes": "shockhopper",
     "img": "images/items/monsters/shockhopper.png"
   },
   {
     "name": "Targoat",
     "type": "toggle",
-    "codes": "targoat, tackle, breakable_walls, heavy_blocks",
+    "codes": "targoat",
     "img": "images/items/monsters/targoat.png"
   },
   {
     "name": "Dracozul",
     "type": "toggle",
-    "codes": "dracozul, flying, distant_ledges",
+    "codes": "dracozul",
     "img": "images/items/monsters/dracozul.png"
   },
   {
     "name": "Troll",
     "type": "toggle",
-    "codes": "troll, corrosive_jabs, water_orbs, breakable_walls",
+    "codes": "troll",
     "img": "images/items/monsters/troll.png"
   },
   {
     "name": "Brutus",
     "type": "toggle",
-    "codes": "brutus, summon_big_rock, ground_switches",
+    "codes": "brutus",
     "img": "images/items/monsters/brutus.png"
   },
   {
     "name": "Mega Rock",
     "type": "toggle",
-    "codes": "mega_rock, summon_rock, ground_switches",
+    "codes": "mega_rock",
     "img": "images/items/monsters/mega_rock.png"
   },
   {
     "name": "Argiope",
     "type": "toggle",
-    "codes": "argiope, grapple",
+    "codes": "argiope",
     "img": "images/items/monsters/argiope.png"
   },
   {
     "name": "Arachlich",
     "type": "toggle",
-    "codes": "arachlich, grapple",
+    "codes": "arachlich",
     "img": "images/items/monsters/arachlich.png"
   },
   {
     "name": "Moccus",
     "type": "toggle",
-    "codes": "moccus, mount",
+    "codes": "moccus",
     "img": "images/items/monsters/moccus.png"
   },
   {
     "name": "Promethean",
     "type": "toggle",
-    "codes": "promethean, summon_big_rock, ground_switches",
+    "codes": "promethean",
     "img": "images/items/monsters/promethean.png"
   },
   {
     "name": "Draconoir",
     "type": "toggle",
-    "codes": "draconoir, flying, distant_ledges",
+    "codes": "draconoir",
     "img": "images/items/monsters/draconoir.png"
   },
   {
     "name": "Spinner",
     "type": "toggle",
-    "codes": "spinner, toxic_freeze, earth_orbs, ice_orbs, distant_ice_orbs",
+    "codes": "spinner",
     "img": "images/items/monsters/spinner.png"
   },
   {
     "name": "Plague Egg",
     "type": "toggle",
-    "codes": "plague_egg, ignite, fire_orbs, impassible_vines, torches",
+    "codes": "plague_egg",
     "img": "images/items/monsters/plague_egg.png"
   },
   {
     "name": "Sutsune",
     "type": "toggle",
-    "codes": "sutsune, secret_vision, invisible_platforms",
+    "codes": "sutsune",
     "img": "images/items/monsters/sutsune.png"
   },
   {
     "name": "Darnation",
     "type": "toggle",
-    "codes": "darnation, crush, diamond_blocks, breakable_walls",
+    "codes": "darnation",
     "img": "images/items/monsters/darnation.png"
   },
   {
     "name": "Thanatos",
     "type": "toggle",
-    "codes": "thanatos, secret_vision, invisible_platforms",
+    "codes": "thanatos",
     "img": "images/items/monsters/thanatos.png"
   },
   {
     "name": "Rainbow Blob",
     "type": "toggle",
-    "codes": "rainbow_blob, blob_form, narrow_corridors",
+    "codes": "rainbow_blob",
     "img": "images/items/monsters/rainbow_blob.png"
   },
   {
     "name": "Changeling",
     "type": "toggle",
-    "codes": "changeling, morph_ball, narrow_corridors",
+    "codes": "changeling",
     "img": "images/items/monsters/changeling.png"
   },
   {
@@ -566,103 +566,103 @@
   {
     "name": "Worm",
     "type": "toggle",
-    "codes": "worm, grapple",
+    "codes": "worm",
     "img": "images/items/monsters/worm.png"
   },
   {
     "name": "Vodinoy",
     "type": "toggle",
-    "codes": "vodinoy, levitate, big_boulders",
+    "codes": "vodinoy",
     "img": "images/items/monsters/vodinoy.png"
   },
   {
     "name": "Aazerach",
     "type": "toggle",
-    "codes": "aazerach, secret_vision, invisible_platforms",
+    "codes": "aazerach",
     "img": "images/items/monsters/aazerach.png"
   },
   {
     "name": "Diavola",
     "type": "toggle",
-    "codes": "diavola, levitate, big_boulders",
+    "codes": "diavola",
     "img": "images/items/monsters/diavola.png"
   },
   {
     "name": "Gryphonix",
     "type": "toggle",
-    "codes": "gryphonix, lofty_mount, distant_ledges",
+    "codes": "gryphonix",
     "img": "images/items/monsters/gryphonix.png"
   },
   {
     "name": "Vertraag",
     "type": "toggle",
-    "codes": "vertraag, levitate, big_boulders",
+    "codes": "vertraag",
     "img": "images/items/monsters/vertraag.png"
   },
   {
     "name": "Mad Lord",
     "type": "toggle",
-    "codes": "mad_lord, flying, distant_ledges",
+    "codes": "mad_lord",
     "img": "images/items/monsters/mad_lord.png"
   },
   {
     "name": "Ascendant",
     "type": "toggle",
-    "codes": "ascendant, heavy_punch, breakable_walls, heavy_blocks",
+    "codes": "ascendant",
     "img": "images/items/monsters/ascendant.png"
   },
   {
     "name": "Fumagus",
     "type": "toggle",
-    "codes": "fumagus, summon_mushroom, ground_switches",
+    "codes": "fumagus",
     "img": "images/items/monsters/fumagus.png"
   },
   {
     "name": "Rampede",
     "type": "toggle",
-    "codes": "rampede, charging_mount",
+    "codes": "rampede",
     "img": "images/items/monsters/rampede.png"
   },
   {
     "name": "Rathops",
     "type": "toggle",
-    "codes": "rathops, charging_mount",
+    "codes": "rathops",
     "img": "images/items/monsters/rathops.png"
   },
   {
     "name": "Krakaturtle",
     "type": "toggle",
-    "codes": "krakaturtle, dual_mobility",
+    "codes": "krakaturtle",
     "img": "images/items/monsters/krakaturtle.png"
   },
   {
     "name": "Tar Blob",
     "type": "toggle",
-    "codes": "tar_blob, tar_mount",
+    "codes": "tar_blob",
     "img": "images/items/monsters/tar_blob.png"
   },
   {
     "name": "Amberlgna",
     "type": "toggle",
-    "codes": "amberlgna, spore_shroud, magic_vines",
+    "codes": "amberlgna",
     "img": "images/items/monsters/amberlgna.png"
   },
   {
     "name": "Dracomer",
     "type": "toggle",
-    "codes": "dracomer, improved_swimming",
+    "codes": "dracomer",
     "img": "images/items/monsters/dracomer.png"
   },
   {
     "name": "Terradrile",
     "type": "toggle",
-    "codes": "terradrile, levitate, big_boulders",
+    "codes": "terradrile",
     "img": "images/items/monsters/terradrile.png"
   },
   {
     "name": "Bard",
     "type": "toggle",
-    "codes": "bard, minnesang, magic_walls",
+    "codes": "bard",
     "img": "images/items/monsters/bard.png"
   }
 ]

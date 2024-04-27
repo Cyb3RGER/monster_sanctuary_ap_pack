@@ -300,6 +300,7 @@ exploration_obstacle_rules = {
     ],
     "tar": [
         "tar_mount",
+        "dual_mobility"
     ],
     "breakable_walls": [
         "claws",
@@ -320,15 +321,20 @@ exploration_obstacle_rules = {
     ],
     "diamond_blocks": [
         "light_crush",
+        "crush",
+        "charging_mount"
     ],
     "fire_orbs": [
         "ignite",
+        "fiery_shots",
     ],
     "water_orbs": [
         "bubble_burst",
+        "corrosive_jabs",
     ],
     "lightning_orbs": [
         "lightning_bolt",
+        "shock_freeze",
     ],
     "earth_orbs": [
         "slime_shot",
@@ -349,6 +355,7 @@ exploration_obstacle_rules = {
     ],
     "narrow_corridors": [
         "blob_form",
+        "morph_ball",
     ],
     "magic_walls": [
         "minnesang",
@@ -361,7 +368,8 @@ exploration_obstacle_rules = {
     ],
     "torches": [
         "ignite",
-
+        "lightning_bolt",
+        "fiery_shots"
     ],
     "dark_rooms": [
         "sonar",

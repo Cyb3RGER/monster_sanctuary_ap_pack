@@ -1375,11 +1375,11 @@ function has_mount()
 end
 
 function tar()
-    return tar_mount()
+    return tar_mount() or dual_mobility()
 end
 
 function has_tar()
-    return has_tar_mount()
+    return has_tar_mount() or has_dual_mobility()
 end
 
 function breakable_walls()
@@ -1399,35 +1399,35 @@ function has_impassible_vines()
 end
 
 function diamond_blocks()
-    return light_crush()
+    return light_crush() or crush() or charging_mount()
 end
 
 function has_diamond_blocks()
-    return has_light_crush()
+    return has_light_crush() or has_crush() or has_charging_mount()
 end
 
 function fire_orbs()
-    return ignite()
+    return ignite() or fiery_shots()
 end
 
 function has_fire_orbs()
-    return has_ignite()
+    return has_ignite() or has_fiery_shots()
 end
 
 function water_orbs()
-    return bubble_burst()
+    return bubble_burst() or corrosive_jabs()
 end
 
 function has_water_orbs()
-    return has_bubble_burst()
+    return has_bubble_burst() or has_corrosive_jabs()
 end
 
 function lightning_orbs()
-    return lightning_bolt()
+    return lightning_bolt() or shock_freeze()
 end
 
 function has_lightning_orbs()
-    return has_lightning_bolt()
+    return has_lightning_bolt() or has_shock_freeze()
 end
 
 function earth_orbs()
@@ -1455,11 +1455,11 @@ function has_distant_ice_orbs()
 end
 
 function narrow_corridors()
-    return blob_form()
+    return blob_form() or morph_ball()
 end
 
 function has_narrow_corridors()
-    return has_blob_form()
+    return has_blob_form() or has_morph_ball()
 end
 
 function magic_walls()
@@ -1487,11 +1487,11 @@ function has_heavy_blocks()
 end
 
 function torches()
-    return ignite()
+    return ignite() or lightning_bolt() or fiery_shots()
 end
 
 function has_torches()
-    return has_ignite()
+    return has_ignite() or has_lightning_bolt() or has_fiery_shots()
 end
 
 function dark_rooms()

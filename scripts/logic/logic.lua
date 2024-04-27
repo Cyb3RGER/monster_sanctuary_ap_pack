@@ -6,7 +6,6 @@ require('logic/monster_ability_item_data')
 
 --alias
 double_jump = double_jump_boots
---has_dodo = dodo_egg --ToDo: this should really come via DataStorge from the mod I think
 post_game = mad_lord_defeated
 third_bex_encounter = third_beach_bex
 
@@ -84,7 +83,6 @@ function is_shopsanity()
     if SLOT_DATA == nil then
         return false
     end
-    print('is_shopsanity', SLOT_DATA.locations.shops)
     if SLOT_DATA.locations.shops then
         return true
     end
@@ -96,14 +94,12 @@ function not_is_shopsanity()
 end
 
 function check_option(option_name, val)
-    print('check_option', option_name, val, SLOT_DATA)
     if type(val) ~= 'number' then
         val = tonumber(val)
     end
     if SLOT_DATA == nil then
         return false
     end
-    print('check_option (2)', option_name, val, SLOT_DATA.options[option_name])
     return SLOT_DATA.options[option_name] == val
 end
 
@@ -149,17 +145,16 @@ function tar()
     })
 end
 
-
 function can_use_ability(monster)
     return _AND({
+        has(monster),
         has_ability(monster),
         is_explore_ability_available(monster)
     })
 end
 
-
 function has_ability(monster)
-    for _,v in ipairs(MONSTERS_TO_ABILITIES[monster]) do
+    for _, v in ipairs(MONSTERS_TO_ABILITIES[monster]) do
         if has(v) then
             return true
         end
@@ -168,8 +163,8 @@ function has_ability(monster)
 end
 
 function is_explore_ability_available(monster)
-    for _,v in ipairs(MONSTERS_TO_ABILITIES[monster]) do
-        if not has(v..'_locked') then
+    for _, v in ipairs(MONSTERS_TO_ABILITIES[monster]) do
+        if not has(v .. '_locked') then
             return true
         end
     end
@@ -197,6 +192,16 @@ function _is_explore_ability_available(monster)
     if opt == 3 then
         return has(MONSTER_ABILITY_ITEM_DATA[monster].SpeciesItem)
     end
+end
+
+function shifting_avialable()
+    return _OR({
+        SLOT_DATA.options.monster_shift_rule == 2,
+        _AND({
+            SLOT_DATA.options.monster_shift_rule == 1,
+            sun_palace_story_completed()
+        })
+    })
 end
 
 --amount helpers

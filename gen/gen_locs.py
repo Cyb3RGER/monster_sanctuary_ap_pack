@@ -220,8 +220,8 @@ map_location_mapping = {
     84: ['SunPalace_West1_3'],
     85: ['SunPalace_West3_2'],
     86: ['SunPalace_West3_19700006'],
-    87: ['StrongholdDungeon_Jail_5'],
-    88: ['StrongholdDungeon_Jail_7'],
+    87: ['StrongholdDungeon_Jail_7'],
+    88: ['StrongholdDungeon_Jail_5'],
     89: ['StrongholdDungeon_North2_17'],
     90: ['StrongholdDungeon_North6_18'],
     91: ['StrongholdDungeon_NorthHidden_0'],
@@ -383,9 +383,9 @@ map_location_mapping = {
     244: ['MagmaChamber_Center9_Middle_12'],
     245: ['MagmaChamber_Center10_6'],
     246: ['AncientWoods_West3_0'],
-    247: ['AncientWoods_TreeOfEvolution_7',
+    247: ['AncientWoods_TreeOfEvolution_9900049',
           *[f'AncientWoods_TreeOfEvolution_TravelingMerchant_{i + 1}' for i in range(shop_locs["Traveling Merchant"])]],
-    248: ['AncientWoods_TreeOfEvolution_9900049'],
+    248: ['AncientWoods_TreeOfEvolution_7'],
     249: ['AncientWoods_WestDescent2_4', 'AncientWoods_WestDescent2_105'],
     250: ['MagmaChamber_South3_West_3'],
     251: ['MagmaChamber_North8_East_27900026'],
@@ -1599,7 +1599,7 @@ def gen_locations():
         loc = loc_by_name[loc_name]
         loc.access_rules = combine_access(loc.access_rules,
                                           combine_access(
-                                              [[f'$has_access_to|{region_name}', '$plotless']],
+                                              [[f'$has_access_to|{region_name}', '$skip_plot']],
                                               get_access(plotless_data['requirements']), 'AND')
                                           , 'OR')
     # Fix sections sorting

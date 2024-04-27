@@ -7,6 +7,7 @@ MAP_SWITCHING_MAPPING = {
    ["AncientWoods"] = "Ancient Woods",
    ["HorizonBeach"] = "Horizon Beach",
    ["SnowyPeaks"] = "Snowy Peaks",
+   ["SunPalace"] = "Sun Palace",
    ["MagmaChamber"] = "Magma Chamber",
    ["MysticalWorkshop"] = "Mystical Workshop",
    ["Underworld"] = "The Underworld",

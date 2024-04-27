@@ -4103,7 +4103,7 @@
           ],
           [
             "$has_access_to|BlueCave_South5",
-            "$plotless",
+            "$skip_plot",
             "$all_sanctuary_tokens"
           ]
         ],
@@ -4131,7 +4131,7 @@
           ],
           [
             "$has_access_to|BlueCave_South5",
-            "$plotless",
+            "$skip_plot",
             "$all_sanctuary_tokens"
           ]
         ],
@@ -4636,12 +4636,12 @@
       {
         "map": "overview",
         "x": 1854,
-        "y": 1098
+        "y": 1134
       },
       {
         "map": "stronghold_dungeon",
         "x": 122,
-        "y": 122
+        "y": 158
       }
     ],
     "sections": [
@@ -4664,12 +4664,12 @@
       {
         "map": "overview",
         "x": 1854,
-        "y": 1134
+        "y": 1098
       },
       {
         "map": "stronghold_dungeon",
         "x": 122,
-        "y": 158
+        "y": 122
       }
     ],
     "sections": [
@@ -9643,6 +9643,33 @@
     ]
   },
   {
+    "name": "Ancient Woods - Tree of Evolution Chest",
+    "access_rules": [
+      [
+        "$has_access_to|AncientWoods_TreeOfEvolution"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2394,
+        "y": 1062
+      },
+      {
+        "map": "ancient_woods",
+        "x": 230,
+        "y": 158
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
     "name": "Ancient Woods Tree Of Evolution",
     "map_locations": [
       {
@@ -9658,7 +9685,7 @@
     ],
     "sections": [
       {
-        "name": "Ancient Woods - Tree of Evolution Chest",
+        "name": "Ancient Woods - Tree of Evolution Gift",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -9786,33 +9813,6 @@
             "$is_shopsanity"
           ]
         ]
-      }
-    ]
-  },
-  {
-    "name": "Ancient Woods - Tree of Evolution Gift",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_TreeOfEvolution"
-      ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 2394,
-        "y": 1062
-      },
-      {
-        "map": "ancient_woods",
-        "x": 230,
-        "y": 158
-      }
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
       }
     ]
   },

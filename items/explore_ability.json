@@ -964,5 +964,101 @@
     "type": "toggle",
     "codes": "bards_lute",
     "img": "images/items/abilities/bards_lute.png"
+  },
+  {
+    "name": "Progressive Mobility",
+    "type": "toggle",
+    "codes": "progressive_mobility",
+    "img": "images/items/abilities/progressive_mobility.png"
+  },
+  {
+    "name": "Progressive Terrain",
+    "type": "toggle",
+    "codes": "progressive_terrain",
+    "img": "images/items/abilities/progressive_terrain.png"
+  },
+  {
+    "name": "Progressive Mount",
+    "type": "toggle",
+    "codes": "progressive_mount",
+    "img": "images/items/abilities/progressive_mount.png"
+  },
+  {
+    "name": "Progressive Walls",
+    "type": "toggle",
+    "codes": "progressive_walls",
+    "img": "images/items/abilities/progressive_walls.png"
+  },
+  {
+    "name": "Progressive Boulders",
+    "type": "toggle",
+    "codes": "progressive_boulders",
+    "img": "images/items/abilities/progressive_boulders.png"
+  },
+  {
+    "name": "Progressive Fire Orbs",
+    "type": "toggle",
+    "codes": "progressive_fire_orbs",
+    "img": "images/items/abilities/progressive_fire_orbs.png"
+  },
+  {
+    "name": "Progressive Water Orbs",
+    "type": "toggle",
+    "codes": "progressive_water_orbs",
+    "img": "images/items/abilities/progressive_water_orbs.png"
+  },
+  {
+    "name": "Progressive Lightning Orbs",
+    "type": "toggle",
+    "codes": "progressive_lightning_orbs",
+    "img": "images/items/abilities/progressive_lightning_orbs.png"
+  },
+  {
+    "name": "Progressive Earth Orbs",
+    "type": "toggle",
+    "codes": "progressive_earth_orbs",
+    "img": "images/items/abilities/progressive_earth_orbs.png"
+  },
+  {
+    "name": "Progressive Ice Orbs",
+    "type": "toggle",
+    "codes": "progressive_ice_orbs",
+    "img": "images/items/abilities/progressive_ice_orbs.png"
+  },
+  {
+    "name": "Progressive Light",
+    "type": "toggle",
+    "codes": "progressive_light",
+    "img": "images/items/abilities/progressive_light.png"
+  },
+  {
+    "name": "Progressive Shroud",
+    "type": "toggle",
+    "codes": "progressive_shroud",
+    "img": "images/items/abilities/progressive_shroud.png"
+  },
+  {
+    "name": "Progressive Flight",
+    "type": "toggle",
+    "codes": "progressive_flight",
+    "img": "images/items/abilities/progressive_flight.png"
+  },
+  {
+    "name": "Progressive Swimming",
+    "type": "toggle",
+    "codes": "progressive_swimming",
+    "img": "images/items/abilities/progressive_swimming.png"
+  },
+  {
+    "name": "Progressive Magic",
+    "type": "toggle",
+    "codes": "progressive_magic",
+    "img": "images/items/abilities/progressive_magic.png"
+  },
+  {
+    "name": "Progressive Orbs",
+    "type": "toggle",
+    "codes": "progressive_orbs",
+    "img": "images/items/abilities/progressive_orbs.png"
   }
 ]

@@ -3239,66 +3239,46 @@
         ]
       },
       {
-        "name": "Eternity's End - Spectral Wolf Egg",
+        "name": "Eternity's End - Spectral Familiar Egg (Wolf)",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
           [
             "$has_access_to|KeeperStronghold_EndOfTime",
             "$keeper_rank_5"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$not_check_option|starting_familiar|0"
           ]
         ]
       },
       {
-        "name": "Eternity's End - Spectral Eagle Egg",
+        "name": "Eternity's End - Spectral Familiar Egg (Eagle)",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
           [
             "$has_access_to|KeeperStronghold_EndOfTime",
             "$keeper_rank_5"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$not_check_option|starting_familiar|1"
           ]
         ]
       },
       {
-        "name": "Eternity's End - Spectral Toad Egg",
+        "name": "Eternity's End - Spectral Familiar Egg (Toad)",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
           [
             "$has_access_to|KeeperStronghold_EndOfTime",
             "$keeper_rank_5"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$not_check_option|starting_familiar|2"
           ]
         ]
       },
       {
-        "name": "Eternity's End - Spectral Lion Egg",
+        "name": "Eternity's End - Spectral Familiar Egg (Lion)",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
           [
             "$has_access_to|KeeperStronghold_EndOfTime",
             "$keeper_rank_5"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$not_check_option|starting_familiar|3"
           ]
         ]
       },
@@ -6717,7 +6697,9 @@
     "name": "Snowy Peaks - West Mountain Peak - Ledge Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_WestMountain7"
+        "$has_access_to|SnowyPeaks_WestMountain7",
+        "$double_jump",
+        "$distant_ledges"
       ]
     ],
     "map_locations": [
@@ -6744,7 +6726,10 @@
     "name": "Snowy Peaks - West Mountain Peak - Breakable Wall Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_WestMountain7"
+        "$has_access_to|SnowyPeaks_WestMountain7",
+        "$double_jump",
+        "$distant_ledges",
+        "$breakable_walls"
       ]
     ],
     "map_locations": [
@@ -6771,7 +6756,10 @@
     "name": "Snowy Peaks - West Mountain Peak - Invisible Platform Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_WestMountain7"
+        "$has_access_to|SnowyPeaks_WestMountain7",
+        "$double_jump",
+        "$distant_ledges",
+        "$secret_vision"
       ]
     ],
     "map_locations": [
@@ -6825,7 +6813,9 @@
     "name": "Snowy Peaks - East Mountain Peak - Floating Ledge Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_EastMountain1"
+        "$has_access_to|SnowyPeaks_EastMountain1",
+        "$double_jump",
+        "$distant_ledges"
       ]
     ],
     "map_locations": [
@@ -6852,7 +6842,8 @@
     "name": "Snowy Peaks - East Mountain Peak - Cave Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_EastMountain1"
+        "$has_access_to|SnowyPeaks_EastMountain1",
+        "$distant_ledges"
       ]
     ],
     "map_locations": [
@@ -6935,7 +6926,9 @@
     "name": "Snowy Peaks - East Mountain - Lightning Orb Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_EastMountain4"
+        "$has_access_to|SnowyPeaks_EastMountain4",
+        "$double_jump",
+        "$lightning_orbs"
       ]
     ],
     "map_locations": [
@@ -6962,7 +6955,20 @@
     "name": "Snowy Peaks - East Mountain - West Crumble Ledge Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_EastMountain2"
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$lofty_mount"
       ]
     ],
     "map_locations": [
@@ -6989,7 +6995,8 @@
     "name": "Snowy Peaks - East Mountain - Spikes Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_EastMountain2"
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$double_jump"
       ]
     ],
     "map_locations": [
@@ -7016,7 +7023,8 @@
     "name": "Snowy Peaks - East Mountain - Upper Cave Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_EastMountain2"
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$double_jump"
       ]
     ],
     "map_locations": [
@@ -7043,7 +7051,8 @@
     "name": "Snowy Peaks - East Mountain - East Upper Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_EastMountain5"
+        "$has_access_to|SnowyPeaks_EastMountain5",
+        "$double_jump"
       ]
     ],
     "map_locations": [
@@ -7070,7 +7079,16 @@
     "name": "Snowy Peaks - East Mountain - East Lower Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_EastMountain5"
+        "$has_access_to|SnowyPeaks_EastMountain5",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain5",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain5",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -7097,7 +7115,8 @@
     "name": "Snowy Peaks - East Mountain - Crumble Platform Challenge Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_HighChallenge"
+        "$has_access_to|SnowyPeaks_HighChallenge",
+        "$double_jump"
       ]
     ],
     "map_locations": [
@@ -7124,7 +7143,19 @@
     "name": "Snowy Peaks - East Mountain - Ice Orb Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_HighChallenge"
+        "$has_access_to|SnowyPeaks_HighChallenge",
+        "$ice_orbs",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_HighChallenge",
+        "$ice_orbs",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_HighChallenge",
+        "$ice_orbs",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [

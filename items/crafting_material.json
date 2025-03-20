@@ -2,13 +2,7 @@
   {
     "name": "Raw Hide",
     "type": "toggle",
-    "codes": "raw_hide, up_to_2",
+    "codes": "raw_hide",
     "img": "images/items/crafting_material/raw_hide.png"
-  },
-  {
-    "name": "2x Raw Hide",
-    "type": "toggle",
-    "codes": "_2x_raw_hide, multiple",
-    "img": "images/items/crafting_material/_2x_raw_hide.png"
   }
 ]

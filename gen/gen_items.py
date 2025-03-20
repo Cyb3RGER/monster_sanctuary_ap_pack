@@ -165,9 +165,9 @@ def gen_items():
         items.append(item)
         datastorage_monster_mapping[name] = (codes, item.type)
         monster_ability_item_data[main_code] = {
-            'SpeciesItem': format_code(monster_data["SpeciesItem"]),
-            'AbilityItem': format_code(monster_data["AbilityItem"]),
-            'TypeItem': format_code(monster_data["TypeItem"]),
+            'SpeciesItem': format_code(monster_data.get("SpeciesItem", "")),
+            'AbilityItem': format_code(monster_data.get("AbilityItem", "")),
+            'TypeItem': format_code(monster_data.get("TypeItem", "")),
         }
     export_items(items, out_path=f'../items/monsters.json')
     print(f'Exported monsters items!')
@@ -211,8 +211,8 @@ def gen_items():
     # export_datastorage_item_mappings(datastorage_ability_mapping | datastorage_monster_mapping)
     export_datastorage_item_mappings(datastorage_monster_mapping)
     print(f'Exported datastorage mappings!')
-    export_monster_ability_item_data(monster_ability_item_data)
-    print(f'Exported monster ability item data!')
+    # export_monster_ability_item_data(monster_ability_item_data)
+    # print(f'Exported monster ability item data!')
 
 def export_monster_ability_item_data(monster_ability_item_data):
     lines = ['MONSTER_ABILITY_ITEM_DATA = {']

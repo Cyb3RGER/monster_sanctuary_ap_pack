@@ -1,45 +1,15 @@
 [
   {
-    "name": "Stardust",
-    "type": "toggle",
-    "codes": "stardust",
-    "img": "images/items/catalyst/stardust.png"
-  },
-  {
-    "name": "Cocoon",
-    "type": "toggle",
-    "codes": "cocoon",
-    "img": "images/items/catalyst/cocoon.png"
-  },
-  {
     "name": "Shard of Winter",
     "type": "toggle",
     "codes": "shard_of_winter",
     "img": "images/items/catalyst/shard_of_winter.png"
   },
   {
-    "name": "Sun Stone",
-    "type": "toggle",
-    "codes": "sun_stone",
-    "img": "images/items/catalyst/sun_stone.png"
-  },
-  {
-    "name": "Magical Clay",
-    "type": "toggle",
-    "codes": "magical_clay",
-    "img": "images/items/catalyst/magical_clay.png"
-  },
-  {
     "name": "Silver Feather",
     "type": "toggle",
     "codes": "silver_feather",
     "img": "images/items/catalyst/silver_feather.png"
-  },
-  {
-    "name": "Volcanic Ash",
-    "type": "toggle",
-    "codes": "volcanic_ash",
-    "img": "images/items/catalyst/volcanic_ash.png"
   },
   {
     "name": "Fire Stone",

@@ -385,6 +385,47 @@ def gen_logic():
     gen_regions_table()
     gen_abilities_list()
     gen_monster_to_abilities()
+    gen_evo_table()
+
+
+def gen_evo_table():
+    evo_table = {}
+    child_table = {}
+    with open('data/monsters.json', mode='r') as f:
+        json_data = json.load(f)
+    for monster_data in json_data:
+        name = monster_data["Name"]
+        main_code = format_code(name)
+        evos = monster_data.get("Evolutions",[])
+        for evo in evos:                
+            evo_code = format_code(evo["Monster"])
+            cata_code = format_code(evo["Catalyst"])
+            if main_code not in evo_table:
+                evo_table[main_code] = []
+            evo_table[main_code].append((evo_code, cata_code))
+            if not evo_code in child_table:
+                child_table[evo_code] = []
+            child_table[evo_code].append(main_code)
+    lua_str = "EVO_TABLE = {\n"
+    for k, vals in evo_table.items():
+        lua_str += f"{TAB}[\"{k}\"] = {{"
+        for v in vals:
+            lua_str += f'{{ Monster = \"{v[0]}\", Catalyst = \"{v[1]}\" }}'
+            if v != vals[-1]:
+                lua_str += ", "
+        lua_str += "},\n"
+    lua_str += "}"
+    lua_str += "\n\nCHILD_TABLE = {\n"
+    for k, vals in child_table.items():
+        lua_str += f"{TAB}[\"{k}\"] = {{"
+        for v in vals:
+            lua_str += f'"{v}"'
+            if v != vals[-1]:
+                lua_str += ", "
+        lua_str += "},\n"
+    lua_str += "}"
+    with open('../scripts/logic/evo_table.lua', mode='w') as f:
+        f.write(lua_str)
 
 
 def map_monsters_to_abilities():
@@ -473,21 +514,25 @@ def gen_item_helpers():
             is_consumable = count > 1
             if is_consumable:
                 code_to_type[main_code] = "consumable"
+        # for code in monster_data.get('Groups') or []:
+        #     code = format_code(code)
+        #     if code not in codes:
+        #         codes.append(code)
+    mon_codes = []
+    evo_table = {}
     with open('data/monsters.json', mode='r') as f:
         json_data = json.load(f)
     for monster_data in json_data:
         name = monster_data["Name"]
         main_code = format_code(name)
-        if main_code not in codes:
-            codes.append(main_code)
-        # for code in monster_data.get('Groups') or []:
-        #     code = format_code(code)
-        #     if code not in codes:
-        #         codes.append(code)
+        if main_code not in mon_codes:
+            mon_codes.append(main_code)
     lua_str = ''
     # abilities = [format_code(v) for v in abilities_compact]
     for code in codes:
         lua_str += build_item_helper(code, code_to_type[code] if code in code_to_type else 'toggle')
+    for code in mon_codes:
+        lua_str += build_mon_helper(code, code_to_type[code] if code in code_to_type else 'toggle')
     for k, v in monster_ability_rules.items():
         lua_str += build_ability_helper(k, v)
         lua_str += build_ability_helper(k, v, True)
@@ -512,6 +557,7 @@ def gen_item_helpers():
     with open('../scripts/logic/logic_generated.lua', mode='w') as f:
         f.write(lua_str)
     print('logic helpers done!')
+        
 
 
 def build_slot_data_func(opt_name):
@@ -551,7 +597,8 @@ def build_ability_helper(ability, monsters, useHas=False):
     lua_str = f'function {func_name}()\n'
     lua_str += f'{TAB}return '
     for v in monsters:
-        lua_str += f'{("has" if useHas else "can_use_ability")}(\'{v}\')'
+        lua_str += f'{v}()' if useHas else f"can_use_ability(\'{v}\')"
+        # lua_str += f'{(v if useHas else "can_use_ability")}(\'{("" if useHas else v)}\')'
         if v != monsters[-1]:
             lua_str += ' or '
     lua_str += '\nend\n\n'
@@ -585,6 +632,16 @@ def build_item_helper(code, item_type='toggle'):
             for v in open_rule[code]:
                 # ToDo: this should technically use _OR
                 lua_str += f' or {open_rule_name}({format_func_value(v)})'
+    lua_str += '\nend\n\n'
+    return lua_str
+
+def build_mon_helper(code, item_type='toggle'):
+    func_name = code
+    lua_str = f'function {func_name}('
+    if item_type == 'consumable':
+        lua_str += 'n'
+    lua_str += ')\n'
+    lua_str += f'{TAB}return has_mon_full(\'{code}\')'
     lua_str += '\nend\n\n'
     return lua_str
 

@@ -74,52 +74,56 @@ function underworld_key()
     return has('underworld_key')
 end
 
-function dungeon_explorer()
-    return has('dungeon_explorer')
-end
-
-function dragon_lord()
-    return has('dragon_lord')
-end
-
-function dragon_lord_alt()
-    return has('dragon_lord_alt')
-end
-
-function old_world_tycoon()
-    return has('old_world_tycoon')
-end
-
-function winter_explorer()
-    return has('winter_explorer')
-end
-
-function keeper_master()
-    return has('keeper_master')
-end
-
-function monster_tamer()
-    return has('monster_tamer')
-end
-
-function alchemist()
-    return has('alchemist')
+function looters_handbook()
+    return has('looters_handbook')
 end
 
 function raw_hide()
     return has('raw_hide')
 end
 
-function up_to_2()
-    return has('up_to_2')
+function shard_of_winter()
+    return has('shard_of_winter')
 end
 
-function _2x_raw_hide()
-    return has('_2x_raw_hide')
+function silver_feather()
+    return has('silver_feather')
 end
 
-function multiple()
-    return has('multiple')
+function fire_stone()
+    return has('fire_stone')
+end
+
+function ice_stone()
+    return has('ice_stone')
+end
+
+function giant_seed()
+    return has('giant_seed')
+end
+
+function dark_stone()
+    return has('dark_stone')
+end
+
+function majestic_crown()
+    return has('majestic_crown')
+end
+
+function demonic_pact()
+    return has('demonic_pact')
+end
+
+function deep_stone()
+    return has('deep_stone')
+end
+
+function primordial_branch()
+    return has('primordial_branch')
+end
+
+function druid_soul()
+    return has('druid_soul')
 end
 
 function vaero_egg()
@@ -571,447 +575,447 @@ function champion_defeated(n)
 end
 
 function spectral_wolf()
-    return has('spectral_wolf')
+    return has_mon_full('spectral_wolf')
 end
 
 function spectral_toad()
-    return has('spectral_toad')
+    return has_mon_full('spectral_toad')
 end
 
 function spectral_eagle()
-    return has('spectral_eagle')
+    return has_mon_full('spectral_eagle')
 end
 
 function spectral_lion()
-    return has('spectral_lion')
+    return has_mon_full('spectral_lion')
 end
 
 function blob()
-    return has('blob')
+    return has_mon_full('blob')
 end
 
 function magmapillar()
-    return has('magmapillar')
+    return has_mon_full('magmapillar')
 end
 
 function rocky()
-    return has('rocky')
+    return has_mon_full('rocky')
 end
 
 function vaero()
-    return has('vaero')
+    return has_mon_full('vaero')
 end
 
 function catzerker()
-    return has('catzerker')
+    return has_mon_full('catzerker')
 end
 
 function yowie()
-    return has('yowie')
+    return has_mon_full('yowie')
 end
 
 function steam_golem()
-    return has('steam_golem')
+    return has_mon_full('steam_golem')
 end
 
 function monk()
-    return has('monk')
+    return has_mon_full('monk')
 end
 
 function grummy()
-    return has('grummy')
+    return has_mon_full('grummy')
 end
 
 function tengu()
-    return has('tengu')
+    return has_mon_full('tengu')
 end
 
 function fungi()
-    return has('fungi')
+    return has_mon_full('fungi')
 end
 
 function frosty()
-    return has('frosty')
+    return has_mon_full('frosty')
 end
 
 function minitaur()
-    return has('minitaur')
+    return has_mon_full('minitaur')
 end
 
 function specter()
-    return has('specter')
+    return has_mon_full('specter')
 end
 
 function crackle_knight()
-    return has('crackle_knight')
+    return has_mon_full('crackle_knight')
 end
 
 function grulu()
-    return has('grulu')
+    return has_mon_full('grulu')
 end
 
 function mad_eye()
-    return has('mad_eye')
+    return has_mon_full('mad_eye')
 end
 
 function nightwing()
-    return has('nightwing')
+    return has_mon_full('nightwing')
 end
 
 function toxiquus()
-    return has('toxiquus')
+    return has_mon_full('toxiquus')
 end
 
 function beetloid()
-    return has('beetloid')
+    return has_mon_full('beetloid')
 end
 
 function druid_oak()
-    return has('druid_oak')
+    return has_mon_full('druid_oak')
 end
 
 function magmamoth()
-    return has('magmamoth')
+    return has_mon_full('magmamoth')
 end
 
 function molebear()
-    return has('molebear')
+    return has_mon_full('molebear')
 end
 
 function glowfly()
-    return has('glowfly')
+    return has_mon_full('glowfly')
 end
 
 function goblin_brute()
-    return has('goblin_brute')
+    return has_mon_full('goblin_brute')
 end
 
 function goblin_hood()
-    return has('goblin_hood')
+    return has_mon_full('goblin_hood')
 end
 
 function goblin_warlock()
-    return has('goblin_warlock')
+    return has_mon_full('goblin_warlock')
 end
 
 function goblin_king()
-    return has('goblin_king')
+    return has_mon_full('goblin_king')
 end
 
 function raduga()
-    return has('raduga')
+    return has_mon_full('raduga')
 end
 
 function ice_blob()
-    return has('ice_blob')
+    return has_mon_full('ice_blob')
 end
 
 function caraglow()
-    return has('caraglow')
+    return has_mon_full('caraglow')
 end
 
 function aurumtail()
-    return has('aurumtail')
+    return has_mon_full('aurumtail')
 end
 
 function megataur()
-    return has('megataur')
+    return has_mon_full('megataur')
 end
 
 function mogwai()
-    return has('mogwai')
+    return has_mon_full('mogwai')
 end
 
 function crystal_snail()
-    return has('crystal_snail')
+    return has_mon_full('crystal_snail')
 end
 
 function akhlut()
-    return has('akhlut')
+    return has_mon_full('akhlut')
 end
 
 function blade_widow()
-    return has('blade_widow')
+    return has_mon_full('blade_widow')
 end
 
 function ninki()
-    return has('ninki')
+    return has_mon_full('ninki')
 end
 
 function ninki_nanka()
-    return has('ninki_nanka')
+    return has_mon_full('ninki_nanka')
 end
 
 function vasuki()
-    return has('vasuki')
+    return has_mon_full('vasuki')
 end
 
 function kame()
-    return has('kame')
+    return has_mon_full('kame')
 end
 
 function sycophantom()
-    return has('sycophantom')
+    return has_mon_full('sycophantom')
 end
 
 function imori()
-    return has('imori')
+    return has_mon_full('imori')
 end
 
 function qilin()
-    return has('qilin')
+    return has_mon_full('qilin')
 end
 
 function sizzle_knight()
-    return has('sizzle_knight')
+    return has_mon_full('sizzle_knight')
 end
 
 function koi()
-    return has('koi')
+    return has_mon_full('koi')
 end
 
 function tanuki()
-    return has('tanuki')
+    return has_mon_full('tanuki')
 end
 
 function kanko()
-    return has('kanko')
+    return has_mon_full('kanko')
 end
 
 function dodo()
-    return has('dodo')
+    return has_mon_full('dodo')
 end
 
 function kongamato()
-    return has('kongamato')
+    return has_mon_full('kongamato')
 end
 
 function ucan()
-    return has('ucan')
+    return has_mon_full('ucan')
 end
 
 function brawlish()
-    return has('brawlish')
+    return has_mon_full('brawlish')
 end
 
 function thornish()
-    return has('thornish')
+    return has_mon_full('thornish')
 end
 
 function nautilid()
-    return has('nautilid')
+    return has_mon_full('nautilid')
 end
 
 function silvaero()
-    return has('silvaero')
+    return has_mon_full('silvaero')
 end
 
 function elderjel()
-    return has('elderjel')
+    return has_mon_full('elderjel')
 end
 
 function manticorb()
-    return has('manticorb')
+    return has_mon_full('manticorb')
 end
 
 function goblin_miner()
-    return has('goblin_miner')
+    return has_mon_full('goblin_miner')
 end
 
 function salahammer()
-    return has('salahammer')
+    return has_mon_full('salahammer')
 end
 
 function lava_blob()
-    return has('lava_blob')
+    return has_mon_full('lava_blob')
 end
 
 function glowdra()
-    return has('glowdra')
+    return has_mon_full('glowdra')
 end
 
 function draconov()
-    return has('draconov')
+    return has_mon_full('draconov')
 end
 
 function dracogran()
-    return has('dracogran')
+    return has_mon_full('dracogran')
 end
 
 function asura()
-    return has('asura')
+    return has_mon_full('asura')
 end
 
 function skorch()
-    return has('skorch')
+    return has_mon_full('skorch')
 end
 
 function stolby()
-    return has('stolby')
+    return has_mon_full('stolby')
 end
 
 function ornithopter()
-    return has('ornithopter')
+    return has_mon_full('ornithopter')
 end
 
 function polterofen()
-    return has('polterofen')
+    return has_mon_full('polterofen')
 end
 
 function oculus()
-    return has('oculus')
+    return has_mon_full('oculus')
 end
 
 function mimic()
-    return has('mimic')
+    return has_mon_full('mimic')
 end
 
 function goblin_pilot()
-    return has('goblin_pilot')
+    return has_mon_full('goblin_pilot')
 end
 
 function shockhopper()
-    return has('shockhopper')
+    return has_mon_full('shockhopper')
 end
 
 function targoat()
-    return has('targoat')
+    return has_mon_full('targoat')
 end
 
 function dracozul()
-    return has('dracozul')
+    return has_mon_full('dracozul')
 end
 
 function troll()
-    return has('troll')
+    return has_mon_full('troll')
 end
 
 function brutus()
-    return has('brutus')
+    return has_mon_full('brutus')
 end
 
 function mega_rock()
-    return has('mega_rock')
+    return has_mon_full('mega_rock')
 end
 
 function argiope()
-    return has('argiope')
+    return has_mon_full('argiope')
 end
 
 function arachlich()
-    return has('arachlich')
+    return has_mon_full('arachlich')
 end
 
 function moccus()
-    return has('moccus')
+    return has_mon_full('moccus')
 end
 
 function promethean()
-    return has('promethean')
+    return has_mon_full('promethean')
 end
 
 function draconoir()
-    return has('draconoir')
+    return has_mon_full('draconoir')
 end
 
 function spinner()
-    return has('spinner')
+    return has_mon_full('spinner')
 end
 
 function plague_egg()
-    return has('plague_egg')
+    return has_mon_full('plague_egg')
 end
 
 function sutsune()
-    return has('sutsune')
+    return has_mon_full('sutsune')
 end
 
 function darnation()
-    return has('darnation')
+    return has_mon_full('darnation')
 end
 
 function thanatos()
-    return has('thanatos')
+    return has_mon_full('thanatos')
 end
 
 function rainbow_blob()
-    return has('rainbow_blob')
+    return has_mon_full('rainbow_blob')
 end
 
 function changeling()
-    return has('changeling')
+    return has_mon_full('changeling')
 end
 
 function king_blob()
-    return has('king_blob')
+    return has_mon_full('king_blob')
 end
 
 function worm()
-    return has('worm')
+    return has_mon_full('worm')
 end
 
 function vodinoy()
-    return has('vodinoy')
+    return has_mon_full('vodinoy')
 end
 
 function aazerach()
-    return has('aazerach')
+    return has_mon_full('aazerach')
 end
 
 function diavola()
-    return has('diavola')
+    return has_mon_full('diavola')
 end
 
 function gryphonix()
-    return has('gryphonix')
+    return has_mon_full('gryphonix')
 end
 
 function vertraag()
-    return has('vertraag')
+    return has_mon_full('vertraag')
 end
 
 function mad_lord()
-    return has('mad_lord')
+    return has_mon_full('mad_lord')
 end
 
 function ascendant()
-    return has('ascendant')
+    return has_mon_full('ascendant')
 end
 
 function fumagus()
-    return has('fumagus')
+    return has_mon_full('fumagus')
 end
 
 function rampede()
-    return has('rampede')
+    return has_mon_full('rampede')
 end
 
 function rathops()
-    return has('rathops')
+    return has_mon_full('rathops')
 end
 
 function krakaturtle()
-    return has('krakaturtle')
+    return has_mon_full('krakaturtle')
 end
 
 function tar_blob()
-    return has('tar_blob')
+    return has_mon_full('tar_blob')
 end
 
 function amberlgna()
-    return has('amberlgna')
+    return has_mon_full('amberlgna')
 end
 
 function dracomer()
-    return has('dracomer')
+    return has_mon_full('dracomer')
 end
 
 function terradrile()
-    return has('terradrile')
+    return has_mon_full('terradrile')
 end
 
 function bard()
-    return has('bard')
+    return has_mon_full('bard')
 end
 
 function claws()
@@ -1019,7 +1023,7 @@ function claws()
 end
 
 function has_claws()
-    return has('spectral_wolf') or has('spectral_lion') or has('molebear')
+    return spectral_wolf() or spectral_lion() or molebear()
 end
 
 function tackle()
@@ -1027,7 +1031,7 @@ function tackle()
 end
 
 function has_tackle()
-    return has('spectral_toad') or has('yowie') or has('steam_golem') or has('vasuki') or has('brawlish') or has('targoat')
+    return spectral_toad() or yowie() or steam_golem() or vasuki() or brawlish() or targoat()
 end
 
 function slash()
@@ -1035,7 +1039,7 @@ function slash()
 end
 
 function has_slash()
-    return has('catzerker') or has('minitaur') or has('blade_widow') or has('ucan')
+    return catzerker() or minitaur() or blade_widow() or ucan()
 end
 
 function heavy_punch()
@@ -1043,7 +1047,7 @@ function heavy_punch()
 end
 
 function has_heavy_punch()
-    return has('monk')
+    return monk()
 end
 
 function toxic_slam()
@@ -1051,7 +1055,7 @@ function toxic_slam()
 end
 
 function has_toxic_slam()
-    return has('goblin_brute')
+    return goblin_brute()
 end
 
 function light_crush()
@@ -1059,7 +1063,7 @@ function light_crush()
 end
 
 function has_light_crush()
-    return has('goblin_miner')
+    return goblin_miner()
 end
 
 function crush()
@@ -1067,7 +1071,7 @@ function crush()
 end
 
 function has_crush()
-    return has('salahammer') or has('asura') or has('goblin_pilot') or has('darnation')
+    return salahammer() or asura() or goblin_pilot() or darnation()
 end
 
 function corrosive_jabs()
@@ -1075,7 +1079,7 @@ function corrosive_jabs()
 end
 
 function has_corrosive_jabs()
-    return has('troll')
+    return troll()
 end
 
 function charging_mount()
@@ -1083,7 +1087,7 @@ function charging_mount()
 end
 
 function has_charging_mount()
-    return has('rampede') or has('rathops')
+    return rampede() or rathops()
 end
 
 function ignite()
@@ -1091,7 +1095,7 @@ function ignite()
 end
 
 function has_ignite()
-    return has('magmapillar') or has('tengu') or has('specter') or has('magmamoth') or has('imori') or has('lava_blob') or has('skorch') or has('plague_egg')
+    return magmapillar() or tengu() or specter() or magmamoth() or imori() or lava_blob() or skorch() or plague_egg()
 end
 
 function fiery_shots()
@@ -1099,7 +1103,7 @@ function fiery_shots()
 end
 
 function has_fiery_shots()
-    return has('goblin_hood') or has('polterofen') or has('mimic')
+    return goblin_hood() or polterofen() or mimic()
 end
 
 function bubble_burst()
@@ -1107,7 +1111,7 @@ function bubble_burst()
 end
 
 function has_bubble_burst()
-    return has('blob') or has('grummy') or has('grulu')
+    return blob() or grummy() or grulu()
 end
 
 function lightning_bolt()
@@ -1115,7 +1119,7 @@ function lightning_bolt()
 end
 
 function has_lightning_bolt()
-    return has('crackle_knight') or has('beetloid') or has('goblin_warlock') or has('sizzle_knight')
+    return crackle_knight() or beetloid() or goblin_warlock() or sizzle_knight()
 end
 
 function shock_freeze()
@@ -1123,7 +1127,7 @@ function shock_freeze()
 end
 
 function has_shock_freeze()
-    return has('shockhopper')
+    return shockhopper()
 end
 
 function slime_shot()
@@ -1131,7 +1135,7 @@ function slime_shot()
 end
 
 function has_slime_shot()
-    return has('toxiquus') or has('ninki') or has('ninki_nanka')
+    return toxiquus() or ninki() or ninki_nanka()
 end
 
 function jewel_blast()
@@ -1139,7 +1143,7 @@ function jewel_blast()
 end
 
 function has_jewel_blast()
-    return has('goblin_king') or has('crystal_snail')
+    return goblin_king() or crystal_snail()
 end
 
 function toxic_freeze()
@@ -1147,7 +1151,7 @@ function toxic_freeze()
 end
 
 function has_toxic_freeze()
-    return has('spinner')
+    return spinner()
 end
 
 function freeze()
@@ -1155,7 +1159,7 @@ function freeze()
 end
 
 function has_freeze()
-    return has('ice_blob') or has('megataur')
+    return ice_blob() or megataur()
 end
 
 function snowball_toss()
@@ -1163,7 +1167,7 @@ function snowball_toss()
 end
 
 function has_snowball_toss()
-    return has('mogwai')
+    return mogwai()
 end
 
 function flying()
@@ -1171,7 +1175,7 @@ function flying()
 end
 
 function has_flying()
-    return has('spectral_eagle') or has('vaero') or has('frosty') or has('mad_eye') or has('raduga') or has('draconov')
+    return spectral_eagle() or vaero() or frosty() or mad_eye() or raduga() or draconov()
 end
 
 function improved_flying()
@@ -1179,7 +1183,7 @@ function improved_flying()
 end
 
 function has_improved_flying()
-    return has('silvaero') or has('kongamato') or has('dracogran') or has('dracozul') or has('draconoir') or has('ornithopter')
+    return silvaero() or kongamato() or dracogran() or dracozul() or draconoir() or ornithopter()
 end
 
 function lofty_mount()
@@ -1187,7 +1191,7 @@ function lofty_mount()
 end
 
 function has_lofty_mount()
-    return has('gryphonix')
+    return gryphonix()
 end
 
 function basic_swimming()
@@ -1195,7 +1199,7 @@ function basic_swimming()
 end
 
 function has_basic_swimming()
-    return has('koi')
+    return koi()
 end
 
 function improved_swimming()
@@ -1203,7 +1207,7 @@ function improved_swimming()
 end
 
 function has_improved_swimming()
-    return has('thornish') or has('nautilid') or has('elderjel') or has('dracomer')
+    return thornish() or nautilid() or elderjel() or dracomer()
 end
 
 function dual_mobility()
@@ -1211,7 +1215,7 @@ function dual_mobility()
 end
 
 function has_dual_mobility()
-    return has('krakaturtle')
+    return krakaturtle()
 end
 
 function basic_mount()
@@ -1219,7 +1223,7 @@ function basic_mount()
 end
 
 function has_basic_mount()
-    return has('aurumtail') or has('qilin') or has('dodo') or has('moccus')
+    return aurumtail() or qilin() or dodo() or moccus()
 end
 
 function sonar_mount()
@@ -1227,7 +1231,7 @@ function sonar_mount()
 end
 
 function has_sonar_mount()
-    return has('akhlut')
+    return akhlut()
 end
 
 function tar_mount()
@@ -1235,7 +1239,7 @@ function tar_mount()
 end
 
 function has_tar_mount()
-    return has('tar_blob')
+    return tar_blob()
 end
 
 function summon_rock()
@@ -1243,7 +1247,7 @@ function summon_rock()
 end
 
 function has_summon_rock()
-    return has('rocky') or has('druid_oak') or has('kame')
+    return rocky() or druid_oak() or kame()
 end
 
 function summon_mushroom()
@@ -1251,7 +1255,7 @@ function summon_mushroom()
 end
 
 function has_summon_mushroom()
-    return has('fungi') or has('tanuki')
+    return fungi() or tanuki()
 end
 
 function summon_big_rock()
@@ -1259,7 +1263,7 @@ function summon_big_rock()
 end
 
 function has_summon_big_rock()
-    return has('brutus') or has('mega_rock') or has('promethean')
+    return brutus() or mega_rock() or promethean()
 end
 
 function sonar()
@@ -1267,7 +1271,7 @@ function sonar()
 end
 
 function has_sonar()
-    return has('nightwing')
+    return nightwing()
 end
 
 function light()
@@ -1275,7 +1279,7 @@ function light()
 end
 
 function has_light()
-    return has('glowfly') or has('caraglow') or has('manticorb') or has('glowdra')
+    return glowfly() or caraglow() or manticorb() or glowdra()
 end
 
 function ghost_form()
@@ -1283,7 +1287,7 @@ function ghost_form()
 end
 
 function has_ghost_form()
-    return has('sycophantom') or has('kanko') or has('stolby')
+    return sycophantom() or kanko() or stolby()
 end
 
 function spore_shroud()
@@ -1291,7 +1295,7 @@ function spore_shroud()
 end
 
 function has_spore_shroud()
-    return has('fumagus') or has('amberlgna')
+    return fumagus() or amberlgna()
 end
 
 function grapple()
@@ -1299,7 +1303,7 @@ function grapple()
 end
 
 function has_grapple()
-    return has('oculus') or has('argiope') or has('arachlich') or has('worm')
+    return oculus() or argiope() or arachlich() or worm()
 end
 
 function blob_form()
@@ -1307,7 +1311,7 @@ function blob_form()
 end
 
 function has_blob_form()
-    return has('rainbow_blob') or has('king_blob')
+    return rainbow_blob() or king_blob()
 end
 
 function morph_ball()
@@ -1315,7 +1319,7 @@ function morph_ball()
 end
 
 function has_morph_ball()
-    return has('changeling')
+    return changeling()
 end
 
 function levitate()
@@ -1323,7 +1327,7 @@ function levitate()
 end
 
 function has_levitate()
-    return has('vodinoy') or has('diavola') or has('vertraag') or has('terradrile')
+    return vodinoy() or diavola() or vertraag() or terradrile()
 end
 
 function secret_vision()
@@ -1331,7 +1335,7 @@ function secret_vision()
 end
 
 function has_secret_vision()
-    return has('sutsune') or has('thanatos') or has('aazerach') or has('mad_lord') or has('ascendant')
+    return sutsune() or thanatos() or aazerach() or mad_lord() or ascendant()
 end
 
 function minnesang()
@@ -1339,7 +1343,7 @@ function minnesang()
 end
 
 function has_minnesang()
-    return has('bard')
+    return bard()
 end
 
 function distant_ledges()
@@ -1658,10 +1662,6 @@ function sun_palace_blob_key()
     })
 end
 
-function sun_palace_story_completed()
-    return has_access_to('SunPalace_North2')
-end
-
 function ostanes()
     return has_access_to('AncientWoods_North3')
 end
@@ -1778,11 +1778,14 @@ function magma_chamber_lower_lava()
                     skip_plot(),
                     runestone_shard()
                 }),
-                _AND({
-                    runestone_shard(),
-                    _OR({
+                _OR({
+                    _AND({
                         skip_plot(),
-                        stronghold_dungeon_library_access()
+                        runestone_shard()
+                    }),
+                    _AND({
+                        stronghold_dungeon_library_access(),
+                        runestone_shard()
                     })
                 })
             })
@@ -1843,24 +1846,9 @@ end
 function forgotten_world_to_magma_chamber_shortcut()
     return
     _OR({
-        _AND({
-            has_access_to('MagmaChamber_South9_Shortcut'),
-            summon_big_rock()
-        }),
+        has_access_to('MagmaChamber_South9_Shortcut'),
         open_forgotten_world(1),
         open_forgotten_world(3)
-    })
-end
-
-function velvet_melody_access()
-    return
-    _AND({
-        has_access_to('MagmaChamber_LegendaryKeeperRoom'),
-        _OR({
-            double_jump(),
-            improved_flying(),
-            dual_mobility()
-        })
     })
 end
 
@@ -2088,17 +2076,7 @@ end
 function forgotten_world_caves_shortcut()
     return
     _OR({
-        _AND({
-            has_access_to('ForgottenWorld_Caves11_Lower'),
-            _AND({
-                breakable_walls(),
-                _OR({
-                    double_jump(),
-                    improved_flying(),
-                    dual_mobility()
-                })
-            })
-        }),
+        has_access_to('ForgottenWorld_Caves11_Lower'),
         open_forgotten_world(2),
         open_forgotten_world(3)
     })

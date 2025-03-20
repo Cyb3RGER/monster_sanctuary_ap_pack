@@ -47,7 +47,7 @@ end
 
 function reset_abilities()
     for _, v in ipairs(ABILITIES_COMPACT) do
-        local val = SLOT_DATA.options.lock_explore_abilities ~= 0
+        local val = (SLOT_DATA.options.lock_explore_abilities or 0) ~= 0
         local obj = Tracker:FindObjectForCode(v)
         if obj then
             obj.Active = false

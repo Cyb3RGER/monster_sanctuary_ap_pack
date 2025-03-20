@@ -3,19 +3,8 @@
         "name": "Debug Location",
         "access_rules": [
             [
-                "$has_access_to|BlobBurg_East2",
-                "$double_jump"
-            ],
-            [
-                "$has_access_to|BlobBurg_East2",
-                "$improved_flying"
-            ],
-            [
-                "$has_access_to|BlobBurg_East2",
-                "$dual_mobility"
-            ],
-            [
-                "$has_access_to|BlobBurg_East2",
+                "$has_access_to|AbandonedTower_Center5",
+                "$double_jump",
                 "$lofty_mount"
             ]
         ],

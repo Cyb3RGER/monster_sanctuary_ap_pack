@@ -161,7 +161,7 @@
                     ]
                 }
             },
-            {
+            /*{
                 "title": "Eggsanity",
                 "content": {
                     "h_alignment": "center",
@@ -169,7 +169,7 @@
                     "type": "layout",
                     "key": "eggsanity_layout"
                 }
-            }
+            }*/
         ]
     }
 }

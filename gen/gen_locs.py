@@ -22,9 +22,48 @@ MAIN_MAP_NAME = 'overview'
 TILE_SIZE = 36
 SUB_MAP_OFFSET = 32
 loc_by_name: dict[str, PopTrackerLocation | PopTrackerSection] = {}
+loc_names: dict[str,str] = {}
 
-with open('data/location_names.json', mode='r') as f:
-    loc_names = json.load(f)
+def setup_loc_names():
+    with open('data/world.json', mode='r') as f:
+        json_data = json.load(f)
+    for current_region_data in json_data:
+        region = current_region_data['region']
+        for chest_data in current_region_data.get("chests") or []:
+            # Hack because we store comments as strings
+            if isinstance(chest_data, str):
+                continue
+            id = get_id_for_loc('Chest', region, chest_data, {})
+            loc_names[id] = chest_data.get('name', id)
+
+        for gift_data in current_region_data.get("gifts") or []:
+            # Hack because we store comments as strings
+            if isinstance(gift_data, str):
+                continue
+            id = get_id_for_loc('Gifts', region, gift_data, {})
+            loc_names[id] = gift_data.get('name', id)
+
+        for champion_data in current_region_data.get("champion") or []:
+            # Hack because we store comments as strings
+            if isinstance(champion_data, str):
+                continue
+            id = get_id_for_loc('Rank', region, champion_data, {})
+            loc_names[id] = champion_data.get('name', id)
+
+        for flag_data in current_region_data.get("flags") or []:
+            # Hack because we store comments as strings
+            if isinstance(flag_data, str):
+                continue
+            id = get_id_for_loc('Flag', region, flag_data, {})
+            loc_names[id] = flag_data.get('name', id)
+
+        for shop_data in current_region_data.get("shops") or []:
+            # Hack because we store comments as strings
+            if isinstance(shop_data, str):
+                continue
+            # todo:
+            # id = get_id_for_loc('Shop', region, shop_data, {shop_name:shop_data.get()})
+            # loc_names[id] = loc_names.get('name', id)
 
 eternitys_end_locations = {
     "wolf": [
@@ -629,6 +668,7 @@ map_location_mapping = {
           'KeeperStronghold_EndOfTime_42700020', 'KeeperStronghold_EndOfTime_42700036',
           'KeeperStronghold_EndOfTime_42700032', 'KeeperStronghold_EndOfTime_42700030',
           'KeeperStronghold_EndOfTime_42700034'],
+    # 484: ['Menu_1000'],
 }
 
 map_tile_locations = {
@@ -1116,6 +1156,7 @@ map_tile_locations = {
     481: [(MAIN_MAP_NAME, 91, 35)],
     482: [(MAIN_MAP_NAME, 60, 27)],
     483: [(MAIN_MAP_NAME, 49, 24)],
+    484: [(MAIN_MAP_NAME, 44, 20)],
 }
 
 sub_map_offsets = {
@@ -1132,16 +1173,14 @@ sub_map_offsets = {
     'snowy_peaks': (0, 19),
     'sun_palace': (11, 32),
     'stronghold_dungeon': (49, 28),
-    'the_underworld': (20, 38)
+    'the_underworld': (20, 38),
+    'menu': (43, 24),
 }
 
 
 def fix_mapping_table():
     for k, v in map_location_mapping.items():
         map_location_mapping[k] = [loc_names[v2] if v2 in loc_names else v2 for v2 in v]
-
-
-fix_mapping_table()
 
 
 def get_access(req_data: Optional[list], op: Optional[str] = "AND"):
@@ -1190,19 +1229,19 @@ def setup_regions_by_locs():
             # Hack because we store comments as strings
             if isinstance(chest_data, str):
                 continue
-            __regions_by_locs[loc_names[f"{region}_{chest_data['id']}"]] = region
+            __regions_by_locs[chest_data.get('name', f"{region}_{chest_data['id']}")] = region
 
         for gift_data in current_region_data.get("gifts") or []:
             # Hack because we store comments as strings
             if isinstance(gift_data, str):
                 continue
-            __regions_by_locs[loc_names[f"{region}_{gift_data['id']}"]] = region
+            __regions_by_locs[chest_data.get('name', f"{region}_{gift_data['id']}")] = region
 
         for champion_data in current_region_data.get("champion") or []:
             # Hack because we store comments as strings
             if isinstance(champion_data, str):
                 continue
-            __regions_by_locs[loc_names[f'{region}_Champion']] = region
+            __regions_by_locs[chest_data.get('name', f'{region}_Champion')] = region
 
         for flag_data in current_region_data.get("flags") or []:
             # Hack because we store comments as strings
@@ -1214,7 +1253,7 @@ def setup_regions_by_locs():
             # Hack because we store comments as strings
             if isinstance(shop_data, str):
                 continue
-            __regions_by_locs[loc_names[f'{region}_Champion']] = region
+            __regions_by_locs[chest_data.get('name', f'{region}_Champion')] = region
 
 
 def adjust_pos(pos):
@@ -1252,22 +1291,27 @@ def get_sub_map_locs(region, map_locs_mappings):
 
 
 def resolve_loc_name(check_type_name: str, region: str, data: Any, extra_data: Any):
+    if "name" in data:
+        return data["name"]
+
+
+def get_id_for_loc(check_type_name: str, region: str, data: Any, extra_data: Any):
     if check_type_name == "Rank":
-        loc_name = loc_names[f'{region}_Champion']
+        id = f'{region}_Champion'
     elif check_type_name == "Flag":
-        loc_name = f"{check_type_name} {region}_{data['id']}"
+        id = f"{check_type_name} {region}_{data['id']}"
     elif check_type_name == "Shop":
-        loc_name = loc_names[f"{region}_{extra_data['shop_name'].replace(' ', '')}_{data['id']}"]
+        id = f"{region}_{extra_data['shop_name'].replace(' ', '')}_{data['id']}"
     elif check_type_name == "Eggsanity":
-        loc_name = loc_names[f"eggsanity_{data['id']}"]
+        id = f"eggsanity_{data['id']}"
     elif check_type_name == "Army":
-        loc_name = loc_names[f"KeeperStronghold_MonsterArmy_{data['id']}_0"]
+        id = f"KeeperStronghold_MonsterArmy_{data['id']}_0"
     else:
-        if region == 'Menu':
-            loc_name = f'{check_type_name} {data["id"]}'
+        if region == 'Menu' and check_type_name != "Gifts":
+            id = f'{check_type_name} {data["id"]}'
         else:
-            loc_name = loc_names[f"{region}_{data['id']}"]
-    return loc_name
+            id = f"{region}_{data['id']}"            
+    return id
 
 
 def get_visibility_rules(loc_name, check_type_name):
@@ -1300,6 +1344,8 @@ def get_visibility_rules(loc_name, check_type_name):
         visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|2']], "AND")
     if loc_name in eternitys_end_locations['lion']:
         visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|3']], "AND")
+    if loc_name in ['Key of Power - Defeat X Champions']:
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|key_of_power_champion_unlock|0']], "AND")
     return visibility_rules if visibility_rules != [[]] else None
 
 
@@ -1381,7 +1427,7 @@ def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, dat
     else:
         if check_type_name == "Army":
             loc_name = loc_name.split(' (')[0]
-        loc = PopTrackerLocation(loc_name, map_locations=map_locs, access_rules=access_rules)
+        loc = PopTrackerLocation(loc_name, map_locations=map_locs, access_rules=access_rules, visibility_rules=visibility_rules)
         loc.sections.append(
             PopTrackerSection("", item_count=count, clear_as_group=clear_as_group, chest_unopened_img=unopened_img,
                               chest_opened_img=opened_img))
@@ -1428,7 +1474,8 @@ def get_gift_loc(locs: list[PopTrackerLocation], region: str, data, location_id,
 def get_eggsanity_item(items: list[PopTrackerItem], region: str, data, location_id, ids_for_sections, postgame_data):
     code = f"eggsanity_{data['id']}"
     img = f"images/items/monsters/{data['id']}.png"
-    name = loc_names[code]
+    # name = loc_names[code]
+    name = data.get('name', code)
     codes = [code]
     item = PopTrackerToggleItem(name, codes=', '.join(codes), img=img)
     if code not in ids_for_sections:
@@ -1507,6 +1554,9 @@ def export_item_grid(items, out_path):
 
 
 def gen_locations():
+    setup_loc_names()
+    fix_mapping_table()
+    
     with open('data/postgame.json', mode='r') as f:
         postgame_data = json.load(f)
     with open('data/world.json', mode='r') as f:
@@ -1514,6 +1564,7 @@ def gen_locations():
     locs: list[PopTrackerLocation] = []
     items: list[PopTrackerItem] = []  # some locs are better to show as toggles
     ids_for_sections = {}
+    loc_names = {}
 
     location_id = 970500
     for current_region_data in json_data:
@@ -1530,8 +1581,7 @@ def gen_locations():
             # Hack because we store comments as strings
             if isinstance(chest_data, str):
                 continue
-            location, location_id = get_chest_loc(locs, region_name, chest_data, location_id, ids_for_sections,
-                                                  postgame_data)
+            location, location_id = get_chest_loc(locs, region_name, chest_data, location_id, ids_for_sections, postgame_data)            
 
         for gift_data in current_region_data.get("gifts") or []:
             # Hack because we store comments as strings
@@ -1559,8 +1609,7 @@ def gen_locations():
             # Hack because we store comments as strings
             if isinstance(encounter_data, str):
                 continue
-            # location, location_id = get_encounter_locs(locs, region_name, encounter_data, location_id, ids_for_sections,
-            #                                            loc_names, postgame_data)
+            # location, location_id = get_encounter_locs(locs, region_name, encounter_data, location_id, ids_for_sections, loc_names, postgame_data)
 
         for champion_data in current_region_data.get("champion") or []:
             # Hack because we store comments as strings
@@ -1583,25 +1632,6 @@ def gen_locations():
                                                   postgame_data)
 
         # locs.append(region)
-    with open('data/plotless.json', mode='r') as f:
-        json_data = json.load(f)
-    for plotless_data in json_data:
-        loc_type = plotless_data['type']
-        if loc_type == 'connection':
-            continue  # handled by logic
-        region_name = plotless_data['region']
-        if loc_type == 'location':
-            loc_type = 'Gift'  # ToDo: determine by id range
-            loc_id = plotless_data['object_id']
-        else:
-            continue  # ToDo?
-        loc_name = loc_names[f'{region_name}_{loc_id}']
-        loc = loc_by_name[loc_name]
-        loc.access_rules = combine_access(loc.access_rules,
-                                          combine_access(
-                                              [[f'$has_access_to|{region_name}', '$skip_plot']],
-                                              get_access(plotless_data['requirements']), 'AND')
-                                          , 'OR')
     # Fix sections sorting
     # ToDo: could probably be optimized...
     for loc in locs:

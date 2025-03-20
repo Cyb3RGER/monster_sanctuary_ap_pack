@@ -1,4 +1,4 @@
-MONSTER_ABILITY_ITEM_DATA = {
+MONSTER_ABILITY_ITEM_DATA = {	
     ["spectral_wolf"] = { SpeciesItem = "spectral_flame_wolf", AbilityItem = "ability-claws", TypeItem = "spectral_flame" },
     ["spectral_toad"] = { SpeciesItem = "spectral_flame_toad", AbilityItem = "ability-tackle", TypeItem = "spectral_flame" },
     ["spectral_eagle"] = { SpeciesItem = "spectral_flame_eagle", AbilityItem = "ability-flying", TypeItem = "spectral_flame" },

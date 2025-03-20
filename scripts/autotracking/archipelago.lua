@@ -82,7 +82,11 @@ function onClear(slot_data)
         end
     end
     update_access()
-    --reset_abilities()
+    reset_abilities()
+	local obj = Tracker:FindObjectForCode('dummy')
+	if obj then
+		obj.Active = not obj.Active
+	end
     Tracker.BulkUpdate = false
 end
 

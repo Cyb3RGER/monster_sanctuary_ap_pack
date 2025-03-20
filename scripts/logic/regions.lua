@@ -432,8 +432,8 @@ REGIONS = {
             _OR({
                 skip_plot(),
                 _OR({
-                    skip_plot(),
-                    keeper_rank_2()
+                    keeper_rank_2(),
+                    skip_plot()
                 })
             })
         end,
@@ -653,7 +653,7 @@ REGIONS = {
         ["BlueCave_East4"] = function()
             return true
         end,
-        ["StrongholdDungeon_West4"] = function()
+        ["BlueCave_East2_Upper"] = function()
             return stronghold_dungeon_west_4_shortcut()
         end
     },
@@ -754,14 +754,16 @@ REGIONS = {
                     skip_plot(),
                     all_sanctuary_tokens()
                 }),
-                _AND({
-                    all_sanctuary_tokens(),
-                    _OR({
-                        open_underworld_entrances(),
-                        skip_plot(),
-                        _AND({
-                            ostanes(),
-                            stronghold_dungeon_library_access()
+                _OR({
+                    open_underworld_entrances(),
+                    _AND({
+                        all_sanctuary_tokens(),
+                        _OR({
+                            skip_plot(),
+                            _AND({
+                                ostanes(),
+                                stronghold_dungeon_library_access()
+                            })
                         })
                     })
                 })
@@ -2725,7 +2727,7 @@ REGIONS = {
         ["AncientWoods_WestDescent3"] = function()
             return true
         end,
-        ["StrongholdDungeon_Central5_Lower"] = function()
+        ["StrongholdDungeon_Central5"] = function()
             return true
         end
     },
@@ -2895,7 +2897,7 @@ REGIONS = {
     },
     ["AncientWoods_East3"] = {
         ["AncientWoods_East2_East"] = function()
-            return true
+            return ancient_woods_beach_access()
         end,
         ["AncientWoods_East4"] = function()
             return
@@ -4149,7 +4151,7 @@ REGIONS = {
         end
     },
     ["MagmaChamber_South8"] = {
-        ["MagmaChamber_South7_West"] = function()
+        ["MagmaChamber_South7_East"] = function()
             return magma_chamber_forgotten_world_access()
         end,
         ["MagmaChamber_South9_West"] = function()

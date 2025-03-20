@@ -1,5 +1,26 @@
 [
   {
+    "name": "Key of Power - Defeat X Champions",
+    "access_rules": [
+      [
+        "$has_access_to|Menu",
+        "$defeated_enough_champions_for_key_of_power"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|key_of_power_champion_unlock|0"
+      ]
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
     "name": "Mountain Path - Tutorial Room - Ledge Chest",
     "access_rules": [
       [
@@ -359,7 +380,7 @@
     ]
   },
   {
-    "name": "Mountain Path Center3",
+    "name": "Mountain Path - Crystal Room",
     "map_locations": [
       {
         "map": "overview",
@@ -402,86 +423,6 @@
           [
             "$has_access_to|MountainPath_Center3",
             "$impassible_vines"
-          ]
-        ]
-      },
-      {
-        "name": "Treasure Hunter - Small Potion",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MountainPath_Center3",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MountainPath_Center3",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Treasure Hunter - Phoenix Tear",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MountainPath_Center3",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MountainPath_Center3",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Treasure Hunter - Shell",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MountainPath_Center3",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MountainPath_Center3",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Treasure Hunter - Sustain Ring",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MountainPath_Center3",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MountainPath_Center3",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
           ]
         ]
       }
@@ -966,7 +907,7 @@
         ]
       },
       {
-        "name": "Mountain Path - Old Buran - Blob Key Check",
+        "name": "Mountain Path - Old Buran - Blob Key",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -1128,1277 +1069,7 @@
     ]
   },
   {
-    "name": "Keeper Stronghold Shops",
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 1674,
-        "y": 1062
-      },
-      {
-        "map": "keepers_stronghold",
-        "x": 158,
-        "y": 230
-      }
-    ],
-    "sections": [
-      {
-        "name": "Equipment Merchant - Wand",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Claws",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Shuriken",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Shell+1",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Mana Ring+1",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Vital Ring+1",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Belt",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Feather",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Hide+2",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_2"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Bandana+2",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_2"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Crit Ring+2",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_2"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Staff+2",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_3"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Morning Star+2",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_3"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Bracer+2",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_3"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Needle+3",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_4"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Wizard Hat+3",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_4"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Helmet+3",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_4"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Cestus+3",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_5"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Ribbon+3",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_5"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Cape+3",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_5"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Orb+4",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_6"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Katar+4",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_6"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Impact Ring+5",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_7"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Diadem+5",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_7"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Coat+5",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_7"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Kunai+5",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_8"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Claws+5",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_8"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Equipment Merchant - Wand+5",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_8"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Small Potion",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Small Antidote",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Phoenix Tear",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Skill Resetter",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Potion",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_2"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Smoke Bomb",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_3"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Monster Bell",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_3"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Crystal Shard",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_4"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Antidote",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_4"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Mass Potion",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_6"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Mass Antidote",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_6"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Combo Potion",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_7"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Big Potion",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_8"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Mega Potion",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_9"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity",
-            "$is_shopsanity",
-            "$check_option|shops_ignore_rank|1"
-          ],
-          [
-            "$is_shopsanity",
-            "$is_shopsanity",
-            "$is_not_goal|0"
-          ],
-          [
-            "$is_shopsanity",
-            "$is_shopsanity",
-            "$is_not_goal|1"
-          ]
-        ]
-      },
-      {
-        "name": "Consumable Merchant - Phoenix Serum",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_9"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity",
-            "$is_shopsanity",
-            "$check_option|shops_ignore_rank|1"
-          ],
-          [
-            "$is_shopsanity",
-            "$is_shopsanity",
-            "$is_not_goal|0"
-          ],
-          [
-            "$is_shopsanity",
-            "$is_shopsanity",
-            "$is_not_goal|1"
-          ]
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Food Merchant",
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 1710,
-        "y": 1062
-      },
-      {
-        "map": "keepers_stronghold",
-        "x": 194,
-        "y": 230
-      }
-    ],
-    "sections": [
-      {
-        "name": "Food Merchant - Apple",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Berry",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Potato",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Walnut",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Pear",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_3"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Grapes",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_3"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Corn",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_4"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Hazelnut",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_4"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Mango",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_5"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Carrot",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_5"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Almond",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_6"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Strawberry",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_6"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Raspberry",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_7"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Orange",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_7"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Banana",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_8"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Peanut",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_8"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Food Merchant - Cookie Mushroom",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$keeper_rank_9"
-          ],
-          [
-            "$has_access_to|KeeperStronghold_Shops",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity",
-            "$is_shopsanity",
-            "$check_option|shops_ignore_rank|1"
-          ],
-          [
-            "$is_shopsanity",
-            "$is_shopsanity",
-            "$is_not_goal|0"
-          ],
-          [
-            "$is_shopsanity",
-            "$is_shopsanity",
-            "$is_not_goal|1"
-          ]
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Keeper Stronghold Center Stairwell",
+    "name": "Keeper Stronghold - Post Game",
     "map_locations": [
       {
         "map": "overview",
@@ -2425,536 +1096,6 @@
         "visibility_rules": [
           [
             "$is_not_goal|0"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 50 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 150 Strength",
-        "clear_as_group": false,
-        "item_count": 3,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 250 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 400 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_1"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 600 Strength",
-        "clear_as_group": false,
-        "item_count": 4,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_1"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 850 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_1"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 1100 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_1"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 1400 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_2"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 1800 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_2"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 2300 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_2"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 3000 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_2"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 4000 Strength",
-        "clear_as_group": false,
-        "item_count": 3,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_3"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 5000 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_3"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 6000 Strength",
-        "clear_as_group": false,
-        "item_count": 3,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_3"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 8000 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_3"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 10000 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_4"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 12500 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_4"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 15000 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_4"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 17500 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_4"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 20000 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_5"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 24000 Strength",
-        "clear_as_group": false,
-        "item_count": 4,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_5"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 28000 Strength",
-        "clear_as_group": false,
-        "item_count": 2,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_5"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 32000 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_5"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 36000 Strength",
-        "clear_as_group": false,
-        "item_count": 4,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_6"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 40000 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_6"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 45000 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_6"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 50000 Strength",
-        "clear_as_group": false,
-        "item_count": 4,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_6"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 57500 Strength",
-        "clear_as_group": false,
-        "item_count": 2,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_7"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 65000 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_7"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 72500 Strength",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_7"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 80000 Strength",
-        "clear_as_group": false,
-        "item_count": 3,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_7"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 90000 Strength",
-        "clear_as_group": false,
-        "item_count": 3,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_8"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$check_option|monster_army|1"
-          ]
-        ]
-      },
-      {
-        "name": "Monster Army - 100000 Strength",
-        "clear_as_group": false,
-        "item_count": 3,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_CenterStairwell",
-            "$keeper_rank_9"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_not_goal|0",
-            "$check_option|monster_army|1"
-          ],
-          [
-            "$is_not_goal|1",
-            "$check_option|monster_army|1"
           ]
         ]
       }
@@ -3239,7 +1380,7 @@
         ]
       },
       {
-        "name": "Eternity's End - Spectral Familiar Egg (Wolf)",
+        "name": "Eternity's End - Spectral Wolf",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -3250,7 +1391,7 @@
         ]
       },
       {
-        "name": "Eternity's End - Spectral Familiar Egg (Eagle)",
+        "name": "Eternity's End - Spectral Eagle",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -3261,7 +1402,7 @@
         ]
       },
       {
-        "name": "Eternity's End - Spectral Familiar Egg (Toad)",
+        "name": "Eternity's End - Spectral Toad",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -3272,92 +1413,20 @@
         ]
       },
       {
-        "name": "Eternity's End - Spectral Familiar Egg (Lion)",
+        "name": "Eternity's End - Spectral Lion",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
           [
             "$has_access_to|KeeperStronghold_EndOfTime",
             "$keeper_rank_5"
-          ]
-        ]
-      },
-      {
-        "name": "Eternity's End - Infinity Flame (Wolf)",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_EndOfTime",
-            "$keeper_rank_5"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$not_check_option|starting_familiar|1",
-            "$not_check_option|starting_familiar|2",
-            "$not_check_option|starting_familiar|3"
-          ]
-        ]
-      },
-      {
-        "name": "Eternity's End - Infinity Flame (Eagle)",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_EndOfTime",
-            "$keeper_rank_5"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$not_check_option|starting_familiar|0",
-            "$not_check_option|starting_familiar|2",
-            "$not_check_option|starting_familiar|3"
-          ]
-        ]
-      },
-      {
-        "name": "Eternity's End - Infinity Flame (Toad)",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_EndOfTime",
-            "$keeper_rank_5"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$not_check_option|starting_familiar|0",
-            "$not_check_option|starting_familiar|1",
-            "$not_check_option|starting_familiar|3"
-          ]
-        ]
-      },
-      {
-        "name": "Eternity's End - Infinity Flame (Lion)",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|KeeperStronghold_EndOfTime",
-            "$keeper_rank_5"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$not_check_option|starting_familiar|0",
-            "$not_check_option|starting_familiar|1",
-            "$not_check_option|starting_familiar|2"
           ]
         ]
       }
     ]
   },
   {
-    "name": "Flag BlueCave_Switches_blue_cave_switches_access",
+    "name": "Blue Caves Switches Access",
     "access_rules": [
       [
         "$has_access_to|BlueCave_Switches"
@@ -3800,7 +1869,7 @@
     ]
   },
   {
-    "name": "Flag BlueCave_ChampionRoom_blue_caves_story_complete",
+    "name": "Blue Caves Story Complete",
     "access_rules": [
       [
         "$has_access_to|BlueCave_ChampionRoom"
@@ -4080,11 +2149,6 @@
             "$all_sanctuary_tokens",
             "$ostanes",
             "$stronghold_dungeon_library_access"
-          ],
-          [
-            "$has_access_to|BlueCave_South5",
-            "$skip_plot",
-            "$all_sanctuary_tokens"
           ]
         ],
         "visibility_rules": [
@@ -4108,11 +2172,6 @@
             "$all_sanctuary_tokens",
             "$ostanes",
             "$stronghold_dungeon_library_access"
-          ],
-          [
-            "$has_access_to|BlueCave_South5",
-            "$skip_plot",
-            "$all_sanctuary_tokens"
           ]
         ],
         "visibility_rules": [
@@ -4537,7 +2596,7 @@
     ]
   },
   {
-    "name": "Flag BlueCave_WestWaters7_East_first_bex_encounter",
+    "name": "Bex",
     "access_rules": [
       [
         "$has_access_to|BlueCave_WestWaters7_East"
@@ -4591,7 +2650,7 @@
     ]
   },
   {
-    "name": "Flag BlueCave_ChampionRoom2_WestAccess_blue_cave_champion_room_2_west_shortcut",
+    "name": "Blue Caves to Mountain Path Shortcut",
     "access_rules": [
       [
         "$has_access_to|BlueCave_ChampionRoom2_WestAccess"
@@ -5271,7 +3330,7 @@
     ]
   },
   {
-    "name": "Flag StrongholdDungeon_Library_stronghold_dungeon_library_access",
+    "name": "Stronghold Dungeon Library Access",
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_Library"
@@ -5400,7 +3459,7 @@
     ]
   },
   {
-    "name": "Flag StrongholdDungeon_West3_stronghold_dungeon_south_3_shortcut",
+    "name": "Stronghold Dungeon South 3 Shortcut",
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_West3"
@@ -5415,7 +3474,7 @@
     ]
   },
   {
-    "name": "Flag StrongholdDungeon_West4_stronghold_dungeon_west_4_shortcut",
+    "name": "Stronghold Dungeon to Blue Caves Shortcut",
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_West4"
@@ -5706,7 +3765,7 @@
     ]
   },
   {
-    "name": "Flag StrongholdDungeon_EastKeys_stronghold_dungeon_blob_key",
+    "name": "Blob Key Used",
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_EastKeys",
@@ -6000,7 +4059,7 @@
     ]
   },
   {
-    "name": "Flag SnowyPeaks_East4_Upper_snowy_peaks_east4_upper_shortcut",
+    "name": "Snowy Peaks East 4 Upper Shortcut",
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_East4_Upper"
@@ -6124,7 +4183,7 @@
     ]
   },
   {
-    "name": "Flag SnowyPeaks_SunPalaceEntrance_Access_snowy_peaks_sun_palace_entrance_shortcut",
+    "name": "Snowy Peaks to Sun Palace Shortcut",
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_SunPalaceEntrance_Access"
@@ -6333,18 +4392,7 @@
     "name": "Snowy Peaks - Lake - Underwater Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_Lake_Lower",
-        "$swimming"
-      ],
-      [
-        "$has_access_to|SnowyPeaks_Lake_Lower",
-        "$double_jump",
-        "$mount"
-      ],
-      [
-        "$has_access_to|SnowyPeaks_Lake_Lower",
-        "$double_jump",
-        "$heavy_blocks"
+        "$has_access_to|SnowyPeaks_Lake_Lower"
       ]
     ],
     "map_locations": [
@@ -6555,7 +4603,7 @@
           [
             "$has_access_to|SnowyPeaks_Cryomancer",
             "$dodo",
-            "$shifting_available"
+            "$shifting_avialable"
           ]
         ],
         "visibility_rules": [
@@ -6572,7 +4620,7 @@
           [
             "$has_access_to|SnowyPeaks_Cryomancer",
             "$dodo",
-            "$shifting_available"
+            "$shifting_avialable"
           ]
         ],
         "visibility_rules": [
@@ -7117,6 +5165,14 @@
       [
         "$has_access_to|SnowyPeaks_HighChallenge",
         "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_HighChallenge",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_HighChallenge",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -7179,7 +5235,7 @@
     ]
   },
   {
-    "name": "Flag SnowyPeaks_EastMountain3_Shortcut_snowy_peaks_east_mountain_3_shortcut",
+    "name": "Snowy Peaks East Mountain 3 Shortcut",
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_EastMountain3_Shortcut"
@@ -7550,7 +5606,7 @@
     ]
   },
   {
-    "name": "Flag SunPalace_East6_sun_palace_east_shortcut",
+    "name": "Sun Palace East Shortcut",
     "access_rules": [
       [
         "$has_access_to|SunPalace_East6"
@@ -7565,7 +5621,7 @@
     ]
   },
   {
-    "name": "Flag SunPalace_East6_sun_palace_raise_center_2",
+    "name": "Sun Palace Raise Center",
     "access_rules": [
       [
         "$has_access_to|SunPalace_East6"
@@ -7607,7 +5663,7 @@
     ]
   },
   {
-    "name": "Flag SunPalace_Center_sun_palace_lower_water_1",
+    "name": "Sun Palace Lower Water",
     "access_rules": [
       [
         "$has_access_to|SunPalace_Center",
@@ -7623,7 +5679,7 @@
     ]
   },
   {
-    "name": "Flag SunPalace_Center_sun_palace_lower_water_2",
+    "name": "Sun Palace Lower Water",
     "access_rules": [
       [
         "$has_access_to|SunPalace_Center",
@@ -7783,7 +5839,7 @@
     ]
   },
   {
-    "name": "Flag SunPalace_West3_second_bex_encounter",
+    "name": "Bex",
     "access_rules": [
       [
         "$has_access_to|SunPalace_West3"
@@ -7895,7 +5951,7 @@
     ]
   },
   {
-    "name": "Flag SunPalace_West5_sun_palace_raise_center_3",
+    "name": "Sun Palace Raise Center",
     "access_rules": [
       [
         "$has_access_to|SunPalace_West5"
@@ -7910,7 +5966,7 @@
     ]
   },
   {
-    "name": "Flag SunPalace_West5_sun_palace_west_shortcut",
+    "name": "Sun Palace West Shortcut",
     "access_rules": [
       [
         "$has_access_to|SunPalace_West5"
@@ -8083,7 +6139,7 @@
     ]
   },
   {
-    "name": "Flag SunPalace_South4_sun_palace_raise_center_1",
+    "name": "Sun Palace Raise Center",
     "access_rules": [
       [
         "$has_access_to|SunPalace_South4"
@@ -8222,7 +6278,7 @@
     ]
   },
   {
-    "name": "Flag SunPalace_EastSewers6_sun_palace_blob_key",
+    "name": "Blob Key Used",
     "access_rules": [
       [
         "$has_access_to|SunPalace_EastSewers6",
@@ -8414,21 +6470,6 @@
             "$has_access_to|SunPalace_North2"
           ]
         ]
-      }
-    ]
-  },
-  {
-    "name": "Flag SunPalace_North2_sun_palace_story_completed",
-    "access_rules": [
-      [
-        "$has_access_to|SunPalace_North2"
-      ]
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
       }
     ]
   },
@@ -9112,7 +7153,7 @@
     ]
   },
   {
-    "name": "Flag AncientWoods_North3_ostanes",
+    "name": "Ostanes",
     "access_rules": [
       [
         "$has_access_to|AncientWoods_North3"
@@ -9127,7 +7168,7 @@
     ]
   },
   {
-    "name": "Flag AncientWoods_North3_goblin_king_defeated",
+    "name": "Goblin King Defeated",
     "access_rules": [
       [
         "$has_access_to|AncientWoods_North3"
@@ -9201,7 +7242,7 @@
     ]
   },
   {
-    "name": "Flag AncientWoods_East1_Shortcut_ancient_woods_east_shortcut",
+    "name": "Ancient Woods East Shortcut",
     "access_rules": [
       [
         "$has_access_to|AncientWoods_East1_Shortcut"
@@ -9216,7 +7257,7 @@
     ]
   },
   {
-    "name": "Flag AncientWoods_East2_West_ancient_woods_beach_access",
+    "name": "Ancient Woods Beach Access",
     "access_rules": [
       [
         "$has_access_to|AncientWoods_East2_West",
@@ -9357,7 +7398,7 @@
     ]
   },
   {
-    "name": "Flag AncientWoods_South1_Lower_ancient_woods_magma_chamber_1",
+    "name": "Ancient Woods to Magma Chamber Shortcut",
     "access_rules": [
       [
         "$has_access_to|AncientWoods_South1_Lower"
@@ -9436,7 +7477,7 @@
     ]
   },
   {
-    "name": "Flag AncientWoods_South4_ancient_woods_brutus_access",
+    "name": "Ancient Woods Brutus Access",
     "access_rules": [
       [
         "$has_access_to|AncientWoods_South4",
@@ -9701,7 +7742,7 @@
     ]
   },
   {
-    "name": "Ancient Woods Tree Of Evolution",
+    "name": "Ancient Woods - Tree of Evolution Gift",
     "map_locations": [
       {
         "map": "overview",
@@ -9724,131 +7765,11 @@
             "$has_access_to|AncientWoods_TreeOfEvolution"
           ]
         ]
-      },
-      {
-        "name": "Traveling Merchant - Orb+2",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|AncientWoods_TreeOfEvolution",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|AncientWoods_TreeOfEvolution",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Traveling Merchant - Tome+2",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|AncientWoods_TreeOfEvolution",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|AncientWoods_TreeOfEvolution",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Traveling Merchant - Level Badge",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|AncientWoods_TreeOfEvolution",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|AncientWoods_TreeOfEvolution",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Traveling Merchant - Bow",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|AncientWoods_TreeOfEvolution",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|AncientWoods_TreeOfEvolution",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Traveling Merchant - Heavy Mace",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|AncientWoods_TreeOfEvolution",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|AncientWoods_TreeOfEvolution",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Traveling Merchant - Poisoned Dart",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|AncientWoods_TreeOfEvolution",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|AncientWoods_TreeOfEvolution",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
       }
     ]
   },
   {
-    "name": "Flag AncientWoods_TreeOfEvolution_tree_of_evolution_access",
+    "name": "Tree of Evolution Access",
     "access_rules": [
       [
         "$has_access_to|AncientWoods_TreeOfEvolution"
@@ -10196,7 +8117,7 @@
     ]
   },
   {
-    "name": "Flag HorizonBeach_Center2_Shortcut_horizon_beach_center_shortcut",
+    "name": "Horizon Beach Center Shortcut",
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_Center2_Shortcut"
@@ -10714,7 +8635,7 @@
     ]
   },
   {
-    "name": "Flag HorizonBeach_East5_third_beach_bex",
+    "name": "Bex",
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_East5"
@@ -11096,7 +9017,7 @@
     ]
   },
   {
-    "name": "Flag HorizonBeach_Pit_horizon_beach_rescue_leonard",
+    "name": "Rescued Leonard",
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_Pit",
@@ -11341,7 +9262,7 @@
     ]
   },
   {
-    "name": "Flag HorizonBeach_FWExit_forgotten_world_to_horizon_beach_shortcut",
+    "name": "Forgotten World to Horizon Beach Shortcut",
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_FWExit",
@@ -11499,7 +9420,7 @@
     ]
   },
   {
-    "name": "Flag MagmaChamber_West7_blob_key_accessible",
+    "name": "Blob Key Accessible",
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_West7"
@@ -11656,7 +9577,7 @@
     ]
   },
   {
-    "name": "Flag MagmaChamber_North5_Upper_ancient_woods_magma_chamber_2",
+    "name": "Ancient Woods to Magma Chamber Shortcut",
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_North5_Upper"
@@ -11727,7 +9648,7 @@
     ]
   },
   {
-    "name": "Flag MagmaChamber_North8_East_fourth_bex_encounter",
+    "name": "Bex",
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_North8_East"
@@ -11742,7 +9663,7 @@
     ]
   },
   {
-    "name": "Flag MagmaChamber_North8_West_magma_chamber_north_shortcut",
+    "name": "Magma Chamber North Shortcut",
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_North8_West"
@@ -11757,17 +9678,10 @@
     ]
   },
   {
-    "name": "Flag MagmaChamber_Runestone_magma_chamber_lower_lava",
+    "name": "Magma Chamber Lowered Lava",
     "access_rules": [
       [
-        "$has_access_to|MagmaChamber_Runestone",
-        "$runestone_shard",
-        "$skip_plot"
-      ],
-      [
-        "$has_access_to|MagmaChamber_Runestone",
-        "$runestone_shard",
-        "$stronghold_dungeon_library_access"
+        "$has_access_to|MagmaChamber_Runestone"
       ]
     ],
     "sections": [
@@ -11834,7 +9748,7 @@
     ]
   },
   {
-    "name": "Flag MagmaChamber_East3_Upper_horizon_beach_to_magma_chamber_shortcut",
+    "name": "Horizon Beach To Magma Chamber Shortcut",
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_East3_Upper"
@@ -11995,7 +9909,7 @@
     ]
   },
   {
-    "name": "Flag MagmaChamber_Center4_East_magma_chamber_center_shortcut",
+    "name": "Magma Chamber Center Shortcut",
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_Center4_East"
@@ -12119,7 +10033,7 @@
     ]
   },
   {
-    "name": "Flag MagmaChamber_Center9_Upper_magma_chamber_east_shortcut",
+    "name": "Magma Chamber East Shortcut",
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_Center9_Upper"
@@ -12278,7 +10192,7 @@
     ]
   },
   {
-    "name": "Flag MagmaChamber_South3_East_magma_chamber_south_shortcut",
+    "name": "Magma Chamber South Shortcut",
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_South3_East"
@@ -12448,7 +10362,7 @@
     ]
   },
   {
-    "name": "Flag MagmaChamber_South7_East_magma_chamber_forgotten_world_access",
+    "name": "Magma Chamber Forgotten World Access",
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_South7_East",
@@ -12528,11 +10442,10 @@
     ]
   },
   {
-    "name": "Flag MagmaChamber_South9_Shortcut_forgotten_world_to_magma_chamber_shortcut",
+    "name": "Forgotten World to Magma Chamber Shortcut",
     "access_rules": [
       [
-        "$has_access_to|MagmaChamber_South9_Shortcut",
-        "$summon_big_rock"
+        "$has_access_to|MagmaChamber_South9_Shortcut"
       ]
     ],
     "sections": [
@@ -12544,7 +10457,7 @@
     ]
   },
   {
-    "name": "Magma Chamber Alchemist Lab East",
+    "name": "Magma Chamber - Alchemist Lab",
     "map_locations": [
       {
         "map": "overview",
@@ -12565,246 +10478,6 @@
         "access_rules": [
           [
             "$has_access_to|MagmaChamber_AlchemistLab_East"
-          ]
-        ]
-      },
-      {
-        "name": "Rhazes - Mass Potion",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Rhazes - Combo Potion",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Rhazes - Big Potion",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Rhazes - Skill Potion",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Rhazes - Cauldron",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Rhazes - ??? Egg",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Rhazes - Mega Potion",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Rhazes - Phoenix Serum",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Rhazes - Reward Box Lvl 1",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Rhazes - Reward Box Lvl 2",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Rhazes - Reward Box Lvl 3",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Rhazes - Reward Box Lvl 4",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_AlchemistLab_East",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
           ]
         ]
       }
@@ -12903,83 +10576,6 @@
         "name": "",
         "clear_as_group": false,
         "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Goblin Trader - S",
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 3294,
-        "y": 1278
-      },
-      {
-        "map": "magma_chamber",
-        "x": 914,
-        "y": 86
-      }
-    ],
-    "sections": [
-      {
-        "name": "Goblin Trader - Skill Potion",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_GoblinTrader",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_GoblinTrader",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Goblin Trader - Switch Stone",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_GoblinTrader",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_GoblinTrader",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Goblin Trader - Shift Stone",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MagmaChamber_GoblinTrader",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MagmaChamber_GoblinTrader",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
       }
     ]
   },
@@ -13129,7 +10725,15 @@
         "access_rules": [
           [
             "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-            "$velvet_melody_access"
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$dual_mobility"
           ]
         ],
         "visibility_rules": [
@@ -13146,7 +10750,17 @@
           [
             "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
             "$mozzie",
-            "$velvet_melody_access"
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$dual_mobility"
           ]
         ],
         "visibility_rules": [
@@ -13163,7 +10777,17 @@
           [
             "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
             "$mozzie",
-            "$velvet_melody_access"
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$dual_mobility"
           ]
         ],
         "visibility_rules": [
@@ -13180,7 +10804,17 @@
           [
             "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
             "$mozzie",
-            "$velvet_melody_access"
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$dual_mobility"
           ]
         ],
         "visibility_rules": [
@@ -13197,7 +10831,17 @@
           [
             "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
             "$mozzie",
-            "$velvet_melody_access"
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$dual_mobility"
           ]
         ],
         "visibility_rules": [
@@ -13214,7 +10858,17 @@
           [
             "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
             "$mozzie",
-            "$velvet_melody_access"
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
+            "$mozzie",
+            "$dual_mobility"
           ]
         ],
         "visibility_rules": [
@@ -13222,30 +10876,6 @@
             "$is_not_goal|3"
           ]
         ]
-      }
-    ]
-  },
-  {
-    "name": "Flag MagmaChamber_LegendaryKeeperRoom_velvet_melody_access",
-    "access_rules": [
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
-        "$dual_mobility"
-      ]
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
       }
     ]
   },
@@ -13455,7 +11085,7 @@
     ]
   },
   {
-    "name": "Flag Underworld_EastCatacomb4_underworld_east_catacomb_7_access",
+    "name": "Underworld East Catacomb 7 Access",
     "access_rules": [
       [
         "$has_access_to|Underworld_EastCatacomb4"
@@ -13552,7 +11182,7 @@
     ]
   },
   {
-    "name": "Flag Underworld_EastCatacomb6_West_underworld_east_catacomb_6_shortcut",
+    "name": "Underworld East Catacomb 6 Shortcut",
     "access_rules": [
       [
         "$has_access_to|Underworld_EastCatacomb6_West"
@@ -13567,7 +11197,7 @@
     ]
   },
   {
-    "name": "Flag Underworld_EastCatacomb8_underworld_east_catacomb_8_shortcut",
+    "name": "Underworld East Catacomb 8 Shortcut",
     "access_rules": [
       [
         "$has_access_to|Underworld_EastCatacomb8"
@@ -13582,7 +11212,7 @@
     ]
   },
   {
-    "name": "Flag Underworld_EastCatacomb8_underworld_east_catacomb_pillar_control",
+    "name": "Underworld East Catacomb Pillar Control",
     "access_rules": [
       [
         "$has_access_to|Underworld_EastCatacomb8"
@@ -13905,7 +11535,7 @@
     ]
   },
   {
-    "name": "Flag Underworld_WestCatacomb4_West_underworld_west_catacomb_4_access",
+    "name": "Underworld West Catacomb 4 Access",
     "access_rules": [
       [
         "$has_access_to|Underworld_WestCatacomb4_West"
@@ -13975,7 +11605,7 @@
     ]
   },
   {
-    "name": "Flag Underworld_WestCatacomb4_Lower_underworld_west_catacomb_4_shortcut",
+    "name": "Underworld West Catacomb 4 Shortcut",
     "access_rules": [
       [
         "$has_access_to|Underworld_WestCatacomb4_Lower",
@@ -13999,7 +11629,7 @@
     ]
   },
   {
-    "name": "Flag Underworld_WestCatacomb4_Upper_underworld_west_catacomb_center_entrance",
+    "name": "Underworld West Catacomb Center Entrance",
     "access_rules": [
       [
         "$has_access_to|Underworld_WestCatacomb4_Upper"
@@ -14014,7 +11644,7 @@
     ]
   },
   {
-    "name": "Flag Underworld_WestCatacomb5_West_underworld_west_catacomb_9_interior_access",
+    "name": "Underworld West Catacomb 9 Interior Access",
     "access_rules": [
       [
         "$has_access_to|Underworld_WestCatacomb5_West",
@@ -14034,7 +11664,7 @@
     ]
   },
   {
-    "name": "Flag Underworld_WestCatacomb7_underworld_west_catacomb_7_shortcut",
+    "name": "Underworld West Catacomb 7 Shortcut",
     "access_rules": [
       [
         "$has_access_to|Underworld_WestCatacomb7"
@@ -14103,7 +11733,7 @@
     ]
   },
   {
-    "name": "Flag Underworld_WestCatacomb9_ExteriorWest_underworld_west_catacomb_roof_access",
+    "name": "Underworld West Catacomb Roof Access",
     "access_rules": [
       [
         "$has_access_to|Underworld_WestCatacomb9_ExteriorWest"
@@ -14280,7 +11910,7 @@
     ]
   },
   {
-    "name": "Flag Underworld_West1_underworld_to_sun_palace_shortcut",
+    "name": "Underworld to Sun Palace Shortcut",
     "access_rules": [
       [
         "$has_access_to|Underworld_West1"
@@ -14988,7 +12618,7 @@
     ]
   },
   {
-    "name": "Flag MysticalWorkshop_East3_mystical_workshop_blob_key",
+    "name": "Blob Key Used",
     "access_rules": [
       [
         "$has_access_to|MysticalWorkshop_East3",
@@ -15159,7 +12789,7 @@
     ]
   },
   {
-    "name": "Flag MysticalWorkshop_North4_Lower_mystical_workshop_north_shortcut",
+    "name": "Mystical Workshop North Shortcut",
     "access_rules": [
       [
         "$has_access_to|MysticalWorkshop_North4_Lower"
@@ -15285,183 +12915,6 @@
     ]
   },
   {
-    "name": "Golem Merchant",
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 2178,
-        "y": 990
-      },
-      {
-        "map": "mystical_workshop",
-        "x": 266,
-        "y": 482
-      }
-    ],
-    "sections": [
-      {
-        "name": "Golem Merchant - Vital Ring+4",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Golem Merchant - Mana Ring+4",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Golem Merchant - Sustain Ring+4",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Golem Merchant - Level Badge",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Golem Merchant - Craft Box",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Golem Merchant - Thermal Reactor",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Golem Merchant - Charging Sphere",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      },
-      {
-        "name": "Golem Merchant - Shield Generator",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$keeper_rank_1"
-          ],
-          [
-            "$has_access_to|MysticalWorkshop_GolemMerchant",
-            "$shops_ignore_rank"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_shopsanity"
-          ]
-        ]
-      }
-    ]
-  },
-  {
     "name": "Mystical Workshop - Hidden Clock Room",
     "map_locations": [
       {
@@ -15540,7 +12993,7 @@
     ]
   },
   {
-    "name": "Flag MysticalWorkshop_MadEyeRoom_abandoned_tower_access",
+    "name": "Abandoned Tower Access",
     "access_rules": [
       [
         "$has_access_to|MysticalWorkshop_MadEyeRoom"
@@ -15676,7 +13129,7 @@
     ]
   },
   {
-    "name": "Flag BlobBurg_East5_blob_burg_access_2",
+    "name": "Blob Burg Access",
     "access_rules": [
       [
         "$has_access_to|BlobBurg_East5"
@@ -15808,7 +13261,7 @@
     ]
   },
   {
-    "name": "Flag BlobBurg_Center2_blob_burg_access_1",
+    "name": "Blob Burg Access",
     "access_rules": [
       [
         "$has_access_to|BlobBurg_Center2"
@@ -15850,7 +13303,7 @@
     ]
   },
   {
-    "name": "Flag BlobBurg_Center3_blob_burg_access_3",
+    "name": "Blob Burg Access",
     "access_rules": [
       [
         "$has_access_to|BlobBurg_Center3"
@@ -16016,7 +13469,7 @@
     ]
   },
   {
-    "name": "Flag BlobBurg_West2_blob_burg_access_5",
+    "name": "Blob Burg Access",
     "access_rules": [
       [
         "$has_access_to|BlobBurg_West2",
@@ -16138,7 +13591,7 @@
     ]
   },
   {
-    "name": "Flag BlobBurg_South2_blob_burg_access_4",
+    "name": "Blob Burg Access",
     "access_rules": [
       [
         "$has_access_to|BlobBurg_South2",
@@ -16204,7 +13657,7 @@
     ]
   },
   {
-    "name": "Flag BlobBurg_Champion_blob_burg_access_6",
+    "name": "Blob Burg Access",
     "access_rules": [
       [
         "$has_access_to|BlobBurg_Champion"
@@ -16580,7 +14033,7 @@
     ]
   },
   {
-    "name": "Flag ForgottenWorld_JungleShortcut_forgotten_world_jungle_shortcut",
+    "name": "Forgotten World Jungle Shortcut",
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_JungleShortcut",
@@ -17113,7 +14566,7 @@
     ]
   },
   {
-    "name": "Flag ForgottenWorld_DracomerLair_forgotten_world_waters_shortcut",
+    "name": "Forgotten World Waters Shortcut",
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_DracomerLair",
@@ -17130,7 +14583,7 @@
     ]
   },
   {
-    "name": "Flag ForgottenWorld_DracomerLair_forgotten_world_dracomer_defeated",
+    "name": "Forgotten World Dracomer Defeated",
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_DracomerLair",
@@ -17433,22 +14886,10 @@
     ]
   },
   {
-    "name": "Flag ForgottenWorld_Caves11_Lower_forgotten_world_caves_shortcut",
+    "name": "Forgotten World Caves Shortcut",
     "access_rules": [
       [
-        "$has_access_to|ForgottenWorld_Caves11_Lower",
-        "$breakable_walls",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Caves11_Lower",
-        "$breakable_walls",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Caves11_Lower",
-        "$breakable_walls",
-        "$dual_mobility"
+        "$has_access_to|ForgottenWorld_Caves11_Lower"
       ]
     ],
     "sections": [
@@ -17571,7 +15012,7 @@
     ]
   },
   {
-    "name": "Flag ForgottenWorld_WandererRoom_forgotten_world_wanderer_freed",
+    "name": "Forgotten World Wanderer Freed",
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_WandererRoom",
@@ -18574,7 +16015,7 @@
     ]
   },
   {
-    "name": "Flag AbandonedTower_South8_Shortcut_abandoned_tower_south_shortcut",
+    "name": "Abandoned Tower South Shortcut",
     "access_rules": [
       [
         "$has_access_to|AbandonedTower_South8_Shortcut"
@@ -18944,7 +16385,7 @@
     ]
   },
   {
-    "name": "Flag AbandonedTower_Center10_Shortcut_abandoned_tower_center_shortcut",
+    "name": "Abandoned Tower Center Shortcut",
     "access_rules": [
       [
         "$has_access_to|AbandonedTower_Center10_Shortcut"
@@ -19262,7 +16703,7 @@
     ]
   },
   {
-    "name": "Flag AbandonedTower_Final_mad_lord_defeated",
+    "name": "Mad Lord Defeated",
     "access_rules": [
       [
         "$has_access_to|AbandonedTower_Final"
@@ -19277,7 +16718,7 @@
     ]
   },
   {
-    "name": "Flag AbandonedTower_Final_mad_lord_victory_condition",
+    "name": "Victory",
     "access_rules": [
       [
         "$has_access_to|AbandonedTower_Final"

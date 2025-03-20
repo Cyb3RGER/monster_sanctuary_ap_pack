@@ -3,6 +3,7 @@ require('logic/logic_generated')
 require('logic/access')
 require('logic/regions')
 require('logic/monster_ability_item_data')
+require('logic/evo_table')
 
 --alias
 double_jump = double_jump_boots
@@ -147,7 +148,7 @@ end
 
 function can_use_ability(monster)
     return _AND({
-        has(monster),
+        --has_mon_full(monster),
         has_ability(monster),
         is_explore_ability_available(monster)
     })
@@ -199,9 +200,39 @@ function shifting_avialable()
         SLOT_DATA.options.monster_shift_rule == 2,
         _AND({
             SLOT_DATA.options.monster_shift_rule == 1,
-            sun_palace_story_completed()
+            --sun_palace_story_completed()
+           sun_palace_raise_center_1(),
+           sun_palace_raise_center_2(),
+           sun_palace_raise_center_3(),
         })
     })
+end
+
+function has_mon_or_egg(monster)
+	return has(monster) or has(monster..'_egg')
+end
+
+function has_mon_full(monster)
+    if has_mon_or_egg(monster) then
+        return true
+    end
+    local children = CHILD_TABLE[monster]
+    if children then
+    	for _, v in ipairs(children) do
+    		if has_mon_or_egg(v) then
+    			return true
+    		end
+    	end
+    end
+    local evos = EVO_TABLE[monster]
+	if evos then
+		for _, v in ipairs(evos) do
+			if has_mon_or_egg(v.Monster) and has(v.Catalyst) then
+				return true
+			end
+		end
+	end
+	return false
 end
 
 --amount helpers
@@ -249,8 +280,12 @@ function three_workshop_keys()
     return mystical_workshop_key(3)
 end
 
+function four_sanctuary_tokens()
+    return sanctuary_token(4) --or open_underworld(1) or open_underworld(3)
+end
+
 function all_sanctuary_tokens()
-    return sanctuary_token(5) or open_underworld(1) or open_underworld(3)
+    return sanctuary_token(5) --or open_underworld(1) or open_underworld(3)
 end
 
 function all_rare_seashells()

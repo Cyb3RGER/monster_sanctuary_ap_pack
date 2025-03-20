@@ -135,5 +135,11 @@
     "disabled_img_mods": "",
     "max_quantity": 1,
     "overlay_font_size": 24
+  },
+  {
+    "name": "Looter's Handbook",
+    "type": "toggle",
+    "codes": "looters_handbook",
+    "img": "images/items/key_item/looters_handbook.png"
   }
 ]

@@ -1,8 +1,8 @@
 ﻿{
     "name": "Monster Sanctuary AP",
     "game_name": "Monster Sanctuary",
-    "package_version": "1.1.1",
-    "package_uid": "monster_sanctuary_ap",    
+    "package_version": "1.2.0",
+    "package_uid": "monster_sanctuary_ap",
     "author": "Cyb3R",
     "variants": {
         "standard": {

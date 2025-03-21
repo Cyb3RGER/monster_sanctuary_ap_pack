@@ -1019,491 +1019,247 @@ function bard()
 end
 
 function claws()
-    return can_use_ability('spectral_wolf') or can_use_ability('spectral_lion') or can_use_ability('molebear')
-end
-
-function has_claws()
-    return spectral_wolf() or spectral_lion() or molebear()
+    return can_use_ability('claws')
 end
 
 function tackle()
-    return can_use_ability('spectral_toad') or can_use_ability('yowie') or can_use_ability('steam_golem') or can_use_ability('vasuki') or can_use_ability('brawlish') or can_use_ability('targoat')
-end
-
-function has_tackle()
-    return spectral_toad() or yowie() or steam_golem() or vasuki() or brawlish() or targoat()
+    return can_use_ability('tackle')
 end
 
 function slash()
-    return can_use_ability('catzerker') or can_use_ability('minitaur') or can_use_ability('blade_widow') or can_use_ability('ucan')
-end
-
-function has_slash()
-    return catzerker() or minitaur() or blade_widow() or ucan()
+    return can_use_ability('slash')
 end
 
 function heavy_punch()
-    return can_use_ability('monk')
-end
-
-function has_heavy_punch()
-    return monk()
+    return can_use_ability('heavy_punch')
 end
 
 function toxic_slam()
-    return can_use_ability('goblin_brute')
-end
-
-function has_toxic_slam()
-    return goblin_brute()
+    return can_use_ability('toxic_slam')
 end
 
 function light_crush()
-    return can_use_ability('goblin_miner')
-end
-
-function has_light_crush()
-    return goblin_miner()
+    return can_use_ability('light_crush')
 end
 
 function crush()
-    return can_use_ability('salahammer') or can_use_ability('asura') or can_use_ability('goblin_pilot') or can_use_ability('darnation')
-end
-
-function has_crush()
-    return salahammer() or asura() or goblin_pilot() or darnation()
+    return can_use_ability('crush')
 end
 
 function corrosive_jabs()
-    return can_use_ability('troll')
-end
-
-function has_corrosive_jabs()
-    return troll()
+    return can_use_ability('corrosive_jabs')
 end
 
 function charging_mount()
-    return can_use_ability('rampede') or can_use_ability('rathops')
-end
-
-function has_charging_mount()
-    return rampede() or rathops()
+    return can_use_ability('charging_mount')
 end
 
 function ignite()
-    return can_use_ability('magmapillar') or can_use_ability('tengu') or can_use_ability('specter') or can_use_ability('magmamoth') or can_use_ability('imori') or can_use_ability('lava_blob') or can_use_ability('skorch') or can_use_ability('plague_egg')
-end
-
-function has_ignite()
-    return magmapillar() or tengu() or specter() or magmamoth() or imori() or lava_blob() or skorch() or plague_egg()
+    return can_use_ability('ignite')
 end
 
 function fiery_shots()
-    return can_use_ability('goblin_hood') or can_use_ability('polterofen') or can_use_ability('mimic')
-end
-
-function has_fiery_shots()
-    return goblin_hood() or polterofen() or mimic()
+    return can_use_ability('fiery_shots')
 end
 
 function bubble_burst()
-    return can_use_ability('blob') or can_use_ability('grummy') or can_use_ability('grulu')
-end
-
-function has_bubble_burst()
-    return blob() or grummy() or grulu()
+    return can_use_ability('bubble_burst')
 end
 
 function lightning_bolt()
-    return can_use_ability('crackle_knight') or can_use_ability('beetloid') or can_use_ability('goblin_warlock') or can_use_ability('sizzle_knight')
-end
-
-function has_lightning_bolt()
-    return crackle_knight() or beetloid() or goblin_warlock() or sizzle_knight()
+    return can_use_ability('lightning_bolt')
 end
 
 function shock_freeze()
-    return can_use_ability('shockhopper')
-end
-
-function has_shock_freeze()
-    return shockhopper()
+    return can_use_ability('shock_freeze')
 end
 
 function slime_shot()
-    return can_use_ability('toxiquus') or can_use_ability('ninki') or can_use_ability('ninki_nanka')
-end
-
-function has_slime_shot()
-    return toxiquus() or ninki() or ninki_nanka()
+    return can_use_ability('slime_shot')
 end
 
 function jewel_blast()
-    return can_use_ability('goblin_king') or can_use_ability('crystal_snail')
-end
-
-function has_jewel_blast()
-    return goblin_king() or crystal_snail()
+    return can_use_ability('jewel_blast')
 end
 
 function toxic_freeze()
-    return can_use_ability('spinner')
-end
-
-function has_toxic_freeze()
-    return spinner()
+    return can_use_ability('toxic_freeze')
 end
 
 function freeze()
-    return can_use_ability('ice_blob') or can_use_ability('megataur')
-end
-
-function has_freeze()
-    return ice_blob() or megataur()
+    return can_use_ability('freeze')
 end
 
 function snowball_toss()
-    return can_use_ability('mogwai')
-end
-
-function has_snowball_toss()
-    return mogwai()
+    return can_use_ability('snowball_toss')
 end
 
 function flying()
-    return can_use_ability('spectral_eagle') or can_use_ability('vaero') or can_use_ability('frosty') or can_use_ability('mad_eye') or can_use_ability('raduga') or can_use_ability('draconov')
-end
-
-function has_flying()
-    return spectral_eagle() or vaero() or frosty() or mad_eye() or raduga() or draconov()
+    return can_use_ability('flying')
 end
 
 function improved_flying()
-    return can_use_ability('silvaero') or can_use_ability('kongamato') or can_use_ability('dracogran') or can_use_ability('dracozul') or can_use_ability('draconoir') or can_use_ability('ornithopter')
-end
-
-function has_improved_flying()
-    return silvaero() or kongamato() or dracogran() or dracozul() or draconoir() or ornithopter()
+    return can_use_ability('improved_flying')
 end
 
 function lofty_mount()
-    return can_use_ability('gryphonix')
-end
-
-function has_lofty_mount()
-    return gryphonix()
+    return can_use_ability('lofty_mount')
 end
 
 function basic_swimming()
-    return can_use_ability('koi')
-end
-
-function has_basic_swimming()
-    return koi()
+    return can_use_ability('basic_swimming')
 end
 
 function improved_swimming()
-    return can_use_ability('thornish') or can_use_ability('nautilid') or can_use_ability('elderjel') or can_use_ability('dracomer')
-end
-
-function has_improved_swimming()
-    return thornish() or nautilid() or elderjel() or dracomer()
+    return can_use_ability('improved_swimming')
 end
 
 function dual_mobility()
-    return can_use_ability('krakaturtle')
-end
-
-function has_dual_mobility()
-    return krakaturtle()
+    return can_use_ability('dual_mobility')
 end
 
 function basic_mount()
-    return can_use_ability('aurumtail') or can_use_ability('qilin') or can_use_ability('dodo') or can_use_ability('moccus')
-end
-
-function has_basic_mount()
-    return aurumtail() or qilin() or dodo() or moccus()
+    return can_use_ability('basic_mount')
 end
 
 function sonar_mount()
-    return can_use_ability('akhlut')
-end
-
-function has_sonar_mount()
-    return akhlut()
+    return can_use_ability('sonar_mount')
 end
 
 function tar_mount()
-    return can_use_ability('tar_blob')
-end
-
-function has_tar_mount()
-    return tar_blob()
+    return can_use_ability('tar_mount')
 end
 
 function summon_rock()
-    return can_use_ability('rocky') or can_use_ability('druid_oak') or can_use_ability('kame')
-end
-
-function has_summon_rock()
-    return rocky() or druid_oak() or kame()
+    return can_use_ability('summon_rock')
 end
 
 function summon_mushroom()
-    return can_use_ability('fungi') or can_use_ability('tanuki')
-end
-
-function has_summon_mushroom()
-    return fungi() or tanuki()
+    return can_use_ability('summon_mushroom')
 end
 
 function summon_big_rock()
-    return can_use_ability('brutus') or can_use_ability('mega_rock') or can_use_ability('promethean')
-end
-
-function has_summon_big_rock()
-    return brutus() or mega_rock() or promethean()
+    return can_use_ability('summon_big_rock')
 end
 
 function sonar()
-    return can_use_ability('nightwing')
-end
-
-function has_sonar()
-    return nightwing()
+    return can_use_ability('sonar')
 end
 
 function light()
-    return can_use_ability('glowfly') or can_use_ability('caraglow') or can_use_ability('manticorb') or can_use_ability('glowdra')
-end
-
-function has_light()
-    return glowfly() or caraglow() or manticorb() or glowdra()
+    return can_use_ability('light')
 end
 
 function ghost_form()
-    return can_use_ability('sycophantom') or can_use_ability('kanko') or can_use_ability('stolby')
-end
-
-function has_ghost_form()
-    return sycophantom() or kanko() or stolby()
+    return can_use_ability('ghost_form')
 end
 
 function spore_shroud()
-    return can_use_ability('fumagus') or can_use_ability('amberlgna')
-end
-
-function has_spore_shroud()
-    return fumagus() or amberlgna()
+    return can_use_ability('spore_shroud')
 end
 
 function grapple()
-    return can_use_ability('oculus') or can_use_ability('argiope') or can_use_ability('arachlich') or can_use_ability('worm')
-end
-
-function has_grapple()
-    return oculus() or argiope() or arachlich() or worm()
+    return can_use_ability('grapple')
 end
 
 function blob_form()
-    return can_use_ability('rainbow_blob') or can_use_ability('king_blob')
-end
-
-function has_blob_form()
-    return rainbow_blob() or king_blob()
+    return can_use_ability('blob_form')
 end
 
 function morph_ball()
-    return can_use_ability('changeling')
-end
-
-function has_morph_ball()
-    return changeling()
+    return can_use_ability('morph_ball')
 end
 
 function levitate()
-    return can_use_ability('vodinoy') or can_use_ability('diavola') or can_use_ability('vertraag') or can_use_ability('terradrile')
-end
-
-function has_levitate()
-    return vodinoy() or diavola() or vertraag() or terradrile()
+    return can_use_ability('levitate')
 end
 
 function secret_vision()
-    return can_use_ability('sutsune') or can_use_ability('thanatos') or can_use_ability('aazerach') or can_use_ability('mad_lord') or can_use_ability('ascendant')
-end
-
-function has_secret_vision()
-    return sutsune() or thanatos() or aazerach() or mad_lord() or ascendant()
+    return can_use_ability('secret_vision')
 end
 
 function minnesang()
-    return can_use_ability('bard')
-end
-
-function has_minnesang()
-    return bard()
+    return can_use_ability('minnesang')
 end
 
 function distant_ledges()
-    return flying() or improved_flying() or dual_mobility() or lofty_mount()
-end
-
-function has_distant_ledges()
-    return has_flying() or has_improved_flying() or has_dual_mobility() or has_lofty_mount()
+    return can_use_ability('distant_ledges')
 end
 
 function ground_switches()
-    return summon_big_rock() or summon_rock() or summon_mushroom()
-end
-
-function has_ground_switches()
-    return has_summon_big_rock() or has_summon_rock() or has_summon_mushroom()
+    return can_use_ability('ground_switches')
 end
 
 function swimming()
-    return basic_swimming() or improved_swimming() or dual_mobility()
-end
-
-function has_swimming()
-    return has_basic_swimming() or has_improved_swimming() or has_dual_mobility()
+    return can_use_ability('swimming')
 end
 
 function mount()
-    return basic_mount() or sonar_mount() or tar_mount() or charging_mount() or lofty_mount()
-end
-
-function has_mount()
-    return has_basic_mount() or has_sonar_mount() or has_tar_mount() or has_charging_mount() or has_lofty_mount()
+    return can_use_ability('mount')
 end
 
 function tar()
-    return tar_mount() or dual_mobility()
-end
-
-function has_tar()
-    return has_tar_mount() or has_dual_mobility()
+    return can_use_ability('tar')
 end
 
 function breakable_walls()
-    return claws() or tackle() or slash() or heavy_punch() or toxic_slam() or light_crush() or crush() or corrosive_jabs() or charging_mount()
-end
-
-function has_breakable_walls()
-    return has_claws() or has_tackle() or has_slash() or has_heavy_punch() or has_toxic_slam() or has_light_crush() or has_crush() or has_corrosive_jabs() or has_charging_mount()
+    return can_use_ability('breakable_walls')
 end
 
 function impassible_vines()
-    return claws() or ignite() or slash() or fiery_shots()
-end
-
-function has_impassible_vines()
-    return has_claws() or has_ignite() or has_slash() or has_fiery_shots()
+    return can_use_ability('impassible_vines')
 end
 
 function diamond_blocks()
-    return light_crush() or crush() or charging_mount()
-end
-
-function has_diamond_blocks()
-    return has_light_crush() or has_crush() or has_charging_mount()
+    return can_use_ability('diamond_blocks')
 end
 
 function fire_orbs()
-    return ignite() or fiery_shots()
-end
-
-function has_fire_orbs()
-    return has_ignite() or has_fiery_shots()
+    return can_use_ability('fire_orbs')
 end
 
 function water_orbs()
-    return bubble_burst() or corrosive_jabs()
-end
-
-function has_water_orbs()
-    return has_bubble_burst() or has_corrosive_jabs()
+    return can_use_ability('water_orbs')
 end
 
 function lightning_orbs()
-    return lightning_bolt() or shock_freeze()
-end
-
-function has_lightning_orbs()
-    return has_lightning_bolt() or has_shock_freeze()
+    return can_use_ability('lightning_orbs')
 end
 
 function earth_orbs()
-    return slime_shot() or toxic_slam() or jewel_blast() or toxic_freeze()
-end
-
-function has_earth_orbs()
-    return has_slime_shot() or has_toxic_slam() or has_jewel_blast() or has_toxic_freeze()
+    return can_use_ability('earth_orbs')
 end
 
 function ice_orbs()
-    return freeze() or snowball_toss() or shock_freeze() or toxic_freeze()
-end
-
-function has_ice_orbs()
-    return has_freeze() or has_snowball_toss() or has_shock_freeze() or has_toxic_freeze()
+    return can_use_ability('ice_orbs')
 end
 
 function distant_ice_orbs()
-    return snowball_toss() or shock_freeze() or toxic_freeze()
-end
-
-function has_distant_ice_orbs()
-    return has_snowball_toss() or has_shock_freeze() or has_toxic_freeze()
+    return can_use_ability('distant_ice_orbs')
 end
 
 function narrow_corridors()
-    return blob_form() or morph_ball()
-end
-
-function has_narrow_corridors()
-    return has_blob_form() or has_morph_ball()
+    return can_use_ability('narrow_corridors')
 end
 
 function magic_walls()
-    return minnesang()
-end
-
-function has_magic_walls()
-    return has_minnesang()
+    return can_use_ability('magic_walls')
 end
 
 function magic_vines()
-    return spore_shroud()
-end
-
-function has_magic_vines()
-    return has_spore_shroud()
+    return can_use_ability('magic_vines')
 end
 
 function heavy_blocks()
-    return tackle()
-end
-
-function has_heavy_blocks()
-    return has_tackle()
+    return can_use_ability('heavy_blocks')
 end
 
 function torches()
-    return ignite() or lightning_bolt() or fiery_shots()
-end
-
-function has_torches()
-    return has_ignite() or has_lightning_bolt() or has_fiery_shots()
+    return can_use_ability('torches')
 end
 
 function dark_rooms()
-    return sonar() or light() or sonar_mount() or light_crush()
-end
-
-function has_dark_rooms()
-    return has_sonar() or has_light() or has_sonar_mount() or has_light_crush()
+    return can_use_ability('dark_rooms')
 end
 
 function blue_cave_switches_access()

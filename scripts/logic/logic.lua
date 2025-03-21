@@ -146,30 +146,8 @@ function tar()
     })
 end
 
-function can_use_ability(monster)
-    return _AND({
-        --has_mon_full(monster),
-        has_ability(monster),
-        is_explore_ability_available(monster)
-    })
-end
-
-function has_ability(monster)
-    for _, v in ipairs(MONSTERS_TO_ABILITIES[monster]) do
-        if has(v) then
-            return true
-        end
-    end
-    return false
-end
-
-function is_explore_ability_available(monster)
-    for _, v in ipairs(MONSTERS_TO_ABILITIES[monster]) do
-        if not has(v .. '_locked') then
-            return true
-        end
-    end
-    return false
+function can_use_ability(ability)
+    return has(ability) and not has(ability .. '_locked')
 end
 
 function _is_explore_ability_available(monster)

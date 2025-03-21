@@ -535,10 +535,10 @@ def gen_item_helpers():
         lua_str += build_mon_helper(code, code_to_type[code] if code in code_to_type else 'toggle')
     for k, v in monster_ability_rules.items():
         lua_str += build_ability_helper(k, v)
-        lua_str += build_ability_helper(k, v, True)
+        # lua_str += build_ability_helper(k, v, True)
     for k, v in exploration_obstacle_rules.items():
         lua_str += build_exploration_obstacle_helper(k, v)
-        lua_str += build_exploration_obstacle_helper(k, v, True)
+        # lua_str += build_exploration_obstacle_helper(k, v, True)
     with open('data/world.json', mode='r') as f:
         json_data = json.load(f)
     for region_data in json_data:
@@ -596,11 +596,12 @@ def build_ability_helper(ability, monsters, useHas=False):
     func_name = ('has_' if useHas else '') + ability
     lua_str = f'function {func_name}()\n'
     lua_str += f'{TAB}return '
-    for v in monsters:
-        lua_str += f'{v}()' if useHas else f"can_use_ability(\'{v}\')"
-        # lua_str += f'{(v if useHas else "can_use_ability")}(\'{("" if useHas else v)}\')'
-        if v != monsters[-1]:
-            lua_str += ' or '
+    lua_str += f"can_use_ability(\'{ability}\')"
+    # for v in monsters:
+    #     lua_str += f'{v}()' if useHas else f"can_use_ability(\'{v}\')"
+    #     # lua_str += f'{(v if useHas else "can_use_ability")}(\'{("" if useHas else v)}\')'
+    #     if v != monsters[-1]:
+    #         lua_str += ' or '
     lua_str += '\nend\n\n'
     return lua_str
 
@@ -609,10 +610,11 @@ def build_exploration_obstacle_helper(obstacle, abilities, useHas=False):
     func_name = ('has_' if useHas else '') + obstacle
     lua_str = f'function {func_name}()\n'
     lua_str += f'{TAB}return '
-    for v in abilities:
-        lua_str += f'{("has_" if useHas else "") + v}()'
-        if v != abilities[-1]:
-            lua_str += ' or '
+    lua_str += f"can_use_ability(\'{obstacle}\')"
+    # for v in abilities:
+    #     lua_str += f'{("has_" if useHas else "") + v}()'
+    #     if v != abilities[-1]:
+    #         lua_str += ' or '
     lua_str += '\nend\n\n'
     return lua_str
 

@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.2.1",
+            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.2.1/monster_sanctuary_ap_pack-v1_2_1.zip",
+            "sha256": "ad48c01c63ebd0137385ebd8f1cd3c01d33dfd3ea437d1cbf96e1dc30d1bfa98",
+            "changelog": [
+                "Fixed ability logic"
+            ]
+        },
+        {
             "package_version": "1.2.0",
             "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.2.0/monster_sanctuary_ap_pack-v1_2_0.zip",
             "sha256": "3c0b45d5eb2e49d5e9eb94088c6cc96bdee5449101c84c8076e2f5623f8a9b44",

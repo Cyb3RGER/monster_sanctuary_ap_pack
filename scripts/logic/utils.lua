@@ -63,3 +63,11 @@ function has(code, amount)
     end
     return Tracker:ProviderCountForCode(code) >= amount
 end
+
+function has_all(req_table)
+	local tmp = {}
+	for _, value in ipairs(req_table) do
+	    table.insert(tmp, has(value.Code, value.Amount))
+	end
+	return _AND(tmp)
+end

@@ -1418,6 +1418,10 @@ function sun_palace_blob_key()
     })
 end
 
+function sun_palace_story_completed()
+    return has_access_to('SunPalace_North2')
+end
+
 function ostanes()
     return has_access_to('AncientWoods_North3')
 end
@@ -1534,15 +1538,9 @@ function magma_chamber_lower_lava()
                     skip_plot(),
                     runestone_shard()
                 }),
-                _OR({
-                    _AND({
-                        skip_plot(),
-                        runestone_shard()
-                    }),
-                    _AND({
-                        stronghold_dungeon_library_access(),
-                        runestone_shard()
-                    })
+                _AND({
+                    stronghold_dungeon_library_access(),
+                    runestone_shard()
                 })
             })
         }),

@@ -3,6 +3,7 @@ require('logic/logic_generated')
 require('logic/access')
 require('logic/regions')
 require('logic/monster_ability_item_data')
+require('logic/monster_ability_prog_data')
 require('logic/evo_table')
 
 --alias
@@ -115,6 +116,20 @@ function shops_ignore_rank()
     return SLOT_DATA.options.shops_ignore_rank == 1
 end
 
+function no_progression_in_underworld()
+    if SLOT_DATA == nil then
+        return false
+    end
+    return SLOT_DATA.options.no_progression_in_underworld == 1
+end
+
+function no_progression_in_forgotten_world()
+    if SLOT_DATA == nil then
+        return false
+    end
+    return SLOT_DATA.options.no_progression_in_forgotten_world == 1
+end
+
 --logic helpers
 function all_blob_keys_used()
     return _OR({
@@ -163,13 +178,41 @@ function _is_explore_ability_available(monster)
         return false
     end
     if opt == 1 then
-        return has(MONSTER_ABILITY_ITEM_DATA[monster].TypeItem)
+        return has(MONSTER_ABILITY_ITEM_DATA[monster].Type)
     end
     if opt == 2 then
-        return has(MONSTER_ABILITY_ITEM_DATA[monster].AbilityItem)
+        return has(MONSTER_ABILITY_ITEM_DATA[monster].Ability)
     end
     if opt == 3 then
-        return has(MONSTER_ABILITY_ITEM_DATA[monster].SpeciesItem)
+        return has(MONSTER_ABILITY_ITEM_DATA[monster].Species)
+    end
+    if opt == 4 then
+        local prog_ability_name = MONSTER_ABILITY_ITEM_DATA[monster].Progressive
+        local prog_data = MONSTER_ABILITY_PROG_DATA[MONSTER_ABILITY_ITEM_DATA[monster].Progressive]
+        if prog_data == nil then
+            print(string.format('!! MONSTER_ABILITY_PROG_DATA for %s is missing !!', prog_ability_name))
+            return false
+        end
+        local prog_entry = prog_data.Progressive
+        if prog_entry == nil then
+            print(string.format('!! MONSTER_ABILITY_PROG_DATA.Progressive for %s is missing !!', prog_ability_name))
+            return false
+        end
+        return has(prog_entry.Code, prog_entry.Amount)
+    end
+    if opt == 5 then
+        local prog_ability_name = MONSTER_ABILITY_ITEM_DATA[monster].Progressive
+        local prog_data = MONSTER_ABILITY_PROG_DATA[prog_ability_name]
+        if prog_data == nil then
+            print(string.format('!! MONSTER_ABILITY_PROG_DATA for %s is missing !!', prog_ability_name))
+            return false
+        end
+        local combo_data = prog_data.Combo
+        if prog_data == nil then
+            print(string.format('!! MONSTER_ABILITY_PROG_DATA.Combo for %s is missing !!', prog_ability_name))
+            return false
+        end
+        return has_all(combo_data)
     end
 end
 
@@ -179,15 +222,15 @@ function shifting_avialable()
         _AND({
             SLOT_DATA.options.monster_shift_rule == 1,
             --sun_palace_story_completed()
-           sun_palace_raise_center_1(),
-           sun_palace_raise_center_2(),
-           sun_palace_raise_center_3(),
+            sun_palace_raise_center_1(),
+            sun_palace_raise_center_2(),
+            sun_palace_raise_center_3(),
         })
     })
 end
 
 function has_mon_or_egg(monster)
-	return has(monster) or has(monster..'_egg')
+    return has(monster) or has(monster .. '_egg')
 end
 
 function has_mon_full(monster)
@@ -196,21 +239,21 @@ function has_mon_full(monster)
     end
     local children = CHILD_TABLE[monster]
     if children then
-    	for _, v in ipairs(children) do
-    		if has_mon_or_egg(v) then
-    			return true
-    		end
-    	end
+        for _, v in ipairs(children) do
+            if has_mon_or_egg(v) then
+                return true
+            end
+        end
     end
     local evos = EVO_TABLE[monster]
-	if evos then
-		for _, v in ipairs(evos) do
-			if has_mon_or_egg(v.Monster) and has(v.Catalyst) then
-				return true
-			end
-		end
-	end
-	return false
+    if evos then
+        for _, v in ipairs(evos) do
+            if has_mon_or_egg(v.Monster) and has(v.Catalyst) then
+                return true
+            end
+        end
+    end
+    return false
 end
 
 --amount helpers

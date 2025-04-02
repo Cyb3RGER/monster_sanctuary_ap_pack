@@ -967,98 +967,166 @@
   },
   {
     "name": "Progressive Mobility",
-    "type": "toggle",
+    "type": "consumable",
     "codes": "progressive_mobility",
-    "img": "images/items/abilities/progressive_mobility.png"
+    "img": "images/items/abilities/progressive_mobility.png",
+    "max_quantity": 5,
+    "overlay_font_size": 24
   },
   {
     "name": "Progressive Terrain",
-    "type": "toggle",
+    "type": "consumable",
     "codes": "progressive_terrain",
-    "img": "images/items/abilities/progressive_terrain.png"
+    "img": "images/items/abilities/progressive_terrain.png",
+    "max_quantity": 3,
+    "overlay_font_size": 24
   },
   {
     "name": "Progressive Mount",
-    "type": "toggle",
+    "type": "consumable",
     "codes": "progressive_mount",
-    "img": "images/items/abilities/progressive_mount.png"
+    "img": "images/items/abilities/progressive_mount.png",
+    "max_quantity": 3,
+    "overlay_font_size": 24
   },
   {
     "name": "Progressive Walls",
-    "type": "toggle",
+    "type": "consumable",
     "codes": "progressive_walls",
-    "img": "images/items/abilities/progressive_walls.png"
+    "img": "images/items/abilities/progressive_walls.png",
+    "max_quantity": 3,
+    "overlay_font_size": 24
   },
   {
     "name": "Progressive Boulders",
-    "type": "toggle",
+    "type": "consumable",
     "codes": "progressive_boulders",
-    "img": "images/items/abilities/progressive_boulders.png"
+    "img": "images/items/abilities/progressive_boulders.png",
+    "max_quantity": 3,
+    "overlay_font_size": 24
   },
   {
     "name": "Progressive Fire Orbs",
-    "type": "toggle",
+    "type": "consumable",
     "codes": "progressive_fire_orbs",
-    "img": "images/items/abilities/progressive_fire_orbs.png"
+    "img": "images/items/abilities/progressive_fire_orbs.png",
+    "max_quantity": 2,
+    "overlay_font_size": 24
   },
   {
     "name": "Progressive Water Orbs",
-    "type": "toggle",
+    "type": "consumable",
     "codes": "progressive_water_orbs",
-    "img": "images/items/abilities/progressive_water_orbs.png"
+    "img": "images/items/abilities/progressive_water_orbs.png",
+    "max_quantity": 2,
+    "overlay_font_size": 24
   },
   {
     "name": "Progressive Lightning Orbs",
-    "type": "toggle",
+    "type": "consumable",
     "codes": "progressive_lightning_orbs",
-    "img": "images/items/abilities/progressive_lightning_orbs.png"
+    "img": "images/items/abilities/progressive_lightning_orbs.png",
+    "max_quantity": 2,
+    "overlay_font_size": 24
   },
   {
     "name": "Progressive Earth Orbs",
-    "type": "toggle",
+    "type": "consumable",
     "codes": "progressive_earth_orbs",
-    "img": "images/items/abilities/progressive_earth_orbs.png"
+    "img": "images/items/abilities/progressive_earth_orbs.png",
+    "max_quantity": 3,
+    "overlay_font_size": 24
   },
   {
     "name": "Progressive Ice Orbs",
-    "type": "toggle",
+    "type": "consumable",
     "codes": "progressive_ice_orbs",
-    "img": "images/items/abilities/progressive_ice_orbs.png"
+    "img": "images/items/abilities/progressive_ice_orbs.png",
+    "max_quantity": 2,
+    "overlay_font_size": 24
   },
   {
     "name": "Progressive Light",
-    "type": "toggle",
+    "type": "consumable",
     "codes": "progressive_light",
-    "img": "images/items/abilities/progressive_light.png"
+    "img": "images/items/abilities/progressive_light.png",
+    "max_quantity": 2,
+    "overlay_font_size": 24
   },
   {
     "name": "Progressive Shroud",
-    "type": "toggle",
+    "type": "consumable",
     "codes": "progressive_shroud",
-    "img": "images/items/abilities/progressive_shroud.png"
+    "img": "images/items/abilities/progressive_shroud.png",
+    "max_quantity": 2,
+    "overlay_font_size": 24
   },
   {
-    "name": "Progressive Flight",
-    "type": "toggle",
-    "codes": "progressive_flight",
-    "img": "images/items/abilities/progressive_flight.png"
+    "name": "Combo Flight",
+    "type": "consumable",
+    "codes": "combo_flight",
+    "img": "images/items/abilities/combo_flight.png",
+    "max_quantity": 2,
+    "overlay_font_size": 24
   },
   {
-    "name": "Progressive Swimming",
-    "type": "toggle",
-    "codes": "progressive_swimming",
-    "img": "images/items/abilities/progressive_swimming.png"
+    "name": "Combo Swimming",
+    "type": "consumable",
+    "codes": "combo_swimming",
+    "img": "images/items/abilities/combo_swimming.png",
+    "max_quantity": 2,
+    "overlay_font_size": 24
   },
   {
-    "name": "Progressive Magic",
-    "type": "toggle",
-    "codes": "progressive_magic",
-    "img": "images/items/abilities/progressive_magic.png"
+    "name": "Combo Walls",
+    "type": "consumable",
+    "codes": "combo_walls",
+    "img": "images/items/abilities/combo_walls.png",
+    "max_quantity": 2,
+    "overlay_font_size": 24
   },
   {
-    "name": "Progressive Orbs",
+    "name": "Combo Boulders",
+    "type": "consumable",
+    "codes": "combo_boulders",
+    "img": "images/items/abilities/combo_boulders.png",
+    "max_quantity": 2,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Combo Mount",
     "type": "toggle",
-    "codes": "progressive_orbs",
-    "img": "images/items/abilities/progressive_orbs.png"
+    "codes": "combo_mount",
+    "img": "images/items/abilities/combo_mount.png"
+  },
+  {
+    "name": "Combo Light",
+    "type": "toggle",
+    "codes": "combo_light",
+    "img": "images/items/abilities/combo_light.png"
+  },
+  {
+    "name": "Combo Orbs",
+    "type": "consumable",
+    "codes": "combo_orbs",
+    "img": "images/items/abilities/combo_orbs.png",
+    "max_quantity": 3,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Combo Shroud",
+    "type": "consumable",
+    "codes": "combo_shroud",
+    "img": "images/items/abilities/combo_shroud.png",
+    "max_quantity": 2,
+    "overlay_font_size": 24
+  },
+  {
+    "name": "Combo Magic",
+    "type": "consumable",
+    "codes": "combo_magic",
+    "img": "images/items/abilities/combo_magic.png",
+    "max_quantity": 2,
+    "overlay_font_size": 24
   }
 ]

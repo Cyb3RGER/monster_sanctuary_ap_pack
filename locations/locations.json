@@ -1285,9 +1285,7 @@
         ],
         "visibility_rules": [
           [
-            "$is_not_goal|0"
-          ],
-          [
+            "$is_not_goal|0",
             "$is_not_goal|1"
           ]
         ]
@@ -1304,9 +1302,7 @@
         ],
         "visibility_rules": [
           [
-            "$is_not_goal|0"
-          ],
-          [
+            "$is_not_goal|0",
             "$is_not_goal|1"
           ]
         ]
@@ -5679,7 +5675,7 @@
     ]
   },
   {
-    "name": "Sun Palace Lower Water",
+    "name": "Sun Palace Lower Water 2",
     "access_rules": [
       [
         "$has_access_to|SunPalace_Center",
@@ -5839,7 +5835,7 @@
     ]
   },
   {
-    "name": "Bex",
+    "name": "Bex 2",
     "access_rules": [
       [
         "$has_access_to|SunPalace_West3"
@@ -5951,7 +5947,7 @@
     ]
   },
   {
-    "name": "Sun Palace Raise Center",
+    "name": "Sun Palace Raise Center 2",
     "access_rules": [
       [
         "$has_access_to|SunPalace_West5"
@@ -6139,7 +6135,7 @@
     ]
   },
   {
-    "name": "Sun Palace Raise Center",
+    "name": "Sun Palace Raise Center 3",
     "access_rules": [
       [
         "$has_access_to|SunPalace_South4"
@@ -6278,7 +6274,7 @@
     ]
   },
   {
-    "name": "Blob Key Used",
+    "name": "Blob Key Used 2",
     "access_rules": [
       [
         "$has_access_to|SunPalace_EastSewers6",
@@ -6470,6 +6466,21 @@
             "$has_access_to|SunPalace_North2"
           ]
         ]
+      }
+    ]
+  },
+  {
+    "name": "Sun Palace Story Complete",
+    "access_rules": [
+      [
+        "$has_access_to|SunPalace_North2"
+      ]
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
       }
     ]
   },
@@ -8635,7 +8646,7 @@
     ]
   },
   {
-    "name": "Bex",
+    "name": "Bex 3",
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_East5"
@@ -9577,7 +9588,7 @@
     ]
   },
   {
-    "name": "Ancient Woods to Magma Chamber Shortcut",
+    "name": "Ancient Woods to Magma Chamber Shortcut 2",
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_North5_Upper"
@@ -9648,7 +9659,7 @@
     ]
   },
   {
-    "name": "Bex",
+    "name": "Bex 4",
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_North8_East"
@@ -12618,7 +12629,7 @@
     ]
   },
   {
-    "name": "Blob Key Used",
+    "name": "Blob Key Used 3",
     "access_rules": [
       [
         "$has_access_to|MysticalWorkshop_East3",
@@ -13261,7 +13272,7 @@
     ]
   },
   {
-    "name": "Blob Burg Access",
+    "name": "Blob Burg Access 2",
     "access_rules": [
       [
         "$has_access_to|BlobBurg_Center2"
@@ -13303,7 +13314,7 @@
     ]
   },
   {
-    "name": "Blob Burg Access",
+    "name": "Blob Burg Access 3",
     "access_rules": [
       [
         "$has_access_to|BlobBurg_Center3"
@@ -13469,7 +13480,7 @@
     ]
   },
   {
-    "name": "Blob Burg Access",
+    "name": "Blob Burg Access 4",
     "access_rules": [
       [
         "$has_access_to|BlobBurg_West2",
@@ -13591,7 +13602,7 @@
     ]
   },
   {
-    "name": "Blob Burg Access",
+    "name": "Blob Burg Access 5",
     "access_rules": [
       [
         "$has_access_to|BlobBurg_South2",
@@ -13657,7 +13668,7 @@
     ]
   },
   {
-    "name": "Blob Burg Access",
+    "name": "Blob Burg Access 6",
     "access_rules": [
       [
         "$has_access_to|BlobBurg_Champion"
@@ -14905,7 +14916,8 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_Caves12",
-        "$dual_mobility"
+        "$dual_mobility",
+        "$double_jump"
       ]
     ],
     "map_locations": [

@@ -30,5 +30,6 @@ ABILITIES_COMPACT = {
     "basic_mount",
     "sonar_mount",
     "tar_mount",
-    "charging_mount"
+    "charging_mount",
+    "ghost_form"
 }

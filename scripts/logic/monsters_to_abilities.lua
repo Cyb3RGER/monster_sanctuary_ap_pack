@@ -107,4 +107,7 @@ MONSTERS_TO_ABILITIES = {
     ["dodo"] = {"basic_mount"},
     ["moccus"] = {"basic_mount"},
     ["tar_blob"] = {"tar_mount"},
+    ["sycophantom"] = {"ghost_form"},
+    ["kanko"] = {"ghost_form"},
+    ["stolby"] = {"ghost_form"},
 }

@@ -8,7 +8,7 @@ function update_abilites_from_monster(code)
         return
     end
     local abilites = MONSTERS_TO_ABILITIES[code]
-    if not abilites then
+    if abilites == nil then
         print(string.format('! abilites is null for code %s !', code))
         return
     end
@@ -39,7 +39,17 @@ function update_abilites_from_unlock_item(code)
         return
     end
     for k, v in pairs(MONSTER_ABILITY_ITEM_DATA) do
-        if v.AbilityItem == code or v.SpeciesItem == code or v.TypeItem == code then
+        local prog_data = MONSTER_ABILITY_PROG_DATA[v.Progressive]
+        local found = v.Ability == code or v.Species == code or v.Type == code or prog_data.Progressive.Code == code
+        if not found then
+            for _, v2 in ipairs(prog_data.Combo) do
+                if v2.Code == code then
+                    found = true
+                    break
+                end
+            end
+        end
+        if found then
             update_abilites_from_monster(k)
         end
     end
@@ -62,7 +72,13 @@ end
 ScriptHost:AddWatchForCode("Update access", "*", update_access_watch)
 for k, v in pairs(MONSTER_ABILITY_ITEM_DATA) do
     ScriptHost:AddWatchForCode("Update abilties from " .. k, k, update_abilites_from_monster)
-    ScriptHost:AddWatchForCode("Update abilties from " .. v.AbilityItem, v.AbilityItem, update_abilites_from_unlock_item)
-    ScriptHost:AddWatchForCode("Update abilties from " .. v.TypeItem, v.TypeItem, update_abilites_from_unlock_item)
-    ScriptHost:AddWatchForCode("Update abilties from " .. v.SpeciesItem, v.SpeciesItem, update_abilites_from_unlock_item)
+    ScriptHost:AddWatchForCode("Update abilties from " .. v.Ability, v.Ability, update_abilites_from_unlock_item)
+    ScriptHost:AddWatchForCode("Update abilties from " .. v.Type, v.Type, update_abilites_from_unlock_item)
+    ScriptHost:AddWatchForCode("Update abilties from " .. v.Species, v.Species, update_abilites_from_unlock_item)
+    local prog_data = MONSTER_ABILITY_PROG_DATA[v.Progressive]
+    ScriptHost:AddWatchForCode("Update abilties from " .. prog_data.Progressive.Code, prog_data.Progressive.Code,
+        update_abilites_from_unlock_item)
+    for _, v2 in ipairs(prog_data.Combo) do
+        ScriptHost:AddWatchForCode("Update abilties from " .. v2.Code, v2.Code, update_abilites_from_unlock_item)
+    end
 end

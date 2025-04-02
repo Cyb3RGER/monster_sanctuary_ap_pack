@@ -480,9 +480,9 @@ def gen_abilities_list():
 
 def gen_item_helpers():
     flag_counts = count_flags()
-    with open('data/plotless.json', mode='r') as f:
-        plotless_data = json.load(f)
-    plotless_data = [data for data in plotless_data if data["type"] == "flag"]
+    # with open('data/plotless.json', mode='r') as f:
+    #     plotless_data = json.load(f)
+    # plotless_data = [data for data in plotless_data if data["type"] == "flag"]
     with open('data/items.json', mode='r') as f:
         json_data = json.load(f)
     codes = []
@@ -547,10 +547,10 @@ def gen_item_helpers():
         for flag in flags:
             flag_id = flag['id']
             flag_requirements = flag.get('requirements') or []
-            plotless_flag_data = next((x for x in plotless_data if x['id'] == flag_id), None)
-            if plotless_flag_data is not None and len(plotless_flag_data['requirements']) > 0:
-                flag_requirements = ['OR',
-                                     ['AND', ['skip_plot'] + plotless_flag_data['requirements']] + flag_requirements]
+            # plotless_flag_data = next((x for x in plotless_data if x['id'] == flag_id), None)
+            # if plotless_flag_data is not None and len(plotless_flag_data['requirements']) > 0:
+            #     flag_requirements = ['OR',
+            #                          ['AND', ['skip_plot'] + plotless_flag_data['requirements']] + flag_requirements]
             lua_str += build_flag_helper(format_code(flag_id), region_name, flag_requirements)
     for k, _ in open_rules.items():
         lua_str += build_slot_data_func(k)
@@ -651,20 +651,20 @@ def build_mon_helper(code, item_type='toggle'):
 def gen_regions_table():
     with open('data/world.json', mode='r') as f:
         world_data = json.load(f)
-    with open('data/plotless.json', mode='r') as f:
-        plotless_data = json.load(f)
-    for data in plotless_data:
-        loc_type = data['type']
-        if loc_type != 'connection':
-            continue
-        region_name = data['region']
-        con_name = data['connection']
-        region_data = next((v for v in world_data if v['region'] == region_name), None)
-        con_data = next((v for v in region_data['connections'] if v['region'] == con_name), None)
-        if len(data['requirements']) > 0:
-            con_data['requirements'] = ['OR', ['AND', ['skip_plot'] + data['requirements']] + con_data['requirements']]
-        else:
-            con_data['requirements'] = ['OR', ['skip_plot'] + con_data['requirements']]
+    # with open('data/plotless.json', mode='r') as f:
+    #     plotless_data = json.load(f)
+    # for data in plotless_data:
+    #     loc_type = data['type']
+    #     if loc_type != 'connection':
+    #         continue
+    #     region_name = data['region']
+    #     con_name = data['connection']
+    #     region_data = next((v for v in world_data if v['region'] == region_name), None)
+    #     con_data = next((v for v in region_data['connections'] if v['region'] == con_name), None)
+    #     if len(data['requirements']) > 0:
+    #         con_data['requirements'] = ['OR', ['AND', ['skip_plot'] + data['requirements']] + con_data['requirements']]
+    #     else:
+    #         con_data['requirements'] = ['OR', ['skip_plot'] + con_data['requirements']]
     lua_str = 'REGIONS = {\n'
     for i, region in enumerate(world_data):
         lua_str += f'{TAB}["{region["region"]}"] = {{\n'

@@ -446,5 +446,19 @@
     "img": "images/items/abilities/locked.png",
     "base_item": "charging_mount",
     "initial_active_state": true
+  },
+  {
+    "name": "Ghost Form",
+    "type": "toggle",
+    "codes": "ghost_form",
+    "img": "images/items/abilities/ghost_form.png"
+  },
+  {
+    "name": "Ghost Form (Locked)",
+    "type": "toggle_badged",
+    "codes": "ghost_form_locked",
+    "img": "images/items/abilities/locked.png",
+    "base_item": "ghost_form",
+    "initial_active_state": true
   }
 ]

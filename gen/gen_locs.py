@@ -1319,7 +1319,7 @@ def get_visibility_rules(loc_name, check_type_name):
     if loc_name in postgame_locations:
         visibility_rules = combine_access(visibility_rules, [['$is_not_goal|0']], "AND")
     if loc_name in keeper_master_locations:
-        visibility_rules = combine_access(visibility_rules, [['$is_not_goal|0'], ['$is_not_goal|1']], "AND")
+        visibility_rules = combine_access(visibility_rules, [['$is_not_goal|0', '$is_not_goal|1']], "AND")
     if loc_name in velvet_melody_locations:
         visibility_rules = combine_access(visibility_rules, [['$is_not_goal|3']], "AND")
     if loc_name in ["Blue Cave - Underworld Entrance 1", "Blue Cave - Underworld Entrance 2"]:
@@ -1351,13 +1351,22 @@ def get_visibility_rules(loc_name, check_type_name):
 
 # ToDo: this function could use some cleanup
 def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, data, location_id, ids_for_sections,
-               postgame_data, count=1, clear_as_group=False, **kwargs):
+               count=1, clear_as_group=False, **kwargs):
     unopened_img = None
     opened_img = None
     if check_type_name == "Rank":
         unopened_img = 'images/items/rank/champion_defeated.png'
         opened_img = 'images/items/rank/champion_defeated_grey.png'
     loc_name = resolve_loc_name(check_type_name, region, data, kwargs)
+    if loc_name in loc_by_name:
+        i = 2
+        loc_name_new = f'{loc_name} {i}'
+        while loc_name_new in loc_by_name:
+            i += 1
+            loc_name_new = f'{loc_name} {i}'
+        print(f"! duplicate loc name {loc_name}, renaming to {loc_name_new} !")
+        loc_name = loc_name_new
+        
     # print('create_loc', region, loc_name, location_id)
     map_locs = None
     map_locs_mappings = None
@@ -1461,17 +1470,17 @@ def find_loc_with_same_map_loc(locs: list[PopTrackerLocation], map_locs: list[Po
     return None
 
 
-def get_chest_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, postgame_data):
-    loc, location_id = create_loc(locs, region, 'Chest', data, location_id, ids_for_sections, postgame_data)
+def get_chest_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections):
+    loc, location_id = create_loc(locs, region, 'Chest', data, location_id, ids_for_sections)
     return loc, location_id
 
 
-def get_gift_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, postgame_data):
-    loc, location_id = create_loc(locs, region, 'Gift', data, location_id, ids_for_sections, postgame_data)
+def get_gift_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections):
+    loc, location_id = create_loc(locs, region, 'Gift', data, location_id, ids_for_sections)
     return loc, location_id
 
 
-def get_eggsanity_item(items: list[PopTrackerItem], region: str, data, location_id, ids_for_sections, postgame_data):
+def get_eggsanity_item(items: list[PopTrackerItem], region: str, data, location_id, ids_for_sections):
     code = f"eggsanity_{data['id']}"
     img = f"images/items/monsters/{data['id']}.png"
     # name = loc_names[code]
@@ -1486,27 +1495,25 @@ def get_eggsanity_item(items: list[PopTrackerItem], region: str, data, location_
     return item, location_id
 
 
-def get_army_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, postgame_data):
+def get_army_loc(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections):
     reward_index = 0
     for _ in data.get("items"):
         reward_index += 1
-    loc, location_id = create_loc(locs, region, 'Army', data, location_id, ids_for_sections, postgame_data,
-                                  count=reward_index)
+    loc, location_id = create_loc(locs, region, 'Army', data, location_id, ids_for_sections, count=reward_index)
     return loc, location_id
 
 
-def get_encounter_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, postgame_data):
-    loc, location_id = create_loc(locs, region, 'Encounter', data, location_id, ids_for_sections, postgame_data,
-                                  count=3, clear_as_group=True)
+def get_encounter_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections):
+    loc, location_id = create_loc(locs, region, 'Encounter', data, location_id, ids_for_sections, count=3, clear_as_group=True)
     return loc, location_id
 
 
-def get_champ_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, postgame_data):
-    loc, location_id = create_loc(locs, region, 'Rank', data, location_id, ids_for_sections, postgame_data)
+def get_champ_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections):
+    loc, location_id = create_loc(locs, region, 'Rank', data, location_id, ids_for_sections)
     return loc, location_id
 
 
-def get_shop_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections, postgame_data):
+def get_shop_locs(locs: list[PopTrackerLocation], region: str, data, location_id, ids_for_sections):
     shop_name = data["name"]
     inventory = data["inventory"]
     # ToDo: group by requirements?
@@ -1514,13 +1521,12 @@ def get_shop_locs(locs: list[PopTrackerLocation], region: str, data, location_id
         # Hack because we store comments as strings
         if isinstance(item, str):
             continue
-        loc, location_id = create_loc(locs, region, 'Shop', item, location_id, ids_for_sections, postgame_data,
-                                      shop_name=shop_name)
+        loc, location_id = create_loc(locs, region, 'Shop', item, location_id, ids_for_sections, shop_name=shop_name)
     return loc, location_id
 
 
-def get_flag_loc(locs: list[PopTrackerLocation], region: str, data, postgame_data):
-    loc, _ = create_loc(locs, region, 'Flag', data, None, None, postgame_data)
+def get_flag_loc(locs: list[PopTrackerLocation], region: str, data):
+    loc, _ = create_loc(locs, region, 'Flag', data, None, None)
     return loc, None
 
 
@@ -1557,8 +1563,6 @@ def gen_locations():
     setup_loc_names()
     fix_mapping_table()
     
-    with open('data/postgame.json', mode='r') as f:
-        postgame_data = json.load(f)
     with open('data/world.json', mode='r') as f:
         json_data = json.load(f)
     locs: list[PopTrackerLocation] = []
@@ -1581,29 +1585,26 @@ def gen_locations():
             # Hack because we store comments as strings
             if isinstance(chest_data, str):
                 continue
-            location, location_id = get_chest_loc(locs, region_name, chest_data, location_id, ids_for_sections, postgame_data)            
+            location, location_id = get_chest_loc(locs, region_name, chest_data, location_id, ids_for_sections)            
 
         for gift_data in current_region_data.get("gifts") or []:
             # Hack because we store comments as strings
             if isinstance(gift_data, str):
                 continue
-            location, location_id = get_gift_loc(locs, region_name, gift_data, location_id, ids_for_sections,
-                                                 postgame_data)
+            location, location_id = get_gift_loc(locs, region_name, gift_data, location_id, ids_for_sections)
 
         for eggsanity_data in current_region_data.get("eggsanity") or []:
             # Hack because we store comments as strings
             if isinstance(eggsanity_data, str):
                 continue
-            item, location_id = get_eggsanity_item(items, region_name, eggsanity_data, location_id, ids_for_sections,
-                                                   postgame_data)
+            item, location_id = get_eggsanity_item(items, region_name, eggsanity_data, location_id, ids_for_sections)
             # location_id += 1
 
         for army_data in current_region_data.get("army") or []:
             # Hack because we store comments as strings
             if isinstance(army_data, str):
                 continue
-            location, location_id = get_army_loc(locs, region_name, army_data, location_id, ids_for_sections,
-                                                 postgame_data)
+            location, location_id = get_army_loc(locs, region_name, army_data, location_id, ids_for_sections)
 
         for encounter_data in current_region_data.get("encounters") or []:
             # Hack because we store comments as strings
@@ -1615,21 +1616,19 @@ def gen_locations():
             # Hack because we store comments as strings
             if isinstance(champion_data, str):
                 continue
-            location, location_id = get_champ_locs(locs, region_name, champion_data, location_id, ids_for_sections,
-                                                   postgame_data)
+            location, location_id = get_champ_locs(locs, region_name, champion_data, location_id, ids_for_sections)
 
         for flag_data in current_region_data.get("flags") or []:
             # Hack because we store comments as strings
             if isinstance(flag_data, str):
                 continue
-            location, _ = get_flag_loc(locs, region_name, flag_data, postgame_data)
+            location, _ = get_flag_loc(locs, region_name, flag_data)
 
         for shop_data in current_region_data.get("shops") or []:
             # Hack because we store comments as strings
             if isinstance(shop_data, str):
                 continue
-            location, location_id = get_shop_locs(locs, region_name, shop_data, location_id, ids_for_sections,
-                                                  postgame_data)
+            location, location_id = get_shop_locs(locs, region_name, shop_data, location_id, ids_for_sections)
 
         # locs.append(region)
     # Fix sections sorting

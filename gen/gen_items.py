@@ -37,7 +37,8 @@ abilities_compact = [
     'Basic Mount',
     'Sonar Mount',
     'Tar Mount',
-    'Charging Mount'
+    'Charging Mount',
+    'Ghost Form'
 ]
 
 # ToDo
@@ -52,7 +53,7 @@ ability_mapping = {
     'Fiery Shots': ['Fire Orbs', 'Fiery Shots'],
     'Flying': ['Flying'],
     'Freeze': ['Ice Orbs'],
-    # 'Ghost Form': [],
+    'Ghost Form': [],
     'Grapple': ['Grapple'],
     'Heavy Punch': ['Breakable Walls'],
     'Ignite': ['Impassible Vines', 'Torches', 'Fire Orbs'],
@@ -163,12 +164,8 @@ def gen_items():
         img = f'images/items/monsters/{main_code}.png'
         item = PopTrackerToggleItem(name, img=img, codes=', '.join(codes))
         items.append(item)
-        datastorage_monster_mapping[name] = (codes, item.type)
-        monster_ability_item_data[main_code] = {
-            'SpeciesItem': format_code(monster_data.get("SpeciesItem", "")),
-            'AbilityItem': format_code(monster_data.get("AbilityItem", "")),
-            'TypeItem': format_code(monster_data.get("TypeItem", "")),
-        }
+        datastorage_monster_mapping[name] = (codes, item.type)        
+        monster_ability_item_data[main_code] = { k: format_code(v) for k,v in monster_data.get("AbilityLockItems", {}).items() }
     export_items(items, out_path=f'../items/monsters.json')
     print(f'Exported monsters items!')
     items = []
@@ -211,9 +208,64 @@ def gen_items():
     # export_datastorage_item_mappings(datastorage_ability_mapping | datastorage_monster_mapping)
     export_datastorage_item_mappings(datastorage_monster_mapping)
     print(f'Exported datastorage mappings!')
-    # export_monster_ability_item_data(monster_ability_item_data)
-    # print(f'Exported monster ability item data!')
+    export_monster_ability_item_data(monster_ability_item_data)
+    print(f'Exported monster ability item data!')
+    monster_ability_prog_data = {}
+    with open('data/progressive_explore_ability_unlocks.json', mode='r') as f:
+        json_data = json.load(f)
+    for prog_data in json_data:
+        code = format_code(prog_data["ability"])
+        prog_entry = prog_data.get("progression", None)
+        combo_entry = prog_data.get("combo", None)
+        current_data = {}
+        if prog_entry:
+            current_data["Progressive"] = {
+                "Code": format_code(prog_entry["name"] ),
+                "Amount": prog_entry["quantity"]
+            }
+        else:
+            print(f'!!! NO Prog Entry for Ability {code} !!!')
+        if combo_entry:
+            current_data["Combo"] = [
+                {
+                    "Code": format_code(v["name"] ),
+                    "Amount": v["quantity"]
+                } for v in combo_entry
+            ]
+        else:
+            print(f'!!! NO Prog Entry for Ability {code} !!!')
+        monster_ability_prog_data[code] = current_data
+    export_monster_ability_prog_data(monster_ability_prog_data)
+    print(f'Exported monster ability prog data!')
 
+
+def export_monster_ability_prog_data(monster_ability_prog_data):
+    lines = ['MONSTER_ABILITY_PROG_DATA = {']
+    for i, (k, v) in enumerate(monster_ability_prog_data.items()):
+        line = f'{TAB}["{k}"] = {{ '
+        lines.append(line)
+        prog_entry = v.get('Progressive', None)
+        if prog_entry:
+            line = f'{TAB*2}Progressive = {{ Code = \"{prog_entry["Code"]}\", Amount = {prog_entry["Amount"]} }},'
+            lines.append(line)
+        combo_entry = v.get('Combo', None)
+        if combo_entry:
+            line = f'{TAB*2}Combo = {{'
+            lines.append(line)
+            for j, v2 in enumerate(combo_entry):
+                line = f'{TAB*3}{{ Code = \"{v2["Code"]}\", Amount = {v2["Amount"]} }}'
+                if j != len(combo_entry) - 1:
+                    line += ','                
+                lines.append(line)
+            lines.append(f'{TAB*2}}}')
+        line = f'{TAB}}}'
+        if i != len(monster_ability_prog_data) - 1:
+            line += ','
+        lines.append(line)
+    lines.append('}')
+
+    with open('../scripts/logic/monster_ability_prog_data.lua', mode='w') as f:
+        f.write('\n'.join(lines))
 def export_monster_ability_item_data(monster_ability_item_data):
     lines = ['MONSTER_ABILITY_ITEM_DATA = {']
     for i, (k, v) in enumerate(monster_ability_item_data.items()):

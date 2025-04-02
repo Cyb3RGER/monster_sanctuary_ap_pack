@@ -54,11 +54,8 @@ REGIONS = {
         ["MountainPath_East1"] = function()
             return
             _OR({
-                skip_plot(),
-                _OR({
-                    keeper_rank_1(),
-                    skip_plot()
-                })
+                keeper_rank_1(),
+                skip_plot()
             })
         end,
         ["BlueCave_NorthFork_Upper"] = function()
@@ -397,15 +394,9 @@ REGIONS = {
             return
             _OR({
                 skip_plot(),
-                _OR({
-                    skip_plot(),
-                    _OR({
-                        skip_plot(),
-                        _AND({
-                            keeper_rank_2(),
-                            blue_caves_story_complete()
-                        })
-                    })
+                _AND({
+                    keeper_rank_2(),
+                    blue_caves_story_complete()
                 })
             })
         end
@@ -430,11 +421,8 @@ REGIONS = {
         ["KeeperStronghold_DuelCircle"] = function()
             return
             _OR({
-                skip_plot(),
-                _OR({
-                    keeper_rank_2(),
-                    skip_plot()
-                })
+                keeper_rank_2(),
+                skip_plot()
             })
         end,
         ["KeeperStronghold_EndOfTime"] = function()
@@ -750,20 +738,14 @@ REGIONS = {
         ["Underworld_Entrance"] = function()
             return
             _OR({
+                open_underworld_entrances(),
                 _AND({
-                    skip_plot(),
-                    all_sanctuary_tokens()
-                }),
-                _OR({
-                    open_underworld_entrances(),
-                    _AND({
-                        all_sanctuary_tokens(),
-                        _OR({
-                            skip_plot(),
-                            _AND({
-                                ostanes(),
-                                stronghold_dungeon_library_access()
-                            })
+                    all_sanctuary_tokens(),
+                    _OR({
+                        skip_plot(),
+                        _AND({
+                            ostanes(),
+                            stronghold_dungeon_library_access()
                         })
                     })
                 })
@@ -3109,10 +3091,7 @@ REGIONS = {
             return
             _OR({
                 skip_plot(),
-                _OR({
-                    skip_plot(),
-                    goblin_king_defeated()
-                })
+                goblin_king_defeated()
             })
         end
     },
@@ -3435,10 +3414,7 @@ REGIONS = {
             return
             _OR({
                 skip_plot(),
-                _OR({
-                    skip_plot(),
-                    horizon_beach_rescue_leonard()
-                })
+                horizon_beach_rescue_leonard()
             })
         end
     },

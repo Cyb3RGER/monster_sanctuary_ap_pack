@@ -1346,6 +1346,7 @@ def get_visibility_rules(loc_name, check_type_name):
         visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|3']], "AND")
     if loc_name in ['Key of Power - Defeat X Champions']:
         visibility_rules = combine_access(visibility_rules, [['$not_check_option|key_of_power_champion_unlock|0']], "AND")
+    #ToDo: implement check restrictions
     return visibility_rules if visibility_rules != [[]] else None
 
 

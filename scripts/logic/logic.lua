@@ -11,6 +11,11 @@ double_jump = double_jump_boots
 post_game = mad_lord_defeated
 third_bex_encounter = third_beach_bex
 
+--visibility helpers
+function not_hide_filler()
+    return has('opt_hide_filler_off')
+end
+
 --slot_data
 function shifting_avialable()
     if SLOT_DATA == nil then

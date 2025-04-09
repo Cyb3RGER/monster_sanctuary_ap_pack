@@ -33,6 +33,7 @@ Tracker:AddItems("items/explore_ability.json")
 Tracker:AddItems("items/eggsanity.json")
 Tracker:AddItems("items/rank.json")
 Tracker:AddItems("items/other.json")
+Tracker:AddItems("items/settings.json")
 
 
 if not IS_ITEMS_ONLY then
@@ -51,6 +52,7 @@ Tracker:AddLayouts("layouts/generated/eggsanity.json")
 Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
+Tracker:AddLayouts("layouts/settings.json")
 
 -- AutoTracking for Poptracker
 if PopVersion and PopVersion >= "0.18.0" then

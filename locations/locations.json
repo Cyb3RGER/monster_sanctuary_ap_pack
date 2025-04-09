@@ -1384,6 +1384,14 @@
             "$has_access_to|KeeperStronghold_EndOfTime",
             "$keeper_rank_5"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|spectral_familiar_egg_placement|2"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       },
       {
@@ -1394,6 +1402,14 @@
           [
             "$has_access_to|KeeperStronghold_EndOfTime",
             "$keeper_rank_5"
+          ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|spectral_familiar_egg_placement|2"
+          ],
+          [
+            "$not_hide_filler"
           ]
         ]
       },
@@ -1406,6 +1422,14 @@
             "$has_access_to|KeeperStronghold_EndOfTime",
             "$keeper_rank_5"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|spectral_familiar_egg_placement|2"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       },
       {
@@ -1416,6 +1440,14 @@
           [
             "$has_access_to|KeeperStronghold_EndOfTime",
             "$keeper_rank_5"
+          ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|spectral_familiar_egg_placement|2"
+          ],
+          [
+            "$not_hide_filler"
           ]
         ]
       }
@@ -4578,6 +4610,14 @@
             "$has_access_to|SnowyPeaks_Cryomancer",
             "$dodo"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|cryomancer_check_restrictions|2"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       },
       {
@@ -4588,6 +4628,14 @@
           [
             "$has_access_to|SnowyPeaks_Cryomancer",
             "$dodo"
+          ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|cryomancer_check_restrictions|2"
+          ],
+          [
+            "$not_hide_filler"
           ]
         ]
       },
@@ -4604,7 +4652,12 @@
         ],
         "visibility_rules": [
           [
-            "$not_check_option|monster_shift_rule|0"
+            "$not_check_option|monster_shift_rule|0",
+            "$not_check_option|cryomancer_check_restrictions|2"
+          ],
+          [
+            "$not_check_option|monster_shift_rule|0",
+            "$not_hide_filler"
           ]
         ]
       },
@@ -4621,7 +4674,12 @@
         ],
         "visibility_rules": [
           [
-            "$not_check_option|monster_shift_rule|0"
+            "$not_check_option|monster_shift_rule|0",
+            "$not_check_option|cryomancer_check_restrictions|2"
+          ],
+          [
+            "$not_check_option|monster_shift_rule|0",
+            "$not_hide_filler"
           ]
         ]
       }
@@ -6455,6 +6513,14 @@
           [
             "$has_access_to|SunPalace_North2"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|koi_egg_placement|2"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       },
       {
@@ -8035,6 +8101,14 @@
         "$memorial_ring"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|old_man_check_restrictions|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -8771,6 +8845,14 @@
         "$all_rare_seashells"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|fisherman_check_restrictions|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -9280,6 +9362,14 @@
         "$summon_big_rock"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "sections": [
       {
         "name": "",
@@ -9636,6 +9726,14 @@
       [
         "$has_access_to|MagmaChamber_North8_East",
         "$third_bex_encounter"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|skorch_egg_placement|2"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -10459,6 +10557,14 @@
         "$has_access_to|MagmaChamber_South9_Shortcut"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "sections": [
       {
         "name": "",
@@ -10909,6 +11015,14 @@
         "$lofty_mount"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -10948,6 +11062,14 @@
         "$lofty_mount"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -10974,6 +11096,14 @@
       [
         "$has_access_to|Underworld_East4",
         "$heavy_blocks"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11020,6 +11150,14 @@
         "$summon_big_rock"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -11046,6 +11184,14 @@
       [
         "$has_access_to|Underworld_EastCatacomb3",
         "$underworld_east_catacomb_pillar_control"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11075,6 +11221,14 @@
         "$has_access_to|Underworld_EastCatacomb4"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -11102,6 +11256,14 @@
         "$has_access_to|Underworld_EastCatacomb4"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "sections": [
       {
         "name": "",
@@ -11116,6 +11278,14 @@
       [
         "$has_access_to|Underworld_EastCatacomb5",
         "$underworld_east_catacomb_pillar_control"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11145,6 +11315,14 @@
         "$has_access_to|Underworld_EastCatacomb6_East"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -11170,6 +11348,14 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_EastCatacomb6_West"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11199,6 +11385,14 @@
         "$has_access_to|Underworld_EastCatacomb6_West"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "sections": [
       {
         "name": "",
@@ -11214,6 +11408,14 @@
         "$has_access_to|Underworld_EastCatacomb8"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "sections": [
       {
         "name": "",
@@ -11227,6 +11429,14 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_EastCatacomb8"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "sections": [
@@ -11272,6 +11482,14 @@
             "$summon_big_rock",
             "$dual_mobility"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_underworld|1"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       },
       {
@@ -11294,6 +11512,14 @@
             "$summon_big_rock",
             "$dual_mobility"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_underworld|1"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       }
     ]
@@ -11306,6 +11532,14 @@
         "$double_jump",
         "$grapple",
         "$heavy_blocks"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11337,6 +11571,14 @@
         "$grapple"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -11362,6 +11604,14 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_Center1"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11406,6 +11656,14 @@
         "$lofty_mount"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -11432,6 +11690,14 @@
       [
         "$has_access_to|Underworld_Center3",
         "$breakable_walls"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11477,6 +11743,14 @@
           [
             "$has_access_to|Underworld_CenterHidden"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_underworld|1"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       },
       {
@@ -11487,6 +11761,14 @@
           [
             "$has_access_to|Underworld_CenterHidden"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_underworld|1"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       }
     ]
@@ -11496,6 +11778,14 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_WestCatacomb1"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11525,6 +11815,14 @@
         "$has_access_to|Underworld_WestCatacomb3"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -11552,6 +11850,14 @@
         "$has_access_to|Underworld_WestCatacomb4_West"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "sections": [
       {
         "name": "",
@@ -11566,6 +11872,14 @@
       [
         "$has_access_to|Underworld_WestCatacomb4_Lower",
         "$underworld_west_catacomb_4_access"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11593,6 +11907,14 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_WestCatacomb4_Lower"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11631,6 +11953,14 @@
         "$distant_ledges"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "sections": [
       {
         "name": "",
@@ -11644,6 +11974,14 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_WestCatacomb4_Upper"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "sections": [
@@ -11666,6 +12004,14 @@
         "$underworld_west_catacomb_7_shortcut"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "sections": [
       {
         "name": "",
@@ -11681,6 +12027,14 @@
         "$has_access_to|Underworld_WestCatacomb7"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "sections": [
       {
         "name": "",
@@ -11694,6 +12048,14 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_WestCatacomb7_Shortcut"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11723,6 +12085,14 @@
         "$has_access_to|Underworld_WestCatacomb9_ExteriorWest"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -11750,6 +12120,14 @@
         "$has_access_to|Underworld_WestCatacomb9_ExteriorWest"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "sections": [
       {
         "name": "",
@@ -11763,6 +12141,14 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_WestCatacomb9_ExteriorEast"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11790,6 +12176,14 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_WestCatacomb9_Roof"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11837,6 +12231,14 @@
           [
             "$has_access_to|Underworld_WestCatacomb9_Interior"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_underworld|1"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       },
       {
@@ -11846,6 +12248,14 @@
         "access_rules": [
           [
             "$has_access_to|Underworld_WestCatacomb9_Interior"
+          ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_underworld|1"
+          ],
+          [
+            "$not_hide_filler"
           ]
         ]
       }
@@ -11874,6 +12284,14 @@
           [
             "$has_access_to|Underworld_WestCatacomb10"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_underworld|1"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       },
       {
@@ -11883,6 +12301,14 @@
         "access_rules": [
           [
             "$has_access_to|Underworld_WestCatacomb10"
+          ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_underworld|1"
+          ],
+          [
+            "$not_hide_filler"
           ]
         ]
       }
@@ -11898,6 +12324,14 @@
       [
         "$has_access_to|Underworld_West1",
         "$distant_ledges"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11927,6 +12361,14 @@
         "$has_access_to|Underworld_West1"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "sections": [
       {
         "name": "",
@@ -11940,6 +12382,14 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_West4"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -11970,6 +12420,14 @@
       [
         "$has_access_to|Underworld_West6",
         "$breakable_walls"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_underworld|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -13761,6 +14219,14 @@
           [
             "$has_access_to|ForgottenWorld_FallHidden"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_forgotten_world|1"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       },
       {
@@ -13771,6 +14237,14 @@
           [
             "$has_access_to|ForgottenWorld_FallHidden"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_forgotten_world|1"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       },
       {
@@ -13780,6 +14254,14 @@
         "access_rules": [
           [
             "$has_access_to|ForgottenWorld_FallHidden"
+          ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_forgotten_world|1"
+          ],
+          [
+            "$not_hide_filler"
           ]
         ]
       }
@@ -13795,6 +14277,14 @@
       [
         "$has_access_to|ForgottenWorld_Jungle1",
         "$distant_ledges"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -13834,6 +14324,14 @@
         "$has_access_to|ForgottenWorld_Jungle1",
         "$double_jump",
         "$lofty_mount"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -13880,6 +14378,14 @@
         "$summon_big_rock"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -13910,6 +14416,14 @@
       [
         "$has_access_to|ForgottenWorld_Jungle5_Hidden",
         "$magic_walls"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -13968,6 +14482,14 @@
             "$has_access_to|ForgottenWorld_Jungle6",
             "$lofty_mount"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_forgotten_world|1"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       },
       {
@@ -13981,6 +14503,14 @@
             "$double_jump",
             "$breakable_walls"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_forgotten_world|1"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       }
     ]
@@ -13993,6 +14523,14 @@
         "$secret_vision",
         "$double_jump",
         "$magic_vines"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14023,6 +14561,14 @@
         "$charging_mount"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14051,6 +14597,14 @@
         "$diamond_blocks"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "sections": [
       {
         "name": "",
@@ -14066,6 +14620,14 @@
         "$has_access_to|ForgottenWorld_TarPits1",
         "$double_jump",
         "$tar"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14100,6 +14662,14 @@
         "$double_jump"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14132,6 +14702,14 @@
         "$double_jump"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14158,6 +14736,14 @@
       [
         "$has_access_to|ForgottenWorld_TarPits4",
         "$breakable_walls"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14187,6 +14773,14 @@
         "$has_access_to|ForgottenWorld_TarPits4"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14212,6 +14806,14 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_TarPits5_Lower"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14241,6 +14843,14 @@
         "$has_access_to|ForgottenWorld_TarPits8",
         "$double_jump",
         "$tar"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14282,6 +14892,14 @@
         "$dual_mobility"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14308,6 +14926,14 @@
       [
         "$has_access_to|ForgottenWorld_Waters1_Upper",
         "$charging_mount"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14338,6 +14964,14 @@
         "$swimming"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14366,6 +15000,14 @@
         "$improved_swimming"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14391,6 +15033,14 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_Waters2"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14442,6 +15092,14 @@
         "$lofty_mount"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14468,7 +15126,16 @@
       [
         "$has_access_to|ForgottenWorld_Waters5",
         "$magic_walls",
-        "$dual_mobility"
+        "$dual_mobility",
+        "$double_jump"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14496,6 +15163,14 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_WatersHidden"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14526,6 +15201,14 @@
         "$swimming"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14552,6 +15235,14 @@
       [
         "$has_access_to|ForgottenWorld_DracomerLair",
         "$swimming"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14585,6 +15276,14 @@
         "$swimming"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "sections": [
       {
         "name": "",
@@ -14599,6 +15298,14 @@
       [
         "$has_access_to|ForgottenWorld_DracomerLair",
         "$swimming"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "sections": [
@@ -14623,6 +15330,14 @@
       [
         "$has_access_to|ForgottenWorld_Caves1",
         "$ground_switches"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14653,6 +15368,14 @@
         "$magic_walls"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14680,6 +15403,14 @@
         "$has_access_to|ForgottenWorld_Caves4",
         "$double_jump",
         "$grapple"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14730,6 +15461,14 @@
         "$lofty_mount"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14758,6 +15497,14 @@
         "$magic_vines"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14784,6 +15531,14 @@
       [
         "$has_access_to|ForgottenWorld_Caves5_Upper",
         "$magic_vines"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14820,6 +15575,14 @@
         "$distant_ledges"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14846,6 +15609,14 @@
       [
         "$has_access_to|ForgottenWorld_Caves6",
         "$magic_vines"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14876,6 +15647,14 @@
         "$magic_vines"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14903,6 +15682,14 @@
         "$has_access_to|ForgottenWorld_Caves11_Lower"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "sections": [
       {
         "name": "",
@@ -14918,6 +15705,14 @@
         "$has_access_to|ForgottenWorld_Caves12",
         "$dual_mobility",
         "$double_jump"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -14948,6 +15743,14 @@
         "$sonar_mount"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -14973,6 +15776,14 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_CavesStudy"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -15003,6 +15814,24 @@
         "$forgotten_world_wanderer_freed"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|bard_egg_placement|2",
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_check_option|bard_egg_placement|2",
+        "$not_hide_filler"
+      ],
+      [
+        "$not_hide_filler",
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler",
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -15029,6 +15858,14 @@
       [
         "$has_access_to|ForgottenWorld_WandererRoom",
         "$all_celestial_feathers"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "sections": [
@@ -15062,6 +15899,14 @@
           [
             "$has_access_to|ForgottenWorld_WorldTree"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_forgotten_world|1"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       },
       {
@@ -15074,6 +15919,24 @@
             "$forgotten_world_wanderer_freed",
             "$forgotten_world_dracomer_defeated"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|wanderers_gift_check_restrictions|1",
+            "$not_check_option|no_progression_in_forgotten_world|1"
+          ],
+          [
+            "$not_check_option|wanderers_gift_check_restrictions|1",
+            "$not_hide_filler"
+          ],
+          [
+            "$not_hide_filler",
+            "$not_check_option|no_progression_in_forgotten_world|1"
+          ],
+          [
+            "$not_hide_filler",
+            "$not_hide_filler"
+          ]
         ]
       }
     ]
@@ -15084,6 +15947,14 @@
       [
         "$has_access_to|ForgottenWorld_TerradrileLair1",
         "$breakable_walls"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -15114,6 +15985,14 @@
         "$charging_mount"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -15142,6 +16021,14 @@
         "$breakable_walls"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -15167,6 +16054,14 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_TerradrileLair2"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -15213,6 +16108,14 @@
         "$lofty_mount"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -15239,6 +16142,14 @@
       [
         "$has_access_to|ForgottenWorld_MCPath2",
         "$diamond_blocks"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -15275,6 +16186,14 @@
         "$distant_ledges"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -15300,6 +16219,14 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_Climb1"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -15331,6 +16258,14 @@
         "$distant_ledges"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -15358,6 +16293,14 @@
         "$has_access_to|ForgottenWorld_ClimbPuzzle",
         "$fiery_shots",
         "$heavy_blocks"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -15398,6 +16341,14 @@
       [
         "$has_access_to|ForgottenWorld_Climb2",
         "$lofty_mount"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -15444,6 +16395,14 @@
         "$summon_big_rock"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -15484,6 +16443,14 @@
         "$lofty_mount"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -15510,6 +16477,14 @@
       [
         "$has_access_to|ForgottenWorld_Climb3",
         "$magic_walls"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -15567,6 +16542,14 @@
             "$charging_mount",
             "$dual_mobility"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_forgotten_world|1"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       },
       {
@@ -15588,6 +16571,14 @@
             "$has_access_to|ForgottenWorld_Climb4",
             "$charging_mount",
             "$dual_mobility"
+          ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_forgotten_world|1"
+          ],
+          [
+            "$not_hide_filler"
           ]
         ]
       }
@@ -15625,6 +16616,14 @@
             "$has_access_to|ForgottenWorld_Climb4",
             "$dual_mobility"
           ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_forgotten_world|1"
+          ],
+          [
+            "$not_hide_filler"
+          ]
         ]
       },
       {
@@ -15635,6 +16634,14 @@
           [
             "$has_access_to|ForgottenWorld_Climb4",
             "$double_jump"
+          ]
+        ],
+        "visibility_rules": [
+          [
+            "$not_check_option|no_progression_in_forgotten_world|1"
+          ],
+          [
+            "$not_hide_filler"
           ]
         ]
       }
@@ -15654,6 +16661,14 @@
       [
         "$has_access_to|ForgottenWorld_Climb4",
         "$dual_mobility"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -15692,6 +16707,14 @@
         "$ground_switches"
       ]
     ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
+      ]
+    ],
     "map_locations": [
       {
         "map": "overview",
@@ -15717,6 +16740,14 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_Climb5"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -15746,6 +16777,14 @@
         "$has_access_to|ForgottenWorld_ClimbSide",
         "$double_jump",
         "$lofty_mount"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [
@@ -15782,6 +16821,14 @@
       [
         "$has_access_to|ForgottenWorld_ClimbSide",
         "$dual_mobility"
+      ]
+    ],
+    "visibility_rules": [
+      [
+        "$not_check_option|no_progression_in_forgotten_world|1"
+      ],
+      [
+        "$not_hide_filler"
       ]
     ],
     "map_locations": [

@@ -1,0 +1,24 @@
+{
+  "settings_popup": {
+    "type": "array",
+    "orientation": "horizontal",
+    "content": [
+      {
+        "type": "array",
+        "content": [
+          {
+            "type": "group",
+            "header": "Hide known Filler",
+            "header_background": "#3e4b57",
+            "content": [
+              {
+                "type": "item",
+                "item": "opt_hide_filler"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

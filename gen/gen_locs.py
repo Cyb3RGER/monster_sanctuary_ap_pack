@@ -1335,18 +1335,40 @@ def get_visibility_rules(loc_name, check_type_name):
             ['$is_shopsanity', '$is_not_goal|1'],
         ], "AND")
     if loc_name in ["Snowy Peaks - Cryomancer - Light Egg Reward", "Snowy Peaks - Cryomancer - Dark Egg Reward"]:
-        visibility_rules = combine_access(visibility_rules, [['$not_check_option|monster_shift_rule|0']], "AND")
-    if loc_name in eternitys_end_locations['wolf']:
-        visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|0']], "AND")
-    if loc_name in eternitys_end_locations['eagle']:
-        visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|1']], "AND")
-    if loc_name in eternitys_end_locations['toad']:
-        visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|2']], "AND")
-    if loc_name in eternitys_end_locations['lion']:
-        visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|3']], "AND")
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|monster_shift_rule|0', '$not_check_option|cryomancer_check_restrictions|2'],['$not_check_option|monster_shift_rule|0', '$not_hide_filler']], "AND")
+    # if loc_name in eternitys_end_locations['wolf']:
+    #     visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|0']], "AND")
+    # if loc_name in eternitys_end_locations['eagle']:
+    #     visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|1']], "AND")
+    # if loc_name in eternitys_end_locations['toad']:
+    #     visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|2']], "AND")
+    # if loc_name in eternitys_end_locations['lion']:
+    #     visibility_rules = combine_access(visibility_rules, [['$not_check_option|starting_familiar|3']], "AND")
     if loc_name in ['Key of Power - Defeat X Champions']:
         visibility_rules = combine_access(visibility_rules, [['$not_check_option|key_of_power_champion_unlock|0']], "AND")
-    #ToDo: implement check restrictions
+    # egg placement restrictions    
+    if loc_name in ['Snowy Peaks - Cryomancer - Egg Reward 1', 'Snowy Peaks - Cryomancer - Egg Reward 2']:
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|cryomancer_check_restrictions|2'],['$not_hide_filler']], "AND")
+    if loc_name in ['Sun Palace - Caretaker 1']:
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|koi_egg_placement|2'],['$not_hide_filler']], "AND")
+    if loc_name in ['Magma Chamber - Bex']:
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|skorch_egg_placement|2'], ['$not_hide_filler']], "AND")
+    if loc_name in ['Forgotten World - Wanderer Room']:
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|bard_egg_placement|2'], ['$not_hide_filler']], "AND")
+    if loc_name in ['Eternity\'s End - Spectral Wolf', 'Eternity\'s End - Spectral Eagle', 'Eternity\'s End - Spectral Toad', 'Eternity\'s End - Spectral Lion']:
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|spectral_familiar_egg_placement|2'], ['$not_hide_filler']], "AND")
+    # check restrictions
+    if loc_name in ['Horizon Beach - Old Man by the Sea']:
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|old_man_check_restrictions|1'], ['$not_hide_filler']], "AND")
+    if loc_name in ['Horizon Beach - Fisherman']:
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|fisherman_check_restrictions|1'], ['$not_hide_filler']], "AND")
+    if loc_name in ['Forgotten World - Crystal Room - Defeat Dracomer Reward']:
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|wanderers_gift_check_restrictions|1'], ['$not_hide_filler']], "AND")    
+    # no progression in X
+    if loc_name.startswith('Underworld'):
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|no_progression_in_underworld|1'], ['$not_hide_filler']], "AND")
+    if loc_name.startswith('Forgotten World'):
+        visibility_rules = combine_access(visibility_rules, [['$not_check_option|no_progression_in_forgotten_world|1'], ['$not_hide_filler']], "AND")    
     return visibility_rules if visibility_rules != [[]] else None
 
 

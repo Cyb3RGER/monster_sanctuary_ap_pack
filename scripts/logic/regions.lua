@@ -590,7 +590,7 @@ REGIONS = {
             return
             _AND({
                 _OR({
-                    two_blue_cave_keys(),
+                    three_blue_cave_keys(),
                     minimal_locked_doors(),
                     no_locked_doors()
                 }),

@@ -175,22 +175,22 @@ def gen_items():
         codes = [main_code]
         # if main_code.startswith('basic_'):
         #     codes.append(main_code[6:])
-        if main_code in ["flying", "improved_flying", "dual_mobility", "lofty_mount"]:
-            codes.append("distant_ledges")
-        if main_code in ["basic_swimming", "improved_swimming", "dual_mobility"]:
-            codes.append("swimming")
-        if "summon" in main_code:
-            codes.append('ground_switches')
-        if "mount" in main_code:
-            codes.append("mount")
-        if main_code in ["tar_mount", "dual_mobility"]:
-            codes.append("tar")
-        if main_code in ["charging_mount"]:
-            codes.append("breakable_walls")
-        if main_code.startswith('distant_'):
-            codes.append(main_code[len('distant_'):])
-        if main_code == 'distant_fire_orbs':
-            codes.append('fiery_shots')
+        # if main_code in ["flying", "improved_flying", "dual_mobility", "lofty_mount"]:
+        #     codes.append("distant_ledges")
+        # if main_code in ["basic_swimming", "improved_swimming", "dual_mobility"]:
+        #     codes.append("swimming")
+        # if "summon" in main_code:
+        #     codes.append('ground_switches')
+        # if "mount" in main_code:
+        #     codes.append("mount")
+        # if main_code in ["tar_mount", "dual_mobility"]:
+        #     codes.append("tar")
+        # if main_code in ["charging_mount"]:
+        #     codes.append("breakable_walls")
+        # if main_code.startswith('distant_'):
+        #     codes.append(main_code[len('distant_'):])
+        # if main_code == 'distant_fire_orbs':
+        #     codes.append('fiery_shots')
 
         item = PopTrackerToggleItem(ability, img=img, codes=', '.join(codes))
         items.append(item)

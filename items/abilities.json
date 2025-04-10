@@ -114,13 +114,13 @@
   {
     "name": "Distant Ice Orbs",
     "type": "toggle",
-    "codes": "distant_ice_orbs, ice_orbs",
+    "codes": "distant_ice_orbs",
     "img": "images/items/abilities/distant_ice_orbs.png"
   },
   {
     "name": "Distant Ice Orbs (Locked)",
     "type": "toggle_badged",
-    "codes": "distant_ice_orbs_locked, ice_orbs_locked",
+    "codes": "distant_ice_orbs_locked",
     "img": "images/items/abilities/locked.png",
     "base_item": "distant_ice_orbs",
     "initial_active_state": true
@@ -142,13 +142,13 @@
   {
     "name": "Summon Rock",
     "type": "toggle",
-    "codes": "summon_rock, ground_switches",
+    "codes": "summon_rock",
     "img": "images/items/abilities/summon_rock.png"
   },
   {
     "name": "Summon Rock (Locked)",
     "type": "toggle_badged",
-    "codes": "summon_rock_locked, ground_switches_locked",
+    "codes": "summon_rock_locked",
     "img": "images/items/abilities/locked.png",
     "base_item": "summon_rock",
     "initial_active_state": true
@@ -156,13 +156,13 @@
   {
     "name": "Summon Mushroom",
     "type": "toggle",
-    "codes": "summon_mushroom, ground_switches",
+    "codes": "summon_mushroom",
     "img": "images/items/abilities/summon_mushroom.png"
   },
   {
     "name": "Summon Mushroom (Locked)",
     "type": "toggle_badged",
-    "codes": "summon_mushroom_locked, ground_switches_locked",
+    "codes": "summon_mushroom_locked",
     "img": "images/items/abilities/locked.png",
     "base_item": "summon_mushroom",
     "initial_active_state": true
@@ -170,13 +170,13 @@
   {
     "name": "Summon Big Rock",
     "type": "toggle",
-    "codes": "summon_big_rock, ground_switches",
+    "codes": "summon_big_rock",
     "img": "images/items/abilities/summon_big_rock.png"
   },
   {
     "name": "Summon Big Rock (Locked)",
     "type": "toggle_badged",
-    "codes": "summon_big_rock_locked, ground_switches_locked",
+    "codes": "summon_big_rock_locked",
     "img": "images/items/abilities/locked.png",
     "base_item": "summon_big_rock",
     "initial_active_state": true
@@ -184,13 +184,13 @@
   {
     "name": "Flying",
     "type": "toggle",
-    "codes": "flying, distant_ledges",
+    "codes": "flying",
     "img": "images/items/abilities/flying.png"
   },
   {
     "name": "Flying (Locked)",
     "type": "toggle_badged",
-    "codes": "flying_locked, distant_ledges_locked",
+    "codes": "flying_locked",
     "img": "images/items/abilities/locked.png",
     "base_item": "flying",
     "initial_active_state": true
@@ -198,13 +198,13 @@
   {
     "name": "Improved Flying",
     "type": "toggle",
-    "codes": "improved_flying, distant_ledges",
+    "codes": "improved_flying",
     "img": "images/items/abilities/improved_flying.png"
   },
   {
     "name": "Improved Flying (Locked)",
     "type": "toggle_badged",
-    "codes": "improved_flying_locked, distant_ledges_locked",
+    "codes": "improved_flying_locked",
     "img": "images/items/abilities/locked.png",
     "base_item": "improved_flying",
     "initial_active_state": true
@@ -212,13 +212,13 @@
   {
     "name": "Lofty Mount",
     "type": "toggle",
-    "codes": "lofty_mount, distant_ledges, mount",
+    "codes": "lofty_mount",
     "img": "images/items/abilities/lofty_mount.png"
   },
   {
     "name": "Lofty Mount (Locked)",
     "type": "toggle_badged",
-    "codes": "lofty_mount_locked, distant_ledges_locked, mount_locked",
+    "codes": "lofty_mount_locked",
     "img": "images/items/abilities/locked.png",
     "base_item": "lofty_mount",
     "initial_active_state": true
@@ -226,13 +226,13 @@
   {
     "name": "Basic Swimming",
     "type": "toggle",
-    "codes": "basic_swimming, swimming",
+    "codes": "basic_swimming",
     "img": "images/items/abilities/basic_swimming.png"
   },
   {
     "name": "Basic Swimming (Locked)",
     "type": "toggle_badged",
-    "codes": "basic_swimming_locked, swimming_locked",
+    "codes": "basic_swimming_locked",
     "img": "images/items/abilities/locked.png",
     "base_item": "basic_swimming",
     "initial_active_state": true
@@ -240,13 +240,13 @@
   {
     "name": "Improved Swimming",
     "type": "toggle",
-    "codes": "improved_swimming, swimming",
+    "codes": "improved_swimming",
     "img": "images/items/abilities/improved_swimming.png"
   },
   {
     "name": "Improved Swimming (Locked)",
     "type": "toggle_badged",
-    "codes": "improved_swimming_locked, swimming_locked",
+    "codes": "improved_swimming_locked",
     "img": "images/items/abilities/locked.png",
     "base_item": "improved_swimming",
     "initial_active_state": true
@@ -254,13 +254,13 @@
   {
     "name": "Dual Mobility",
     "type": "toggle",
-    "codes": "dual_mobility, distant_ledges, swimming, tar",
+    "codes": "dual_mobility",
     "img": "images/items/abilities/dual_mobility.png"
   },
   {
     "name": "Dual Mobility (Locked)",
     "type": "toggle_badged",
-    "codes": "dual_mobility_locked, distant_ledges_locked, swimming_locked, tar_locked",
+    "codes": "dual_mobility_locked",
     "img": "images/items/abilities/locked.png",
     "base_item": "dual_mobility",
     "initial_active_state": true
@@ -394,13 +394,13 @@
   {
     "name": "Basic Mount",
     "type": "toggle",
-    "codes": "basic_mount, mount",
+    "codes": "basic_mount",
     "img": "images/items/abilities/basic_mount.png"
   },
   {
     "name": "Basic Mount (Locked)",
     "type": "toggle_badged",
-    "codes": "basic_mount_locked, mount_locked",
+    "codes": "basic_mount_locked",
     "img": "images/items/abilities/locked.png",
     "base_item": "basic_mount",
     "initial_active_state": true
@@ -408,13 +408,13 @@
   {
     "name": "Sonar Mount",
     "type": "toggle",
-    "codes": "sonar_mount, mount",
+    "codes": "sonar_mount",
     "img": "images/items/abilities/sonar_mount.png"
   },
   {
     "name": "Sonar Mount (Locked)",
     "type": "toggle_badged",
-    "codes": "sonar_mount_locked, mount_locked",
+    "codes": "sonar_mount_locked",
     "img": "images/items/abilities/locked.png",
     "base_item": "sonar_mount",
     "initial_active_state": true
@@ -422,13 +422,13 @@
   {
     "name": "Tar Mount",
     "type": "toggle",
-    "codes": "tar_mount, mount, tar",
+    "codes": "tar_mount",
     "img": "images/items/abilities/tar_mount.png"
   },
   {
     "name": "Tar Mount (Locked)",
     "type": "toggle_badged",
-    "codes": "tar_mount_locked, mount_locked, tar_locked",
+    "codes": "tar_mount_locked",
     "img": "images/items/abilities/locked.png",
     "base_item": "tar_mount",
     "initial_active_state": true
@@ -436,13 +436,13 @@
   {
     "name": "Charging Mount",
     "type": "toggle",
-    "codes": "charging_mount, mount, breakable_walls",
+    "codes": "charging_mount",
     "img": "images/items/abilities/charging_mount.png"
   },
   {
     "name": "Charging Mount (Locked)",
     "type": "toggle_badged",
-    "codes": "charging_mount_locked, mount_locked, breakable_walls_locked",
+    "codes": "charging_mount_locked",
     "img": "images/items/abilities/locked.png",
     "base_item": "charging_mount",
     "initial_active_state": true

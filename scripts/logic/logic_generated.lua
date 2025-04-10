@@ -1183,83 +1183,83 @@ function minnesang()
 end
 
 function distant_ledges()
-    return can_use_ability('distant_ledges')
+    return can_use_ability('distant_ledges') or flying() or improved_flying() or dual_mobility() or lofty_mount()
 end
 
 function ground_switches()
-    return can_use_ability('ground_switches')
+    return can_use_ability('ground_switches') or summon_big_rock() or summon_rock() or summon_mushroom()
 end
 
 function swimming()
-    return can_use_ability('swimming')
+    return can_use_ability('swimming') or basic_swimming() or improved_swimming() or dual_mobility()
 end
 
 function mount()
-    return can_use_ability('mount')
+    return can_use_ability('mount') or basic_mount() or sonar_mount() or tar_mount() or charging_mount() or lofty_mount()
 end
 
 function tar()
-    return can_use_ability('tar')
+    return can_use_ability('tar') or tar_mount() or dual_mobility()
 end
 
 function breakable_walls()
-    return can_use_ability('breakable_walls')
+    return can_use_ability('breakable_walls') or claws() or tackle() or slash() or heavy_punch() or toxic_slam() or light_crush() or crush() or corrosive_jabs() or charging_mount()
 end
 
 function impassible_vines()
-    return can_use_ability('impassible_vines')
+    return can_use_ability('impassible_vines') or claws() or ignite() or slash() or fiery_shots()
 end
 
 function diamond_blocks()
-    return can_use_ability('diamond_blocks')
+    return can_use_ability('diamond_blocks') or light_crush() or crush() or charging_mount()
 end
 
 function fire_orbs()
-    return can_use_ability('fire_orbs')
+    return can_use_ability('fire_orbs') or ignite() or fiery_shots()
 end
 
 function water_orbs()
-    return can_use_ability('water_orbs')
+    return can_use_ability('water_orbs') or bubble_burst() or corrosive_jabs()
 end
 
 function lightning_orbs()
-    return can_use_ability('lightning_orbs')
+    return can_use_ability('lightning_orbs') or lightning_bolt() or shock_freeze()
 end
 
 function earth_orbs()
-    return can_use_ability('earth_orbs')
+    return can_use_ability('earth_orbs') or slime_shot() or toxic_slam() or jewel_blast() or toxic_freeze()
 end
 
 function ice_orbs()
-    return can_use_ability('ice_orbs')
+    return can_use_ability('ice_orbs') or freeze() or snowball_toss() or shock_freeze() or toxic_freeze()
 end
 
 function distant_ice_orbs()
-    return can_use_ability('distant_ice_orbs')
+    return can_use_ability('distant_ice_orbs') or snowball_toss() or shock_freeze() or toxic_freeze()
 end
 
 function narrow_corridors()
-    return can_use_ability('narrow_corridors')
+    return can_use_ability('narrow_corridors') or blob_form() or morph_ball()
 end
 
 function magic_walls()
-    return can_use_ability('magic_walls')
+    return can_use_ability('magic_walls') or minnesang()
 end
 
 function magic_vines()
-    return can_use_ability('magic_vines')
+    return can_use_ability('magic_vines') or spore_shroud()
 end
 
 function heavy_blocks()
-    return can_use_ability('heavy_blocks')
+    return can_use_ability('heavy_blocks') or tackle()
 end
 
 function torches()
-    return can_use_ability('torches')
+    return can_use_ability('torches') or ignite() or lightning_bolt() or fiery_shots()
 end
 
 function dark_rooms()
-    return can_use_ability('dark_rooms')
+    return can_use_ability('dark_rooms') or sonar() or light() or sonar_mount() or light_crush()
 end
 
 function blue_cave_switches_access()

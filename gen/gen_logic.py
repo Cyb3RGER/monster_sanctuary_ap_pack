@@ -611,10 +611,9 @@ def build_exploration_obstacle_helper(obstacle, abilities, useHas=False):
     lua_str = f'function {func_name}()\n'
     lua_str += f'{TAB}return '
     lua_str += f"can_use_ability(\'{obstacle}\')"
-    # for v in abilities:
-    #     lua_str += f'{("has_" if useHas else "") + v}()'
-    #     if v != abilities[-1]:
-    #         lua_str += ' or '
+    for v in abilities:
+        lua_str += ' or '
+        lua_str += f'{("has_" if useHas else "") + v}()'
     lua_str += '\nend\n\n'
     return lua_str
 

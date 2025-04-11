@@ -167,12 +167,7 @@ function tar()
 end
 
 function can_use_ability(ability)
-    --ToDo: if Tracker:ProviderCountForCode gets fixed for toggle_badge, we can replace this with has again
-    local obj = Tracker:FindObjectForCode(ability .. '_locked')
-    if not obj then
-        return false
-    end
-    return has(ability) and not obj.Active
+    return has(ability) and not has(ability .. '_locked')
 end
 
 function _is_explore_ability_available(monster)

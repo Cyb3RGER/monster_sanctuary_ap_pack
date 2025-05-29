@@ -252,10 +252,10 @@
     "img": "images/items/abilities/spectral_flame.png"
   },
   {
-    "name": "Slime Snack",
+    "name": "Slime Treats",
     "type": "toggle",
-    "codes": "slime_snack",
-    "img": "images/items/abilities/slime_snack.png"
+    "codes": "slime_treats",
+    "img": "images/items/abilities/slime_treats.png"
   },
   {
     "name": "Insect Pheromones",
@@ -856,12 +856,6 @@
     "type": "toggle",
     "codes": "rainbow_slime_snack",
     "img": "images/items/abilities/rainbow_slime_snack.png"
-  },
-  {
-    "name": "Power Suit",
-    "type": "toggle",
-    "codes": "power_suit",
-    "img": "images/items/abilities/power_suit.png"
   },
   {
     "name": "Blob Crown",

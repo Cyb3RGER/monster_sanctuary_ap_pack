@@ -2336,6 +2336,11 @@
     "access_rules": [
       [
         "$has_access_to|BlueCave_WestWaters2_Lower",
+        "$double_jump",
+        "$ground_switches"
+      ],
+      [
+        "$has_access_to|BlueCave_WestWaters2_Lower",
         "$distant_ledges"
       ],
       [
@@ -2530,11 +2535,6 @@
       [
         "$has_access_to|BlueCave_AquaEntrance_Lower",
         "$swimming"
-      ],
-      [
-        "$has_access_to|BlueCave_AquaEntrance_Lower",
-        "$summon_big_rock",
-        "$double_jump"
       ]
     ],
     "map_locations": [
@@ -2941,7 +2941,17 @@
     "name": "Stronghold Dungeon - Central Gates Room",
     "access_rules": [
       [
-        "$has_access_to|StrongholdDungeon_Central1"
+        "$has_access_to|StrongholdDungeon_Central1",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central1",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central1",
+        "$double_jump",
+        "$distant_ledges"
       ]
     ],
     "map_locations": [
@@ -4229,7 +4239,17 @@
     "name": "Snowy Peaks - West Hills",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_West2"
+        "$has_access_to|SnowyPeaks_West2",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_West2",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_West2",
+        "$double_jump",
+        "$distant_ledges"
       ]
     ],
     "map_locations": [
@@ -4420,7 +4440,19 @@
     "name": "Snowy Peaks - Lake - Underwater Chest",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_Lake_Lower"
+        "$has_access_to|SnowyPeaks_Lake_Lower",
+        "$swimming",
+        "$warm_underwear"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_Lake_Lower",
+        "$double_jump",
+        "$mount"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_Lake_Lower",
+        "$double_jump",
+        "$heavy_blocks"
       ]
     ],
     "map_locations": [
@@ -5544,6 +5576,11 @@
     "access_rules": [
       [
         "$has_access_to|SunPalace_East3",
+        "$double_jump",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SunPalace_East3",
         "$improved_flying"
       ],
       [
@@ -5693,7 +5730,19 @@
     "name": "Sun Palace - Crystal Room",
     "access_rules": [
       [
-        "$has_access_to|SunPalace_Center"
+        "$has_access_to|SunPalace_Center",
+        "$_NOT_CALL|sun_palace_raise_center_2",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_2",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_2",
+        "$distant_ledges"
       ]
     ],
     "map_locations": [
@@ -6055,7 +6104,34 @@
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|SunPalace_South1_Upper"
+            "$has_access_to|SunPalace_South1_Upper",
+            "$_NOT_CALL|sun_palace_lower_water_1",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Upper",
+            "$sun_palace_lower_water_1",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Upper",
+            "$sun_palace_lower_water_1",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Upper",
+            "$sun_palace_lower_water_1",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Upper",
+            "$sun_palace_lower_water_1",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Upper",
+            "$sun_palace_lower_water_1",
+            "$summon_big_rock"
           ]
         ]
       },
@@ -6088,7 +6164,24 @@
     "name": "Sun Palace - Central Sewer - Middle West Chest",
     "access_rules": [
       [
-        "$has_access_to|SunPalace_South1_Lower"
+        "$has_access_to|SunPalace_South1_Lower",
+        "$_NOT_CALL|sun_palace_lower_water_2",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|SunPalace_South1_Lower",
+        "$sun_palace_lower_water_2",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SunPalace_South1_Lower",
+        "$sun_palace_lower_water_2",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SunPalace_South1_Lower",
+        "$sun_palace_lower_water_2",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -6133,6 +6226,11 @@
         "access_rules": [
           [
             "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|sun_palace_lower_water_2",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
             "$sun_palace_lower_water_2"
           ],
           [
@@ -6147,7 +6245,34 @@
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|SunPalace_South1_Lower"
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|sun_palace_lower_water_2",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$sun_palace_lower_water_2",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$sun_palace_lower_water_2",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$sun_palace_lower_water_2",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$sun_palace_lower_water_2",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$sun_palace_lower_water_2",
+            "$summon_big_rock"
           ]
         ]
       }
@@ -6976,7 +7101,29 @@
     "name": "Ancient Woods - West Deep Caves - Dark Room",
     "access_rules": [
       [
-        "$has_access_to|AncientWoods_DarkRoom2"
+        "$has_access_to|AncientWoods_DarkRoom2",
+        "$dark_rooms",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|AncientWoods_DarkRoom2",
+        "$torches",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|AncientWoods_DarkRoom2",
+        "$torches",
+        "$flying"
+      ],
+      [
+        "$has_access_to|AncientWoods_DarkRoom2",
+        "$torches",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|AncientWoods_DarkRoom2",
+        "$torches",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -9790,7 +9937,14 @@
     "name": "Magma Chamber Lowered Lava",
     "access_rules": [
       [
-        "$has_access_to|MagmaChamber_Runestone"
+        "$has_access_to|MagmaChamber_Runestone",
+        "$skip_plot",
+        "$runestone_shard"
+      ],
+      [
+        "$has_access_to|MagmaChamber_Runestone",
+        "$stronghold_dungeon_library_access",
+        "$runestone_shard"
       ]
     ],
     "sections": [
@@ -16292,7 +16446,44 @@
       [
         "$has_access_to|ForgottenWorld_ClimbPuzzle",
         "$fiery_shots",
-        "$heavy_blocks"
+        "$heavy_blocks",
+        "$secret_vision",
+        "$summon_big_rock"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_ClimbPuzzle",
+        "$fiery_shots",
+        "$heavy_blocks",
+        "$double_jump",
+        "$summon_big_rock"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_ClimbPuzzle",
+        "$fiery_shots",
+        "$heavy_blocks",
+        "$double_jump",
+        "$secret_vision"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_ClimbPuzzle",
+        "$fiery_shots",
+        "$heavy_blocks",
+        "$double_jump",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_ClimbPuzzle",
+        "$fiery_shots",
+        "$heavy_blocks",
+        "$double_jump",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_ClimbPuzzle",
+        "$fiery_shots",
+        "$heavy_blocks",
+        "$double_jump",
+        "$lofty_mount"
       ]
     ],
     "visibility_rules": [

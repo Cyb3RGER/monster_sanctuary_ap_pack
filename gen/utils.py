@@ -61,9 +61,9 @@ def combine_access(current, to_add, op):
                 i += 1
     if op == "OR":
         if len(current) == 0:
-            return current
-        if len(to_add) == 0:
             return to_add
+        if len(to_add) == 0:
+            return current
         for v in to_add:
             new.append(v)
     # print('combine_access', 'result', new)

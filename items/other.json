@@ -3,5 +3,12 @@
         "name": "Dummy",
         "type": "toggle",
         "codes": "dummy"
+    },
+    {
+        "name": "Champions In Logic",
+        "type": "static",
+        "codes": "champions_in_logic",
+        "img": "images/items/rank/champion_defeated.png",
+        "img_mods": "overlay|images/items/rank/unlocked.png"
     }
 ]

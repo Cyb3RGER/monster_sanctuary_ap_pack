@@ -1,3 +1,5 @@
+require("logic.champion_locs")
+
 function update_access_watch(code)
     REGIONS_ACCESS_CACHE = {}
     update_access()
@@ -69,7 +71,25 @@ function reset_abilities()
     end
 end
 
+function update_champions_in_logic()
+    local count = 0
+    for _, code in ipairs(CHAMPION_LOCS) do
+        local section = Tracker:FindObjectForCode(code) ---@cast section LocationSection?
+        if section then
+            if section.AccessibilityLevel >= AccessibilityLevel.Normal then
+                count = count + 1
+            end
+        end
+    end
+    local obj = Tracker:FindObjectForCode("champions_in_logic") ---@cast obj JsonItem?
+    if obj then
+        obj:SetOverlay(string.format("%d", count))
+        obj:SetOverlayFontSize(28)
+    end
+end
+
 ScriptHost:AddWatchForCode("Update access", "*", update_access_watch)
+ScriptHost:AddWatchForCode("update champions in logic", "*", update_champions_in_logic)
 for k, v in pairs(MONSTER_ABILITY_ITEM_DATA) do
     ScriptHost:AddWatchForCode("Update abilties from " .. k, k, update_abilites_from_monster)
     ScriptHost:AddWatchForCode("Update abilties from " .. v.Ability, v.Ability, update_abilites_from_unlock_item)

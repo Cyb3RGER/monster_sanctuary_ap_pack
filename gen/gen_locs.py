@@ -23,6 +23,7 @@ TILE_SIZE = 36
 SUB_MAP_OFFSET = 32
 loc_by_name: dict[str, PopTrackerLocation | PopTrackerSection] = {}
 loc_names: dict[str,str] = {}
+champion_locs: list[str] = []
 
 def setup_loc_names():
     with open('data/world.json', mode='r') as f:
@@ -48,7 +49,7 @@ def setup_loc_names():
             if isinstance(champion_data, str):
                 continue
             id = get_id_for_loc('Rank', region, champion_data, {})
-            loc_names[id] = champion_data.get('name', id)
+            loc_names[id] = champion_data.get('name', id)           
 
         for flag_data in current_region_data.get("flags") or []:
             # Hack because we store comments as strings
@@ -1455,6 +1456,8 @@ def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, dat
                 ids.append(location_id)
                 location_id += 1
             ids_for_sections[f'@{parent_region}/{loc_name}'] = ids
+            if check_type_name == "Rank":
+                champion_locs.append(f'@{parent_region}/{loc_name}')
             # print(f'@{parent_region}/{loc_name}: ({len(ids)}) {ids}')
     else:
         if check_type_name == "Army":
@@ -1470,6 +1473,8 @@ def create_loc(locs: list[PopTrackerLocation], region: str, check_type_name, dat
                 ids.append(location_id)
                 location_id += 1
             ids_for_sections[f'@{loc_name}/'] = ids
+            if check_type_name == "Rank":
+                champion_locs.append(f'@{loc_name}/')
             for _id in ids:
                 locs_by_id[_id] = loc_name
         locs.append(loc)
@@ -1666,6 +1671,7 @@ def gen_locations():
     print('Exported eggsanity item grid layout!')
     export_loction_mapping(ids_for_sections)
     print('Exported location mapping!')
+    export_champion_location_table(champion_locs)
     mapped_locs = []
     missing_locs = {}
     for k, v in map_location_mapping.items():
@@ -1695,6 +1701,15 @@ def export_loction_mapping(ids_for_items: dict[str, list[int]]):
 
     with open('../scripts/autotracking/location_mapping.lua', mode='w') as f:
         f.write('\n'.join(lines))
+
+def export_champion_location_table(champion_locs):
+    lines = ['CHAMPION_LOCS = {']
+    for v in champion_locs:    
+        lines.append(f'{TAB}"{v}",')
+    lines.append('}')
+    with open('../scripts/logic/champion_locs.lua', mode='w') as f:
+        f.write('\n'.join(lines))
+
 
 
 if __name__ == "__main__":

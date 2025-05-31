@@ -1,6 +1,15 @@
 {
     "versions": [
         {
+            "package_version": "1.3.4",
+            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.4/monster_sanctuary_ap_pack-v1_3_4.zip",
+            "sha256": "b0a16eb73774dcc42f71bbef9be1fa7369496b025f135f2a67920f7b005a9099",
+            "changelog": [
+                "Fixed an long-standing issue in logic generation",
+                "Implemented an item that shows how many Champions are in logic (including defeated)"
+            ]
+        },
+        {
             "package_version": "1.3.3",
             "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.3/monster_sanctuary_ap_pack-v1_3_3.zip",
             "sha256": "907584b891c7abdd0fa28d592291ac9a70dc00fda877a41b9adbb0f74a20ecb4",

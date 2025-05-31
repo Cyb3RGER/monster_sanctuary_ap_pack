@@ -46,7 +46,14 @@ REGIONS = {
             return true
         end,
         ["MountainPath_NorthHidden"] = function()
-            return double_jump()
+            return
+            _AND({
+                double_jump(),
+                _OR({
+                    distant_ledges(),
+                    ground_switches()
+                })
+            })
         end,
         ["MountainPath_Center1"] = function()
             return true

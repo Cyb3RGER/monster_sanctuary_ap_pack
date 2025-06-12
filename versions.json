@@ -1,6 +1,15 @@
 {
     "versions": [
         {
+            "package_version": "1.3.5",
+            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.5/monster_sanctuary_ap_pack-v1_3_5.zip",
+            "sha256": "a054a3fab2b000cb658ba178c024745d95acd77940b1de26d499c31406d0f5a6",
+            "changelog": [
+                "Added hint tracking (highlights hinted location based on hint status)",
+                "Added a setting to toggle automatic tab switching"
+            ]
+        },
+        {
             "package_version": "1.3.4",
             "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.4/monster_sanctuary_ap_pack-v1_3_4.zip",
             "sha256": "b0a16eb73774dcc42f71bbef9be1fa7369496b025f135f2a67920f7b005a9099",

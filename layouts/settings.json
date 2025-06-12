@@ -13,7 +13,20 @@
             "content": [
               {
                 "type": "item",
+                "item_h_alignment": "center",
                 "item": "opt_hide_filler"
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "header": "Automatic Tab Switching",
+            "header_background": "#3e4b57",
+            "content": [
+              {
+                "type": "item",
+                "item_h_alignment": "center",
+                "item": "auto_tab"
               }
             ]
           }

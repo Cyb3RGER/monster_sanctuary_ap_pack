@@ -1,7 +1,7 @@
 ﻿{
     "name": "Monster Sanctuary AP",
     "game_name": "Monster Sanctuary",
-    "package_version": "1.3.5",
+    "package_version": "1.3.6",
     "package_uid": "monster_sanctuary_ap",
     "author": "Cyb3R",
     "target_poptracker_version": "0.32.0",

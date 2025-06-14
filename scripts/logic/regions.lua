@@ -267,6 +267,7 @@ REGIONS = {
             return
             _OR({
                 improved_flying(),
+                dual_mobility(),
                 _AND({
                     double_jump(),
                     _OR({
@@ -428,7 +429,7 @@ REGIONS = {
         ["KeeperStronghold_DuelCircle"] = function()
             return
             _OR({
-                keeper_rank_2(),
+                blue_caves_story_complete(),
                 skip_plot()
             })
         end,
@@ -1763,7 +1764,12 @@ REGIONS = {
             return true
         end,
         ["SnowyPeaks_WestMountain1"] = function()
-            return double_jump()
+            return
+            _OR({
+                double_jump(),
+                improved_flying(),
+                dual_mobility()
+            })
         end,
         ["SnowyPeaks_West5"] = function()
             return
@@ -1846,7 +1852,12 @@ REGIONS = {
             return diamond_blocks()
         end,
         ["SnowyPeaks_ChampionRoom2"] = function()
-            return double_jump()
+            return
+            _OR({
+                double_jump(),
+                improved_flying(),
+                dual_mobility()
+            })
         end
     },
     ["SnowyPeaks_ChampionRoom2"] = {
@@ -2637,9 +2648,12 @@ REGIONS = {
         end,
         ["AncientWoods_WestHidden"] = function()
             return
-            _OR({
-                double_jump(),
-                distant_ledges()
+            _AND({
+                breakable_walls(),
+                _OR({
+                    double_jump(),
+                    distant_ledges()
+                })
             })
         end
     },
@@ -3212,7 +3226,11 @@ REGIONS = {
             return swimming()
         end,
         ["HorizonBeach_East3"] = function()
-            return improved_swimming()
+            return
+            _OR({
+                improved_swimming(),
+                dual_mobility()
+            })
         end
     },
     ["HorizonBeach_East1"] = {
@@ -3281,7 +3299,11 @@ REGIONS = {
     },
     ["HorizonBeach_East3"] = {
         ["HorizonBeach_East2"] = function()
-            return improved_swimming()
+            return
+            _OR({
+                improved_swimming(),
+                dual_mobility()
+            })
         end,
         ["HorizonBeach_Center6"] = function()
             return true
@@ -5299,10 +5321,18 @@ REGIONS = {
     },
     ["BlobBurg_West1"] = {
         ["BlobBurg_Center4"] = function()
-            return swimming()
+            return
+            _OR({
+                double_jump(),
+                swimming()
+            })
         end,
         ["BlobBurg_West2"] = function()
-            return swimming()
+            return
+            _OR({
+                double_jump(),
+                swimming()
+            })
         end
     },
     ["BlobBurg_West2"] = {
@@ -5652,10 +5682,18 @@ REGIONS = {
             return swimming()
         end,
         ["ForgottenWorld_DracomerLair"] = function()
-            return improved_swimming()
+            return
+            _OR({
+                improved_swimming(),
+                dual_mobility()
+            })
         end,
         ["ForgottenWorld_WatersHidden"] = function()
-            return improved_swimming()
+            return
+            _OR({
+                improved_swimming(),
+                dual_mobility()
+            })
         end
     },
     ["ForgottenWorld_Waters5"] = {

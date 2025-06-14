@@ -1380,7 +1380,11 @@ function sun_palace_lower_water_2()
 end
 
 function second_bex_encounter()
-    return has_access_to('SunPalace_West3')
+    return
+    _AND({
+        has_access_to('SunPalace_West3'),
+        first_bex_encounter()
+    })
 end
 
 function sun_palace_raise_center_3()

@@ -838,7 +838,13 @@
     "access_rules": [
       [
         "$has_access_to|MountainPath_West4",
-        "$double_jump"
+        "$double_jump",
+        "$ground_switches"
+      ],
+      [
+        "$has_access_to|MountainPath_West4",
+        "$double_jump",
+        "$distant_ledges"
       ]
     ],
     "map_locations": [
@@ -4567,6 +4573,14 @@
       [
         "$has_access_to|SnowyPeaks_West5",
         "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_West5",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_West5",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -4749,7 +4763,7 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_WestMountain3",
-        "$ice_orbs"
+        "$distant_ice_orbs"
       ]
     ],
     "map_locations": [
@@ -5005,7 +5019,15 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_EastMountainTop",
-        "$distant_ledges"
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountainTop",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountainTop",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -5282,21 +5304,21 @@
     ]
   },
   {
-    "name": "Snowy Peaks - East Mountain - Ice Orb Chest",
+    "name": "Snowy Peaks - East Mountain - Water Orb Chest",
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_HighChallenge",
-        "$ice_orbs",
+        "$water_orbs",
         "$double_jump"
       ],
       [
         "$has_access_to|SnowyPeaks_HighChallenge",
-        "$ice_orbs",
+        "$water_orbs",
         "$improved_flying"
       ],
       [
         "$has_access_to|SnowyPeaks_HighChallenge",
-        "$ice_orbs",
+        "$water_orbs",
         "$dual_mobility"
       ]
     ],
@@ -5945,7 +5967,8 @@
     "name": "Bex 2",
     "access_rules": [
       [
-        "$has_access_to|SunPalace_West3"
+        "$has_access_to|SunPalace_West3",
+        "$first_bex_encounter"
       ]
     ],
     "sections": [
@@ -7657,7 +7680,8 @@
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|AncientWoods_South3"
+            "$has_access_to|AncientWoods_South3",
+            "$dark_rooms"
           ]
         ]
       },
@@ -7667,7 +7691,8 @@
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|AncientWoods_South3"
+            "$has_access_to|AncientWoods_South3",
+            "$dark_rooms"
           ]
         ]
       }
@@ -8426,6 +8451,10 @@
       [
         "$has_access_to|HorizonBeach_Center4",
         "$improved_swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Center4",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -8454,6 +8483,10 @@
       [
         "$has_access_to|HorizonBeach_Center4",
         "$improved_swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Center4",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -9151,6 +9184,10 @@
       [
         "$has_access_to|HorizonBeach_Labyrinth",
         "$improved_swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Labyrinth",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -14002,6 +14039,10 @@
       [
         "$has_access_to|BlobBurg_West1",
         "$improved_swimming"
+      ],
+      [
+        "$has_access_to|BlobBurg_West1",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -14030,6 +14071,10 @@
       [
         "$has_access_to|BlobBurg_West1",
         "$improved_swimming"
+      ],
+      [
+        "$has_access_to|BlobBurg_West1",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -14622,19 +14667,9 @@
         "access_rules": [
           [
             "$has_access_to|ForgottenWorld_Jungle6",
-            "$double_jump"
-          ],
-          [
-            "$has_access_to|ForgottenWorld_Jungle6",
-            "$improved_flying"
-          ],
-          [
-            "$has_access_to|ForgottenWorld_Jungle6",
-            "$dual_mobility"
-          ],
-          [
-            "$has_access_to|ForgottenWorld_Jungle6",
-            "$lofty_mount"
+            "$secret_vision",
+            "$double_jump",
+            "$magic_vines"
           ]
         ],
         "visibility_rules": [
@@ -14674,9 +14709,19 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_Jungle6",
-        "$secret_vision",
-        "$double_jump",
-        "$magic_vines"
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Jungle6",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Jungle6",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Jungle6",
+        "$lofty_mount"
       ]
     ],
     "visibility_rules": [
@@ -15152,6 +15197,10 @@
       [
         "$has_access_to|ForgottenWorld_Waters2",
         "$improved_swimming"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Waters2",
+        "$dual_mobility"
       ]
     ],
     "visibility_rules": [
@@ -17612,6 +17661,10 @@
       [
         "$has_access_to|AbandonedTower_Center10",
         "$improved_swimming"
+      ],
+      [
+        "$has_access_to|AbandonedTower_Center10",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [

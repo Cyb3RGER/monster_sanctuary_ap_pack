@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.3.6",
+            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.6/monster_sanctuary_ap_pack-v1_3_6.zip",
+            "sha256": "bfa995973c76762289c15cf6be0b7a9da786c8eed7f6ce55c06090ca466509a8",
+            "changelog": [
+                "Updated to apworld v1.3.6"
+            ]
+        },
+        {
             "package_version": "1.3.5",
             "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.5/monster_sanctuary_ap_pack-v1_3_5.zip",
             "sha256": "a054a3fab2b000cb658ba178c024745d95acd77940b1de26d499c31406d0f5a6",

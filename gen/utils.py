@@ -30,7 +30,7 @@ def count_flags():
 
 def format_code(code: str) -> str:
     regexs = [
-        (r' - ', '-'),
+        (r'-', '_'),
         (r'[\s\\]', '_'),
         (r'\?\?\?', 'unknown'),
         (r'[\(\)]', ''),

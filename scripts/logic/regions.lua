@@ -11,9 +11,23 @@ REGIONS = {
         ["MountainPath_North7"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        lofty_mount(),
+                        dual_mobility()
+                    })
+                })
             })
         end
     },
@@ -47,11 +61,23 @@ REGIONS = {
         end,
         ["MountainPath_NorthHidden"] = function()
             return
-            _AND({
-                double_jump(),
-                _OR({
-                    distant_ledges(),
-                    ground_switches()
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump(),
+                    _OR({
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    double_jump(),
+                    _OR({
+                        distant_ledges(),
+                        ground_switches()
+                    })
                 })
             })
         end,
@@ -70,8 +96,7 @@ REGIONS = {
             _OR({
                 double_jump(),
                 improved_flying(),
-                dual_mobility(),
-                lofty_mount()
+                dual_mobility()
             })
         end
     },
@@ -266,13 +291,29 @@ REGIONS = {
         ["MountainPath_SnowyEntrance2"] = function()
             return
             _OR({
-                improved_flying(),
-                dual_mobility(),
                 _AND({
-                    double_jump(),
+                    casual(),
                     _OR({
-                        distant_ledges(),
-                        mount()
+                        improved_flying(),
+                        dual_mobility(),
+                        _AND({
+                            double_jump(),
+                            distant_ledges()
+                        })
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        improved_flying(),
+                        dual_mobility(),
+                        _AND({
+                            double_jump(),
+                            _OR({
+                                mount(),
+                                distant_ledges()
+                            })
+                        })
                     })
                 })
             })
@@ -285,12 +326,29 @@ REGIONS = {
         ["MountainPath_SnowyEntrance"] = function()
             return
             _OR({
-                improved_flying(),
                 _AND({
-                    double_jump(),
+                    casual(),
                     _OR({
-                        distant_ledges(),
-                        mount()
+                        improved_flying(),
+                        dual_mobility(),
+                        _AND({
+                            double_jump(),
+                            distant_ledges()
+                        })
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        improved_flying(),
+                        dual_mobility(),
+                        _AND({
+                            double_jump(),
+                            _OR({
+                                mount(),
+                                distant_ledges()
+                            })
+                        })
                     })
                 })
             })
@@ -436,10 +494,25 @@ REGIONS = {
         ["KeeperStronghold_EndOfTime"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                lofty_mount(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        lofty_mount(),
+                        dual_mobility()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        summon_big_rock(),
+                        lofty_mount(),
+                        dual_mobility()
+                    })
+                })
             })
         end
     },
@@ -489,13 +562,25 @@ REGIONS = {
         ["BlueCave_NorthFork_Lower"] = function()
             return
             _OR({
-                blue_cave_switches_access(),
                 _AND({
-                    double_jump(),
+                    _NOT(casual()),
                     _OR({
-                        improved_flying(),
-                        lofty_mount(),
-                        dual_mobility()
+                        blue_cave_switches_access(),
+                        _AND({
+                            double_jump(),
+                            _OR({
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount()
+                            })
+                        })
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        blue_cave_switches_access(),
+                        double_jump()
                     })
                 })
             })
@@ -511,10 +596,25 @@ REGIONS = {
         ["BlueCave_NorthFork_Upper"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        summon_big_rock(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                })
             })
         end
     },
@@ -535,9 +635,21 @@ REGIONS = {
         ["BlueCave_NorthFork_Lower"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges(),
-                ground_switches()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
         end,
         ["BlueCave_WestWaters1"] = function()
@@ -636,9 +748,21 @@ REGIONS = {
         ["BlueCave_East2_Upper"] = function()
             return
             _OR({
-                double_jump(),
-                ground_switches(),
-                distant_ledges()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        ground_switches(),
+                        distant_ledges()
+                    })
+                })
             })
         end
     },
@@ -647,9 +771,32 @@ REGIONS = {
             return true
         end,
         ["BlueCave_East4"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                ground_switches(),
+                                distant_ledges()
+                            })
+                        })
+                    })
+                })
+            })
         end,
-        ["BlueCave_East2_Upper"] = function()
+        ["StrongholdDungeon_West4"] = function()
             return stronghold_dungeon_west_4_shortcut()
         end
     },
@@ -683,11 +830,21 @@ REGIONS = {
         ["BlueCave_South1_Upper"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount(),
-                summon_big_rock()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
         end,
         ["BlueCave_South1_Lower"] = function()
@@ -701,11 +858,25 @@ REGIONS = {
         ["BlueCave_South1_Middle"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount(),
-                summon_big_rock()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        ground_switches()
+                    })
+                })
             })
         end,
         ["BlueCave_South3"] = function()
@@ -819,7 +990,30 @@ REGIONS = {
     },
     ["BlueCave_WestWaters2_Upper"] = {
         ["BlueCave_WestWaters2_Lower"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                swimming(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["BlueCave_WestStairwell2"] = function()
             return true
@@ -827,9 +1021,37 @@ REGIONS = {
         ["BlueCave_WestWaters3"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges(),
-                swimming()
+                _AND({
+                    tedious(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        swimming()
+                    })
+                }),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                swimming(),
+                                _AND({
+                                    ground_switches(),
+                                    distant_ledges()
+                                })
+                            })
+                        })
+                    })
+                })
             })
         end
     },
@@ -837,9 +1059,21 @@ REGIONS = {
         ["BlueCave_WestWaters2_Upper"] = function()
             return
             _OR({
-                double_jump(),
-                ground_switches(),
-                swimming()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        swimming()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        ground_switches(),
+                        swimming()
+                    })
+                })
             })
         end,
         ["BlueCave_WestWatersHidden"] = function()
@@ -874,9 +1108,18 @@ REGIONS = {
         ["BlueCave_WestWaters4_Upper"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    double_jump()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
             })
         end,
         ["BlueCave_WestWaters4_Lower"] = function()
@@ -914,15 +1157,35 @@ REGIONS = {
     },
     ["BlueCave_WestWaters6_Upper"] = {
         ["BlueCave_WestWaters4_Lower"] = function()
-            return true
-        end,
-        ["BlueCave_WestWaters6_Lower"] = function()
             return
             _OR({
                 double_jump(),
                 summon_big_rock(),
                 distant_ledges(),
                 swimming()
+            })
+        end,
+        ["BlueCave_WestWaters6_Lower"] = function()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        swimming(),
+                        improved_flying(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        swimming(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
         end
     },
@@ -932,7 +1195,9 @@ REGIONS = {
             _OR({
                 double_jump(),
                 improved_flying(),
-                dual_mobility()
+                dual_mobility(),
+                lofty_mount(),
+                summon_big_rock()
             })
         end,
         ["BlueCave_WestWatersHidden2"] = function()
@@ -949,13 +1214,82 @@ REGIONS = {
     },
     ["BlueCave_AquaEntrance_Upper"] = {
         ["BlueCave_WestWaters6_Lower"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                swimming(),
+                                summon_big_rock()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["SunPalace_East1_East"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                swimming(),
+                                summon_big_rock()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["BlueCave_AquaEntrance_Lower"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                swimming(),
+                                summon_big_rock()
+                            })
+                        })
+                    })
+                })
+            })
         end
     },
     ["BlueCave_AquaEntrance_Lower"] = {
@@ -963,7 +1297,8 @@ REGIONS = {
             return
             _OR({
                 double_jump(),
-                swimming()
+                swimming(),
+                summon_big_rock()
             })
         end
     },
@@ -974,9 +1309,21 @@ REGIONS = {
         ["BlueCave_WestWaters7_West"] = function()
             return
             _OR({
-                double_jump(),
-                ground_switches(),
-                distant_ledges()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        ground_switches(),
+                        distant_ledges()
+                    })
+                })
             })
         end
     },
@@ -984,8 +1331,21 @@ REGIONS = {
         ["BlueCave_WestWaters7_East"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        ground_switches(),
+                        distant_ledges()
+                    })
+                })
             })
         end,
         ["BlueCave_ChampionRoom2"] = function()
@@ -1071,12 +1431,25 @@ REGIONS = {
         end,
         ["MysticalWorkshop_South1"] = function()
             return
-            _AND({
-                double_jump(),
-                _OR({
-                    improved_flying(),
-                    lofty_mount(),
-                    dual_mobility()
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump(),
+                    _OR({
+                        improved_flying(),
+                        lofty_mount(),
+                        dual_mobility()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    double_jump(),
+                    _OR({
+                        improved_flying(),
+                        lofty_mount(),
+                        dual_mobility(),
+                        summon_big_rock()
+                    })
                 })
             })
         end
@@ -1102,9 +1475,24 @@ REGIONS = {
         ["StrongholdDungeon_NorthHidden"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges(),
-                summon_big_rock()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    advanced(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        summon_big_rock()
+                    })
+                }),
+                expert()
             })
         end
     },
@@ -1118,7 +1506,24 @@ REGIONS = {
             return true
         end,
         ["StrongholdDungeon_Central3"] = function()
-            return true
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
+            })
         end
     },
     ["StrongholdDungeon_Central2"] = {
@@ -1146,15 +1551,31 @@ REGIONS = {
         ["StrongholdDungeon_Central3"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        lofty_mount(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        lofty_mount(),
+                        improved_flying(),
+                        dual_mobility(),
+                        summon_big_rock()
+                    })
+                })
             })
         end,
         ["StrongholdDungeon_Central5_Upper"] = function()
             return true
         end,
-        ["StrongholdDungeon_Central7"] = function()
+        ["StrongholdDungeon_Central7_Upper"] = function()
             return true
         end
     },
@@ -1163,14 +1584,80 @@ REGIONS = {
             return
             _OR({
                 double_jump(),
-                distant_ledges()
+                distant_ledges(),
+                ground_switches()
             })
         end,
         ["StrongholdDungeon_Central4"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges()
+                _AND({
+                    tedious(),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                }),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                _AND({
+                                    lightning_orbs(),
+                                    _OR({
+                                        double_jump(),
+                                        distant_ledges()
+                                    })
+                                }),
+                                _AND({
+                                    double_jump(),
+                                    _OR({
+                                        improved_flying(),
+                                        dual_mobility(),
+                                        lofty_mount()
+                                    })
+                                })
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                _AND({
+                                    lightning_orbs(),
+                                    _OR({
+                                        double_jump(),
+                                        distant_ledges(),
+                                        summon_big_rock()
+                                    })
+                                }),
+                                _AND({
+                                    double_jump(),
+                                    _OR({
+                                        ground_switches(),
+                                        improved_flying(),
+                                        dual_mobility(),
+                                        lofty_mount()
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
             })
         end
     },
@@ -1179,20 +1666,45 @@ REGIONS = {
             return
             _OR({
                 _AND({
-                    lightning_orbs(),
+                    casual(),
                     _OR({
-                        double_jump(),
-                        distant_ledges(),
-                        summon_big_rock()
+                        _AND({
+                            lightning_orbs(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges()
+                            })
+                        }),
+                        _AND({
+                            double_jump(),
+                            _OR({
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount()
+                            })
+                        })
                     })
                 }),
                 _AND({
-                    double_jump(),
+                    _NOT(casual()),
                     _OR({
-                        ground_switches(),
-                        improved_flying(),
-                        dual_mobility(),
-                        lofty_mount()
+                        _AND({
+                            lightning_orbs(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                summon_big_rock()
+                            })
+                        }),
+                        _AND({
+                            double_jump(),
+                            _OR({
+                                ground_switches(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount()
+                            })
+                        })
                     })
                 })
             })
@@ -1205,34 +1717,49 @@ REGIONS = {
         ["StrongholdDungeon_South1"] = function()
             return true
         end,
-        ["StrongholdDungeon_Central7"] = function()
+        ["StrongholdDungeon_Central7_Lower"] = function()
             return true
         end
     },
-    ["StrongholdDungeon_Central7"] = {
-        ["StrongholdDungeon_Central6"] = function()
-            return true
-        end,
-        ["StrongholdDungeon_East1_NW"] = function()
-            return true
-        end,
+    ["StrongholdDungeon_Central7_Upper"] = {
         ["StrongholdDungeon_Central4"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount()
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
             })
         end,
         ["StrongholdDungeon_Hidden1"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount()
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
             })
+        end,
+        ["StrongholdDungeon_Central7_Lower"] = function()
+            return true
+        end
+    },
+    ["StrongholdDungeon_Central7_Lower"] = {
+        ["StrongholdDungeon_Central6"] = function()
+            return true
+        end,
+        ["StrongholdDungeon_East1_NW"] = function()
+            return true
         end,
         ["StrongholdDungeon_CentralHidden"] = function()
             return
@@ -1240,15 +1767,23 @@ REGIONS = {
                 dark_rooms(),
                 double_jump()
             })
+        end,
+        ["StrongholdDungeon_Central7_Upper"] = function()
+            return
+            _OR({
+                double_jump(),
+                improved_flying(),
+                dual_mobility()
+            })
         end
     },
     ["StrongholdDungeon_CentralHidden"] = {
-        ["StrongholdDungeon_Central7"] = function()
+        ["StrongholdDungeon_Central7_Lower"] = function()
             return true
         end
     },
     ["StrongholdDungeon_Hidden1"] = {
-        ["StrongholdDungeon_Central7"] = function()
+        ["StrongholdDungeon_Central7_Upper"] = function()
             return true
         end,
         ["StrongholdDungeon_SummonRoom"] = function()
@@ -1262,10 +1797,45 @@ REGIONS = {
     },
     ["StrongholdDungeon_South1"] = {
         ["StrongholdDungeon_Central6"] = function()
-            return double_jump()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        dual_mobility(),
+                        _AND({
+                            swimming(),
+                            improved_flying()
+                        })
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        dual_mobility(),
+                        improved_flying()
+                    })
+                })
+            })
         end,
         ["StrongholdDungeon_South2"] = function()
-            return double_jump()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        dual_mobility(),
+                        improved_flying()
+                    })
+                })
+            })
         end
     },
     ["StrongholdDungeon_South2"] = {
@@ -1283,11 +1853,25 @@ REGIONS = {
         ["StrongholdDungeon_West3"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount(),
-                summon_big_rock()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock()
+                    })
+                })
             })
         end,
         ["StrongholdDungeon_South4"] = function()
@@ -1314,25 +1898,101 @@ REGIONS = {
                         minimal_locked_doors()
                     })
                 }),
-                double_jump()
+                _OR({
+                    _AND({
+                        casual(),
+                        double_jump()
+                    }),
+                    _AND({
+                        _NOT(casual()),
+                        _OR({
+                            double_jump(),
+                            improved_flying(),
+                            dual_mobility()
+                        })
+                    })
+                })
             })
         end,
         ["StrongholdDungeon_South5"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges(),
-                ground_switches(),
-                swimming()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        swimming()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches(),
+                        swimming()
+                    })
+                })
             })
         end
     },
     ["StrongholdDungeon_South5"] = {
         ["StrongholdDungeon_South4"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                summon_big_rock(),
+                                swimming()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["StrongholdDungeon_Library"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                summon_big_rock(),
+                                swimming()
+                            })
+                        })
+                    })
+                })
+            })
         end
     },
     ["StrongholdDungeon_Library"] = {
@@ -1405,35 +2065,100 @@ REGIONS = {
         end
     },
     ["StrongholdDungeon_East1_NW"] = {
-        ["StrongholdDungeon_Central7"] = function()
+        ["StrongholdDungeon_Central7_Lower"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        mount()
+                    })
+                })
             })
         end,
         ["StrongholdDungeon_East1_NE"] = function()
             return
-            _OR({
-                one_dungeon_key(),
-                minimal_locked_doors(),
-                no_locked_doors()
+            _AND({
+                _OR({
+                    one_dungeon_key(),
+                    minimal_locked_doors(),
+                    no_locked_doors()
+                }),
+                _OR({
+                    _AND({
+                        casual(),
+                        _OR({
+                            double_jump(),
+                            flying(),
+                            improved_flying(),
+                            dual_mobility()
+                        })
+                    }),
+                    _AND({
+                        advanced(),
+                        _OR({
+                            double_jump(),
+                            distant_ledges(),
+                            mount()
+                        })
+                    }),
+                    expert()
+                })
             })
         end,
         ["StrongholdDungeon_East1_SW"] = function()
             return true
+        end,
+        ["StrongholdDungeon_East1_SW_Ledge"] = function()
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                summon_big_rock()
+                            })
+                        })
+                    })
+                })
+            })
         end
     },
     ["StrongholdDungeon_East1_NE"] = {
         ["StrongholdDungeon_East5"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _NOT(casual())
             })
         end,
         ["StrongholdDungeon_East1_NW"] = function()
@@ -1452,31 +2177,122 @@ REGIONS = {
         ["StrongholdDungeon_East1_SE"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        lofty_mount(),
+                        swimming()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        swimming(),
+                        summon_big_rock()
+                    })
+                })
             })
+        end,
+        ["StrongholdDungeon_East1_SW_Ledge"] = function()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        summon_big_rock()
+                    })
+                })
+            })
+        end
+    },
+    ["StrongholdDungeon_East1_SW_Ledge"] = {
+        ["StrongholdDungeon_East1_SW"] = function()
+            return true
         end
     },
     ["StrongholdDungeon_East1_SE"] = {
         ["StrongholdDungeon_East1_SW"] = function()
-            return true
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        lofty_mount(),
+                        swimming()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        swimming(),
+                        summon_big_rock()
+                    })
+                })
+            })
         end,
         ["StrongholdDungeon_East2"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        swimming()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        swimming(),
+                        ground_switches()
+                    })
+                })
             })
         end,
         ["StrongholdDungeon_East1_NW"] = function()
             return
-            _AND({
-                double_jump(),
-                lofty_mount()
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump(),
+                    _OR({
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    double_jump(),
+                    _OR({
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock()
+                    })
+                })
             })
         end
     },
@@ -1524,19 +2340,49 @@ REGIONS = {
         ["StrongholdDungeon_East1_NE"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                summon_big_rock()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock()
+                    })
+                })
             })
         end,
         ["StrongholdDungeon_East3"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                summon_big_rock()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock()
+                    })
+                })
             })
         end
     },
@@ -1551,9 +2397,56 @@ REGIONS = {
         end,
         ["StrongholdDungeon_EastHidden"] = function()
             return
-            _AND({
-                double_jump(),
-                dark_rooms()
+            _OR({
+                _AND({
+                    tedious(),
+                    _OR({
+                        _AND({
+                            casual(),
+                            dark_rooms(),
+                            double_jump()
+                        }),
+                        _AND({
+                            advanced(),
+                            dark_rooms(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                summon_big_rock()
+                            })
+                        }),
+                        _AND({
+                            expert(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                }),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            _NOT(expert()),
+                            dark_rooms(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility()
+                            })
+                        }),
+                        _AND({
+                            expert(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility()
+                            })
+                        })
+                    })
+                })
             })
         end
     },
@@ -1581,7 +2474,11 @@ REGIONS = {
             return
             _AND({
                 double_jump(),
-                distant_ledges()
+                _OR({
+                    improved_flying(),
+                    dual_mobility(),
+                    lofty_mount()
+                })
             })
         end
     },
@@ -1595,23 +2492,78 @@ REGIONS = {
     },
     ["SnowyPeaks_East3"] = {
         ["SnowyPeaks_East2_Lower"] = function()
-            return true
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock()
+                    })
+                })
+            })
         end,
         ["SnowyPeaks_East2_Upper"] = function()
             return
-            _AND({
-                breakable_walls(),
-                _OR({
-                    double_jump(),
-                    improved_flying(),
-                    dual_mobility(),
-                    lofty_mount(),
-                    summon_big_rock()
+            _OR({
+                _AND({
+                    casual(),
+                    breakable_walls(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    breakable_walls(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock()
+                    })
                 })
             })
         end,
         ["SnowyPeaks_East4_Lower"] = function()
-            return true
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock()
+                    })
+                })
+            })
         end
     },
     ["SnowyPeaks_East4_Lower"] = {
@@ -1621,9 +2573,18 @@ REGIONS = {
         ["SnowyPeaks_East4_Middle"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    double_jump()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
             })
         end
     },
@@ -1672,8 +2633,21 @@ REGIONS = {
         ["SnowyPeaks_West2"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
         end
     },
@@ -1681,8 +2655,21 @@ REGIONS = {
         ["SnowyPeaks_West1_Upper"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        summon_big_rock()
+                    })
+                })
             })
         end,
         ["SnowyPeaks_SunPalaceEntrance"] = function()
@@ -1701,10 +2688,44 @@ REGIONS = {
         ["SnowyPeaks_West1_Lower"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                lofty_mount(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        lofty_mount(),
+                        dual_mobility()
+                    })
+                }),
+                _AND({
+                    advanced(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        lofty_mount(),
+                        dual_mobility(),
+                        _AND({
+                            flying(),
+                            summon_big_rock()
+                        })
+                    })
+                }),
+                _AND({
+                    expert(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        lofty_mount(),
+                        dual_mobility(),
+                        _AND({
+                            summon_big_rock(),
+                            _OR({
+                                flying(),
+                                mount()
+                            })
+                        })
+                    })
+                })
             })
         end,
         ["SnowyPeaks_SunPalaceEntrance_Access"] = function()
@@ -1748,8 +2769,23 @@ REGIONS = {
         ["SnowyPeaks_West2"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        summon_big_rock()
+                    })
+                })
             })
         end,
         ["SnowyPeaks_West4"] = function()
@@ -1766,19 +2802,36 @@ REGIONS = {
         ["SnowyPeaks_WestMountain1"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    double_jump()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
             })
         end,
         ["SnowyPeaks_West5"] = function()
             return
-            _AND({
-                diamond_blocks(),
-                _OR({
+            _OR({
+                _AND({
+                    casual(),
                     double_jump(),
-                    improved_flying(),
-                    dual_mobility()
+                    diamond_blocks()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    diamond_blocks(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
                 })
             })
         end
@@ -1821,21 +2874,34 @@ REGIONS = {
     ["SnowyPeaks_Lake_Lower"] = {
         ["SnowyPeaks_Lake_West"] = function()
             return
-            _OR({
-                swimming(),
-                _AND({
-                    heavy_blocks(),
-                    double_jump()
-                })
+            _AND({
+                warm_underwear(),
+                swimming()
             })
         end,
         ["SnowyPeaks_Lake_East"] = function()
             return
             _OR({
-                swimming(),
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    warm_underwear(),
+                    _OR({
+                        swimming(),
+                        double_jump()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    warm_underwear(),
+                    _OR({
+                        swimming(),
+                        double_jump(),
+                        _AND({
+                            ground_switches(),
+                            improved_flying()
+                        })
+                    })
+                })
             })
         end,
         ["SnowyPeaks_ChampionRoom"] = function()
@@ -1844,7 +2910,43 @@ REGIONS = {
     },
     ["SnowyPeaks_ChampionRoom"] = {
         ["SnowyPeaks_Lake_Lower"] = function()
-            return warm_underwear()
+            return
+            _OR({
+                _AND({
+                    tedious(),
+                    warm_underwear(),
+                    _OR({
+                        double_jump(),
+                        swimming(),
+                        flying(),
+                        improved_flying()
+                    })
+                }),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            warm_underwear(),
+                            _OR({
+                                double_jump(),
+                                swimming(),
+                                improved_flying()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            warm_underwear(),
+                            _OR({
+                                double_jump(),
+                                swimming(),
+                                ground_switches(),
+                                improved_flying()
+                            })
+                        })
+                    })
+                })
+            })
         end
     },
     ["SnowyPeaks_West5"] = {
@@ -1854,9 +2956,18 @@ REGIONS = {
         ["SnowyPeaks_ChampionRoom2"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    double_jump()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
             })
         end
     },
@@ -1901,8 +3012,7 @@ REGIONS = {
             _OR({
                 double_jump(),
                 improved_flying(),
-                dual_mobility(),
-                lofty_mount()
+                dual_mobility()
             })
         end,
         ["SnowyPeaks_WestMountain6"] = function()
@@ -1921,10 +3031,25 @@ REGIONS = {
         ["SnowyPeaks_WestMountain5"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock()
+                    })
+                })
             })
         end
     },
@@ -1944,7 +3069,26 @@ REGIONS = {
             return true
         end,
         ["SnowyPeaks_WestMountainSecret"] = function()
-            return double_jump()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump(),
+                    distant_ledges()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    double_jump(),
+                    _OR({
+                        summon_big_rock(),
+                        distant_ledges(),
+                        _AND({
+                            ground_switches(),
+                            secret_vision()
+                        })
+                    })
+                })
+            })
         end
     },
     ["SnowyPeaks_WestMountainSecret"] = {
@@ -1965,7 +3109,21 @@ REGIONS = {
             return true
         end,
         ["SnowyPeaks_EastMountainTop"] = function()
-            return double_jump()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
+            })
         end,
         ["SnowyPeaks_ClothesmakerHouse"] = function()
             return true
@@ -1986,7 +3144,21 @@ REGIONS = {
     },
     ["SnowyPeaks_EastMountain4"] = {
         ["SnowyPeaks_ClothesmakerHouse"] = function()
-            return double_jump()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
+            })
         end,
         ["SnowyPeaks_EastMountain2"] = function()
             return true
@@ -2001,15 +3173,58 @@ REGIONS = {
             _OR({
                 double_jump(),
                 improved_flying(),
-                dual_mobility(),
-                lofty_mount()
+                dual_mobility()
             })
         end,
         ["SnowyPeaks_HighChallenge"] = function()
             return
-            _AND({
-                distant_ledges(),
-                breakable_walls()
+            _OR({
+                _AND({
+                    tedious(),
+                    _OR({
+                        _AND({
+                            casual(),
+                            breakable_walls(),
+                            _OR({
+                                flying(),
+                                improved_flying(),
+                                dual_mobility()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            breakable_walls(),
+                            _OR({
+                                double_jump(),
+                                flying(),
+                                improved_flying(),
+                                dual_mobility()
+                            })
+                        })
+                    })
+                }),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            breakable_walls(),
+                            _OR({
+                                improved_flying(),
+                                dual_mobility()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            breakable_walls(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility()
+                            })
+                        })
+                    })
+                })
             })
         end,
         ["SnowyPeaks_East4_Upper"] = function()
@@ -2020,9 +3235,21 @@ REGIONS = {
         ["SnowyPeaks_EastMountain4"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges(),
-                ground_switches()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
         end,
         ["SnowyPeaks_EastMountain3_Upper"] = function()
@@ -2033,8 +3260,12 @@ REGIONS = {
         ["SnowyPeaks_EastMountain2"] = function()
             return
             _AND({
-                double_jump(),
-                breakable_walls()
+                breakable_walls(),
+                _OR({
+                    double_jump(),
+                    improved_flying(),
+                    dual_mobility()
+                })
             })
         end,
         ["SnowyPeaks_EastMountain3_Shortcut"] = function()
@@ -2055,6 +3286,20 @@ REGIONS = {
         end,
         ["SnowyPeaks_EastMountain3_Middle"] = function()
             return true
+        end,
+        ["SnowyPeaks_EastMountain3_Middle_Chest"] = function()
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
+            })
         end
     },
     ["SnowyPeaks_EastMountain3_Middle"] = {
@@ -2068,15 +3313,49 @@ REGIONS = {
         end,
         ["SnowyPeaks_EastMountain3_Shortcut"] = function()
             return
-            _AND({
-                snowy_peaks_east_mountain_3_shortcut(),
-                _OR({
+            _OR({
+                _AND({
                     double_jump(),
-                    improved_flying(),
-                    dual_mobility()
+                    ground_switches()
+                }),
+                _AND({
+                    snowy_peaks_east_mountain_3_shortcut(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
                 })
             })
         end,
+        ["SnowyPeaks_EastMountain3_Middle_Chest"] = function()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump(),
+                    _OR({
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                })
+            })
+        end,
+        ["SnowyPeaks_EastMountain3_Lower"] = function()
+            return true
+        end
+    },
+    ["SnowyPeaks_EastMountain3_Middle_Chest"] = {
         ["SnowyPeaks_EastMountain3_Lower"] = function()
             return true
         end
@@ -2129,18 +3408,31 @@ REGIONS = {
     },
     ["SunPalace_East2"] = {
         ["SunPalace_East1_West"] = function()
-            return true
+            return
+            _OR({
+                double_jump(),
+                distant_ledges(),
+                ground_switches()
+            })
         end,
         ["SunPalace_East3"] = function()
             return true
         end,
         ["SunPalace_EastChampion"] = function()
             return
-            _AND({
-                double_jump(),
-                _OR({
-                    secret_vision(),
-                    lofty_mount()
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump(),
+                    secret_vision()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    double_jump(),
+                    _OR({
+                        secret_vision(),
+                        lofty_mount()
+                    })
                 })
             })
         end
@@ -2160,37 +3452,42 @@ REGIONS = {
         ["SunPalace_East3"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
         end,
         ["SunPalace_Center"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
-        end
-    },
-    ["SunPalace_East5"] = {
-        ["SunPalace_EastSewers5"] = function()
-            return true
-        end,
-        ["SunPalace_East6"] = function()
-            return
-            _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
-            })
-        end
-    },
-    ["SunPalace_East6"] = {
-        ["SunPalace_East5"] = function()
-            return true
-        end,
-        ["SunPalace_East3"] = function()
-            return true
         end
     },
     ["SunPalace_Center"] = {
@@ -2212,7 +3509,10 @@ REGIONS = {
                     improved_flying(),
                     dual_mobility(),
                     lofty_mount(),
-                    summon_big_rock()
+                    _AND({
+                        _NOT(casual()),
+                        summon_big_rock()
+                    })
                 })
             })
         end,
@@ -2225,7 +3525,35 @@ REGIONS = {
                     improved_flying(),
                     dual_mobility(),
                     lofty_mount(),
-                    summon_big_rock()
+                    _AND({
+                        _NOT(casual()),
+                        summon_big_rock()
+                    })
+                })
+            })
+        end
+    },
+    ["SunPalace_West1"] = {
+        ["SunPalace_West2"] = function()
+            return true
+        end,
+        ["SnowyPeaks_SunPalaceEntrance_Access"] = function()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
                 })
             })
         end
@@ -2241,39 +3569,11 @@ REGIONS = {
             return sun_palace_west_shortcut()
         end
     },
-    ["SunPalace_West1"] = {
-        ["SunPalace_West2"] = function()
-            return true
-        end,
-        ["SnowyPeaks_SunPalaceEntrance_Access"] = function()
-            return true
-        end
-    },
     ["SunPalace_West3"] = {
         ["SunPalace_West2"] = function()
             return true
         end,
         ["SunPalace_Center"] = function()
-            return true
-        end
-    },
-    ["SunPalace_West4"] = {
-        ["SunPalace_West5"] = function()
-            return
-            _OR({
-                double_jump(),
-                distant_ledges()
-            })
-        end,
-        ["SunPalace_WestSewers2"] = function()
-            return true
-        end
-    },
-    ["SunPalace_West5"] = {
-        ["SunPalace_West2"] = function()
-            return true
-        end,
-        ["SunPalace_West4"] = function()
             return true
         end
     },
@@ -2285,11 +3585,48 @@ REGIONS = {
                 _AND({
                     _NOT(sun_palace_lower_water_1()),
                     _OR({
-                        swimming(),
-                        double_jump(),
-                        improved_flying(),
-                        dual_mobility(),
-                        summon_big_rock()
+                        _AND({
+                            tedious(),
+                            _OR({
+                                _AND({
+                                    casual(),
+                                    _OR({
+                                        double_jump(),
+                                        distant_ledges(),
+                                        swimming()
+                                    })
+                                }),
+                                _AND({
+                                    _NOT(casual()),
+                                    _OR({
+                                        double_jump(),
+                                        distant_ledges(),
+                                        swimming(),
+                                        ground_switches()
+                                    })
+                                })
+                            })
+                        }),
+                        _AND({
+                            _NOT(tedious()),
+                            _OR({
+                                _AND({
+                                    casual(),
+                                    _OR({
+                                        double_jump(),
+                                        swimming()
+                                    })
+                                }),
+                                _AND({
+                                    _NOT(casual()),
+                                    _OR({
+                                        double_jump(),
+                                        swimming(),
+                                        summon_big_rock()
+                                    })
+                                })
+                            })
+                        })
                     })
                 })
             })
@@ -2297,8 +3634,54 @@ REGIONS = {
         ["SunPalace_South2"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges()
+                sun_palace_lower_water_1(),
+                _AND({
+                    _NOT(sun_palace_lower_water_1()),
+                    _OR({
+                        _AND({
+                            tedious(),
+                            _OR({
+                                _AND({
+                                    casual(),
+                                    _OR({
+                                        double_jump(),
+                                        distant_ledges(),
+                                        swimming()
+                                    })
+                                }),
+                                _AND({
+                                    _NOT(casual()),
+                                    _OR({
+                                        double_jump(),
+                                        distant_ledges(),
+                                        swimming(),
+                                        ground_switches()
+                                    })
+                                })
+                            })
+                        }),
+                        _AND({
+                            _NOT(tedious()),
+                            _OR({
+                                _AND({
+                                    casual(),
+                                    _OR({
+                                        double_jump(),
+                                        swimming()
+                                    })
+                                }),
+                                _AND({
+                                    _NOT(casual()),
+                                    _OR({
+                                        double_jump(),
+                                        swimming(),
+                                        summon_big_rock()
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
             })
         end,
         ["SunPalace_South1_Lower"] = function()
@@ -2323,13 +3706,29 @@ REGIONS = {
         ["SunPalace_South1_Upper"] = function()
             return
             _OR({
-                _AND({
-                    _NOT(sun_palace_lower_water_1()),
-                    swimming()
-                }),
+                sun_palace_lower_water_2(),
+                swimming(),
                 _AND({
                     sun_palace_lower_water_1(),
-                    double_jump()
+                    _OR({
+                        tedious(),
+                        _AND({
+                            _NOT(tedious()),
+                            _OR({
+                                _AND({
+                                    casual(),
+                                    double_jump()
+                                }),
+                                _AND({
+                                    _NOT(casual()),
+                                    _OR({
+                                        double_jump(),
+                                        summon_big_rock()
+                                    })
+                                })
+                            })
+                        })
+                    })
                 })
             })
         end,
@@ -2337,11 +3736,26 @@ REGIONS = {
             return
             _OR({
                 _AND({
-                    _NOT(sun_palace_lower_water_2()),
-                    swimming()
+                    casual(),
+                    _OR({
+                        swimming(),
+                        sun_palace_lower_water_2(),
+                        double_jump()
+                    })
                 }),
-                sun_palace_lower_water_2(),
-                double_jump()
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        swimming(),
+                        sun_palace_lower_water_2(),
+                        double_jump(),
+                        summon_big_rock()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    tedious()
+                })
             })
         end,
         ["SunPalace_WestSewers1"] = function()
@@ -2401,13 +3815,70 @@ REGIONS = {
     },
     ["SunPalace_EastSewers2"] = {
         ["SunPalace_EastSewers1"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                sun_palace_lower_water_2(),
+                                double_jump(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                sun_palace_lower_water_2(),
+                                double_jump(),
+                                swimming(),
+                                summon_big_rock()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["SunPalace_EastSewers3"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                sun_palace_lower_water_2(),
+                                double_jump(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                sun_palace_lower_water_2(),
+                                double_jump(),
+                                swimming(),
+                                summon_big_rock()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["SunPalace_EastSewers6"] = function()
-            return true
+            return
+            _OR({
+                sun_palace_lower_water_2(),
+                _AND({
+                    expert(),
+                    swimming()
+                })
+            })
         end
     },
     ["SunPalace_EastSewers3"] = {
@@ -2434,6 +3905,27 @@ REGIONS = {
             return true
         end
     },
+    ["SunPalace_East5"] = {
+        ["SunPalace_EastSewers5"] = function()
+            return true
+        end,
+        ["SunPalace_East6"] = function()
+            return
+            _OR({
+                double_jump(),
+                improved_flying(),
+                dual_mobility()
+            })
+        end
+    },
+    ["SunPalace_East6"] = {
+        ["SunPalace_East5"] = function()
+            return true
+        end,
+        ["SunPalace_East3"] = function()
+            return true
+        end
+    },
     ["SunPalace_EastSewers6"] = {
         ["SunPalace_EastSewers2"] = function()
             return
@@ -2449,13 +3941,88 @@ REGIONS = {
     },
     ["SunPalace_WestSewers1"] = {
         ["SunPalace_South1_Lower"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["SunPalace_WestSewers3"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["SunPalace_WestSewers4"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
+            })
         end
     },
     ["SunPalace_WestSewers2"] = {
@@ -2465,11 +4032,32 @@ REGIONS = {
         ["SunPalace_West4"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount(),
-                summon_big_rock()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock(),
+                        _AND({
+                            grapple(),
+                            _OR({
+                                flying(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
             })
         end,
         ["SunPalace_WestSewersSecret"] = function()
@@ -2477,14 +4065,27 @@ REGIONS = {
         end,
         ["SunPalace_WestSewersSecret2"] = function()
             return
-            _AND({
-                grapple(),
-                _OR({
-                    double_jump(),
-                    improved_flying(),
-                    dual_mobility(),
-                    lofty_mount(),
-                    summon_big_rock()
+            _OR({
+                _AND({
+                    casual(),
+                    grapple(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    grapple(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        ground_switches()
+                    })
                 })
             })
         end
@@ -2494,21 +4095,12 @@ REGIONS = {
             return true
         end,
         ["SunPalace_WestSewers2"] = function()
-            return
-            _OR({
-                double_jump(),
-                swimming()
-            })
+            return true
         end
     },
     ["SunPalace_WestSewers4"] = {
         ["SunPalace_WestSewers1"] = function()
-            return
-            _OR({
-                double_jump(),
-                distant_ledges(),
-                ground_switches()
-            })
+            return true
         end
     },
     ["SunPalace_WestSewersSecret"] = {
@@ -2518,6 +4110,28 @@ REGIONS = {
     },
     ["SunPalace_WestSewersSecret2"] = {
         ["SunPalace_WestSewers2"] = function()
+            return true
+        end
+    },
+    ["SunPalace_West4"] = {
+        ["SunPalace_West5"] = function()
+            return
+            _OR({
+                double_jump(),
+                flying(),
+                improved_flying(),
+                dual_mobility()
+            })
+        end,
+        ["SunPalace_WestSewers2"] = function()
+            return true
+        end
+    },
+    ["SunPalace_West5"] = {
+        ["SunPalace_West2"] = function()
+            return true
+        end,
+        ["SunPalace_West4"] = function()
             return true
         end
     },
@@ -2549,10 +4163,60 @@ REGIONS = {
     },
     ["AncientWoods_West2_Upper"] = {
         ["AncientWoods_West1"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                summon_big_rock(),
+                                distant_ledges()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["AncientWoods_West3"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                summon_big_rock(),
+                                distant_ledges()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["AncientWoods_West2_Lower"] = function()
             return true
@@ -2562,11 +4226,23 @@ REGIONS = {
         ["AncientWoods_West2_Upper"] = function()
             return
             _OR({
-                double_jump(),
-                summon_big_rock(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        summon_big_rock(),
+                        distant_ledges()
+                    })
+                })
             })
         end,
         ["AncientWoods_West4"] = function()
@@ -2579,63 +4255,6 @@ REGIONS = {
     ["AncientWoods_West3"] = {
         ["AncientWoods_West2_Upper"] = function()
             return true
-        end
-    },
-    ["AncientWoods_West4"] = {
-        ["AncientWoods_West2_Lower"] = function()
-            return true
-        end,
-        ["AncientWoods_West5"] = function()
-            return true
-        end
-    },
-    ["AncientWoods_West5"] = {
-        ["AncientWoods_West4"] = function()
-            return true
-        end,
-        ["AncientWoods_Center4"] = function()
-            return true
-        end
-    },
-    ["AncientWoods_West6"] = {
-        ["AncientWoods_Center4"] = function()
-            return double_jump()
-        end,
-        ["AncientWoods_WestHidden2"] = function()
-            return
-            _AND({
-                impassible_vines(),
-                breakable_walls()
-            })
-        end,
-        ["AncientWoods_West7"] = function()
-            return
-            _AND({
-                double_jump(),
-                distant_ledges()
-            })
-        end
-    },
-    ["AncientWoods_West7"] = {
-        ["AncientWoods_West6"] = function()
-            return
-            _OR({
-                impassible_vines(),
-                _AND({
-                    double_jump(),
-                    distant_ledges()
-                })
-            })
-        end,
-        ["AncientWoods_WestDescent_Upper"] = function()
-            return
-            _OR({
-                impassible_vines(),
-                _AND({
-                    double_jump(),
-                    distant_ledges()
-                })
-            })
         end
     },
     ["AncientWoods_WestJumpPuzzle"] = {
@@ -2662,9 +4281,118 @@ REGIONS = {
             return true
         end
     },
+    ["AncientWoods_West4"] = {
+        ["AncientWoods_West2_Lower"] = function()
+            return true
+        end,
+        ["AncientWoods_West5"] = function()
+            return true
+        end
+    },
+    ["AncientWoods_West5"] = {
+        ["AncientWoods_West4"] = function()
+            return true
+        end,
+        ["AncientWoods_Center4"] = function()
+            return true
+        end
+    },
+    ["AncientWoods_Center4"] = {
+        ["AncientWoods_West5"] = function()
+            return true
+        end,
+        ["AncientWoods_West6"] = function()
+            return true
+        end,
+        ["AncientWoods_Center1"] = function()
+            return true
+        end,
+        ["AncientWoods_DoorPuzzle"] = function()
+            return true
+        end
+    },
+    ["AncientWoods_DoorPuzzle"] = {
+        ["AncientWoods_Center4"] = function()
+            return true
+        end
+    },
+    ["AncientWoods_West6"] = {
+        ["AncientWoods_Center4"] = function()
+            return
+            _OR({
+                double_jump(),
+                improved_flying(),
+                dual_mobility()
+            })
+        end,
+        ["AncientWoods_WestHidden2"] = function()
+            return
+            _AND({
+                impassible_vines(),
+                breakable_walls()
+            })
+        end,
+        ["AncientWoods_West7"] = function()
+            return true
+        end
+    },
     ["AncientWoods_WestHidden2"] = {
         ["AncientWoods_West6"] = function()
             return true
+        end
+    },
+    ["AncientWoods_West7"] = {
+        ["AncientWoods_West6"] = function()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    _OR({
+                        impassible_vines(),
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        impassible_vines(),
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock()
+                    })
+                })
+            })
+        end,
+        ["AncientWoods_WestDescent_Upper"] = function()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    _OR({
+                        impassible_vines(),
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        impassible_vines(),
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock()
+                    })
+                })
+            })
         end
     },
     ["AncientWoods_WestDescent_Upper"] = {
@@ -2681,14 +4409,36 @@ REGIONS = {
             _OR({
                 double_jump(),
                 improved_flying(),
-                dual_mobility()
+                dual_mobility(),
+                lofty_mount()
             })
         end,
         ["AncientWoods_WestDescent_Lower"] = function()
             return true
         end,
         ["AncientWoods_SouthHidden1_West"] = function()
-            return breakable_walls()
+            return
+            _OR({
+                _AND({
+                    tedious(),
+                    breakable_walls(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(tedious()),
+                    breakable_walls(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
+            })
         end
     },
     ["AncientWoods_WestDescent_Lower"] = {
@@ -2712,18 +4462,30 @@ REGIONS = {
             return true
         end,
         ["StrongholdDungeon_East4"] = function()
-            return true
+            return
+            _OR({
+                double_jump(),
+                flying(),
+                improved_flying(),
+                dual_mobility()
+            })
         end
     },
     ["AncientWoods_WestDescent3"] = {
         ["AncientWoods_WestDescent_Lower"] = function()
-            return true
+            return
+            _OR({
+                double_jump(),
+                flying(),
+                improved_flying(),
+                dual_mobility()
+            })
         end,
         ["AncientWoods_DarkRoom2"] = function()
             return true
         end,
         ["AncientWoods_DungeonEntrance"] = function()
-            return double_jump()
+            return true
         end
     },
     ["AncientWoods_DungeonEntrance"] = {
@@ -2750,6 +4512,19 @@ REGIONS = {
             return true
         end
     },
+    ["AncientWoods_Center3"] = {
+        ["AncientWoods_Center1"] = function()
+            return true
+        end,
+        ["AncientWoods_TreeOfEvolution"] = function()
+            return true
+        end
+    },
+    ["AncientWoods_TreeOfEvolution"] = {
+        ["AncientWoods_Center3"] = function()
+            return true
+        end
+    },
     ["AncientWoods_Center2"] = {
         ["AncientWoods_Center1"] = function()
             return true
@@ -2762,28 +4537,6 @@ REGIONS = {
             })
         end
     },
-    ["AncientWoods_Center3"] = {
-        ["AncientWoods_Center1"] = function()
-            return true
-        end,
-        ["AncientWoods_TreeOfEvolution"] = function()
-            return true
-        end
-    },
-    ["AncientWoods_Center4"] = {
-        ["AncientWoods_West5"] = function()
-            return true
-        end,
-        ["AncientWoods_West6"] = function()
-            return true
-        end,
-        ["AncientWoods_Center1"] = function()
-            return true
-        end,
-        ["AncientWoods_DoorPuzzle"] = function()
-            return true
-        end
-    },
     ["AncientWoods_Center5"] = {
         ["AncientWoods_Center2"] = function()
             return
@@ -2792,13 +4545,37 @@ REGIONS = {
                 no_locked_doors()
             })
         end,
-        ["AncientWoods_Center6"] = function()
+        ["AncientWoods_Center6_Lower"] = function()
             return true
         end
     },
-    ["AncientWoods_Center6"] = {
+    ["AncientWoods_Center6_Lower"] = {
         ["AncientWoods_Center5"] = function()
             return true
+        end,
+        ["AncientWoods_Center6_Upper"] = function()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump(),
+                    _OR({
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    double_jump(),
+                    _OR({
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock()
+                    })
+                })
+            })
         end,
         ["AncientWoods_Center7"] = function()
             return true
@@ -2807,9 +4584,24 @@ REGIONS = {
             return true
         end
     },
-    ["AncientWoods_Center7"] = {
-        ["AncientWoods_Center6"] = function()
+    ["AncientWoods_Center6_Upper"] = {
+        ["AncientWoods_Center6_Lower"] = function()
             return true
+        end,
+        ["AncientWoods_Center7"] = function()
+            return true
+        end
+    },
+    ["AncientWoods_Center7"] = {
+        ["AncientWoods_Center6_Lower"] = function()
+            return true
+        end,
+        ["AncientWoods_Center6_Upper"] = function()
+            return
+            _OR({
+                double_jump(),
+                distant_ledges()
+            })
         end,
         ["AncientWoods_East1"] = function()
             return true
@@ -2842,14 +4634,6 @@ REGIONS = {
             })
         end
     },
-    ["AncientWoods_North3"] = {
-        ["AncientWoods_North2"] = function()
-            return true
-        end,
-        ["AncientWoods_East1_Shortcut"] = function()
-            return true
-        end
-    },
     ["AncientWoods_North4"] = {
         ["AncientWoods_North1"] = function()
             return true
@@ -2860,6 +4644,14 @@ REGIONS = {
     },
     ["AncientWoods_North5"] = {
         ["AncientWoods_North4"] = function()
+            return true
+        end
+    },
+    ["AncientWoods_North3"] = {
+        ["AncientWoods_North2"] = function()
+            return true
+        end,
+        ["AncientWoods_East1_Shortcut"] = function()
             return true
         end
     },
@@ -2904,12 +4696,25 @@ REGIONS = {
         end,
         ["AncientWoods_East4"] = function()
             return
-            _AND({
-                double_jump(),
-                _OR({
-                    improved_flying(),
-                    dual_mobility(),
-                    lofty_mount()
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump(),
+                    _OR({
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    double_jump(),
+                    _OR({
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock()
+                    })
                 })
             })
         end,
@@ -2927,7 +4732,12 @@ REGIONS = {
             return true
         end,
         ["AncientWoods_South2"] = function()
-            return true
+            return
+            _OR({
+                double_jump(),
+                distant_ledges(),
+                ground_switches()
+            })
         end,
         ["AncientWoods_DarkRoom"] = function()
             return true
@@ -2940,12 +4750,36 @@ REGIONS = {
         ["AncientWoods_South1"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges()
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
             })
         end,
         ["MagmaChamber_North5_Upper"] = function()
             return ancient_woods_magma_chamber_shortcut()
+        end
+    },
+    ["AncientWoods_DarkRoom"] = {
+        ["AncientWoods_South1"] = function()
+            return true
         end
     },
     ["AncientWoods_South2"] = {
@@ -2975,82 +4809,17 @@ REGIONS = {
             return true
         end
     },
+    ["AncientWoods_TorchesRoom"] = {
+        ["AncientWoods_South2"] = function()
+            return true
+        end
+    },
     ["AncientWoods_South4"] = {
         ["AncientWoods_South3"] = function()
             return true
         end,
         ["AncientWoods_SouthHidden4"] = function()
             return ancient_woods_brutus_access()
-        end
-    },
-    ["AncientWoods_DarkRoom"] = {
-        ["AncientWoods_South1"] = function()
-            return true
-        end
-    },
-    ["AncientWoods_TorchesRoom"] = {
-        ["AncientWoods_South2"] = function()
-            return true
-        end
-    },
-    ["AncientWoods_SouthHidden1_West"] = {
-        ["AncientWoods_WestDescent_Middle"] = function()
-            return breakable_walls()
-        end,
-        ["AncientWoods_SouthHidden1_East"] = function()
-            return
-            _AND({
-                _OR({
-                    torches(),
-                    dark_rooms()
-                }),
-                double_jump(),
-                _OR({
-                    improved_flying(),
-                    dual_mobility(),
-                    lofty_mount()
-                })
-            })
-        end
-    },
-    ["AncientWoods_SouthHidden1_East"] = {
-        ["AncientWoods_SouthHidden2"] = function()
-            return true
-        end,
-        ["AncientWoods_SouthHidden1_West"] = function()
-            return true
-        end
-    },
-    ["AncientWoods_SouthHidden2"] = {
-        ["AncientWoods_SouthHidden1_East"] = function()
-            return
-            _AND({
-                dark_rooms(),
-                double_jump()
-            })
-        end,
-        ["AncientWoods_SouthHidden3"] = function()
-            return
-            _AND({
-                dark_rooms(),
-                double_jump()
-            })
-        end
-    },
-    ["AncientWoods_SouthHidden3"] = {
-        ["AncientWoods_SouthHidden2"] = function()
-            return
-            _AND({
-                dark_rooms(),
-                double_jump()
-            })
-        end,
-        ["AncientWoods_SouthChampion"] = function()
-            return
-            _AND({
-                dark_rooms(),
-                double_jump()
-            })
         end
     },
     ["AncientWoods_SouthHidden4"] = {
@@ -3078,14 +4847,79 @@ REGIONS = {
             return true
         end
     },
-    ["AncientWoods_TreeOfEvolution"] = {
-        ["AncientWoods_Center3"] = function()
-            return true
+    ["AncientWoods_SouthHidden3"] = {
+        ["AncientWoods_SouthHidden2"] = function()
+            return
+            _AND({
+                dark_rooms(),
+                double_jump()
+            })
+        end,
+        ["AncientWoods_SouthChampion"] = function()
+            return
+            _AND({
+                dark_rooms(),
+                double_jump()
+            })
         end
     },
-    ["AncientWoods_DoorPuzzle"] = {
-        ["AncientWoods_Center4"] = function()
-            return true
+    ["AncientWoods_SouthHidden2"] = {
+        ["AncientWoods_SouthHidden1_East"] = function()
+            return
+            _AND({
+                dark_rooms(),
+                double_jump()
+            })
+        end,
+        ["AncientWoods_SouthHidden3"] = function()
+            return
+            _AND({
+                dark_rooms(),
+                double_jump()
+            })
+        end
+    },
+    ["AncientWoods_SouthHidden1_East"] = {
+        ["AncientWoods_SouthHidden2"] = function()
+            return
+            _OR({
+                torches(),
+                dark_rooms()
+            })
+        end,
+        ["AncientWoods_SouthHidden1_West"] = function()
+            return
+            _OR({
+                torches(),
+                dark_rooms()
+            })
+        end
+    },
+    ["AncientWoods_SouthHidden1_West"] = {
+        ["AncientWoods_WestDescent_Middle"] = function()
+            return
+            _AND({
+                breakable_walls(),
+                _OR({
+                    torches(),
+                    dark_rooms()
+                })
+            })
+        end,
+        ["AncientWoods_SouthHidden1_East"] = function()
+            return
+            _AND({
+                _OR({
+                    torches(),
+                    dark_rooms()
+                }),
+                double_jump(),
+                _OR({
+                    improved_flying(),
+                    dual_mobility(),
+                    lofty_mount()
+                })
+            })
         end
     },
     ["HorizonBeach_Farm"] = {
@@ -3136,9 +4970,23 @@ REGIONS = {
         ["HorizonBeach_West3"] = function()
             return
             _OR({
-                double_jump(),
-                swimming(),
-                distant_ledges()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        swimming(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        swimming(),
+                        distant_ledges(),
+                        summon_big_rock()
+                    })
+                })
             })
         end,
         ["HorizonBeach_West5"] = function()
@@ -3223,9 +5071,13 @@ REGIONS = {
             return true
         end,
         ["HorizonBeach_East1"] = function()
-            return swimming()
+            return
+            _OR({
+                swimming(),
+                double_jump()
+            })
         end,
-        ["HorizonBeach_East3"] = function()
+        ["HorizonBeach_East3_West"] = function()
             return
             _OR({
                 improved_swimming(),
@@ -3240,9 +5092,28 @@ REGIONS = {
         ["HorizonBeach_East2_Upper"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        _AND({
+                            ground_switches(),
+                            flying()
+                        })
+                    })
+                })
             })
         end
     },
@@ -3253,21 +5124,105 @@ REGIONS = {
         ["HorizonBeach_East6"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                })
             })
         end,
         ["HorizonBeach_East4"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                })
             })
         end,
         ["HorizonBeach_East2_Middle"] = function()
             return true
+        end,
+        ["HorizonBeach_East2_Middle_Ledge"] = function()
+            return
+            _OR({
+                _AND({
+                    tedious(),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount()
+                            })
+                        })
+                    })
+                }),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            swimming(),
+                            _OR({
+                                double_jump(),
+                                improved_flying()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                swimming(),
+                                _AND({
+                                    double_jump(),
+                                    ground_switches()
+                                })
+                            }),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount()
+                            })
+                        })
+                    })
+                })
+            })
         end
     },
     ["HorizonBeach_East2_Middle"] = {
@@ -3284,21 +5239,88 @@ REGIONS = {
         end,
         ["HorizonBeach_East2_Lower"] = function()
             return true
+        end,
+        ["HorizonBeach_East2_Middle_Ledge"] = function()
+            return
+            _AND({
+                double_jump(),
+                _OR({
+                    improved_flying(),
+                    dual_mobility(),
+                    lofty_mount()
+                })
+            })
+        end
+    },
+    ["HorizonBeach_East2_Middle_Ledge"] = {
+        ["HorizonBeach_East2_Middle"] = function()
+            return true
         end
     },
     ["HorizonBeach_East2_Lower"] = {
-        ["HorizonBeach_East3"] = function()
-            return true
+        ["HorizonBeach_East3_East"] = function()
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                swimming(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["HorizonBeach_EastHidden"] = function()
             return narrow_corridors()
         end,
         ["HorizonBeach_East2_Middle"] = function()
-            return swimming()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    swimming()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        swimming(),
+                        _AND({
+                            double_jump(),
+                            ground_switches()
+                        })
+                    })
+                })
+            })
         end
     },
-    ["HorizonBeach_East3"] = {
+    ["HorizonBeach_East3_East"] = {
         ["HorizonBeach_East2"] = function()
+            return
+            _OR({
+                improved_swimming(),
+                dual_mobility()
+            })
+        end,
+        ["HorizonBeach_East3_West"] = function()
+            return true
+        end
+    },
+    ["HorizonBeach_East3_West"] = {
+        ["HorizonBeach_East3_East"] = function()
             return
             _OR({
                 improved_swimming(),
@@ -3314,8 +5336,7 @@ REGIONS = {
             return
             _OR({
                 double_jump(),
-                improved_flying(),
-                dual_mobility()
+                distant_ledges()
             })
         end,
         ["HorizonBeach_East5"] = function()
@@ -3339,7 +5360,26 @@ REGIONS = {
     },
     ["HorizonBeach_Fisher"] = {
         ["HorizonBeach_East2_Middle"] = function()
-            return true
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    _OR({
+                        swimming(),
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        swimming(),
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
+            })
         end
     },
     ["HorizonBeach_EastHidden"] = {
@@ -3365,13 +5405,61 @@ REGIONS = {
     },
     ["HorizonBeach_Labyrinth"] = {
         ["HorizonBeach_Center1"] = function()
-            return swimming()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    swimming()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        swimming(),
+                        _AND({
+                            double_jump(),
+                            summon_big_rock()
+                        })
+                    })
+                })
+            })
         end,
         ["HorizonBeach_Center3"] = function()
-            return swimming()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    swimming()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        swimming(),
+                        _AND({
+                            double_jump(),
+                            summon_big_rock()
+                        })
+                    })
+                })
+            })
         end,
         ["HorizonBeach_South1"] = function()
-            return swimming()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    swimming()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        swimming(),
+                        _AND({
+                            double_jump(),
+                            summon_big_rock()
+                        })
+                    })
+                })
+            })
         end
     },
     ["HorizonBeach_South1"] = {
@@ -3384,16 +5472,102 @@ REGIONS = {
     },
     ["HorizonBeach_South2"] = {
         ["HorizonBeach_South1"] = function()
-            return swimming()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        swimming()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        summon_big_rock(),
+                        swimming()
+                    })
+                })
+            })
         end,
         ["HorizonBeach_South3"] = function()
-            return swimming()
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                ground_switches(),
+                                swimming()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["HorizonBeach_South6"] = function()
-            return swimming()
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                ground_switches(),
+                                swimming()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["HorizonBeach_TreasureCaveEntrance"] = function()
-            return swimming()
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                ground_switches(),
+                                swimming()
+                            })
+                        })
+                    })
+                })
+            })
         end
     },
     ["HorizonBeach_South3"] = {
@@ -3409,15 +5583,23 @@ REGIONS = {
             return true
         end,
         ["HorizonBeach_South5"] = function()
-            return swimming()
+            return
+            _OR({
+                swimming(),
+                _AND({
+                    _NOT(casual()),
+                    double_jump(),
+                    ground_switches()
+                })
+            })
         end
     },
     ["HorizonBeach_South5"] = {
         ["HorizonBeach_South4"] = function()
-            return swimming()
+            return true
         end,
         ["HorizonBeach_Pit"] = function()
-            return swimming()
+            return true
         end
     },
     ["HorizonBeach_South6"] = {
@@ -3460,18 +5642,17 @@ REGIONS = {
             return swimming()
         end,
         ["HorizonBeach_TreasureCave3"] = function()
-            return true
+            return swimming()
         end,
         ["HorizonBeach_TreasureCave4"] = function()
-            return
-            _OR({
-                double_jump(),
-                ground_switches(),
-                distant_ledges()
-            })
+            return swimming()
         end,
         ["HorizonBeach_TreasureCave5"] = function()
-            return swimming()
+            return
+            _OR({
+                swimming(),
+                double_jump()
+            })
         end,
         ["HorizonBeach_FWEntrance1"] = function()
             return true
@@ -3511,7 +5692,15 @@ REGIONS = {
             return true
         end,
         ["HorizonBeach_FWEntrance2"] = function()
-            return true
+            return
+            _OR({
+                swimming(),
+                _AND({
+                    _NOT(casual()),
+                    double_jump(),
+                    summon_big_rock()
+                })
+            })
         end
     },
     ["HorizonBeach_FWEntrance2"] = {
@@ -3589,12 +5778,7 @@ REGIONS = {
             return true
         end,
         ["MagmaChamber_West4_Lower"] = function()
-            return
-            _OR({
-                double_jump(),
-                distant_ledges(),
-                ground_switches()
-            })
+            return true
         end,
         ["MagmaChamber_Center1"] = function()
             return true
@@ -3606,10 +5790,13 @@ REGIONS = {
         end,
         ["MagmaChamber_West4_Ledge"] = function()
             return
-            _OR({
+            _AND({
                 double_jump(),
-                improved_flying(),
-                dual_mobility()
+                _OR({
+                    improved_flying(),
+                    dual_mobility(),
+                    lofty_mount()
+                })
             })
         end,
         ["MagmaChamber_West4_Upper"] = function()
@@ -3633,6 +5820,28 @@ REGIONS = {
         end,
         ["MagmaChamber_West5"] = function()
             return true
+        end,
+        ["MagmaChamber_West4_Ledge"] = function()
+            return
+            _OR({
+                _AND({
+                    tedious(),
+                    _OR({
+                        double_jump(),
+                        flying(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                }),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
+            })
         end
     },
     ["MagmaChamber_West5"] = {
@@ -3645,13 +5854,82 @@ REGIONS = {
     },
     ["MagmaChamber_West6_Upper"] = {
         ["MagmaChamber_West1_East"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["MagmaChamber_West6_Lower"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["MagmaChamber_West2"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
+            })
         end
     },
     ["MagmaChamber_West6_Lower"] = {
@@ -3695,7 +5973,7 @@ REGIONS = {
         ["MagmaChamber_North1"] = function()
             return true
         end,
-        ["MagmaChamber_North5"] = function()
+        ["MagmaChamber_North5_Lower"] = function()
             return true
         end,
         ["MagmaChamber_North8_East"] = function()
@@ -3714,9 +5992,21 @@ REGIONS = {
         ["MagmaChamber_North5_Upper"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges(),
-                ground_switches()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
         end,
         ["MagmaChamber_North2"] = function()
@@ -3820,7 +6110,9 @@ REGIONS = {
             return
             _OR({
                 double_jump(),
-                distant_ledges()
+                flying(),
+                improved_flying(),
+                dual_mobility()
             })
         end
     },
@@ -3834,18 +6126,76 @@ REGIONS = {
         ["MagmaChamber_Center2_Upper"] = function()
             return
             _OR({
-                double_jump(),
-                ground_switches(),
-                distant_ledges()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
         end
     },
     ["MagmaChamber_Center2_Upper"] = {
         ["MagmaChamber_Center3"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["MagmaChamber_Center4_West"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["MagmaChamber_Center2_Middle"] = function()
             return true
@@ -3902,10 +6252,25 @@ REGIONS = {
         ["MagmaChamber_Center6_Upper"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        summon_big_rock(),
+                        mount()
+                    })
+                })
             })
         end
     },
@@ -3930,9 +6295,21 @@ REGIONS = {
         ["MagmaChamber_North8_West"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges(),
-                ground_switches()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
         end
     },
@@ -3948,22 +6325,49 @@ REGIONS = {
         ["MagmaChamber_Center8"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
         end,
         ["MagmaChamber_Center10"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
         end,
         ["MagmaChamber_Center9_Middle"] = function()
             return
             _OR({
                 double_jump(),
-                distant_ledges()
+                improved_flying(),
+                dual_mobility()
             })
         end
     },
@@ -3981,10 +6385,23 @@ REGIONS = {
         end,
         ["MagmaChamber_PuppyRoom"] = function()
             return
-            _OR({
-                two_magma_chamber_keys(),
-                minimal_locked_doors(),
-                no_locked_doors()
+            _AND({
+                _OR({
+                    two_magma_chamber_keys(),
+                    minimal_locked_doors(),
+                    no_locked_doors()
+                }),
+                _OR({
+                    tedious(),
+                    _AND({
+                        _NOT(tedious()),
+                        _OR({
+                            double_jump(),
+                            improved_flying(),
+                            dual_mobility()
+                        })
+                    })
+                })
             })
         end
     },
@@ -4006,16 +6423,29 @@ REGIONS = {
                 double_jump(),
                 _OR({
                     improved_flying(),
-                    dual_mobility()
+                    dual_mobility(),
+                    lofty_mount()
                 })
             })
         end,
         ["MagmaChamber_Center9_Lower"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges(),
-                ground_switches()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
         end
     },
@@ -4064,14 +6494,83 @@ REGIONS = {
             return true
         end,
         ["MagmaChamber_Center10"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount(),
+                                summon_big_rock()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["MagmaChamber_Champion2"] = function()
             return
             _OR({
-                double_jump(),
-                ground_switches(),
-                distant_ledges()
+                _AND({
+                    tedious(),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches(),
+                                mount()
+                            })
+                        })
+                    })
+                }),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount(),
+                                summon_big_rock()
+                            })
+                        })
+                    })
+                })
             })
         end
     },
@@ -4088,16 +6587,43 @@ REGIONS = {
         ["MagmaChamber_South6_East"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges(),
-                mount()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches(),
+                        mount()
+                    })
+                })
             })
         end,
         ["MagmaChamber_South7_West"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches(),
+                        mount()
+                    })
+                })
             })
         end
     },
@@ -4171,7 +6697,9 @@ REGIONS = {
             return
             _OR({
                 double_jump(),
-                distant_ledges()
+                flying(),
+                improved_flying(),
+                dual_mobility()
             })
         end
     },
@@ -4183,7 +6711,9 @@ REGIONS = {
             return
             _OR({
                 double_jump(),
-                distant_ledges()
+                flying(),
+                improved_flying(),
+                dual_mobility()
             })
         end
     },
@@ -4192,7 +6722,7 @@ REGIONS = {
             return forgotten_world_to_magma_chamber_shortcut()
         end,
         ["ForgottenWorld_MCPath3"] = function()
-            return forgotten_world_to_magma_chamber_shortcut()
+            return true
         end
     },
     ["MagmaChamber_AlchemistLab_West"] = {
@@ -4407,13 +6937,10 @@ REGIONS = {
         end,
         ["Underworld_EastCatacomb9"] = function()
             return
-            _AND({
-                heavy_blocks(),
-                _OR({
-                    double_jump(),
-                    improved_flying(),
-                    dual_mobility()
-                })
+            _OR({
+                double_jump(),
+                improved_flying(),
+                dual_mobility()
             })
         end
     },
@@ -4431,7 +6958,7 @@ REGIONS = {
         ["Underworld_Center2"] = function()
             return true
         end,
-        ["Underworld_EastCatacomb2"] = function()
+        ["Underworld_EastCatacomb3"] = function()
             return true
         end
     },
@@ -4447,13 +6974,31 @@ REGIONS = {
         end,
         ["Underworld_WestCatacomb6"] = function()
             return
-            _AND({
-                double_jump(),
-                grapple(),
-                _OR({
-                    improved_flying(),
-                    dual_mobility(),
-                    lofty_mount()
+            _OR({
+                _AND({
+                    _NOT(expert()),
+                    double_jump(),
+                    grapple(),
+                    _OR({
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    expert(),
+                    grapple(),
+                    _OR({
+                        improved_flying(),
+                        dual_mobility(),
+                        _AND({
+                            double_jump(),
+                            _OR({
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
                 })
             })
         end
@@ -4462,10 +7007,25 @@ REGIONS = {
         ["Underworld_Center2"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                summon_big_rock()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock()
+                    })
+                })
             })
         end,
         ["Underworld_Center4"] = function()
@@ -4498,15 +7058,7 @@ REGIONS = {
     },
     ["Underworld_WestCatacomb1"] = {
         ["Underworld_WestCatacomb2"] = function()
-            return
-            _AND({
-                double_jump(),
-                _OR({
-                    improved_flying(),
-                    dual_mobility(),
-                    lofty_mount()
-                })
-            })
+            return true
         end,
         ["Underworld_WestCatacomb3"] = function()
             return true
@@ -4521,16 +7073,23 @@ REGIONS = {
             return
             _OR({
                 double_jump(),
-                ground_switches(),
-                distant_ledges()
+                distant_ledges(),
+                _AND({
+                    _NOT(casual()),
+                    ground_switches()
+                })
             })
         end,
         ["Underworld_WestCatacomb5_West"] = function()
             return
-            _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+            _AND({
+                underworld_west_catacomb_4_access(),
+                _OR({
+                    double_jump(),
+                    improved_flying(),
+                    dual_mobility(),
+                    lofty_mount()
+                })
             })
         end,
         ["Underworld_WestCatacomb7_Shortcut"] = function()
@@ -4539,9 +7098,17 @@ REGIONS = {
         ["Underworld_WestCatacomb10"] = function()
             return
             _AND({
-                double_jump(),
-                grapple(),
-                underworld_west_catacomb_roof_access()
+                breakable_walls(),
+                _OR({
+                    _AND({
+                        double_jump(),
+                        grapple()
+                    }),
+                    _AND({
+                        underworld_west_catacomb_center_entrance(),
+                        underworld_west_catacomb_4_shortcut()
+                    })
+                })
             })
         end
     },
@@ -4551,12 +7118,37 @@ REGIONS = {
         end,
         ["Underworld_WestCatacomb1"] = function()
             return
-            _AND({
-                double_jump(),
-                _OR({
-                    improved_flying(),
-                    dual_mobility(),
-                    lofty_mount()
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump(),
+                    _OR({
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    advanced(),
+                    double_jump(),
+                    _OR({
+                        ground_switches(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    expert(),
+                    _OR({
+                        improved_flying(),
+                        dual_mobility(),
+                        _AND({
+                            double_jump(),
+                            _OR({
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
                 })
             })
         end
@@ -4567,7 +7159,8 @@ REGIONS = {
             _OR({
                 double_jump(),
                 improved_flying(),
-                dual_mobility()
+                dual_mobility(),
+                lofty_mount()
             })
         end,
         ["Underworld_WestCatacomb4_West"] = function()
@@ -4575,10 +7168,17 @@ REGIONS = {
         end,
         ["Underworld_West1"] = function()
             return
-            _AND({
-                summon_big_rock(),
-                double_jump(),
-                grapple()
+            _OR({
+                _AND({
+                    summon_big_rock(),
+                    double_jump(),
+                    grapple()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    double_jump(),
+                    lofty_mount()
+                })
             })
         end
     },
@@ -4592,8 +7192,8 @@ REGIONS = {
                 underworld_west_catacomb_4_access(),
                 _OR({
                     double_jump(),
-                    ground_switches(),
-                    distant_ledges()
+                    improved_flying(),
+                    dual_mobility()
                 })
             })
         end
@@ -4643,8 +7243,17 @@ REGIONS = {
         ["Underworld_WestCatacomb9_ExteriorEast"] = function()
             return
             _AND({
-                double_jump(),
-                grapple()
+                grapple(),
+                _OR({
+                    double_jump(),
+                    improved_flying(),
+                    dual_mobility(),
+                    lofty_mount(),
+                    _AND({
+                        _NOT(casual()),
+                        summon_big_rock()
+                    })
+                })
             })
         end
     },
@@ -4653,6 +7262,19 @@ REGIONS = {
             return underworld_west_catacomb_7_shortcut()
         end,
         ["Underworld_WestCatacomb8"] = function()
+            return
+            _OR({
+                double_jump(),
+                improved_flying(),
+                dual_mobility(),
+                lofty_mount(),
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
+            })
+        end,
+        ["Underworld_WestCatacomb5_West"] = function()
             return true
         end
     },
@@ -4682,7 +7304,11 @@ REGIONS = {
             return true
         end,
         ["Underworld_WestCatacomb9_Roof"] = function()
-            return underworld_west_catacomb_roof_access()
+            return
+            _AND({
+                underworld_west_catacomb_roof_access(),
+                grapple()
+            })
         end
     },
     ["Underworld_WestCatacomb9_Roof"] = {
@@ -4711,7 +7337,14 @@ REGIONS = {
             return true
         end,
         ["SunPalace_EastSewers6"] = function()
-            return underworld_to_sun_palace_shortcut()
+            return
+            _AND({
+                underworld_to_sun_palace_shortcut(),
+                _OR({
+                    double_jump(),
+                    distant_ledges()
+                })
+            })
         end
     },
     ["Underworld_West2"] = {
@@ -4719,12 +7352,7 @@ REGIONS = {
             return true
         end,
         ["Underworld_West3"] = function()
-            return
-            _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
-            })
+            return true
         end
     },
     ["Underworld_West3"] = {
@@ -4756,7 +7384,13 @@ REGIONS = {
     },
     ["Underworld_West6"] = {
         ["Underworld_West4"] = function()
-            return true
+            return
+            _OR({
+                double_jump(),
+                improved_flying(),
+                dual_mobility(),
+                lofty_mount()
+            })
         end,
         ["Underworld_West5"] = function()
             return true
@@ -4767,7 +7401,11 @@ REGIONS = {
             return
             _OR({
                 double_jump(),
-                distant_ledges()
+                distant_ledges(),
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end,
         ["MysticalWorkshop_South6"] = function()
@@ -4787,10 +7425,56 @@ REGIONS = {
     },
     ["MysticalWorkshop_South3_Middle"] = {
         ["MysticalWorkshop_South2"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["MysticalWorkshop_South4"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["MysticalWorkshop_South3_Upper"] = function()
             return
@@ -4798,7 +7482,11 @@ REGIONS = {
                 double_jump(),
                 improved_flying(),
                 dual_mobility(),
-                summon_big_rock()
+                lofty_mount(),
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end,
         ["MysticalWorkshop_South3_Lower"] = function()
@@ -4812,9 +7500,21 @@ REGIONS = {
         ["MysticalWorkshop_South3_Middle"] = function()
             return
             _OR({
-                double_jump(),
-                distant_ledges(),
-                ground_switches()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
         end
     },
@@ -4828,7 +7528,30 @@ REGIONS = {
     },
     ["MysticalWorkshop_South4"] = {
         ["MysticalWorkshop_South3_Lower"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                distant_ledges()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                distant_ledges(),
+                                ground_switches()
+                            })
+                        })
+                    })
+                })
+            })
         end
     },
     ["MysticalWorkshop_South5"] = {
@@ -4845,10 +7568,25 @@ REGIONS = {
         ["MysticalWorkshop_Center1_Upper"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                summon_big_rock()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        summon_big_rock()
+                    })
+                })
             })
         end,
         ["MysticalWorkshop_Center2"] = function()
@@ -4863,10 +7601,64 @@ REGIONS = {
             return true
         end,
         ["MysticalWorkshop_Center4"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount(),
+                                summon_big_rock()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["MysticalWorkshop_West3_Access"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility(),
+                                lofty_mount(),
+                                summon_big_rock()
+                            })
+                        })
+                    })
+                })
+            })
         end
     },
     ["MysticalWorkshop_Center2"] = {
@@ -4878,14 +7670,18 @@ REGIONS = {
         end
     },
     ["MysticalWorkshop_Center3"] = {
-        ["MysticalWorkshop_Center8"] = function()
+        ["MysticalWorkshop_Center8_Upper"] = function()
             return true
         end,
         ["MysticalWorkshop_East1"] = function()
             return
             _OR({
                 double_jump(),
-                distant_ledges()
+                distant_ledges(),
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end
     },
@@ -4896,9 +7692,21 @@ REGIONS = {
         ["MysticalWorkshop_Center5_Lower"] = function()
             return
             _OR({
-                double_jump(),
-                ground_switches(),
-                distant_ledges()
+                _AND({
+                    casual(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges()
+                    })
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        ground_switches()
+                    })
+                })
             })
         end
     },
@@ -4908,18 +7716,62 @@ REGIONS = {
         end,
         ["MysticalWorkshop_Center5_Middle"] = function()
             return
-            _AND({
-                double_jump(),
-                distant_ledges()
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
             })
         end
     },
     ["MysticalWorkshop_Center5_Middle"] = {
-        ["MysticalWorkshop_Center8"] = function()
-            return true
+        ["MysticalWorkshop_Center8_Lower"] = function()
+            return
+            _OR({
+                improved_flying(),
+                dual_mobility(),
+                _AND({
+                    double_jump(),
+                    _OR({
+                        distant_ledges(),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                mount(),
+                                summon_big_rock()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["MysticalWorkshop_Center9"] = function()
-            return true
+            return
+            _OR({
+                improved_flying(),
+                dual_mobility(),
+                _AND({
+                    double_jump(),
+                    _OR({
+                        distant_ledges(),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                mount(),
+                                summon_big_rock()
+                            })
+                        })
+                    })
+                })
+            })
         end,
         ["MysticalWorkshop_Center5_Lower"] = function()
             return true
@@ -4941,7 +7793,13 @@ REGIONS = {
             return true
         end,
         ["MysticalWorkshop_Center7"] = function()
-            return true
+            return
+            _OR({
+                double_jump(),
+                flying(),
+                improved_flying(),
+                dual_mobility()
+            })
         end
     },
     ["MysticalWorkshop_Center6"] = {
@@ -4949,9 +7807,14 @@ REGIONS = {
             return
             _OR({
                 double_jump(),
-                ground_switches(),
                 distant_ledges(),
-                mount()
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        ground_switches(),
+                        mount()
+                    })
+                })
             })
         end,
         ["MysticalWorkshop_GolemMerchant"] = function()
@@ -4963,11 +7826,29 @@ REGIONS = {
             return true
         end
     },
-    ["MysticalWorkshop_Center8"] = {
+    ["MysticalWorkshop_Center8_Lower"] = {
         ["MysticalWorkshop_Center5_Middle"] = function()
             return true
         end,
         ["MysticalWorkshop_West1"] = function()
+            return true
+        end,
+        ["MysticalWorkshop_Center8_Upper"] = function()
+            return
+            _OR({
+                double_jump(),
+                improved_flying(),
+                dual_mobility(),
+                lofty_mount(),
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
+            })
+        end
+    },
+    ["MysticalWorkshop_Center8_Upper"] = {
+        ["MysticalWorkshop_Center8_Lower"] = function()
             return true
         end,
         ["MysticalWorkshop_Center3"] = function()
@@ -4981,19 +7862,17 @@ REGIONS = {
     },
     ["MysticalWorkshop_West1"] = {
         ["MysticalWorkshop_West2"] = function()
-            return
-            _OR({
-                double_jump(),
-                ground_switches(),
-                distant_ledges()
-            })
+            return true
         end,
-        ["MysticalWorkshop_Center8"] = function()
+        ["MysticalWorkshop_Center8_Lower"] = function()
             return
             _OR({
                 double_jump(),
-                ground_switches(),
-                distant_ledges()
+                distant_ledges(),
+                _AND({
+                    _NOT(casual()),
+                    ground_switches()
+                })
             })
         end
     },
@@ -5023,24 +7902,42 @@ REGIONS = {
             return
             _OR({
                 double_jump(),
-                ground_switches(),
-                distant_ledges()
+                distant_ledges(),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        summon_rock(),
+                        summon_mushroom()
+                    })
+                })
             })
         end,
         ["MysticalWorkshop_East2"] = function()
             return
             _OR({
                 double_jump(),
-                ground_switches(),
-                distant_ledges()
+                distant_ledges(),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        summon_rock(),
+                        summon_mushroom()
+                    })
+                })
             })
         end,
         ["MysticalWorkshop_North1"] = function()
             return
             _OR({
                 double_jump(),
-                ground_switches(),
-                distant_ledges()
+                distant_ledges(),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        summon_rock(),
+                        summon_mushroom()
+                    })
+                })
             })
         end
     },
@@ -5073,7 +7970,11 @@ REGIONS = {
                 double_jump(),
                 improved_flying(),
                 dual_mobility(),
-                summon_big_rock()
+                lofty_mount(),
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end
     },
@@ -5082,7 +7983,21 @@ REGIONS = {
             return true
         end,
         ["MysticalWorkshop_North4_Shortcut"] = function()
-            return true
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
+            })
         end
     },
     ["MysticalWorkshop_North3"] = {
@@ -5145,7 +8060,20 @@ REGIONS = {
         ["MysticalWorkshop_North4_Lower"] = function()
             return
             _AND({
-                double_jump(),
+                _OR({
+                    _AND({
+                        casual(),
+                        double_jump()
+                    }),
+                    _AND({
+                        _NOT(casual()),
+                        _OR({
+                            double_jump(),
+                            improved_flying(),
+                            dual_mobility()
+                        })
+                    })
+                }),
                 _OR({
                     three_workshop_keys(),
                     no_locked_doors()
@@ -5248,7 +8176,11 @@ REGIONS = {
             _OR({
                 double_jump(),
                 improved_flying(),
-                dual_mobility()
+                dual_mobility(),
+                _AND({
+                    _NOT(casual()),
+                    lofty_mount()
+                })
             })
         end,
         ["BlobBurg_Center3"] = function()
@@ -5258,7 +8190,11 @@ REGIONS = {
                 _OR({
                     double_jump(),
                     improved_flying(),
-                    dual_mobility()
+                    dual_mobility(),
+                    _AND({
+                        _NOT(casual()),
+                        lofty_mount()
+                    })
                 })
             })
         end,
@@ -5290,7 +8226,11 @@ REGIONS = {
             return
             _OR({
                 double_jump(),
-                distant_ledges()
+                distant_ledges(),
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end,
         ["BlobBurg_South1"] = function()
@@ -5306,7 +8246,12 @@ REGIONS = {
                 _OR({
                     double_jump(),
                     improved_flying(),
-                    dual_mobility()
+                    dual_mobility(),
+                    _AND({
+                        _NOT(casual()),
+                        lofty_mount(),
+                        flying()
+                    })
                 })
             })
         end
@@ -5323,15 +8268,88 @@ REGIONS = {
         ["BlobBurg_Center4"] = function()
             return
             _OR({
-                double_jump(),
-                swimming()
+                _AND({
+                    tedious(),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                swimming(),
+                                distant_ledges()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                swimming(),
+                                distant_ledges(),
+                                summon_big_rock()
+                            })
+                        })
+                    })
+                }),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                swimming(),
+                                summon_big_rock()
+                            })
+                        })
+                    })
+                })
             })
         end,
         ["BlobBurg_West2"] = function()
             return
             _OR({
-                double_jump(),
-                swimming()
+                _AND({
+                    tedious(),
+                    _OR({
+                        double_jump(),
+                        swimming(),
+                        flying(),
+                        improved_flying()
+                    })
+                }),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            _OR({
+                                double_jump(),
+                                swimming()
+                            })
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                swimming(),
+                                _AND({
+                                    summon_big_rock(),
+                                    _OR({
+                                        flying(),
+                                        improved_flying()
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
             })
         end
     },
@@ -5345,14 +8363,26 @@ REGIONS = {
             return
             _OR({
                 swimming(),
-                double_jump()
+                double_jump(),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        summon_mushroom(),
+                        summon_rock()
+                    })
+                })
             })
         end,
         ["BlobBurg_South2"] = function()
             return
             _OR({
                 swimming(),
-                double_jump()
+                double_jump(),
+                distant_ledges(),
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end
     },
@@ -5368,7 +8398,19 @@ REGIONS = {
     },
     ["BlobBurg_Worms"] = {
         ["BlobBurg_Center3"] = function()
-            return true
+            return
+            _OR({
+                double_jump(),
+                distant_ledges(),
+                swimming(),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        mount(),
+                        summon_big_rock()
+                    })
+                })
+            })
         end
     },
     ["ForgottenWorld_Fall1"] = {
@@ -5381,7 +8423,7 @@ REGIONS = {
     },
     ["ForgottenWorld_FallHidden"] = {
         ["ForgottenWorld_Fall1"] = function()
-            return true
+            return dark_rooms()
         end
     },
     ["ForgottenWorld_Fall2"] = {
@@ -5399,7 +8441,10 @@ REGIONS = {
                 swimming(),
                 double_jump(),
                 distant_ledges(),
-                ground_switches()
+                _AND({
+                    _NOT(casual()),
+                    ground_switches()
+                })
             })
         end
     },
@@ -5411,11 +8456,7 @@ REGIONS = {
             return true
         end,
         ["ForgottenWorld_ForgottenWorldIntro"] = function()
-            return
-            _OR({
-                double_jump(),
-                distant_ledges()
-            })
+            return true
         end
     },
     ["ForgottenWorld_Jungle2"] = {
@@ -5437,11 +8478,15 @@ REGIONS = {
             return
             _AND({
                 double_jump(),
+                breakable_walls(),
                 _OR({
                     improved_flying(),
                     dual_mobility(),
                     lofty_mount(),
-                    summon_big_rock()
+                    _AND({
+                        _NOT(casual()),
+                        summon_big_rock()
+                    })
                 })
             })
         end
@@ -5466,11 +8511,32 @@ REGIONS = {
             _OR({
                 double_jump(),
                 distant_ledges(),
-                ground_switches()
+                _AND({
+                    _NOT(casual()),
+                    ground_switches()
+                }),
+                _AND({
+                    magic_vines(),
+                    magic_walls()
+                })
             })
         end,
         ["ForgottenWorld_TarPits1"] = function()
-            return magic_vines()
+            return
+            _OR({
+                magic_walls(),
+                _AND({
+                    magic_vines(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        _AND({
+                            _NOT(casual()),
+                            ground_switches()
+                        })
+                    })
+                })
+            })
         end
     },
     ["ForgottenWorld_Jungle5_Hidden"] = {
@@ -5488,7 +8554,11 @@ REGIONS = {
                 double_jump(),
                 improved_flying(),
                 dual_mobility(),
-                lofty_mount()
+                lofty_mount(),
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end
     },
@@ -5502,12 +8572,26 @@ REGIONS = {
             return true
         end,
         ["ForgottenWorld_Jungle4"] = function()
-            return forgotten_world_jungle_shortcut()
+            return
+            _AND({
+                forgotten_world_jungle_shortcut(),
+                _OR({
+                    double_jump(),
+                    distant_ledges(),
+                    ground_switches()
+                })
+            })
         end
     },
     ["ForgottenWorld_TarPits1"] = {
         ["ForgottenWorld_Jungle5"] = function()
-            return true
+            return
+            _OR({
+                double_jump(),
+                improved_flying(),
+                dual_mobility(),
+                lofty_mount()
+            })
         end,
         ["ForgottenWorld_TarPits2"] = function()
             return true
@@ -5515,9 +8599,19 @@ REGIONS = {
         ["ForgottenWorld_TarPitsHidden1"] = function()
             return
             _AND({
-                tar(),
-                double_jump(),
-                breakable_walls()
+                breakable_walls(),
+                _OR({
+                    dual_mobility(),
+                    _AND({
+                        double_jump(),
+                        tar_mount()
+                    }),
+                    _AND({
+                        expert(),
+                        double_jump(),
+                        lofty_mount()
+                    })
+                })
             })
         end
     },
@@ -5532,9 +8626,12 @@ REGIONS = {
     ["ForgottenWorld_TarPits3"] = {
         ["ForgottenWorld_TarPits2"] = function()
             return
-            _AND({
-                tar(),
-                double_jump()
+            _OR({
+                dual_mobility(),
+                _AND({
+                    double_jump(),
+                    tar_mount()
+                })
             })
         end,
         ["ForgottenWorld_TarPits4"] = function()
@@ -5545,39 +8642,26 @@ REGIONS = {
         ["ForgottenWorld_TarPits3"] = function()
             return true
         end,
-        ["ForgottenWorld_TarPits5_Upper"] = function()
+        ["ForgottenWorld_TarPits5"] = function()
             return true
         end
     },
-    ["ForgottenWorld_TarPits5_Upper"] = {
+    ["ForgottenWorld_TarPits5"] = {
         ["ForgottenWorld_TarPits4"] = function()
-            return true
-        end,
-        ["ForgottenWorld_TarPits5_Lower"] = function()
             return true
         end,
         ["ForgottenWorld_TarPits6"] = function()
             return true
-        end
-    },
-    ["ForgottenWorld_TarPits5_Lower"] = {
+        end,
         ["ForgottenWorld_Waters5"] = function()
             return true
-        end,
-        ["ForgottenWorld_TarPits5_Upper"] = function()
-            return
-            _OR({
-                double_jump(),
-                distant_ledges(),
-                ground_switches()
-            })
         end,
         ["ForgottenWorld_TarPits9"] = function()
             return true
         end
     },
     ["ForgottenWorld_TarPits6"] = {
-        ["ForgottenWorld_TarPits5_Upper"] = function()
+        ["ForgottenWorld_TarPits5"] = function()
             return true
         end,
         ["ForgottenWorld_TarPits7"] = function()
@@ -5603,13 +8687,16 @@ REGIONS = {
             return
             _OR({
                 double_jump(),
-                summon_big_rock(),
-                distant_ledges()
+                distant_ledges(),
+                _AND({
+                    _NOT(casual()),
+                    ground_switches()
+                })
             })
         end
     },
     ["ForgottenWorld_TarPits9"] = {
-        ["ForgottenWorld_TarPits5_Lower"] = function()
+        ["ForgottenWorld_TarPits5"] = function()
             return true
         end
     },
@@ -5644,9 +8731,7 @@ REGIONS = {
             return
             _OR({
                 double_jump(),
-                improved_flying(),
-                dual_mobility(),
-                lofty_mount()
+                distant_ledges()
             })
         end,
         ["ForgottenWorld_Waters1_Lower"] = function()
@@ -5682,11 +8767,7 @@ REGIONS = {
             return swimming()
         end,
         ["ForgottenWorld_DracomerLair"] = function()
-            return
-            _OR({
-                improved_swimming(),
-                dual_mobility()
-            })
+            return swimming()
         end,
         ["ForgottenWorld_WatersHidden"] = function()
             return
@@ -5700,16 +8781,19 @@ REGIONS = {
         ["ForgottenWorld_Waters1_Middle"] = function()
             return magic_walls()
         end,
-        ["ForgottenWorld_TarPits5_Lower"] = function()
+        ["ForgottenWorld_TarPits5"] = function()
             return
             _AND({
                 magic_walls(),
                 _OR({
-                    summon_big_rock(),
                     double_jump(),
                     improved_flying(),
                     dual_mobility(),
-                    lofty_mount()
+                    lofty_mount(),
+                    _AND({
+                        _NOT(casual()),
+                        summon_big_rock()
+                    })
                 })
             })
         end
@@ -5721,7 +8805,7 @@ REGIONS = {
     },
     ["ForgottenWorld_DracomerLair"] = {
         ["ForgottenWorld_Waters4"] = function()
-            return true
+            return swimming()
         end,
         ["ForgottenWorld_Waters1_Middle"] = function()
             return forgotten_world_waters_shortcut()
@@ -5749,16 +8833,45 @@ REGIONS = {
             return true
         end,
         ["ForgottenWorld_Caves2_Lower"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        _AND({
+                            casual(),
+                            double_jump()
+                        }),
+                        _AND({
+                            _NOT(casual()),
+                            _OR({
+                                double_jump(),
+                                improved_flying(),
+                                dual_mobility()
+                            })
+                        })
+                    })
+                })
+            })
         end
     },
     ["ForgottenWorld_Caves2_Lower"] = {
         ["ForgottenWorld_Caves2_Upper"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    double_jump()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
             })
         end,
         ["ForgottenWorld_Caves5_Upper"] = function()
@@ -5769,15 +8882,15 @@ REGIONS = {
         ["ForgottenWorld_Caves2_Upper"] = function()
             return true
         end,
-        ["ForgottenWorld_Caves11"] = function()
+        ["ForgottenWorld_Caves11_Upper"] = function()
             return true
         end
     },
     ["ForgottenWorld_Caves4"] = {
-        ["ForgottenWorld_Caves1"] = function()
+        ["ForgottenWorld_Caves5_Upper"] = function()
             return true
         end,
-        ["ForgottenWorld_Caves5_Upper"] = function()
+        ["ForgottenWorld_Caves1"] = function()
             return
             _OR({
                 double_jump(),
@@ -5790,7 +8903,8 @@ REGIONS = {
             _OR({
                 double_jump(),
                 improved_flying(),
-                dual_mobility()
+                dual_mobility(),
+                lofty_mount()
             })
         end
     },
@@ -5803,33 +8917,61 @@ REGIONS = {
         end,
         ["ForgottenWorld_Caves5_Upper"] = function()
             return
-            _OR({
-                double_jump(),
-                magic_vines()
+            _AND({
+                magic_vines(),
+                _OR({
+                    double_jump(),
+                    improved_flying(),
+                    dual_mobility()
+                })
             })
         end
     },
     ["ForgottenWorld_Caves5_Upper"] = {
         ["ForgottenWorld_Caves2_Lower"] = function()
             return
-            _AND({
-                double_jump(),
-                magic_vines()
+            _OR({
+                _AND({
+                    tedious(),
+                    magic_vines()
+                }),
+                _AND({
+                    _NOT(tedious()),
+                    magic_vines(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
             })
         end,
         ["ForgottenWorld_Caves4"] = function()
             return
-            _AND({
-                double_jump(),
-                magic_vines()
+            _OR({
+                _AND({
+                    tedious(),
+                    magic_vines(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount()
+                    })
+                }),
+                _AND({
+                    _NOT(tedious()),
+                    magic_vines(),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
             })
         end,
         ["ForgottenWorld_Caves5_Lower"] = function()
-            return
-            _AND({
-                double_jump(),
-                magic_vines()
-            })
+            return magic_vines()
         end
     },
     ["ForgottenWorld_Caves6"] = {
@@ -5855,7 +8997,7 @@ REGIONS = {
         end
     },
     ["ForgottenWorld_Caves8"] = {
-        ["ForgottenWorld_Caves5"] = function()
+        ["ForgottenWorld_Caves5_Lower"] = function()
             return true
         end,
         ["ForgottenWorld_Caves6"] = function()
@@ -5879,18 +9021,15 @@ REGIONS = {
             _OR({
                 double_jump(),
                 improved_flying(),
-                dual_mobility()
+                dual_mobility(),
+                lofty_mount()
             })
         end,
         ["ForgottenWorld_CavesStudy"] = function()
             return true
         end,
         ["ForgottenWorld_TerradrileLair1"] = function()
-            return
-            _AND({
-                diamond_blocks(),
-                breakable_walls()
-            })
+            return diamond_blocks()
         end
     },
     ["ForgottenWorld_Caves11_Upper"] = {
@@ -5906,15 +9045,7 @@ REGIONS = {
     },
     ["ForgottenWorld_Caves11_Lower"] = {
         ["ForgottenWorld_Caves11_Upper"] = function()
-            return
-            _AND({
-                forgotten_world_caves_shortcut(),
-                _OR({
-                    double_jump(),
-                    improved_flying(),
-                    dual_mobility()
-                })
-            })
+            return forgotten_world_caves_shortcut()
         end,
         ["ForgottenWorld_Caves10"] = function()
             return true
@@ -5922,7 +9053,29 @@ REGIONS = {
     },
     ["ForgottenWorld_Caves12"] = {
         ["ForgottenWorld_DarkRoom"] = function()
-            return true
+            return
+            _OR({
+                _AND({
+                    tedious(),
+                    _OR({
+                        double_jump(),
+                        distant_ledges(),
+                        tar(),
+                        _AND({
+                            _NOT(casual()),
+                            ground_switches()
+                        })
+                    })
+                }),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
+            })
         end,
         ["ForgottenWorld_Caves6"] = function()
             return
@@ -5950,7 +9103,22 @@ REGIONS = {
     },
     ["ForgottenWorld_WorldTree"] = {
         ["ForgottenWorld_TarPits7"] = function()
-            return true
+            return
+            _OR({
+                double_jump(),
+                improved_flying(),
+                dual_mobility(),
+                lofty_mount(),
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock(),
+                    _OR({
+                        expert(),
+                        mount(),
+                        flying()
+                    })
+                })
+            })
         end,
         ["ForgottenWorld_Caves7"] = function()
             return true
@@ -5962,17 +9130,33 @@ REGIONS = {
     ["ForgottenWorld_TerradrileLair1"] = {
         ["ForgottenWorld_Caves10"] = function()
             return
-            _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+            _AND({
+                breakable_walls(),
+                _OR({
+                    double_jump(),
+                    improved_flying(),
+                    dual_mobility(),
+                    lofty_mount(),
+                    summon_big_rock()
+                })
             })
         end,
         ["ForgottenWorld_TerradrileLair2"] = function()
             return
             _AND({
                 breakable_walls(),
-                narrow_corridors()
+                narrow_corridors(),
+                _OR({
+                    tedious(),
+                    double_jump(),
+                    improved_flying(),
+                    dual_mobility(),
+                    lofty_mount(),
+                    _AND({
+                        _NOT(casual()),
+                        summon_big_rock()
+                    })
+                })
             })
         end
     },
@@ -5984,13 +9168,10 @@ REGIONS = {
     ["ForgottenWorld_MCPath1"] = {
         ["ForgottenWorld_MCPath2"] = function()
             return
-            _AND({
+            _OR({
                 double_jump(),
-                _OR({
-                    double_jump(),
-                    improved_flying(),
-                    dual_mobility()
-                })
+                improved_flying(),
+                dual_mobility()
             })
         end,
         ["ForgottenWorld_Caves2_Upper"] = function()
@@ -6035,10 +9216,26 @@ REGIONS = {
     },
     ["ForgottenWorld_Climb2"] = {
         ["ForgottenWorld_Climb1"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
+            })
         end,
         ["ForgottenWorld_Climb3"] = function()
-            return true
+            return
+            _OR({
+                double_jump(),
+                improved_flying(),
+                dual_mobility()
+            })
         end
     },
     ["ForgottenWorld_Climb3"] = {
@@ -6056,17 +9253,54 @@ REGIONS = {
     },
     ["ForgottenWorld_Climb4"] = {
         ["ForgottenWorld_Climb3"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        _AND({
+                            _NOT(casual()),
+                            ground_switches()
+                        })
+                    })
+                })
+            })
         end,
         ["ForgottenWorld_ClimbSide"] = function()
-            return true
+            return
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility(),
+                        lofty_mount(),
+                        _AND({
+                            _NOT(casual()),
+                            ground_switches()
+                        })
+                    })
+                })
+            })
         end,
         ["ForgottenWorld_Climb5"] = function()
             return
             _OR({
                 double_jump(),
                 improved_flying(),
-                dual_mobility()
+                dual_mobility(),
+                lofty_mount(),
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end
     },
@@ -6113,7 +9347,10 @@ REGIONS = {
                 improved_flying(),
                 dual_mobility(),
                 lofty_mount(),
-                summon_big_rock()
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end
     },
@@ -6128,7 +9365,10 @@ REGIONS = {
                 improved_flying(),
                 dual_mobility(),
                 lofty_mount(),
-                summon_big_rock()
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end
     },
@@ -6162,7 +9402,10 @@ REGIONS = {
                 improved_flying(),
                 dual_mobility(),
                 lofty_mount(),
-                summon_big_rock()
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end
     },
@@ -6171,7 +9414,21 @@ REGIONS = {
             return true
         end,
         ["AbandonedTower_Center1_Lower"] = function()
-            return double_jump()
+            return
+            _OR({
+                _AND({
+                    casual(),
+                    double_jump()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
+            })
         end
     },
     ["AbandonedTower_South7"] = {
@@ -6206,7 +9463,8 @@ REGIONS = {
                 double_jump(),
                 improved_flying(),
                 dual_mobility(),
-                lofty_mount()
+                lofty_mount(),
+                summon_big_rock()
             })
         end,
         ["AbandonedTower_South8"] = function()
@@ -6232,7 +9490,12 @@ REGIONS = {
             _OR({
                 double_jump(),
                 improved_flying(),
-                dual_mobility()
+                dual_mobility(),
+                lofty_mount(),
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end
     },
@@ -6265,7 +9528,11 @@ REGIONS = {
             return
             _OR({
                 double_jump(),
-                distant_ledges()
+                distant_ledges(),
+                _AND({
+                    _NOT(casual()),
+                    ground_switches()
+                })
             })
         end
     },
@@ -6312,7 +9579,10 @@ REGIONS = {
                 improved_flying(),
                 dual_mobility(),
                 lofty_mount(),
-                summon_big_rock()
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end
     },
@@ -6351,7 +9621,10 @@ REGIONS = {
                 improved_flying(),
                 dual_mobility(),
                 lofty_mount(),
-                summon_big_rock()
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end,
         ["AbandonedTower_Center12"] = function()
@@ -6413,17 +9686,35 @@ REGIONS = {
         ["AbandonedTower_North3"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    double_jump()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
             })
         end,
         ["AbandonedTower_North4"] = function()
             return
             _OR({
-                double_jump(),
-                improved_flying(),
-                dual_mobility()
+                _AND({
+                    casual(),
+                    double_jump()
+                }),
+                _AND({
+                    _NOT(casual()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
             })
         end
     },
@@ -6459,7 +9750,10 @@ REGIONS = {
                 improved_flying(),
                 dual_mobility(),
                 lofty_mount(),
-                summon_big_rock()
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end,
         ["AbandonedTower_North8"] = function()
@@ -6469,7 +9763,10 @@ REGIONS = {
                 improved_flying(),
                 dual_mobility(),
                 lofty_mount(),
-                summon_big_rock()
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end
     },
@@ -6487,7 +9784,10 @@ REGIONS = {
             _OR({
                 double_jump(),
                 distant_ledges(),
-                summon_big_rock()
+                _AND({
+                    _NOT(casual()),
+                    summon_big_rock()
+                })
             })
         end,
         ["AbandonedTower_NorthHidden"] = function()

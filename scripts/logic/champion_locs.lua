@@ -4,7 +4,7 @@ CHAMPION_LOCS = {
     "@Blue Cave - Minitaur/",
     "@Blue Cave - Ascendant/",
     "@Blue Cave - Specter/Blue Cave - Specter",
-    "@Stronghold Dungeon - Aazeraach/",
+    "@Stronghold Dungeon - Aazerach/",
     "@Stronghold Dungeon - Beetloid/",
     "@Snowy Peaks/Snowy Peaks - Akhlut",
     "@Snowy Peaks - Dracozul/",

@@ -2,248 +2,248 @@
   {
     "name": "Ability - Blob Form",
     "type": "toggle",
-    "codes": "ability-blob_form",
-    "img": "images/items/abilities/ability-blob_form.png"
+    "codes": "ability___blob_form",
+    "img": "images/items/abilities/ability___blob_form.png"
   },
   {
     "name": "Ability - Bubble Burst",
     "type": "toggle",
-    "codes": "ability-bubble_burst",
-    "img": "images/items/abilities/ability-bubble_burst.png"
+    "codes": "ability___bubble_burst",
+    "img": "images/items/abilities/ability___bubble_burst.png"
   },
   {
     "name": "Ability - Charging Mount",
     "type": "toggle",
-    "codes": "ability-charging_mount",
-    "img": "images/items/abilities/ability-charging_mount.png"
+    "codes": "ability___charging_mount",
+    "img": "images/items/abilities/ability___charging_mount.png"
   },
   {
     "name": "Ability - Claws",
     "type": "toggle",
-    "codes": "ability-claws",
-    "img": "images/items/abilities/ability-claws.png"
+    "codes": "ability___claws",
+    "img": "images/items/abilities/ability___claws.png"
   },
   {
     "name": "Ability - Corrosive Jabs",
     "type": "toggle",
-    "codes": "ability-corrosive_jabs",
-    "img": "images/items/abilities/ability-corrosive_jabs.png"
+    "codes": "ability___corrosive_jabs",
+    "img": "images/items/abilities/ability___corrosive_jabs.png"
   },
   {
     "name": "Ability - Crush",
     "type": "toggle",
-    "codes": "ability-crush",
-    "img": "images/items/abilities/ability-crush.png"
+    "codes": "ability___crush",
+    "img": "images/items/abilities/ability___crush.png"
   },
   {
     "name": "Ability - Dual Mobility",
     "type": "toggle",
-    "codes": "ability-dual_mobility",
-    "img": "images/items/abilities/ability-dual_mobility.png"
+    "codes": "ability___dual_mobility",
+    "img": "images/items/abilities/ability___dual_mobility.png"
   },
   {
     "name": "Ability - Fiery Shots",
     "type": "toggle",
-    "codes": "ability-fiery_shots",
-    "img": "images/items/abilities/ability-fiery_shots.png"
+    "codes": "ability___fiery_shots",
+    "img": "images/items/abilities/ability___fiery_shots.png"
   },
   {
     "name": "Ability - Flying",
     "type": "toggle",
-    "codes": "ability-flying",
-    "img": "images/items/abilities/ability-flying.png"
+    "codes": "ability___flying",
+    "img": "images/items/abilities/ability___flying.png"
   },
   {
     "name": "Ability - Freeze",
     "type": "toggle",
-    "codes": "ability-freeze",
-    "img": "images/items/abilities/ability-freeze.png"
+    "codes": "ability___freeze",
+    "img": "images/items/abilities/ability___freeze.png"
   },
   {
     "name": "Ability - Ghost Form",
     "type": "toggle",
-    "codes": "ability-ghost_form",
-    "img": "images/items/abilities/ability-ghost_form.png"
+    "codes": "ability___ghost_form",
+    "img": "images/items/abilities/ability___ghost_form.png"
   },
   {
     "name": "Ability - Grapple",
     "type": "toggle",
-    "codes": "ability-grapple",
-    "img": "images/items/abilities/ability-grapple.png"
+    "codes": "ability___grapple",
+    "img": "images/items/abilities/ability___grapple.png"
   },
   {
     "name": "Ability - Heavy Punch",
     "type": "toggle",
-    "codes": "ability-heavy_punch",
-    "img": "images/items/abilities/ability-heavy_punch.png"
+    "codes": "ability___heavy_punch",
+    "img": "images/items/abilities/ability___heavy_punch.png"
   },
   {
     "name": "Ability - Ignite",
     "type": "toggle",
-    "codes": "ability-ignite",
-    "img": "images/items/abilities/ability-ignite.png"
+    "codes": "ability___ignite",
+    "img": "images/items/abilities/ability___ignite.png"
   },
   {
     "name": "Ability - Improved Flying",
     "type": "toggle",
-    "codes": "ability-improved_flying",
-    "img": "images/items/abilities/ability-improved_flying.png"
+    "codes": "ability___improved_flying",
+    "img": "images/items/abilities/ability___improved_flying.png"
   },
   {
     "name": "Ability - Improved Swimming",
     "type": "toggle",
-    "codes": "ability-improved_swimming",
-    "img": "images/items/abilities/ability-improved_swimming.png"
+    "codes": "ability___improved_swimming",
+    "img": "images/items/abilities/ability___improved_swimming.png"
   },
   {
     "name": "Ability - Jewel Blast",
     "type": "toggle",
-    "codes": "ability-jewel_blast",
-    "img": "images/items/abilities/ability-jewel_blast.png"
+    "codes": "ability___jewel_blast",
+    "img": "images/items/abilities/ability___jewel_blast.png"
   },
   {
     "name": "Ability - Levitate",
     "type": "toggle",
-    "codes": "ability-levitate",
-    "img": "images/items/abilities/ability-levitate.png"
+    "codes": "ability___levitate",
+    "img": "images/items/abilities/ability___levitate.png"
   },
   {
     "name": "Ability - Light",
     "type": "toggle",
-    "codes": "ability-light",
-    "img": "images/items/abilities/ability-light.png"
+    "codes": "ability___light",
+    "img": "images/items/abilities/ability___light.png"
   },
   {
     "name": "Ability - Light Crush",
     "type": "toggle",
-    "codes": "ability-light_crush",
-    "img": "images/items/abilities/ability-light_crush.png"
+    "codes": "ability___light_crush",
+    "img": "images/items/abilities/ability___light_crush.png"
   },
   {
     "name": "Ability - Lightning Bolt",
     "type": "toggle",
-    "codes": "ability-lightning_bolt",
-    "img": "images/items/abilities/ability-lightning_bolt.png"
+    "codes": "ability___lightning_bolt",
+    "img": "images/items/abilities/ability___lightning_bolt.png"
   },
   {
     "name": "Ability - Lofty Mount",
     "type": "toggle",
-    "codes": "ability-lofty_mount",
-    "img": "images/items/abilities/ability-lofty_mount.png"
+    "codes": "ability___lofty_mount",
+    "img": "images/items/abilities/ability___lofty_mount.png"
   },
   {
     "name": "Ability - Minnesang",
     "type": "toggle",
-    "codes": "ability-minnesang",
-    "img": "images/items/abilities/ability-minnesang.png"
+    "codes": "ability___minnesang",
+    "img": "images/items/abilities/ability___minnesang.png"
   },
   {
     "name": "Ability - Morph Ball",
     "type": "toggle",
-    "codes": "ability-morph_ball",
-    "img": "images/items/abilities/ability-morph_ball.png"
+    "codes": "ability___morph_ball",
+    "img": "images/items/abilities/ability___morph_ball.png"
   },
   {
     "name": "Ability - Mount",
     "type": "toggle",
-    "codes": "ability-mount",
-    "img": "images/items/abilities/ability-mount.png"
+    "codes": "ability___mount",
+    "img": "images/items/abilities/ability___mount.png"
   },
   {
     "name": "Ability - Secret Vision",
     "type": "toggle",
-    "codes": "ability-secret_vision",
-    "img": "images/items/abilities/ability-secret_vision.png"
+    "codes": "ability___secret_vision",
+    "img": "images/items/abilities/ability___secret_vision.png"
   },
   {
     "name": "Ability - Shock Freeze",
     "type": "toggle",
-    "codes": "ability-shock_freeze",
-    "img": "images/items/abilities/ability-shock_freeze.png"
+    "codes": "ability___shock_freeze",
+    "img": "images/items/abilities/ability___shock_freeze.png"
   },
   {
     "name": "Ability - Slash",
     "type": "toggle",
-    "codes": "ability-slash",
-    "img": "images/items/abilities/ability-slash.png"
+    "codes": "ability___slash",
+    "img": "images/items/abilities/ability___slash.png"
   },
   {
     "name": "Ability - Slime Shot",
     "type": "toggle",
-    "codes": "ability-slime_shot",
-    "img": "images/items/abilities/ability-slime_shot.png"
+    "codes": "ability___slime_shot",
+    "img": "images/items/abilities/ability___slime_shot.png"
   },
   {
     "name": "Ability - Snowball Toss",
     "type": "toggle",
-    "codes": "ability-snowball_toss",
-    "img": "images/items/abilities/ability-snowball_toss.png"
+    "codes": "ability___snowball_toss",
+    "img": "images/items/abilities/ability___snowball_toss.png"
   },
   {
     "name": "Ability - Sonar",
     "type": "toggle",
-    "codes": "ability-sonar",
-    "img": "images/items/abilities/ability-sonar.png"
+    "codes": "ability___sonar",
+    "img": "images/items/abilities/ability___sonar.png"
   },
   {
     "name": "Ability - Sonar Mount",
     "type": "toggle",
-    "codes": "ability-sonar_mount",
-    "img": "images/items/abilities/ability-sonar_mount.png"
+    "codes": "ability___sonar_mount",
+    "img": "images/items/abilities/ability___sonar_mount.png"
   },
   {
     "name": "Ability - Spore Shroud",
     "type": "toggle",
-    "codes": "ability-spore_shroud",
-    "img": "images/items/abilities/ability-spore_shroud.png"
+    "codes": "ability___spore_shroud",
+    "img": "images/items/abilities/ability___spore_shroud.png"
   },
   {
     "name": "Ability - Summon Big Rock",
     "type": "toggle",
-    "codes": "ability-summon_big_rock",
-    "img": "images/items/abilities/ability-summon_big_rock.png"
+    "codes": "ability___summon_big_rock",
+    "img": "images/items/abilities/ability___summon_big_rock.png"
   },
   {
     "name": "Ability - Summon Mushroom",
     "type": "toggle",
-    "codes": "ability-summon_mushroom",
-    "img": "images/items/abilities/ability-summon_mushroom.png"
+    "codes": "ability___summon_mushroom",
+    "img": "images/items/abilities/ability___summon_mushroom.png"
   },
   {
     "name": "Ability - Summon Rock",
     "type": "toggle",
-    "codes": "ability-summon_rock",
-    "img": "images/items/abilities/ability-summon_rock.png"
+    "codes": "ability___summon_rock",
+    "img": "images/items/abilities/ability___summon_rock.png"
   },
   {
     "name": "Ability - Swimming",
     "type": "toggle",
-    "codes": "ability-swimming",
-    "img": "images/items/abilities/ability-swimming.png"
+    "codes": "ability___swimming",
+    "img": "images/items/abilities/ability___swimming.png"
   },
   {
     "name": "Ability - Tackle",
     "type": "toggle",
-    "codes": "ability-tackle",
-    "img": "images/items/abilities/ability-tackle.png"
+    "codes": "ability___tackle",
+    "img": "images/items/abilities/ability___tackle.png"
   },
   {
     "name": "Ability - Tar Mount",
     "type": "toggle",
-    "codes": "ability-tar_mount",
-    "img": "images/items/abilities/ability-tar_mount.png"
+    "codes": "ability___tar_mount",
+    "img": "images/items/abilities/ability___tar_mount.png"
   },
   {
     "name": "Ability - Toxic Freeze",
     "type": "toggle",
-    "codes": "ability-toxic_freeze",
-    "img": "images/items/abilities/ability-toxic_freeze.png"
+    "codes": "ability___toxic_freeze",
+    "img": "images/items/abilities/ability___toxic_freeze.png"
   },
   {
     "name": "Ability - Toxic Slam",
     "type": "toggle",
-    "codes": "ability-toxic_slam",
-    "img": "images/items/abilities/ability-toxic_slam.png"
+    "codes": "ability___toxic_slam",
+    "img": "images/items/abilities/ability___toxic_slam.png"
   },
   {
     "name": "Spectral Flame",
@@ -434,8 +434,8 @@
   {
     "name": "Double-Headed Axe",
     "type": "toggle",
-    "codes": "double-headed_axe",
-    "img": "images/items/abilities/double-headed_axe.png"
+    "codes": "double_headed_axe",
+    "img": "images/items/abilities/double_headed_axe.png"
   },
   {
     "name": "Black Flame",
@@ -692,8 +692,8 @@
   {
     "name": "Heat-Proof Gloves",
     "type": "toggle",
-    "codes": "heat-proof_gloves",
-    "img": "images/items/abilities/heat-proof_gloves.png"
+    "codes": "heat_proof_gloves",
+    "img": "images/items/abilities/heat_proof_gloves.png"
   },
   {
     "name": "Draconov Harness",

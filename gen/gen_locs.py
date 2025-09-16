@@ -318,7 +318,7 @@ map_location_mapping = {
     140: ['SnowyPeaks_EastMountain5_9'],
     141: ['SnowyPeaks_EastMountain5_10'],
     142: ['SnowyPeaks_EastMountain3_Upper_24'],
-    143: ['SnowyPeaks_EastMountain3_Middle_15'],
+    143: ['SnowyPeaks_EastMountain3_Middle_Chest_15'],
     144: ['SnowyPeaks_EastMountain3_Lower_16'],
     145: ['SnowyPeaks_HighChallenge_11'],
     146: ['SnowyPeaks_HighChallenge_12'],
@@ -345,9 +345,9 @@ map_location_mapping = {
     167: ['StrongholdDungeon_South4_6'],
     168: ['StrongholdDungeon_Library_14200159'],
     169: ['StrongholdDungeon_Library2_1', 'StrongholdDungeon_Library2_2'],
-    170: ['StrongholdDungeon_East1_SW_6'],
+    170: ['StrongholdDungeon_East1_SW_Ledge_6'],
     171: ['StrongholdDungeon_East1_NE_7'],
-    172: ['StrongholdDungeon_East1_SE_9'],
+    172: ['StrongholdDungeon_East1_NW_9'],
     173: ['StrongholdDungeon_EastKeys_0', 'StrongholdDungeon_EastKeys_1'],
     174: ['StrongholdDungeon_EastHidden_0'],
     175: ['StrongholdDungeon_East3_11'],
@@ -385,7 +385,7 @@ map_location_mapping = {
     207: ['MysticalWorkshop_Center5_Middle_6'],
     208: ['MysticalWorkshop_Center5_Lower_5'],
     209: ['MysticalWorkshop_Center9_0'],
-    210: ['MysticalWorkshop_Center8_6'],
+    210: ['MysticalWorkshop_Center8_Lower_6'],
     211: ['MysticalWorkshop_West2_8', 'MysticalWorkshop_West2_9'],
     212: ['MysticalWorkshop_Center7_1'],
     213: ['MysticalWorkshop_Center7_0'],
@@ -434,9 +434,9 @@ map_location_mapping = {
     254: ['SunPalace_EastSewers6_5'],
     255: ['StrongholdDungeon_CentralHidden_3'],
     256: ['AncientWoods_Center5_4'],
-    257: ['AncientWoods_Center6_8500062'],
+    257: ['AncientWoods_Center6_Lower_8500062'],
     258: ['AncientWoods_North5_0'],
-    259: ['AncientWoods_Center6_3'],
+    259: ['AncientWoods_Center6_Upper_3'],
     260: ['AncientWoods_Center7_6'],
     261: ['AncientWoods_DarkRoom_3'],
     262: ['AncientWoods_South3_3', 'AncientWoods_South3_7'],
@@ -456,8 +456,8 @@ map_location_mapping = {
     276: ['HorizonBeach_Center4_4'],
     277: ['HorizonBeach_Center4_9'],
     278: ['HorizonBeach_Center6_0'],
-    279: ['HorizonBeach_East3_4'],
-    280: ['HorizonBeach_East2_Lower_54', 'HorizonBeach_East2_Middle_57'],
+    279: ['HorizonBeach_East3_East_4'],
+    280: ['HorizonBeach_East2_Lower_54', 'HorizonBeach_East2_Upper_57'],
     281: ['HorizonBeach_East2_Lower_55'],
     282: ['HorizonBeach_EastHidden_1'],
     283: ['HorizonBeach_EastChampion_1'],
@@ -465,7 +465,7 @@ map_location_mapping = {
     285: ['HorizonBeach_East1_0'],
     286: ['HorizonBeach_Fisher_24300040'],
     287: ['HorizonBeach_Fisher_2'],
-    288: ['HorizonBeach_East2_Middle_58'],
+    288: ['HorizonBeach_East2_Middle_Ledge_58'],
     289: ['HorizonBeach_East2_Upper_53'],
     290: ['HorizonBeach_East6_0'],
     291: ['HorizonBeach_East6_2'],
@@ -510,7 +510,7 @@ map_location_mapping = {
     330: ['ForgottenWorld_Caves12_0'],
     331: ['ForgottenWorld_DarkRoom_14'],
     332: ['ForgottenWorld_WorldTree_1', 'ForgottenWorld_WorldTree_46100009'],
-    333: ['ForgottenWorld_TarPits5_Lower_1'],
+    333: ['ForgottenWorld_TarPits5_1'],
     334: ['ForgottenWorld_TarPits9_0'],
     335: ['ForgottenWorld_TarPits4_52800001'],
     336: ['ForgottenWorld_TarPits4_1'],
@@ -601,7 +601,7 @@ map_location_mapping = {
     420: ['AncientWoods_South1_6'],
     421: ['MagmaChamber_Center11_15'],
     422: ['MagmaChamber_Center11_17'],
-    423: ['MagmaChamber_South4_Lower_7'],
+    423: ['MagmaChamber_South4_Upper_7'],
     424: ['MagmaChamber_Champion2_7'],
     425: ['MagmaChamber_Champion2_Champion', 'MagmaChamber_Champion2_0'],
     426: ['MagmaChamber_LegendaryKeeperRoom_43900165', 'MagmaChamber_LegendaryKeeperRoom_43900176',
@@ -1199,13 +1199,18 @@ def get_access(req_data: Optional[list], op: Optional[str] = "AND"):
         if req_data[i] == "OR" or req_data[i] == "AND":
             result = combine_access(result, get_access(req_data[i + 1], req_data[i]), op)
             skip_next = True
+        # elif req_data[i] is list:
+        #     result = combine_access(result, get_access(req_data[i], "OR"), )
         else:
-            if op == "AND":
-                if 0 >= len(result):
-                    result.append([])
-                result[0].append(format_req(req_data[i]))
-            if op == "OR":
-                result.append([format_req(req_data[i])])
+            if isinstance(req_data[i], list):
+                result = combine_access(result,get_access(req_data[i], "OR"),op)
+            else:
+                if op == "AND":
+                    if 0 >= len(result):
+                        result.append([])
+                    result[0].append(format_req(req_data[i]))
+                if op == "OR":
+                    result.append([format_req(req_data[i])])
         # print('get_access', f'step {i}', result)
     return result
 

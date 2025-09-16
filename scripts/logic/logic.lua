@@ -9,7 +9,6 @@ require('logic/evo_table')
 --alias
 double_jump = double_jump_boots
 post_game = mad_lord_defeated
-third_bex_encounter = third_beach_bex
 
 --visibility helpers
 function not_hide_filler()
@@ -17,6 +16,35 @@ function not_hide_filler()
 end
 
 --slot_data
+function casual()
+    if SLOT_DATA == nil then
+        return true
+    end
+    return SLOT_DATA.options.logic_difficulty == 0
+end
+
+function advanced()
+    if SLOT_DATA == nil then
+        return false
+    end
+    return SLOT_DATA.options.logic_difficulty == 1
+end
+
+function expert()
+    if SLOT_DATA == nil then
+        return false
+    end
+    return SLOT_DATA.options.logic_difficulty == 2
+end
+
+function tedious()
+    if SLOT_DATA == nil then
+        return false
+    end
+    return SLOT_DATA.options.tedious_checks == 0
+end
+
+
 function shifting_avialable()
     if SLOT_DATA == nil then
         return false

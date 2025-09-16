@@ -310,6 +310,14 @@ function dodo_egg()
     return has('dodo_egg')
 end
 
+function light_shifted_dodo_egg()
+    return has('light_shifted_dodo_egg')
+end
+
+function dark_shifted_dodo_egg()
+    return has('dark_shifted_dodo_egg')
+end
+
 function kongamato_egg()
     return has('kongamato_egg')
 end
@@ -1282,6 +1290,14 @@ function blue_cave_champion_room_2_west_shortcut()
     })
 end
 
+function aazerach_defeated()
+    return
+    _AND({
+        has_access_to('StrongholdDungeon_SummonRoom'),
+        ahrimaaya()
+    })
+end
+
 function stronghold_dungeon_library_access()
     return has_access_to('StrongholdDungeon_Library')
 end
@@ -1308,7 +1324,20 @@ function stronghold_dungeon_blob_key()
     return
     _AND({
         has_access_to('StrongholdDungeon_EastKeys'),
-        blob_key()
+        _AND({
+            blob_key(),
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
+            })
+        })
     })
 end
 
@@ -1337,6 +1366,93 @@ function snowy_peaks_east_mountain_3_shortcut()
     })
 end
 
+function sun_palace_lower_water_1()
+    return
+    _OR({
+        _AND({
+            has_access_to('SunPalace_Center'),
+            _AND({
+                sun_palace_raise_center_1(),
+                _OR({
+                    _AND({
+                        casual(),
+                        _OR({
+                            double_jump(),
+                            lofty_mount(),
+                            improved_flying(),
+                            dual_mobility()
+                        })
+                    }),
+                    _AND({
+                        _NOT(casual()),
+                        _OR({
+                            double_jump(),
+                            lofty_mount(),
+                            improved_flying(),
+                            dual_mobility(),
+                            summon_big_rock()
+                        })
+                    })
+                })
+            })
+        }),
+        open_sun_palace(2),
+        open_sun_palace(3)
+    })
+end
+
+function sun_palace_lower_water_2()
+    return
+    _OR({
+        _AND({
+            has_access_to('SunPalace_Center'),
+            _AND({
+                sun_palace_raise_center_2(),
+                _OR({
+                    _AND({
+                        casual(),
+                        _OR({
+                            double_jump(),
+                            lofty_mount(),
+                            improved_flying(),
+                            dual_mobility()
+                        })
+                    }),
+                    _AND({
+                        _NOT(casual()),
+                        _OR({
+                            double_jump(),
+                            lofty_mount(),
+                            improved_flying(),
+                            dual_mobility(),
+                            summon_big_rock()
+                        })
+                    })
+                })
+            })
+        }),
+        open_sun_palace(2),
+        open_sun_palace(3)
+    })
+end
+
+function second_bex_encounter()
+    return
+    _AND({
+        has_access_to('SunPalace_West3'),
+        first_bex_encounter()
+    })
+end
+
+function sun_palace_raise_center_1()
+    return
+    _OR({
+        has_access_to('SunPalace_South4'),
+        open_sun_palace(2),
+        open_sun_palace(3)
+    })
+end
+
 function sun_palace_east_shortcut()
     return
     _OR({
@@ -1355,35 +1471,24 @@ function sun_palace_raise_center_2()
     })
 end
 
-function sun_palace_lower_water_1()
-    return
-    _OR({
-        _AND({
-            has_access_to('SunPalace_Center'),
-            sun_palace_raise_center_1()
-        }),
-        open_sun_palace(2),
-        open_sun_palace(3)
-    })
-end
-
-function sun_palace_lower_water_2()
-    return
-    _OR({
-        _AND({
-            has_access_to('SunPalace_Center'),
-            sun_palace_raise_center_2()
-        }),
-        open_sun_palace(2),
-        open_sun_palace(3)
-    })
-end
-
-function second_bex_encounter()
+function sun_palace_blob_key()
     return
     _AND({
-        has_access_to('SunPalace_West3'),
-        first_bex_encounter()
+        has_access_to('SunPalace_EastSewers6'),
+        _AND({
+            blob_key(),
+            _OR({
+                tedious(),
+                _AND({
+                    _NOT(tedious()),
+                    _OR({
+                        double_jump(),
+                        improved_flying(),
+                        dual_mobility()
+                    })
+                })
+            })
+        })
     })
 end
 
@@ -1405,25 +1510,12 @@ function sun_palace_west_shortcut()
     })
 end
 
-function sun_palace_raise_center_1()
-    return
-    _OR({
-        has_access_to('SunPalace_South4'),
-        open_sun_palace(2),
-        open_sun_palace(3)
-    })
-end
-
-function sun_palace_blob_key()
-    return
-    _AND({
-        has_access_to('SunPalace_EastSewers6'),
-        blob_key()
-    })
-end
-
 function sun_palace_story_completed()
     return has_access_to('SunPalace_North2')
+end
+
+function tree_of_evolution_access()
+    return has_access_to('AncientWoods_TreeOfEvolution')
 end
 
 function ostanes()
@@ -1468,14 +1560,13 @@ function ancient_woods_brutus_access()
     _OR({
         _AND({
             has_access_to('AncientWoods_South4'),
-            breakable_walls()
+            _AND({
+                dark_rooms(),
+                breakable_walls()
+            })
         }),
         open_ancient_woods(1)
     })
-end
-
-function tree_of_evolution_access()
-    return has_access_to('AncientWoods_TreeOfEvolution')
 end
 
 function horizon_beach_center_shortcut()
@@ -1487,8 +1578,12 @@ function horizon_beach_center_shortcut()
     })
 end
 
-function third_beach_bex()
-    return has_access_to('HorizonBeach_East5')
+function third_bex_encounter()
+    return
+    _AND({
+        has_access_to('HorizonBeach_East5'),
+        second_bex_encounter()
+    })
 end
 
 function horizon_beach_rescue_leonard()
@@ -1520,7 +1615,11 @@ function ancient_woods_magma_chamber_2()
 end
 
 function fourth_bex_encounter()
-    return has_access_to('MagmaChamber_North8_East')
+    return
+    _AND({
+        has_access_to('MagmaChamber_North8_East'),
+        third_bex_encounter()
+    })
 end
 
 function magma_chamber_north_shortcut()
@@ -1604,7 +1703,10 @@ end
 function forgotten_world_to_magma_chamber_shortcut()
     return
     _OR({
-        has_access_to('MagmaChamber_South9_Shortcut'),
+        _AND({
+            has_access_to('MagmaChamber_South9_Shortcut'),
+            summon_big_rock()
+        }),
         open_forgotten_world(1),
         open_forgotten_world(3)
     })
@@ -1647,8 +1749,11 @@ function underworld_west_catacomb_4_shortcut()
             has_access_to('Underworld_WestCatacomb4_Lower'),
             _OR({
                 double_jump(),
-                ground_switches(),
-                distant_ledges()
+                distant_ledges(),
+                _AND({
+                    _NOT(casual()),
+                    ground_switches()
+                })
             })
         }),
         open_underworld(2),
@@ -1782,7 +1887,11 @@ function blob_burg_access_4()
                 _OR({
                     improved_flying(),
                     dual_mobility(),
-                    lofty_mount()
+                    lofty_mount(),
+                    _AND({
+                        expert(),
+                        narrow_corridors()
+                    })
                 })
             })
         }),
@@ -1834,7 +1943,22 @@ end
 function forgotten_world_caves_shortcut()
     return
     _OR({
-        has_access_to('ForgottenWorld_Caves11_Lower'),
+        _AND({
+            has_access_to('ForgottenWorld_Caves11_Lower'),
+            _AND({
+                breakable_walls(),
+                _OR({
+                    double_jump(),
+                    improved_flying(),
+                    dual_mobility(),
+                    lofty_mount(),
+                    _AND({
+                        _NOT(casual()),
+                        summon_big_rock()
+                    })
+                })
+            })
+        }),
         open_forgotten_world(2),
         open_forgotten_world(3)
     })

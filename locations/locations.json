@@ -25,11 +25,28 @@
     "access_rules": [
       [
         "$has_access_to|MountainPath_North3",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|MountainPath_North3",
+        "$casual",
         "$distant_ledges"
+      ],
+      [
+        "$has_access_to|MountainPath_North3",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|MountainPath_North3",
+        "$_NOT_CALL|casual",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|MountainPath_North3",
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -311,15 +328,28 @@
     "access_rules": [
       [
         "$has_access_to|MountainPath_Center1",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|MountainPath_Center1",
+        "$casual",
         "$distant_ledges"
       ],
       [
         "$has_access_to|MountainPath_Center1",
-        "$summon_big_rock"
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|MountainPath_Center1",
+        "$_NOT_CALL|casual",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|MountainPath_Center1",
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -838,13 +868,37 @@
     "access_rules": [
       [
         "$has_access_to|MountainPath_West4",
+        "$casual",
         "$double_jump",
-        "$ground_switches"
+        "$distant_ledges"
       ],
       [
         "$has_access_to|MountainPath_West4",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|MountainPath_West4",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|MountainPath_West4",
+        "$_NOT_CALL|casual",
         "$double_jump",
-        "$distant_ledges"
+        "$flying"
+      ],
+      [
+        "$has_access_to|MountainPath_West4",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|MountainPath_West4",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -1388,7 +1442,45 @@
         "access_rules": [
           [
             "$has_access_to|KeeperStronghold_EndOfTime",
-            "$keeper_rank_5"
+            "$casual",
+            "$keeper_rank_5",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|KeeperStronghold_EndOfTime",
+            "$casual",
+            "$keeper_rank_5",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|KeeperStronghold_EndOfTime",
+            "$casual",
+            "$keeper_rank_5",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|KeeperStronghold_EndOfTime",
+            "$casual",
+            "$keeper_rank_5",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|KeeperStronghold_EndOfTime",
+            "$_NOT_CALL|casual",
+            "$keeper_rank_5",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|KeeperStronghold_EndOfTime",
+            "$_NOT_CALL|casual",
+            "$keeper_rank_5",
+            "$distant_ledges"
+          ],
+          [
+            "$has_access_to|KeeperStronghold_EndOfTime",
+            "$_NOT_CALL|casual",
+            "$keeper_rank_5",
+            "$ground_switches"
           ]
         ],
         "visibility_rules": [
@@ -1407,7 +1499,45 @@
         "access_rules": [
           [
             "$has_access_to|KeeperStronghold_EndOfTime",
-            "$keeper_rank_5"
+            "$casual",
+            "$keeper_rank_5",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|KeeperStronghold_EndOfTime",
+            "$casual",
+            "$keeper_rank_5",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|KeeperStronghold_EndOfTime",
+            "$casual",
+            "$keeper_rank_5",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|KeeperStronghold_EndOfTime",
+            "$casual",
+            "$keeper_rank_5",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|KeeperStronghold_EndOfTime",
+            "$_NOT_CALL|casual",
+            "$keeper_rank_5",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|KeeperStronghold_EndOfTime",
+            "$_NOT_CALL|casual",
+            "$keeper_rank_5",
+            "$distant_ledges"
+          ],
+          [
+            "$has_access_to|KeeperStronghold_EndOfTime",
+            "$_NOT_CALL|casual",
+            "$keeper_rank_5",
+            "$ground_switches"
           ]
         ],
         "visibility_rules": [
@@ -1496,15 +1626,58 @@
         "access_rules": [
           [
             "$has_access_to|BlueCave_Platforms",
+            "$casual",
             "$blue_cave_switches_access"
           ],
           [
             "$has_access_to|BlueCave_Platforms",
+            "$casual",
             "$double_jump"
           ],
           [
             "$has_access_to|BlueCave_Platforms",
+            "$casual",
             "$distant_ledges"
+          ],
+          [
+            "$has_access_to|BlueCave_Platforms",
+            "$advanced",
+            "$blue_cave_switches_access"
+          ],
+          [
+            "$has_access_to|BlueCave_Platforms",
+            "$advanced",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|BlueCave_Platforms",
+            "$advanced",
+            "$distant_ledges"
+          ],
+          [
+            "$has_access_to|BlueCave_Platforms",
+            "$advanced",
+            "$summon_big_rock"
+          ],
+          [
+            "$has_access_to|BlueCave_Platforms",
+            "$expert",
+            "$blue_cave_switches_access"
+          ],
+          [
+            "$has_access_to|BlueCave_Platforms",
+            "$expert",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|BlueCave_Platforms",
+            "$expert",
+            "$distant_ledges"
+          ],
+          [
+            "$has_access_to|BlueCave_Platforms",
+            "$expert",
+            "$ground_switches"
           ]
         ]
       },
@@ -1590,14 +1763,27 @@
     "access_rules": [
       [
         "$has_access_to|BlueCave_NorthFork_Lower",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|BlueCave_NorthFork_Lower",
+        "$casual",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|BlueCave_NorthFork_Lower",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|BlueCave_NorthFork_Lower",
+        "$_NOT_CALL|casual",
         "$ground_switches"
       ],
       [
         "$has_access_to|BlueCave_NorthFork_Lower",
+        "$_NOT_CALL|casual",
         "$distant_ledges"
       ]
     ],
@@ -2023,15 +2209,17 @@
     "access_rules": [
       [
         "$has_access_to|BlueCave_South2",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|BlueCave_South2",
-        "$ground_switches"
+        "$casual",
+        "$distant_ledges"
       ],
       [
         "$has_access_to|BlueCave_South2",
-        "$distant_ledges"
+        "$_NOT_CALL|casual"
       ]
     ],
     "map_locations": [
@@ -2338,20 +2526,53 @@
     ]
   },
   {
-    "name": "Blue Cave - West Waters - Breakable Walls Chest",
+    "name": "Blue Cave - West Waters - Ledge Chest",
     "access_rules": [
       [
         "$has_access_to|BlueCave_WestWaters2_Lower",
-        "$double_jump",
-        "$ground_switches"
+        "$tedious",
+        "$double_jump"
       ],
       [
         "$has_access_to|BlueCave_WestWaters2_Lower",
+        "$tedious",
         "$distant_ledges"
       ],
       [
         "$has_access_to|BlueCave_WestWaters2_Lower",
+        "$tedious",
         "$swimming"
+      ],
+      [
+        "$has_access_to|BlueCave_WestWaters2_Lower",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|BlueCave_WestWaters2_Lower",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|BlueCave_WestWaters2_Lower",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|BlueCave_WestWaters2_Lower",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|BlueCave_WestWaters2_Lower",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$ground_switches",
+        "$distant_ledges"
       ]
     ],
     "map_locations": [
@@ -2375,11 +2596,47 @@
     ]
   },
   {
-    "name": "Blue Cave - West Waters - Switch Puzzle Chest",
+    "name": "Blue Cave - West Waters - Breakable Walls Chest",
     "access_rules": [
       [
         "$has_access_to|BlueCave_WestWaters2_Lower",
+        "$tedious",
         "$breakable_walls"
+      ],
+      [
+        "$has_access_to|BlueCave_WestWaters2_Lower",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$breakable_walls",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|BlueCave_WestWaters2_Lower",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$breakable_walls",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|BlueCave_WestWaters2_Lower",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$breakable_walls",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|BlueCave_WestWaters2_Lower",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$breakable_walls",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|BlueCave_WestWaters2_Lower",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$breakable_walls",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -2812,18 +3069,45 @@
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_North4",
+        "$casual",
         "$double_jump",
         "$improved_flying"
       ],
       [
         "$has_access_to|StrongholdDungeon_North4",
+        "$casual",
         "$double_jump",
         "$lofty_mount"
       ],
       [
         "$has_access_to|StrongholdDungeon_North4",
+        "$casual",
         "$double_jump",
         "$dual_mobility"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_North4",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_North4",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_North4",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_North4",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -2851,14 +3135,27 @@
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_North5",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|StrongholdDungeon_North5",
+        "$casual",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_North5",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_North5",
+        "$_NOT_CALL|casual",
         "$ground_switches"
       ],
       [
         "$has_access_to|StrongholdDungeon_North5",
+        "$_NOT_CALL|casual",
         "$distant_ledges"
       ]
     ],
@@ -2893,7 +3190,17 @@
       [
         "$has_access_to|StrongholdDungeon_North6",
         "$lightning_orbs",
-        "$distant_ledges"
+        "$flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_North6",
+        "$lightning_orbs",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_North6",
+        "$lightning_orbs",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -2948,16 +3255,41 @@
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_Central1",
+        "$casual",
         "$improved_flying"
       ],
       [
         "$has_access_to|StrongholdDungeon_Central1",
+        "$casual",
         "$dual_mobility"
       ],
       [
         "$has_access_to|StrongholdDungeon_Central1",
+        "$casual",
         "$double_jump",
         "$distant_ledges"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central1",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central1",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central1",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central1",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$mount"
       ]
     ],
     "map_locations": [
@@ -2985,11 +3317,24 @@
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_Central3",
+        "$casual",
+        "$double_jump",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central3",
+        "$_NOT_CALL|casual",
         "$double_jump"
       ],
       [
         "$has_access_to|StrongholdDungeon_Central3",
-        "$distant_ledges"
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central3",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -3086,7 +3431,8 @@
         "access_rules": [
           [
             "$has_access_to|StrongholdDungeon_Central4",
-            "$post_game"
+            "$post_game",
+            "$aazerach_defeated"
           ]
         ],
         "visibility_rules": [
@@ -3102,11 +3448,117 @@
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$tedious",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$tedious",
+        "$casual",
         "$distant_ledges"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$ground_switches"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$lightning_orbs",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$lightning_orbs",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$double_jump",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$double_jump",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$double_jump",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$lightning_orbs",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$lightning_orbs",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$lightning_orbs",
+        "$summon_big_rock"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$ground_switches"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_Central5_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$lofty_mount"
       ]
     ],
     "map_locations": [
@@ -3232,7 +3684,7 @@
     ]
   },
   {
-    "name": "Stronghold Dungeon - Aazeraach",
+    "name": "Stronghold Dungeon - Aazerach",
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_SummonRoom",
@@ -3262,11 +3714,98 @@
     ]
   },
   {
+    "name": "Aazerach Defeated",
+    "access_rules": [
+      [
+        "$has_access_to|StrongholdDungeon_SummonRoom",
+        "$ahrimaaya"
+      ]
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
     "name": "Stronghold Dungeon - West Sewer",
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_South1",
+        "$tedious",
+        "$casual",
         "$double_jump"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South1",
+        "$tedious",
+        "$casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South1",
+        "$tedious",
+        "$casual",
+        "$swimming",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South1",
+        "$tedious",
+        "$casual",
+        "$swimming",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South1",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South1",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South1",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South1",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$distant_ledges",
+        "$ground_switches"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South1",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South1",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South1",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South1",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
       ]
     ],
     "map_locations": [
@@ -3323,7 +3862,36 @@
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_South4",
+        "$tedious",
         "$heavy_blocks"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South4",
+        "$_NOT_CALL|tedious",
+        "$heavy_blocks",
+        "$casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South4",
+        "$_NOT_CALL|tedious",
+        "$heavy_blocks",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South4",
+        "$_NOT_CALL|tedious",
+        "$heavy_blocks",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_South4",
+        "$_NOT_CALL|tedious",
+        "$heavy_blocks",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -3458,16 +4026,31 @@
         "access_rules": [
           [
             "$has_access_to|StrongholdDungeon_West1",
+            "$casual",
             "$heavy_blocks",
             "$double_jump"
           ],
           [
             "$has_access_to|StrongholdDungeon_West1",
+            "$casual",
+            "$heavy_blocks",
+            "$distant_ledges"
+          ],
+          [
+            "$has_access_to|StrongholdDungeon_West1",
+            "$_NOT_CALL|casual",
+            "$heavy_blocks",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|StrongholdDungeon_West1",
+            "$_NOT_CALL|casual",
             "$heavy_blocks",
             "$ground_switches"
           ],
           [
             "$has_access_to|StrongholdDungeon_West1",
+            "$_NOT_CALL|casual",
             "$heavy_blocks",
             "$distant_ledges"
           ]
@@ -3588,23 +4171,130 @@
     ]
   },
   {
-    "name": "Stronghold Dungeon - East Sewer - Key Door Chest",
+    "name": "Stronghold Dungeon - East Sewer - Central Ledge",
     "access_rules": [
       [
-        "$has_access_to|StrongholdDungeon_East1_NE",
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$tedious",
+        "$casual",
         "$double_jump"
       ],
       [
-        "$has_access_to|StrongholdDungeon_East1_NE",
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$tedious",
+        "$casual",
+        "$flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$tedious",
+        "$casual",
         "$improved_flying"
       ],
       [
-        "$has_access_to|StrongholdDungeon_East1_NE",
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$tedious",
+        "$casual",
         "$dual_mobility"
       ],
       [
-        "$has_access_to|StrongholdDungeon_East1_NE",
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$tedious",
+        "$advanced",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$tedious",
+        "$advanced",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$tedious",
+        "$advanced",
+        "$mount"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$tedious",
+        "$expert"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$double_jump",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$double_jump",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$double_jump",
         "$lofty_mount"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East1_NW",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$summon_big_rock"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2214,
+        "y": 1386
+      },
+      {
+        "map": "stronghold_dungeon",
+        "x": 482,
+        "y": 410
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Stronghold Dungeon - East Sewer - Key Door Chest",
+    "access_rules": [
+      [
+        "$has_access_to|StrongholdDungeon_East1_NE"
       ]
     ],
     "map_locations": [
@@ -3631,16 +4321,7 @@
     "name": "Stronghold Dungeon - East Sewer - Southwest Ledge",
     "access_rules": [
       [
-        "$has_access_to|StrongholdDungeon_East1_SW",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|StrongholdDungeon_East1_SW",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|StrongholdDungeon_East1_SW",
-        "$dual_mobility"
+        "$has_access_to|StrongholdDungeon_East1_SW_Ledge"
       ]
     ],
     "map_locations": [
@@ -3652,45 +4333,6 @@
       {
         "map": "stronghold_dungeon",
         "x": 446,
-        "y": 410
-      }
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Stronghold Dungeon - East Sewer - Central Ledge",
-    "access_rules": [
-      [
-        "$has_access_to|StrongholdDungeon_East1_SE",
-        "$double_jump",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|StrongholdDungeon_East1_SE",
-        "$double_jump",
-        "$dual_mobility"
-      ],
-      [
-        "$has_access_to|StrongholdDungeon_East1_SE",
-        "$double_jump",
-        "$lofty_mount"
-      ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 2214,
-        "y": 1386
-      },
-      {
-        "map": "stronghold_dungeon",
-        "x": 482,
         "y": 410
       }
     ],
@@ -3736,18 +4378,47 @@
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_East5",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|StrongholdDungeon_East5",
+        "$casual",
         "$improved_flying"
       ],
       [
         "$has_access_to|StrongholdDungeon_East5",
+        "$casual",
         "$dual_mobility"
       ],
       [
         "$has_access_to|StrongholdDungeon_East5",
+        "$casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East5",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East5",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East5",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East5",
+        "$_NOT_CALL|casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_East5",
+        "$_NOT_CALL|casual",
         "$summon_big_rock"
       ]
     ],
@@ -3792,7 +4463,23 @@
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|StrongholdDungeon_EastKeys"
+            "$has_access_to|StrongholdDungeon_EastKeys",
+            "$tedious"
+          ],
+          [
+            "$has_access_to|StrongholdDungeon_EastKeys",
+            "$_NOT_CALL|tedious",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|StrongholdDungeon_EastKeys",
+            "$_NOT_CALL|tedious",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|StrongholdDungeon_EastKeys",
+            "$_NOT_CALL|tedious",
+            "$dual_mobility"
           ]
         ]
       },
@@ -3802,7 +4489,23 @@
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|StrongholdDungeon_EastKeys"
+            "$has_access_to|StrongholdDungeon_EastKeys",
+            "$tedious"
+          ],
+          [
+            "$has_access_to|StrongholdDungeon_EastKeys",
+            "$_NOT_CALL|tedious",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|StrongholdDungeon_EastKeys",
+            "$_NOT_CALL|tedious",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|StrongholdDungeon_EastKeys",
+            "$_NOT_CALL|tedious",
+            "$dual_mobility"
           ]
         ]
       }
@@ -3813,7 +4516,26 @@
     "access_rules": [
       [
         "$has_access_to|StrongholdDungeon_EastKeys",
-        "$blob_key"
+        "$blob_key",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_EastKeys",
+        "$blob_key",
+        "$_NOT_CALL|tedious",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_EastKeys",
+        "$blob_key",
+        "$_NOT_CALL|tedious",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|StrongholdDungeon_EastKeys",
+        "$blob_key",
+        "$_NOT_CALL|tedious",
+        "$dual_mobility"
       ]
     ],
     "sections": [
@@ -3957,7 +4679,49 @@
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|SnowyPeaks_East3"
+            "$has_access_to|SnowyPeaks_East3",
+            "$casual",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$casual",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$casual",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$casual",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$_NOT_CALL|casual",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$_NOT_CALL|casual",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$_NOT_CALL|casual",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$_NOT_CALL|casual",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$_NOT_CALL|casual",
+            "$summon_big_rock"
           ]
         ]
       },
@@ -3967,7 +4731,49 @@
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|SnowyPeaks_East3"
+            "$has_access_to|SnowyPeaks_East3",
+            "$casual",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$casual",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$casual",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$casual",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$_NOT_CALL|casual",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$_NOT_CALL|casual",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$_NOT_CALL|casual",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$_NOT_CALL|casual",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_East3",
+            "$_NOT_CALL|casual",
+            "$summon_big_rock"
           ]
         ]
       }
@@ -3978,22 +4784,47 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_East3",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|SnowyPeaks_East3",
+        "$casual",
         "$improved_flying"
       ],
       [
         "$has_access_to|SnowyPeaks_East3",
+        "$casual",
         "$dual_mobility"
       ],
       [
         "$has_access_to|SnowyPeaks_East3",
+        "$casual",
         "$lofty_mount"
       ],
       [
         "$has_access_to|SnowyPeaks_East3",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_East3",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_East3",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_East3",
+        "$_NOT_CALL|casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_East3",
+        "$_NOT_CALL|casual",
         "$summon_big_rock"
       ]
     ],
@@ -4022,26 +4853,55 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_East4_Lower",
+        "$casual",
         "$breakable_walls",
         "$double_jump"
       ],
       [
         "$has_access_to|SnowyPeaks_East4_Lower",
+        "$casual",
         "$breakable_walls",
         "$improved_flying"
       ],
       [
         "$has_access_to|SnowyPeaks_East4_Lower",
+        "$casual",
         "$breakable_walls",
         "$dual_mobility"
       ],
       [
         "$has_access_to|SnowyPeaks_East4_Lower",
+        "$casual",
         "$breakable_walls",
         "$lofty_mount"
       ],
       [
         "$has_access_to|SnowyPeaks_East4_Lower",
+        "$_NOT_CALL|casual",
+        "$breakable_walls",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_East4_Lower",
+        "$_NOT_CALL|casual",
+        "$breakable_walls",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_East4_Lower",
+        "$_NOT_CALL|casual",
+        "$breakable_walls",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_East4_Lower",
+        "$_NOT_CALL|casual",
+        "$breakable_walls",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_East4_Lower",
+        "$_NOT_CALL|casual",
         "$breakable_walls",
         "$summon_big_rock"
       ]
@@ -4121,16 +4981,7 @@
     "name": "Snowy Peaks - East Spikes",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_East5",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|SnowyPeaks_East5",
-        "$distant_ledges"
-      ],
-      [
-        "$has_access_to|SnowyPeaks_East5",
-        "$ground_switches"
+        "$has_access_to|SnowyPeaks_East5"
       ]
     ],
     "map_locations": [
@@ -4187,23 +5038,96 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$casual",
         "$breakable_walls",
         "$double_jump"
       ],
       [
         "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$casual",
         "$breakable_walls",
         "$improved_flying"
       ],
       [
         "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$casual",
+        "$breakable_walls",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$casual",
         "$breakable_walls",
         "$dual_mobility"
       ],
       [
         "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$advanced",
+        "$breakable_walls",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$advanced",
+        "$breakable_walls",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$advanced",
         "$breakable_walls",
         "$lofty_mount"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$advanced",
+        "$breakable_walls",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$advanced",
+        "$breakable_walls",
+        "$flying",
+        "$summon_big_rock"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$expert",
+        "$breakable_walls",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$expert",
+        "$breakable_walls",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$expert",
+        "$breakable_walls",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$expert",
+        "$breakable_walls",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$expert",
+        "$breakable_walls",
+        "$summon_big_rock",
+        "$flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_SunPalaceEntrance",
+        "$expert",
+        "$breakable_walls",
+        "$summon_big_rock",
+        "$mount"
       ]
     ],
     "map_locations": [
@@ -4345,15 +5269,33 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_West3",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|SnowyPeaks_West3",
+        "$casual",
         "$improved_flying"
       ],
       [
         "$has_access_to|SnowyPeaks_West3",
+        "$casual",
         "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_West3",
+        "$casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_West3",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_West3",
+        "$_NOT_CALL|casual",
+        "$distant_ledges"
       ]
     ],
     "map_locations": [
@@ -4381,8 +5323,27 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_West4",
+        "$casual",
         "$double_jump",
         "$earth_orbs"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_West4",
+        "$_NOT_CALL|casual",
+        "$earth_orbs",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_West4",
+        "$_NOT_CALL|casual",
+        "$earth_orbs",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_West4",
+        "$_NOT_CALL|casual",
+        "$earth_orbs",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -4447,18 +5408,63 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_Lake_Lower",
-        "$swimming",
-        "$warm_underwear"
+        "$casual",
+        "$warm_underwear",
+        "$swimming"
       ],
       [
         "$has_access_to|SnowyPeaks_Lake_Lower",
+        "$casual",
+        "$warm_underwear",
+        "$double_jump",
+        "$heavy_blocks"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_Lake_Lower",
+        "$advanced",
+        "$warm_underwear",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_Lake_Lower",
+        "$advanced",
+        "$warm_underwear",
         "$double_jump",
         "$mount"
       ],
       [
         "$has_access_to|SnowyPeaks_Lake_Lower",
+        "$advanced",
+        "$warm_underwear",
         "$double_jump",
         "$heavy_blocks"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_Lake_Lower",
+        "$expert",
+        "$warm_underwear",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_Lake_Lower",
+        "$expert",
+        "$warm_underwear",
+        "$double_jump",
+        "$mount"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_Lake_Lower",
+        "$expert",
+        "$warm_underwear",
+        "$double_jump",
+        "$heavy_blocks"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_Lake_Lower",
+        "$expert",
+        "$warm_underwear",
+        "$heavy_blocks",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -4504,7 +5510,80 @@
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|SnowyPeaks_ChampionRoom"
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$tedious",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$tedious",
+            "$flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$tedious",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$tedious",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$tedious",
+            "$warm_underwear",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$warm_underwear",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$warm_underwear",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$warm_underwear",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$warm_underwear",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$warm_underwear",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$warm_underwear",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$warm_underwear",
+            "$flying",
+            "$ground_switches"
           ]
         ]
       },
@@ -4515,11 +5594,79 @@
         "access_rules": [
           [
             "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$tedious",
             "$double_jump"
           ],
           [
             "$has_access_to|SnowyPeaks_ChampionRoom",
-            "$distant_ledges"
+            "$tedious",
+            "$flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$tedious",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$tedious",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$tedious",
+            "$warm_underwear",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$warm_underwear",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$warm_underwear",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$warm_underwear",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$warm_underwear",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$warm_underwear",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$warm_underwear",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$warm_underwear",
+            "$flying",
+            "$ground_switches"
           ]
         ]
       },
@@ -4530,11 +5677,79 @@
         "access_rules": [
           [
             "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$tedious",
             "$double_jump"
           ],
           [
             "$has_access_to|SnowyPeaks_ChampionRoom",
-            "$distant_ledges"
+            "$tedious",
+            "$flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$tedious",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$tedious",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$tedious",
+            "$warm_underwear",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$warm_underwear",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$warm_underwear",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$warm_underwear",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$warm_underwear",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$warm_underwear",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$warm_underwear",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SnowyPeaks_ChampionRoom",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$warm_underwear",
+            "$flying",
+            "$ground_switches"
           ]
         ]
       }
@@ -4572,14 +5787,22 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_West5",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|SnowyPeaks_West5",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_West5",
+        "$_NOT_CALL|casual",
         "$improved_flying"
       ],
       [
         "$has_access_to|SnowyPeaks_West5",
+        "$_NOT_CALL|casual",
         "$dual_mobility"
       ]
     ],
@@ -4654,7 +5877,7 @@
         "access_rules": [
           [
             "$has_access_to|SnowyPeaks_Cryomancer",
-            "$dodo"
+            "$dodo_egg"
           ]
         ],
         "visibility_rules": [
@@ -4673,7 +5896,9 @@
         "access_rules": [
           [
             "$has_access_to|SnowyPeaks_Cryomancer",
-            "$dodo"
+            "$dodo_egg",
+            "$light_shifted_dodo_egg",
+            "$dark_shifted_dodo_egg"
           ]
         ],
         "visibility_rules": [
@@ -4692,8 +5917,7 @@
         "access_rules": [
           [
             "$has_access_to|SnowyPeaks_Cryomancer",
-            "$dodo",
-            "$shifting_avialable"
+            "$light_shifted_dodo_egg"
           ]
         ],
         "visibility_rules": [
@@ -4714,8 +5938,7 @@
         "access_rules": [
           [
             "$has_access_to|SnowyPeaks_Cryomancer",
-            "$dodo",
-            "$shifting_avialable"
+            "$dark_shifted_dodo_egg"
           ]
         ],
         "visibility_rules": [
@@ -4846,8 +6069,21 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_WestMountain7",
+        "$casual",
         "$double_jump",
         "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_WestMountain7",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_WestMountain7",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -4875,9 +6111,24 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_WestMountain7",
+        "$casual",
         "$double_jump",
-        "$distant_ledges",
-        "$breakable_walls"
+        "$breakable_walls",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_WestMountain7",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$breakable_walls",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_WestMountain7",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$breakable_walls",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -4905,9 +6156,24 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_WestMountain7",
+        "$casual",
         "$double_jump",
         "$distant_ledges",
         "$secret_vision"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_WestMountain7",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$secret_vision",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_WestMountain7",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$secret_vision",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -4991,7 +6257,28 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_EastMountain1",
+        "$casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain1",
+        "$casual",
         "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain1",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain1",
+        "$_NOT_CALL|casual",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain1",
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -5019,15 +6306,38 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_EastMountainTop",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|SnowyPeaks_EastMountainTop",
+        "$casual",
         "$improved_flying"
       ],
       [
         "$has_access_to|SnowyPeaks_EastMountainTop",
+        "$casual",
         "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountainTop",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountainTop",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountainTop",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountainTop",
+        "$_NOT_CALL|casual",
+        "$flying"
       ]
     ],
     "map_locations": [
@@ -5083,8 +6393,27 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_EastMountain4",
+        "$casual",
         "$double_jump",
         "$lightning_orbs"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain4",
+        "$_NOT_CALL|casual",
+        "$lightning_orbs",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain4",
+        "$_NOT_CALL|casual",
+        "$lightning_orbs",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain4",
+        "$_NOT_CALL|casual",
+        "$lightning_orbs",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -5112,19 +6441,38 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_EastMountain2",
+        "$tedious",
         "$double_jump"
       ],
       [
         "$has_access_to|SnowyPeaks_EastMountain2",
+        "$tedious",
+        "$flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$tedious",
         "$improved_flying"
       ],
       [
         "$has_access_to|SnowyPeaks_EastMountain2",
+        "$tedious",
         "$dual_mobility"
       ],
       [
         "$has_access_to|SnowyPeaks_EastMountain2",
-        "$lofty_mount"
+        "$_NOT_CALL|tedious",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$_NOT_CALL|tedious",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$_NOT_CALL|tedious",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -5152,7 +6500,75 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_EastMountain2",
+        "$tedious",
+        "$casual",
+        "$flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$tedious",
+        "$casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$tedious",
+        "$casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$tedious",
+        "$_NOT_CALL|casual",
         "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -5181,6 +6597,14 @@
       [
         "$has_access_to|SnowyPeaks_EastMountain2",
         "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain2",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -5208,7 +6632,38 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_EastMountain5",
-        "$double_jump"
+        "$casual",
+        "$breakable_walls",
+        "$double_jump",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain5",
+        "$casual",
+        "$breakable_walls",
+        "$double_jump",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain5",
+        "$casual",
+        "$breakable_walls",
+        "$double_jump",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain5",
+        "$_NOT_CALL|casual",
+        "$breakable_walls",
+        "$double_jump",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain5",
+        "$_NOT_CALL|casual",
+        "$breakable_walls",
+        "$double_jump",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -5236,15 +6691,28 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_EastMountain5",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|SnowyPeaks_EastMountain5",
-        "$improved_flying"
+        "$casual",
+        "$distant_ledges"
       ],
       [
         "$has_access_to|SnowyPeaks_EastMountain5",
-        "$dual_mobility"
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain5",
+        "$_NOT_CALL|casual",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain5",
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -5272,14 +6740,22 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_HighChallenge",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|SnowyPeaks_HighChallenge",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_HighChallenge",
+        "$_NOT_CALL|casual",
         "$improved_flying"
       ],
       [
         "$has_access_to|SnowyPeaks_HighChallenge",
+        "$_NOT_CALL|casual",
         "$dual_mobility"
       ]
     ],
@@ -5320,6 +6796,11 @@
         "$has_access_to|SnowyPeaks_HighChallenge",
         "$water_orbs",
         "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_HighChallenge",
+        "$water_orbs",
+        "$lofty_mount"
       ]
     ],
     "map_locations": [
@@ -5362,6 +6843,13 @@
     "access_rules": [
       [
         "$has_access_to|SnowyPeaks_EastMountain3_Upper",
+        "$casual",
+        "$double_jump",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SnowyPeaks_EastMountain3_Upper",
+        "$_NOT_CALL|casual",
         "$double_jump"
       ]
     ],
@@ -5389,16 +6877,7 @@
     "name": "Snowy Peaks - East Mountain - Lower Crumble Ledge Chest 2",
     "access_rules": [
       [
-        "$has_access_to|SnowyPeaks_EastMountain3_Middle",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|SnowyPeaks_EastMountain3_Middle",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|SnowyPeaks_EastMountain3_Middle",
-        "$dual_mobility"
+        "$has_access_to|SnowyPeaks_EastMountain3_Middle_Chest"
       ]
     ],
     "map_locations": [
@@ -5472,7 +6951,7 @@
           [
             "$has_access_to|SnowyPeaks_EastDark",
             "$double_jump",
-            "$dark_rooms"
+            "$sonar_mount"
           ]
         ]
       },
@@ -5484,7 +6963,7 @@
           [
             "$has_access_to|SnowyPeaks_EastDark",
             "$double_jump",
-            "$dark_rooms"
+            "$sonar_mount"
           ]
         ]
       }
@@ -5598,16 +7077,41 @@
     "access_rules": [
       [
         "$has_access_to|SunPalace_East3",
+        "$casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SunPalace_East3",
+        "$casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SunPalace_East3",
+        "$casual",
         "$double_jump",
         "$distant_ledges"
       ],
       [
         "$has_access_to|SunPalace_East3",
+        "$_NOT_CALL|casual",
         "$improved_flying"
       ],
       [
         "$has_access_to|SunPalace_East3",
+        "$_NOT_CALL|casual",
         "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SunPalace_East3",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SunPalace_East3",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -5635,9 +7139,24 @@
     "access_rules": [
       [
         "$has_access_to|SunPalace_East3",
-        "$ground_switches",
+        "$casual",
         "$double_jump",
+        "$distant_ledges",
+        "$ground_switches"
+      ],
+      [
+        "$has_access_to|SunPalace_East3",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$ground_switches",
         "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SunPalace_East3",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$ground_switches",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -5690,72 +7209,8 @@
     ]
   },
   {
-    "name": "Sun Palace - Qilin",
-    "access_rules": [
-      [
-        "$has_access_to|SunPalace_East6"
-      ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 918,
-        "y": 1350
-      },
-      {
-        "map": "sun_palace",
-        "x": 554,
-        "y": 230
-      }
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
-        "chest_unopened_img": "images/items/rank/champion_defeated.png",
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Sun Palace East Shortcut",
-    "access_rules": [
-      [
-        "$has_access_to|SunPalace_East6"
-      ]
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Sun Palace Raise Center",
-    "access_rules": [
-      [
-        "$has_access_to|SunPalace_East6"
-      ]
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
     "name": "Sun Palace - Crystal Room",
     "access_rules": [
-      [
-        "$has_access_to|SunPalace_Center",
-        "$_NOT_CALL|sun_palace_raise_center_2",
-        "$swimming"
-      ],
       [
         "$has_access_to|SunPalace_Center",
         "$sun_palace_raise_center_2",
@@ -5764,7 +7219,51 @@
       [
         "$has_access_to|SunPalace_Center",
         "$sun_palace_raise_center_2",
-        "$distant_ledges"
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_2",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_2",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_2",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock",
+        "$flying"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_3",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_3",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_3",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_3",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_3",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock",
+        "$flying"
       ]
     ],
     "map_locations": [
@@ -5792,7 +7291,57 @@
     "access_rules": [
       [
         "$has_access_to|SunPalace_Center",
-        "$sun_palace_raise_center_1"
+        "$sun_palace_raise_center_1",
+        "$casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_1",
+        "$casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_1",
+        "$casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_1",
+        "$casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_1",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_1",
+        "$_NOT_CALL|casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_1",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_1",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_1",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "sections": [
@@ -5808,37 +7357,58 @@
     "access_rules": [
       [
         "$has_access_to|SunPalace_Center",
-        "$sun_palace_raise_center_2"
-      ]
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Sun Palace - West - Floating Ledge Chest",
-    "access_rules": [
+        "$sun_palace_raise_center_2",
+        "$casual",
+        "$double_jump"
+      ],
       [
-        "$has_access_to|SunPalace_West2",
-        "$double_jump",
-        "$distant_ledges"
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_2",
+        "$casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_2",
+        "$casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_2",
+        "$casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_2",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_2",
+        "$_NOT_CALL|casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_2",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_2",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|SunPalace_Center",
+        "$sun_palace_raise_center_2",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 522,
-        "y": 1242
-      },
-      {
-        "map": "sun_palace",
-        "x": 158,
-        "y": 122
-      }
     ],
     "sections": [
       {
@@ -5853,11 +7423,28 @@
     "access_rules": [
       [
         "$has_access_to|SunPalace_West1",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|SunPalace_West1",
+        "$casual",
         "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SunPalace_West1",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SunPalace_West1",
+        "$_NOT_CALL|casual",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|SunPalace_West1",
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -5896,6 +7483,35 @@
       {
         "map": "sun_palace",
         "x": 50,
+        "y": 122
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Sun Palace - West - Floating Ledge Chest",
+    "access_rules": [
+      [
+        "$has_access_to|SunPalace_West2",
+        "$double_jump",
+        "$distant_ledges"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 522,
+        "y": 1242
+      },
+      {
+        "map": "sun_palace",
+        "x": 158,
         "y": 122
       }
     ],
@@ -5980,133 +7596,6 @@
     ]
   },
   {
-    "name": "Sun Palace - West Pool - Water Chest",
-    "access_rules": [
-      [
-        "$has_access_to|SunPalace_West4",
-        "$swimming"
-      ],
-      [
-        "$has_access_to|SunPalace_West4",
-        "$double_jump",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|SunPalace_West4",
-        "$double_jump",
-        "$dual_mobility"
-      ],
-      [
-        "$has_access_to|SunPalace_West4",
-        "$double_jump",
-        "$summon_big_rock"
-      ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 414,
-        "y": 1386
-      },
-      {
-        "map": "sun_palace",
-        "x": 50,
-        "y": 266
-      }
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Sun Palace - West Pool - Upper Chest",
-    "access_rules": [
-      [
-        "$has_access_to|SunPalace_West4"
-      ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 486,
-        "y": 1350
-      },
-      {
-        "map": "sun_palace",
-        "x": 122,
-        "y": 230
-      }
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Sun Palace - West Pool - Platform Chest",
-    "access_rules": [
-      [
-        "$has_access_to|SunPalace_West4"
-      ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 450,
-        "y": 1386
-      },
-      {
-        "map": "sun_palace",
-        "x": 86,
-        "y": 266
-      }
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Sun Palace Raise Center 2",
-    "access_rules": [
-      [
-        "$has_access_to|SunPalace_West5"
-      ]
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Sun Palace West Shortcut",
-    "access_rules": [
-      [
-        "$has_access_to|SunPalace_West5"
-      ]
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
     "name": "Sun Palace - Central Sewer",
     "map_locations": [
       {
@@ -6129,31 +7618,74 @@
           [
             "$has_access_to|SunPalace_South1_Upper",
             "$_NOT_CALL|sun_palace_lower_water_1",
+            "$casual",
             "$swimming"
           ],
           [
             "$has_access_to|SunPalace_South1_Upper",
+            "$_NOT_CALL|sun_palace_lower_water_1",
+            "$_NOT_CALL|casual",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Upper",
+            "$_NOT_CALL|sun_palace_lower_water_1",
+            "$_NOT_CALL|casual",
+            "$double_jump",
+            "$summon_big_rock"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Upper",
             "$sun_palace_lower_water_1",
+            "$casual",
             "$double_jump"
           ],
           [
             "$has_access_to|SunPalace_South1_Upper",
             "$sun_palace_lower_water_1",
+            "$casual",
             "$improved_flying"
           ],
           [
             "$has_access_to|SunPalace_South1_Upper",
             "$sun_palace_lower_water_1",
+            "$casual",
             "$dual_mobility"
           ],
           [
             "$has_access_to|SunPalace_South1_Upper",
             "$sun_palace_lower_water_1",
+            "$casual",
             "$lofty_mount"
           ],
           [
             "$has_access_to|SunPalace_South1_Upper",
             "$sun_palace_lower_water_1",
+            "$_NOT_CALL|casual",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Upper",
+            "$sun_palace_lower_water_1",
+            "$_NOT_CALL|casual",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Upper",
+            "$sun_palace_lower_water_1",
+            "$_NOT_CALL|casual",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Upper",
+            "$sun_palace_lower_water_1",
+            "$_NOT_CALL|casual",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Upper",
+            "$sun_palace_lower_water_1",
+            "$_NOT_CALL|casual",
             "$summon_big_rock"
           ]
         ]
@@ -6165,18 +7697,144 @@
         "access_rules": [
           [
             "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|sun_palace_lower_water_1",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$tedious",
             "$double_jump"
           ],
           [
             "$has_access_to|SunPalace_South1_Lower",
+            "$tedious",
             "$improved_flying"
           ],
           [
             "$has_access_to|SunPalace_South1_Lower",
+            "$tedious",
             "$dual_mobility"
           ],
           [
             "$has_access_to|SunPalace_South1_Lower",
+            "$tedious",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$swimming",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$swimming",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$swimming",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$sun_palace_lower_water_2",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$sun_palace_lower_water_2",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$casual",
+            "$sun_palace_lower_water_2",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$swimming",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$swimming",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$swimming",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$summon_big_rock",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$summon_big_rock",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$summon_big_rock",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$sun_palace_lower_water_2",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$sun_palace_lower_water_2",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|tedious",
+            "$_NOT_CALL|casual",
+            "$sun_palace_lower_water_2",
             "$lofty_mount"
           ]
         ]
@@ -6189,22 +7847,16 @@
       [
         "$has_access_to|SunPalace_South1_Lower",
         "$_NOT_CALL|sun_palace_lower_water_2",
-        "$swimming"
-      ],
-      [
-        "$has_access_to|SunPalace_South1_Lower",
-        "$sun_palace_lower_water_2",
         "$double_jump"
       ],
       [
         "$has_access_to|SunPalace_South1_Lower",
-        "$sun_palace_lower_water_2",
-        "$improved_flying"
+        "$_NOT_CALL|sun_palace_lower_water_2",
+        "$swimming"
       ],
       [
         "$has_access_to|SunPalace_South1_Lower",
-        "$sun_palace_lower_water_2",
-        "$dual_mobility"
+        "$sun_palace_lower_water_2"
       ]
     ],
     "map_locations": [
@@ -6249,16 +7901,43 @@
         "access_rules": [
           [
             "$has_access_to|SunPalace_South1_Lower",
-            "$_NOT_CALL|sun_palace_lower_water_2",
+            "$casual",
             "$swimming"
           ],
           [
             "$has_access_to|SunPalace_South1_Lower",
+            "$casual",
             "$sun_palace_lower_water_2"
           ],
           [
             "$has_access_to|SunPalace_South1_Lower",
+            "$casual",
             "$double_jump"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|casual",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|casual",
+            "$sun_palace_lower_water_2"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|casual",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|casual",
+            "$summon_big_rock"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|casual",
+            "$tedious"
           ]
         ]
       },
@@ -6269,31 +7948,74 @@
         "access_rules": [
           [
             "$has_access_to|SunPalace_South1_Lower",
+            "$casual",
             "$_NOT_CALL|sun_palace_lower_water_2",
             "$swimming"
           ],
           [
             "$has_access_to|SunPalace_South1_Lower",
+            "$casual",
             "$sun_palace_lower_water_2",
             "$double_jump"
           ],
           [
             "$has_access_to|SunPalace_South1_Lower",
+            "$casual",
             "$sun_palace_lower_water_2",
             "$improved_flying"
           ],
           [
             "$has_access_to|SunPalace_South1_Lower",
+            "$casual",
             "$sun_palace_lower_water_2",
             "$dual_mobility"
           ],
           [
             "$has_access_to|SunPalace_South1_Lower",
+            "$casual",
             "$sun_palace_lower_water_2",
             "$lofty_mount"
           ],
           [
             "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|casual",
+            "$_NOT_CALL|sun_palace_lower_water_2",
+            "$swimming"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|casual",
+            "$_NOT_CALL|sun_palace_lower_water_2",
+            "$double_jump",
+            "$summon_big_rock"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|casual",
+            "$sun_palace_lower_water_2",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|casual",
+            "$sun_palace_lower_water_2",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|casual",
+            "$sun_palace_lower_water_2",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|casual",
+            "$sun_palace_lower_water_2",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|SunPalace_South1_Lower",
+            "$_NOT_CALL|casual",
             "$sun_palace_lower_water_2",
             "$summon_big_rock"
           ]
@@ -6341,7 +8063,7 @@
     ]
   },
   {
-    "name": "Sun Palace Raise Center 3",
+    "name": "Sun Palace Raise Center",
     "access_rules": [
       [
         "$has_access_to|SunPalace_South4"
@@ -6360,15 +8082,49 @@
     "access_rules": [
       [
         "$has_access_to|SunPalace_EastSewers2",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers2",
+        "$_NOT_CALL|tedious",
+        "$casual",
         "$sun_palace_lower_water_2"
       ],
       [
         "$has_access_to|SunPalace_EastSewers2",
+        "$_NOT_CALL|tedious",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|SunPalace_EastSewers2",
+        "$_NOT_CALL|tedious",
+        "$casual",
         "$swimming"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers2",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$sun_palace_lower_water_2"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers2",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers2",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers2",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -6396,10 +8152,17 @@
     "access_rules": [
       [
         "$has_access_to|SunPalace_EastSewers4",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|SunPalace_EastSewers4",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers4",
+        "$_NOT_CALL|casual",
         "$lofty_mount"
       ]
     ],
@@ -6424,12 +8187,81 @@
     ]
   },
   {
-    "name": "Sun Palace - Slime Statue Room - Center Chest",
+    "name": "Sun Palace - Qilin",
+    "access_rules": [
+      [
+        "$has_access_to|SunPalace_East6"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 918,
+        "y": 1350
+      },
+      {
+        "map": "sun_palace",
+        "x": 554,
+        "y": 230
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "chest_opened_img": "images/items/rank/champion_defeated_grey.png",
+        "chest_unopened_img": "images/items/rank/champion_defeated.png",
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Sun Palace East Shortcut",
+    "access_rules": [
+      [
+        "$has_access_to|SunPalace_East6"
+      ]
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Sun Palace Raise Center 2",
+    "access_rules": [
+      [
+        "$has_access_to|SunPalace_East6"
+      ]
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Sun Palace - Slime Statue Room - Switch Chest",
     "access_rules": [
       [
         "$has_access_to|SunPalace_EastSewers6",
-        "$breakable_walls",
-        "$heavy_blocks"
+        "$heavy_blocks",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers6",
+        "$heavy_blocks",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers6",
+        "$heavy_blocks",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -6453,10 +8285,26 @@
     ]
   },
   {
-    "name": "Sun Palace - Slime Statue Room - East Chest",
+    "name": "Sun Palace - Slime Statue Room - Center Chest",
     "access_rules": [
       [
-        "$has_access_to|SunPalace_EastSewers6"
+        "$has_access_to|SunPalace_EastSewers6",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers6",
+        "$_NOT_CALL|tedious",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers6",
+        "$_NOT_CALL|tedious",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers6",
+        "$_NOT_CALL|tedious",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -6484,7 +8332,26 @@
     "access_rules": [
       [
         "$has_access_to|SunPalace_EastSewers6",
-        "$blob_key"
+        "$blob_key",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers6",
+        "$blob_key",
+        "$_NOT_CALL|tedious",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers6",
+        "$blob_key",
+        "$_NOT_CALL|tedious",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SunPalace_EastSewers6",
+        "$blob_key",
+        "$_NOT_CALL|tedious",
+        "$dual_mobility"
       ]
     ],
     "sections": [
@@ -6500,6 +8367,17 @@
     "access_rules": [
       [
         "$has_access_to|SunPalace_WestSewers1",
+        "$casual",
+        "$heavy_blocks"
+      ],
+      [
+        "$has_access_to|SunPalace_WestSewers1",
+        "$_NOT_CALL|casual",
+        "$narrow_corridors"
+      ],
+      [
+        "$has_access_to|SunPalace_WestSewers1",
+        "$_NOT_CALL|casual",
         "$heavy_blocks"
       ]
     ],
@@ -6584,7 +8462,23 @@
         "access_rules": [
           [
             "$has_access_to|SunPalace_WestSewersSecret",
+            "$_NOT_CALL|expert",
             "$double_jump"
+          ],
+          [
+            "$has_access_to|SunPalace_WestSewersSecret",
+            "$expert",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SunPalace_WestSewersSecret",
+            "$expert",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SunPalace_WestSewersSecret",
+            "$expert",
+            "$dual_mobility"
           ]
         ]
       },
@@ -6595,7 +8489,23 @@
         "access_rules": [
           [
             "$has_access_to|SunPalace_WestSewersSecret",
+            "$_NOT_CALL|expert",
             "$double_jump"
+          ],
+          [
+            "$has_access_to|SunPalace_WestSewersSecret",
+            "$expert",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|SunPalace_WestSewersSecret",
+            "$expert",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|SunPalace_WestSewersSecret",
+            "$expert",
+            "$dual_mobility"
           ]
         ]
       }
@@ -6619,6 +8529,142 @@
         "x": 122,
         "y": 302
       }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Sun Palace - West Pool - Water Chest",
+    "access_rules": [
+      [
+        "$has_access_to|SunPalace_West4",
+        "$casual",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|SunPalace_West4",
+        "$casual",
+        "$double_jump",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SunPalace_West4",
+        "$_NOT_CALL|casual",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|SunPalace_West4",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|SunPalace_West4",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$summon_big_rock"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 414,
+        "y": 1386
+      },
+      {
+        "map": "sun_palace",
+        "x": 50,
+        "y": 266
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Sun Palace - West Pool - Upper Chest",
+    "access_rules": [
+      [
+        "$has_access_to|SunPalace_West4"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 486,
+        "y": 1350
+      },
+      {
+        "map": "sun_palace",
+        "x": 122,
+        "y": 230
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Sun Palace - West Pool - Platform Chest",
+    "access_rules": [
+      [
+        "$has_access_to|SunPalace_West4"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 450,
+        "y": 1386
+      },
+      {
+        "map": "sun_palace",
+        "x": 86,
+        "y": 266
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Sun Palace Raise Center 3",
+    "access_rules": [
+      [
+        "$has_access_to|SunPalace_West5"
+      ]
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Sun Palace West Shortcut",
+    "access_rules": [
+      [
+        "$has_access_to|SunPalace_West5"
+      ]
     ],
     "sections": [
       {
@@ -6783,6 +8829,97 @@
     ]
   },
   {
+    "name": "Ancient Woods - West Jump Puzzle 1",
+    "access_rules": [
+      [
+        "$has_access_to|AncientWoods_WestJumpPuzzle",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestJumpPuzzle",
+        "$distant_ledges"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2250,
+        "y": 1098
+      },
+      {
+        "map": "ancient_woods",
+        "x": 86,
+        "y": 194
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Ancient Woods - West Jump Puzzle 2",
+    "access_rules": [
+      [
+        "$has_access_to|AncientWoods_WestHidden",
+        "$casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestHidden",
+        "$casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestHidden",
+        "$casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestHidden",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestHidden",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestHidden",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestHidden",
+        "$_NOT_CALL|casual",
+        "$lofty_mount"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2214,
+        "y": 1098
+      },
+      {
+        "map": "ancient_woods",
+        "x": 50,
+        "y": 194
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
     "name": "Ancient Woods - West Caves - High Ledge",
     "access_rules": [
       [
@@ -6838,6 +8975,70 @@
     ]
   },
   {
+    "name": "Ancient Woods - Door Puzzle 1",
+    "access_rules": [
+      [
+        "$has_access_to|AncientWoods_DoorPuzzle"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2538,
+        "y": 1206
+      },
+      {
+        "map": "ancient_woods",
+        "x": 374,
+        "y": 302
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Ancient Woods - Door Puzzle",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2538,
+        "y": 1170
+      },
+      {
+        "map": "ancient_woods",
+        "x": 374,
+        "y": 266
+      }
+    ],
+    "sections": [
+      {
+        "name": "Ancient Woods - Door Puzzle 2",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AncientWoods_DoorPuzzle"
+          ]
+        ]
+      },
+      {
+        "name": "Ancient Woods - Door Puzzle 3",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AncientWoods_DoorPuzzle"
+          ]
+        ]
+      }
+    ]
+  },
+  {
     "name": "Ancient Woods - West Deep Caves - Vines Chest",
     "access_rules": [
       [
@@ -6870,8 +9071,21 @@
     "access_rules": [
       [
         "$has_access_to|AncientWoods_West6",
+        "$casual",
         "$double_jump",
         "$distant_ledges"
+      ],
+      [
+        "$has_access_to|AncientWoods_West6",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|AncientWoods_West6",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -6895,82 +9109,37 @@
     ]
   },
   {
-    "name": "Ancient Woods - West Jump Puzzle 1",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_WestJumpPuzzle",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|AncientWoods_WestJumpPuzzle",
-        "$distant_ledges"
-      ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 2250,
-        "y": 1098
-      },
-      {
-        "map": "ancient_woods",
-        "x": 86,
-        "y": 194
-      }
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Ancient Woods - West Jump Puzzle 2",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_WestHidden",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|AncientWoods_WestHidden",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|AncientWoods_WestHidden",
-        "$dual_mobility"
-      ],
-      [
-        "$has_access_to|AncientWoods_WestHidden",
-        "$lofty_mount"
-      ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 2214,
-        "y": 1098
-      },
-      {
-        "map": "ancient_woods",
-        "x": 50,
-        "y": 194
-      }
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
     "name": "Ancient Woods - West Deep Caves Spike Room",
     "access_rules": [
       [
-        "$has_access_to|AncientWoods_WestHidden2"
+        "$has_access_to|AncientWoods_WestHidden2",
+        "$casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestHidden2",
+        "$casual",
+        "$flying"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestHidden2",
+        "$casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestHidden2",
+        "$casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestHidden2",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestHidden2",
+        "$_NOT_CALL|casual",
+        "$distant_ledges"
       ]
     ],
     "map_locations": [
@@ -6998,7 +9167,39 @@
     "access_rules": [
       [
         "$has_access_to|AncientWoods_WestDescent_Upper",
-        "$magic_vines"
+        "$casual",
+        "$magic_vines",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestDescent_Upper",
+        "$_NOT_CALL|casual",
+        "$magic_vines",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestDescent_Upper",
+        "$_NOT_CALL|casual",
+        "$magic_vines",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestDescent_Upper",
+        "$_NOT_CALL|casual",
+        "$magic_vines",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestDescent_Upper",
+        "$_NOT_CALL|casual",
+        "$magic_vines",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestDescent_Upper",
+        "$_NOT_CALL|casual",
+        "$magic_vines",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -7089,14 +9290,27 @@
     "access_rules": [
       [
         "$has_access_to|AncientWoods_WestDescent3",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|AncientWoods_WestDescent3",
+        "$casual",
         "$distant_ledges"
       ],
       [
         "$has_access_to|AncientWoods_WestDescent3",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestDescent3",
+        "$_NOT_CALL|casual",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|AncientWoods_WestDescent3",
+        "$_NOT_CALL|casual",
         "$ground_switches"
       ]
     ],
@@ -7170,7 +9384,7 @@
     ]
   },
   {
-    "name": "Ancient Woods - West Pit - East Chest",
+    "name": "Ancient Woods - West Pit - West Chest",
     "access_rules": [
       [
         "$has_access_to|AncientWoods_Center1"
@@ -7197,7 +9411,7 @@
     ]
   },
   {
-    "name": "Ancient Woods - West Pit - West Chest",
+    "name": "Ancient Woods - West Pit - East Chest",
     "access_rules": [
       [
         "$has_access_to|AncientWoods_Center1"
@@ -7224,10 +9438,101 @@
     ]
   },
   {
+    "name": "Ancient Woods - Tree of Evolution Chest",
+    "access_rules": [
+      [
+        "$has_access_to|AncientWoods_TreeOfEvolution"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2394,
+        "y": 1062
+      },
+      {
+        "map": "ancient_woods",
+        "x": 230,
+        "y": 158
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Ancient Woods - Tree of Evolution Gift",
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2430,
+        "y": 1062
+      },
+      {
+        "map": "ancient_woods",
+        "x": 266,
+        "y": 158
+      }
+    ],
+    "sections": [
+      {
+        "name": "Ancient Woods - Tree of Evolution Gift",
+        "clear_as_group": false,
+        "item_count": 1,
+        "access_rules": [
+          [
+            "$has_access_to|AncientWoods_TreeOfEvolution"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tree of Evolution Access",
+    "access_rules": [
+      [
+        "$has_access_to|AncientWoods_TreeOfEvolution"
+      ]
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
     "name": "Ancient Woods - East - Scaffold Chest 1",
     "access_rules": [
       [
-        "$has_access_to|AncientWoods_Center5"
+        "$has_access_to|AncientWoods_Center5",
+        "$casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|AncientWoods_Center5",
+        "$casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|AncientWoods_Center5",
+        "$casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|AncientWoods_Center5",
+        "$casual",
+        "$double_jump",
+        "$flying"
+      ],
+      [
+        "$has_access_to|AncientWoods_Center5",
+        "$_NOT_CALL|casual"
       ]
     ],
     "map_locations": [
@@ -7251,22 +9556,21 @@
     ]
   },
   {
-    "name": "Ancient Woods - East - Scaffold Chest 2",
+    "name": "Ancient Woods - Ostanes Battle",
     "access_rules": [
       [
-        "$has_access_to|AncientWoods_Center6",
-        "$double_jump"
+        "$has_access_to|AncientWoods_Center6_Lower"
       ]
     ],
     "map_locations": [
       {
         "map": "overview",
-        "x": 2862,
+        "x": 2826,
         "y": 1098
       },
       {
         "map": "ancient_woods",
-        "x": 698,
+        "x": 662,
         "y": 194
       }
     ],
@@ -7279,21 +9583,21 @@
     ]
   },
   {
-    "name": "Ancient Woods - Ostanes Battle",
+    "name": "Ancient Woods - East - Scaffold Chest 2",
     "access_rules": [
       [
-        "$has_access_to|AncientWoods_Center6"
+        "$has_access_to|AncientWoods_Center6_Upper"
       ]
     ],
     "map_locations": [
       {
         "map": "overview",
-        "x": 2826,
+        "x": 2862,
         "y": 1098
       },
       {
         "map": "ancient_woods",
-        "x": 662,
+        "x": 698,
         "y": 194
       }
     ],
@@ -7323,6 +9627,33 @@
         "map": "ancient_woods",
         "x": 806,
         "y": 230
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Ancient Woods - North - West Key Chest",
+    "access_rules": [
+      [
+        "$has_access_to|AncientWoods_North5"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2754,
+        "y": 1062
+      },
+      {
+        "map": "ancient_woods",
+        "x": 590,
+        "y": 158
       }
     ],
     "sections": [
@@ -7430,33 +9761,6 @@
     ]
   },
   {
-    "name": "Ancient Woods - North - West Key Chest",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_North5"
-      ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 2754,
-        "y": 1062
-      },
-      {
-        "map": "ancient_woods",
-        "x": 590,
-        "y": 158
-      }
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
     "name": "Ancient Woods - East - Goblin King Shortcut Chest",
     "access_rules": [
       [
@@ -7465,7 +9769,15 @@
       ],
       [
         "$has_access_to|AncientWoods_East1_Shortcut",
-        "$distant_ledges"
+        "$flying"
+      ],
+      [
+        "$has_access_to|AncientWoods_East1_Shortcut",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|AncientWoods_East1_Shortcut",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -7660,6 +9972,35 @@
     ]
   },
   {
+    "name": "Ancient Woods - South Dark Room",
+    "access_rules": [
+      [
+        "$has_access_to|AncientWoods_DarkRoom",
+        "$dark_rooms",
+        "$double_jump"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 3006,
+        "y": 1206
+      },
+      {
+        "map": "ancient_woods",
+        "x": 842,
+        "y": 302
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
     "name": "Ancient Woods - South Glowfly Room",
     "map_locations": [
       {
@@ -7695,78 +10036,6 @@
             "$dark_rooms"
           ]
         ]
-      }
-    ]
-  },
-  {
-    "name": "Ancient Woods - South - Back of Brutus",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_South4"
-      ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 2826,
-        "y": 1170
-      },
-      {
-        "map": "ancient_woods",
-        "x": 662,
-        "y": 266
-      }
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Ancient Woods Brutus Access",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_South4",
-        "$breakable_walls"
-      ]
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Ancient Woods - South Dark Room",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_DarkRoom",
-        "$dark_rooms",
-        "$double_jump"
-      ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 3006,
-        "y": 1206
-      },
-      {
-        "map": "ancient_woods",
-        "x": 842,
-        "y": 302
-      }
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
       }
     ]
   },
@@ -7810,121 +10079,40 @@
     ]
   },
   {
-    "name": "Ancient Woods - Dark Caves - Torches Chest 1",
+    "name": "Ancient Woods - South - Back of Brutus",
     "access_rules": [
       [
-        "$has_access_to|AncientWoods_SouthHidden1_West",
-        "$torches",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|AncientWoods_SouthHidden1_West",
-        "$torches",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|AncientWoods_SouthHidden1_West",
-        "$torches",
-        "$dual_mobility"
-      ],
-      [
-        "$has_access_to|AncientWoods_SouthHidden1_West",
-        "$torches",
-        "$lofty_mount"
-      ],
-      [
-        "$has_access_to|AncientWoods_SouthHidden1_West",
-        "$dark_rooms",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|AncientWoods_SouthHidden1_West",
-        "$dark_rooms",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|AncientWoods_SouthHidden1_West",
-        "$dark_rooms",
-        "$dual_mobility"
-      ],
-      [
-        "$has_access_to|AncientWoods_SouthHidden1_West",
-        "$dark_rooms",
-        "$lofty_mount"
+        "$has_access_to|AncientWoods_South4"
       ]
     ],
     "map_locations": [
       {
         "map": "overview",
-        "x": 2394,
-        "y": 1242
-      },
-      {
-        "map": "ancient_woods",
-        "x": 230,
-        "y": 338
-      }
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Ancient Woods - Dark Caves - Torches Chest 2",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_SouthHidden1_East",
-        "$torches"
-      ],
-      [
-        "$has_access_to|AncientWoods_SouthHidden1_East",
-        "$dark_rooms"
-      ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 2466,
-        "y": 1242
-      },
-      {
-        "map": "ancient_woods",
-        "x": 302,
-        "y": 338
-      }
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Ancient Woods - Dark Caves - Vertical Shaft",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_SouthHidden3",
-        "$dark_rooms",
-        "$double_jump"
-      ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 2610,
+        "x": 2826,
         "y": 1170
       },
       {
         "map": "ancient_woods",
-        "x": 446,
+        "x": 662,
         "y": 266
       }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Ancient Woods Brutus Access",
+    "access_rules": [
+      [
+        "$has_access_to|AncientWoods_South4",
+        "$dark_rooms",
+        "$breakable_walls"
+      ]
     ],
     "sections": [
       {
@@ -7964,22 +10152,108 @@
     ]
   },
   {
-    "name": "Ancient Woods - Tree of Evolution Chest",
+    "name": "Ancient Woods - Dark Caves - Vertical Shaft",
     "access_rules": [
       [
-        "$has_access_to|AncientWoods_TreeOfEvolution"
+        "$has_access_to|AncientWoods_SouthHidden3",
+        "$dark_rooms",
+        "$double_jump"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2610,
+        "y": 1170
+      },
+      {
+        "map": "ancient_woods",
+        "x": 446,
+        "y": 266
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Ancient Woods - Dark Caves - Breakable Wall Chest",
+    "access_rules": [
+      [
+        "$has_access_to|AncientWoods_SouthHidden1_East",
+        "$breakable_walls",
+        "$torches"
+      ],
+      [
+        "$has_access_to|AncientWoods_SouthHidden1_East",
+        "$breakable_walls",
+        "$dark_rooms"
+      ]
+    ],
+    "map_locations": [
+      {
+        "map": "overview",
+        "x": 2466,
+        "y": 1242
+      },
+      {
+        "map": "ancient_woods",
+        "x": 302,
+        "y": 338
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "clear_as_group": false,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Ancient Woods - Dark Caves - Torches Chest",
+    "access_rules": [
+      [
+        "$has_access_to|AncientWoods_SouthHidden1_West",
+        "$double_jump",
+        "$dark_rooms"
+      ],
+      [
+        "$has_access_to|AncientWoods_SouthHidden1_West",
+        "$torches",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|AncientWoods_SouthHidden1_West",
+        "$torches",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|AncientWoods_SouthHidden1_West",
+        "$torches",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|AncientWoods_SouthHidden1_West",
+        "$torches",
+        "$expert",
+        "$lofty_mount"
       ]
     ],
     "map_locations": [
       {
         "map": "overview",
         "x": 2394,
-        "y": 1062
+        "y": 1242
       },
       {
         "map": "ancient_woods",
         "x": 230,
-        "y": 158
+        "y": 338
       }
     ],
     "sections": [
@@ -7987,112 +10261,6 @@
         "name": "",
         "clear_as_group": false,
         "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Ancient Woods - Tree of Evolution Gift",
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 2430,
-        "y": 1062
-      },
-      {
-        "map": "ancient_woods",
-        "x": 266,
-        "y": 158
-      }
-    ],
-    "sections": [
-      {
-        "name": "Ancient Woods - Tree of Evolution Gift",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|AncientWoods_TreeOfEvolution"
-          ]
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Tree of Evolution Access",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_TreeOfEvolution"
-      ]
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Ancient Woods - Door Puzzle 1",
-    "access_rules": [
-      [
-        "$has_access_to|AncientWoods_DoorPuzzle"
-      ]
-    ],
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 2538,
-        "y": 1206
-      },
-      {
-        "map": "ancient_woods",
-        "x": 374,
-        "y": 302
-      }
-    ],
-    "sections": [
-      {
-        "name": "",
-        "clear_as_group": false,
-        "item_count": 1
-      }
-    ]
-  },
-  {
-    "name": "Ancient Woods - Door Puzzle",
-    "map_locations": [
-      {
-        "map": "overview",
-        "x": 2538,
-        "y": 1170
-      },
-      {
-        "map": "ancient_woods",
-        "x": 374,
-        "y": 266
-      }
-    ],
-    "sections": [
-      {
-        "name": "Ancient Woods - Door Puzzle 2",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|AncientWoods_DoorPuzzle"
-          ]
-        ]
-      },
-      {
-        "name": "Ancient Woods - Door Puzzle 3",
-        "clear_as_group": false,
-        "item_count": 1,
-        "access_rules": [
-          [
-            "$has_access_to|AncientWoods_DoorPuzzle"
-          ]
-        ]
       }
     ]
   },
@@ -8101,11 +10269,37 @@
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_West1",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|HorizonBeach_West1",
+        "$_NOT_CALL|tedious",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|HorizonBeach_West1",
+        "$_NOT_CALL|tedious",
+        "$casual",
         "$swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_West1",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|HorizonBeach_West1",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_West1",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -8306,14 +10500,22 @@
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_Center2",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|HorizonBeach_Center2",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Center2",
+        "$_NOT_CALL|casual",
         "$improved_flying"
       ],
       [
         "$has_access_to|HorizonBeach_Center2",
+        "$_NOT_CALL|casual",
         "$dual_mobility"
       ]
     ],
@@ -8342,14 +10544,22 @@
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_Center2",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|HorizonBeach_Center2",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Center2",
+        "$_NOT_CALL|casual",
         "$improved_flying"
       ],
       [
         "$has_access_to|HorizonBeach_Center2",
+        "$_NOT_CALL|casual",
         "$dual_mobility"
       ]
     ],
@@ -8542,12 +10752,55 @@
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_Center5",
+        "$tedious",
+        "$casual",
+        "$ice_orbs",
+        "$heavy_blocks",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Center5",
+        "$tedious",
+        "$casual",
         "$ice_orbs",
         "$heavy_blocks",
         "$double_jump"
       ],
       [
         "$has_access_to|HorizonBeach_Center5",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$ice_orbs",
+        "$heavy_blocks",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Center5",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$ice_orbs",
+        "$heavy_blocks",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Center5",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$ice_orbs",
+        "$heavy_blocks",
+        "$summon_mushroom"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Center5",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$ice_orbs",
+        "$heavy_blocks",
+        "$summon_rock"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Center5",
+        "$_NOT_CALL|tedious",
         "$ice_orbs",
         "$heavy_blocks",
         "$swimming"
@@ -8579,6 +10832,16 @@
       [
         "$has_access_to|HorizonBeach_Center6",
         "$swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Center6",
+        "$double_jump",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Center6",
+        "$double_jump",
+        "$lofty_mount"
       ]
     ],
     "map_locations": [
@@ -8606,19 +10869,48 @@
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_East1",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|HorizonBeach_East1",
+        "$casual",
         "$improved_flying"
       ],
       [
         "$has_access_to|HorizonBeach_East1",
+        "$casual",
         "$dual_mobility"
       ],
       [
         "$has_access_to|HorizonBeach_East1",
+        "$casual",
         "$lofty_mount"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East1",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East1",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East1",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East1",
+        "$_NOT_CALL|casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East1",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -8646,11 +10938,119 @@
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_East2_Upper",
+        "$tedious",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|HorizonBeach_East2_Upper",
-        "$distant_ledges"
+        "$tedious",
+        "$casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$tedious",
+        "$casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$swimming",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$swimming",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$swimming",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$swimming",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$swimming",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$swimming",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$ground_switches",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$ground_switches",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$ground_switches",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$ground_switches",
+        "$lofty_mount"
       ]
     ],
     "map_locations": [
@@ -8702,6 +11102,11 @@
             "$has_access_to|HorizonBeach_East2_Lower",
             "$double_jump",
             "$dual_mobility"
+          ],
+          [
+            "$has_access_to|HorizonBeach_East2_Lower",
+            "$double_jump",
+            "$lofty_mount"
           ]
         ]
       },
@@ -8711,7 +11116,7 @@
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|HorizonBeach_East2_Middle",
+            "$has_access_to|HorizonBeach_East2_Upper",
             "$breakable_walls"
           ]
         ]
@@ -8722,12 +11127,7 @@
     "name": "Horizon Beach - East - Middle Ledge Chest 2",
     "access_rules": [
       [
-        "$has_access_to|HorizonBeach_East2_Middle",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|HorizonBeach_East2_Middle",
-        "$distant_ledges"
+        "$has_access_to|HorizonBeach_East2_Middle_Ledge"
       ]
     ],
     "map_locations": [
@@ -8754,7 +11154,38 @@
     "name": "Horizon Beach - East - Underwater Chest",
     "access_rules": [
       [
-        "$has_access_to|HorizonBeach_East2_Lower"
+        "$has_access_to|HorizonBeach_East2_Lower",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Lower",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Lower",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Lower",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Lower",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East2_Lower",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -8781,8 +11212,33 @@
     "name": "Horizon Beach - East - Fast Currents Tunnel",
     "access_rules": [
       [
-        "$has_access_to|HorizonBeach_East3",
+        "$has_access_to|HorizonBeach_East3_East",
+        "$tedious",
+        "$casual",
         "$swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East3_East",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East3_East",
+        "$tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$ground_switches"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East3_East",
+        "$_NOT_CALL|tedious",
+        "$improved_swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East3_East",
+        "$_NOT_CALL|tedious",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -8903,7 +11359,8 @@
     "name": "Bex 3",
     "access_rules": [
       [
-        "$has_access_to|HorizonBeach_East5"
+        "$has_access_to|HorizonBeach_East5",
+        "$second_bex_encounter"
       ]
     ],
     "sections": [
@@ -8919,15 +11376,28 @@
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_East6",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|HorizonBeach_East6",
-        "$improved_flying"
+        "$casual",
+        "$distant_ledges"
       ],
       [
         "$has_access_to|HorizonBeach_East6",
-        "$dual_mobility"
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East6",
+        "$_NOT_CALL|casual",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|HorizonBeach_East6",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -8982,18 +11452,37 @@
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_Fisher",
+        "$casual",
         "$swimming"
       ],
       [
         "$has_access_to|HorizonBeach_Fisher",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|HorizonBeach_Fisher",
+        "$casual",
         "$distant_ledges"
       ],
       [
         "$has_access_to|HorizonBeach_Fisher",
+        "$_NOT_CALL|casual",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Fisher",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Fisher",
+        "$_NOT_CALL|casual",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Fisher",
+        "$_NOT_CALL|casual",
         "$ground_switches"
       ]
     ],
@@ -9155,7 +11644,19 @@
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_Labyrinth",
+        "$casual",
         "$swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Labyrinth",
+        "$_NOT_CALL|casual",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_Labyrinth",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -9341,18 +11842,7 @@
     "access_rules": [
       [
         "$has_access_to|HorizonBeach_TreasureCave2",
-        "$swimming",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|HorizonBeach_TreasureCave2",
-        "$swimming",
-        "$ground_switches"
-      ],
-      [
-        "$has_access_to|HorizonBeach_TreasureCave2",
-        "$swimming",
-        "$distant_ledges"
+        "$swimming"
       ]
     ],
     "map_locations": [
@@ -9412,6 +11902,11 @@
       [
         "$has_access_to|HorizonBeach_TreasureCave5",
         "$swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_TreasureCave5",
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -9516,6 +12011,12 @@
       [
         "$has_access_to|HorizonBeach_FWEntrance1",
         "$swimming"
+      ],
+      [
+        "$has_access_to|HorizonBeach_FWEntrance1",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -9620,12 +12121,7 @@
     "name": "Magma Chamber - West - Ledge Chest",
     "access_rules": [
       [
-        "$has_access_to|MagmaChamber_West4_Ledge",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|MagmaChamber_West4_Ledge",
-        "$distant_ledges"
+        "$has_access_to|MagmaChamber_West4_Ledge"
       ]
     ],
     "map_locations": [
@@ -9653,8 +12149,37 @@
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_West4_Upper",
+        "$tedious",
         "$dark_rooms",
         "$breakable_walls"
+      ],
+      [
+        "$has_access_to|MagmaChamber_West4_Upper",
+        "$_NOT_CALL|tedious",
+        "$dark_rooms",
+        "$breakable_walls",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|MagmaChamber_West4_Upper",
+        "$_NOT_CALL|tedious",
+        "$dark_rooms",
+        "$breakable_walls",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|MagmaChamber_West4_Upper",
+        "$_NOT_CALL|tedious",
+        "$dark_rooms",
+        "$breakable_walls",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|MagmaChamber_West4_Upper",
+        "$_NOT_CALL|tedious",
+        "$dark_rooms",
+        "$breakable_walls",
+        "$lofty_mount"
       ]
     ],
     "map_locations": [
@@ -9881,6 +12406,13 @@
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_North7",
+        "$casual",
+        "$dark_rooms",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|MagmaChamber_North7",
+        "$_NOT_CALL|casual",
         "$dark_rooms"
       ]
     ],
@@ -9944,7 +12476,8 @@
     "name": "Bex 4",
     "access_rules": [
       [
-        "$has_access_to|MagmaChamber_North8_East"
+        "$has_access_to|MagmaChamber_North8_East",
+        "$third_bex_encounter"
       ]
     ],
     "sections": [
@@ -9993,7 +12526,7 @@
     ]
   },
   {
-    "name": "Magma Chamber - East - Floor Chest",
+    "name": "Magma Chamber - East - Behind Diamond Block",
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_East1",
@@ -10021,7 +12554,7 @@
     ]
   },
   {
-    "name": "Magma Chamber - East - Diamond Block Chest",
+    "name": "Magma Chamber - East - Floor Chest",
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_East2"
@@ -10067,15 +12600,23 @@
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_Center2_Middle",
+        "$casual",
         "$magma_chamber_lower_lava"
       ],
       [
         "$has_access_to|MagmaChamber_Center2_Middle",
+        "$_NOT_CALL|casual",
+        "$magma_chamber_lower_lava"
+      ],
+      [
+        "$has_access_to|MagmaChamber_Center2_Middle",
+        "$_NOT_CALL|casual",
         "$double_jump",
         "$improved_flying"
       ],
       [
         "$has_access_to|MagmaChamber_Center2_Middle",
+        "$_NOT_CALL|casual",
         "$double_jump",
         "$dual_mobility"
       ]
@@ -10227,7 +12768,8 @@
     "name": "Magma Chamber - Center - Below Lava Pit",
     "access_rules": [
       [
-        "$has_access_to|MagmaChamber_Center5"
+        "$has_access_to|MagmaChamber_Center5",
+        "$breakable_walls"
       ]
     ],
     "map_locations": [
@@ -10309,7 +12851,23 @@
     "name": "Magma Chamber - East - Vertical Shaft Chest",
     "access_rules": [
       [
-        "$has_access_to|MagmaChamber_Center9_Middle"
+        "$has_access_to|MagmaChamber_Center9_Middle",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|MagmaChamber_Center9_Middle",
+        "$_NOT_CALL|tedious",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|MagmaChamber_Center9_Middle",
+        "$_NOT_CALL|tedious",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|MagmaChamber_Center9_Middle",
+        "$_NOT_CALL|tedious",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -10406,8 +12964,39 @@
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_Center11",
+        "$casual",
         "$ground_switches",
         "$double_jump"
+      ],
+      [
+        "$has_access_to|MagmaChamber_Center11",
+        "$_NOT_CALL|casual",
+        "$ground_switches",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|MagmaChamber_Center11",
+        "$_NOT_CALL|casual",
+        "$ground_switches",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|MagmaChamber_Center11",
+        "$_NOT_CALL|casual",
+        "$ground_switches",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|MagmaChamber_Center11",
+        "$_NOT_CALL|casual",
+        "$ground_switches",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|MagmaChamber_Center11",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$narrow_corridors"
       ]
     ],
     "map_locations": [
@@ -10442,6 +13031,11 @@
         "$has_access_to|MagmaChamber_South2",
         "$double_jump",
         "$dual_mobility"
+      ],
+      [
+        "$has_access_to|MagmaChamber_South2",
+        "$double_jump",
+        "$lofty_mount"
       ]
     ],
     "map_locations": [
@@ -10510,20 +13104,62 @@
     "name": "Magma Chamber - Lava Fortress",
     "access_rules": [
       [
-        "$has_access_to|MagmaChamber_South4_Lower",
+        "$has_access_to|MagmaChamber_South4_Upper",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|MagmaChamber_South4_Upper",
+        "$_NOT_CALL|tedious",
+        "$casual",
         "$double_jump"
       ],
       [
-        "$has_access_to|MagmaChamber_South4_Lower",
+        "$has_access_to|MagmaChamber_South4_Upper",
+        "$_NOT_CALL|tedious",
+        "$casual",
         "$improved_flying"
       ],
       [
-        "$has_access_to|MagmaChamber_South4_Lower",
+        "$has_access_to|MagmaChamber_South4_Upper",
+        "$_NOT_CALL|tedious",
+        "$casual",
         "$dual_mobility"
       ],
       [
-        "$has_access_to|MagmaChamber_South4_Lower",
+        "$has_access_to|MagmaChamber_South4_Upper",
+        "$_NOT_CALL|tedious",
+        "$casual",
         "$lofty_mount"
+      ],
+      [
+        "$has_access_to|MagmaChamber_South4_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|MagmaChamber_South4_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|MagmaChamber_South4_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|MagmaChamber_South4_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|MagmaChamber_South4_Upper",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -10745,7 +13381,8 @@
     "name": "Forgotten World to Magma Chamber Shortcut",
     "access_rules": [
       [
-        "$has_access_to|MagmaChamber_South9_Shortcut"
+        "$has_access_to|MagmaChamber_South9_Shortcut",
+        "$summon_big_rock"
       ]
     ],
     "visibility_rules": [
@@ -10864,7 +13501,12 @@
     "access_rules": [
       [
         "$has_access_to|MagmaChamber_TarPit",
-        "$tar"
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|MagmaChamber_TarPit",
+        "$tar_mount",
+        "$double_jump"
       ]
     ],
     "map_locations": [
@@ -11027,7 +13669,7 @@
     ],
     "sections": [
       {
-        "name": "Magma Chamber - Legendary Keeper Room",
+        "name": "Magma Chamber - Legendary Keeper Room - Velvet Melody Statue",
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
@@ -11042,11 +13684,6 @@
           [
             "$has_access_to|MagmaChamber_LegendaryKeeperRoom",
             "$dual_mobility"
-          ]
-        ],
-        "visibility_rules": [
-          [
-            "$is_not_goal|3"
           ]
         ]
       },
@@ -11192,18 +13829,45 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_East3",
+        "$casual",
         "$double_jump",
         "$improved_flying"
       ],
       [
         "$has_access_to|Underworld_East3",
+        "$casual",
         "$double_jump",
         "$dual_mobility"
       ],
       [
         "$has_access_to|Underworld_East3",
+        "$casual",
         "$double_jump",
         "$lofty_mount"
+      ],
+      [
+        "$has_access_to|Underworld_East3",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|Underworld_East3",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|Underworld_East3",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|Underworld_East3",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$summon_big_rock"
       ]
     ],
     "visibility_rules": [
@@ -11239,18 +13903,46 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_East3",
+        "$casual",
         "$double_jump",
         "$improved_flying"
       ],
       [
         "$has_access_to|Underworld_East3",
+        "$casual",
         "$double_jump",
         "$dual_mobility"
       ],
       [
         "$has_access_to|Underworld_East3",
+        "$casual",
         "$double_jump",
         "$lofty_mount"
+      ],
+      [
+        "$has_access_to|Underworld_East3",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|Underworld_East3",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|Underworld_East3",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|Underworld_East3",
+        "$_NOT_CALL|casual",
+        "$double_jump",
+        "$flying",
+        "$summon_big_rock"
       ]
     ],
     "visibility_rules": [
@@ -11282,11 +13974,11 @@
     ]
   },
   {
-    "name": "Underworld - East - Heavy Block Chest",
+    "name": "Underworld - East - Big Rock Chest",
     "access_rules": [
       [
         "$has_access_to|Underworld_East4",
-        "$heavy_blocks"
+        "$summon_big_rock"
       ]
     ],
     "visibility_rules": [
@@ -11322,23 +14014,48 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_East5",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|Underworld_East5",
+        "$casual",
         "$improved_flying"
       ],
       [
         "$has_access_to|Underworld_East5",
+        "$casual",
         "$dual_mobility"
       ],
       [
         "$has_access_to|Underworld_East5",
+        "$casual",
         "$lofty_mount"
       ],
       [
         "$has_access_to|Underworld_East5",
-        "$summon_big_rock"
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|Underworld_East5",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|Underworld_East5",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|Underworld_East5",
+        "$_NOT_CALL|casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|Underworld_East5",
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "visibility_rules": [
@@ -11758,7 +14475,13 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_EastCatacomb10",
-        "$double_jump",
+        "$casual",
+        "$grapple",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|Underworld_EastCatacomb10",
+        "$_NOT_CALL|casual",
         "$grapple"
       ]
     ],
@@ -11830,21 +14553,75 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_Center2",
+        "$tedious",
+        "$_NOT_CALL|expert",
+        "$double_jump",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|Underworld_Center2",
+        "$tedious",
+        "$expert",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|Underworld_Center2",
+        "$tedious",
+        "$expert",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|Underworld_Center2",
+        "$tedious",
+        "$expert",
+        "$double_jump",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|Underworld_Center2",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|expert",
         "$double_jump",
         "$grapple",
         "$improved_flying"
       ],
       [
         "$has_access_to|Underworld_Center2",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|expert",
         "$double_jump",
         "$grapple",
         "$dual_mobility"
       ],
       [
         "$has_access_to|Underworld_Center2",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|expert",
         "$double_jump",
         "$grapple",
         "$lofty_mount"
+      ],
+      [
+        "$has_access_to|Underworld_Center2",
+        "$_NOT_CALL|tedious",
+        "$expert",
+        "$grapple",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|Underworld_Center2",
+        "$_NOT_CALL|tedious",
+        "$expert",
+        "$grapple",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|Underworld_Center2",
+        "$_NOT_CALL|tedious",
+        "$expert",
+        "$grapple",
+        "$double_jump",
+        "$distant_ledges"
       ]
     ],
     "visibility_rules": [
@@ -12062,7 +14839,57 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_WestCatacomb4_Lower",
-        "$underworld_west_catacomb_4_access"
+        "$underworld_west_catacomb_4_access",
+        "$casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|Underworld_WestCatacomb4_Lower",
+        "$underworld_west_catacomb_4_access",
+        "$casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|Underworld_WestCatacomb4_Lower",
+        "$underworld_west_catacomb_4_access",
+        "$casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|Underworld_WestCatacomb4_Lower",
+        "$underworld_west_catacomb_4_access",
+        "$casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|Underworld_WestCatacomb4_Lower",
+        "$underworld_west_catacomb_4_access",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|Underworld_WestCatacomb4_Lower",
+        "$underworld_west_catacomb_4_access",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|Underworld_WestCatacomb4_Lower",
+        "$underworld_west_catacomb_4_access",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|Underworld_WestCatacomb4_Lower",
+        "$underworld_west_catacomb_4_access",
+        "$_NOT_CALL|casual",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|Underworld_WestCatacomb4_Lower",
+        "$underworld_west_catacomb_4_access",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "visibility_rules": [
@@ -12137,11 +14964,12 @@
       ],
       [
         "$has_access_to|Underworld_WestCatacomb4_Lower",
-        "$ground_switches"
+        "$distant_ledges"
       ],
       [
         "$has_access_to|Underworld_WestCatacomb4_Lower",
-        "$distant_ledges"
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "visibility_rules": [
@@ -12572,7 +15400,20 @@
     "name": "Underworld - Spinner",
     "access_rules": [
       [
-        "$has_access_to|Underworld_West4"
+        "$has_access_to|Underworld_West4",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|Underworld_West4",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|Underworld_West4",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|Underworld_West4",
+        "$lofty_mount"
       ]
     ],
     "visibility_rules": [
@@ -12610,7 +15451,23 @@
     "access_rules": [
       [
         "$has_access_to|Underworld_West6",
-        "$breakable_walls"
+        "$breakable_walls",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|Underworld_West6",
+        "$breakable_walls",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|Underworld_West6",
+        "$breakable_walls",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|Underworld_West6",
+        "$breakable_walls",
+        "$lofty_mount"
       ]
     ],
     "visibility_rules": [
@@ -12826,6 +15683,10 @@
       [
         "$has_access_to|MysticalWorkshop_Center3",
         "$distant_ledges"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_Center3",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -12853,15 +15714,28 @@
     "access_rules": [
       [
         "$has_access_to|MysticalWorkshop_Center4",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|MysticalWorkshop_Center4",
-        "$ground_switches"
+        "$casual",
+        "$distant_ledges"
       ],
       [
         "$has_access_to|MysticalWorkshop_Center4",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_Center4",
+        "$_NOT_CALL|casual",
         "$distant_ledges"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_Center4",
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -12916,8 +15790,28 @@
     "access_rules": [
       [
         "$has_access_to|MysticalWorkshop_Center5_Middle",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_Center5_Middle",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_Center5_Middle",
         "$double_jump",
         "$distant_ledges"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_Center5_Middle",
+        "$double_jump",
+        "$_NOT_CALL|casual",
+        "$mount"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_Center5_Middle",
+        "$double_jump",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -12949,7 +15843,15 @@
       ],
       [
         "$has_access_to|MysticalWorkshop_Center5_Upper",
-        "$distant_ledges"
+        "$flying"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_Center5_Upper",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_Center5_Upper",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -13060,7 +15962,7 @@
     "name": "Mystical Workshop - South Pipes Room",
     "access_rules": [
       [
-        "$has_access_to|MysticalWorkshop_Center8"
+        "$has_access_to|MysticalWorkshop_Center8_Lower"
       ]
     ],
     "map_locations": [
@@ -13133,7 +16035,30 @@
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|MysticalWorkshop_West2"
+            "$has_access_to|MysticalWorkshop_West2",
+            "$casual",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|MysticalWorkshop_West2",
+            "$casual",
+            "$mount",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|MysticalWorkshop_West2",
+            "$_NOT_CALL|casual",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|MysticalWorkshop_West2",
+            "$_NOT_CALL|casual",
+            "$distant_ledges"
+          ],
+          [
+            "$has_access_to|MysticalWorkshop_West2",
+            "$_NOT_CALL|casual",
+            "$summon_big_rock"
           ]
         ]
       },
@@ -13142,6 +16067,10 @@
         "clear_as_group": false,
         "item_count": 1,
         "access_rules": [
+          [
+            "$has_access_to|MysticalWorkshop_West2",
+            "$lofty_mount"
+          ],
           [
             "$has_access_to|MysticalWorkshop_West2",
             "$mount",
@@ -13187,11 +16116,17 @@
       ],
       [
         "$has_access_to|MysticalWorkshop_East1",
-        "$ground_switches"
+        "$distant_ledges"
       ],
       [
         "$has_access_to|MysticalWorkshop_East1",
-        "$distant_ledges"
+        "$_NOT_CALL|casual",
+        "$summon_rock"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_East1",
+        "$_NOT_CALL|casual",
+        "$summon_mushroom"
       ]
     ],
     "map_locations": [
@@ -13219,15 +16154,37 @@
     "access_rules": [
       [
         "$has_access_to|MysticalWorkshop_East2",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_East2",
+        "$_NOT_CALL|tedious",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|MysticalWorkshop_East2",
-        "$ground_switches"
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$distant_ledges"
       ],
       [
         "$has_access_to|MysticalWorkshop_East2",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_East2",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
         "$distant_ledges"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_East2",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -13310,6 +16267,11 @@
       ],
       [
         "$has_access_to|MysticalWorkshop_North1",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_North1",
+        "$_NOT_CALL|casual",
         "$summon_big_rock"
       ]
     ],
@@ -13350,6 +16312,11 @@
       ],
       [
         "$has_access_to|MysticalWorkshop_North1",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_North1",
+        "$_NOT_CALL|casual",
         "$summon_big_rock"
       ]
     ],
@@ -13378,14 +16345,22 @@
     "access_rules": [
       [
         "$has_access_to|MysticalWorkshop_North2",
+        "$casual",
         "$double_jump"
       ],
       [
         "$has_access_to|MysticalWorkshop_North2",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_North2",
+        "$_NOT_CALL|casual",
         "$improved_flying"
       ],
       [
         "$has_access_to|MysticalWorkshop_North2",
+        "$_NOT_CALL|casual",
         "$dual_mobility"
       ]
     ],
@@ -13551,7 +16526,23 @@
     "access_rules": [
       [
         "$has_access_to|MysticalWorkshop_North6",
+        "$casual",
         "$double_jump"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_North6",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_North6",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|MysticalWorkshop_North6",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -13844,6 +16835,10 @@
       [
         "$has_access_to|BlobBurg_Center1",
         "$dual_mobility"
+      ],
+      [
+        "$has_access_to|BlobBurg_Center1",
+        "$lofty_mount"
       ]
     ],
     "map_locations": [
@@ -13982,7 +16977,16 @@
     "access_rules": [
       [
         "$has_access_to|BlobBurg_Center4",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|BlobBurg_Center4",
         "$distant_ledges"
+      ],
+      [
+        "$has_access_to|BlobBurg_Center4",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -14010,7 +17014,43 @@
     "access_rules": [
       [
         "$has_access_to|BlobBurg_West1",
+        "$tedious",
         "$narrow_corridors"
+      ],
+      [
+        "$has_access_to|BlobBurg_West1",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$narrow_corridors",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|BlobBurg_West1",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$narrow_corridors",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|BlobBurg_West1",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$narrow_corridors",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|BlobBurg_West1",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$narrow_corridors",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|BlobBurg_West1",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$narrow_corridors",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -14070,11 +17110,37 @@
     "access_rules": [
       [
         "$has_access_to|BlobBurg_West1",
-        "$improved_swimming"
+        "$tedious"
       ],
       [
         "$has_access_to|BlobBurg_West1",
-        "$dual_mobility"
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|BlobBurg_West1",
+        "$_NOT_CALL|tedious",
+        "$casual",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|BlobBurg_West1",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|BlobBurg_West1",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|BlobBurg_West1",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -14196,7 +17262,24 @@
     "access_rules": [
       [
         "$has_access_to|BlobBurg_South2",
-        "$swimming"
+        "$swimming",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|BlobBurg_South2",
+        "$swimming",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|BlobBurg_South2",
+        "$swimming",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|BlobBurg_South2",
+        "$swimming",
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -14236,6 +17319,12 @@
         "$has_access_to|BlobBurg_South2",
         "$double_jump",
         "$lofty_mount"
+      ],
+      [
+        "$has_access_to|BlobBurg_South2",
+        "$double_jump",
+        "$expert",
+        "$narrow_corridors"
       ]
     ],
     "map_locations": [
@@ -14275,6 +17364,12 @@
         "$has_access_to|BlobBurg_South2",
         "$double_jump",
         "$lofty_mount"
+      ],
+      [
+        "$has_access_to|BlobBurg_South2",
+        "$double_jump",
+        "$expert",
+        "$narrow_corridors"
       ]
     ],
     "sections": [
@@ -14343,7 +17438,35 @@
     "name": "Blob Burg - Worm Room - Lower Chest",
     "access_rules": [
       [
-        "$has_access_to|BlobBurg_Worms"
+        "$has_access_to|BlobBurg_Worms",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|BlobBurg_Worms",
+        "$_NOT_CALL|tedious",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|BlobBurg_Worms",
+        "$_NOT_CALL|tedious",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|BlobBurg_Worms",
+        "$_NOT_CALL|tedious",
+        "$swimming"
+      ],
+      [
+        "$has_access_to|BlobBurg_Worms",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$mount"
+      ],
+      [
+        "$has_access_to|BlobBurg_Worms",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "map_locations": [
@@ -14416,7 +17539,8 @@
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|ForgottenWorld_FallHidden"
+            "$has_access_to|ForgottenWorld_FallHidden",
+            "$dark_rooms"
           ]
         ],
         "visibility_rules": [
@@ -14434,7 +17558,8 @@
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|ForgottenWorld_FallHidden"
+            "$has_access_to|ForgottenWorld_FallHidden",
+            "$dark_rooms"
           ]
         ],
         "visibility_rules": [
@@ -14452,7 +17577,8 @@
         "item_count": 1,
         "access_rules": [
           [
-            "$has_access_to|ForgottenWorld_FallHidden"
+            "$has_access_to|ForgottenWorld_FallHidden",
+            "$dark_rooms"
           ]
         ],
         "visibility_rules": [
@@ -14470,12 +17596,7 @@
     "name": "Forgotten World - West Jungle - Lower Chest",
     "access_rules": [
       [
-        "$has_access_to|ForgottenWorld_Jungle1",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Jungle1",
-        "$distant_ledges"
+        "$has_access_to|ForgottenWorld_Jungle1"
       ]
     ],
     "visibility_rules": [
@@ -14511,18 +17632,24 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_Jungle1",
+        "$casual",
         "$double_jump",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Jungle1",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Jungle1",
+        "$_NOT_CALL|casual",
         "$improved_flying"
       ],
       [
         "$has_access_to|ForgottenWorld_Jungle1",
-        "$double_jump",
+        "$_NOT_CALL|casual",
         "$dual_mobility"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Jungle1",
-        "$double_jump",
-        "$lofty_mount"
       ]
     ],
     "visibility_rules": [
@@ -14558,22 +17685,23 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_Jungle3",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Jungle3",
+        "$double_jump",
         "$improved_flying"
       ],
       [
         "$has_access_to|ForgottenWorld_Jungle3",
+        "$double_jump",
         "$dual_mobility"
       ],
       [
         "$has_access_to|ForgottenWorld_Jungle3",
+        "$double_jump",
         "$lofty_mount"
       ],
       [
         "$has_access_to|ForgottenWorld_Jungle3",
+        "$double_jump",
+        "$_NOT_CALL|casual",
         "$summon_big_rock"
       ]
     ],
@@ -14609,12 +17737,7 @@
     "name": "Forgotten World - East Jungle - Beneath Mushrooms",
     "access_rules": [
       [
-        "$has_access_to|ForgottenWorld_Jungle5_Hidden",
-        "$magic_vines"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Jungle5_Hidden",
-        "$magic_walls"
+        "$has_access_to|ForgottenWorld_Jungle5_Hidden"
       ]
     ],
     "visibility_rules": [
@@ -14688,9 +17811,41 @@
         "access_rules": [
           [
             "$has_access_to|ForgottenWorld_Jungle6",
+            "$tedious",
             "$magic_vines",
-            "$double_jump",
             "$breakable_walls"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Jungle6",
+            "$_NOT_CALL|tedious",
+            "$magic_vines",
+            "$breakable_walls",
+            "$double_jump",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Jungle6",
+            "$_NOT_CALL|tedious",
+            "$magic_vines",
+            "$breakable_walls",
+            "$double_jump",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Jungle6",
+            "$_NOT_CALL|tedious",
+            "$magic_vines",
+            "$breakable_walls",
+            "$double_jump",
+            "$lofty_mount"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Jungle6",
+            "$_NOT_CALL|tedious",
+            "$magic_vines",
+            "$breakable_walls",
+            "$double_jump",
+            "$secret_vision"
           ]
         ],
         "visibility_rules": [
@@ -14713,15 +17868,7 @@
       ],
       [
         "$has_access_to|ForgottenWorld_Jungle6",
-        "$improved_flying"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Jungle6",
-        "$dual_mobility"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Jungle6",
-        "$lofty_mount"
+        "$distant_ledges"
       ]
     ],
     "visibility_rules": [
@@ -14817,8 +17964,18 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_TarPits1",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TarPits1",
         "$double_jump",
-        "$tar"
+        "$tar_mount"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TarPits1",
+        "$expert",
+        "$double_jump",
+        "$lofty_mount"
       ]
     ],
     "visibility_rules": [
@@ -14854,11 +18011,50 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_TarPits3",
+        "$tedious",
+        "$casual",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TarPits3",
+        "$tedious",
+        "$casual",
+        "$double_jump",
+        "$tar_mount"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TarPits3",
+        "$tedious",
+        "$advanced",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TarPits3",
+        "$tedious",
+        "$advanced",
+        "$mount"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TarPits3",
+        "$tedious",
+        "$advanced",
         "$tar"
       ],
       [
         "$has_access_to|ForgottenWorld_TarPits3",
-        "$double_jump"
+        "$tedious",
+        "$expert"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TarPits3",
+        "$_NOT_CALL|tedious",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TarPits3",
+        "$_NOT_CALL|tedious",
+        "$double_jump",
+        "$tar_mount"
       ]
     ],
     "visibility_rules": [
@@ -14893,12 +18089,7 @@
     "name": "Forgotten World - East Tar Pits Vertical - Lower Chest",
     "access_rules": [
       [
-        "$has_access_to|ForgottenWorld_TarPits3",
-        "$tar"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_TarPits3",
-        "$double_jump"
+        "$has_access_to|ForgottenWorld_TarPits3"
       ]
     ],
     "visibility_rules": [
@@ -15004,7 +18195,7 @@
     "name": "Forgotten World - West Tar Pits Vertical",
     "access_rules": [
       [
-        "$has_access_to|ForgottenWorld_TarPits5_Lower"
+        "$has_access_to|ForgottenWorld_TarPits5"
       ]
     ],
     "visibility_rules": [
@@ -15040,8 +18231,12 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_TarPits8",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TarPits8",
         "$double_jump",
-        "$tar"
+        "$tar_mount"
       ]
     ],
     "visibility_rules": [
@@ -15077,6 +18272,10 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_TarPits9",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TarPits9",
         "$double_jump",
         "$lofty_mount"
       ],
@@ -15084,11 +18283,6 @@
         "$has_access_to|ForgottenWorld_TarPits9",
         "$double_jump",
         "$tar_mount"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_TarPits9",
-        "$double_jump",
-        "$dual_mobility"
       ]
     ],
     "visibility_rules": [
@@ -15124,7 +18318,32 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_Waters1_Upper",
-        "$charging_mount"
+        "$charging_mount",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Waters1_Upper",
+        "$_NOT_CALL|casual",
+        "$charging_mount",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Waters1_Upper",
+        "$_NOT_CALL|casual",
+        "$charging_mount",
+        "$flying"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Waters1_Upper",
+        "$_NOT_CALL|casual",
+        "$charging_mount",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Waters1_Upper",
+        "$_NOT_CALL|casual",
+        "$charging_mount",
+        "$dual_mobility"
       ]
     ],
     "visibility_rules": [
@@ -15235,7 +18454,8 @@
     "name": "Forgotten World - South Waters - Cave Chest",
     "access_rules": [
       [
-        "$has_access_to|ForgottenWorld_Waters2"
+        "$has_access_to|ForgottenWorld_Waters2",
+        "$swimming"
       ]
     ],
     "visibility_rules": [
@@ -15272,11 +18492,6 @@
       [
         "$has_access_to|ForgottenWorld_Waters5",
         "$magic_walls",
-        "$summon_big_rock"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Waters5",
-        "$magic_walls",
         "$double_jump"
       ],
       [
@@ -15293,6 +18508,12 @@
         "$has_access_to|ForgottenWorld_Waters5",
         "$magic_walls",
         "$lofty_mount"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Waters5",
+        "$magic_walls",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "visibility_rules": [
@@ -15523,16 +18744,7 @@
     "name": "Forgotten World - North Caves Vertical",
     "access_rules": [
       [
-        "$has_access_to|ForgottenWorld_Caves1",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Caves1",
-        "$distant_ledges"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Caves1",
-        "$ground_switches"
+        "$has_access_to|ForgottenWorld_Caves1"
       ]
     ],
     "visibility_rules": [
@@ -15604,8 +18816,32 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_Caves4",
-        "$double_jump",
-        "$grapple"
+        "$grapple",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves4",
+        "$grapple",
+        "$_NOT_CALL|tedious",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves4",
+        "$grapple",
+        "$_NOT_CALL|tedious",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves4",
+        "$grapple",
+        "$_NOT_CALL|tedious",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves4",
+        "$grapple",
+        "$_NOT_CALL|tedious",
+        "$lofty_mount"
       ]
     ],
     "visibility_rules": [
@@ -15662,6 +18898,13 @@
         "$magic_vines",
         "$breakable_walls",
         "$lofty_mount"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves5_Lower",
+        "$magic_vines",
+        "$breakable_walls",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "visibility_rules": [
@@ -15697,7 +18940,26 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_Caves5_Upper",
+        "$tedious",
         "$magic_vines"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves5_Upper",
+        "$_NOT_CALL|tedious",
+        "$magic_vines",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves5_Upper",
+        "$_NOT_CALL|tedious",
+        "$magic_vines",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves5_Upper",
+        "$_NOT_CALL|tedious",
+        "$magic_vines",
+        "$dual_mobility"
       ]
     ],
     "visibility_rules": [
@@ -15733,7 +18995,25 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_Caves5_Upper",
-        "$magic_vines"
+        "$tedious"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves5_Upper",
+        "$_NOT_CALL|tedious",
+        "$magic_vines",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves5_Upper",
+        "$_NOT_CALL|tedious",
+        "$magic_vines",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves5_Upper",
+        "$_NOT_CALL|tedious",
+        "$magic_vines",
+        "$dual_mobility"
       ]
     ],
     "visibility_rules": [
@@ -15775,7 +19055,41 @@
       [
         "$has_access_to|ForgottenWorld_Caves6",
         "$breakable_walls",
-        "$distant_ledges"
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves6",
+        "$breakable_walls",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves6",
+        "$breakable_walls",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves6",
+        "$breakable_walls",
+        "$_NOT_CALL|casual",
+        "$flying"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves6",
+        "$breakable_walls",
+        "$_NOT_CALL|casual",
+        "$summon_mushroom"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves6",
+        "$breakable_walls",
+        "$_NOT_CALL|casual",
+        "$summon_rock"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves6",
+        "$breakable_walls",
+        "$expert",
+        "$summon_big_rock"
       ]
     ],
     "visibility_rules": [
@@ -15882,7 +19196,30 @@
     "name": "Forgotten World Caves Shortcut",
     "access_rules": [
       [
-        "$has_access_to|ForgottenWorld_Caves11_Lower"
+        "$has_access_to|ForgottenWorld_Caves11_Lower",
+        "$breakable_walls",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves11_Lower",
+        "$breakable_walls",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves11_Lower",
+        "$breakable_walls",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves11_Lower",
+        "$breakable_walls",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Caves11_Lower",
+        "$breakable_walls",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "visibility_rules": [
@@ -16149,7 +19486,40 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_TerradrileLair1",
-        "$breakable_walls"
+        "$breakable_walls",
+        "$narrow_corridors",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TerradrileLair1",
+        "$breakable_walls",
+        "$narrow_corridors",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TerradrileLair1",
+        "$breakable_walls",
+        "$narrow_corridors",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TerradrileLair1",
+        "$breakable_walls",
+        "$narrow_corridors",
+        "$dual_mobility"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TerradrileLair1",
+        "$breakable_walls",
+        "$narrow_corridors",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_TerradrileLair1",
+        "$breakable_walls",
+        "$narrow_corridors",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "visibility_rules": [
@@ -16256,7 +19626,8 @@
     "name": "Forgotten World - Terradrile",
     "access_rules": [
       [
-        "$has_access_to|ForgottenWorld_TerradrileLair2"
+        "$has_access_to|ForgottenWorld_TerradrileLair2",
+        "$breakable_walls"
       ]
     ],
     "visibility_rules": [
@@ -16295,19 +19666,21 @@
       [
         "$has_access_to|ForgottenWorld_MCPath1",
         "$levitate",
-        "$double_jump",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_MCPath1",
+        "$levitate",
         "$improved_flying"
       ],
       [
         "$has_access_to|ForgottenWorld_MCPath1",
         "$levitate",
-        "$double_jump",
         "$dual_mobility"
       ],
       [
         "$has_access_to|ForgottenWorld_MCPath1",
         "$levitate",
-        "$double_jump",
         "$lofty_mount"
       ]
     ],
@@ -16458,7 +19831,18 @@
       [
         "$has_access_to|ForgottenWorld_ClimbPuzzle",
         "$fiery_shots",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_ClimbPuzzle",
+        "$fiery_shots",
         "$distant_ledges"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_ClimbPuzzle",
+        "$fiery_shots",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "visibility_rules": [
@@ -16496,14 +19880,8 @@
         "$has_access_to|ForgottenWorld_ClimbPuzzle",
         "$fiery_shots",
         "$heavy_blocks",
+        "$_NOT_CALL|casual",
         "$secret_vision",
-        "$summon_big_rock"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_ClimbPuzzle",
-        "$fiery_shots",
-        "$heavy_blocks",
-        "$double_jump",
         "$summon_big_rock"
       ],
       [
@@ -16518,21 +19896,15 @@
         "$fiery_shots",
         "$heavy_blocks",
         "$double_jump",
-        "$improved_flying"
+        "$distant_ledges"
       ],
       [
         "$has_access_to|ForgottenWorld_ClimbPuzzle",
         "$fiery_shots",
         "$heavy_blocks",
         "$double_jump",
-        "$dual_mobility"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_ClimbPuzzle",
-        "$fiery_shots",
-        "$heavy_blocks",
-        "$double_jump",
-        "$lofty_mount"
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "visibility_rules": [
@@ -16577,10 +19949,6 @@
       [
         "$has_access_to|ForgottenWorld_Climb2",
         "$dual_mobility"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Climb2",
-        "$lofty_mount"
       ]
     ],
     "visibility_rules": [
@@ -16616,23 +19984,22 @@
     "access_rules": [
       [
         "$has_access_to|ForgottenWorld_Climb2",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Climb2",
+        "$_NOT_CALL|tedious",
         "$double_jump"
       ],
       [
         "$has_access_to|ForgottenWorld_Climb2",
+        "$_NOT_CALL|tedious",
         "$improved_flying"
       ],
       [
         "$has_access_to|ForgottenWorld_Climb2",
+        "$_NOT_CALL|tedious",
         "$dual_mobility"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Climb2",
-        "$lofty_mount"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Climb2",
-        "$summon_big_rock"
       ]
     ],
     "visibility_rules": [
@@ -16677,10 +20044,6 @@
       [
         "$has_access_to|ForgottenWorld_Climb2",
         "$dual_mobility"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Climb2",
-        "$lofty_mount"
       ]
     ],
     "visibility_rules": [
@@ -16769,16 +20132,25 @@
         "access_rules": [
           [
             "$has_access_to|ForgottenWorld_Climb4",
+            "$casual",
             "$charging_mount",
             "$double_jump"
           ],
           [
             "$has_access_to|ForgottenWorld_Climb4",
+            "$_NOT_CALL|casual",
+            "$charging_mount",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$_NOT_CALL|casual",
             "$charging_mount",
             "$improved_flying"
           ],
           [
             "$has_access_to|ForgottenWorld_Climb4",
+            "$_NOT_CALL|casual",
             "$charging_mount",
             "$dual_mobility"
           ]
@@ -16799,16 +20171,25 @@
         "access_rules": [
           [
             "$has_access_to|ForgottenWorld_Climb4",
+            "$casual",
             "$charging_mount",
             "$double_jump"
           ],
           [
             "$has_access_to|ForgottenWorld_Climb4",
+            "$_NOT_CALL|casual",
+            "$charging_mount",
+            "$double_jump"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$_NOT_CALL|casual",
             "$charging_mount",
             "$improved_flying"
           ],
           [
             "$has_access_to|ForgottenWorld_Climb4",
+            "$_NOT_CALL|casual",
             "$charging_mount",
             "$dual_mobility"
           ]
@@ -16846,14 +20227,21 @@
         "access_rules": [
           [
             "$has_access_to|ForgottenWorld_Climb4",
+            "$tedious"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$_NOT_CALL|tedious",
             "$double_jump"
           ],
           [
             "$has_access_to|ForgottenWorld_Climb4",
+            "$_NOT_CALL|tedious",
             "$improved_flying"
           ],
           [
             "$has_access_to|ForgottenWorld_Climb4",
+            "$_NOT_CALL|tedious",
             "$dual_mobility"
           ]
         ],
@@ -16874,6 +20262,19 @@
           [
             "$has_access_to|ForgottenWorld_Climb4",
             "$double_jump"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$improved_flying"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$dual_mobility"
+          ],
+          [
+            "$has_access_to|ForgottenWorld_Climb4",
+            "$tedious",
+            "$lofty_mount"
           ]
         ],
         "visibility_rules": [
@@ -16901,6 +20302,15 @@
       [
         "$has_access_to|ForgottenWorld_Climb4",
         "$dual_mobility"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Climb4",
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_Climb4",
+        "$_NOT_CALL|casual",
+        "$summon_big_rock"
       ]
     ],
     "visibility_rules": [
@@ -16935,16 +20345,7 @@
     "name": "Forgotten World - North Center Climb - SE Chest",
     "access_rules": [
       [
-        "$has_access_to|ForgottenWorld_Climb4",
-        "$double_jump"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Climb4",
-        "$distant_ledges"
-      ],
-      [
-        "$has_access_to|ForgottenWorld_Climb4",
-        "$ground_switches"
+        "$has_access_to|ForgottenWorld_Climb4"
       ]
     ],
     "visibility_rules": [
@@ -17061,6 +20462,11 @@
       [
         "$has_access_to|ForgottenWorld_ClimbSide",
         "$dual_mobility"
+      ],
+      [
+        "$has_access_to|ForgottenWorld_ClimbSide",
+        "$_NOT_CALL|casual",
+        "$flying"
       ]
     ],
     "visibility_rules": [
@@ -17180,8 +20586,27 @@
     "access_rules": [
       [
         "$has_access_to|AbandonedTower_South6",
-        "$double_jump",
-        "$ground_switches"
+        "$ground_switches",
+        "$casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|AbandonedTower_South6",
+        "$ground_switches",
+        "$_NOT_CALL|casual",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|AbandonedTower_South6",
+        "$ground_switches",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|AbandonedTower_South6",
+        "$ground_switches",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [
@@ -17255,6 +20680,11 @@
         "$has_access_to|AbandonedTower_South8",
         "$double_jump",
         "$dual_mobility"
+      ],
+      [
+        "$has_access_to|AbandonedTower_South8",
+        "$double_jump",
+        "$lofty_mount"
       ]
     ],
     "map_locations": [
@@ -17286,11 +20716,12 @@
       ],
       [
         "$has_access_to|AbandonedTower_South8",
-        "$ground_switches"
+        "$distant_ledges"
       ],
       [
         "$has_access_to|AbandonedTower_South8",
-        "$distant_ledges"
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -17431,12 +20862,13 @@
       [
         "$has_access_to|AbandonedTower_Center3_Lower",
         "$heavy_blocks",
-        "$ground_switches"
+        "$distant_ledges"
       ],
       [
         "$has_access_to|AbandonedTower_Center3_Lower",
         "$heavy_blocks",
-        "$distant_ledges"
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -17470,12 +20902,13 @@
       [
         "$has_access_to|AbandonedTower_Center3_Lower",
         "$heavy_blocks",
-        "$ground_switches"
+        "$distant_ledges"
       ],
       [
         "$has_access_to|AbandonedTower_Center3_Lower",
         "$heavy_blocks",
-        "$distant_ledges"
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -17503,7 +20936,24 @@
     "access_rules": [
       [
         "$has_access_to|AbandonedTower_Center3_Upper",
-        "$diamond_blocks"
+        "$diamond_blocks",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|AbandonedTower_Center3_Upper",
+        "$diamond_blocks",
+        "$double_jump"
+      ],
+      [
+        "$has_access_to|AbandonedTower_Center3_Upper",
+        "$diamond_blocks",
+        "$distant_ledges"
+      ],
+      [
+        "$has_access_to|AbandonedTower_Center3_Upper",
+        "$diamond_blocks",
+        "$_NOT_CALL|casual",
+        "$ground_switches"
       ]
     ],
     "map_locations": [
@@ -17560,8 +21010,12 @@
     "access_rules": [
       [
         "$has_access_to|AbandonedTower_Center6",
-        "$double_jump",
-        "$mount"
+        "$lofty_mount"
+      ],
+      [
+        "$has_access_to|AbandonedTower_Center6",
+        "$mount",
+        "$double_jump"
       ]
     ],
     "map_locations": [
@@ -17632,6 +21086,7 @@
       ],
       [
         "$has_access_to|AbandonedTower_Center9",
+        "$_NOT_CALL|casual",
         "$summon_big_rock"
       ]
     ],
@@ -17860,7 +21315,24 @@
     "access_rules": [
       [
         "$has_access_to|AbandonedTower_North5",
+        "$tedious"
+      ],
+      [
+        "$has_access_to|AbandonedTower_North5",
+        "$_NOT_CALL|tedious",
         "$double_jump"
+      ],
+      [
+        "$has_access_to|AbandonedTower_North5",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$improved_flying"
+      ],
+      [
+        "$has_access_to|AbandonedTower_North5",
+        "$_NOT_CALL|tedious",
+        "$_NOT_CALL|casual",
+        "$dual_mobility"
       ]
     ],
     "map_locations": [

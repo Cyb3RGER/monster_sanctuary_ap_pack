@@ -1,104 +1,112 @@
 {
-    "versions": [
-        {
-            "package_version": "1.3.6",
-            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.6/monster_sanctuary_ap_pack-v1_3_6.zip",
-            "sha256": "bfa995973c76762289c15cf6be0b7a9da786c8eed7f6ce55c06090ca466509a8",
-            "changelog": [
-                "Updated to apworld v1.3.6"
-            ]
-        },
-        {
-            "package_version": "1.3.5",
-            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.5/monster_sanctuary_ap_pack-v1_3_5.zip",
-            "sha256": "a054a3fab2b000cb658ba178c024745d95acd77940b1de26d499c31406d0f5a6",
-            "changelog": [
-                "Added hint tracking (highlights hinted location based on hint status)",
-                "Added a setting to toggle automatic tab switching"
-            ]
-        },
-        {
-            "package_version": "1.3.4",
-            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.4/monster_sanctuary_ap_pack-v1_3_4.zip",
-            "sha256": "b0a16eb73774dcc42f71bbef9be1fa7369496b025f135f2a67920f7b005a9099",
-            "changelog": [
-                "Fixed an long-standing issue in logic generation",
-                "Implemented an item that shows how many Champions are in logic (including defeated)"
-            ]
-        },
-        {
-            "package_version": "1.3.3",
-            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.3/monster_sanctuary_ap_pack-v1_3_3.zip",
-            "sha256": "907584b891c7abdd0fa28d592291ac9a70dc00fda877a41b9adbb0f74a20ecb4",
-            "changelog": [
-                "Fixed ability logic (again)"
-            ]
-        },
-        {
-            "package_version": "1.3.2",
-            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.2/monster_sanctuary_ap_pack-v1_3_2.zip",
-            "sha256": "6dfa2ccdfdfe4b58b6310d457cc5bba794001b07521e849055ab87bb21dcc56e",
-            "changelog": [
-                "Updated to apworld v1.3.2",
-                "Fixed ability logic bug, where abilities were treated as always being locked.",
-                "Implemented hiding known filler locations. This can be toggled on/off in the settings (default on)."
-            ]
-        },
-        {
-            "package_version": "1.3.0",
-            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.0/monster_sanctuary_ap_pack-v1_3_0.zip",
-            "sha256": "d193eee349c2585f8b2769c17190311c6b2e6a27011cd15c112c620dde084903",
-            "changelog": [
-                "Updated to apworld v1.3.0"
-            ]
-        },
-        {
-            "package_version": "1.2.1",
-            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.2.1/monster_sanctuary_ap_pack-v1_2_1.zip",
-            "sha256": "ad48c01c63ebd0137385ebd8f1cd3c01d33dfd3ea437d1cbf96e1dc30d1bfa98",
-            "changelog": [
-                "Fixed ability logic"
-            ]
-        },
-        {
-            "package_version": "1.2.0",
-            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.2.0/monster_sanctuary_ap_pack-v1_2_0.zip",
-            "sha256": "3c0b45d5eb2e49d5e9eb94088c6cc96bdee5449101c84c8076e2f5623f8a9b44",
-            "changelog": [
-                "Updated to apworld v1.2.2"
-            ]
-        },
-        {
-            "package_version": "1.1.1",
-            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.1.1/monster_sanctuary_ap_pack-v1_1_1.zip",
-            "sha256": "a55672c5e2827a1c27ebdc5c33ee64d8b033b2392b32ae4ca40d41021a0a9161",
-            "changelog": [
-                "Updated to apworld v1.1.4"
-            ]
-        },
-        {
-            "package_version": "1.1.0",
-            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.1.0/monster_sanctuary_ap_pack-v1_1_0.zip",
-            "sha256": "dfd3d0e1126f78c5b615ee749c0be6b4e77e8c86600ed5a49d8889e5f172f77b",
-            "changelog": [
-                "Updated to apworld v1.1.3"                
-            ]
-        },
-        {
-            "package_version": "1.0.1",
-            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.0.1/monster_sanctuary_ap_pack-v1_0_1.zip",
-            "sha256": "9fa849493b8013628d68fb471754d710aba152d6f11f1c40ffbeb954a07cac86",
-            "changelog": [
-                "Added region maps and autoswitching maps"                
-            ]
-        },
-        {
-            "package_version": "1.0.0",
-            "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.0.0/monster_sanctuary_ap_pack-v1_0_0.zip",
-            "sha256": "a71b1e55a2bda503787af01eff60313b2511690e7e310c225564e8cc30d935e7",
-            "changelog": [
-                "Initial Release"
-            ]
-        }        
-    ]
+  "versions": [
+    {
+      "package_version": "1.3.7",
+      "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.7/monster_sanctuary_ap_pack-v1_3_7.zip",
+      "sha256": "6f3b5b8ba09245944cdcd185e8e712f7761a1cc3f04b884c216e60f731ced88b",
+      "changelog": [
+        "Updated to apworld v1.3.7"
+      ]
+    },
+    {
+      "package_version": "1.3.6",
+      "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.6/monster_sanctuary_ap_pack-v1_3_6.zip",
+      "sha256": "bfa995973c76762289c15cf6be0b7a9da786c8eed7f6ce55c06090ca466509a8",
+      "changelog": [
+        "Updated to apworld v1.3.6"
+      ]
+    },
+    {
+      "package_version": "1.3.5",
+      "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.5/monster_sanctuary_ap_pack-v1_3_5.zip",
+      "sha256": "a054a3fab2b000cb658ba178c024745d95acd77940b1de26d499c31406d0f5a6",
+      "changelog": [
+        "Added hint tracking (highlights hinted location based on hint status)",
+        "Added a setting to toggle automatic tab switching"
+      ]
+    },
+    {
+      "package_version": "1.3.4",
+      "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.4/monster_sanctuary_ap_pack-v1_3_4.zip",
+      "sha256": "b0a16eb73774dcc42f71bbef9be1fa7369496b025f135f2a67920f7b005a9099",
+      "changelog": [
+        "Fixed an long-standing issue in logic generation",
+        "Implemented an item that shows how many Champions are in logic (including defeated)"
+      ]
+    },
+    {
+      "package_version": "1.3.3",
+      "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.3/monster_sanctuary_ap_pack-v1_3_3.zip",
+      "sha256": "907584b891c7abdd0fa28d592291ac9a70dc00fda877a41b9adbb0f74a20ecb4",
+      "changelog": [
+        "Fixed ability logic (again)"
+      ]
+    },
+    {
+      "package_version": "1.3.2",
+      "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.2/monster_sanctuary_ap_pack-v1_3_2.zip",
+      "sha256": "6dfa2ccdfdfe4b58b6310d457cc5bba794001b07521e849055ab87bb21dcc56e",
+      "changelog": [
+        "Updated to apworld v1.3.2",
+        "Fixed ability logic bug, where abilities were treated as always being locked.",
+        "Implemented hiding known filler locations. This can be toggled on/off in the settings (default on)."
+      ]
+    },
+    {
+      "package_version": "1.3.0",
+      "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.3.0/monster_sanctuary_ap_pack-v1_3_0.zip",
+      "sha256": "d193eee349c2585f8b2769c17190311c6b2e6a27011cd15c112c620dde084903",
+      "changelog": [
+        "Updated to apworld v1.3.0"
+      ]
+    },
+    {
+      "package_version": "1.2.1",
+      "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.2.1/monster_sanctuary_ap_pack-v1_2_1.zip",
+      "sha256": "ad48c01c63ebd0137385ebd8f1cd3c01d33dfd3ea437d1cbf96e1dc30d1bfa98",
+      "changelog": [
+        "Fixed ability logic"
+      ]
+    },
+    {
+      "package_version": "1.2.0",
+      "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.2.0/monster_sanctuary_ap_pack-v1_2_0.zip",
+      "sha256": "3c0b45d5eb2e49d5e9eb94088c6cc96bdee5449101c84c8076e2f5623f8a9b44",
+      "changelog": [
+        "Updated to apworld v1.2.2"
+      ]
+    },
+    {
+      "package_version": "1.1.1",
+      "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.1.1/monster_sanctuary_ap_pack-v1_1_1.zip",
+      "sha256": "a55672c5e2827a1c27ebdc5c33ee64d8b033b2392b32ae4ca40d41021a0a9161",
+      "changelog": [
+        "Updated to apworld v1.1.4"
+      ]
+    },
+    {
+      "package_version": "1.1.0",
+      "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.1.0/monster_sanctuary_ap_pack-v1_1_0.zip",
+      "sha256": "dfd3d0e1126f78c5b615ee749c0be6b4e77e8c86600ed5a49d8889e5f172f77b",
+      "changelog": [
+        "Updated to apworld v1.1.3"
+      ]
+    },
+    {
+      "package_version": "1.0.1",
+      "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.0.1/monster_sanctuary_ap_pack-v1_0_1.zip",
+      "sha256": "9fa849493b8013628d68fb471754d710aba152d6f11f1c40ffbeb954a07cac86",
+      "changelog": [
+        "Added region maps and autoswitching maps"
+      ]
+    },
+    {
+      "package_version": "1.0.0",
+      "download_url": "https://github.com/Cyb3RGER/monster_sanctuary_ap_pack/releases/download/v1.0.0/monster_sanctuary_ap_pack-v1_0_0.zip",
+      "sha256": "a71b1e55a2bda503787af01eff60313b2511690e7e310c225564e8cc30d935e7",
+      "changelog": [
+        "Initial Release"
+      ]
+    }
+  ]
 }
